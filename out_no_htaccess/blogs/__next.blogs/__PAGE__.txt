@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[99741,["/_next/static/chunks/972db04eaba95815.js","/_next/static/chunks/8b4da7e3ce3b438d.js"],"default"]
+3:I[99267,["/_next/static/chunks/dcbdb5e0dcaec807.js","/_next/static/chunks/fd8554ea01b1af9a.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"pIcCfK44DHNOBK2B7hiyT","rsc":["$","$1","c",{"children":[["$","$L2",null,{"posts":[{"id":1763069082934,"slug":"mobile-app-development-guide-2025","title":"Mobile App Development in 2025: Complete Guide to Building Successful Apps","author":"Emily Davis","category":"Mobile App Development","image":"/uploads/1763069082739-Mobile_App.PNG","createdAt":"2025-11-13T21:24:42.751Z","short_description":"Comprehensive guide to mobile app development in 2025. Compare platforms, learn best practices, avoid common mistakes, and discover the latest trends to build apps users love.","readTime":8}]}],[["$","script","script-0",{"src":"/_next/static/chunks/972db04eaba95815.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/8b4da7e3ce3b438d.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null

@@ -1,0 +1,41 @@
+# robots.txt for Coder Design - New York Development Agency
+# https://coderdesign.com
+
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Disallow crawling of admin or internal pages (if any)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /private/
+
+# Allow crawling of all service pages
+Allow: /full-stack-engineering
+Allow: /mobile-app-development
+Allow: /ai-workflow
+Allow: /seo-management
+Allow: /contact
+Allow: /about
+Allow: /blogs
+
+# Sitemap location
+Sitemap: https://coderdesign.com/sitemap.xml
+
+# Cache directives for better crawling
+# Crawl responsibly with proper delay
+Crawl-delay: 0

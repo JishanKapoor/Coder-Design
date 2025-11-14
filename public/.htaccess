@@ -1,0 +1,230 @@
+# Enable Rewrite Engine
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # ==========================================
+  # SEO-FRIENDLY REDIRECTS
+  # ==========================================
+
+  # Force HTTPS (SSL) - Enable after SSL certificate is installed
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+  # Force WWW (choose one: www or non-www)
+  # Option 1: Force WWW
+  # RewriteCond %{HTTP_HOST} !^www\. [NC]
+  # RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+  
+  # Option 2: Force non-WWW (Recommended for most sites)
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+  # Remove trailing slash from files (but keep for directories)
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} (.+)/$
+  RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+  # Add trailing slash to directories
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteCond %{REQUEST_URI} !(.*)/$
+  RewriteRule ^(.*)$ $1/ [L,R=301]
+
+  # ==========================================
+  # NEXT.JS STATIC EXPORT ROUTING
+  # ==========================================
+
+  # Skip rewrite rules for Next.js static assets (_next folder)
+  RewriteCond %{REQUEST_URI} !^/_next/
+
+  # Serve index.html for directories
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteCond %{REQUEST_FILENAME}/index.html -f
+  RewriteRule ^(.*)$ $1/index.html [L]
+
+  # Skip rewrite rules for Next.js static assets (_next folder)
+  RewriteCond %{REQUEST_URI} !^/_next/
+  
+  # Serve .html files without extension
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.*)$ $1.html [L]
+
+  ##### Minimal, GoDaddy-safe .htaccess for static Next.js export #####
+
+  # Prevent content negotiation oddities and directory listing
+  Options -Indexes -MultiViews
+
+  # Encoding
+  AddDefaultCharset utf-8
+
+  # Prefer index.html by default
+  DirectoryIndex index.html
+
+  <IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Allow Next.js asset paths through without rewrites
+    # e.g. /_next/static/...
+    RewriteRule ^_next/ - [L]
+
+    # Bypass rewrites for common static file extensions
+    RewriteCond %{REQUEST_URI} \.(css|js|mjs|png|jpg|jpeg|gif|svg|ico|webp|woff2?|ttf|eot|pdf|txt|xml)$ [NC]
+    RewriteRule ^ - [L]
+
+    # If a requested path is a directory, serve its index.html
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteCond %{REQUEST_FILENAME}/index.html -f
+    RewriteRule ^(.+)$ $1/index.html [L]
+
+    # If a .html exists for the path, serve it without the extension
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule ^(.+)$ $1.html [L]
+
+    # Custom 404 for missing pages
+    ErrorDocument 404 /404.html
+  </IfModule>
+
+  # Ensure correct MIME types for common assets (defensive)
+  AddType text/css .css
+  AddType application/javascript .js
+  AddType image/svg+xml .svg
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType image/vnd.microsoft.icon "access plus 1 year"
+  
+  # Video - Cache for 1 year
+  ExpiresByType video/mp4 "access plus 1 year"
+  ExpiresByType video/mpeg "access plus 1 year"
+  ExpiresByType video/webm "access plus 1 year"
+  
+  # CSS, JavaScript - Cache for 1 month
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType application/x-javascript "access plus 1 month"
+  
+  # Fonts - Cache for 1 year
+  ExpiresByType font/ttf "access plus 1 year"
+  ExpiresByType font/otf "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/font-woff "access plus 1 year"
+  ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+  
+  # HTML - Cache for 1 hour (for frequently updated content)
+  ExpiresByType text/html "access plus 1 hour"
+  
+  # Data/JSON - Cache for 1 day
+  ExpiresByType application/json "access plus 1 day"
+  ExpiresByType application/xml "access plus 1 day"
+  ExpiresByType text/xml "access plus 1 day"
+  
+  # Default - Cache for 2 days
+  ExpiresDefault "access plus 2 days"
+</IfModule>
+
+# ==========================================
+# SECURITY HEADERS
+# ==========================================
+<IfModule mod_headers.c>
+  # Prevent MIME type sniffing
+  Header set X-Content-Type-Options "nosniff"
+  
+  # Prevent clickjacking
+  Header set X-Frame-Options "SAMEORIGIN"
+  
+  # Enable XSS protection
+  Header set X-XSS-Protection "1; mode=block"
+  
+  # Referrer policy for privacy and SEO
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  
+  # Content Security Policy (adjust as needed)
+  # Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';"
+  
+  # Remove server signature
+  Header unset Server
+  Header unset X-Powered-By
+  
+  # CORS headers (if needed for API calls)
+  # Header set Access-Control-Allow-Origin "*"
+  
+  # Force UTF-8 encoding
+  Header set Content-Type "text/html; charset=UTF-8"
+  
+  # HSTS - Force HTTPS for 1 year (enable ONLY after SSL is working)
+  # Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+</IfModule>
+
+# ==========================================
+# PERFORMANCE OPTIMIZATIONS
+# ==========================================
+
+# Enable KeepAlive
+<IfModule mod_headers.c>
+  Header set Connection keep-alive
+</IfModule>
+
+# Disable ETags (use Expires instead)
+<IfModule mod_headers.c>
+  Header unset ETag
+</IfModule>
+FileETag None
+
+# ==========================================
+# BLOCK BAD BOTS & SECURITY
+# ==========================================
+
+# Block common malicious user agents
+<IfModule mod_rewrite.c>
+  RewriteCond %{HTTP_USER_AGENT} (libwww-perl|wget|python|nikto|curl|scan|java|winhttp|clshttp|loader) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} (<|>|'|%0A|%0D|%27|%3C|%3E|%00) [NC,OR]
+  RewriteCond %{HTTP_USER_AGENT} (;|<|>|'|"|\)|\(|%0A|%0D|%22|%27|%28|%3C|%3E|%00).*(libwww-perl|wget|python|nikto|curl|scan|java|winhttp|HTTrack|clshttp|archiver|loader|email|harvest|extract|grab|miner) [NC]
+  RewriteRule .* - [F,L]
+</IfModule>
+
+# Protect .htaccess and other sensitive files
+<FilesMatch "^\.">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# ==========================================
+# CUSTOM ERROR PAGES
+# ==========================================
+
+ErrorDocument 400 /404.html
+ErrorDocument 401 /404.html
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+ErrorDocument 500 /404.html
+
+# ==========================================
+# CHARSET UTF-8
+# ==========================================
+
+AddDefaultCharset UTF-8
+DefaultLanguage en-US
+
+# ==========================================
+# DISABLE DIRECTORY BROWSING
+# ==========================================
+
+Options -Indexes
+
+# ==========================================
+# NOTES FOR GODADDY DEPLOYMENT
+# ==========================================
+
+# 1. HTTPS redirect is ENABLED - Make sure SSL certificate is installed first
+# 2. Force non-WWW is ENABLED - All www requests redirect to non-www
+# 3. To use WWW instead, uncomment the "Force WWW" section and comment out "Force non-WWW"
+# 4. HSTS header is COMMENTED - Enable only after confirming HTTPS works
+# 5. All redirects use 301 (permanent) for SEO benefits
+
