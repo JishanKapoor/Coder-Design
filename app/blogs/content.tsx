@@ -109,7 +109,7 @@ export default function Blogs({ posts }: { posts: BlogMeta[] }) {
                             {post.short_description}
                           </p>
                           <span className="mt-auto inline-flex items-center gap-1.5 text-xs font-semibold text-violet-600 group-hover:text-violet-700">
-                            Read more
+                            Read more<span className="sr-only">: {post.title}</span>
                             <ArrowRight className="h-4 w-4" />
                           </span>
                         </div>

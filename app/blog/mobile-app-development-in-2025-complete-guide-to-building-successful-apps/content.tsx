@@ -55,9 +55,9 @@ export default function BlogPost() {
             </div>
             <div className="flex flex-wrap gap-3">
               <Button className={"gap-2 bg-white text-blue-600 hover:bg-white/90"} asChild>
-                <Link href="/contact">Start Your Project</Link>
+                <Link href="/contact">Plan Your Mobile App</Link>
               </Button>
-              <Button variant="overlay" onClick={() => setShowCalendar(true)}>Schedule a Call</Button>
+              <Button variant="overlay" onClick={() => setShowCalendar(true)}>Get an App Strategy Call</Button>
             </div>
           </div>
         </div>
@@ -124,7 +124,7 @@ export default function BlogPost() {
 <li><strong>Complex enterprise apps:</strong> $150,000 - $500,000+</li>
 </ul>
 
-<h2>Conclusion</h2>
+<h2>Your Mobile App Roadmap for 2025</h2>
 <p>Building a successful mobile app in 2025 requires understanding current trends, choosing the right technology stack, and following a structured development process. Focus on user experience, performance, and iterative improvement to create apps that users love.</p>
 <hr>` }} />
         </div>
@@ -132,13 +132,13 @@ export default function BlogPost() {
       <section className={"bg-gradient-to-br from-blue-600 to-cyan-700 py-20"}>
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
           <div className="text-center">
-            <h2 className="mb-6 text-white text-3xl font-bold">Ready to Launch Your App?</h2>
+            <h2 className="mb-6 text-white text-3xl font-bold">Build a Future-Ready Mobile App in 2025</h2>
             <p className="mb-8 text-lg text-white/90">Expert mobile development from concept to App Store success.</p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Button size="lg" className={"bg-white text-blue-600 hover:bg-white/90"} asChild>
                 <Link href="/contact">Build Your App</Link>
               </Button>
-              <Button size="lg" variant="overlay" onClick={() => setShowCalendar(true)}>Schedule a Call</Button>
+              <Button size="lg" variant="overlay" onClick={() => setShowCalendar(true)}>Talk to an App Expert</Button>
             </div>
           </div>
         </div>

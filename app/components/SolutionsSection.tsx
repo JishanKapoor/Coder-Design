@@ -16,6 +16,7 @@ const solutions = [
       "We build robust, production ready applications from interactive frontends to scalable backend APIs and cloud infrastructure. Our senior engineers deliver complete solutions using Python, Django, Node.js, React, Next.js, PostgreSQL, AWS, and Google Cloud with automated testing, CI/CD, and security built in from day one.",
     metrics: ["Frontend and Backend Development", "Cloud Infrastructure and DevOps", "API Development and Integration", "Database Architecture and Optimization"],
     href: "/full-stack-engineering",
+    linkText: "Explore Web Development Services",
   },
   {
     icon: Smartphone,
@@ -25,6 +26,7 @@ const solutions = [
       "We design and develop high performance mobile applications for iOS and Android that users love. Using React Native, Flutter, Swift, and Kotlin, we handle everything from UX research and prototyping to App Store submission, push notifications, and post launch analytics.",
     metrics: ["iOS and Android Apps", "React Native and Flutter", "Swift and Kotlin Native", "App Store Optimization"],
     href: "/mobile-app-development",
+    linkText: "Discover Mobile App Solutions",
   },
   {
     icon: Brain,
@@ -34,6 +36,7 @@ const solutions = [
       "Transform your business operations with intelligent automation. We build AI chatbots, n8n and Make workflow pipelines, voice assistants, and predictive analytics systems using OpenAI, Claude, LangChain, and TensorFlow to eliminate repetitive work and unlock data driven insights.",
     metrics: ["n8n and Make Workflows", "AI Chatbots and Agents", "Predictive Analytics", "Natural Language Processing"],
     href: "/ai-workflow",
+    linkText: "See AI Automation in Action",
   },
   {
     icon: Search,
@@ -43,6 +46,7 @@ const solutions = [
       "Dominate search rankings with AI powered SEO, local GEO targeting, and Answer Engine Optimization (AEO). We use machine learning for keyword discovery, optimize your content for Google AI Overviews, ChatGPT, and Perplexity, and implement local SEO strategies to maximize qualified organic traffic.",
     metrics: ["AI Powered SEO Strategy", "Local SEO and GEO Targeting", "Answer Engine Optimization", "Voice Search and AI Overviews"],
     href: "/seo-management",
+    linkText: "View SEO & Ranking Services",
   },
 ];
 
@@ -122,7 +126,7 @@ export function SolutionsSection() {
                     asChild
                   >
                     <Link href={solution.href}>
-                      Learn more
+                      {solution.linkText}
                       <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover/btn:translate-x-1" />
                     </Link>
                   </Button>

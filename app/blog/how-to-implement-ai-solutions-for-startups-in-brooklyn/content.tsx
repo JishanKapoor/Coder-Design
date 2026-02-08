@@ -55,9 +55,9 @@ export default function BlogPost() {
             </div>
             <div className="flex flex-wrap gap-3">
               <Button className={"gap-2 bg-white text-purple-600 hover:bg-white/90"} asChild>
-                <Link href="/contact">Start Your Project</Link>
+                <Link href="/contact">Launch Your AI Pilot</Link>
               </Button>
-              <Button variant="overlay" onClick={() => setShowCalendar(true)}>Schedule a Call</Button>
+              <Button variant="overlay" onClick={() => setShowCalendar(true)}>Get a Free AI Assessment</Button>
             </div>
           </div>
         </div>
@@ -115,7 +115,7 @@ export default function BlogPost() {
 <li><strong>$5-20K/month:</strong> Custom AI development and dedicated ML infrastructure</li>
 </ul>
 
-<h2>Conclusion</h2>
+<h2>Your Brooklyn AI Implementation Checklist</h2>
 <p>AI implementation doesn't have to be overwhelming or expensive. Brooklyn startups that take a pragmatic, step-by-step approach to AI adoption will find it transforms their operations, customer experience, and competitive positioning.</p>
 <hr>` }} />
         </div>
@@ -123,13 +123,15 @@ export default function BlogPost() {
       <section className={"bg-gradient-to-br from-purple-600 to-fuchsia-700 py-20"}>
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
           <div className="text-center">
-            <h2 className="mb-6 text-white text-3xl font-bold">Ready to Leverage AI?</h2>
+            <h2 className="mb-6 text-white text-3xl font-bold">
+              Launch AI-Powered Solutions for Your Brooklyn Startup
+            </h2>
             <p className="mb-8 text-lg text-white/90">Custom AI solutions that transform your business operations.</p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Button size="lg" className={"bg-white text-purple-600 hover:bg-white/90"} asChild>
-                <Link href="/contact">Explore AI Solutions</Link>
+                <Link href="/contact">Launch Your AI Pilot Project</Link>
               </Button>
-              <Button size="lg" variant="overlay" onClick={() => setShowCalendar(true)}>Schedule a Call</Button>
+              <Button size="lg" variant="overlay" onClick={() => setShowCalendar(true)}>Get a Free AI Assessment</Button>
             </div>
           </div>
         </div>

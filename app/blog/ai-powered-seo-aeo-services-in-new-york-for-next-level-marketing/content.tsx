@@ -59,14 +59,14 @@ export default function BlogPost() {
                 onClick={() => setShowCalendar(true)}
                 className="bg-white text-violet-700 hover:bg-white/90"
               >
-                Boost Your Rankings
+                Maximize Your SEO
               </Button>
               <Button
                 onClick={() => setShowCalendar(true)}
                 variant="outline"
                 className="border-white/30 text-white hover:bg-white/10"
               >
-                SEO Strategy Call
+                AI SEO Strategy Session
               </Button>
             </div>
           </div>
@@ -227,7 +227,7 @@ export default function BlogPost() {
 
   <p>AI SEO and AEO make that possible across search engines, voice assistants, and AI chat tools.</p>
 
-  <h2>Final Thoughts</h2>
+  <h2>Transforming Your Marketing with AI SEO</h2>
 
   <p>Marketing visibility has moved beyond rankings. AI now decides which brands get quoted, summarized, and trusted.</p>
 
@@ -259,15 +259,17 @@ export default function BlogPost() {
       </article>
       <section className="bg-violet-600 py-16 text-center text-white">
         <div className="mx-auto max-w-2xl px-6">
-          <h2 className="mb-4 text-2xl font-bold">Ready to Start Your Project?</h2>
+          <h2 className="mb-4 text-2xl font-bold">
+              Supercharge Your Marketing with AI-Powered SEO
+            </h2>
           <p className="mb-8 text-white/80">Let&apos;s discuss how we can help bring your ideas to life with expert development and strategy.</p>
           <div className="flex flex-wrap justify-center gap-3">
             <Button onClick={() => setShowCalendar(true)} className="bg-white text-violet-700 hover:bg-white/90">
-              Book a Consultation
+              Get a Custom SEO Proposal
             </Button>
             <Link href="/contact">
               <Button variant="outline" className="border-white/30 text-white hover:bg-white/10">
-                Contact Us
+                Speak with an SEO Strategist
               </Button>
             </Link>
           </div>

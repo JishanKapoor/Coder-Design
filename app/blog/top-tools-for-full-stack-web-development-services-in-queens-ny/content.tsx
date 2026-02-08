@@ -55,9 +55,9 @@ export default function BlogPost() {
             </div>
             <div className="flex flex-wrap gap-3">
               <Button className={"gap-2 bg-white text-violet-600 hover:bg-white/90"} asChild>
-                <Link href="/contact">Start Your Project</Link>
+                <Link href="/contact">Start Building Your App</Link>
               </Button>
-              <Button variant="overlay" onClick={() => setShowCalendar(true)}>Schedule a Call</Button>
+              <Button variant="overlay" onClick={() => setShowCalendar(true)}>Talk to a Dev Lead</Button>
             </div>
           </div>
         </div>
@@ -127,7 +127,7 @@ export default function BlogPost() {
 <li><strong>React Testing Library:</strong> Component testing for React apps</li>
 </ul>
 
-<h2>Conclusion</h2>
+<h2>Picking the Right Tools for Your Stack</h2>
 <p>The right tools can dramatically accelerate full-stack development and improve code quality. Queens-based developers and development teams leverage these modern tools to build fast, reliable, and scalable web applications for clients across New York and beyond.</p>
 <hr>` }} />
         </div>
@@ -135,13 +135,15 @@ export default function BlogPost() {
       <section className={"bg-gradient-to-br from-violet-600 to-indigo-700 py-20"}>
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
           <div className="text-center">
-            <h2 className="mb-6 text-white text-3xl font-bold">Ready to Build Scalable Software?</h2>
+            <h2 className="mb-6 text-white text-3xl font-bold">
+              Build Better Web Apps with the Right Tech Stack
+            </h2>
             <p className="mb-8 text-lg text-white/90">Full-stack engineering for robust, secure, performant products.</p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Button size="lg" className={"bg-white text-violet-600 hover:bg-white/90"} asChild>
-                <Link href="/contact">Start Your Project</Link>
+                <Link href="/contact">Begin Your Web Project</Link>
               </Button>
-              <Button size="lg" variant="overlay" onClick={() => setShowCalendar(true)}>Schedule a Call</Button>
+              <Button size="lg" variant="overlay" onClick={() => setShowCalendar(true)}>Talk to a Dev Lead</Button>
             </div>
           </div>
         </div>

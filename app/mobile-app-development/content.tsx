@@ -415,11 +415,11 @@ export default  function MobileAppDevelopment() {
                 onClick={() => setShowCalendar(true)}
               >
                 <Calendar className="mr-2 h-5 w-5" />
-                Book a Consultation
+                Schedule an App Review
               </Button>
               <Button size="lg" variant="outline" className="border-white bg-transparent text-white hover:bg-white/10" asChild>
                 <Link href="/contact">
-                  Contact Us
+                  Get a Free App Quote
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>

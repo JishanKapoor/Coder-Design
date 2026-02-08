@@ -55,9 +55,9 @@ export default function BlogPost() {
             </div>
             <div className="flex flex-wrap gap-3">
               <Button className={"gap-2 bg-white text-violet-600 hover:bg-white/90"} asChild>
-                <Link href="/contact">Start Your Project</Link>
+                <Link href="/contact">Optimize Your Infrastructure</Link>
               </Button>
-              <Button variant="overlay" onClick={() => setShowCalendar(true)}>Schedule a Call</Button>
+              <Button variant="overlay" onClick={() => setShowCalendar(true)}>Get an Infra Review</Button>
             </div>
           </div>
         </div>
@@ -109,7 +109,7 @@ export default function BlogPost() {
 
 <blockquote><p>"The best infrastructure is the one that lets you ship features fastest. For most startups, that's not Kubernetes."</p></blockquote>
 
-<h2>Conclusion</h2>
+<h2>Making the Right Infrastructure Decision</h2>
 <p>Kubernetes is a powerful tool, but power without need is just complexity. Most startups should start with simpler deployment platforms and migrate to K8s only when their scale genuinely demands it.</p>
 <hr>` }} />
         </div>
@@ -117,13 +117,15 @@ export default function BlogPost() {
       <section className={"bg-gradient-to-br from-violet-600 to-indigo-700 py-20"}>
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
           <div className="text-center">
-            <h2 className="mb-6 text-white text-3xl font-bold">Ready to Build Scalable Software?</h2>
+            <h2 className="mb-6 text-white text-3xl font-bold">
+              Scale Your Startup Infrastructure the Right Way
+            </h2>
             <p className="mb-8 text-lg text-white/90">Full-stack engineering for robust, secure, performant products.</p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Button size="lg" className={"bg-white text-violet-600 hover:bg-white/90"} asChild>
-                <Link href="/contact">Start Your Project</Link>
+                <Link href="/contact">Get Expert Infra Guidance</Link>
               </Button>
-              <Button size="lg" variant="overlay" onClick={() => setShowCalendar(true)}>Schedule a Call</Button>
+              <Button size="lg" variant="overlay" onClick={() => setShowCalendar(true)}>Get an Infra Review</Button>
             </div>
           </div>
         </div>

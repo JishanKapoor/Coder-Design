@@ -13,7 +13,7 @@ const features = [
   },
   {
     icon: Smartphone,
-    title: "Mobile App Development",
+    title: "Native & Cross-Platform Mobile Apps",
     description:
       "Native iOS and Android apps built with Swift and Kotlin, plus cross platform solutions using React Native and Flutter. We handle UI/UX design, prototyping, App Store submission, push notifications, in-app purchases, and post launch analytics.",
   },
@@ -25,7 +25,7 @@ const features = [
   },
   {
     icon: Search,
-    title: "SEO Services Toronto",
+    title: "AI-Powered SEO & Search Optimization",
     description:
       "AI powered search engine optimization with local GEO targeting and Answer Engine Optimization (AEO). We use machine learning for keyword discovery, automate on-page optimization, build high authority backlinks, and optimize for Google AI Overviews and voice search.",
   },
