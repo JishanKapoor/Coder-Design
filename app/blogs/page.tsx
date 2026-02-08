@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import fs from 'fs';
 import path from 'path';
 import Blogs from "./content";
@@ -6,12 +6,27 @@ import Blogs from "./content";
 // Enable ISR - revalidate every 60 seconds
 export const revalidate = 60;
 
-export const metadata = {
-  title: "Development Blog | Web, Mobile, AI & SEO Insights - Coder Design NYC",
+export const metadata: Metadata = {
+  title: "Development Blog | CoderDesign Toronto",
   description:
-    "Expert insights from New York's top development agency. Full-stack, mobile apps, AI/ML, and SEO best practices from experienced NYC developers.",
+    "Expert insights from Toronto developers. Full stack web development, mobile apps, AI automation, and SEO best practices from the CoderDesign team.",
   keywords:
-    "development blog NYC, web development blog, AI machine learning blog, SEO blog New York, mobile app development blog, tech insights NYC, software development articles",
+    "development blog Toronto, web development blog, AI machine learning blog, SEO blog Toronto, mobile app development blog, tech insights Toronto, software development articles, Ontario tech blog",
+  openGraph: {
+    title: "Development Blog | CoderDesign Toronto",
+    description: "Expert insights from Toronto developers. Web development, mobile apps, AI automation, and SEO best practices.",
+    url: "https://coderdesign.com/blogs",
+    siteName: "CoderDesign",
+    locale: "en_CA",
+    type: "website",
+    images: [{ url: "https://coderdesign.com/og-image.png", width: 1200, height: 630, alt: "CoderDesign Development Blog" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Development Blog | CoderDesign Toronto",
+    description: "Expert insights from Toronto developers. Web, mobile, AI, and SEO best practices.",
+    images: ["https://coderdesign.com/og-image.png"],
+  },
   alternates: {
     canonical: "https://coderdesign.com/blogs",
   },
@@ -49,5 +64,29 @@ function loadPosts(): BlogMeta[] {
 
 export default function Page() {
   const posts = loadPosts();
-  return <Blogs posts={posts} />;
+
+  const blogListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "CoderDesign Development Blog",
+    "description": "Expert insights from Toronto developers. Full stack web development, mobile apps, AI automation, and SEO best practices.",
+    "url": "https://coderdesign.com/blogs",
+    "publisher": { "@type": "Organization", "name": "CoderDesign", "url": "https://coderdesign.com" },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": posts.map((post, i) => ({
+        "@type": "ListItem",
+        "position": i + 1,
+        "url": `https://coderdesign.com/blog/${post.slug}`,
+        "name": post.title,
+      })),
+    },
+  };
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogListJsonLd) }} />
+      <Blogs posts={posts} />
+    </>
+  );
 }

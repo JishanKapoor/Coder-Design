@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0d9488;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg)" rx="24"/>
+  <circle cx="480" cy="460" r="100" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="4"/>
+  <line x1="552" y1="532" x2="640" y2="620" stroke="rgba(255,255,255,0.15)" stroke-width="6" stroke-linecap="round"/>
+  <rect x="360" y="680" width="360" height="24" rx="12" fill="rgba(255,255,255,0.08)"/>
+  <rect x="360" y="720" width="280" height="24" rx="12" fill="rgba(255,255,255,0.06)"/>
+  <rect x="360" y="760" width="320" height="24" rx="12" fill="rgba(255,255,255,0.05)"/>
+  <text x="540" y="880" text-anchor="middle" fill="rgba(255,255,255,0.1)" font-size="48" font-family="system-ui,sans-serif" font-weight="600">SEO Management</text>
+</svg>

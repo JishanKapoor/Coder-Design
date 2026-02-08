@@ -34,7 +34,7 @@ export function HeroSection() {
           >
             <div className="inline-flex items-center gap-2 rounded-full border border-violet-200 bg-violet-50 px-4 py-2 text-sm text-violet-700 transition-transform duration-200 hover:scale-105">
               <Sparkles className="h-4 w-4" />
-              <span>New York's Premier Development Agency</span>
+              <span>Toronto's Top Rated Software Development Company</span>
             </div>
           </motion.div>
 
@@ -43,20 +43,22 @@ export function HeroSection() {
             variants={shouldAnimate ? itemVariants : undefined}
             className="mb-6 text-slate-900"
           >
-            Full-Stack Development,
+            Custom Software Development{" "}
             <br />
             <span className="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
-              AI & SEO Solutions
+              Company in Toronto
             </span>
           </motion.h1>
 
           {/* Description */}
           <motion.p
             variants={shouldAnimate ? itemVariants : undefined}
-            className="mx-auto mb-10 max-w-2xl"
+            className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-slate-600"
           >
-            Transform your business with cutting-edge full-stack engineering, AI-powered automation, 
-            and data-driven SEO strategies. Based in New York, serving enterprises nationwide.
+            CoderDesign is a Toronto based software development company that builds custom web applications, 
+            mobile apps, AI automation systems, and SEO strategies for startups and enterprises across the GTA. 
+            Our senior engineers and data scientists deliver production ready solutions that scale from 
+            your first MVP to millions of users.
           </motion.p>
 
           {/* CTA Buttons */}

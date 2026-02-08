@@ -93,7 +93,7 @@ export default function Blogs({ posts }: { posts: BlogMeta[] }) {
                         <div className="relative overflow-hidden">
                           <div className="aspect-[16/9] bg-slate-100">
                             <img
-                              src={post.image || "https://via.placeholder.com/800x500?text=No+Image"}
+                              src={post.image || "/og-image.png"}
                               alt={post.title}
                               className="h-full w-full object-cover"
                               loading="lazy"

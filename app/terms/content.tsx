@@ -234,7 +234,7 @@ export default function Terms() {
               <AccordionTrigger className="text-left">Governing Law & Dispute Resolution</AccordionTrigger>
               <AccordionContent className="text-slate-600">
                 <div className="pt-2">
-                  <p>These Terms are governed by the laws of the State of New York. Any disputes shall first be attempted to be resolved through good faith negotiation. If unresolved, disputes shall be settled through binding arbitration in New York, NY.</p>
+                  <p>These Terms are governed by the laws of the Province of Ontario, Canada. Any disputes shall first be attempted to be resolved through good faith negotiation. If unresolved, disputes shall be settled through binding arbitration in Toronto, ON.</p>
                 </div>
               </AccordionContent>
             </AccordionItem>
@@ -251,12 +251,12 @@ export default function Terms() {
               <div>
                 <p className="mb-1 text-sm text-indigo-200">Address</p>
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=17+State+Street+New+York+NY+10004"
+                  href="https://www.google.com/maps/search/?api=1&query=7+Grosvenor+Street+Toronto+ON+M4Y+0E2"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-indigo-200"
                 >
-                  17 State Street<br />New York, NY 10004
+                  7 Grosvenor Street<br />Toronto, ON M4Y 0E2
                 </a>
               </div>
               <div>

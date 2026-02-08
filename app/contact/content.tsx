@@ -59,10 +59,13 @@ export default function Contact() {
               Get in Touch
             </div>
             <h1 className="mb-6 text-slate-900">
-              Let's Build Something Great Together
+              Contact CoderDesign Toronto
             </h1>
             <p className="mx-auto max-w-2xl text-lg leading-relaxed text-slate-600">
-              Have a project in mind? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+              Have a project in mind? Whether you need a custom web application, a mobile app, 
+              AI powered automation, or an SEO strategy, we would love to hear from you. 
+              Reach out to our Toronto team and we will respond within one business day with a detailed 
+              assessment and custom quote.
             </p>
           </motion.div>
         </div>
@@ -81,7 +84,8 @@ export default function Contact() {
             >
               <h2 className="mb-6 text-slate-900">Contact Information</h2>
               <p className="mb-8 text-slate-600">
-                Reach out to us through any of these channels. We're here to help you succeed.
+                Reach out through any of the channels below. Our team is available Monday through Friday, 
+                9 AM to 6 PM EST, and we typically respond to all inquiries within 24 hours.
               </p>
 
               <div className="space-y-6">
@@ -122,13 +126,13 @@ export default function Contact() {
                   <div>
                     <h3 className="mb-1 text-slate-900">Office</h3>
                     <a
-                      href="https://maps.app.goo.gl/vSXFVtvVq2Tm3D4F7"
+                      href="https://www.google.com/maps/search/?api=1&query=7+Grosvenor+Street+Toronto+ON+M4Y+0E2"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-slate-600 transition-colors hover:text-violet-600"
                     >
-                      17 State Street<br />
-                      New York, NY 10004
+                      7 Grosvenor Street<br />
+                      Toronto, ON M4Y 0E2
                     </a>
                   </div>
                 </div>
@@ -145,25 +149,6 @@ export default function Contact() {
                     </p>
                   </div>
                 </div>
-              </div>
-
-              {/* Map */}
-              <div className="mt-8 overflow-hidden rounded-xl border border-slate-200">
-                <a
-                  href="https://www.google.com/maps/place/Coder+Design/@40.7028925,-74.016452,17z/data=!3m2!4b1!5s0x89c3ae75e45b1d09:0xe1bbb17003dfca79!4m6!3m5!1s0x89c25b00680cc5c7:0xc3f35bd01807f248!8m2!3d40.7028885!4d-74.0138771!16s%2Fg%2F11yk4skcny?entry=tts&g_ep=EgoyMDI1MTEwNC4xIPu8ASoASAFQAw%3D%3D&skid=300d5522-93b2-4dc2-8fea-0f46ea20435f"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.952672935889!2d-74.01393268459395!3d40.70432797933107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a165bedccab%3A0x2cb2ddf003b67659!2s17%20State%20St%2C%20New%20York%2C%20NY%2010004!5e0!3m2!1sen!2sus!4v1234567890123"
-                    width="100%"
-                    height="250"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Office Location"
-                  ></iframe>
-                </a>
               </div>
             </motion.div>
 
@@ -261,10 +246,10 @@ export default function Contact() {
                         className="h-11 w-full appearance-none rounded-md border border-slate-300 bg-gradient-to-r from-violet-50 to-white px-3 py-2 pr-10 text-sm text-slate-700 shadow-sm ring-offset-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-600 focus-visible:ring-offset-2 hover:border-violet-400"
                       >
                         <option value="">Select a service...</option>
-                        <option value="Full-Stack Development">Full-Stack Development</option>
+                        <option value="Web Application Development">Web Application Development</option>
                         <option value="Mobile App Development">Mobile App Development</option>
-                        <option value="AI & Machine Learning">AI & Machine Learning</option>
-                        <option value="AI SEO & AEO Services">AI SEO & AEO Services</option>
+                        <option value="AI Automation and Chatbots">AI Automation and Chatbots</option>
+                        <option value="SEO Services">SEO Services</option>
                         <option value="Other">Other</option>
                       </select>
                       <ChevronDown className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-500" />

@@ -14,10 +14,10 @@ export function Navigation() {
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const navItems = [
-    { label: "Full-Stack Development", href: "/full-stack-engineering" },
-    { label: "Mobile App Development", href: "/mobile-app-development" },
-    { label: "AI & Machine Learning", href: "/ai-workflow" },
-    { label: "AI SEO & AEO Services", href: "/seo-management" },
+    { label: "Web Development", href: "/full-stack-engineering" },
+    { label: "Mobile Apps", href: "/mobile-app-development" },
+    { label: "AI Automation", href: "/ai-workflow" },
+    { label: "SEO Services", href: "/seo-management" },
     { label: "Blogs", href: "/blogs" },
     { label: "About", href: "/about" },
   ];

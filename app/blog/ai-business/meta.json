@@ -1,11 +1,11 @@
 {
   "id": 1731590400000,
   "slug": "ai-business",
-  "title": "How AI is Transforming Modern Business Operations",
-  "author": "Sarah Johnson",
+  "title": "Full-Stack Development in 2025: The Complete Guide",
+  "author": "CoderDesign Team",
   "category": "Full-Stack Development",
   "image": "/uploads/1763137799087-full_stack_guide.jfif",
   "createdAt": "2025-11-14T00:00:00.000Z",
-  "short_description": "Full-stack development has become one of the most sought-after skills in the tech industry. As we enter 2025, the landscape continues to evolve with new frameworks, tools, and best practices emerging regularly. This comprehensive guide will walk you through everything you need to know to start your journey as a full-stack developer.",
+  "short_description": "Master full-stack development in 2025 with this complete guide covering React, Next.js, Node.js, Python, databases, DevOps, and best practices for building production-ready web applications.",
   "readTime": 8
 }

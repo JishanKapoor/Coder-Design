@@ -1,26 +1,28 @@
-import "./globals.css";
+﻿import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Coder Design - Full-Stack Development, AI & SEO Agency in New York",
+  title: "Software Development Company Toronto | CoderDesign",
   description:
-    "Premier New York development agency specializing in full-stack engineering, AI/ML solutions, mobile app development, and data-driven SEO. Serving NYC, Manhattan, Brooklyn.",
+    "Toronto software development company. Custom web apps, mobile apps, AI automation, and SEO. 100+ projects for startups and enterprises. (437) 239-2448.",
   keywords:
-    "New York development agency, NYC web development, full-stack development New York, AI machine learning NYC, SEO services New York, mobile app development NYC, React developers NYC, Manhattan web agency, Brooklyn app development, enterprise software New York",
+    "software development company Toronto, web development agency Toronto, custom software development Toronto, mobile app development Toronto, app developers Toronto, AI automation Toronto, SEO company Toronto, best software agency Toronto, React Next.js developers Toronto, full stack developers Toronto, Toronto web design, SaaS development Toronto, startup software development, ecommerce development Toronto, GTA app development",
   openGraph: {
-    title: "Coder Design - Full-Stack Development, AI & SEO Agency in New York",
+    title: "Software Development Company Toronto | CoderDesign",
     description:
-      "Premier New York development agency specializing in full-stack engineering, AI/ML, mobile app development, and SEO services.",
+      "Toronto software development company. Custom web apps, mobile apps, AI automation, and SEO. Trusted by startups and enterprises across the GTA.",
     url: "https://coderdesign.com",
-    siteName: "Coder Design",
-    locale: "en_US",
+    siteName: "CoderDesign",
+    locale: "en_CA",
     type: "website",
+    images: [{ url: "https://coderdesign.com/og-image.png", width: 1200, height: 630, alt: "CoderDesign Software Development Toronto" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Coder Design - Full-Stack Development, AI & SEO Agency in New York",
+    title: "Software Development Company Toronto | CoderDesign",
     description:
-      "Premier NYC development agency. Full-stack engineering, AI/ML, mobile apps & SEO. Located at 17 State Street, New York.",
+      "Toronto software development company. Custom web apps, mobile apps, AI automation, and SEO. 7 Grosvenor Street, Toronto.",
+    images: ["https://coderdesign.com/og-image.png"],
   },
   alternates: {
     canonical: "https://coderdesign.com/",

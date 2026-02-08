@@ -43,8 +43,8 @@ export function Hero() {
             <div className="absolute -inset-4 rounded-3xl bg-gradient-to-r from-blue-500 to-cyan-500 opacity-20 blur-3xl" />
             <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-2xl">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwYW5hbHl0aWNzJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc2MTcyOTI3MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="AI Dashboard"
+                src="/images/hero-dashboard.jpg"
+                alt="CoderDesign software development dashboard for web, mobile, and AI projects"
                 className="w-full rounded-lg"
               />
             </div>

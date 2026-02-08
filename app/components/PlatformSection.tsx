@@ -7,39 +7,39 @@ import { containerVariants, itemVariants } from "../animations/variants";
 const features = [
   {
     icon: Code2,
-    title: "Full-Stack Engineering",
+    title: "Web Application Development",
     description:
-      "End-to-end development using React, Next.js, Node.js, Python, and Django. Building scalable, performant applications.",
+      "We build custom web applications from responsive frontends to scalable backend APIs. Our Toronto developers work with React, Next.js, Node.js, Python, and Django to deliver fast, reliable web apps with automated testing, CI/CD pipelines, and production grade code that ships quickly.",
   },
   {
     icon: Smartphone,
     title: "Mobile App Development",
     description:
-      "Native iOS and Android apps, plus cross-platform solutions with React Native and Flutter for maximum reach.",
+      "Native iOS and Android apps built with Swift and Kotlin, plus cross platform solutions using React Native and Flutter. We handle UI/UX design, prototyping, App Store submission, push notifications, in-app purchases, and post launch analytics.",
   },
   {
     icon: Brain,
-    title: "AI & Machine Learning",
+    title: "AI Automation and Chatbots",
     description:
-      "Custom AI models, chatbots, computer vision, and predictive analytics to automate and enhance your business.",
+      "Custom AI chatbots, workflow automation, computer vision, and predictive analytics pipelines. We integrate OpenAI, Claude, LangChain, and TensorFlow into production systems to automate repetitive tasks, extract insights from data, and build systems that learn over time.",
   },
   {
     icon: Search,
-    title: "AI SEO & AEO Services",
+    title: "SEO Services Toronto",
     description:
-      "AI-powered SEO with GEO targeting and Answer Engine Optimization (AEO) to dominate search rankings and increase organic traffic.",
+      "AI powered search engine optimization with local GEO targeting and Answer Engine Optimization (AEO). We use machine learning for keyword discovery, automate on-page optimization, build high authority backlinks, and optimize for Google AI Overviews and voice search.",
   },
   {
     icon: Cloud,
-    title: "Cloud Infrastructure",
+    title: "Cloud Infrastructure and DevOps",
     description:
-      "AWS, Google Cloud, and Azure deployment with auto-scaling, monitoring, and enterprise-grade security.",
+      "Production grade cloud architecture on AWS, Google Cloud, and Azure with auto scaling, load balancing, container orchestration, and infrastructure as code using Terraform. We set up monitoring, alerting, disaster recovery, and cost optimization at any scale.",
   },
   {
     icon: Shield,
-    title: "DevOps & Security",
+    title: "Security and Compliance",
     description:
-      "CI/CD pipelines, automated testing, security audits, and compliance management for peace of mind.",
+      "Enterprise grade security at every layer including encrypted data at rest and in transit, OAuth 2.0 authentication, role based access control, and SOC 2, GDPR, and PIPEDA compliance. We run regular penetration testing, vulnerability assessments, and security audits.",
   },
 ];
 
@@ -67,15 +67,15 @@ export function PlatformSection() {
             variants={shouldAnimate ? itemVariants : undefined}
             className="mb-6 text-slate-900"
           >
-            Everything You Need to Succeed Online
+            Software Development Services in Toronto
           </motion.h2>
           
           <motion.p
             variants={shouldAnimate ? itemVariants : undefined}
             className="mb-16"
           >
-            Comprehensive development, AI integration, and marketing solutions to scale your business 
-            in New York's competitive market and beyond.
+            Full stack web development, mobile apps, AI automation, and SEO services to help 
+            your business grow in Toronto and across Canada.
           </motion.p>
         </motion.div>
 

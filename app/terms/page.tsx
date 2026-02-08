@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Terms from "./content";
 
 
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   keywords:
     "terms and conditions, terms of service, legal, agreements",
   alternates: {
-    canonical: "https://coderdesign.ai/terms",
+    canonical: "https://coderdesign.com/terms",
   },
 };
 

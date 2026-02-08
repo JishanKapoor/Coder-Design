@@ -61,7 +61,7 @@ export default function HomePage() {
             }}
           >
             Transform your business with cutting-edge full-stack engineering, AI-powered automation,
-            and data-driven SEO strategies. Based in New York at 17 State Street, serving
+            and data-driven SEO strategies. Based in Toronto at 7 Grosvenor Street, serving
             enterprises nationwide.
           </p>
           <Link
@@ -109,7 +109,7 @@ export default function HomePage() {
             <article style={cardStyle}>
               <h3 style={cardHeading}>Mobile App Development</h3>
               <p style={cardText}>
-                iOS & Android apps with React Native, Flutter, Swift, Kotlin for NYC businesses.
+                iOS & Android apps with React Native, Flutter, Swift, Kotlin for Toronto businesses.
               </p>
             </article>
             <article style={cardStyle}>
@@ -133,7 +133,7 @@ export default function HomePage() {
             Contact Coder Design
           </h2>
           <p style={{ fontSize: "1.125rem", color: "#64748b", marginBottom: "1rem" }}>
-            17 State Street, New York, NY 10004
+            7 Grosvenor Street, Toronto, ON M4Y 0E2
           </p>
           <p style={{ fontSize: "1.125rem", color: "#64748b", marginBottom: "1rem" }}>
             <a href="tel:+14372392448" style={{ color: "#7c3aed", textDecoration: "none" }}>
@@ -156,7 +156,7 @@ export default function HomePage() {
         }}
       >
         <p>
-          © 2025 Coder Design. New York development agency serving Manhattan, Brooklyn & beyond.
+          © 2025 Coder Design. Toronto development agency serving the GTA, Ontario & beyond.
         </p>
       </footer>
     </div>

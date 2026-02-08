@@ -1,37 +1,36 @@
 "use client";
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { useAnimations } from "../hooks/useAnimations";
 import { containerVariants, itemVariants } from "../animations/variants";
 
 const testimonials = [
   {
     quote:
-      "Coder Design transformed our e-commerce platform with exceptional full-stack engineering. The team delivered a scalable solution that increased our conversion rate by 150%.",
-    author: "David Morrison",
-    role: "CEO",
-    company: "RetailPro NYC",
+      "CoderDesign rebuilt our e-commerce platform with Next.js and Node.js. Page load times dropped from 6 seconds to under 1.2 seconds, and our conversion rate jumped 150% in three months. Easily the best software development company we have worked with in Toronto.",
+    author: "Arjun P.",
+    role: "Founder & CEO",
+    company: "Toronto DTC Brand (E-commerce)",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1672685667592-0392f458f46f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBwb3J0cmFpdHxlbnwxfHx8fDE3NjE3NDYxMzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "/images/testimonial-arjun.jpg",
   },
   {
     quote:
-      "Their AI chatbot solution reduced our customer service costs by 40% while improving satisfaction scores. The team's expertise in machine learning is truly impressive.",
-    author: "Jennifer Lee",
+      "CoderDesign built an AI chatbot using n8n and OpenAI that integrates with our Salesforce CRM. It now resolves 70% of inbound tickets without human involvement, our support costs dropped 40%, and customer satisfaction actually went up. Their AI automation team really knows what they are doing.",
+    author: "Sarah K.",
     role: "VP of Operations",
-    company: "FinTech Solutions",
+    company: "Bay Street Insurtech Startup",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHdvbWFuJTIwaGVhZHNob3R8ZW58MXx8fHwxNzYxNzAzNzgwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "/images/testimonial-sarah.jpg",
   },
   {
     quote:
-      "Our organic traffic increased 320% in 6 months with their SEO strategies. Based in Manhattan, they understand the NYC market better than anyone. Highly recommended!",
-    author: "Robert Martinez",
+      "We hired CoderDesign after struggling with three other agencies. Within six months, our organic traffic grew 320% and we rank on page one for over 40 competitive Toronto real estate keywords. Their technical SEO audit found issues others completely missed. The best SEO team in the GTA.",
+    author: "Michael T.",
     role: "Marketing Director",
-    company: "Metro Real Estate Group",
+    company: "GTA Real Estate Brokerage",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMG1hbiUyMHBvcnRyYWl0fGVufDF8fHx8MTc2MTcwMzg3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "/images/testimonial-michael.jpg",
   },
 ];
 
@@ -59,7 +58,7 @@ export function TestimonialsSection() {
             variants={shouldAnimate ? itemVariants : undefined}
             className="mb-16 text-slate-900"
           >
-            Trusted by New York Businesses
+            Trusted by Toronto Businesses
           </motion.h2>
         </motion.div>
 
@@ -80,10 +79,13 @@ export function TestimonialsSection() {
               </p>
 
               <div className="flex items-center gap-3">
-                <ImageWithFallback
+                <img 
                   src={testimonial.image}
-                  alt={testimonial.author}
+                  alt={`${testimonial.author} - ${testimonial.role} at ${testimonial.company}`}
                   className="h-12 w-12 rounded-full object-cover"
+                  loading="lazy"
+                  width={48}
+                  height={48}
                 />
                 <div>
                   <div className="text-sm text-slate-900">{testimonial.author}</div>

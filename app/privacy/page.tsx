@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Privacy from "./content";
 
 export const metadata: Metadata = {
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   keywords:
     "privacy policy, data protection, GDPR, privacy",
   alternates: {
-    canonical: "https://coderdesign.ai/privacy",
+    canonical: "https://coderdesign.com/privacy",
   },
 };
 

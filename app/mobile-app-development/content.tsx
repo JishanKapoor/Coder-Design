@@ -4,13 +4,8 @@ import { Navigation } from "../components/Navigation";
 import { FooterSection } from "../components/FooterSection";
 import { Button } from "../components/ui/button";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../components/ui/accordion";
 import Link from 'next/link';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "../components/ui/accordion";
 import { 
   Smartphone, 
   Zap, 
@@ -101,11 +96,17 @@ export default  function MobileAppDevelopment() {
                 Mobile App Development
               </div>
               <h1 className="mb-6 text-slate-900">
-                Build Powerful Mobile Apps That Users Love
+                Mobile App Development Company in Toronto
               </h1>
 
               <p className="mb-8 text-lg leading-relaxed text-slate-600">
-                We create high-performance mobile applications for iOS and Android that deliver exceptional user experiences. From native apps to cross-platform solutions, we bring your mobile vision to life with cutting-edge technology and user-centric design.
+                We design and develop high performance mobile applications for iOS and Android that users 
+                love and businesses depend on. From native apps built with Swift and Kotlin to cross 
+                platform solutions powered by React Native and Flutter, we handle every stage including 
+                user research, UI/UX design, agile development, automated testing, App Store submission, 
+                and post launch analytics. Our Toronto based app developers build for speed, accessibility, 
+                and engagement with features like push notifications, biometric authentication, offline 
+                capabilities, and real time synchronization built in from the start.
               </p>
                <div className="mb-8 flex flex-wrap gap-2">
                 {technologies.map((tech) => (
@@ -135,8 +136,8 @@ export default  function MobileAppDevelopment() {
             <div className="relative">
               <div className="aspect-square overflow-hidden rounded-2xl shadow-2xl">
                 <ImageWithFallback 
-                  src="https://images.unsplash.com/photo-1633250391894-397930e3f5f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXZlbG9wbWVudHxlbnwxfHx8fDE3NjE3Mzg2ODR8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Mobile App Development"
+                  src="/images/hero-mobile.jpg"
+                  alt="Mobile app development services for iOS and Android in Toronto"
                   className="h-full w-full object-cover"
                 />
               </div>
@@ -228,12 +229,20 @@ export default  function MobileAppDevelopment() {
         <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div>
-              <h2 className="mb-6 text-slate-900">Why Mobile Apps Matter</h2>
+              <h2 className="mb-6 text-slate-900">Why Mobile App Development Matters</h2>
               <p className="mb-6 text-lg text-slate-600">
-                Mobile apps provide direct access to your customers, offering enhanced engagement, better user experiences, and increased brand loyalty. With over 6 billion smartphone users worldwide, having a mobile presence is essential for business growth.
+                Mobile apps provide a direct, always on channel to your customers offering richer 
+                experiences than mobile websites, deeper engagement through push notifications and 
+                personalization, and stronger brand loyalty through daily interaction. With over 6.8 billion 
+                smartphone users worldwide and mobile commerce accounting for 73% of all e-commerce sales, 
+                a well built mobile app is a critical revenue driver and customer retention tool for any 
+                business.
               </p>
               <p className="text-slate-600">
-                Our team specializes in creating apps that not only look great but perform flawlessly, keeping users engaged and driving conversions.
+                Our Toronto based team specializes in creating apps that not only look beautiful but 
+                perform under real world conditions with fast load times, smooth animations, offline first 
+                architecture, and crash free releases. We combine data driven UX decisions with rigorous 
+                engineering to keep users engaged, reduce churn, and drive measurable conversions.
               </p>
             </div>
 
@@ -268,7 +277,7 @@ export default  function MobileAppDevelopment() {
               { 
                 step: "01", 
                 title: "Discovery & Strategy", 
-                description: "We start with in-depth research to understand your business objectives, target users, and competitive landscape.",
+                description: "We research your business objectives, target users, and competitive landscape in depth.",
                 details: [
                   "Stakeholder interviews and requirement gathering",
                   "Market research and competitor analysis",
@@ -280,7 +289,7 @@ export default  function MobileAppDevelopment() {
               { 
                 step: "02", 
                 title: "Design & Prototyping", 
-                description: "Our designers create intuitive, beautiful interfaces that users love to interact with.",
+                description: "Our designers create intuitive, beautiful interfaces that your users will love to interact with.",
                 details: [
                   "Wireframing and user flow mapping",
                   "High-fidelity UI/UX design",
@@ -304,7 +313,7 @@ export default  function MobileAppDevelopment() {
               { 
                 step: "04", 
                 title: "Launch & Support", 
-                description: "We handle deployment and provide ongoing support to ensure your app's continued success.",
+                description: "We handle app store deployment and provide ongoing support to ensure your app's continued success.",
                 details: [
                   "App Store and Google Play submission",
                   "Beta testing with TestFlight and Firebase",
@@ -350,39 +359,39 @@ export default  function MobileAppDevelopment() {
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
           <div className="mb-16 text-center">
             <h2 className="mb-4 text-slate-900">
-              Frequently Asked Questions
+              Mobile App Development Questions Answered
             </h2>
           </div>
 
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
-              <AccordionTrigger>Should I build a native or cross-platform app?</AccordionTrigger>
-              <AccordionContent>
-                It depends on your requirements. Native apps (Swift/Kotlin) offer the best performance and platform-specific features, while cross-platform (React Native/Flutter) are more cost-effective and faster to develop. We'll help you choose based on your budget, timeline, and feature needs.
+              <AccordionTrigger className="text-lg font-semibold text-slate-900">Should I build a native app or a cross platform app?</AccordionTrigger>
+              <AccordionContent className="leading-relaxed text-slate-600">
+                It depends on what you need. Native apps built with Swift (iOS) or Kotlin (Android) deliver the best performance and access to every platform feature. Cross platform frameworks like React Native and Flutter let you ship to both platforms faster and at lower cost. For most Toronto startups and small businesses, we recommend React Native because it covers 95% of use cases at roughly 40% less development time than building two native apps.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger>How long does it take to build a mobile app?</AccordionTrigger>
-              <AccordionContent>
-                A simple app takes 2-3 months, while complex apps with advanced features can take 4-6 months or more. This includes design, development, testing, and deployment. We provide detailed timelines during the planning phase.
+              <AccordionTrigger className="text-lg font-semibold text-slate-900">How long does it take to build a mobile app?</AccordionTrigger>
+              <AccordionContent className="leading-relaxed text-slate-600">
+                A simple app with core features takes 2 to 3 months. Apps with advanced functionality like real time messaging, payment processing, or AI features typically take 4 to 6 months. This includes UI/UX design, development, testing across devices, and preparation for App Store and Google Play submission. We lay out the full timeline during our free consultation.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger>Do you help with App Store submission?</AccordionTrigger>
-              <AccordionContent>
-                Yes! We handle the entire submission process for both the Apple App Store and Google Play Store, including preparing marketing materials, meeting guidelines, and managing the review process.
+              <AccordionTrigger className="text-lg font-semibold text-slate-900">Do you handle App Store and Google Play submission?</AccordionTrigger>
+              <AccordionContent className="leading-relaxed text-slate-600">
+                Yes, we manage the entire submission process for both stores. This includes preparing screenshots, writing store descriptions, meeting Apple and Google review guidelines, configuring analytics, and handling any rejections or revision requests. We have done this dozens of times and know exactly what reviewers look for.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
-              <AccordionTrigger>Can you maintain and update my existing app?</AccordionTrigger>
-              <AccordionContent>
-                Absolutely. We offer ongoing maintenance and support packages including bug fixes, OS updates, new features, performance optimization, and security patches to keep your app running smoothly.
+              <AccordionTrigger className="text-lg font-semibold text-slate-900">Can you update or fix my existing mobile app?</AccordionTrigger>
+              <AccordionContent className="leading-relaxed text-slate-600">
+                Absolutely. We offer maintenance packages that cover bug fixes, OS compatibility updates, new feature development, performance optimization, and security patches. Whether your app was built by another team or is just showing its age, our Toronto developers can audit it and bring it up to current standards.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
-              <AccordionTrigger>How much does mobile app development cost?</AccordionTrigger>
-              <AccordionContent>
-                The cost of mobile app development depends on various factors, including the complexity of the app, the features required, and the platforms (iOS, Android, or both) you want to target. We provide detailed, transparent quotes after understanding your specific requirements. Please <Link href="/contact" className="text-blue-600 underline">reach out to us</Link> for a personalized estimate.
+              <AccordionTrigger className="text-lg font-semibold text-slate-900">How do I get started with mobile app development?</AccordionTrigger>
+              <AccordionContent className="leading-relaxed text-slate-600">
+                It starts with a free consultation where we discuss your app idea, target audience, and business goals. From there we create a detailed project roadmap covering design, development, testing, and launch. Every project is scoped individually based on your requirements. <Link href="/contact" className="text-blue-600 underline">Contact us</Link> to schedule your free consultation.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

@@ -1,30 +1,61 @@
-# robots.txt for Coder Design - New York Development Agency
+﻿# robots.txt for CoderDesign - Toronto Software Development Company
 # https://coderdesign.com
 
-# Allow all search engines to crawl the site
+# Allow all search engines and AI crawlers
 User-agent: *
 Allow: /
 
-# Specific rules for major search engines
+# Google Search and AI
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 0
 
+User-agent: Google-Extended
+Allow: /
+
+# Bing Search and AI
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 0
 
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic / Claude
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Common Crawl (used by many AI systems)
+User-agent: CCBot
+Allow: /
+
+# Apple / Siri
+User-agent: Applebot
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# Yahoo
 User-agent: Slurp
 Allow: /
-Crawl-delay: 1
 
-# Disallow crawling of admin or internal pages (if any)
+# Disallow admin and internal paths
 Disallow: /admin/
 Disallow: /api/
-Disallow: /*.json$
 Disallow: /private/
 
-# Allow crawling of all service pages
+# Allow all service and content pages
 Allow: /full-stack-engineering
 Allow: /mobile-app-development
 Allow: /ai-workflow
@@ -32,10 +63,7 @@ Allow: /seo-management
 Allow: /contact
 Allow: /about
 Allow: /blogs
+Allow: /blog/
 
-# Sitemap location
+# Sitemap
 Sitemap: https://coderdesign.com/sitemap.xml
-
-# Cache directives for better crawling
-# Crawl responsibly with proper delay
-Crawl-delay: 0

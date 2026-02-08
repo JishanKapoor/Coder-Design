@@ -5,12 +5,7 @@ import { Navigation } from "../components/Navigation";
 import { FooterSection } from "../components/FooterSection";
 import { Button } from "../components/ui/button";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "../components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../components/ui/accordion";
 import { 
   Search, 
   TrendingUp, 
@@ -92,10 +87,16 @@ export default function SEOManagementDetail() {
                 AI SEO, GEO & AEO
               </div>
               <h1 className="mb-6 text-slate-900">
-                AI-Powered SEO to Dominate Search Rankings
+                SEO Services Toronto: AI Powered Search Optimization
               </h1>
               <p className="mb-8 text-lg leading-relaxed text-slate-600">
-                Harness the power of artificial intelligence to revolutionize your SEO strategy. Our AI-driven approach combines machine learning, natural language processing, and predictive analytics to boost your organic visibility, drive qualified traffic, and maximize ROI with intelligent automation.
+                Harness the power of artificial intelligence to grow your organic search traffic. 
+                Our Toronto SEO team combines machine learning, natural language processing, and 
+                predictive analytics to boost your visibility, drive qualified traffic, and maximize 
+                ROI with intelligent automation. We go beyond traditional keyword research. Our team 
+                builds comprehensive content ecosystems, optimizes for Google AI Overviews, and ensures 
+                your brand appears as a trusted answer across search engines, voice assistants, and AI 
+                platforms like ChatGPT, Perplexity, and Gemini.
               </p>
               
               <div className="mb-8 flex flex-wrap gap-3">
@@ -129,8 +130,8 @@ export default function SEOManagementDetail() {
             >
               <div className="aspect-square overflow-hidden rounded-2xl shadow-2xl">
                 <ImageWithFallback 
-                  src="https://images.unsplash.com/photo-1712571664162-602064e30014?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZW8lMjBkaWdpdGFsJTIwbWFya2V0aW5nfGVufDF8fHx8MTc2MTc3MjU5M3ww&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="SEO & Digital Marketing"
+                  src="/images/hero-seo.jpg"
+                  alt="SEO and digital marketing services in Toronto by CoderDesign"
                   className="h-full w-full object-cover"
                 />
               </div>
@@ -225,12 +226,21 @@ export default function SEOManagementDetail() {
         <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div>
-              <h2 className="mb-6 text-slate-900">Why SEO is Essential for Business Growth</h2>
+              <h2 className="mb-6 text-slate-900">Why SEO is Essential for Toronto Businesses</h2>
               <p className="mb-6 text-lg text-slate-600">
-                Search Engine Optimization is one of the most cost-effective marketing strategies. Unlike paid advertising, SEO delivers sustainable long-term results, building organic traffic that compounds over time. With 93% of online experiences beginning with a search engine, ranking high on Google is crucial for visibility and growth.
+                Search Engine Optimization is the highest ROI marketing channel available to businesses. 
+                Unlike paid advertising where traffic stops the moment you pause your budget, SEO delivers 
+                sustainable, compounding organic traffic that grows month over month. With 93% of online 
+                experiences beginning with a search engine and 75% of users never scrolling past the first 
+                page, ranking high on Google is essential for visibility, credibility, and long term 
+                revenue growth.
               </p>
               <p className="text-slate-600">
-                Our data-driven SEO strategies help businesses increase organic visibility, attract qualified leads, and achieve measurable ROI from search engine traffic.
+                Our data driven, AI enhanced SEO strategies help Toronto businesses and enterprises 
+                nationwide increase organic visibility by 200 to 500%, attract high intent leads actively 
+                searching for their services, and achieve measurable ROI that compounds over time. We 
+                combine technical SEO audits, AI powered content strategy, and strategic link building 
+                to build sustainable competitive advantages.
               </p>
             </div>
 
@@ -238,14 +248,14 @@ export default function SEOManagementDetail() {
               className="space-y-3"
             >
               {[
-                "Increase organic traffic by 200-500% within 6-12 months",
-                "Improve search rankings for high-value keywords",
-                "Build brand authority and trust with customers",
+                "Increase organic traffic by 200% to 500% within 6 to 12 months",
+                "Improve search rankings for high value keywords in Toronto",
+                "Build brand authority and trust with your target customers",
                 "Generate qualified leads with high purchase intent",
-                "Achieve better ROI than paid advertising long-term",
-                "Gain competitive advantage in your industry",
-                "Improve user experience and site performance",
-                "Track and measure results with detailed analytics"
+                "Achieve better ROI than paid advertising over the long term",
+                "Gain a competitive advantage in your industry and local market",
+                "Improve user experience and site performance scores",
+                "Track and measure results with detailed monthly analytics"
               ].map((benefit, index) => (
                 <div
                   key={benefit}
@@ -316,7 +326,7 @@ export default function SEOManagementDetail() {
               { 
                 step: "04", 
                 title: "Monitoring & Reporting", 
-                description: "We continuously track performance and refine strategies for optimal results.",
+                description: "We continuously track performance metrics and refine strategies to deliver optimal results.",
                 details: [
                   "Weekly ranking monitoring",
                   "Monthly traffic and conversion reports",
@@ -361,42 +371,40 @@ export default function SEOManagementDetail() {
       <section className="bg-white py-24" ref={useScrollFadeIn<HTMLDivElement>()}>
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
           <div className="mb-16 text-center">
-            <h2
-              className="mb-4 text-slate-900"
-            >
+            <h2 className="mb-4 text-slate-900">
               SEO Questions Answered
             </h2>
           </div>
 
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
-              <AccordionTrigger>How long does it take to see SEO results?</AccordionTrigger>
-              <AccordionContent>
-                SEO is a long-term strategy. You may see initial improvements in 2-3 months, but significant results typically take 4-6 months. Timeframes vary based on competition, current site health, and keyword difficulty.
+              <AccordionTrigger className="text-lg font-semibold text-slate-900">How long does it take to see results from SEO?</AccordionTrigger>
+              <AccordionContent className="leading-relaxed text-slate-600">
+                Most of our Toronto clients see initial ranking improvements within 2 to 3 months. Significant results like first page rankings for competitive keywords typically show up around the 4 to 6 month mark. The timeline depends on your current domain authority, competition level, and how aggressively we can publish new content.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger>What's the difference between on-page and off-page SEO?</AccordionTrigger>
-              <AccordionContent>
-                On-page SEO involves optimizing elements on your website (content, meta tags, site speed), while off-page SEO focuses on external factors like backlinks and brand mentions that boost your site's authority.
+              <AccordionTrigger className="text-lg font-semibold text-slate-900">What is the difference between on page and off page SEO?</AccordionTrigger>
+              <AccordionContent className="leading-relaxed text-slate-600">
+                On page SEO covers everything directly on your website: content quality, meta tags, header structure, internal linking, page speed, and mobile friendliness. Off page SEO focuses on building your site authority through quality backlinks, brand mentions, and local citations. You need both to rank well on Google in a competitive market like Toronto.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger>Do you guarantee first page rankings?</AccordionTrigger>
-              <AccordionContent>
-                No reputable SEO agency can guarantee specific rankings as search algorithms constantly evolve. However, we use proven strategies to significantly improve your visibility and drive qualified organic traffic.
+              <AccordionTrigger className="text-lg font-semibold text-slate-900">Do you guarantee first page Google rankings?</AccordionTrigger>
+              <AccordionContent className="leading-relaxed text-slate-600">
+                No honest SEO company can guarantee specific rankings because Google updates its algorithm hundreds of times a year. What we can guarantee is a proven process: thorough keyword research, technical optimization, quality content creation, and consistent link building. Our track record speaks for itself with 300% average traffic increases for our clients.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
-              <AccordionTrigger>How do you measure SEO success?</AccordionTrigger>
-              <AccordionContent>
-                We track multiple metrics including organic traffic growth, keyword rankings, domain authority, conversion rates, and ROI. You'll receive detailed monthly reports showing progress toward your goals.
+              <AccordionTrigger className="text-lg font-semibold text-slate-900">How do you track and report on SEO progress?</AccordionTrigger>
+              <AccordionContent className="leading-relaxed text-slate-600">
+                You get a detailed monthly report covering organic traffic growth, keyword ranking changes, domain authority trends, conversion rates, and ROI. We use Google Search Console, Google Analytics, and professional SEO tools to track every metric. No vanity numbers, just the data that actually matters to your business.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
-              <AccordionTrigger>Is SEO better than paid advertising?</AccordionTrigger>
-              <AccordionContent>
-                SEO and paid ads serve different purposes. SEO provides sustainable long-term growth and higher ROI over time, while paid ads deliver immediate results. We recommend a balanced approach for maximum impact.
+              <AccordionTrigger className="text-lg font-semibold text-slate-900">Should I invest in SEO or paid advertising?</AccordionTrigger>
+              <AccordionContent className="leading-relaxed text-slate-600">
+                Both have their place. Paid ads give you immediate traffic but stop the moment you stop paying. SEO takes longer to build but generates compounding returns over time with much higher ROI. For most Toronto businesses, we recommend starting SEO alongside a smaller paid ad budget, then gradually shifting budget to SEO as organic rankings grow.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

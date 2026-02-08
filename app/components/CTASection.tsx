@@ -23,15 +23,17 @@ export function CTASection() {
             variants={shouldAnimate ? itemVariants : undefined}
             className="mb-6 text-slate-900"
           >
-            Ready to Transform Your Business?
+            Ready to Start Your Project?
           </motion.h2>
 
           <motion.p
             variants={shouldAnimate ? itemVariants : undefined}
-            className="mb-10"
+            className="mb-10 text-lg leading-relaxed text-slate-600"
           >
-            Partner with New York's leading development agency. From full-stack engineering 
-            to AI integration and SEO optimization—we deliver results that matter.
+            Whether you need a custom web application, a mobile app for iOS and Android, AI powered 
+            automation, or an SEO strategy that drives organic revenue, our Toronto based team of 
+            senior engineers, data scientists, and growth strategists is ready to help. Book a free 
+            consultation and get a custom project quote today.
           </motion.p>
 
           <motion.div

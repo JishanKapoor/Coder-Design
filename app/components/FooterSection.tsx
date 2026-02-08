@@ -4,10 +4,10 @@ import { Logo } from "./Logo";
 import Link from "next/link";
 const footerLinks = {
   Services: [
-    { label: "Full-Stack Development", href: "/full-stack-engineering" },
+    { label: "Web Application Development", href: "/full-stack-engineering" },
     { label: "Mobile App Development", href: "/mobile-app-development" },
-    { label: "AI & Machine Learning", href: "/ai-workflow" },
-    { label: "AI SEO & AEO Services", href: "/seo-management" },
+    { label: "AI Automation and Chatbots", href: "/ai-workflow" },
+    { label: "SEO Services", href: "/seo-management" },
   ],
   Company: [
     { label: "About Us", href: "/about" },
@@ -16,7 +16,7 @@ const footerLinks = {
   ],
   Legal: [
     { label: "Privacy Policy", href: "/privacy" },
-    { label: "Terms & Conditions", href: "/terms" },
+    { label: "Terms and Conditions", href: "/terms" },
   ],
 };
 
@@ -38,7 +38,7 @@ export function FooterSection() {
               <span className="text-2xl tracking-tight text-slate-900">CoderDesign</span>
             </Link>
             <p className="mb-8 max-w-md text-slate-600">
-              Development agency specializing in full-stack development, mobile apps, AI/ML solutions, and AI-powered SEO with GEO targeting & AEO.
+              Toronto based software development company specializing in custom web applications, mobile apps, AI automation, and SEO services.
             </p>
             
             {/* Contact Info */}
@@ -62,7 +62,7 @@ export function FooterSection() {
                 <span>(437) 239-2448</span>
               </a>
               <a 
-                href="https://maps.app.goo.gl/vSXFVtvVq2Tm3D4F7"
+                href="https://www.google.com/maps/search/?api=1&query=7+Grosvenor+Street+Toronto+ON+M4Y+0E2"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-start gap-3 text-slate-600 transition-colors hover:text-violet-600"
@@ -70,7 +70,7 @@ export function FooterSection() {
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-violet-100">
                   <MapPin className="h-5 w-5 text-violet-600" />
                 </div>
-                <span>17 State Street<br />New York, NY 10004</span>
+                <span>7 Grosvenor Street<br />Toronto, ON M4Y 0E2</span>
               </a>
             </div>
             

@@ -1,232 +1,108 @@
-"use client";
-import React, { useState, useEffect } from "react"; 
+﻿import HomeContent from "./homepage-content";
 
-// import { useState, useEffect } from "react";
-import { Navigation } from "./components/Navigation";
-import { HeroSection } from "./components/HeroSection";
-import { LogoCloud } from "./components/LogoCloud";
-import { PlatformSection } from "./components/PlatformSection";
-import { SolutionsSection } from "./components/SolutionsSection";
-import { EnterpriseSection } from "./components/EnterpriseSection";
-import { TestimonialsSection } from "./components/TestimonialsSection";
-import { CTASection } from "./components/CTASection";
-import { FooterSection } from "./components/FooterSection";
-// import { BackendDevelopment } from "./BackendDevelopment/BackendDevelopment";
-
-
-
-import { BackendDevelopmentDetail } from "./BackendDevelopmentDetail/BackendDevelopmentDetail";
-
-
-// SEO Component for adding meta tags and structured data
-function SEO({ 
-  title = "Coder Design - Full-Stack Development, AI & SEO Agency in New York",
-  description = "Premier New York development agency specializing in full-stack engineering, AI/ML solutions, and data-driven SEO. Serving NYC, Manhattan, Brooklyn, and nationwide. Expert React, Next.js, Python, Django developers. Call (437) 239-2448.",
-  keywords = "New York development agency, NYC web development, full-stack development New York, AI machine learning NYC, SEO services New York, React developers NYC, Manhattan web agency, Brooklyn app development, enterprise software New York, custom software development NYC",
-  canonical = "https://coderdesign.com"
-}) {
-  useEffect(() => {
-    // Set document title
-    document.title = title;
-    
-    // Set meta description
-    let metaDescription = document.querySelector('meta[name="description"]');
-    if (!metaDescription) {
-      metaDescription = document.createElement('meta');
-      metaDescription.setAttribute('name', 'description');
-      document.head.appendChild(metaDescription);
-    }
-    metaDescription.setAttribute('content', description);
-    
-    // Set meta keywords
-    let metaKeywords = document.querySelector('meta[name="keywords"]');
-    if (!metaKeywords) {
-      metaKeywords = document.createElement('meta');
-      metaKeywords.setAttribute('name', 'keywords');
-      document.head.appendChild(metaKeywords);
-    }
-    metaKeywords.setAttribute('content', keywords);
-
-    // Set canonical URL
-    let canonicalLink = document.querySelector('link[rel="canonical"]');
-    if (!canonicalLink) {
-      canonicalLink = document.createElement('link');
-      canonicalLink.setAttribute('rel', 'canonical');
-      document.head.appendChild(canonicalLink);
-    }
-    canonicalLink.setAttribute('href', canonical);
-
-    // Open Graph tags for social media
-    const ogTags = [
-      { property: 'og:title', content: title },
-      { property: 'og:description', content: description },
-      { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: canonical },
-      { property: 'og:site_name', content: 'CoderDesign' },
-    ];
-
-    ogTags.forEach(tag => {
-      let ogTag = document.querySelector(`meta[property="${tag.property}"]`);
-      if (!ogTag) {
-        ogTag = document.createElement('meta');
-        ogTag.setAttribute('property', tag.property);
-        document.head.appendChild(ogTag);
-      }
-      ogTag.setAttribute('content', tag.content);
-    });
-
-    // Twitter Card tags
-    const twitterTags = [
-      { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: title },
-      { name: 'twitter:description', content: description },
-    ];
-
-    twitterTags.forEach(tag => {
-      let twitterTag = document.querySelector(`meta[name="${tag.name}"]`);
-      if (!twitterTag) {
-        twitterTag = document.createElement('meta');
-        twitterTag.setAttribute('name', tag.name);
-        document.head.appendChild(twitterTag);
-      }
-      twitterTag.setAttribute('content', tag.content);
-    });
-
-    // Add structured data (JSON-LD) for organization
-    const structuredData = {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Coder Design",
-      "alternateName": "CoderDesign",
-      "description": description,
-      "url": canonical,
-      "logo": `${canonical}/logo.png`,
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "17 State Street",
-        "addressLocality": "New York",
-        "addressRegion": "NY",
-        "postalCode": "10004",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "40.7037",
-        "longitude": "-74.0137"
-      },
-      "telephone": "(437) 239-2448",
-      "email": "hello@coderdesign.com",
-      "areaServed": [
-        "New York",
-        "Manhattan",
-        "Brooklyn",
-        "Queens",
-        "Bronx",
-        "Staten Island",
-        "United States"
-      ],
-      "priceRange": "$$$$",
-      "sameAs": [
-        "https://twitter.com/coderdesign",
-        "https://linkedin.com/company/coderdesign",
-        "https://github.com/coderdesign"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Customer Service",
-        "telephone": "(437) 239-2448",
-        "email": "hello@coderdesign.com",
-        "areaServed": "US",
-        "availableLanguage": ["English"]
-      },
-      "offers": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Full-Stack Development",
-            "description": "End-to-end web application development using modern frameworks"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "AI & Machine Learning",
-            "description": "Custom AI models and machine learning solutions"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "AI SEO & AEO Services",
-            "description": "AI-powered SEO with GEO targeting and Answer Engine Optimization"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Mobile App Development",
-            "description": "iOS and Android mobile application development"
-          }
+const homepageStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "CoderDesign",
+  "alternateName": "Coder Design",
+  "description": "CoderDesign is a Toronto based software development company offering custom web development, mobile app development, AI automation, and SEO services for startups and enterprises across the GTA.",
+  "url": "https://coderdesign.com",
+  "logo": "https://coderdesign.com/og-image.png",
+  "image": "https://coderdesign.com/og-image.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "7 Grosvenor Street",
+    "addressLocality": "Toronto",
+    "addressRegion": "ON",
+    "postalCode": "M4Y 0E2",
+    "addressCountry": "CA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "43.6655",
+    "longitude": "-79.3848"
+  },
+  "telephone": "+14372392448",
+  "email": "hello@coderdesign.com",
+  "openingHours": "Mo-Fr 09:00-18:00",
+  "areaServed": [
+    { "@type": "City", "name": "Toronto" },
+    { "@type": "City", "name": "Mississauga" },
+    { "@type": "City", "name": "Brampton" },
+    { "@type": "City", "name": "Markham" },
+    { "@type": "City", "name": "Vaughan" },
+    { "@type": "AdministrativeArea", "name": "Greater Toronto Area" },
+    { "@type": "AdministrativeArea", "name": "Ontario" },
+    { "@type": "Country", "name": "Canada" }
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/coder-design-905aa5390/",
+    "https://www.instagram.com/coderdesigngroup/",
+    "https://medium.com/@coderdesign"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Sales",
+    "telephone": "+14372392448",
+    "email": "hello@coderdesign.com",
+    "areaServed": "CA",
+    "availableLanguage": ["English"]
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Software Development Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Custom Web Application Development",
+          "description": "Full stack web development using React, Next.js, Node.js, Python, and Django. Custom SaaS platforms, e-commerce sites, and enterprise web applications."
         }
-      ]
-    };
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Mobile App Development",
+          "description": "iOS and Android mobile app development using React Native, Flutter, Swift, and Kotlin. From concept to App Store launch."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AI Automation and Chatbot Development",
+          "description": "AI powered workflow automation using n8n, Make, OpenAI, and custom LLMs. Chatbots, data pipelines, and predictive analytics."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "SEO Services Toronto",
+          "description": "AI powered SEO, technical SEO audits, content strategy, link building, local SEO, and answer engine optimization for Toronto businesses."
+        }
+      }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "bestRating": "5",
+    "worstRating": "1",
+    "ratingCount": "47"
+  }
+};
 
-    let scriptTag = document.querySelector('script[type="application/ld+json"]');
-    if (!scriptTag) {
-      scriptTag = document.createElement('script');
-      scriptTag.setAttribute('type', 'application/ld+json');
-      document.head.appendChild(scriptTag);
-    }
-    scriptTag.textContent = JSON.stringify(structuredData);
-
-  }, [title, description, keywords, canonical]);
-
-  return null;
-}
-
-export default function App() {
-  // Simple routing based on hash
-  const [currentPage, setCurrentPage] = useState('home');
-
-  useEffect(() => {
-    const handleHashChange = () => {
-      const path = window.location.hash.substring(2) || 'home'; // Remove #/ prefix
-      setCurrentPage(path);
-      
-      // Scroll to top on page change
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-
-    handleHashChange();
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
-  }, []);
-
-
-
-  // Home page (default)
+export default function Page() {
   return (
     <>
-      <SEO />
-      <div className="min-h-screen bg-white">
-        <Navigation />
-        
-        <main id="main-content">
-          <HeroSection />
-          <LogoCloud />
-          <PlatformSection />
-          <SolutionsSection />
-          <EnterpriseSection />
-          <TestimonialsSection />
-          <CTASection />
-        </main>
-        
-        <FooterSection />
-      </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageStructuredData) }}
+      />
+      <HomeContent />
     </>
   );
 }

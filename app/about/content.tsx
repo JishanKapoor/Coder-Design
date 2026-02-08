@@ -12,23 +12,23 @@ export default function About() {
   const values = [
     {
       icon: Target,
-      title: "Client-Focused",
-      description: "We put your success first. Every solution we build is tailored to your specific business goals and challenges."
+      title: "Client Focused",
+      description: "Your success is our north star. Every architecture decision, every line of code, and every deployment is tailored to your specific business goals, timeline, and budget constraints."
     },
     {
       icon: Zap,
-      title: "Innovation-Driven",
-      description: "We stay ahead of the curve, leveraging the latest technologies and best practices to deliver cutting-edge solutions."
+      title: "Innovation Driven",
+      description: "We stay at the forefront of technology, continuously evaluating new frameworks, AI models, and engineering practices to ensure our clients benefit from the most effective tools available."
     },
     {
       icon: Shield,
-      title: "Quality & Security",
-      description: "We never compromise on code quality or security. Every project undergoes rigorous testing and security audits."
+      title: "Quality and Security",
+      description: "We never cut corners. Every project includes automated testing, code reviews, security audits, and performance benchmarking to ensure production-grade reliability from day one."
     },
     {
       icon: Heart,
       title: "Transparent Communication",
-      description: "Clear communication and collaboration are at the heart of everything we do. You're always in the loop."
+      description: "Weekly demos, Slack channels, detailed sprint reports, and honest timelines. You always know exactly where your project stands and what is coming next."
     }
   ];
 
@@ -42,27 +42,27 @@ export default function About() {
   const team = [
     {
       name: "Engineering Team",
-      role: "Full-Stack & Backend Development",
-      description: "Our engineering team consists of full-stack developers, backend specialists, and cloud architects with deep expertise in Python, Node.js, React, and modern frameworks.",
-      image: "https://images.unsplash.com/photo-1752170080635-db168448f85d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjB0ZWFtfGVufDF8fHx8MTc2MTc5MTA3OHww&ixlib=rb-4.1.0&q=80&w=1080"
+      role: "Full Stack and Backend Development",
+      description: "Our engineering team consists of full stack developers, backend specialists, and cloud architects with deep expertise in Python, Node.js, React, and modern frameworks.",
+      image: "/images/team-engineering.jpg"
     },
     {
       name: "AI/ML Team",
       role: "Artificial Intelligence & Machine Learning",
-      description: "Data scientists and ML engineers building intelligent automation solutions, chatbots, voice assistants, and predictive analytics using TensorFlow, PyTorch, and cutting-edge AI technologies.",
-      image: "https://images.unsplash.com/photo-1660810731526-0720827cbd38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2Z0d2FyZSUyMGVuZ2luZWVyJTIwd29ya3NwYWNlfGVufDF8fHx8MTc2MTc5MTA4MHww&ixlib=rb-4.1.0&q=80&w=1080"
+      description: "Data scientists and ML engineers building intelligent automation solutions, chatbots, voice assistants, and predictive analytics using TensorFlow, PyTorch, and the latest AI technologies.",
+      image: "/images/team-ai.jpg"
     },
     {
       name: "SEO & Growth Team",
-      role: "AI SEO & AEO Specialists",
-      description: "SEO experts specializing in AI-powered optimization, GEO targeting, and Answer Engine Optimization (AEO) to drive organic growth and maximize search visibility.",
-      image: "https://images.unsplash.com/photo-1666698809123-44e998e93f23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwbWFya2V0aW5nJTIwdGVhbSUyMG9mZmljZXxlbnwxfHx8fDE3NjE3OTg2OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+      role: "SEO and AEO Specialists",
+      description: "SEO experts specializing in AI powered optimization, GEO targeting, and Answer Engine Optimization (AEO) to drive organic growth and maximize search visibility.",
+      image: "/images/team-seo.jpg"
     },
     {
       name: "Leadership Team",
       role: "Strategic Direction & Management",
       description: "Experienced leaders guiding our vision, ensuring quality delivery, and maintaining strong client relationships across all projects and services.",
-      image: "https://images.unsplash.com/photo-1758518731468-98e90ffd7430?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGxlYWRlcnNoaXAlMjB0ZWFtJTIwcHJvZmVzc2lvbmFsfGVufDF8fHx8MTc2MTc5OTQwN3ww&ixlib=rb-4.1.0&q=80&w=1080"
+      image: "/images/team-leadership.jpg"
     }
   ];
 
@@ -82,10 +82,14 @@ export default function About() {
               About Us
             </div>
             <h1 className="mb-6 text-slate-900">
-              Building the Future, One Line of Code at a Time
+              About CoderDesign: Software Development Company in Toronto
             </h1>
             <p className="mx-auto max-w-3xl text-lg leading-relaxed text-slate-600">
-              CoderDesign is a development agency specializing in backend development, custom software, AI/ML, and AI-powered SEO services. Our team brings together experienced professionals who help businesses transform their ideas into scalable, high-performance digital solutions.
+              CoderDesign is a Toronto based software development company specializing in custom web 
+              applications, mobile app development, AI automation, and SEO services. Our team of senior 
+              engineers, data scientists, and growth strategists partners with startups, scale ups, and 
+              enterprises across Canada to transform ambitious ideas into scalable, high performance 
+              digital products that drive real business outcomes.
             </p>
           </div>
         </div>
@@ -120,10 +124,18 @@ export default function About() {
             >
               <h2 className="mb-6 text-slate-900">Our Mission</h2>
               <p className="mb-4 text-lg text-slate-600">
-                We exist to empower businesses with technology that drives real results. Whether you're a startup looking to build your MVP or an enterprise scaling your infrastructure, we provide the expertise and dedication to make it happen.
+                We exist to empower businesses with technology that drives measurable results. Whether 
+                you are a seed stage startup building your first MVP, a growing company automating 
+                operations with AI, or an enterprise modernizing legacy infrastructure, we provide the 
+                technical expertise, strategic thinking, and dedicated execution to make it happen. Our 
+                mission is to be the engineering partner you can trust with your most important projects.
               </p>
               <p className="text-lg text-slate-600">
-                Our team combines technical excellence with a deep understanding of business needs. We don't just write code – we craft solutions that solve problems, improve efficiency, and create value.
+                Our team combines deep technical excellence across Python, Node.js, React, cloud 
+                platforms, and machine learning with a genuine understanding of business strategy. 
+                We do not just write code. We architect solutions that solve real problems, improve 
+                operational efficiency, reduce costs, and create lasting competitive advantages for 
+                our clients across Toronto and the GTA.
               </p>
             </div>
 

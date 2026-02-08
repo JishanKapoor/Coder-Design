@@ -7,14 +7,14 @@ import { containerVariants, itemVariants, slideInLeftVariants, slideInRightVaria
 import Link from 'next/link';
 
 const features = [
-  "Enterprise-grade security & compliance",
-  "Scalable cloud architecture (AWS, GCP, Azure)",
-  "Custom development & integration",
-  "Dedicated project management",
-  "24/7 priority support",
-  "Agile development methodology",
-  "Advanced analytics & reporting",
-  "Flexible engagement models",
+  "Enterprise grade security with SOC 2, GDPR, and PIPEDA compliance",
+  "Scalable cloud architecture on AWS, GCP, and Azure with 99.99% uptime",
+  "Custom software development with third party API integration",
+  "Dedicated project managers with transparent Agile workflows",
+  "24/7 priority support, monitoring, and incident response",
+  "Sprint based Agile development with weekly demos and reporting",
+  "Advanced analytics dashboards and real time business intelligence",
+  "Flexible engagement models including fixed price, retainer, or dedicated teams",
 ];
 
 export function EnterpriseSection() {
@@ -41,18 +41,20 @@ export function EnterpriseSection() {
               variants={shouldAnimate ? itemVariants : undefined}
               className="mb-6 text-white"
             >
-              Built for New York's
+              Enterprise Software{" "}
               <br />
-              Most Demanding Enterprises
+              Development in Toronto
             </motion.h2>
 
             <motion.p 
               variants={shouldAnimate ? itemVariants : undefined}
               className="mb-8 text-lg leading-relaxed text-slate-400"
             >
-              Serving Fortune 500 companies and high-growth startups in NYC with enterprise-grade 
-              development, AI solutions, and AI-powered SEO services. Our proven methodologies deliver 
-              results at scale with security and compliance built-in.
+              We partner with high growth startups and established enterprises across Toronto 
+              and the GTA to deliver mission critical software, AI powered automation, and SEO 
+              strategies that drive measurable revenue. Our team follows battle tested methodologies 
+              including Agile sprints, rigorous code reviews, automated CI/CD, and security first 
+              architecture to ship reliable solutions on time and within budget.
             </motion.p>
 
             <motion.div 

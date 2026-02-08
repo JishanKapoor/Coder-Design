@@ -198,12 +198,12 @@ export default function Privacy() {
               <div>
                 <p className="mb-1 text-sm text-violet-200">Address</p>
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=17+State+Street+New+York+NY+10004"
+                  href="https://www.google.com/maps/search/?api=1&query=7+Grosvenor+Street+Toronto+ON+M4Y+0E2"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-violet-200"
                 >
-                  17 State Street<br />New York, NY 10004
+                  7 Grosvenor Street<br />Toronto, ON M4Y 0E2
                 </a>
               </div>
               <div>

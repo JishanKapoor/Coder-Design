@@ -8,7 +8,7 @@ const stats = [
     icon: Code2,
     metric: "15+",
     label: "Years Combined Experience",
-    description: "Expert full-stack developers"
+    description: "Expert full stack developers"
   },
   {
     icon: Brain,
@@ -26,7 +26,7 @@ const stats = [
     icon: TrendingUp,
     metric: "99.9%",
     label: "Uptime Guaranteed",
-    description: "Enterprise-grade reliability"
+    description: "Enterprise grade reliability"
   },
 ];
 
@@ -52,7 +52,7 @@ export function StatsSection() {
             transition={shouldAnimate ? { delay: 0.1 } : undefined}
             className="mx-auto max-w-2xl text-lg text-slate-600"
           >
-            From full-stack development to AI integration and SEO optimization—delivering excellence at scale
+            From full stack development to AI integration and SEO optimization, delivering excellence at scale
           </motion.p>
         </div>
 

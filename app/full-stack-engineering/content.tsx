@@ -50,50 +50,50 @@ export default function FullStackEngineering() {
     {
       icon: Layers,
       title: "Frontend Development",
-      description: "Modern, responsive user interfaces built with React, Next.js, and TypeScript. We create fast, accessible, and beautiful web applications that deliver exceptional user experiences.",
-      features: ["React & Next.js", "TypeScript", "Responsive Design", "Performance Optimization"]
+      description: "Modern, responsive user interfaces built with React, Next.js, and TypeScript. We create fast, accessible web applications with server side rendering (SSR), static site generation (SSG), and optimistic UI patterns that deliver great user experiences across all devices and screen sizes.",
+      features: ["React and Next.js", "TypeScript and SSR/SSG", "Responsive and Accessible Design", "Performance Optimization and Core Web Vitals"]
     },
     {
       icon: Database,
       title: "Backend Architecture",
-      description: "Scalable server-side applications using Python, Django, and Node.js. Our backend systems are built for reliability, security, and performance at scale.",
-      features: ["RESTful APIs", "GraphQL", "Database Design", "Authentication & Security"]
+      description: "Scalable server side systems using Python, Django, Node.js, and Express. We design RESTful and GraphQL APIs with proper authentication, rate limiting, caching layers, and database optimization built to handle thousands of concurrent requests while maintaining sub 100ms response times.",
+      features: ["RESTful and GraphQL APIs", "Python/Django and Node.js", "Database Design and Query Optimization", "Authentication, Authorization, and Security"]
     },
     {
       icon: Cloud,
       title: "Cloud Infrastructure",
-      description: "Cloud-native solutions on AWS, Google Cloud, and Azure. We design and implement infrastructure that scales automatically and remains cost-effective.",
-      features: ["AWS & GCP", "Serverless Architecture", "Auto-scaling", "CI/CD Pipelines"]
+      description: "Cloud native architectures on AWS, Google Cloud, and Azure designed for high availability and cost efficiency. We implement infrastructure as code with Terraform, auto scaling groups, container orchestration with Docker and Kubernetes, and fully automated CI/CD pipelines for seamless deployments.",
+      features: ["AWS, GCP, and Azure", "Docker and Kubernetes", "Terraform and Infrastructure as Code", "CI/CD Pipelines and GitOps"]
     },
     {
       icon: Shield,
-      title: "Security & Compliance",
-      description: "Enterprise-grade security measures including encryption, authentication, and compliance with industry standards (GDPR, SOC 2, HIPAA).",
-      features: ["Data Encryption", "OAuth & JWT", "GDPR Compliance", "Security Audits"]
+      title: "Security and Compliance",
+      description: "Enterprise grade security measures including AES 256 encryption at rest and TLS 1.3 in transit, multi factor authentication, RBAC, and compliance with GDPR, SOC 2, PIPEDA, and HIPAA standards. We conduct regular penetration testing and automated vulnerability scanning.",
+      features: ["End to End Encryption", "OAuth 2.0, JWT, and MFA", "GDPR, SOC 2, and PIPEDA Compliance", "Penetration Testing and Security Audits"]
     },
     {
       icon: Zap,
       title: "Performance Optimization",
-      description: "Lightning-fast applications through code optimization, caching strategies, CDN integration, and database query optimization.",
-      features: ["Code Optimization", "Caching Strategies", "CDN Integration", "Load Balancing"]
+      description: "We obsess over speed. From code splitting and lazy loading to Redis caching, CDN integration, database indexing, and query optimization, we ensure your application scores 90+ on Google Lighthouse and meets all Core Web Vitals thresholds for superior SEO performance and user experience.",
+      features: ["Core Web Vitals Optimization", "Redis and CDN Caching Strategies", "Code Splitting and Lazy Loading", "Load Balancing and Horizontal Scaling"]
     },
     {
       icon: Code2,
-      title: "Microservices & APIs",
-      description: "Modular, maintainable architectures using microservices patterns. We build robust APIs that enable seamless integration and scalability.",
-      features: ["Microservices Design", "API Gateway", "Service Mesh", "Event-Driven Architecture"]
+      title: "Microservices and APIs",
+      description: "Modular, maintainable architectures using microservices patterns with API gateways, service mesh, and event driven communication via Kafka or RabbitMQ. We build APIs that are well documented with OpenAPI/Swagger, versioned, and designed for backward compatibility and seamless third party integration.",
+      features: ["Microservices and Domain Driven Design", "API Gateway and Service Mesh", "Event Driven Architecture (Kafka/RabbitMQ)", "OpenAPI Documentation and Versioning"]
     }
   ];
 
   const benefits = [
-    "End-to-end ownership from concept to deployment",
+    "End to end ownership from concept to deployment",
     "Scalable architecture that grows with your business",
-    "Modern tech stack with best-in-class tools",
+    "Modern tech stack with best in class tools",
     "Seamless integration with existing systems",
     "24/7 monitoring and support",
     "Automated testing and continuous deployment",
-    "Security-first development approach",
-    "Optimized for performance and cost-efficiency"
+    "Security first development approach",
+    "Optimized for performance and cost efficiency"
   ];
 
   const caseStudies = [
@@ -130,10 +130,16 @@ export default function FullStackEngineering() {
                 Full-Stack Engineering
               </div>
               <h1 className="mb-6 text-slate-900">
-                Full-Stack Development Backend, Frontend & Cloud
+                Custom Web Application Development in Toronto
               </h1>
               <p className="mb-8 text-lg leading-relaxed text-slate-600">
-                We build complete end-to-end solutions from frontend interfaces to backend APIs and cloud infrastructure. Our expertise spans the entire technology stack — delivering scalable, secure, and high-performance applications using Python, Django, Node.js, React, Next.js, AWS, and Google Cloud.
+                We build complete, production ready software systems from pixel perfect frontend 
+                interfaces to high throughput backend APIs and auto scaling cloud infrastructure. 
+                Our senior Toronto developers architect solutions using Python, Django, Node.js, 
+                React, Next.js, PostgreSQL, AWS, and Google Cloud, following industry best practices 
+                for test driven development, continuous integration, and zero downtime deployments. 
+                Whether you are launching an MVP, migrating a legacy system, or scaling to millions 
+                of users, we deliver clean, maintainable code that your business can depend on.
               </p>
               
               <div className="mb-8 flex flex-wrap gap-3">
@@ -165,8 +171,8 @@ export default function FullStackEngineering() {
             <div className="relative">
               <div className="aspect-square overflow-hidden rounded-2xl shadow-2xl">
                 <ImageWithFallback 
-                  src="https://images.unsplash.com/photo-1649451844931-57e22fc82de3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmdWxsJTIwc3RhY2slMjBkZXZlbG9wbWVudCUyMGNvZGluZ3xlbnwxfHx8fDE3NjE3OTE5Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Full-Stack Development"
+                  src="/images/hero-fullstack.jpg"
+                  alt="Full-stack web development services in Toronto by CoderDesign"
                   className="h-full w-full object-cover"
                 />
               </div>
@@ -262,12 +268,20 @@ export default function FullStackEngineering() {
         <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div>
-              <h2 className="mb-6 text-slate-900">Why Full-Stack Development Matters</h2>
+              <h2 className="mb-6 text-slate-900">Why Custom Web Development Matters</h2>
               <p className="mb-6 text-lg text-slate-600">
-                Full-stack development ensures seamless integration between frontend, backend, and cloud infrastructure. With a unified approach, we eliminate communication gaps, reduce development time, and deliver cohesive solutions that work flawlessly across the entire technology stack.
+                Custom web application development ensures seamless integration between every layer of 
+                your product, from the user interface your customers interact with to the APIs and 
+                business logic powering your features to the cloud infrastructure keeping it all 
+                running. With a unified engineering team owning the entire stack, you eliminate 
+                handoff delays between frontend and backend teams, reduce bugs caused by 
+                miscommunication, and accelerate your time to market by up to 40%.
               </p>
               <p className="text-slate-600">
-                Our team provides end-to-end ownership, from user interface design to scalable backend systems and cloud deployment, ensuring your application is built for success.
+                Our Toronto based engineers bring end to end ownership to every project. That means 
+                one team, one vision, and one accountable partner from initial architecture design 
+                through production deployment, monitoring, and ongoing iteration. The result is a 
+                cohesive, well tested product that performs under load and scales as your business grows.
               </p>
             </div>
 
@@ -302,7 +316,7 @@ export default function FullStackEngineering() {
               { 
                 step: "01", 
                 title: "Discovery & Planning", 
-                description: "We analyze your business requirements and create a comprehensive technical roadmap.",
+                description: "We analyze your business requirements and create a comprehensive technical roadmap for success.",
                 details: [
                   "Business requirements and user story mapping",
                   "Technology stack selection and recommendation",
@@ -314,7 +328,7 @@ export default function FullStackEngineering() {
               { 
                 step: "02", 
                 title: "Design & Architecture", 
-                description: "We design scalable system architecture and intuitive user interfaces.",
+                description: "We design scalable system architecture and intuitive user interfaces aligned with your goals.",
                 details: [
                   "System architecture and infrastructure design",
                   "UI/UX wireframing and prototyping",
@@ -338,7 +352,7 @@ export default function FullStackEngineering() {
               { 
                 step: "04", 
                 title: "Deployment & Support", 
-                description: "We deploy to production and provide ongoing monitoring and maintenance.",
+                description: "We deploy to production with zero downtime and provide ongoing monitoring and maintenance.",
                 details: [
                   "Cloud infrastructure setup (AWS/GCP/Azure)",
                   "CI/CD pipeline configuration",
@@ -387,39 +401,39 @@ export default function FullStackEngineering() {
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
           <div className="mb-16 text-center">
             <h2 className="mb-4 text-slate-900">
-              Frequently Asked Questions
+              Web Development Questions Answered
             </h2>
           </div>
 
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
-              <AccordionTrigger>What technologies do you specialize in?</AccordionTrigger>
-              <AccordionContent>
-                We specialize in modern tech stacks including Python/Django, Node.js/Express, React/Next.js, PostgreSQL, MongoDB, Redis, AWS, and Google Cloud. We choose the best technology based on your specific requirements.
+              <AccordionTrigger className="text-lg font-semibold text-slate-900">What technologies do you use for web development?</AccordionTrigger>
+              <AccordionContent className="leading-relaxed text-slate-600">
+                Our Toronto team works with React, Next.js, Node.js, Python, Django, PostgreSQL, MongoDB, Redis, AWS, and Google Cloud. We pick the right stack based on your project goals, expected traffic, and long term scalability needs. No cookie cutter solutions here.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger>How long does a typical project take?</AccordionTrigger>
-              <AccordionContent>
-                Project timelines vary based on complexity. A simple web application might take 4-8 weeks, while enterprise-grade platforms can take 3-6 months. We provide detailed timelines during the planning phase.
+              <AccordionTrigger className="text-lg font-semibold text-slate-900">How long does a web development project take?</AccordionTrigger>
+              <AccordionContent className="leading-relaxed text-slate-600">
+                A straightforward web application usually takes 4 to 8 weeks from kickoff to launch. More complex enterprise platforms with custom integrations and multiple user roles can take 3 to 6 months. We give you a detailed timeline and milestones during the free consultation so there are no surprises.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger>Do you provide ongoing maintenance and support?</AccordionTrigger>
-              <AccordionContent>
-                Yes, we offer flexible maintenance and support packages to ensure your application remains secure, performant, and up-to-date. This includes bug fixes, security patches, and feature enhancements.
+              <AccordionTrigger className="text-lg font-semibold text-slate-900">Do you offer ongoing maintenance after launch?</AccordionTrigger>
+              <AccordionContent className="leading-relaxed text-slate-600">
+                Yes. Every project comes with a post launch support period, and we offer monthly maintenance packages that cover bug fixes, security patches, performance monitoring, and feature updates. Most of our clients in Toronto and the GTA stay with us well beyond the initial build.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
-              <AccordionTrigger>Can you scale my existing application?</AccordionTrigger>
-              <AccordionContent>
-                Absolutely. We can audit your current infrastructure, identify bottlenecks, and implement optimizations to improve performance and scalability. This includes database optimization, caching strategies, and cloud architecture improvements.
+              <AccordionTrigger className="text-lg font-semibold text-slate-900">Can you modernize or scale my existing application?</AccordionTrigger>
+              <AccordionContent className="leading-relaxed text-slate-600">
+                Absolutely. We do this regularly for businesses that have outgrown their current platform. Our process starts with a full code and infrastructure audit, then we tackle bottlenecks through database optimization, API refactoring, cloud migration, caching, and frontend modernization to React or Next.js.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
-              <AccordionTrigger>What is your development process?</AccordionTrigger>
-              <AccordionContent>
-                We follow an agile methodology with 2-week sprints, regular demos, and continuous client collaboration. You'll have full visibility into progress through project management tools and weekly status calls.
+              <AccordionTrigger className="text-lg font-semibold text-slate-900">What does your development process look like?</AccordionTrigger>
+              <AccordionContent className="leading-relaxed text-slate-600">
+                We follow agile methodology with two week sprints. You get regular demos, direct Slack access to your development team, and weekly status calls. Full transparency from day one so you always know exactly where your project stands and what is coming next.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

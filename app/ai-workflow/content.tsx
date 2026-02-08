@@ -5,12 +5,7 @@ import { Navigation } from "../components/Navigation";
 import { FooterSection } from "../components/FooterSection";
 import { Button } from "../components/ui/button";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "../components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../components/ui/accordion";
 import { 
   Brain, 
   Mic, 
@@ -92,10 +87,16 @@ export default function AIWorkflowDetail() {
                 AI & Workflow Automation
               </div>
               <h1 className="mb-6 text-slate-900">
-                Workflow Automation with n8n & AI Integration
+                AI Automation and Chatbot Development in Toronto
               </h1>
               <p className="mb-8 text-lg leading-relaxed text-slate-600">
-                Build powerful automation workflows with n8n, Make, and AI integration. We design custom workflow solutions that connect your apps, automate repetitive tasks, and integrate AI models for intelligent decision-making. Transform your business processes with self-hosted, scalable automation.
+                Build powerful, self hosted automation workflows with n8n, Make, and deep AI integration. 
+                We design custom workflow solutions that connect your CRMs, databases, email systems, and 
+                400+ apps, then supercharge them with AI models from OpenAI, Anthropic (Claude), and 
+                custom LLMs for intelligent decision making, content generation, and predictive triggers. 
+                Whether you need an AI powered customer support pipeline, an automated lead qualification 
+                system, or a complex data synchronization workflow, our Toronto team delivers production 
+                ready automation that saves hours of manual work every week.
               </p>
               
               <div className="mb-8 flex flex-wrap gap-3">
@@ -129,10 +130,9 @@ export default function AIWorkflowDetail() {
             >
               <div className="aspect-square overflow-hidden rounded-2xl shadow-2xl">
                 <ImageWithFallback 
-                  src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?q=80&w=1080&auto=format"
-                  alt="AI and Automation"
+                  src="/images/hero-ai.jpg"
+                  alt="AI automation and workflow development services in Toronto"
                   className="h-full w-full object-cover"
-                  style={{ objectPosition: '50% 15%' }}
                 />
               </div>
             </div>
@@ -226,12 +226,20 @@ export default function AIWorkflowDetail() {
         <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div>
-              <h2 className="mb-6 text-slate-900">Why AI & Machine Learning Matter</h2>
+              <h2 className="mb-6 text-slate-900">Why AI Automation Matters for Your Business</h2>
               <p className="mb-6 text-lg text-slate-600">
-                Artificial Intelligence and Machine Learning are transforming businesses by automating complex tasks, uncovering insights from data, and enabling intelligent decision-making. Organizations leveraging AI report significant improvements in efficiency, cost reduction, and customer satisfaction.
+                Artificial Intelligence and workflow automation are fundamentally reshaping how businesses 
+                operate. Organizations leveraging AI powered automation report 30% to 50% reductions in 
+                operational costs, 60% faster task completion, and significantly improved accuracy in 
+                repetitive processes. From intelligent chatbots handling customer inquiries around the 
+                clock to predictive analytics systems that forecast demand and optimize inventory, AI 
+                is no longer a luxury. It is a competitive necessity.
               </p>
               <p className="text-slate-600">
-                Our team specializes in implementing practical AI solutions that deliver measurable business value, from intelligent chatbots to predictive analytics systems.
+                Our team specializes in implementing practical, production-ready AI solutions that deliver 
+                measurable business value from day one. We don't just build proof-of-concepts — we deploy 
+                robust, monitored automation workflows that integrate seamlessly with your existing tech 
+                stack and scale as your needs evolve.
               </p>
             </div>
 
@@ -287,7 +295,7 @@ export default function AIWorkflowDetail() {
               { 
                 step: "01", 
                 title: "Workflow Discovery & Design", 
-                description: "We analyze your business processes to identify automation opportunities and design custom workflow solutions using n8n and Make.",
+                description: "We analyze your business processes to identify automation opportunities and design custom workflow solutions.",
                 details: [
                   "Business process mapping and analysis",
                   "Automation opportunity identification",
@@ -299,7 +307,7 @@ export default function AIWorkflowDetail() {
               { 
                 step: "02", 
                 title: "Workflow Development & Testing", 
-                description: "We build your custom workflows in n8n or Make, connecting all necessary apps, APIs, and databases with proper error handling.",
+                description: "We build custom workflows connecting your apps, APIs, and databases with robust error handling.",
                 details: [
                   "Visual workflow construction",
                   "Custom node and integration setup",
@@ -311,7 +319,7 @@ export default function AIWorkflowDetail() {
               { 
                 step: "03", 
                 title: "AI Integration & Enhancement", 
-                description: "We integrate AI capabilities into workflows using ChatGPT, Claude, and custom ML models for intelligent automation.",
+                description: "We integrate AI capabilities using ChatGPT, Claude, and custom ML models for intelligent automation.",
                 details: [
                   "LLM API integration (OpenAI, Anthropic)",
                   "AI-powered decision nodes",
@@ -323,7 +331,7 @@ export default function AIWorkflowDetail() {
               { 
                 step: "04", 
                 title: "Deployment & Monitoring", 
-                description: "We deploy workflows to production (self-hosted n8n or cloud Make) and set up monitoring for reliability and performance.",
+                description: "We deploy workflows to production and set up monitoring for reliability and performance.",
                 details: [
                   "Self-hosted n8n setup or cloud deployment",
                   "Webhook and trigger configuration",
@@ -368,42 +376,40 @@ export default function AIWorkflowDetail() {
       <section className="bg-white py-24" ref={useScrollFadeIn<HTMLDivElement>()}>
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
           <div className="mb-16 text-center">
-            <h2
-              className="mb-4 text-slate-900"
-            >
-              Workflow Automation FAQs
+            <h2 className="mb-4 text-slate-900">
+              AI Automation Questions Answered
             </h2>
           </div>
 
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
-              <AccordionTrigger>What's the difference between n8n, Make, and Zapier?</AccordionTrigger>
-              <AccordionContent>
-                n8n is self-hosted and open-source, giving you full control and unlimited workflows. Make (formerly Integromat) offers advanced visual workflow design with complex logic. Zapier is user-friendly but limited. We recommend n8n for custom needs and Make for complex scenarios with cloud hosting.
+              <AccordionTrigger className="text-lg font-semibold text-slate-900">What is the difference between n8n, Make, and Zapier?</AccordionTrigger>
+              <AccordionContent className="leading-relaxed text-slate-600">
+                n8n is open source and self hosted, which means you own your data and can run unlimited workflows without per task pricing. Make (formerly Integromat) is great for complex visual workflows hosted in the cloud. Zapier is the easiest to learn but gets expensive fast and has less flexibility. We typically recommend n8n for Toronto businesses that want full control and Make for teams that prefer managed hosting.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger>How long does it take to build a workflow automation?</AccordionTrigger>
-              <AccordionContent>
-                Simple workflows connecting 2-3 apps can be built in 1-3 days. Complex multi-step workflows with AI integration, error handling, and custom logic typically take 1-2 weeks. Enterprise-scale automation with multiple workflows can take 4-8 weeks.
+              <AccordionTrigger className="text-lg font-semibold text-slate-900">How long does it take to build a workflow automation?</AccordionTrigger>
+              <AccordionContent className="leading-relaxed text-slate-600">
+                Simple automations connecting two or three apps can be done in 1 to 3 days. A multi step workflow with AI integration, error handling, and conditional logic usually takes 1 to 2 weeks. Enterprise level automation projects with dozens of interconnected workflows typically take 4 to 8 weeks including testing and documentation.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger>Can you integrate AI like ChatGPT into workflows?</AccordionTrigger>
-              <AccordionContent>
-                Yes! We specialize in integrating AI models (ChatGPT, Claude, custom models) into n8n and Make workflows. This enables intelligent automation, natural language processing, content generation, and AI-powered decision-making within your workflows.
+              <AccordionTrigger className="text-lg font-semibold text-slate-900">Can you integrate ChatGPT or other AI models into workflows?</AccordionTrigger>
+              <AccordionContent className="leading-relaxed text-slate-600">
+                Yes, this is one of our specialties. We integrate OpenAI (GPT 4, GPT 4o), Anthropic Claude, and custom fine tuned models into n8n and Make workflows. This powers things like intelligent customer support chatbots, automated content generation, email classification, lead scoring, and document processing for businesses across Toronto.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
-              <AccordionTrigger>Do I need technical knowledge to manage workflows after deployment?</AccordionTrigger>
-              <AccordionContent>
-                No. We build workflows with visual interfaces and provide comprehensive documentation. You can monitor, modify, and manage workflows through easy-to-use dashboards. We also offer ongoing support and training to ensure your team is comfortable.
+              <AccordionTrigger className="text-lg font-semibold text-slate-900">Do I need technical skills to manage the automations?</AccordionTrigger>
+              <AccordionContent className="leading-relaxed text-slate-600">
+                Not at all. We build workflows with clear visual interfaces and provide thorough documentation for your team. You can monitor, pause, and adjust workflows through simple dashboards without writing any code. We also include training sessions and offer ongoing support if you need it.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
-              <AccordionTrigger>Is self-hosted n8n secure for business data?</AccordionTrigger>
-              <AccordionContent>
-                Absolutely. Self-hosted n8n gives you complete control over your data, which never leaves your infrastructure. We implement industry-standard security practices including encryption, authentication, and access controls. This makes n8n ideal for handling sensitive business data.
+              <AccordionTrigger className="text-lg font-semibold text-slate-900">Is self hosted n8n secure enough for business data?</AccordionTrigger>
+              <AccordionContent className="leading-relaxed text-slate-600">
+                Yes. With self hosted n8n, your data never leaves your own infrastructure. We set up proper encryption, authentication, access controls, and regular backups. This is actually more secure than cloud based alternatives because you have complete control over where your data lives. It is ideal for businesses handling sensitive customer or financial information.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

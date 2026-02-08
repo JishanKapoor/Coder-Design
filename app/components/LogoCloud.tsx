@@ -145,7 +145,7 @@ export function LogoCloud() {
           transition={shouldAnimate ? { duration: 0.3 } : undefined}
           className="mb-12 text-center text-sm uppercase tracking-wider text-slate-500"
         >
-          Powering Innovation at World-Class Companies
+          Powering Innovation at Leading Companies
         </motion.p>
 
         <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-8 lg:gap-x-16">

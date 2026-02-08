@@ -11,10 +11,10 @@ const solutions = [
   {
     icon: Layers,
     category: "Engineering",
-    title: "Full-Stack Development",
+    title: "Full Stack Web Development",
     description:
-      "We build robust, scalable applications from frontend to backend and cloud. Our engineers deliver complete solutions using Python, Django, Node.js, React, Next.js, AWS, and Google Cloud, ensuring seamless performance and security across your entire technology stack.",
-    metrics: ["Frontend & Backend Development", "Cloud Infrastructure & DevOps", "API Development & Integration", "Database Architecture"],
+      "We build robust, production ready applications from interactive frontends to scalable backend APIs and cloud infrastructure. Our senior engineers deliver complete solutions using Python, Django, Node.js, React, Next.js, PostgreSQL, AWS, and Google Cloud with automated testing, CI/CD, and security built in from day one.",
+    metrics: ["Frontend and Backend Development", "Cloud Infrastructure and DevOps", "API Development and Integration", "Database Architecture and Optimization"],
     href: "/full-stack-engineering",
   },
   {
@@ -22,26 +22,26 @@ const solutions = [
     category: "Mobile",
     title: "Mobile App Development",
     description:
-      "We craft high-performance, user-friendly mobile applications for iOS and Android. Using React Native, Flutter, Swift, and Kotlin, we create native and cross-platform apps that deliver exceptional user experiences and drive engagement.",
-    metrics: ["iOS & Android Apps", "React Native & Flutter", "Native Development", "App Store Optimization"],
+      "We design and develop high performance mobile applications for iOS and Android that users love. Using React Native, Flutter, Swift, and Kotlin, we handle everything from UX research and prototyping to App Store submission, push notifications, and post launch analytics.",
+    metrics: ["iOS and Android Apps", "React Native and Flutter", "Swift and Kotlin Native", "App Store Optimization"],
     href: "/mobile-app-development",
   },
   {
     icon: Brain,
-    category: "AI & ML",
-    title: "AI & Machine Learning",
+    category: "AI",
+    title: "AI Workflow Automation",
     description:
-      "Transform your business with intelligent automation. We build AI voice assistants, chatbots, workflow automation, and predictive analytics using cutting-edge machine learning technologies to optimize operations and enhance customer experiences.",
-    metrics: ["Voice Assistants & Chatbots", "Workflow Automation", "Predictive Analytics", "Natural Language Processing"],
+      "Transform your business operations with intelligent automation. We build AI chatbots, n8n and Make workflow pipelines, voice assistants, and predictive analytics systems using OpenAI, Claude, LangChain, and TensorFlow to eliminate repetitive work and unlock data driven insights.",
+    metrics: ["n8n and Make Workflows", "AI Chatbots and Agents", "Predictive Analytics", "Natural Language Processing"],
     href: "/ai-workflow",
   },
   {
     icon: Search,
-    category: "SEO Services",
-    title: "AI SEO, GEO & AEO",
+    category: "SEO",
+    title: "SEO Services Toronto",
     description:
-      "Dominate search rankings with AI-powered SEO, GEO targeting, and Answer Engine Optimization (AEO). We leverage machine learning for keyword discovery, optimize for voice search and AI assistants, and implement local GEO strategies to maximize your organic visibility.",
-    metrics: ["AI-Powered SEO", "GEO Targeting", "Answer Engine Optimization", "Voice Search Optimization"],
+      "Dominate search rankings with AI powered SEO, local GEO targeting, and Answer Engine Optimization (AEO). We use machine learning for keyword discovery, optimize your content for Google AI Overviews, ChatGPT, and Perplexity, and implement local SEO strategies to maximize qualified organic traffic.",
+    metrics: ["AI Powered SEO Strategy", "Local SEO and GEO Targeting", "Answer Engine Optimization", "Voice Search and AI Overviews"],
     href: "/seo-management",
   },
 ];
@@ -70,14 +70,15 @@ export function SolutionsSection() {
             variants={shouldAnimate ? itemVariants : undefined}
             className="mb-6 text-slate-900"
           >
-            Comprehensive Development Services
+            What We Build for Toronto Businesses
           </motion.h2>
 
           <motion.p
             variants={shouldAnimate ? itemVariants : undefined}
             className="mb-16 text-lg text-slate-600"
           >
-            From web and mobile apps to AI automation and SEO — we deliver end-to-end solutions tailored to your business goals.
+            From custom web applications and mobile apps to AI automation and SEO, we deliver 
+            complete solutions tailored to your business goals.
           </motion.p>
         </motion.div>
 
