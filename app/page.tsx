@@ -3,12 +3,32 @@
 const homepageStructuredData = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
+  "@id": "https://coderdesign.com/#business",
   "name": "CoderDesign",
-  "alternateName": "Coder Design",
-  "description": "CoderDesign is a Toronto based software development company offering custom web development, mobile app development, AI automation, and SEO services for startups and enterprises across the GTA.",
+  "alternateName": ["Coder Design", "CoderDesign Toronto"],
+  "description": "CoderDesign is a Toronto-based software development company specializing in custom web applications, mobile app development, AI automation, and SEO services. Founded in Toronto, Ontario, Canada, CoderDesign has delivered over 100 projects for startups and enterprises across the Greater Toronto Area.",
   "url": "https://coderdesign.com",
-  "logo": "https://coderdesign.com/og-image.png",
+  "logo": {
+    "@type": "ImageObject",
+    "@id": "https://coderdesign.com/#logo",
+    "url": "https://coderdesign.com/og-image.png",
+    "width": 1200,
+    "height": 630
+  },
   "image": "https://coderdesign.com/og-image.png",
+  "foundingDate": "2020",
+  "foundingLocation": {
+    "@type": "Place",
+    "name": "Toronto, Ontario, Canada"
+  },
+  "brand": {
+    "@type": "Brand",
+    "name": "CoderDesign",
+    "url": "https://coderdesign.com",
+    "logo": "https://coderdesign.com/og-image.png",
+    "slogan": "Toronto Software Development Company"
+  },
+  "slogan": "Toronto Software Development Company",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "7 Grosvenor Street",
@@ -25,6 +45,17 @@ const homepageStructuredData = {
   "telephone": "+14372392448",
   "email": "hello@coderdesign.com",
   "openingHours": "Mo-Fr 09:00-18:00",
+  "knowsAbout": [
+    "Software Development", "Custom Web Application Development", "Mobile App Development",
+    "React", "Next.js", "Node.js", "Python", "Django", "TypeScript",
+    "React Native", "Flutter", "Swift", "Kotlin",
+    "AI Automation", "Machine Learning", "Chatbot Development", "OpenAI",
+    "Search Engine Optimization", "Technical SEO", "Answer Engine Optimization",
+    "SaaS Development", "E-commerce Development"
+  ],
+  "knowsLanguage": ["English"],
+  "numberOfEmployees": { "@type": "QuantitativeValue", "minValue": 10 },
+  "parentOrganization": { "@id": "https://coderdesign.com/#organization" },
   "areaServed": [
     { "@type": "City", "name": "Toronto" },
     { "@type": "City", "name": "Mississauga" },
@@ -57,7 +88,8 @@ const homepageStructuredData = {
         "itemOffered": {
           "@type": "Service",
           "name": "Custom Web Application Development",
-          "description": "Full stack web development using React, Next.js, Node.js, Python, and Django. Custom SaaS platforms, e-commerce sites, and enterprise web applications."
+          "url": "https://coderdesign.com/full-stack-engineering",
+          "description": "Full stack web development using React, Next.js, Node.js, Python, and Django. Custom SaaS platforms, e-commerce sites, and enterprise web applications for Toronto businesses."
         }
       },
       {
@@ -65,7 +97,8 @@ const homepageStructuredData = {
         "itemOffered": {
           "@type": "Service",
           "name": "Mobile App Development",
-          "description": "iOS and Android mobile app development using React Native, Flutter, Swift, and Kotlin. From concept to App Store launch."
+          "url": "https://coderdesign.com/mobile-app-development",
+          "description": "iOS and Android mobile app development using React Native, Flutter, Swift, and Kotlin. From concept to App Store launch for startups and enterprises."
         }
       },
       {
@@ -73,7 +106,8 @@ const homepageStructuredData = {
         "itemOffered": {
           "@type": "Service",
           "name": "AI Automation and Chatbot Development",
-          "description": "AI powered workflow automation using n8n, Make, OpenAI, and custom LLMs. Chatbots, data pipelines, and predictive analytics."
+          "url": "https://coderdesign.com/ai-workflow",
+          "description": "AI powered workflow automation using n8n, Make, OpenAI, and custom LLMs. Chatbots, data pipelines, and predictive analytics for Toronto businesses."
         }
       },
       {

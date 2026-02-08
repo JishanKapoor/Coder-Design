@@ -27,6 +27,33 @@ export const metadata: Metadata = {
   },
 };
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://coderdesign.com/seo-management/#service",
+  "name": "SEO Services Toronto",
+  "serviceType": "Search Engine Optimization",
+  "description": "AI-powered SEO company in Toronto. CoderDesign delivers technical SEO audits, local SEO, content strategy, link building, and Answer Engine Optimization (AEO) for businesses across the Greater Toronto Area and Canada.",
+  "url": "https://coderdesign.com/seo-management",
+  "provider": { "@id": "https://coderdesign.com/#organization" },
+  "areaServed": [
+    { "@type": "City", "name": "Toronto" },
+    { "@type": "AdministrativeArea", "name": "Greater Toronto Area" },
+    { "@type": "Country", "name": "Canada" }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "SEO Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Technical SEO Audit and Optimization" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Local SEO for Toronto Businesses" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI-Powered Content Strategy" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Link Building and Digital PR" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Answer Engine Optimization (AEO)" } }
+    ]
+  }
+};
+
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -42,6 +69,10 @@ const faqJsonLd = {
 export default function Page() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}

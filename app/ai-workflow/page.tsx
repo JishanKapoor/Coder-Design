@@ -27,6 +27,33 @@ export const metadata: Metadata = {
   },
 };
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://coderdesign.com/ai-workflow/#service",
+  "name": "AI Automation and Chatbot Development Toronto",
+  "serviceType": "AI Automation",
+  "description": "AI automation company in Toronto. CoderDesign builds custom chatbots, n8n workflow automation, OpenAI and LLM integrations, and predictive analytics solutions for businesses across the Greater Toronto Area and Canada.",
+  "url": "https://coderdesign.com/ai-workflow",
+  "provider": { "@id": "https://coderdesign.com/#organization" },
+  "areaServed": [
+    { "@type": "City", "name": "Toronto" },
+    { "@type": "AdministrativeArea", "name": "Greater Toronto Area" },
+    { "@type": "Country", "name": "Canada" }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "AI Automation Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom AI Chatbot Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "n8n and Make Workflow Automation" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "OpenAI and LLM Integration" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Predictive Analytics and Machine Learning" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Business Process Automation" } }
+    ]
+  }
+};
+
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -42,6 +69,10 @@ const faqJsonLd = {
 export default function Page() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}

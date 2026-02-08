@@ -27,6 +27,33 @@ export const metadata: Metadata = {
   },
 };
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://coderdesign.com/full-stack-engineering/#service",
+  "name": "Custom Web Application Development Toronto",
+  "serviceType": "Web Development",
+  "description": "Full-stack web development company in Toronto specializing in React, Next.js, Node.js, Python, and Django. CoderDesign builds custom SaaS platforms, enterprise web applications, and e-commerce solutions for startups and businesses across the Greater Toronto Area.",
+  "url": "https://coderdesign.com/full-stack-engineering",
+  "provider": { "@id": "https://coderdesign.com/#organization" },
+  "areaServed": [
+    { "@type": "City", "name": "Toronto" },
+    { "@type": "AdministrativeArea", "name": "Greater Toronto Area" },
+    { "@type": "Country", "name": "Canada" }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Web Development Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "React and Next.js Frontend Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Node.js and Python Backend Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom SaaS Platform Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "E-commerce Web Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Enterprise Application Modernization" } }
+    ]
+  }
+};
+
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -42,6 +69,10 @@ const faqJsonLd = {
 export default function Page() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}

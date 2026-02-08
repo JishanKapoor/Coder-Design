@@ -1,3 +1,4 @@
+
 "use client";
 import React from "react";
 import Link from "next/link";
@@ -156,7 +157,7 @@ export default function HomePage() {
         }}
       >
         <p>
-          © 2025 Coder Design. Toronto development agency serving the GTA, Ontario & beyond.
+          © 2026 CoderDesign. Toronto software development company serving the GTA, Ontario & beyond.
         </p>
       </footer>
     </div>

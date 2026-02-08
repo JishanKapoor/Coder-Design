@@ -27,6 +27,33 @@ export const metadata: Metadata = {
   },
 };
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://coderdesign.com/mobile-app-development/#service",
+  "name": "Mobile App Development Toronto",
+  "serviceType": "Mobile App Development",
+  "description": "iOS and Android mobile app development company in Toronto. CoderDesign builds cross-platform apps using React Native and Flutter, and native apps using Swift and Kotlin for startups and enterprises across the Greater Toronto Area.",
+  "url": "https://coderdesign.com/mobile-app-development",
+  "provider": { "@id": "https://coderdesign.com/#organization" },
+  "areaServed": [
+    { "@type": "City", "name": "Toronto" },
+    { "@type": "AdministrativeArea", "name": "Greater Toronto Area" },
+    { "@type": "Country", "name": "Canada" }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Mobile Development Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "React Native Cross-Platform Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Flutter App Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "iOS App Development with Swift" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Android App Development with Kotlin" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "App Store and Google Play Submission" } }
+    ]
+  }
+};
+
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -42,6 +69,10 @@ const faqJsonLd = {
 export default function Page() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
