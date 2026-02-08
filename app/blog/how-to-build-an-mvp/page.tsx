@@ -47,42 +47,42 @@ const faqJsonLd = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How much does it cost to build a custom web application?",
+      "name": "What is an MVP in software development?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A custom web application typically costs between $25,000 and $250,000+ depending on complexity. A simple MVP with core features runs $25,000–$60,000, a mid-complexity app with integrations costs $60,000–$150,000, and enterprise-grade platforms start at $150,000 and up."
+        "text": "An MVP (minimum viable product) is the simplest version of a product that delivers core value to users. It includes only the essential features needed to solve the primary problem, allowing you to launch quickly, gather real user feedback, and iterate based on data rather than assumptions."
       }
     },
     {
       "@type": "Question",
-      "name": "What factors affect custom software development pricing?",
+      "name": "How long does it take to build an MVP?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The main cost drivers are: project complexity and number of features, technology stack (AI/ML adds cost), number of integrations (payment gateways, APIs), design requirements (custom UI/UX vs templates), security and compliance needs (HIPAA, SOC 2), and ongoing maintenance requirements."
+        "text": "Most MVPs take 6 to 12 weeks to build, depending on complexity. A simple MVP with 3-5 core features can be ready in 6-8 weeks. More complex MVPs with user authentication, payment processing, and third-party integrations typically take 10-12 weeks."
       }
     },
     {
       "@type": "Question",
-      "name": "Is it cheaper to hire developers in Toronto or offshore?",
+      "name": "What features should an MVP include?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Offshore developers charge $25–$60/hour vs $120–$200/hour for Toronto-based teams. However, Toronto teams typically deliver 30–50% faster due to fewer communication delays, timezone alignment, and higher code quality — often making the total project cost comparable while reducing risk significantly."
+        "text": "An MVP should include only the features that solve the core problem for your target users. Use the MoSCoW method to prioritize: Must-have features that are essential, Should-have features that add significant value, Could-have features that are nice additions, and Won't-have features that are deferred to future versions."
       }
     },
     {
       "@type": "Question",
-      "name": "How long does custom software development take?",
+      "name": "What tech stack should I use for an MVP?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Timelines vary by scope: MVPs take 6–12 weeks, mid-complexity applications take 3–6 months, and enterprise platforms take 6–18 months. Agile development with 2-week sprints helps deliver working software incrementally rather than waiting for a big-bang release."
+        "text": "For web MVPs, Next.js with React on the frontend and Node.js or Django on the backend is the most efficient choice. For mobile MVPs, React Native or Flutter lets you build for iOS and Android from a single codebase. Use PostgreSQL for your database and deploy on Vercel or AWS for scalability."
       }
     },
     {
       "@type": "Question",
-      "name": "How can I reduce custom software development costs?",
+      "name": "What are the biggest mistakes startups make when building an MVP?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Start with an MVP (minimum viable product) to validate your idea before building the full platform. Use proven frameworks like Next.js and Django instead of building from scratch. Prioritize features ruthlessly — build what users need first. Choose a fixed-scope engagement to control budget, and invest in automated testing to reduce long-term maintenance costs."
+        "text": "The most common mistakes are: building too many features (feature creep), skipping user research, choosing overly complex technology, not defining success metrics before launch, building in isolation without user feedback, and waiting too long to launch. The goal of an MVP is to learn, not to build a perfect product."
       }
     }
   ]
