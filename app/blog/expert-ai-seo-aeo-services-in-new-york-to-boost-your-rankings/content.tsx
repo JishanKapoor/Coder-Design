@@ -63,8 +63,7 @@ export default function BlogPost() {
               </Button>
               <Button
                 onClick={() => setShowCalendar(true)}
-                variant="outline"
-                className="border-white/30 text-white hover:bg-white/10"
+                variant="overlay"
               >
                 Rankings Review Call
               </Button>
@@ -270,7 +269,7 @@ export default function BlogPost() {
               Claim Your Free Rankings Analysis
             </Button>
             <Link href="/contact">
-              <Button variant="outline" className="border-white/30 text-white hover:bg-white/10">
+              <Button variant="overlay">
                 Discuss Your SEO Goals
               </Button>
             </Link>

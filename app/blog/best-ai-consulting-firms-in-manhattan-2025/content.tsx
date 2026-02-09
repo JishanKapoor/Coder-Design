@@ -63,8 +63,7 @@ export default function BlogPost() {
               </Button>
               <Button
                 onClick={() => setShowCalendar(true)}
-                variant="outline"
-                className="border-white/30 text-white hover:bg-white/10"
+                variant="overlay"
               >
                 Meet Our AI Consultants
               </Button>
@@ -163,7 +162,7 @@ export default function BlogPost() {
               Schedule an AI Strategy Call
             </Button>
             <Link href="/contact">
-              <Button variant="outline" className="border-white/30 text-white hover:bg-white/10">
+              <Button variant="overlay">
                 Get a Free AI Consultation
               </Button>
             </Link>

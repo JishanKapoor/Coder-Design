@@ -63,8 +63,7 @@ export default function BlogPost() {
               </Button>
               <Button
                 onClick={() => setShowCalendar(true)}
-                variant="outline"
-                className="border-white/30 text-white hover:bg-white/10"
+                variant="overlay"
               >
                 Voice Bot Demo Call
               </Button>
@@ -243,7 +242,7 @@ A beginner freelancer offers “AI phone agent setup.” Clients buy because it 
               Request a Voice Bot Demo
             </Button>
             <Link href="/contact">
-              <Button variant="outline" className="border-white/30 text-white hover:bg-white/10">
+              <Button variant="overlay">
                 Talk to a Voice AI Engineer
               </Button>
             </Link>
