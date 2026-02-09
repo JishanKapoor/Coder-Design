@@ -1,6 +1,5 @@
 ﻿import "./globals.css";
 import type { Metadata } from "next";
-import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Software Development Company Toronto | CoderDesign",
@@ -163,18 +162,17 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <head>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-LZ3LECFNNK"
-          strategy="afterInteractive"
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZ3LECFNNK" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LZ3LECFNNK');
+            `,
+          }}
         />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-LZ3LECFNNK');
-          `}
-        </Script>
       </head>
       <body suppressHydrationWarning={true}>
         <script
