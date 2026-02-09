@@ -132,7 +132,7 @@ export default function AIWorkflowDetail() {
                 <ImageWithFallback 
                   src="/images/hero-ai.jpg"
                   alt="AI automation and workflow development services in Toronto"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover object-top"
                 />
               </div>
             </div>
