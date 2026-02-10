@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#4338CA"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="80" y="80" width="1040" height="470" rx="24" fill="#fff" fill-opacity="0.1"/>
+  <!-- Funnel -->
+  <polygon points="400,200 700,200 640,420 460,420" fill="#fff" fill-opacity="0.1" stroke="#fff" stroke-width="2" opacity="0.4"/>
+  <line x1="420" y1="270" x2="680" y2="270" stroke="#fff" stroke-width="1" opacity="0.3"/>
+  <line x1="445" y1="340" x2="655" y2="340" stroke="#fff" stroke-width="1" opacity="0.3"/>
+  <!-- Lead icons -->
+  <circle cx="550" cy="235" r="8" fill="#10B981" opacity="0.6"/>
+  <circle cx="520" cy="235" r="8" fill="#10B981" opacity="0.6"/>
+  <circle cx="580" cy="235" r="8" fill="#10B981" opacity="0.6"/>
+  <circle cx="490" cy="235" r="8" fill="#10B981" opacity="0.4"/>
+  <circle cx="610" cy="235" r="8" fill="#10B981" opacity="0.4"/>
+  <circle cx="535" cy="305" r="8" fill="#3B82F6" opacity="0.6"/>
+  <circle cx="565" cy="305" r="8" fill="#3B82F6" opacity="0.6"/>
+  <circle cx="550" cy="380" r="12" fill="#F59E0B" opacity="0.8"/>
+  <!-- Arrow up -->
+  <line x1="850" y1="380" x2="850" y2="240" stroke="#10B981" stroke-width="4" opacity="0.6"/>
+  <polygon points="836,250 850,220 864,250" fill="#10B981" opacity="0.6"/>
+  <text x="850" y="410" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#10B981" opacity="0.8">+180%</text>
+  <text x="600" y="500" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#fff" opacity="0.9">AI Lead Generation for Toronto Websites</text>
+  <text x="600" y="535" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#fff" opacity="0.6">CoderDesign</text>
+</svg>

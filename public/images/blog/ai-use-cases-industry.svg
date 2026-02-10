@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#4338CA"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="80" y="80" width="1040" height="470" rx="24" fill="#fff" fill-opacity="0.1"/>
+  <!-- Industry icons grid -->
+  <rect x="200" y="190" width="160" height="120" rx="12" fill="#fff" fill-opacity="0.1"/>
+  <text x="280" y="260" text-anchor="middle" font-family="system-ui, sans-serif" font-size="36">⚖️</text>
+  <text x="280" y="290" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#fff" opacity="0.6">Law</text>
+  <rect x="400" y="190" width="160" height="120" rx="12" fill="#fff" fill-opacity="0.1"/>
+  <text x="480" y="260" text-anchor="middle" font-family="system-ui, sans-serif" font-size="36">🏠</text>
+  <text x="480" y="290" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#fff" opacity="0.6">Real Estate</text>
+  <rect x="600" y="190" width="160" height="120" rx="12" fill="#fff" fill-opacity="0.1"/>
+  <text x="680" y="260" text-anchor="middle" font-family="system-ui, sans-serif" font-size="36">🏥</text>
+  <text x="680" y="290" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#fff" opacity="0.6">Clinics</text>
+  <rect x="800" y="190" width="160" height="120" rx="12" fill="#fff" fill-opacity="0.1"/>
+  <text x="880" y="260" text-anchor="middle" font-family="system-ui, sans-serif" font-size="36">🛒</text>
+  <text x="880" y="290" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#fff" opacity="0.6">E-commerce</text>
+  <rect x="300" y="330" width="160" height="120" rx="12" fill="#fff" fill-opacity="0.1"/>
+  <text x="380" y="400" text-anchor="middle" font-family="system-ui, sans-serif" font-size="36">🔧</text>
+  <text x="380" y="430" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#fff" opacity="0.6">Trades</text>
+  <rect x="500" y="330" width="160" height="120" rx="12" fill="#fff" fill-opacity="0.1"/>
+  <text x="580" y="400" text-anchor="middle" font-family="system-ui, sans-serif" font-size="36">📈</text>
+  <text x="580" y="430" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#fff" opacity="0.6">Marketing</text>
+  <rect x="700" y="330" width="160" height="120" rx="12" fill="#fff" fill-opacity="0.1"/>
+  <text x="780" y="400" text-anchor="middle" font-family="system-ui, sans-serif" font-size="36">🍽️</text>
+  <text x="780" y="430" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#fff" opacity="0.6">Restaurants</text>
+  <text x="600" y="520" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#fff" opacity="0.9">AI Use Cases by Industry in Toronto</text>
+  <text x="600" y="550" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#fff" opacity="0.6">CoderDesign</text>
+</svg>

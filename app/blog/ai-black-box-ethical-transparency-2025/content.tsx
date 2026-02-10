@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { useState } from "react";
 import { Navigation } from "../../components/Navigation";
 import { FooterSection } from "../../components/FooterSection";
@@ -81,15 +81,15 @@ export default function BlogPost() {
       <article className="bg-white py-16 lg:py-20">
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
           <div className="blog-content" dangerouslySetInnerHTML={{ __html: `<p>In 2025, &quot;Black Box&quot; AI is no longer just a technical mystery; it is a business liability.</p>
-<p>If your artificial intelligence makes a decision—denying a loan, rejecting a resume, or flagging a transaction—and you cannot explain <em>why</em>, you are walking into a legal minefield. With the EU AI Act setting global standards and New York City enforcing strict bias audits for automated employment decision tools (AEDT), the days of &quot;blind trust&quot; in algorithms are over.</p>
-<p>At Coder Design, located at 17 State Street, New York, we move beyond the hype. We build &quot;Glass Box&quot; systems—AI that is powerful, predictive, and fully explainable.</p>
+<p>If your artificial intelligence makes a decision—denying a loan, rejecting a resume, or flagging a transaction—and you cannot explain <em>why</em>, you are walking into a legal minefield. With the EU AI Act setting global standards and Canada&#39;s Artificial Intelligence and Data Act (AIDA) pushing transparency requirements, the days of &quot;blind trust&quot; in algorithms are over.</p>
+<p>At Coder Design, located at 100 King Street West, Toronto, we move beyond the hype. We build &quot;Glass Box&quot; systems—AI that is powerful, predictive, and fully explainable.</p>
 <h2>What is the &quot;Black Box&quot; Problem?</h2>
 <p>The &quot;Black Box&quot; refers to AI models—specifically deep neural networks—where the internal decision-making process is so complex that even the developers cannot trace how the input became the output.</p>
 <p>In the past, this was accepted as the cost of high performance. Today, it is a vulnerability. If your AI hallucinates or discriminates, and you cannot audit the logic trail, you lose user trust and face regulatory fines.</p>
 <h2>The ROI of Transparency</h2>
 <p>Transparency is not just about ethics; it is about economics.</p>
 <h3>1. Regulatory Survival</h3>
-<p>The regulatory landscape in the United States is fragmenting. From California&#39;s privacy laws to New York&#39;s bias audits, compliance requires visibility. You cannot fix a bias you cannot see. Explainable AI (XAI) is your insurance policy against litigation.</p>
+<p>The regulatory landscape in Canada is evolving rapidly. From federal privacy reform under PIPEDA to Ontario&#39;s emerging AI governance frameworks, compliance requires visibility. You cannot fix a bias you cannot see. Explainable AI (XAI) is your insurance policy against litigation.</p>
 <h3>2. User Adoption</h3>
 <p>Trust is the currency of the AI economy. Users are becoming skeptical of automated systems. When a system offers a &quot;Why am I seeing this?&quot; explanation, user confidence spikes. Clear logic turns skeptical users into loyal advocates.</p>
 <h3>3. Debugging and Optimization</h3>
@@ -106,7 +106,7 @@ export default function BlogPost() {
 <p>AI learns from history, and history is often biased. If you train a hiring bot on ten years of resumes from a male-dominated industry, the bot will learn to penalize women. We implement adversarial testing—literally attacking our own models to find these biases before they go live.</p>
 <h3>Continuous Auditing</h3>
 <p>An AI model is not a static asset; it drifts over time. We set up automated monitoring to flag when a model&#39;s decision patterns start to deviate from the baseline, ensuring long-term fairness.</p>
-<p><em>(Worried about your current system? <a href="https://www.coderdesign.com/contact">Schedule an AI Ethics Audit</a> with our NY team).</em></p>
+<p><em>(Worried about your current system? <a href="https://www.coderdesign.com/contact">Schedule an AI Ethics Audit</a> with our Toronto team).</em></p>
 <h2>Real-World Application</h2>
 <p>Imagine a healthcare app. A Black Box model says, &quot;Patient is high risk.&quot; The doctor hesitates. A Glass Box model says, &quot;Patient is high risk because of rising blood pressure trends and family history.&quot; The doctor acts.</p>
 <p>This is the difference between a toy and a tool. In sectors like finance, healthcare, and recruiting, explainability is the difference between adoption and rejection.</p>
@@ -115,13 +115,13 @@ export default function BlogPost() {
 <p>Black Box AI gives an answer without an explanation. Glass Box AI (or White Box AI) is designed to be interpretable, allowing humans to trace the logic steps behind a decision.</p>
 <p><strong>Does making AI transparent reduce its accuracy?</strong></p>
 <p>Historically, there was a trade-off. However, modern techniques like XAI allow us to use complex models while still extracting interpretable explanations. You no longer have to choose between smart AI and safe AI.</p>
-<p><strong>Why is New York significant for AI regulation?</strong></p>
-<p>New York City has pioneered laws like Local Law 144, which mandates bias audits for AI used in hiring. It is a bellwether for future U.S. regulation, making compliance here a gold standard for the rest of the country.</p>
+<p><strong>Why is Toronto significant for AI regulation?</strong></p>
+<p>Toronto is at the forefront of responsible AI adoption in Canada. With the federal Artificial Intelligence and Data Act (AIDA) and Ontario&#39;s focus on algorithmic accountability, compliance here sets a gold standard for the rest of the country.</p>
 <p><strong>How does Coder Design ensure AI ethics?</strong></p>
 <p>We integrate ethics into the code, not as an afterthought. From data sanitization to XAI integration and post-deployment monitoring, we build systems that protect your brand reputation.</p>
 <h2>The Future is Clear</h2>
 <p>The &quot;magic&quot; of AI is fading; the utility of AI is just beginning. In 2025, the most successful companies will not be the ones with the most secretive algorithms, but the ones with the most trustworthy ones.</p>
-<p>Don&#39;t let your business rely on a system you can&#39;t explain. Visit us at <strong>17 State Street, New York</strong>, or contact us to build AI that is transparent, accountable, and profitable.</p>
+<p>Don&#39;t let your business rely on a system you can&#39;t explain. Visit us at <strong>100 King Street West, Toronto</strong>, or contact us to build AI that is transparent, accountable, and profitable.</p>
 <p><strong><a href="https://www.coderdesign.com/contact">Contact Coder Design Today</a></strong></p>` }} />
         </div>
       </article>

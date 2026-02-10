@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#4338CA"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="80" y="80" width="1040" height="470" rx="24" fill="#fff" fill-opacity="0.1"/>
+  <!-- Timeline -->
+  <line x1="200" y1="300" x2="1000" y2="300" stroke="#fff" stroke-width="3" opacity="0.3"/>
+  <!-- Phase dots -->
+  <circle cx="280" cy="300" r="16" fill="#10B981" opacity="0.7"/>
+  <text x="280" y="340" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#fff" opacity="0.6">Discovery</text>
+  <text x="280" y="275" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#fff" opacity="0.7">Wk 1-2</text>
+  <circle cx="460" cy="300" r="16" fill="#3B82F6" opacity="0.7"/>
+  <text x="460" y="340" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#fff" opacity="0.6">Design</text>
+  <text x="460" y="275" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#fff" opacity="0.7">Wk 3-4</text>
+  <circle cx="640" cy="300" r="16" fill="#8B5CF6" opacity="0.7"/>
+  <text x="640" y="340" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#fff" opacity="0.6">Build</text>
+  <text x="640" y="275" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#fff" opacity="0.7">Wk 5-8</text>
+  <circle cx="820" cy="300" r="16" fill="#F59E0B" opacity="0.7"/>
+  <text x="820" y="340" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#fff" opacity="0.6">Test</text>
+  <text x="820" y="275" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#fff" opacity="0.7">Wk 9-10</text>
+  <circle cx="940" cy="300" r="16" fill="#EF4444" opacity="0.7"/>
+  <text x="940" y="340" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#fff" opacity="0.6">Launch</text>
+  <text x="940" y="275" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#fff" opacity="0.7">Wk 11+</text>
+  <text x="600" y="480" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#fff" opacity="0.9">AI Implementation Timeline</text>
+  <text x="600" y="515" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#fff" opacity="0.6">CoderDesign</text>
+</svg>

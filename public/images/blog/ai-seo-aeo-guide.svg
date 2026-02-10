@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#4338CA"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="80" y="80" width="1040" height="470" rx="24" fill="#fff" fill-opacity="0.1"/>
+  <!-- Search bar -->
+  <rect x="300" y="220" width="600" height="60" rx="30" fill="#fff" fill-opacity="0.2"/>
+  <circle cx="350" cy="250" r="16" stroke="#fff" stroke-width="2" fill="none" opacity="0.6"/>
+  <line x1="362" y1="262" x2="374" y2="274" stroke="#fff" stroke-width="2" opacity="0.6"/>
+  <line x1="390" y1="250" x2="600" y2="250" stroke="#fff" stroke-width="2" opacity="0.3"/>
+  <!-- AI Sparkles -->
+  <text x="780" y="260" font-family="system-ui, sans-serif" font-size="40" opacity="0.5">✨</text>
+  <!-- AEO Badge -->
+  <rect x="440" y="310" width="120" height="44" rx="22" fill="#10B981" fill-opacity="0.3"/>
+  <text x="500" y="338" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#10B981" opacity="0.9">AEO</text>
+  <rect x="580" y="310" width="120" height="44" rx="22" fill="#3B82F6" fill-opacity="0.3"/>
+  <text x="640" y="338" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#3B82F6" opacity="0.9">AI SEO</text>
+  <!-- Result boxes -->
+  <rect x="300" y="380" width="260" height="60" rx="8" fill="#fff" fill-opacity="0.1"/>
+  <rect x="580" y="380" width="260" height="60" rx="8" fill="#fff" fill-opacity="0.1"/>
+  <text x="600" y="500" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#fff" opacity="0.9">AI SEO &amp; AEO for Toronto Businesses</text>
+  <text x="600" y="535" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#fff" opacity="0.6">CoderDesign</text>
+</svg>

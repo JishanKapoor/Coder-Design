@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#4338CA"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="80" y="80" width="1040" height="470" rx="24" fill="#fff" fill-opacity="0.1"/>
+  <!-- Shield icon -->
+  <path d="M600 180 L680 220 L680 320 C680 380 640 420 600 440 C560 420 520 380 520 320 L520 220 Z" stroke="#10B981" stroke-width="3" fill="none" opacity="0.5"/>
+  <text x="600" y="330" text-anchor="middle" font-family="system-ui, sans-serif" font-size="50" fill="#10B981" opacity="0.6">✓</text>
+  <!-- Lock icons -->
+  <rect x="280" y="260" width="60" height="50" rx="8" stroke="#fff" stroke-width="2" fill="none" opacity="0.3"/>
+  <circle cx="310" cy="250" r="20" stroke="#fff" stroke-width="2" fill="none" opacity="0.3"/>
+  <rect x="860" y="260" width="60" height="50" rx="8" stroke="#fff" stroke-width="2" fill="none" opacity="0.3"/>
+  <circle cx="890" cy="250" r="20" stroke="#fff" stroke-width="2" fill="none" opacity="0.3"/>
+  <!-- Canada flag hint -->
+  <rect x="560" y="200" width="80" height="4" rx="2" fill="#EF4444" opacity="0.4"/>
+  <text x="600" y="500" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#fff" opacity="0.9">AI Safety &amp; Data Privacy in Canada</text>
+  <text x="600" y="535" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#fff" opacity="0.6">CoderDesign</text>
+</svg>

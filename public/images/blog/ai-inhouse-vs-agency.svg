@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#4338CA"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="80" y="80" width="1040" height="470" rx="24" fill="#fff" fill-opacity="0.1"/>
+  <!-- VS divider -->
+  <text x="600" y="320" text-anchor="middle" font-family="system-ui, sans-serif" font-size="60" font-weight="900" fill="#fff" opacity="0.2">VS</text>
+  <!-- In-house side -->
+  <rect x="180" y="200" width="320" height="200" rx="16" fill="#fff" fill-opacity="0.1"/>
+  <text x="340" y="240" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#fff" opacity="0.7">In-House</text>
+  <rect x="220" y="260" width="240" height="8" rx="4" fill="#3B82F6" fill-opacity="0.4"/>
+  <rect x="220" y="280" width="180" height="8" rx="4" fill="#3B82F6" fill-opacity="0.3"/>
+  <rect x="220" y="300" width="200" height="8" rx="4" fill="#3B82F6" fill-opacity="0.3"/>
+  <!-- Agency side -->
+  <rect x="700" y="200" width="320" height="200" rx="16" fill="#fff" fill-opacity="0.1"/>
+  <text x="860" y="240" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#fff" opacity="0.7">Agency</text>
+  <rect x="740" y="260" width="240" height="8" rx="4" fill="#10B981" fill-opacity="0.4"/>
+  <rect x="740" y="280" width="200" height="8" rx="4" fill="#10B981" fill-opacity="0.3"/>
+  <rect x="740" y="300" width="220" height="8" rx="4" fill="#10B981" fill-opacity="0.3"/>
+  <text x="600" y="500" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#fff" opacity="0.9">Build In-House vs Hire a Toronto AI Agency</text>
+  <text x="600" y="535" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#fff" opacity="0.6">CoderDesign</text>
+</svg>

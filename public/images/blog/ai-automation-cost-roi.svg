@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#4338CA"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="80" y="80" width="1040" height="470" rx="24" fill="#fff" fill-opacity="0.1"/>
+  <!-- Dollar sign -->
+  <text x="300" y="340" text-anchor="middle" font-family="system-ui, sans-serif" font-size="120" font-weight="700" fill="#fff" opacity="0.25">$</text>
+  <!-- ROI Arrow up -->
+  <line x1="600" y1="380" x2="600" y2="220" stroke="#10B981" stroke-width="6" opacity="0.7"/>
+  <polygon points="580,230 600,200 620,230" fill="#10B981" opacity="0.7"/>
+  <text x="640" y="260" font-family="system-ui, sans-serif" font-size="36" font-weight="700" fill="#10B981" opacity="0.8">ROI</text>
+  <!-- Calculator lines -->
+  <rect x="820" y="240" width="180" height="160" rx="12" stroke="#fff" stroke-width="2" fill="none" opacity="0.3"/>
+  <line x1="840" y1="290" x2="980" y2="290" stroke="#fff" stroke-width="1" opacity="0.2"/>
+  <line x1="840" y1="330" x2="980" y2="330" stroke="#fff" stroke-width="1" opacity="0.2"/>
+  <line x1="840" y1="370" x2="980" y2="370" stroke="#fff" stroke-width="1" opacity="0.2"/>
+  <text x="910" y="275" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" fill="#fff" opacity="0.5">PRICING</text>
+  <text x="600" y="500" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#fff" opacity="0.9">AI Automation Cost &amp; ROI in Toronto</text>
+  <text x="600" y="535" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#fff" opacity="0.6">CoderDesign</text>
+</svg>
