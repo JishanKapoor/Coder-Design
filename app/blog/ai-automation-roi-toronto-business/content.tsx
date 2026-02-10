@@ -289,13 +289,13 @@ export default function BlogPost() {
 <h3>What if my business is too small to justify the investment?</h3>
 <p>The threshold is lower than most people think. If you or anyone on your team spends more than 5-10 hours per week on repetitive, automatable tasks — and you value that time at what it costs you — the math usually works. Solo operators and businesses with 2-5 employees often see the fastest payback because every hour saved goes directly to the owner's time, which is almost always the most valuable time in the business.</p>
 
-<h3>Should I start with a pilot or go all-in?</h3>
+<h3>Should I start with a pilot or go all-in on AI automation?</h3>
 <p>Always start with a pilot — one well-defined workflow that you can measure. This gives you real data on time savings and impact, builds internal confidence, and gives you a working relationship with the agency or tools before committing to a larger scope. If the pilot works, expanding is an easy decision. If it does not, you have learned something valuable at low cost.</p>
 
 <h3>What is the difference between ROI from time savings and ROI from revenue growth?</h3>
 <p>Time savings are the most predictable and measurable — you can track hours before and after with high confidence. Revenue growth from automation (better conversion rates, more leads captured, faster sales cycles) is real but harder to attribute precisely because other factors also influence revenue. The best approach is to plan conservatively based on time savings alone, and treat revenue gains as an upside bonus.</p>
 
-<h3>How do I track ROI after implementation?</h3>
+<h3>How do I track ROI after implementing AI automation?</h3>
 <p>Set up a simple dashboard (even a Google Sheet works) that tracks your key metrics weekly: lead response time, number of leads processed, conversion rate, hours spent on admin tasks, invoices sent on time, customer satisfaction scores. Compare these against your pre-automation baselines. Most automation platforms also provide execution logs and analytics that show how many workflows ran and what they accomplished.</p>
 
           ` }} />

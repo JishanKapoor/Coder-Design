@@ -259,16 +259,16 @@ export default function BlogPost() {
 
 <h2>Frequently Asked Questions</h2>
 
-<h3>How many agencies should I evaluate before deciding?</h3>
+<h3>How many AI agencies should I evaluate before deciding?</h3>
 <p>Three to five is the sweet spot. Fewer than three and you lack comparison. More than five and the evaluation process becomes a project in itself. Start with a broad list, screen based on the criteria above, and do in-depth discovery calls with your top three.</p>
 
-<h3>Should I choose the cheapest or most expensive option?</h3>
+<h3>Should I choose the cheapest or most expensive AI agency?</h3>
 <p>Neither — choose the one that best fits your specific needs and demonstrates the clearest understanding of your business. The cheapest option often cuts corners on discovery, support, and documentation. The most expensive option may be overkill for your current stage. Evaluate based on the 8 criteria above, not just price.</p>
 
-<h3>Can I start with one agency and switch later?</h3>
+<h3>Can I start with one AI agency and switch later?</h3>
 <p>Yes, if you have insisted on ownership of all code, accounts, and documentation (point 7 above). This is exactly why ownership matters — it gives you the freedom to bring operations in-house, switch agencies, or evolve your approach without being locked in.</p>
 
-<h3>What if I have a technical team — do I still need an agency?</h3>
+<h3>What if I have a technical team — do I still need an AI agency?</h3>
 <p>It depends on your team's AI-specific experience. General software developers are not automatically equipped to build reliable AI automations — it requires understanding of prompt engineering, workflow orchestration, AI model selection, and the specific gotchas of LLM-based systems (hallucination, latency, context limits). If your team has this experience, great — you may only need an agency for the initial architecture and strategy. If not, an agency accelerates your time to value significantly.</p>
 
           ` }} />

@@ -299,16 +299,16 @@ export default function BlogPost() {
 <h3>Do I need to change my existing tools to use AI automation?</h3>
 <p>Almost never. The entire point of platforms like Zapier and Make is that they connect the tools you already use — Google Workspace, QuickBooks, Mailchimp, HubSpot, Salesforce, Calendly, Slack, and thousands more. The automation layer sits between your existing systems. The only time you might need to switch a tool is if your current one has no API or integration capability (some very old, legacy software), and even then there are usually workarounds involving email parsing or browser extensions.</p>
 
-<h3>Is my business too small for this?</h3>
+<h3>Is my business too small for AI workflow automation?</h3>
 <p>If you or anyone on your team spends more than a few hours per week on repetitive tasks, automation is worth exploring. Solo operators often benefit the most because they are the bottleneck for everything — automating lead response and scheduling can free up the equivalent of an entire workday per week that gets redirected to billable work or business development.</p>
 
-<h3>Will this feel robotic to my customers?</h3>
+<h3>Will AI automation feel robotic to my customers?</h3>
 <p>Only if you set it up lazily. The AI-generated emails and chat responses are fully customizable. You control the tone, the level of formality, the details included, and the personality. A well-configured AI response is indistinguishable from one written by your best team member — it just arrives in seconds instead of hours. Best practice: review AI drafts for the first few weeks and refine the prompts until the output matches your brand voice exactly.</p>
 
 <h3>What if something goes wrong with the automation?</h3>
 <p>Every mature automation platform has error handling and notification systems built in. If a step fails — say the CRM API is temporarily down — you get alerted immediately, and the workflow retries or queues the task for later. You also design "fallback" paths into the workflow: if the AI is not confident in its classification, the lead routes to a human for manual review instead of guessing. The key is building workflows with graceful failure in mind, not assuming everything will work perfectly 100% of the time.</p>
 
-<h3>How long does it take to see results?</h3>
+<h3>How long does it take to see results from workflow automation?</h3>
 <p>A single workflow (lead capture → CRM → personalized follow-up) can be built and tested in a few days. You will notice the impact — faster response times, cleaner data, fewer things slipping through the cracks — within the first couple of weeks. A more comprehensive multi-workflow implementation typically takes several weeks end to end, but even during the build phase, each workflow that goes live starts delivering value immediately.</p>
 
           ` }} />

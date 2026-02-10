@@ -75,7 +75,7 @@ export default function BlogPost() {
 
 <p>You are already paying for website traffic — through SEO, Google Ads, social media, referrals, or some combination. The question is: how much of that traffic are you actually converting into leads? For most Toronto businesses, the answer is between 1% and 3%. That means 97-99% of your visitors leave without doing anything. They looked at your site, maybe browsed a few pages, and disappeared.</p>
 
-<p>AI tools can meaningfully close that gap — not by bringing more people to your site, but by doing a better job of engaging, qualifying, and capturing the people who are already there. This guide walks through the specific tools and tactics, with implementation details you can act on.</p>
+<p>AI tools can meaningfully close that gap — not by bringing more people to your site, but by doing a better job of engaging, qualifying, and capturing the people who are already there. This guide walks through the specific tools and tactics, with implementation details you can act on. (If you want an agency to handle this for you, see our <a href="/ai-workflow">AI automation services</a>.)</p>
 
 <hr>
 
@@ -107,7 +107,7 @@ export default function BlogPost() {
 <li><strong>Set up conversation flows.</strong> Configure what Lyro says as its opening message based on the page the visitor is on. On your homepage: "Hi! Are you looking for help with a specific project or just exploring?" On a service page: "I can answer any questions about our [service name] — or I can connect you with our team if you are ready to discuss a project."</li>
 <li><strong>Configure lead capture.</strong> Set Lyro to collect name, email, and phone number naturally during the conversation — not upfront as a gate, but at the point where the visitor has expressed interest and the natural next step is to connect with your team.</li>
 <li><strong>Set up handoff rules.</strong> Define when Lyro should route to a human: complex questions outside the training data, explicit requests for a person, complaints, or high-value leads (e.g., the visitor mentioned a large project or enterprise need). Handoff notifications go to Slack, email, or the Tidio dashboard.</li>
-<li><strong>Connect to your CRM.</strong> Use Tidio's built-in integrations or <strong>Zapier</strong>/<strong>Make</strong> to automatically create contacts in <strong>HubSpot</strong>, <strong>Pipedrive</strong>, or your preferred CRM when a lead is captured. Include the full conversation transcript so your sales team has context.</li>
+<li><strong>Connect to your CRM.</strong> Use Tidio's built-in integrations or <strong>Zapier</strong>/<strong>Make</strong> to automatically create contacts in <strong>HubSpot</strong>, <strong>Pipedrive</strong>, or your preferred CRM when a lead is captured. Include the full conversation transcript so your sales team has context. (Our guide on <a href="/blog/ai-workflow-automation-toronto-small-business">AI workflow automation for Toronto businesses</a> covers this CRM integration pattern in depth.)</li>
 </ol>
 
 <p><strong>For more complex needs:</strong> <strong>Voiceflow</strong> lets you build multi-step qualification flows with branching logic. For example, a real estate chatbot that asks about budget range, preferred neighbourhood, timeline, and property type — qualifying the lead before it reaches an agent. <strong>Intercom's Fin agent</strong> is excellent for SaaS companies where the chatbot also needs to handle existing customer support.</p>
@@ -267,7 +267,7 @@ export default function BlogPost() {
 <li><strong>CRM tracks everything</strong> — every touchpoint, every interaction, every conversion</li>
 </ol>
 
-<p>The result is a lead generation system that works around the clock, responds instantly, never forgets to follow up, and gives your team the context they need to close deals efficiently.</p>
+<p>The result is a lead generation system that works around the clock, responds instantly, never forgets to follow up, and gives your team the context they need to close deals efficiently. To measure whether the investment is paying off, use our <a href="/blog/ai-automation-roi-toronto-business">AI automation ROI framework</a>.</p>
 
 <hr>
 
@@ -280,7 +280,7 @@ export default function BlogPost() {
 <p>A poorly implemented chatbot will, yes. But a well-implemented one — one that waits before engaging, offers genuine help, is easy to dismiss, and is honest about being AI — consistently improves the visitor experience. The test: would your visitors prefer to have the option of instant answers to their questions, or would they prefer navigating your site alone? Most prefer the option.</p>
 
 <h3>What is the minimum traffic level where AI lead generation makes sense?</h3>
-<p>If you get at least 300-500 unique visitors per month, AI lead capture tools can make a noticeable difference. Below that level, focus first on driving more traffic (SEO, content, local marketing) before investing in conversion optimization. For AI phone agents, the threshold is lower — even a handful of missed calls per week translates to lost revenue for appointment-based businesses.</p>
+<p>If you get at least 300-500 unique visitors per month, AI lead capture tools can make a noticeable difference. Below that level, focus first on driving more traffic (<a href="/blog/ai-seo-aeo-toronto-guide">SEO and AEO</a>, content, local marketing) before investing in conversion optimization. For AI phone agents, the threshold is lower — even a handful of missed calls per week translates to lost revenue for appointment-based businesses.</p>
 
 <h3>Do I need a developer to set this up?</h3>
 <p>Most of the tools mentioned (Tidio, Calendly, OptinMonster, HubSpot) can be set up without a developer. Installing a chatbot widget, configuring an email sequence, or setting up a Zapier workflow requires no coding. More advanced implementations — custom chatbot flows in Voiceflow, complex lead scoring models, or integration with custom-built systems — may benefit from developer support or agency help.</p>

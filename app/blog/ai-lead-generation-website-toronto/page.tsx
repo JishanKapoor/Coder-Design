@@ -47,26 +47,34 @@ const faqJsonLd = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How can AI help generate leads from my existing website?",
+      "name": "How much of an increase in leads can I realistically expect?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AI can generate more leads from your existing website traffic in several ways: AI chatbots engage visitors in real-time conversation instead of waiting for them to fill out a form, behavioural triggers detect high-intent visitors and surface relevant offers at the right moment, AI-powered lead scoring identifies your most promising visitors, and personalized content adapts to each visitor's interests and behaviour. These tools typically increase lead capture rates by 20-50% from the same traffic."
+        "text": "It depends on your starting point. Businesses with very basic lead capture (just a contact form and phone number) typically see 30-60% more leads from the same traffic after implementing an AI chatbot and behavioural triggers. Businesses that already have some automation in place see smaller but still meaningful improvements, typically 15-25%. The key variable is your current traffic volume."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the best AI chatbot for lead generation?",
+      "name": "Will an AI chatbot annoy my website visitors?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The best AI chatbot depends on your business type and volume. Tidio is excellent for small businesses — its Lyro AI agent can be trained on your website content in minutes and handles lead qualification naturally. Intercom is better for SaaS and tech companies with higher support volumes. Drift is purpose-built for B2B lead generation with advanced routing. For custom conversational experiences, Voiceflow lets you build complex multi-step qualification flows with a visual builder."
+        "text": "A poorly implemented chatbot will, yes. But a well-implemented one — one that waits before engaging, offers genuine help, is easy to dismiss, and is honest about being AI — consistently improves the visitor experience. The key is giving visitors at least 15-30 seconds before engaging, making the close button obvious, and having a clear escalation path to a human."
       }
     },
     {
       "@type": "Question",
-      "name": "Can AI lead generation work for small businesses in Toronto?",
+      "name": "What is the minimum traffic level where AI lead generation makes sense?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely. AI lead generation tools are particularly effective for small businesses because they level the playing field — you can provide instant, personalized responses to every website visitor without hiring additional staff. A Toronto plumber, dentist, or consultant with 500-2000 monthly website visitors can meaningfully increase their lead volume with tools like Tidio (AI chatbot), Calendly (instant booking), and automated email follow-up via Zapier or Make."
+        "text": "If you get at least 300-500 unique visitors per month, AI lead capture tools can make a noticeable difference. Below that level, focus first on driving more traffic through SEO, content, and local marketing before investing in conversion optimization. For AI phone agents, the threshold is lower — even a handful of missed calls per week translates to lost revenue for appointment-based businesses."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a developer to set this up?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most of the tools mentioned (Tidio, Calendly, OptinMonster, HubSpot) can be set up without a developer. Installing a chatbot widget, configuring an email sequence, or setting up a Zapier workflow requires no coding. More advanced implementations — custom chatbot flows in Voiceflow, complex lead scoring models, or integration with custom-built systems — may benefit from developer support or agency help."
       }
     }
   ]
