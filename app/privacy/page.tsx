@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Privacy from "./content";
 
 export const metadata: Metadata = {

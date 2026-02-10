@@ -1,4 +1,4 @@
-﻿import HomeContent from "./homepage-content";
+import HomeContent from "./homepage-content";
 
 const homepageStructuredData = {
   "@context": "https://schema.org",

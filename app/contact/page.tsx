@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Contact from "./content";
 
 export const metadata: Metadata = {

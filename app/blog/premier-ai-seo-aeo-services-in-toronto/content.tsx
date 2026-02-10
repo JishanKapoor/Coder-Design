@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import { useState } from "react";
 import { Navigation } from "../../components/Navigation";
 import { FooterSection } from "../../components/FooterSection";

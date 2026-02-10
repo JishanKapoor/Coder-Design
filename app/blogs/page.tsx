@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import fs from 'fs';
 import path from 'path';
 import Blogs from "./content";
