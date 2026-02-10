@@ -31,9 +31,9 @@ export function CTASection() {
             className="mb-10 text-lg leading-relaxed text-slate-600"
           >
             Whether you need a custom web application, a mobile app for iOS and Android, AI powered 
-            automation, or an SEO strategy that drives organic revenue, our Toronto based team of 
-            senior engineers, data scientists, and growth strategists is ready to help. Book a free 
-            consultation and get a custom project quote today.
+            automation with voice bots and OpenAI integration, or an SEO strategy that drives organic revenue, 
+            our Toronto based team of senior engineers, data scientists, and growth strategists is ready to help. 
+            Book a free consultation and get a custom project quote today.
           </motion.p>
 
           <motion.div

@@ -21,13 +21,13 @@ const features = [
     icon: Brain,
     title: "AI Automation and Chatbots",
     description:
-      "Custom AI chatbots, workflow automation, computer vision, and predictive analytics pipelines. We integrate OpenAI, Claude, LangChain, and TensorFlow into production systems to automate repetitive tasks, extract insights from data, and build systems that learn over time.",
+      "Custom AI chatbots, AI voice bots, workflow automation, computer vision, and predictive analytics pipelines. We handle OpenAI integration, Claude, LangChain, and TensorFlow into production systems to automate repetitive tasks, extract insights from data, and build intelligent agents that learn over time.",
   },
   {
     icon: Search,
     title: "AI-Powered SEO & Search Optimization",
     description:
-      "AI powered search engine optimization with local GEO targeting and Answer Engine Optimization (AEO). We use machine learning for keyword discovery, automate on-page optimization, build high authority backlinks, and optimize for Google AI Overviews and voice search.",
+      "As a leading SEO company in Toronto, we deliver AI powered search engine optimization with local GEO targeting and Answer Engine Optimization (AEO). We use machine learning for keyword discovery, automate on-page optimization, build high authority backlinks, and optimize for Google AI Overviews and voice search.",
   },
   {
     icon: Cloud,

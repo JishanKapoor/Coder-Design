@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Toronto software development company. Custom web apps, mobile apps, AI automation, and SEO. 100+ projects for startups and enterprises. (437) 239-2448.",
   keywords:
-    "software development company Toronto, web development agency Toronto, custom software development Toronto, mobile app development Toronto, app developers Toronto, AI automation Toronto, SEO company Toronto, best software agency Toronto, React Next.js developers Toronto, full stack developers Toronto, Toronto web design, SaaS development Toronto, startup software development, ecommerce development Toronto, GTA app development",
+    "software development company Toronto, top software company in Toronto, best IT company in Toronto, AI company in Toronto, web development agency Toronto, custom software development Toronto, mobile app development Toronto, mobile apps Toronto agency, app developers Toronto, AI automation Toronto, voice bot Toronto, AI voice bot Toronto, OpenAI integration Toronto, SEO company Toronto, best software agency Toronto, React Next.js developers Toronto, full stack developers Toronto, Toronto web design, SaaS development Toronto, startup software development, ecommerce development Toronto, GTA app development, AI chatbot development Toronto, workflow automation Toronto",
   openGraph: {
     title: "Software Development Company Toronto | CoderDesign",
     description:
@@ -106,6 +106,8 @@ const globalOrganization = {
     "AI Automation",
     "Machine Learning",
     "Chatbot Development",
+    "AI Voice Bot Development",
+    "Voice Bot Toronto",
     "Workflow Automation",
     "n8n Automation",
     "OpenAI Integration",
@@ -162,7 +164,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZ3LECFNNK" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
+        <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-LZ3LECFNNK" />
         <script
           dangerouslySetInnerHTML={{
             __html: `

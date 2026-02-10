@@ -459,7 +459,7 @@ export default function FullStackEngineering() {
                 <Calendar className="mr-2 h-5 w-5" />
                 Schedule a Free Consultation
               </Button>
-              <Button size="lg" variant="outline" className="border-white bg-transparent text-white hover:bg-white/10" asChild>
+              <Button size="lg" variant="overlay" asChild>
                 <Link href="/contact">
                   Request a Project Quote
                   <ArrowRight className="ml-2 h-5 w-5" />

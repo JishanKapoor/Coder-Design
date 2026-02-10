@@ -55,8 +55,8 @@ export function HeroSection() {
             variants={shouldAnimate ? itemVariants : undefined}
             className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-slate-600"
           >
-            CoderDesign is a Toronto based software development company that builds custom web applications, 
-            mobile apps, AI automation systems, and SEO strategies for startups and enterprises across the GTA. 
+            CoderDesign is a top software and AI company in Toronto that builds custom web applications, 
+            mobile apps, AI automation systems, voice bots, and SEO strategies for startups and enterprises across the GTA. 
             Our senior engineers and data scientists deliver production ready solutions that scale from 
             your first MVP to millions of users.
           </motion.p>

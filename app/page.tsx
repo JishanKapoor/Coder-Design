@@ -50,6 +50,7 @@ const homepageStructuredData = {
     "React", "Next.js", "Node.js", "Python", "Django", "TypeScript",
     "React Native", "Flutter", "Swift", "Kotlin",
     "AI Automation", "Machine Learning", "Chatbot Development", "OpenAI",
+    "AI Voice Bot", "Voice Bot Development", "OpenAI Integration",
     "Search Engine Optimization", "Technical SEO", "Answer Engine Optimization",
     "SaaS Development", "E-commerce Development"
   ],
@@ -105,9 +106,9 @@ const homepageStructuredData = {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "AI Automation and Chatbot Development",
+          "name": "AI Automation, Voice Bots, and Chatbot Development",
           "url": "https://coderdesign.com/ai-workflow",
-          "description": "AI powered workflow automation using n8n, Make, OpenAI, and custom LLMs. Chatbots, data pipelines, and predictive analytics for Toronto businesses."
+          "description": "AI powered workflow automation, AI voice bots, and chatbot development using n8n, Make, OpenAI integration, and custom LLMs. Data pipelines, predictive analytics, and intelligent agents for Toronto businesses."
         }
       },
       {

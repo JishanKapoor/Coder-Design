@@ -23,7 +23,7 @@ const solutions = [
     category: "Mobile",
     title: "Mobile App Development",
     description:
-      "We design and develop high performance mobile applications for iOS and Android that users love. Using React Native, Flutter, Swift, and Kotlin, we handle everything from UX research and prototyping to App Store submission, push notifications, and post launch analytics.",
+      "As a trusted mobile apps agency in Toronto, we design and develop high performance mobile applications for iOS and Android that users love. Using React Native, Flutter, Swift, and Kotlin, we handle everything from UX research and prototyping to App Store submission, push notifications, and post launch analytics.",
     metrics: ["iOS and Android Apps", "React Native and Flutter", "Swift and Kotlin Native", "App Store Optimization"],
     href: "/mobile-app-development",
     linkText: "Discover Mobile App Solutions",
@@ -33,8 +33,8 @@ const solutions = [
     category: "AI",
     title: "AI Workflow Automation",
     description:
-      "Transform your business operations with intelligent automation. We build AI chatbots, n8n and Make workflow pipelines, voice assistants, and predictive analytics systems using OpenAI, Claude, LangChain, and TensorFlow to eliminate repetitive work and unlock data driven insights.",
-    metrics: ["n8n and Make Workflows", "AI Chatbots and Agents", "Predictive Analytics", "Natural Language Processing"],
+      "Transform your business operations with intelligent automation. We build AI chatbots, AI voice bots, n8n and Make workflow pipelines, and predictive analytics systems. Our team specializes in OpenAI integration, Claude, LangChain, and TensorFlow to eliminate repetitive work and unlock data driven insights.",
+    metrics: ["n8n and Make Workflows", "AI Chatbots and Voice Bots", "Predictive Analytics", "OpenAI Integration"],
     href: "/ai-workflow",
     linkText: "See AI Automation in Action",
   },

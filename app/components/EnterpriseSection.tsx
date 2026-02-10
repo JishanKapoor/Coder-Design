@@ -52,9 +52,9 @@ export function EnterpriseSection() {
             >
               We partner with high growth startups and established enterprises across Toronto 
               and the GTA to deliver mission critical software, AI powered automation, and SEO 
-              strategies that drive measurable revenue. Our team follows battle tested methodologies 
-              including Agile sprints, rigorous code reviews, automated CI/CD, and security first 
-              architecture to ship reliable solutions on time and within budget.
+              strategies that drive measurable revenue. Recognized as one of the best IT companies in Toronto, 
+              our team follows battle tested methodologies including Agile sprints, rigorous code reviews, 
+              automated CI/CD, and security first architecture to ship reliable solutions on time and within budget.
             </motion.p>
 
             <motion.div 

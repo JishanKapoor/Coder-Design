@@ -432,7 +432,7 @@ export default function SEOManagementDetail() {
                 <Calendar className="mr-2 h-5 w-5" />
                 Claim Your Free SEO Audit
               </Button>
-              <Button size="lg" variant="outline" className="border-white bg-transparent text-white hover:bg-white/10" asChild>
+              <Button size="lg" variant="overlay" asChild>
                 <Link href="/contact">
                   Request an SEO Proposal
                   <ArrowRight className="ml-2 h-5 w-5" />
