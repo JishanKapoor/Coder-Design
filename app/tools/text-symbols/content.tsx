@@ -164,7 +164,7 @@ export default function TextSymbolsTool() {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-violet-600 to-indigo-700 py-14 lg:py-18">
+      <section className="relative overflow-hidden bg-purple-600 pt-32 pb-16 lg:pt-36 lg:pb-20">
         <div className="absolute inset-0 opacity-10"><div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)", backgroundSize: "40px 40px" }} /></div>
         <div className="relative mx-auto max-w-4xl px-6 lg:px-12">
           <nav aria-label="Breadcrumb" className="mb-5 flex items-center gap-1.5 text-sm text-white/70">
@@ -183,19 +183,19 @@ export default function TextSymbolsTool() {
       </section>
 
       {/* Tool UI */}
-      <section className="py-10 lg:py-14">
-        <div className="mx-auto max-w-4xl px-6 lg:px-12 space-y-6">
+      <section className="py-16 lg:py-16" id="tool">
+        <div className="mx-auto max-w-4xl overflow-hidden px-6 lg:px-12 space-y-8">
           {/* Search */}
           <div className="relative">
             <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
-            <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search symbols by name (e.g., arrow, heart, star)..." className="w-full rounded-xl border border-slate-300 bg-white py-3 pl-11 pr-4 text-sm text-slate-900 placeholder:text-slate-400 focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500/20 transition-colors" />
+            <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search symbols by name (e.g., arrow, heart, star)..." className="w-full rounded-xl border border-slate-300 bg-white py-3 pl-11 pr-4 text-sm text-slate-900 placeholder:text-slate-400 focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500/20 transition-colors" />
           </div>
 
           {/* Category Filters */}
           <div className="flex flex-wrap gap-2">
-            <button onClick={() => setActiveCategory(null)} className={`rounded-lg border px-3 py-1.5 text-xs font-medium transition-colors ${!activeCategory ? "border-violet-300 bg-violet-50 text-violet-700" : "border-slate-200 bg-white text-slate-600 hover:border-violet-200"}`}>All</button>
+            <button onClick={() => setActiveCategory(null)} className={`rounded-lg border px-3 py-1.5 text-xs font-medium transition-colors ${!activeCategory ? "border-purple-300 bg-purple-50 text-purple-700" : "border-slate-200 bg-white text-slate-600 hover:border-purple-200"}`}>All</button>
             {CATEGORIES.map((cat) => (
-              <button key={cat.name} onClick={() => setActiveCategory(activeCategory === cat.name ? null : cat.name)} className={`rounded-lg border px-3 py-1.5 text-xs font-medium transition-colors ${activeCategory === cat.name ? "border-violet-300 bg-violet-50 text-violet-700" : "border-slate-200 bg-white text-slate-600 hover:border-violet-200"}`}>{cat.name}</button>
+              <button key={cat.name} onClick={() => setActiveCategory(activeCategory === cat.name ? null : cat.name)} className={`rounded-lg border px-3 py-1.5 text-xs font-medium transition-colors ${activeCategory === cat.name ? "border-purple-300 bg-purple-50 text-purple-700" : "border-slate-200 bg-white text-slate-600 hover:border-purple-200"}`}>{cat.name}</button>
             ))}
           </div>
 
@@ -250,7 +250,7 @@ export default function TextSymbolsTool() {
               { step: "4", title: "Paste Anywhere", desc: "Paste the symbol into your document, social media, or code." },
             ].map((s) => (
               <div key={s.step} className="rounded-2xl border border-slate-200 bg-white p-6">
-                <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-full bg-violet-600 text-sm font-bold text-white">{s.step}</div>
+                <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-full bg-purple-600 text-sm font-bold text-white">{s.step}</div>
                 <h3 className="mb-1 font-semibold text-slate-900">{s.title}</h3>
                 <p className="text-sm leading-relaxed text-slate-600">{s.desc}</p>
               </div>
@@ -261,7 +261,7 @@ export default function TextSymbolsTool() {
 
       {/* Features Section */}
       <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
-        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-10 text-center">
             <h2 className="text-2xl font-bold text-slate-900 lg:text-3xl">Why Use Our Text Symbols Tool?</h2>
             <p className="mt-3 text-slate-600">Access hundreds of Unicode symbols organized by category.</p>
@@ -275,8 +275,8 @@ export default function TextSymbolsTool() {
               { icon: <Search className="h-5 w-5" />, title: "Search Symbols", desc: "Find specific symbols quickly with the search feature." },
               { icon: <Zap className="h-5 w-5" />, title: "No Sign-Up", desc: "Browse and copy symbols without creating an account." },
             ].map((f, i) => (
-              <div key={i} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:border-violet-200 hover:shadow-lg">
-                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-violet-100 text-violet-600">{f.icon}</div>
+              <div key={i} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:border-purple-200 hover:shadow-lg">
+                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-purple-100 text-purple-600">{f.icon}</div>
                 <h3 className="mb-1 font-semibold text-slate-900">{f.title}</h3>
                 <p className="text-sm leading-relaxed text-slate-600">{f.desc}</p>
               </div>
@@ -287,23 +287,23 @@ export default function TextSymbolsTool() {
 
       {/* Use Cases Section */}
       <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
-        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-10 text-center">
             <h2 className="text-2xl font-bold text-slate-900 lg:text-3xl">Use Cases</h2>
             <p className="mt-3 text-slate-600">See how Unicode symbols enhance your content.</p>
           </div>
-          <div className="space-y-4">
+          <div className="space-y-8">
             {[
               { title: "Social Media Bios", before: "Coffee lover", after: "☕ Coffee lover ❤" },
               { title: "Math Notation", before: "pi = 3.14", after: "π = 3.14" },
               { title: "Decorative Text", before: "Welcome", after: "★ Welcome ★" },
               { title: "Currency Symbols", before: "Price: 100", after: "Price: €100" },
             ].map((uc, i) => (
-              <div key={i} className="rounded-xl border border-slate-200 bg-white">
+              <div key={i} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                 <div className="border-b border-slate-100 px-5 py-3">
                   <h3 className="font-semibold text-slate-900">{uc.title}</h3>
                 </div>
-                <div className="grid sm:grid-cols-2">
+                <div className="grid grid-cols-1 gap-8 p-6 sm:p-7 md:grid-cols-2 md:gap-7">
                   <div className="border-r border-slate-100 px-5 py-3">
                     <span className="mb-1 block text-xs font-medium uppercase tracking-wider text-slate-400">Input</span>
                     <p className="text-sm text-slate-700">{uc.before}</p>
@@ -321,7 +321,7 @@ export default function TextSymbolsTool() {
 
       <ToolFaq faqs={faqs} />
       <RelatedTools currentSlug="text-symbols" />
-      <ToolCta />
+      <ToolCta theme="purple" />
       <FooterSection />
     </div>
   );

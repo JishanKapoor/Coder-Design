@@ -87,7 +87,7 @@ export default function Base64EncoderDecoderTool() {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-violet-600 to-indigo-700 py-14 lg:py-18">
+      <section className="relative overflow-hidden bg-emerald-600 pt-32 pb-16 lg:pt-36 lg:pb-20">
         <div className="absolute inset-0 opacity-10"><div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)", backgroundSize: "40px 40px" }} /></div>
         <div className="relative mx-auto max-w-4xl px-6 lg:px-12">
           <nav aria-label="Breadcrumb" className="mb-5 flex items-center gap-1.5 text-sm text-white/70">
@@ -106,29 +106,32 @@ export default function Base64EncoderDecoderTool() {
       </section>
 
       {/* Tool UI */}
-      <section className="py-10 lg:py-14">
-        <div className="mx-auto max-w-4xl px-6 lg:px-12 space-y-5">
+      <section className="py-16 lg:py-16" id="tool">
+        <div className="mx-auto max-w-4xl overflow-hidden px-6 lg:px-12 space-y-8">
           <div>
             <label className="mb-2 block text-sm font-semibold text-slate-900">Input</label>
-            <textarea value={input} onChange={(e) => setInput(e.target.value)} placeholder="Enter text to encode or Base64 string to decode..." rows={6} className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500/20 transition-colors font-mono" />
+            <textarea value={input} onChange={(e) => setInput(e.target.value)} placeholder="Enter text to encode or Base64 string to decode..." rows={6} className="w-full rounded-xl border border-slate-300 bg-white px-5 py-3.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 transition-colors font-mono" />
           </div>
 
           {/* Options */}
-          <div className="flex flex-wrap items-center gap-4">
-            <label className="flex items-center gap-2 cursor-pointer">
-              <input type="checkbox" checked={urlSafe} onChange={(e) => setUrlSafe(e.target.checked)} className="h-4 w-4 rounded border-slate-300 text-violet-600 focus:ring-violet-500" />
-              <span className="text-sm text-slate-700">URL-safe Base64</span>
-            </label>
-            <label className="flex items-center gap-2 cursor-pointer">
-              <input type="checkbox" checked={lineWrap} onChange={(e) => setLineWrap(e.target.checked)} className="h-4 w-4 rounded border-slate-300 text-violet-600 focus:ring-violet-500" />
-              <span className="text-sm text-slate-700">MIME Line Wrap (76 chars)</span>
-            </label>
+          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+            <h3 className="mb-3 text-sm font-semibold text-slate-900">Options</h3>
+            <div className="flex flex-wrap items-center gap-4">
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input type="checkbox" checked={urlSafe} onChange={(e) => setUrlSafe(e.target.checked)} className="h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500" />
+                <span className="text-sm text-slate-700">URL-safe Base64</span>
+              </label>
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input type="checkbox" checked={lineWrap} onChange={(e) => setLineWrap(e.target.checked)} className="h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500" />
+                <span className="text-sm text-slate-700">MIME Line Wrap (76 chars)</span>
+              </label>
+            </div>
           </div>
 
-          <div className="flex items-center gap-3 flex-wrap">
-            <button onClick={encode} className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-violet-600 px-6 text-sm font-semibold text-white shadow-lg shadow-violet-600/25 transition-colors hover:bg-violet-700"><Lock className="h-4 w-4 flex-shrink-0" /><span>Encode</span></button>
-            <button onClick={decode} className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-violet-600 px-6 text-sm font-semibold text-white shadow-lg shadow-violet-600/25 transition-colors hover:bg-violet-700"><Lock className="h-4 w-4 flex-shrink-0" /><span>Decode</span></button>
-            <button onClick={() => { setInput(""); setOutput(""); setError(""); setSizes(null); }} className="inline-flex h-11 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50"><Trash2 className="h-4 w-4 flex-shrink-0" /><span>Clear</span></button>
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+            <button onClick={encode} className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-emerald-600 px-4 sm:px-6 text-sm font-semibold text-white shadow-lg shadow-emerald-600/25 transition-colors hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 w-full sm:w-auto whitespace-nowrap"><Lock className="h-4 w-4 flex-shrink-0" /><span>Encode</span></button>
+            <button onClick={decode} className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-emerald-600 px-4 sm:px-6 text-sm font-semibold text-white shadow-lg shadow-emerald-600/25 transition-colors hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 w-full sm:w-auto whitespace-nowrap"><Lock className="h-4 w-4 flex-shrink-0" /><span>Decode</span></button>
+            <button onClick={() => { setInput(""); setOutput(""); setError(""); setSizes(null); }} className="inline-flex h-11 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-4 sm:px-5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-300/50 w-full sm:w-auto whitespace-nowrap"><Trash2 className="h-4 w-4 flex-shrink-0" /><span>Clear</span></button>
           </div>
 
           {error && (
@@ -143,7 +146,7 @@ export default function Base64EncoderDecoderTool() {
                 <div className="text-xs text-slate-500">Input Size</div>
               </div>
               <div className="rounded-xl border border-slate-200 bg-slate-50 p-3 text-center">
-                <div className="text-lg font-bold text-violet-700">{sizes.output} B</div>
+                <div className="text-lg font-bold text-emerald-700">{sizes.output} B</div>
                 <div className="text-xs text-slate-500">Output Size</div>
               </div>
             </div>
@@ -151,15 +154,13 @@ export default function Base64EncoderDecoderTool() {
 
           <div>
             <label className="mb-2 block text-sm font-semibold text-slate-900">Output</label>
-            <div className="relative">
-              <textarea value={output} readOnly placeholder="Result will appear here..." rows={6} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 font-mono" />
+              <textarea value={output} readOnly placeholder="Result will appear here..." rows={6} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-5 py-3.5 text-sm text-slate-900 placeholder:text-slate-400 font-mono" />
               {output && (
-                <div className="absolute right-2 top-2 flex gap-1.5">
-                  <button onClick={handleCopy} className="inline-flex items-center gap-1.5 rounded-lg bg-white border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-600 shadow-sm hover:border-violet-300 hover:text-violet-700">{copied ? <><Check className="h-3.5 w-3.5 text-green-600" />Copied!</> : <><Copy className="h-3.5 w-3.5" />Copy</>}</button>
-                  <button onClick={handleDownload} className="inline-flex items-center gap-1.5 rounded-lg bg-white border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-600 shadow-sm hover:border-violet-300 hover:text-violet-700"><Download className="h-3.5 w-3.5" />Download</button>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  <button onClick={handleCopy} className="inline-flex items-center gap-1.5 rounded-lg bg-white border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-600 shadow-sm hover:border-emerald-300 hover:text-emerald-700">{copied ? <><Check className="h-3.5 w-3.5 text-green-600" />Copied!</> : <><Copy className="h-3.5 w-3.5" />Copy</>}</button>
+                  <button onClick={handleDownload} className="inline-flex items-center gap-1.5 rounded-lg bg-white border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-600 shadow-sm hover:border-emerald-300 hover:text-emerald-700"><Download className="h-3.5 w-3.5" />Download</button>
                 </div>
               )}
-            </div>
           </div>
         </div>
       </section>
@@ -179,7 +180,7 @@ export default function Base64EncoderDecoderTool() {
               { step: 4, title: "Copy Result", description: "Copy the output." },
             ].map((item) => (
               <div key={item.step} className="relative flex gap-4 rounded-2xl border border-slate-200 bg-white p-6">
-                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-violet-600 text-lg font-bold text-white">{item.step}</div>
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-emerald-600 text-lg font-bold text-white">{item.step}</div>
                 <div>
                   <h3 className="mb-2 text-base font-semibold text-slate-900">{item.title}</h3>
                   <p className="text-sm leading-relaxed text-slate-600">{item.description}</p>
@@ -192,7 +193,7 @@ export default function Base64EncoderDecoderTool() {
 
       {/* ── Features Section ── */}
       <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
-        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">Why Use Our Base64 Tool?</h2>
             <p className="mx-auto max-w-2xl text-slate-600">Encode and decode Base64 for development.</p>
@@ -208,9 +209,9 @@ export default function Base64EncoderDecoderTool() {
             ].map((feature) => {
               const Icon = feature.icon;
               return (
-                <div key={feature.title} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-violet-200 hover:shadow-lg">
-                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100">
-                    <Icon className="h-6 w-6 text-violet-600" />
+                <div key={feature.title} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-emerald-200 hover:shadow-lg">
+                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100">
+                    <Icon className="h-6 w-6 text-emerald-600" />
                   </div>
                   <h3 className="mb-2 text-base font-semibold text-slate-900">{feature.title}</h3>
                   <p className="text-sm leading-relaxed text-slate-600">{feature.description}</p>
@@ -223,23 +224,23 @@ export default function Base64EncoderDecoderTool() {
 
       {/* ── Use Cases Section ── */}
       <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
-        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-10 text-center">
             <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">Common Use Cases</h2>
             <p className="mx-auto max-w-xl text-sm text-slate-500">See how Base64 encoding is used.</p>
           </div>
-          <div className="space-y-4">
+          <div className="space-y-8">
             {[
               { title: "Encode Text", input: "Hello World", output: "SGVsbG8gV29ybGQ=" },
               { title: "Decode String", input: "SGVsbG8gV29ybGQ=", output: "Hello World" },
               { title: "API Auth", input: "user:password", output: "dXNlcjpwYXNzd29yZA==" },
               { title: "Data URIs", input: "image/png data", output: "data:image/png;base64,..." },
             ].map((useCase) => (
-              <div key={useCase.title} className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+              <div key={useCase.title} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                 <div className="border-b border-slate-100 bg-slate-50 px-6 py-3">
-                  <h3 className="text-sm font-semibold text-slate-900">{useCase.title}</h3>
+                  <h3 className="text-base font-semibold text-slate-900">{useCase.title}</h3>
                 </div>
-                <div className="grid gap-4 p-6 sm:grid-cols-2">
+                <div className="grid grid-cols-1 gap-8 p-6 sm:p-7 md:grid-cols-2 md:gap-7">
                   <div>
                     <div className="mb-2 text-xs font-medium uppercase tracking-wider text-slate-400">Input</div>
                     <pre className="rounded-lg bg-slate-50 p-3 text-xs leading-relaxed text-slate-700 overflow-x-auto">{useCase.input}</pre>
@@ -257,7 +258,7 @@ export default function Base64EncoderDecoderTool() {
 
       <ToolFaq faqs={faqs} />
       <RelatedTools currentSlug="base64-encoder-decoder" />
-      <ToolCta />
+      <ToolCta theme="emerald" />
       <FooterSection />
     </div>
   );

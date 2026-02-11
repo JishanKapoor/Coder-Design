@@ -398,31 +398,12 @@
 
   <url><loc>https://coderdesign.com/tools/truncate-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://coderdesign.com/tools/trim-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://coderdesign.com/tools/slice-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://coderdesign.com/tools/right-align-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://coderdesign.com/tools/right-pad-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://coderdesign.com/tools/left-align-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://coderdesign.com/tools/left-pad-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://coderdesign.com/tools/center-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://coderdesign.com/tools/indent-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://coderdesign.com/tools/unindent-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://coderdesign.com/tools/justify-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://coderdesign.com/tools/wrap-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://coderdesign.com/tools/reverse-words</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://coderdesign.com/tools/reverse-sentences</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://coderdesign.com/tools/reverse-paragraphs</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://coderdesign.com/tools/word-duplicator</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://coderdesign.com/tools/word-remover</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://coderdesign.com/tools/sentence-duplicator</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://coderdesign.com/tools/sentence-remover</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://coderdesign.com/tools/word-replacer</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://coderdesign.com/tools/add-random-words</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://coderdesign.com/tools/add-random-letters</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://coderdesign.com/tools/add-random-errors</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://coderdesign.com/tools/censor-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://coderdesign.com/tools/link-extractor</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://coderdesign.com/tools/create-fake-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://coderdesign.com/tools/detect-fake-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://coderdesign.com/tools/normalize-fake-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://coderdesign.com/tools/bold-text-generator</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://coderdesign.com/tools/tiny-text-generator</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>

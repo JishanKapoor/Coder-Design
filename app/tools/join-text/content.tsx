@@ -283,7 +283,7 @@ export default function JoinTextTool() {
       <Navigation />
 
       {/* ── 1. Hero ── */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-green-500 to-emerald-600 py-16 lg:py-20">
+      <section className="relative overflow-hidden bg-blue-600 pt-32 pb-16 lg:pt-36 lg:pb-20">
         <div className="absolute inset-0 opacity-10">
           <div
             className="absolute inset-0"
@@ -324,7 +324,7 @@ export default function JoinTextTool() {
             private, and instant.
           </p>
 
-          <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-white/80">
+          <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-white/70">
             <span className="inline-flex items-center gap-1.5">
               <Shield className="h-4 w-4" />
               100% Private
@@ -346,8 +346,8 @@ export default function JoinTextTool() {
       </section>
 
       {/* ── 2. Tool Section ── */}
-      <section className="py-10 lg:py-16">
-        <div className="mx-auto max-w-4xl px-6 lg:px-12 space-y-6">
+      <section className="py-16 lg:py-16" id="tool">
+        <div className="mx-auto max-w-4xl overflow-hidden px-6 lg:px-12 space-y-8">
           {/* Input */}
           <div>
             <label className="mb-2 block text-sm font-semibold text-slate-900">
@@ -358,7 +358,7 @@ export default function JoinTextTool() {
               onChange={(e) => setInput(e.target.value)}
               placeholder={"apple\nbanana\ncherry\ndate\nelderberry"}
               rows={8}
-              className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500/20 transition-colors font-mono"
+              className="w-full rounded-xl border border-slate-300 bg-white px-5 py-3.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-colors font-mono"
             />
             <div className="mt-2 flex items-center gap-3">
               <input
@@ -370,7 +370,7 @@ export default function JoinTextTool() {
               />
               <button
                 onClick={() => fileInputRef.current?.click()}
-                className="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-xs font-medium text-slate-600 hover:border-green-300 hover:text-green-700 transition-colors"
+                className="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-xs font-medium text-slate-600 hover:border-blue-300 hover:text-blue-700 transition-colors"
               >
                 <Upload className="h-3.5 w-3.5" />
                 Upload File
@@ -396,8 +396,8 @@ export default function JoinTextTool() {
                   }}
                   className={`rounded-lg border px-3 py-1.5 text-xs font-medium transition-colors ${
                     !useCustom && separator === p.value
-                      ? "border-green-300 bg-green-50 text-green-700"
-                      : "border-slate-200 bg-white text-slate-600 hover:border-green-200"
+                      ? "border-blue-300 bg-blue-50 text-blue-700"
+                      : "border-slate-200 bg-white text-slate-600 hover:border-blue-200"
                   }`}
                 >
                   {p.label}
@@ -410,8 +410,8 @@ export default function JoinTextTool() {
                 onClick={() => setUseCustom(true)}
                 className={`rounded-lg border px-3 py-1.5 text-xs font-medium transition-colors ${
                   useCustom
-                    ? "border-green-300 bg-green-50 text-green-700"
-                    : "border-slate-200 bg-white text-slate-600 hover:border-green-200"
+                    ? "border-blue-300 bg-blue-50 text-blue-700"
+                    : "border-slate-200 bg-white text-slate-600 hover:border-blue-200"
                 }`}
               >
                 Custom
@@ -427,21 +427,21 @@ export default function JoinTextTool() {
                   value={customSeparator}
                   onChange={(e) => setCustomSeparator(e.target.value)}
                   placeholder="e.g.  ::  or  →  or any string"
-                  className="w-64 rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm font-mono text-slate-900 focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500/20"
+                  className="w-64 rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm font-mono text-slate-900 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
                 />
               </div>
             )}
           </div>
 
           {/* Options */}
-          <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 space-y-4">
+          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 space-y-4">
             <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
               <label className="inline-flex items-center gap-2 text-sm text-slate-700 cursor-pointer">
                 <input
                   type="checkbox"
                   checked={trimLines}
                   onChange={(e) => setTrimLines(e.target.checked)}
-                  className="h-4 w-4 rounded border-slate-300 text-green-600 focus:ring-green-500"
+                  className="h-4 w-4 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
                 />
                 Trim lines
               </label>
@@ -450,7 +450,7 @@ export default function JoinTextTool() {
                   type="checkbox"
                   checked={removeEmpty}
                   onChange={(e) => setRemoveEmpty(e.target.checked)}
-                  className="h-4 w-4 rounded border-slate-300 text-green-600 focus:ring-green-500"
+                  className="h-4 w-4 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
                 />
                 Remove empty lines
               </label>
@@ -466,7 +466,7 @@ export default function JoinTextTool() {
                   value={addPrefix}
                   onChange={(e) => setAddPrefix(e.target.value)}
                   placeholder='e.g. <li> or "  '
-                  className="w-36 rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm font-mono text-slate-900 focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500/20"
+                  className="w-36 rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm font-mono text-slate-900 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
                 />
               </div>
               <div>
@@ -478,7 +478,7 @@ export default function JoinTextTool() {
                   value={addSuffix}
                   onChange={(e) => setAddSuffix(e.target.value)}
                   placeholder='e.g. </li> or "'
-                  className="w-36 rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm font-mono text-slate-900 focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500/20"
+                  className="w-36 rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm font-mono text-slate-900 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
                 />
               </div>
               <div>
@@ -490,7 +490,7 @@ export default function JoinTextTool() {
                   value={wrapEach}
                   onChange={(e) => setWrapEach(e.target.value)}
                   placeholder={`e.g. " or ' or [`}
-                  className="w-36 rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm font-mono text-slate-900 focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500/20"
+                  className="w-36 rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm font-mono text-slate-900 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
                 />
                 <p className="mt-0.5 text-[10px] text-slate-400">
                   Added to both sides
@@ -500,17 +500,17 @@ export default function JoinTextTool() {
           </div>
 
           {/* Action buttons */}
-          <div className="flex items-center gap-3">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
             <button
               onClick={joinText}
-              className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-green-600 px-6 text-sm font-semibold text-white shadow-lg shadow-green-600/25 transition-colors hover:bg-green-700"
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 sm:px-6 text-sm font-semibold text-white shadow-lg shadow-blue-600/25 transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500/50 w-full sm:w-auto whitespace-nowrap"
             >
               <Link2 className="h-4 w-4 flex-shrink-0" />
               <span>Join Lines</span>
             </button>
             <button
               onClick={handleClear}
-              className="inline-flex h-11 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50"
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-4 sm:px-5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-300/50 w-full sm:w-auto whitespace-nowrap"
             >
               <Trash2 className="h-4 w-4 flex-shrink-0" />
               <span>Clear</span>
@@ -519,7 +519,7 @@ export default function JoinTextTool() {
 
           {/* Stats bar */}
           {joinedLineCount > 0 && (
-            <div className="flex items-center gap-3 rounded-xl border border-green-200 bg-green-50 px-4 py-2.5 text-sm text-green-800">
+            <div className="flex items-center gap-3 rounded-xl border border-blue-200 bg-blue-50 px-5 py-3 text-sm text-blue-800">
               <Merge className="h-4 w-4 flex-shrink-0" />
               <span>
                 Joined{" "}
@@ -538,19 +538,18 @@ export default function JoinTextTool() {
             <label className="mb-2 block text-sm font-semibold text-slate-900">
               Output
             </label>
-            <div className="relative">
               <textarea
                 value={output}
                 readOnly
                 placeholder="Joined text will appear here…"
                 rows={6}
-                className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 font-mono"
+                className="w-full rounded-xl border border-slate-300 bg-slate-50 px-5 py-3.5 text-sm text-slate-900 placeholder:text-slate-400 font-mono"
               />
               {output && (
-                <div className="absolute right-2 top-2 flex gap-1.5">
+                <div className="mt-3 flex flex-wrap gap-2">
                   <button
                     onClick={handleCopy}
-                    className="inline-flex items-center gap-1.5 rounded-lg bg-white border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-600 shadow-sm hover:border-green-300 hover:text-green-700 transition-colors"
+                    className="inline-flex items-center gap-1.5 rounded-lg bg-white border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-600 shadow-sm hover:border-blue-300 hover:text-blue-700 transition-colors"
                   >
                     {copied ? (
                       <>
@@ -566,20 +565,19 @@ export default function JoinTextTool() {
                   </button>
                   <button
                     onClick={handleDownload}
-                    className="inline-flex items-center gap-1.5 rounded-lg bg-white border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-600 shadow-sm hover:border-green-300 hover:text-green-700 transition-colors"
+                    className="inline-flex items-center gap-1.5 rounded-lg bg-white border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-600 shadow-sm hover:border-blue-300 hover:text-blue-700 transition-colors"
                   >
                     <Download className="h-3.5 w-3.5" />
                     Download
                   </button>
                 </div>
               )}
-            </div>
           </div>
         </div>
       </section>
 
       {/* ── 3. How-To ── */}
-      <section className="border-t border-slate-200 bg-slate-50 py-14 lg:py-18">
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
         <div className="mx-auto max-w-5xl px-6 lg:px-12">
           <div className="mb-10 text-center">
             <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">
@@ -596,7 +594,7 @@ export default function JoinTextTool() {
                 key={s.step}
                 className="rounded-2xl border border-slate-200 bg-white p-6"
               >
-                <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-green-100 text-sm font-bold text-green-700">
+                <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-blue-100 text-sm font-bold text-blue-700">
                   {s.step}
                 </div>
                 <h3 className="mb-1.5 text-sm font-semibold text-slate-900">
@@ -612,7 +610,7 @@ export default function JoinTextTool() {
       </section>
 
       {/* ── 4. Features ── */}
-      <section className="border-t border-slate-200 bg-white py-14 lg:py-18">
+      <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
         <div className="mx-auto max-w-5xl px-6 lg:px-12">
           <div className="mb-10 text-center">
             <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">
@@ -630,7 +628,7 @@ export default function JoinTextTool() {
                 key={f.title}
                 className="rounded-2xl border border-slate-200 bg-white p-6 transition-shadow hover:shadow-md"
               >
-                <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-green-100 text-green-600">
+                <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
                   <f.icon className="h-5 w-5" />
                 </div>
                 <h3 className="mb-1.5 text-sm font-semibold text-slate-900">
@@ -646,8 +644,8 @@ export default function JoinTextTool() {
       </section>
 
       {/* ── 5. Use Cases ── */}
-      <section className="border-t border-slate-200 bg-slate-50 py-14 lg:py-18">
-        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-10 text-center">
             <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">
               Real-World Use Cases
@@ -657,36 +655,33 @@ export default function JoinTextTool() {
               creation to SQL clause generation.
             </p>
           </div>
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="space-y-8">
             {useCases.map((uc) => (
               <div
                 key={uc.title}
-                className="rounded-2xl border border-slate-200 bg-white p-6"
+                className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
               >
-                <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-green-100 text-green-600">
-                  <uc.icon className="h-5 w-5" />
+                <div className="flex items-start gap-4 border-b border-slate-100 px-6 py-4 sm:px-7 sm:py-5">
+                  <div className="inline-flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-xl bg-blue-100">
+                    <uc.icon className="h-4 w-4 text-blue-600" />
+                  </div>
+                  <div className="min-w-0">
+                    <h3 className="text-base font-semibold text-slate-900">
+                      {uc.title}
+                    </h3>
+                    <p className="mt-1 text-sm leading-relaxed text-slate-600">
+                      {uc.desc}
+                    </p>
+                  </div>
                 </div>
-                <h3 className="mb-1.5 text-sm font-semibold text-slate-900">
-                  {uc.title}
-                </h3>
-                <p className="mb-4 text-sm leading-relaxed text-slate-600">
-                  {uc.desc}
-                </p>
-                <div className="space-y-2 text-xs">
-                  <div className="rounded-lg bg-red-50 border border-red-100 px-3 py-2 font-mono text-red-700">
-                    <span className="font-semibold text-red-500">
-                      Before:{" "}
-                    </span>
-                    {uc.before}
+                <div className="grid grid-cols-1 gap-8 p-6 sm:p-7 md:grid-cols-2 md:gap-7">
+                  <div className="rounded-xl border border-slate-200 bg-slate-50 p-6">
+                    <p className="mb-3 text-[11px] font-semibold uppercase tracking-wider text-slate-400">Input</p>
+                    <pre className="whitespace-pre-wrap break-words text-xs leading-relaxed text-slate-700 font-mono p-3 bg-white rounded-lg">{uc.before}</pre>
                   </div>
-                  <div className="flex justify-center">
-                    <ArrowRight className="h-3.5 w-3.5 text-slate-400" />
-                  </div>
-                  <div className="rounded-lg bg-green-50 border border-green-100 px-3 py-2 font-mono text-green-700 whitespace-pre-line">
-                    <span className="font-semibold text-green-500">
-                      After:{" "}
-                    </span>
-                    {uc.after}
+                  <div className="rounded-xl border border-emerald-200 bg-emerald-50 p-6">
+                    <p className="mb-3 text-[11px] font-semibold uppercase tracking-wider text-emerald-700">Output</p>
+                    <pre className="whitespace-pre-wrap break-words text-xs leading-relaxed text-emerald-800 font-mono p-3 bg-emerald-100 rounded-lg">{uc.after}</pre>
                   </div>
                 </div>
               </div>
@@ -696,8 +691,8 @@ export default function JoinTextTool() {
       </section>
 
       {/* ── 6. FAQ ── */}
-      <section className="border-t border-slate-200 bg-slate-50 py-14 lg:py-18">
-        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <h2 className="mb-8 text-center text-2xl font-bold text-slate-900 lg:text-3xl">
             Frequently Asked Questions
           </h2>
@@ -744,7 +739,7 @@ export default function JoinTextTool() {
       <RelatedTools currentSlug="join-text" />
 
       {/* ── 8. CTA ── */}
-      <ToolCta />
+      <ToolCta theme="blue" />
 
       {/* ── 9. Footer ── */}
       <FooterSection />

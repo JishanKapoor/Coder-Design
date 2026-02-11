@@ -53,7 +53,7 @@ export default function RegexTesterTool() {
       // Build highlighted string
       let html = "";
       let last = 0;
-      const colors = ["bg-violet-200", "bg-blue-200", "bg-green-200", "bg-amber-200", "bg-pink-200"];
+      const colors = ["bg-emerald-200", "bg-blue-200", "bg-green-200", "bg-amber-200", "bg-pink-200"];
       results.forEach((r, i) => {
         const before = testString.slice(last, r.index);
         html += escapeHtml(before);
@@ -92,7 +92,7 @@ export default function RegexTesterTool() {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-violet-600 to-indigo-700 py-14 lg:py-18">
+      <section className="relative overflow-hidden bg-emerald-600 pt-32 pb-16 lg:pt-36 lg:pb-20">
         <div className="absolute inset-0 opacity-10"><div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)", backgroundSize: "40px 40px" }} /></div>
         <div className="relative mx-auto max-w-4xl px-6 lg:px-12">
           <nav aria-label="Breadcrumb" className="mb-5 flex items-center gap-1.5 text-sm text-white/70">
@@ -111,43 +111,45 @@ export default function RegexTesterTool() {
       </section>
 
       {/* Tool UI */}
-      <section className="py-10 lg:py-14">
-        <div className="mx-auto max-w-4xl px-6 lg:px-12 space-y-5">
+      <section className="py-16 lg:py-16" id="tool">
+        <div className="mx-auto max-w-4xl overflow-hidden px-6 lg:px-12 space-y-8">
           {/* Pattern input */}
           <div>
             <label className="mb-2 block text-sm font-semibold text-slate-900">Regular Expression</label>
             <div className="flex items-center gap-2">
               <span className="text-lg text-slate-400 font-mono">/</span>
-              <input value={pattern} onChange={(e) => setPattern(e.target.value)} placeholder="Enter regex pattern..." className="flex-1 rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500/20 transition-colors font-mono" />
+              <input value={pattern} onChange={(e) => setPattern(e.target.value)} placeholder="Enter regex pattern..." className="flex-1 rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 transition-colors font-mono" />
               <span className="text-lg text-slate-400 font-mono">/{flags}</span>
             </div>
             {regexError && <p className="mt-1.5 text-xs text-red-600">{regexError}</p>}
           </div>
 
           {/* Flags */}
-          <div className="flex flex-wrap items-center gap-4">
-            <span className="text-xs font-medium text-slate-600">Flags:</span>
-            {[
-              { label: "g (global)", checked: flagG, set: setFlagG },
-              { label: "i (case-insensitive)", checked: flagI, set: setFlagI },
-              { label: "m (multiline)", checked: flagM, set: setFlagM },
-              { label: "s (dotAll)", checked: flagS, set: setFlagS },
-            ].map((f) => (
-              <label key={f.label} className="flex items-center gap-1.5 cursor-pointer">
-                <input type="checkbox" checked={f.checked} onChange={(e) => f.set(e.target.checked)} className="h-4 w-4 rounded border-slate-300 text-violet-600 focus:ring-violet-500" />
-                <span className="text-sm text-slate-700 font-mono">{f.label}</span>
-              </label>
-            ))}
+          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+            <h3 className="mb-3 text-sm font-semibold text-slate-900">Flags</h3>
+            <div className="flex flex-wrap items-center gap-4">
+              {[
+                { label: "g (global)", checked: flagG, set: setFlagG },
+                { label: "i (case-insensitive)", checked: flagI, set: setFlagI },
+                { label: "m (multiline)", checked: flagM, set: setFlagM },
+                { label: "s (dotAll)", checked: flagS, set: setFlagS },
+              ].map((f) => (
+                <label key={f.label} className="flex items-center gap-1.5 cursor-pointer">
+                  <input type="checkbox" checked={f.checked} onChange={(e) => f.set(e.target.checked)} className="h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500" />
+                  <span className="text-sm text-slate-700 font-mono">{f.label}</span>
+                </label>
+              ))}
+            </div>
           </div>
 
           {/* Test string */}
           <div>
             <label className="mb-2 block text-sm font-semibold text-slate-900">Test String</label>
-            <textarea value={testString} onChange={(e) => setTestString(e.target.value)} placeholder="Enter text to test against..." rows={6} className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500/20 transition-colors font-mono" />
+            <textarea value={testString} onChange={(e) => setTestString(e.target.value)} placeholder="Enter text to test against..." rows={6} className="w-full rounded-xl border border-slate-300 bg-white px-5 py-3.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 transition-colors font-mono" />
           </div>
 
-          <div className="flex items-center gap-3">
-            <button onClick={() => { setPattern(""); setTestString(""); setRegexError(""); }} className="inline-flex h-11 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50"><Trash2 className="h-4 w-4 flex-shrink-0" /><span>Clear All</span></button>
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+            <button onClick={() => { setPattern(""); setTestString(""); setRegexError(""); }} className="inline-flex h-11 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-4 sm:px-5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-300/50 w-full sm:w-auto whitespace-nowrap"><Trash2 className="h-4 w-4 flex-shrink-0" /><span>Clear All</span></button>
             <span className="text-sm text-slate-500">{matches.length} match{matches.length !== 1 ? "es" : ""} found</span>
           </div>
 
@@ -155,7 +157,7 @@ export default function RegexTesterTool() {
           {highlighted && (
             <div>
               <label className="mb-2 block text-sm font-semibold text-slate-900">Highlighted Matches</label>
-              <div className="rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm text-slate-900 font-mono whitespace-pre-wrap break-all" dangerouslySetInnerHTML={{ __html: highlighted }} />
+              <div className="rounded-xl border border-slate-300 bg-slate-50 px-5 py-3.5 text-sm text-slate-900 font-mono whitespace-pre-wrap break-all" dangerouslySetInnerHTML={{ __html: highlighted }} />
             </div>
           )}
 
@@ -167,7 +169,7 @@ export default function RegexTesterTool() {
                 {matches.map((m, i) => (
                   <div key={i} className="rounded-lg border border-slate-200 bg-white p-3 text-sm">
                     <div className="flex items-center gap-3">
-                      <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-violet-100 text-xs font-bold text-violet-700">{i + 1}</span>
+                      <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-100 text-xs font-bold text-emerald-700">{i + 1}</span>
                       <code className="font-mono text-slate-900">&quot;{m.text}&quot;</code>
                       <span className="text-xs text-slate-400">index {m.index}</span>
                     </div>
@@ -189,7 +191,7 @@ export default function RegexTesterTool() {
             <label className="mb-2 block text-sm font-semibold text-slate-900">Quick Patterns</label>
             <div className="flex flex-wrap gap-2">
               {QUICK_PATTERNS.map((p) => (
-                <button key={p.label} onClick={() => applyQuickPattern(p)} className="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-600 hover:border-violet-300 hover:text-violet-700 transition-colors">
+                <button key={p.label} onClick={() => applyQuickPattern(p)} className="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-600 hover:border-emerald-300 hover:text-emerald-700 transition-colors">
                   <Search className="mr-1 inline h-3 w-3" />{p.label}
                 </button>
               ))}
@@ -213,7 +215,7 @@ export default function RegexTesterTool() {
               { step: 4, title: "Refine Pattern", description: "Adjust your regex until it works." },
             ].map((item) => (
               <div key={item.step} className="relative flex gap-4 rounded-2xl border border-slate-200 bg-white p-6">
-                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-violet-600 text-lg font-bold text-white">{item.step}</div>
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-emerald-600 text-lg font-bold text-white">{item.step}</div>
                 <div>
                   <h3 className="mb-2 text-base font-semibold text-slate-900">{item.title}</h3>
                   <p className="text-sm leading-relaxed text-slate-600">{item.description}</p>
@@ -226,7 +228,7 @@ export default function RegexTesterTool() {
 
       {/* ── Features Section ── */}
       <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
-        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">Why Use Our Regex Tester?</h2>
             <p className="mx-auto max-w-2xl text-slate-600">Debug and perfect regular expressions.</p>
@@ -242,9 +244,9 @@ export default function RegexTesterTool() {
             ].map((feature) => {
               const Icon = feature.icon;
               return (
-                <div key={feature.title} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-violet-200 hover:shadow-lg">
-                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100">
-                    <Icon className="h-6 w-6 text-violet-600" />
+                <div key={feature.title} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-emerald-200 hover:shadow-lg">
+                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100">
+                    <Icon className="h-6 w-6 text-emerald-600" />
                   </div>
                   <h3 className="mb-2 text-base font-semibold text-slate-900">{feature.title}</h3>
                   <p className="text-sm leading-relaxed text-slate-600">{feature.description}</p>
@@ -257,23 +259,23 @@ export default function RegexTesterTool() {
 
       {/* ── Use Cases Section ── */}
       <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
-        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-10 text-center">
             <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">Common Use Cases</h2>
             <p className="mx-auto max-w-xl text-sm text-slate-500">See how regex testing is used.</p>
           </div>
-          <div className="space-y-4">
+          <div className="space-y-8">
             {[
               { title: "Email Validation", input: "Pattern: [\\w.]+@[\\w.]+\nText: user@example.com", output: "Match: user@example.com" },
               { title: "Phone Numbers", input: "Pattern: \\d{3}-\\d{4}\nText: Call 555-1234", output: "Match: 555-1234" },
               { title: "URLs", input: "Pattern: https?://\\S+\nText: Visit https://site.com", output: "Match: https://site.com" },
               { title: "Dates", input: "Pattern: \\d{4}-\\d{2}-\\d{2}\nText: Date: 2024-01-15", output: "Match: 2024-01-15" },
             ].map((useCase) => (
-              <div key={useCase.title} className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+              <div key={useCase.title} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                 <div className="border-b border-slate-100 bg-slate-50 px-6 py-3">
-                  <h3 className="text-sm font-semibold text-slate-900">{useCase.title}</h3>
+                  <h3 className="text-base font-semibold text-slate-900">{useCase.title}</h3>
                 </div>
-                <div className="grid gap-4 p-6 sm:grid-cols-2">
+                <div className="grid grid-cols-1 gap-8 p-6 sm:p-7 md:grid-cols-2 md:gap-7">
                   <div>
                     <div className="mb-2 text-xs font-medium uppercase tracking-wider text-slate-400">Input</div>
                     <pre className="rounded-lg bg-slate-50 p-3 text-xs leading-relaxed text-slate-700 overflow-x-auto">{useCase.input}</pre>
@@ -291,7 +293,7 @@ export default function RegexTesterTool() {
 
       <ToolFaq faqs={faqs} />
       <RelatedTools currentSlug="regex-tester" />
-      <ToolCta />
+      <ToolCta theme="emerald" />
       <FooterSection />
     </div>
   );

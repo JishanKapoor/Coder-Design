@@ -327,7 +327,7 @@ export default function SplitTextTool() {
       <Navigation />
 
       {/* ── 1. Hero ── */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-sky-500 to-cyan-600 py-16 lg:py-20">
+      <section className="relative overflow-hidden bg-blue-600 pt-32 pb-16 lg:pt-36 lg:pb-20">
         <div className="absolute inset-0 opacity-10">
           <div
             className="absolute inset-0"
@@ -366,7 +366,7 @@ export default function SplitTextTool() {
             divide articles — instantly and privately in your browser.
           </p>
 
-          <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-white/80">
+          <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-white/70">
             <span className="inline-flex items-center gap-1.5">
               <Shield className="h-4 w-4" />
               100% Private
@@ -388,8 +388,8 @@ export default function SplitTextTool() {
       </section>
 
       {/* ── 2. Tool Section ── */}
-      <section className="py-10 lg:py-16">
-        <div className="mx-auto max-w-4xl px-6 lg:px-12 space-y-6">
+      <section className="py-16 lg:py-16" id="tool">
+        <div className="mx-auto max-w-4xl overflow-hidden px-6 lg:px-12 space-y-8">
           {/* Input */}
           <div>
             <label className="mb-2 block text-sm font-semibold text-slate-900">
@@ -400,7 +400,7 @@ export default function SplitTextTool() {
               onChange={(e) => setInput(e.target.value)}
               placeholder="Paste your text here — CSV rows, log lines, paragraphs, code…"
               rows={8}
-              className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500/20 transition-colors"
+              className="w-full rounded-xl border border-slate-300 bg-white px-5 py-3.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-colors"
             />
             <div className="mt-2 flex items-center gap-3">
               <input
@@ -412,7 +412,7 @@ export default function SplitTextTool() {
               />
               <button
                 onClick={() => fileInputRef.current?.click()}
-                className="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-xs font-medium text-slate-600 hover:border-sky-300 hover:text-sky-700 transition-colors"
+                className="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-xs font-medium text-slate-600 hover:border-blue-300 hover:text-blue-700 transition-colors"
               >
                 <Upload className="h-3.5 w-3.5" />
                 Upload File
@@ -435,7 +435,7 @@ export default function SplitTextTool() {
                   onClick={() => setSplitMode(m.value)}
                   className={`rounded-xl px-4 py-2 text-sm font-medium transition-colors ${
                     splitMode === m.value
-                      ? "bg-sky-600 text-white shadow-md shadow-sky-600/25"
+                      ? "bg-blue-600 text-white shadow-md shadow-blue-600/25"
                       : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                   }`}
                 >
@@ -446,7 +446,7 @@ export default function SplitTextTool() {
           </div>
 
           {/* Mode-specific options */}
-          <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 space-y-4">
+          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 space-y-4">
             {splitMode === "delimiter" && (
               <div>
                 <label className="mb-1.5 block text-xs font-medium text-slate-600">
@@ -465,8 +465,8 @@ export default function SplitTextTool() {
                       onClick={() => setCustomDelimiter(preset.val)}
                       className={`rounded-lg px-3 py-1.5 text-xs font-medium transition-colors ${
                         customDelimiter === preset.val
-                          ? "bg-sky-600 text-white"
-                          : "bg-white border border-slate-300 text-slate-700 hover:border-sky-300"
+                          ? "bg-blue-600 text-white"
+                          : "bg-white border border-slate-300 text-slate-700 hover:border-blue-300"
                       }`}
                     >
                       {preset.label}
@@ -477,7 +477,7 @@ export default function SplitTextTool() {
                     value={customDelimiter}
                     onChange={(e) => setCustomDelimiter(e.target.value)}
                     placeholder="Custom…"
-                    className="w-28 rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-xs font-mono text-slate-900 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500/20"
+                    className="w-28 rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-xs font-mono text-slate-900 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
                   />
                 </div>
               </div>
@@ -493,7 +493,7 @@ export default function SplitTextTool() {
                   min={1}
                   value={charCount}
                   onChange={(e) => setCharCount(e.target.value)}
-                  className="w-32 rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm text-slate-900 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500/20"
+                  className="w-32 rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm text-slate-900 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
                 />
               </div>
             )}
@@ -508,7 +508,7 @@ export default function SplitTextTool() {
                   min={1}
                   value={lineCount}
                   onChange={(e) => setLineCount(e.target.value)}
-                  className="w-32 rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm text-slate-900 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500/20"
+                  className="w-32 rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm text-slate-900 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
                 />
               </div>
             )}
@@ -523,7 +523,7 @@ export default function SplitTextTool() {
                   min={1}
                   value={wordCount}
                   onChange={(e) => setWordCount(e.target.value)}
-                  className="w-32 rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm text-slate-900 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500/20"
+                  className="w-32 rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm text-slate-900 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
                 />
               </div>
             )}
@@ -538,7 +538,7 @@ export default function SplitTextTool() {
                   value={regexPattern}
                   onChange={(e) => setRegexPattern(e.target.value)}
                   placeholder="e.g. [.!?]\\s+"
-                  className="w-full max-w-sm rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm font-mono text-slate-900 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500/20"
+                  className="w-full max-w-sm rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm font-mono text-slate-900 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
                 />
                 <p className="mt-1 text-xs text-slate-400">
                   JavaScript regex syntax — e.g.{" "}
@@ -556,7 +556,7 @@ export default function SplitTextTool() {
                   type="checkbox"
                   checked={trimResults}
                   onChange={(e) => setTrimResults(e.target.checked)}
-                  className="h-4 w-4 rounded border-slate-300 text-sky-600 focus:ring-sky-500"
+                  className="h-4 w-4 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
                 />
                 Trim results
               </label>
@@ -565,7 +565,7 @@ export default function SplitTextTool() {
                   type="checkbox"
                   checked={removeEmpty}
                   onChange={(e) => setRemoveEmpty(e.target.checked)}
-                  className="h-4 w-4 rounded border-slate-300 text-sky-600 focus:ring-sky-500"
+                  className="h-4 w-4 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
                 />
                 Remove empty parts
               </label>
@@ -577,24 +577,24 @@ export default function SplitTextTool() {
                   type="text"
                   value={outputSeparator}
                   onChange={(e) => setOutputSeparator(e.target.value)}
-                  className="w-28 rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-xs font-mono text-slate-900 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500/20"
+                  className="w-28 rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-xs font-mono text-slate-900 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
                 />
               </div>
             </div>
           </div>
 
           {/* Action buttons */}
-          <div className="flex items-center gap-3">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
             <button
               onClick={splitText}
-              className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-sky-600 px-6 text-sm font-semibold text-white shadow-lg shadow-sky-600/25 transition-colors hover:bg-sky-700"
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 sm:px-6 text-sm font-semibold text-white shadow-lg shadow-blue-600/25 transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500/50 w-full sm:w-auto whitespace-nowrap"
             >
               <Scissors className="h-4 w-4 flex-shrink-0" />
               <span>Split Text</span>
             </button>
             <button
               onClick={handleClear}
-              className="inline-flex h-11 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50"
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-4 sm:px-5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-300/50 w-full sm:w-auto whitespace-nowrap"
             >
               <Trash2 className="h-4 w-4 flex-shrink-0" />
               <span>Clear</span>
@@ -603,7 +603,7 @@ export default function SplitTextTool() {
 
           {/* Stats bar */}
           {chunkCount > 0 && (
-            <div className="flex items-center gap-3 rounded-xl border border-sky-200 bg-sky-50 px-4 py-2.5 text-sm text-sky-800">
+            <div className="flex items-center gap-3 rounded-xl border border-blue-200 bg-blue-50 px-5 py-3 text-sm text-blue-800">
               <Split className="h-4 w-4 flex-shrink-0" />
               <span>
                 Split into{" "}
@@ -618,19 +618,18 @@ export default function SplitTextTool() {
             <label className="mb-2 block text-sm font-semibold text-slate-900">
               Output
             </label>
-            <div className="relative">
               <textarea
                 value={output}
                 readOnly
                 placeholder="Split result will appear here…"
                 rows={10}
-                className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 font-mono"
+                className="w-full rounded-xl border border-slate-300 bg-slate-50 px-5 py-3.5 text-sm text-slate-900 placeholder:text-slate-400 font-mono"
               />
               {output && (
-                <div className="absolute right-2 top-2 flex gap-1.5">
+                <div className="mt-3 flex flex-wrap gap-2">
                   <button
                     onClick={handleCopy}
-                    className="inline-flex items-center gap-1.5 rounded-lg bg-white border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-600 shadow-sm hover:border-sky-300 hover:text-sky-700 transition-colors"
+                    className="inline-flex items-center gap-1.5 rounded-lg bg-white border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-600 shadow-sm hover:border-blue-300 hover:text-blue-700 transition-colors"
                   >
                     {copied ? (
                       <>
@@ -646,20 +645,19 @@ export default function SplitTextTool() {
                   </button>
                   <button
                     onClick={handleDownload}
-                    className="inline-flex items-center gap-1.5 rounded-lg bg-white border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-600 shadow-sm hover:border-sky-300 hover:text-sky-700 transition-colors"
+                    className="inline-flex items-center gap-1.5 rounded-lg bg-white border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-600 shadow-sm hover:border-blue-300 hover:text-blue-700 transition-colors"
                   >
                     <Download className="h-3.5 w-3.5" />
                     Download
                   </button>
                 </div>
               )}
-            </div>
           </div>
         </div>
       </section>
 
       {/* ── 3. How-To ── */}
-      <section className="border-t border-slate-200 bg-slate-50 py-14 lg:py-18">
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
         <div className="mx-auto max-w-5xl px-6 lg:px-12">
           <div className="mb-10 text-center">
             <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">
@@ -676,7 +674,7 @@ export default function SplitTextTool() {
                 key={s.step}
                 className="rounded-2xl border border-slate-200 bg-white p-6"
               >
-                <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-sky-100 text-sm font-bold text-sky-700">
+                <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-blue-100 text-sm font-bold text-blue-700">
                   {s.step}
                 </div>
                 <h3 className="mb-1.5 text-sm font-semibold text-slate-900">
@@ -692,7 +690,7 @@ export default function SplitTextTool() {
       </section>
 
       {/* ── 4. Features ── */}
-      <section className="border-t border-slate-200 bg-white py-14 lg:py-18">
+      <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
         <div className="mx-auto max-w-5xl px-6 lg:px-12">
           <div className="mb-10 text-center">
             <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">
@@ -710,7 +708,7 @@ export default function SplitTextTool() {
                 key={f.title}
                 className="rounded-2xl border border-slate-200 bg-white p-6 transition-shadow hover:shadow-md"
               >
-                <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-sky-100 text-sky-600">
+                <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
                   <f.icon className="h-5 w-5" />
                 </div>
                 <h3 className="mb-1.5 text-sm font-semibold text-slate-900">
@@ -726,8 +724,8 @@ export default function SplitTextTool() {
       </section>
 
       {/* ── 5. Use Cases ── */}
-      <section className="border-t border-slate-200 bg-slate-50 py-14 lg:py-18">
-        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-10 text-center">
             <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">
               Real-World Use Cases
@@ -737,32 +735,33 @@ export default function SplitTextTool() {
               CSV parsing to article chunking.
             </p>
           </div>
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="space-y-8">
             {useCases.map((uc) => (
               <div
                 key={uc.title}
-                className="rounded-2xl border border-slate-200 bg-white p-6"
+                className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
               >
-                <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-sky-100 text-sky-600">
-                  <uc.icon className="h-5 w-5" />
+                <div className="flex items-start gap-4 border-b border-slate-100 px-6 py-4 sm:px-7 sm:py-5">
+                  <div className="inline-flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-xl bg-blue-100">
+                    <uc.icon className="h-4 w-4 text-blue-600" />
+                  </div>
+                  <div className="min-w-0">
+                    <h3 className="text-base font-semibold text-slate-900">
+                      {uc.title}
+                    </h3>
+                    <p className="mt-1 text-sm leading-relaxed text-slate-600">
+                      {uc.desc}
+                    </p>
+                  </div>
                 </div>
-                <h3 className="mb-1.5 text-sm font-semibold text-slate-900">
-                  {uc.title}
-                </h3>
-                <p className="mb-4 text-sm leading-relaxed text-slate-600">
-                  {uc.desc}
-                </p>
-                <div className="space-y-2 text-xs">
-                  <div className="rounded-lg bg-red-50 border border-red-100 px-3 py-2 font-mono text-red-700">
-                    <span className="font-semibold text-red-500">Before: </span>
-                    {uc.before}
+                <div className="grid grid-cols-1 gap-8 p-6 sm:p-7 md:grid-cols-2 md:gap-7">
+                  <div className="rounded-xl border border-slate-200 bg-slate-50 p-6">
+                    <p className="mb-3 text-[11px] font-semibold uppercase tracking-wider text-slate-400">Input</p>
+                    <pre className="whitespace-pre-wrap break-words text-xs leading-relaxed text-slate-700 font-mono p-3 bg-white rounded-lg">{uc.before}</pre>
                   </div>
-                  <div className="flex justify-center">
-                    <ArrowRight className="h-3.5 w-3.5 text-slate-400" />
-                  </div>
-                  <div className="rounded-lg bg-green-50 border border-green-100 px-3 py-2 font-mono text-green-700 whitespace-pre-line">
-                    <span className="font-semibold text-green-500">After: </span>
-                    {uc.after}
+                  <div className="rounded-xl border border-emerald-200 bg-emerald-50 p-6">
+                    <p className="mb-3 text-[11px] font-semibold uppercase tracking-wider text-emerald-700">Output</p>
+                    <pre className="whitespace-pre-wrap break-words text-xs leading-relaxed text-emerald-800 font-mono p-3 bg-emerald-100 rounded-lg">{uc.after}</pre>
                   </div>
                 </div>
               </div>
@@ -772,8 +771,8 @@ export default function SplitTextTool() {
       </section>
 
       {/* ── 6. FAQ ── */}
-      <section className="border-t border-slate-200 bg-slate-50 py-14 lg:py-18">
-        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <h2 className="mb-8 text-center text-2xl font-bold text-slate-900 lg:text-3xl">
             Frequently Asked Questions
           </h2>
@@ -820,7 +819,7 @@ export default function SplitTextTool() {
       <RelatedTools currentSlug="split-text" />
 
       {/* ── 8. CTA ── */}
-      <ToolCta />
+      <ToolCta theme="blue" />
 
       {/* ── 9. Footer ── */}
       <FooterSection />

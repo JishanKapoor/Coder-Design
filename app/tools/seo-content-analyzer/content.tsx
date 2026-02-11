@@ -179,7 +179,7 @@ export default function SeoContentAnalyzerTool() {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-violet-600 to-indigo-700 py-14 lg:py-18">
+      <section className="relative overflow-hidden bg-emerald-600 pt-32 pb-16 lg:pt-36 lg:pb-20">
         <div className="absolute inset-0 opacity-10"><div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)", backgroundSize: "40px 40px" }} /></div>
         <div className="relative mx-auto max-w-4xl px-6 lg:px-12">
           <nav aria-label="Breadcrumb" className="mb-5 flex items-center gap-1.5 text-sm text-white/70">
@@ -198,21 +198,21 @@ export default function SeoContentAnalyzerTool() {
       </section>
 
       {/* Tool UI */}
-      <section className="py-10 lg:py-14">
-        <div className="mx-auto max-w-4xl px-6 lg:px-12 space-y-5">
+      <section className="py-16 lg:py-16" id="tool">
+        <div className="mx-auto max-w-4xl overflow-hidden px-6 lg:px-12 space-y-8">
           <div>
             <label className="mb-2 block text-sm font-semibold text-slate-900">Content</label>
-            <textarea value={content} onChange={(e) => { setContent(e.target.value); setAnalyzed(false); }} placeholder="Paste your article, blog post, or page content here..." rows={10} className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500/20 transition-colors" />
+            <textarea value={content} onChange={(e) => { setContent(e.target.value); setAnalyzed(false); }} placeholder="Paste your article, blog post, or page content here..." rows={10} className="w-full rounded-xl border border-slate-300 bg-white px-5 py-3.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 transition-colors" />
           </div>
 
           <div>
             <label className="mb-2 block text-sm font-semibold text-slate-900">Target Keyword <span className="font-normal text-slate-400">(optional)</span></label>
-            <input value={keyword} onChange={(e) => { setKeyword(e.target.value); setAnalyzed(false); }} placeholder="e.g., web development" className="w-full rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500/20 transition-colors" />
+            <input value={keyword} onChange={(e) => { setKeyword(e.target.value); setAnalyzed(false); }} placeholder="e.g., web development" className="w-full rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 transition-colors" />
           </div>
 
-          <div className="flex items-center gap-3">
-            <button onClick={analyze} className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-violet-600 px-6 text-sm font-semibold text-white shadow-lg shadow-violet-600/25 transition-colors hover:bg-violet-700"><BarChart3 className="h-4 w-4 flex-shrink-0" /><span>Analyze Content</span></button>
-            <button onClick={() => { setContent(""); setKeyword(""); setAnalyzed(false); }} className="inline-flex h-11 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50"><Trash2 className="h-4 w-4 flex-shrink-0" /><span>Clear</span></button>
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+            <button onClick={analyze} className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-emerald-600 px-4 sm:px-6 text-sm font-semibold text-white shadow-lg shadow-emerald-600/25 transition-colors hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 w-full sm:w-auto whitespace-nowrap"><BarChart3 className="h-4 w-4 flex-shrink-0" /><span>Analyze Content</span></button>
+            <button onClick={() => { setContent(""); setKeyword(""); setAnalyzed(false); }} className="inline-flex h-11 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-4 sm:px-5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-300/50 w-full sm:w-auto whitespace-nowrap"><Trash2 className="h-4 w-4 flex-shrink-0" /><span>Clear</span></button>
           </div>
 
           {/* ── Dashboard ── */}
@@ -233,7 +233,7 @@ export default function SeoContentAnalyzerTool() {
                     { label: "Reading Time", value: `${analysis.readingTime} min` },
                   ].map((s) => (
                     <div key={s.label} className="rounded-lg bg-slate-50 p-3">
-                      <div className="text-xl font-bold text-violet-700">{s.value}</div>
+                      <div className="text-xl font-bold text-emerald-700">{s.value}</div>
                       <div className="text-xs text-slate-500">{s.label}</div>
                     </div>
                   ))}
@@ -245,13 +245,13 @@ export default function SeoContentAnalyzerTool() {
                 <h3 className="mb-4 text-sm font-bold text-slate-900 uppercase tracking-wider">Keyword Analysis</h3>
                 {keyword.trim() && (
                   <div className="mb-4 grid grid-cols-2 gap-4">
-                    <div className="rounded-lg bg-violet-50 p-3">
-                      <div className="text-xl font-bold text-violet-700">{analysis.kwCount}</div>
-                      <div className="text-xs text-violet-600">Keyword Occurrences</div>
+                    <div className="rounded-lg bg-emerald-50 p-3">
+                      <div className="text-xl font-bold text-emerald-700">{analysis.kwCount}</div>
+                      <div className="text-xs text-emerald-600">Keyword Occurrences</div>
                     </div>
-                    <div className="rounded-lg bg-violet-50 p-3">
-                      <div className="text-xl font-bold text-violet-700">{analysis.kwDensity}%</div>
-                      <div className="text-xs text-violet-600">Keyword Density</div>
+                    <div className="rounded-lg bg-emerald-50 p-3">
+                      <div className="text-xl font-bold text-emerald-700">{analysis.kwDensity}%</div>
+                      <div className="text-xs text-emerald-600">Keyword Density</div>
                     </div>
                   </div>
                 )}
@@ -260,7 +260,7 @@ export default function SeoContentAnalyzerTool() {
                     <h4 className="mb-2 text-xs font-semibold text-slate-600">Top Words</h4>
                     <div className="flex flex-wrap gap-2">
                       {analysis.topWords.map(([word, count]) => (
-                        <span key={word} className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700">{word} <span className="text-violet-600 font-bold">{count}</span></span>
+                        <span key={word} className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700">{word} <span className="text-emerald-600 font-bold">{count}</span></span>
                       ))}
                       {analysis.topWords.length === 0 && <span className="text-xs text-slate-400">No significant words found</span>}
                     </div>
@@ -291,13 +291,13 @@ export default function SeoContentAnalyzerTool() {
                 <h3 className="mb-4 text-sm font-bold text-slate-900 uppercase tracking-wider">Readability</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                   <div className="rounded-lg bg-slate-50 p-4">
-                    <div className="text-3xl font-bold text-violet-700">{analysis.clampedEase.toFixed(1)}</div>
+                    <div className="text-3xl font-bold text-emerald-700">{analysis.clampedEase.toFixed(1)}</div>
                     <div className="text-xs text-slate-500">Flesch Reading Ease</div>
                     <div className="mt-2 h-2 rounded-full bg-slate-200 overflow-hidden"><div className="h-full rounded-full bg-gradient-to-r from-red-500 via-amber-400 to-green-500" style={{ width: `${analysis.clampedEase}%` }} /></div>
                     <div className="mt-1 text-xs text-slate-600">{analysis.gradeLabel}</div>
                   </div>
                   <div className="rounded-lg bg-slate-50 p-4">
-                    <div className="text-3xl font-bold text-violet-700">{analysis.clampedGrade.toFixed(1)}</div>
+                    <div className="text-3xl font-bold text-emerald-700">{analysis.clampedGrade.toFixed(1)}</div>
                     <div className="text-xs text-slate-500">Flesch-Kincaid Grade Level</div>
                   </div>
                 </div>
@@ -355,7 +355,7 @@ export default function SeoContentAnalyzerTool() {
               { step: 4, title: "Follow Suggestions", description: "Implement recommended improvements." },
             ].map((item) => (
               <div key={item.step} className="relative flex gap-4 rounded-2xl border border-slate-200 bg-white p-6">
-                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-violet-600 text-lg font-bold text-white">{item.step}</div>
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-emerald-600 text-lg font-bold text-white">{item.step}</div>
                 <div>
                   <h3 className="mb-2 text-base font-semibold text-slate-900">{item.title}</h3>
                   <p className="text-sm leading-relaxed text-slate-600">{item.description}</p>
@@ -368,7 +368,7 @@ export default function SeoContentAnalyzerTool() {
 
       {/* ── Features Section ── */}
       <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
-        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">Why Use Our SEO Analyzer?</h2>
             <p className="mx-auto max-w-2xl text-slate-600">Optimize content for search engine rankings.</p>
@@ -384,9 +384,9 @@ export default function SeoContentAnalyzerTool() {
             ].map((feature) => {
               const Icon = feature.icon;
               return (
-                <div key={feature.title} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-violet-200 hover:shadow-lg">
-                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100">
-                    <Icon className="h-6 w-6 text-violet-600" />
+                <div key={feature.title} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-emerald-200 hover:shadow-lg">
+                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100">
+                    <Icon className="h-6 w-6 text-emerald-600" />
                   </div>
                   <h3 className="mb-2 text-base font-semibold text-slate-900">{feature.title}</h3>
                   <p className="text-sm leading-relaxed text-slate-600">{feature.description}</p>
@@ -399,23 +399,23 @@ export default function SeoContentAnalyzerTool() {
 
       {/* ── Use Cases Section ── */}
       <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
-        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-10 text-center">
             <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">Common Use Cases</h2>
             <p className="mx-auto max-w-xl text-sm text-slate-500">See how SEO content analysis is used.</p>
           </div>
-          <div className="space-y-4">
+          <div className="space-y-8">
             {[
               { title: "Blog Post", input: "1500 words, keyword: 'web design'", output: "Score: 82/100, keyword density: 2.1%" },
               { title: "Product Page", input: "500 words, keyword: 'running shoes'", output: "Score: 65/100, needs more headings" },
               { title: "Landing Page", input: "800 words, keyword: 'SaaS tool'", output: "Score: 91/100, well optimized" },
               { title: "Category Page", input: "300 words, keyword: 'electronics'", output: "Score: 45/100, needs more content" },
             ].map((useCase) => (
-              <div key={useCase.title} className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+              <div key={useCase.title} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                 <div className="border-b border-slate-100 bg-slate-50 px-6 py-3">
-                  <h3 className="text-sm font-semibold text-slate-900">{useCase.title}</h3>
+                  <h3 className="text-base font-semibold text-slate-900">{useCase.title}</h3>
                 </div>
-                <div className="grid gap-4 p-6 sm:grid-cols-2">
+                <div className="grid grid-cols-1 gap-8 p-6 sm:p-7 md:grid-cols-2 md:gap-7">
                   <div>
                     <div className="mb-2 text-xs font-medium uppercase tracking-wider text-slate-400">Input</div>
                     <pre className="rounded-lg bg-slate-50 p-3 text-xs leading-relaxed text-slate-700 overflow-x-auto">{useCase.input}</pre>
@@ -433,7 +433,7 @@ export default function SeoContentAnalyzerTool() {
 
       <ToolFaq faqs={faqs} />
       <RelatedTools currentSlug="seo-content-analyzer" />
-      <ToolCta />
+      <ToolCta theme="emerald" />
       <FooterSection />
     </div>
   );

@@ -322,7 +322,7 @@ export default function UrlSlugGeneratorTool() {
       <Navigation />
 
       {/* ── 1. Hero ── */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-teal-600 to-cyan-700 py-16 lg:py-20">
+      <section className="relative overflow-hidden bg-emerald-600 pt-32 pb-16 lg:pt-36 lg:pb-20">
         <div className="absolute inset-0 opacity-10">
           <div
             className="absolute inset-0"
@@ -387,8 +387,8 @@ export default function UrlSlugGeneratorTool() {
       </section>
 
       {/* ── 2. Tool Section ── */}
-      <section className="py-10 lg:py-16">
-        <div className="mx-auto max-w-4xl px-6 lg:px-12 space-y-5">
+      <section className="py-16 lg:py-16" id="tool">
+        <div className="mx-auto max-w-4xl overflow-hidden px-6 lg:px-12 space-y-8">
           {/* Mode Toggle */}
           <div className="flex items-center gap-1 rounded-xl bg-slate-100 p-1 w-fit">
             <button
@@ -425,20 +425,20 @@ export default function UrlSlugGeneratorTool() {
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   placeholder="e.g. 10 Best Tips for Learning React in 2024"
-                  className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-base text-slate-900 placeholder:text-slate-400 focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500/20 transition-colors"
+                  className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-base text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 transition-colors"
                 />
               </div>
 
               {/* Live Slug Preview */}
               {output ? (
-                <div className="rounded-xl border border-teal-200 bg-teal-50/50 p-5">
+                <div className="rounded-xl border border-emerald-200 bg-emerald-50/50 p-5">
                   <div className="mb-2 flex items-center justify-between">
-                    <span className="text-xs font-semibold uppercase tracking-wider text-teal-700">
+                    <span className="text-xs font-semibold uppercase tracking-wider text-emerald-700">
                       Generated Slug
                     </span>
                     <button
                       onClick={handleCopy}
-                      className="inline-flex items-center gap-1.5 rounded-lg border border-teal-200 bg-white px-3 py-1.5 text-xs font-medium text-teal-700 shadow-sm transition-colors hover:border-teal-300 hover:bg-teal-50"
+                      className="inline-flex items-center gap-1.5 rounded-lg border border-emerald-200 bg-white px-3 py-1.5 text-xs font-medium text-emerald-700 shadow-sm transition-colors hover:border-emerald-300 hover:bg-emerald-50"
                     >
                       {copied ? (
                         <>
@@ -453,7 +453,7 @@ export default function UrlSlugGeneratorTool() {
                       )}
                     </button>
                   </div>
-                  <div className="rounded-lg bg-white border border-teal-100 px-4 py-3">
+                  <div className="rounded-lg bg-white border border-emerald-100 px-4 py-3">
                     <code className="block text-lg font-mono text-slate-900 break-all leading-relaxed">
                       {output}
                     </code>
@@ -489,13 +489,13 @@ export default function UrlSlugGeneratorTool() {
                   onChange={(e) => setBulkInput(e.target.value)}
                   placeholder={`10 Best Tips for Learning React in 2024\nWomen's Running Shoes — Size 8.5\nGetting Started: Installation & Setup Guide\nCafé & Résumé Services`}
                   rows={8}
-                  className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500/20 transition-colors"
+                  className="w-full rounded-xl border border-slate-300 bg-white px-5 py-3.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 transition-colors"
                 />
               </div>
 
               <button
                 onClick={handleBulkGenerate}
-                className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-teal-600 px-6 text-sm font-semibold text-white shadow-lg shadow-teal-600/25 transition-colors hover:bg-teal-700"
+                className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-emerald-600 px-6 text-sm font-semibold text-white shadow-lg shadow-emerald-600/25 transition-colors hover:bg-emerald-700"
               >
                 <Zap className="h-4 w-4 flex-shrink-0" />
                 <span>Generate All</span>
@@ -511,13 +511,13 @@ export default function UrlSlugGeneratorTool() {
                       value={bulkOutput}
                       readOnly
                       rows={8}
-                      className="w-full rounded-xl border border-teal-200 bg-teal-50/50 px-4 py-3 font-mono text-sm text-slate-900 focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500/20"
+                      className="w-full rounded-xl border border-emerald-200 bg-emerald-50/50 px-4 py-3 font-mono text-sm text-slate-900 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20"
                     />
                   </div>
-                  <div className="flex flex-wrap items-center gap-3">
+                  <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
                     <button
                       onClick={handleBulkCopy}
-                      className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-4 py-2 text-xs font-medium text-slate-600 shadow-sm hover:border-teal-300 hover:text-teal-700 transition-colors"
+                      className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-4 py-2 text-xs font-medium text-slate-600 shadow-sm hover:border-emerald-300 hover:text-emerald-700 transition-colors"
                     >
                       {bulkCopied ? (
                         <>
@@ -533,7 +533,7 @@ export default function UrlSlugGeneratorTool() {
                     </button>
                     <button
                       onClick={handleBulkDownload}
-                      className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-4 py-2 text-xs font-medium text-slate-600 shadow-sm hover:border-teal-300 hover:text-teal-700 transition-colors"
+                      className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-4 py-2 text-xs font-medium text-slate-600 shadow-sm hover:border-emerald-300 hover:text-emerald-700 transition-colors"
                     >
                       <Download className="h-3.5 w-3.5" />
                       Download .txt
@@ -557,7 +557,7 @@ export default function UrlSlugGeneratorTool() {
                 <select
                   value={separator}
                   onChange={(e) => setSeparator(e.target.value)}
-                  className="rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500/20"
+                  className="rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20"
                 >
                   <option value="-">Hyphen (-)</option>
                   <option value="_">Underscore (_)</option>
@@ -569,7 +569,7 @@ export default function UrlSlugGeneratorTool() {
                   type="checkbox"
                   checked={lowercase}
                   onChange={(e) => setLowercase(e.target.checked)}
-                  className="h-4 w-4 rounded border-slate-300 text-teal-600 focus:ring-teal-500"
+                  className="h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500"
                 />
                 Lowercase
               </label>
@@ -578,7 +578,7 @@ export default function UrlSlugGeneratorTool() {
                   type="checkbox"
                   checked={removeStopWords}
                   onChange={(e) => setRemoveStopWords(e.target.checked)}
-                  className="h-4 w-4 rounded border-slate-300 text-teal-600 focus:ring-teal-500"
+                  className="h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500"
                 />
                 Remove stop words
               </label>
@@ -587,7 +587,7 @@ export default function UrlSlugGeneratorTool() {
                   type="checkbox"
                   checked={stripAccents}
                   onChange={(e) => setStripAccents(e.target.checked)}
-                  className="h-4 w-4 rounded border-slate-300 text-teal-600 focus:ring-teal-500"
+                  className="h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500"
                 />
                 Strip accents
               </label>
@@ -603,14 +603,14 @@ export default function UrlSlugGeneratorTool() {
                   onChange={(e) =>
                     setMaxLength(Math.max(0, parseInt(e.target.value) || 0))
                   }
-                  className="w-20 rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-center font-mono text-slate-900 focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500/20"
+                  className="w-20 rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-center font-mono text-slate-900 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20"
                 />
               </div>
             </div>
           </div>
 
           {/* Clear Button */}
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
             <button
               onClick={handleClear}
               className="inline-flex h-11 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50"
@@ -642,7 +642,7 @@ export default function UrlSlugGeneratorTool() {
                 key={item.step}
                 className="relative flex gap-4 rounded-2xl border border-slate-200 bg-white p-6"
               >
-                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-teal-600 text-lg font-bold text-white">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-emerald-600 text-lg font-bold text-white">
                   {item.step}
                 </div>
                 <div>
@@ -661,7 +661,7 @@ export default function UrlSlugGeneratorTool() {
 
       {/* ── 4. Features Section ── */}
       <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
-        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">
               Why Use Our Free URL Slug Generator?
@@ -679,10 +679,10 @@ export default function UrlSlugGeneratorTool() {
               return (
                 <div
                   key={feature.title}
-                  className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-teal-200 hover:shadow-lg"
+                  className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-emerald-200 hover:shadow-lg"
                 >
-                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-teal-100">
-                    <Icon className="h-6 w-6 text-teal-600" />
+                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100">
+                    <Icon className="h-6 w-6 text-emerald-600" />
                   </div>
                   <h3 className="mb-2 text-base font-semibold text-slate-900">
                     {feature.title}
@@ -699,7 +699,7 @@ export default function UrlSlugGeneratorTool() {
 
       {/* ── 5. Use Cases Section (with before/after) ── */}
       <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
-        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-10 text-center">
             <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">
               Use Cases &amp; Examples
@@ -710,7 +710,7 @@ export default function UrlSlugGeneratorTool() {
             </p>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-8">
             {useCases.map((useCase) => {
               const Icon = useCase.icon;
               return (
@@ -719,8 +719,8 @@ export default function UrlSlugGeneratorTool() {
                   className="overflow-hidden rounded-2xl border border-slate-200 bg-white"
                 >
                   <div className="flex items-start gap-4 p-6">
-                    <div className="inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-teal-100">
-                      <Icon className="h-5 w-5 text-teal-600" />
+                    <div className="inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-emerald-100">
+                      <Icon className="h-5 w-5 text-emerald-600" />
                     </div>
                     <div className="min-w-0 flex-1">
                       <h3 className="mb-3 text-base font-semibold text-slate-900">
@@ -736,10 +736,10 @@ export default function UrlSlugGeneratorTool() {
                           </span>
                         </div>
                         <div className="flex items-start gap-2">
-                          <span className="mt-0.5 inline-flex h-5 w-12 flex-shrink-0 items-center justify-center rounded bg-teal-100 text-[10px] font-bold uppercase tracking-wider text-teal-700">
+                          <span className="mt-0.5 inline-flex h-5 w-12 flex-shrink-0 items-center justify-center rounded bg-emerald-100 text-[10px] font-bold uppercase tracking-wider text-emerald-700">
                             After
                           </span>
-                          <code className="text-sm font-mono text-teal-700">
+                          <code className="text-sm font-mono text-emerald-700">
                             {useCase.after}
                           </code>
                         </div>
@@ -761,7 +761,7 @@ export default function UrlSlugGeneratorTool() {
         className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20"
         id="faq"
       >
-        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">
               Frequently Asked Questions
@@ -772,7 +772,7 @@ export default function UrlSlugGeneratorTool() {
               you&apos;re looking for?{" "}
               <Link
                 href="/contact"
-                className="text-teal-600 hover:text-teal-700 underline"
+                className="text-emerald-600 hover:text-emerald-700 underline"
               >
                 Contact us
               </Link>
@@ -823,7 +823,7 @@ export default function UrlSlugGeneratorTool() {
       <RelatedTools currentSlug="url-slug-generator" />
 
       {/* ── 8. CTA ── */}
-      <ToolCta />
+      <ToolCta theme="emerald" />
 
       {/* ── 9. Footer ── */}
       <FooterSection />

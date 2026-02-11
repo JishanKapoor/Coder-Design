@@ -439,7 +439,7 @@ export default function OgPreviewTool() {
       <Navigation />
 
       {/* ── 1. Hero ── */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-rose-600 to-pink-700 py-16 lg:py-20">
+      <section className="relative overflow-hidden bg-emerald-600 pt-32 pb-16 lg:pt-36 lg:pb-20">
         <div className="absolute inset-0 opacity-10">
           <div
             className="absolute inset-0"
@@ -505,7 +505,7 @@ export default function OgPreviewTool() {
       </section>
 
       {/* ── 2. Tool Section ── */}
-      <section className="py-10 lg:py-16">
+      <section className="py-16 lg:py-16" id="tool">
         <div className="mx-auto max-w-5xl px-6 lg:px-12">
           <div className="grid gap-8 lg:grid-cols-2">
             {/* ── Left: Input Form ── */}
@@ -527,7 +527,7 @@ export default function OgPreviewTool() {
                   value={ogTitle}
                   onChange={(e) => setOgTitle(e.target.value)}
                   placeholder="My Awesome Page Title"
-                  className="w-full rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-rose-500 focus:outline-none focus:ring-2 focus:ring-rose-500/20 transition-colors"
+                  className="w-full rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 transition-colors"
                 />
                 {ogTitle.length > 0 && (
                   <p
@@ -551,7 +551,7 @@ export default function OgPreviewTool() {
                   onChange={(e) => setOgDescription(e.target.value)}
                   placeholder="A brief description of your page content..."
                   rows={3}
-                  className="w-full rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-rose-500 focus:outline-none focus:ring-2 focus:ring-rose-500/20 transition-colors"
+                  className="w-full rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 transition-colors"
                 />
                 {ogDescription.length > 0 && (
                   <p
@@ -575,7 +575,7 @@ export default function OgPreviewTool() {
                   value={ogImage}
                   onChange={(e) => setOgImage(e.target.value)}
                   placeholder="https://example.com/images/og-image.png"
-                  className="w-full rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-rose-500 focus:outline-none focus:ring-2 focus:ring-rose-500/20 transition-colors"
+                  className="w-full rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 transition-colors"
                 />
               </div>
 
@@ -589,7 +589,7 @@ export default function OgPreviewTool() {
                   value={ogUrl}
                   onChange={(e) => setOgUrl(e.target.value)}
                   placeholder="https://example.com/my-page"
-                  className="w-full rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-rose-500 focus:outline-none focus:ring-2 focus:ring-rose-500/20 transition-colors"
+                  className="w-full rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 transition-colors"
                 />
               </div>
 
@@ -603,7 +603,7 @@ export default function OgPreviewTool() {
                   value={ogSiteName}
                   onChange={(e) => setOgSiteName(e.target.value)}
                   placeholder="My Website"
-                  className="w-full rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-rose-500 focus:outline-none focus:ring-2 focus:ring-rose-500/20 transition-colors"
+                  className="w-full rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 transition-colors"
                 />
               </div>
 
@@ -622,7 +622,7 @@ export default function OgPreviewTool() {
                       onChange={() =>
                         setTwitterCardType("summary_large_image")
                       }
-                      className="h-4 w-4 border-slate-300 text-rose-600 focus:ring-rose-500"
+                      className="h-4 w-4 border-slate-300 text-emerald-600 focus:ring-emerald-500"
                     />
                     summary_large_image
                   </label>
@@ -633,7 +633,7 @@ export default function OgPreviewTool() {
                       value="summary"
                       checked={twitterCardType === "summary"}
                       onChange={() => setTwitterCardType("summary")}
-                      className="h-4 w-4 border-slate-300 text-rose-600 focus:ring-rose-500"
+                      className="h-4 w-4 border-slate-300 text-emerald-600 focus:ring-emerald-500"
                     />
                     summary
                   </label>
@@ -641,7 +641,7 @@ export default function OgPreviewTool() {
               </div>
 
               {/* Twitter-specific overrides */}
-              <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
                 <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-slate-500">
                   Twitter-Specific Overrides{" "}
                   <span className="font-normal normal-case">
@@ -658,7 +658,7 @@ export default function OgPreviewTool() {
                       value={twitterTitle}
                       onChange={(e) => setTwitterTitle(e.target.value)}
                       placeholder={ogTitle || "Same as og:title"}
-                      className="w-full rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-rose-500 focus:outline-none focus:ring-2 focus:ring-rose-500/20 transition-colors"
+                      className="w-full rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 transition-colors"
                     />
                   </div>
                   <div>
@@ -670,14 +670,14 @@ export default function OgPreviewTool() {
                       value={twitterDescription}
                       onChange={(e) => setTwitterDescription(e.target.value)}
                       placeholder={ogDescription || "Same as og:description"}
-                      className="w-full rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-rose-500 focus:outline-none focus:ring-2 focus:ring-rose-500/20 transition-colors"
+                      className="w-full rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 transition-colors"
                     />
                   </div>
                 </div>
               </div>
 
               {/* Action buttons */}
-              <div className="flex flex-wrap items-center gap-3 pt-2">
+              <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:items-center">
                 <button
                   onClick={handleClear}
                   className="inline-flex h-11 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50"
@@ -735,28 +735,28 @@ export default function OgPreviewTool() {
                 </p>
                 <ul className="space-y-1.5 text-xs text-slate-600">
                   <li className="flex items-start gap-2">
-                    <span className="mt-0.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-rose-400" />
+                    <span className="mt-0.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-emerald-400" />
                     <span>
                       <strong>Title:</strong> Keep under 60 characters to avoid
                       truncation on most platforms.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-0.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-rose-400" />
+                    <span className="mt-0.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-emerald-400" />
                     <span>
                       <strong>Description:</strong> Aim for 155 characters or
                       fewer for consistent display.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-0.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-rose-400" />
+                    <span className="mt-0.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-emerald-400" />
                     <span>
                       <strong>Image:</strong> Use 1200×630px (Facebook/LinkedIn)
                       or 1200×600px (Twitter large card).
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="mt-0.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-rose-400" />
+                    <span className="mt-0.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-emerald-400" />
                     <span>
                       <strong>URL:</strong> Always use absolute URLs with https://
                       for images.
@@ -771,7 +771,7 @@ export default function OgPreviewTool() {
           <div className="mt-8 space-y-4">
             <button
               onClick={() => setShowCodeGen(!showCodeGen)}
-              className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-rose-600 px-6 text-sm font-semibold text-white shadow-lg shadow-rose-600/25 transition-colors hover:bg-rose-700"
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-emerald-600 px-6 text-sm font-semibold text-white shadow-lg shadow-emerald-600/25 transition-colors hover:bg-emerald-700"
             >
               <Code2 className="h-4 w-4 flex-shrink-0" />
               <span>
@@ -791,7 +791,7 @@ export default function OgPreviewTool() {
                 </div>
                 <button
                   onClick={handleCopyCode}
-                  className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-4 py-2 text-xs font-medium text-slate-600 shadow-sm transition-colors hover:border-rose-300 hover:text-rose-700"
+                  className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-4 py-2 text-xs font-medium text-slate-600 shadow-sm transition-colors hover:border-emerald-300 hover:text-emerald-700"
                 >
                   {copied ? (
                     <>
@@ -831,7 +831,7 @@ export default function OgPreviewTool() {
                 key={item.step}
                 className="relative flex gap-4 rounded-2xl border border-slate-200 bg-white p-6"
               >
-                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-rose-600 text-lg font-bold text-white">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-emerald-600 text-lg font-bold text-white">
                   {item.step}
                 </div>
                 <div>
@@ -850,7 +850,7 @@ export default function OgPreviewTool() {
 
       {/* ── 4. Features Section ── */}
       <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
-        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">
               Why Use Our Free OG Preview Tool?
@@ -868,10 +868,10 @@ export default function OgPreviewTool() {
               return (
                 <div
                   key={feature.title}
-                  className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-rose-200 hover:shadow-lg"
+                  className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-emerald-200 hover:shadow-lg"
                 >
-                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-rose-100">
-                    <Icon className="h-6 w-6 text-rose-600" />
+                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100">
+                    <Icon className="h-6 w-6 text-emerald-600" />
                   </div>
                   <h3 className="mb-2 text-base font-semibold text-slate-900">
                     {feature.title}
@@ -888,7 +888,7 @@ export default function OgPreviewTool() {
 
       {/* ── 5. Use Cases Section ── */}
       <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
-        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-10 text-center">
             <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">
               Common Use Cases
@@ -899,7 +899,7 @@ export default function OgPreviewTool() {
             </p>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-8">
             {useCases.map((useCase) => {
               const Icon = useCase.icon;
               return (
@@ -908,8 +908,8 @@ export default function OgPreviewTool() {
                   className="overflow-hidden rounded-2xl border border-slate-200 bg-white"
                 >
                   <div className="flex items-start gap-4 p-6">
-                    <div className="inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-rose-100">
-                      <Icon className="h-5 w-5 text-rose-600" />
+                    <div className="inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-emerald-100">
+                      <Icon className="h-5 w-5 text-emerald-600" />
                     </div>
                     <div className="min-w-0 flex-1">
                       <h3 className="mb-1 text-base font-semibold text-slate-900">
@@ -932,7 +932,7 @@ export default function OgPreviewTool() {
         className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20"
         id="faq"
       >
-        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">
               Frequently Asked Questions
@@ -943,7 +943,7 @@ export default function OgPreviewTool() {
               you&apos;re looking for?{" "}
               <Link
                 href="/contact"
-                className="text-rose-600 hover:text-rose-700 underline"
+                className="text-emerald-600 hover:text-emerald-700 underline"
               >
                 Contact us
               </Link>
@@ -994,7 +994,7 @@ export default function OgPreviewTool() {
       <RelatedTools currentSlug="og-preview" />
 
       {/* ── 8. CTA ── */}
-      <ToolCta />
+      <ToolCta theme="emerald" />
 
       {/* ── 9. Footer ── */}
       <FooterSection />

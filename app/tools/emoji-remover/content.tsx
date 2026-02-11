@@ -265,7 +265,7 @@ export default function EmojiRemoverTool() {
       <Navigation />
 
       {/* ── 1. Hero ── */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-violet-600 to-indigo-700 py-16 lg:py-20">
+      <section className="relative overflow-hidden bg-blue-600 pt-32 pb-16 lg:pt-36 lg:pb-20">
         <div className="absolute inset-0 opacity-10">
           <div
             className="absolute inset-0"
@@ -331,8 +331,8 @@ export default function EmojiRemoverTool() {
       </section>
 
       {/* ── 2. Tool Section ── */}
-      <section className="py-10 lg:py-16">
-        <div className="mx-auto max-w-4xl px-6 lg:px-12 space-y-5">
+      <section className="py-16 lg:py-16" id="tool">
+        <div className="mx-auto max-w-4xl overflow-hidden px-6 lg:px-12 space-y-8">
           {/* Input Textarea */}
           <div>
             <div className="mb-2 flex items-center justify-between">
@@ -341,7 +341,7 @@ export default function EmojiRemoverTool() {
               </label>
               <button
                 onClick={() => fileInputRef.current?.click()}
-                className="inline-flex items-center gap-1.5 text-xs font-medium text-violet-600 hover:text-violet-700 transition-colors"
+                className="inline-flex items-center gap-1.5 text-xs font-medium text-blue-600 hover:text-blue-700 transition-colors"
               >
                 <Upload className="h-3.5 w-3.5" />
                 Upload .txt file
@@ -359,7 +359,7 @@ export default function EmojiRemoverTool() {
               onChange={(e) => setInput(e.target.value)}
               placeholder={"Had a great day! \u{1F389}\u{1F60A} Loved the food \u{1F355}\u{1F354} See you soon \u{1F44B}\u{2764}\u{FE0F}"}
               rows={8}
-              className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500/20 transition-colors"
+              className="w-full rounded-xl border border-slate-300 bg-white px-5 py-3.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-colors"
             />
           </div>
 
@@ -373,17 +373,17 @@ export default function EmojiRemoverTool() {
                 type="checkbox"
                 checked={removeTextEmoticons}
                 onChange={(e) => setRemoveTextEmoticons(e.target.checked)}
-                className="h-4 w-4 rounded border-slate-300 text-violet-600 focus:ring-violet-500"
+                className="h-4 w-4 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
               />
               Also remove text emoticons (<span className="font-mono">:) ;-P :D XD</span> etc.)
             </label>
           </div>
 
           {/* Action Buttons */}
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
             <button
               onClick={removeEmojis}
-              className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-violet-600 px-6 text-sm font-semibold text-white shadow-lg shadow-violet-600/25 transition-colors hover:bg-violet-700"
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-blue-600 px-6 text-sm font-semibold text-white shadow-lg shadow-blue-600/25 transition-colors hover:bg-blue-700"
             >
               <SmilePlus className="h-4 w-4 flex-shrink-0" />
               <span>Remove Emojis</span>
@@ -413,19 +413,18 @@ export default function EmojiRemoverTool() {
             <label className="mb-2 block text-sm font-semibold text-slate-900">
               Output
             </label>
-            <div className="relative">
               <textarea
                 value={output}
                 readOnly
                 placeholder="Clean text will appear here after processing..."
                 rows={8}
-                className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400"
+                className="w-full rounded-xl border border-slate-300 bg-slate-50 px-5 py-3.5 text-sm text-slate-900 placeholder:text-slate-400"
               />
               {output && (
-                <div className="absolute right-2 top-2 flex gap-1.5">
+                <div className="mt-3 flex flex-wrap gap-2">
                   <button
                     onClick={handleCopy}
-                    className="inline-flex items-center gap-1.5 rounded-lg bg-white border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-600 shadow-sm hover:border-violet-300 hover:text-violet-700"
+                    className="inline-flex items-center gap-1.5 rounded-lg bg-white border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-600 shadow-sm hover:border-blue-300 hover:text-blue-700"
                   >
                     {copied ? (
                       <>
@@ -441,14 +440,13 @@ export default function EmojiRemoverTool() {
                   </button>
                   <button
                     onClick={handleDownload}
-                    className="inline-flex items-center gap-1.5 rounded-lg bg-white border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-600 shadow-sm hover:border-violet-300 hover:text-violet-700"
+                    className="inline-flex items-center gap-1.5 rounded-lg bg-white border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-600 shadow-sm hover:border-blue-300 hover:text-blue-700"
                   >
                     <Download className="h-3.5 w-3.5" />
                     Download
                   </button>
                 </div>
               )}
-            </div>
           </div>
         </div>
       </section>
@@ -473,7 +471,7 @@ export default function EmojiRemoverTool() {
                 key={item.step}
                 className="relative flex gap-4 rounded-2xl border border-slate-200 bg-white p-6"
               >
-                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-violet-600 text-lg font-bold text-white">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-blue-600 text-lg font-bold text-white">
                   {item.step}
                 </div>
                 <div>
@@ -492,7 +490,7 @@ export default function EmojiRemoverTool() {
 
       {/* ── 4. Features Section ── */}
       <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
-        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">
               Why Use Our Free Emoji Remover?
@@ -510,10 +508,10 @@ export default function EmojiRemoverTool() {
               return (
                 <div
                   key={feature.title}
-                  className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-violet-200 hover:shadow-lg"
+                  className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-blue-200 hover:shadow-lg"
                 >
-                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100">
-                    <Icon className="h-6 w-6 text-violet-600" />
+                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100">
+                    <Icon className="h-6 w-6 text-blue-600" />
                   </div>
                   <h3 className="mb-2 text-base font-semibold text-slate-900">
                     {feature.title}
@@ -530,7 +528,7 @@ export default function EmojiRemoverTool() {
 
       {/* ── 5. Use Cases Section ── */}
       <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
-        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-10 text-center">
             <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">
               Common Use Cases
@@ -541,7 +539,7 @@ export default function EmojiRemoverTool() {
             </p>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-8">
             {useCases.map((useCase) => {
               const Icon = useCase.icon;
               return (
@@ -550,8 +548,8 @@ export default function EmojiRemoverTool() {
                   className="overflow-hidden rounded-2xl border border-slate-200 bg-white"
                 >
                   <div className="flex items-start gap-4 p-6">
-                    <div className="inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-violet-100">
-                      <Icon className="h-5 w-5 text-violet-600" />
+                    <div className="inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-blue-100">
+                      <Icon className="h-5 w-5 text-blue-600" />
                     </div>
                     <div className="min-w-0 flex-1">
                       <h3 className="mb-1 text-base font-semibold text-slate-900">
@@ -592,7 +590,7 @@ export default function EmojiRemoverTool() {
         className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20"
         id="faq"
       >
-        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">
               Frequently Asked Questions
@@ -602,7 +600,7 @@ export default function EmojiRemoverTool() {
               from text. Can&apos;t find what you&apos;re looking for?{" "}
               <Link
                 href="/contact"
-                className="text-violet-600 hover:text-violet-700 underline"
+                className="text-blue-600 hover:text-blue-700 underline"
               >
                 Contact us
               </Link>
@@ -653,7 +651,7 @@ export default function EmojiRemoverTool() {
       <RelatedTools currentSlug="emoji-remover" />
 
       {/* ── 8. CTA ── */}
-      <ToolCta />
+      <ToolCta theme="blue" />
 
       {/* ── 9. Footer ── */}
       <FooterSection />

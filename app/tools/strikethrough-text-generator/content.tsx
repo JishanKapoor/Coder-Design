@@ -44,7 +44,7 @@ export default function StrikethroughTextGeneratorTool() {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-violet-600 to-indigo-700 py-14 lg:py-18">
+      <section className="relative overflow-hidden bg-purple-600 pt-32 pb-16 lg:pt-36 lg:pb-20">
         <div className="absolute inset-0 opacity-10"><div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)", backgroundSize: "40px 40px" }} /></div>
         <div className="relative mx-auto max-w-4xl px-6 lg:px-12">
           <nav aria-label="Breadcrumb" className="mb-5 flex items-center gap-1.5 text-sm text-white/70">
@@ -63,11 +63,11 @@ export default function StrikethroughTextGeneratorTool() {
       </section>
 
       {/* Tool UI */}
-      <section className="py-10 lg:py-14">
-        <div className="mx-auto max-w-4xl px-6 lg:px-12 space-y-5">
+      <section className="py-16 lg:py-16" id="tool">
+        <div className="mx-auto max-w-4xl overflow-hidden px-6 lg:px-12 space-y-8">
           <div>
             <label className="mb-2 block text-sm font-semibold text-slate-900">Input Text</label>
-            <textarea value={input} onChange={(e) => setInput(e.target.value)} placeholder="Type your text here..." rows={5} className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500/20 transition-colors" />
+            <textarea value={input} onChange={(e) => setInput(e.target.value)} placeholder="Type your text here..." rows={5} className="w-full rounded-xl border border-slate-300 bg-white px-5 py-3.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500/20 transition-colors" />
           </div>
 
           {/* Style Selector */}
@@ -78,27 +78,25 @@ export default function StrikethroughTextGeneratorTool() {
                 { value: "long" as const, label: "L\u0336o\u0336n\u0336g\u0336 S\u0336t\u0336r\u0336o\u0336k\u0336e\u0336", desc: "Long Stroke (U+0336)" },
                 { value: "short" as const, label: "S\u0335h\u0335o\u0335r\u0335t\u0335 S\u0335t\u0335r\u0335o\u0335k\u0335e\u0335", desc: "Short Stroke (U+0335)" },
               ]).map((s) => (
-                <button key={s.value} onClick={() => { setStyle(s.value); if (input) generate(input, s.value); }} className={`rounded-lg border px-4 py-2 text-sm font-medium transition-colors ${style === s.value ? "border-violet-300 bg-violet-50 text-violet-700" : "border-slate-200 bg-white text-slate-600 hover:border-violet-200"}`}>{s.label}</button>
+                <button key={s.value} onClick={() => { setStyle(s.value); if (input) generate(input, s.value); }} className={`rounded-lg border px-4 py-2 text-sm font-medium transition-colors ${style === s.value ? "border-purple-300 bg-purple-50 text-purple-700" : "border-slate-200 bg-white text-slate-600 hover:border-purple-200"}`}>{s.label}</button>
               ))}
             </div>
           </div>
 
-          <div className="flex items-center gap-3">
-            <button onClick={() => generate()} className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-violet-600 px-6 text-sm font-semibold text-white shadow-lg shadow-violet-600/25 transition-colors hover:bg-violet-700"><Strikethrough className="h-4 w-4 flex-shrink-0" /><span>Strikethrough</span></button>
-            <button onClick={() => { setInput(""); setOutput(""); }} className="inline-flex h-11 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50"><Trash2 className="h-4 w-4 flex-shrink-0" /><span>Clear</span></button>
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+            <button onClick={() => generate()} className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-purple-600 px-4 sm:px-6 text-sm font-semibold text-white shadow-lg shadow-purple-600/25 transition-colors hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500/50 w-full sm:w-auto whitespace-nowrap"><Strikethrough className="h-4 w-4 flex-shrink-0" /><span>Strikethrough</span></button>
+            <button onClick={() => { setInput(""); setOutput(""); }} className="inline-flex h-11 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-4 sm:px-5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-300/50 w-full sm:w-auto whitespace-nowrap"><Trash2 className="h-4 w-4 flex-shrink-0" /><span>Clear</span></button>
           </div>
 
           <div>
             <label className="mb-2 block text-sm font-semibold text-slate-900">Output</label>
-            <div className="relative">
-              <textarea value={output} readOnly placeholder="Strikethrough text will appear here..." rows={5} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 font-mono" />
+              <textarea value={output} readOnly placeholder="Strikethrough text will appear here..." rows={5} className="w-full rounded-xl border border-slate-300 bg-slate-50 px-5 py-3.5 text-sm text-slate-900 placeholder:text-slate-400 font-mono" />
               {output && (
-                <div className="absolute right-2 top-2 flex gap-1.5">
-                  <button onClick={handleCopy} className="inline-flex items-center gap-1.5 rounded-lg bg-white border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-600 shadow-sm hover:border-violet-300 hover:text-violet-700">{copied ? <><Check className="h-3.5 w-3.5 text-green-600" />Copied!</> : <><Copy className="h-3.5 w-3.5" />Copy</>}</button>
-                  <button onClick={handleDownload} className="inline-flex items-center gap-1.5 rounded-lg bg-white border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-600 shadow-sm hover:border-violet-300 hover:text-violet-700"><Download className="h-3.5 w-3.5" />Download</button>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  <button onClick={handleCopy} className="inline-flex items-center gap-1.5 rounded-lg bg-white border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-600 shadow-sm hover:border-purple-300 hover:text-purple-700">{copied ? <><Check className="h-3.5 w-3.5 text-green-600" />Copied!</> : <><Copy className="h-3.5 w-3.5" />Copy</>}</button>
+                  <button onClick={handleDownload} className="inline-flex items-center gap-1.5 rounded-lg bg-white border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-600 shadow-sm hover:border-purple-300 hover:text-purple-700"><Download className="h-3.5 w-3.5" />Download</button>
                 </div>
               )}
-            </div>
           </div>
 
           {/* Live Preview */}
@@ -126,7 +124,7 @@ export default function StrikethroughTextGeneratorTool() {
               { step: 4, title: "Copy and Share", description: "Copy strikethrough text and paste it anywhere you like." },
             ].map((item) => (
               <div key={item.step} className="relative flex gap-4 rounded-2xl border border-slate-200 bg-white p-6">
-                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-violet-600 text-lg font-bold text-white">{item.step}</div>
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-purple-600 text-lg font-bold text-white">{item.step}</div>
                 <div>
                   <h3 className="mb-2 text-base font-semibold text-slate-900">{item.title}</h3>
                   <p className="text-sm leading-relaxed text-slate-600">{item.description}</p>
@@ -139,7 +137,7 @@ export default function StrikethroughTextGeneratorTool() {
 
       {/* Features Section */}
       <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
-        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">Why Use Our Strikethrough Text Generator?</h2>
             <p className="mx-auto max-w-2xl text-slate-600">Create crossed-out text that works in plain text fields.</p>
@@ -153,9 +151,9 @@ export default function StrikethroughTextGeneratorTool() {
               { icon: Copy, title: "Copy or Download", description: "One-click copy to clipboard or download as a text file." },
               { icon: Zap, title: "No Account Needed", description: "Use it instantly without any sign-up or registration." },
             ].map((f) => (
-              <div key={f.title} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-violet-200 hover:shadow-lg">
-                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100">
-                  <f.icon className="h-6 w-6 text-violet-600" />
+              <div key={f.title} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-purple-200 hover:shadow-lg">
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-purple-100">
+                  <f.icon className="h-6 w-6 text-purple-600" />
                 </div>
                 <h3 className="mb-2 text-base font-semibold text-slate-900">{f.title}</h3>
                 <p className="text-sm leading-relaxed text-slate-600">{f.description}</p>
@@ -167,30 +165,30 @@ export default function StrikethroughTextGeneratorTool() {
 
       {/* Use Cases Section */}
       <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
-        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-10 text-center">
             <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">Common Use Cases</h2>
             <p className="mx-auto max-w-xl text-sm text-slate-500">See how strikethrough Unicode text is used.</p>
           </div>
-          <div className="space-y-4">
+          <div className="space-y-8">
             {[
               { title: "Show Price Changes", before: "$99.99\n$49.99", after: "$̶9̶9̶.̶9̶9̶\n$49.99" },
               { title: "Humor in Posts", before: "I love Mondays", after: "I̶ ̶l̶o̶v̶e̶ ̶M̶o̶n̶d̶a̶y̶s̶" },
               { title: "Corrections", before: "Meet at 3pm\nMeet at 4pm", after: "M̶e̶e̶t̶ ̶a̶t̶ ̶3̶p̶m̶\nMeet at 4pm" },
               { title: "Task Completion", before: "Buy groceries\nClean house", after: "B̶u̶y̶ ̶g̶r̶o̶c̶e̶r̶i̶e̶s̶\nClean house" },
             ].map((uc) => (
-              <div key={uc.title} className="overflow-hidden rounded-xl border border-slate-200 bg-white">
-                <div className="flex items-center gap-3 border-b border-slate-100 px-5 py-3.5">
-                  <h3 className="text-sm font-semibold text-slate-900">{uc.title}</h3>
+              <div key={uc.title} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+                <div className="flex items-start gap-4 border-b border-slate-100 px-6 py-4 sm:px-7 sm:py-5">
+                  <h3 className="text-base font-semibold text-slate-900">{uc.title}</h3>
                 </div>
-                <div className="grid grid-cols-1 divide-y sm:grid-cols-2 sm:divide-x sm:divide-y-0 divide-slate-100">
-                  <div className="px-5 py-3">
-                    <p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-slate-400">Input</p>
-                    <pre className="overflow-x-auto whitespace-pre text-xs leading-relaxed text-slate-600 font-mono">{uc.before}</pre>
+                <div className="grid grid-cols-1 gap-8 p-6 sm:p-7 md:grid-cols-2 md:gap-7">
+                  <div className="rounded-xl border border-slate-200 bg-slate-50 p-6">
+                    <p className="mb-3 text-[11px] font-semibold uppercase tracking-wider text-slate-400">Input</p>
+                    <pre className="whitespace-pre-wrap break-words text-xs leading-relaxed text-slate-700 font-mono p-3 bg-white rounded-lg">{uc.before}</pre>
                   </div>
-                  <div className="px-5 py-3 bg-green-50/50">
-                    <p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-green-600">Output</p>
-                    <pre className="overflow-x-auto whitespace-pre text-xs leading-relaxed text-green-800 font-mono">{uc.after}</pre>
+                  <div className="rounded-xl border border-emerald-200 bg-emerald-50 p-6">
+                    <p className="mb-3 text-[11px] font-semibold uppercase tracking-wider text-emerald-700">Output</p>
+                    <pre className="whitespace-pre-wrap break-words text-xs leading-relaxed text-emerald-800 font-mono p-3 bg-emerald-100 rounded-lg">{uc.after}</pre>
                   </div>
                 </div>
               </div>
@@ -201,7 +199,7 @@ export default function StrikethroughTextGeneratorTool() {
 
       <ToolFaq faqs={faqs} />
       <RelatedTools currentSlug="strikethrough-text-generator" />
-      <ToolCta />
+      <ToolCta theme="purple" />
       <FooterSection />
     </div>
   );

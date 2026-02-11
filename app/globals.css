@@ -3796,3 +3796,53 @@ body {
     height: 0;
   }
 }
+
+@layer base {
+  body :is(input[type="text"], input[type="search"], input[type="email"], input[type="url"], input[type="password"], textarea) {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+
+  body textarea {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  body :is(input[type="text"], input[type="search"], input[type="email"], input[type="url"], input[type="password"]) {
+    padding-top: 0.875rem !important;
+    padding-bottom: 0.875rem !important;
+  }
+
+  /* Only target specific pre blocks to avoid affecting everything */
+  body textarea + * pre {
+    padding: 0.75rem 1rem !important;
+  }
+
+  body .bg-slate-50 > p + pre {
+    padding: 0.75rem 1rem !important;
+  }
+
+  body .bg-emerald-50 > p + pre {
+    padding: 0.75rem 1rem !important;
+  }
+
+  /* Fix code elements overflowing on mobile */
+  body code {
+    word-break: break-all !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* Prevent tool sections from overflowing on mobile */
+  section#tool > div {
+    overflow: hidden;
+  }
+
+  /* Ensure buttons never exceed container width on very narrow screens */
+  @media (max-width: 639px) {
+    section#tool button {
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

@@ -53,7 +53,7 @@ const TOKEN_COLORS: Record<TokenType, { bg: string; text: string; border: string
   alternation: { bg: "bg-rose-50", text: "text-rose-700", border: "border-rose-200" },
   escape: { bg: "bg-teal-50", text: "text-teal-700", border: "border-teal-200" },
   literal: { bg: "bg-slate-50", text: "text-slate-600", border: "border-slate-200" },
-  backreference: { bg: "bg-indigo-50", text: "text-indigo-700", border: "border-indigo-200" },
+  backreference: { bg: "bg-indigo-50", text: "text-teal-700", border: "border-indigo-200" },
   flag: { bg: "bg-cyan-50", text: "text-cyan-700", border: "border-cyan-200" },
 };
 
@@ -697,7 +697,7 @@ export default function RegexExplainerTool() {
       <Navigation />
 
       {/* ── 1. Hero ── */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-orange-500 to-amber-600 py-16 lg:py-20">
+      <section className="relative overflow-hidden bg-emerald-600 pt-32 pb-16 lg:pt-36 lg:pb-20">
         <div className="absolute inset-0 opacity-10">
           <div
             className="absolute inset-0"
@@ -762,8 +762,8 @@ export default function RegexExplainerTool() {
       </section>
 
       {/* ── 2. Tool Section ── */}
-      <section className="py-10 lg:py-16">
-        <div className="mx-auto max-w-4xl px-6 lg:px-12 space-y-5">
+      <section className="py-16 lg:py-16" id="tool">
+        <div className="mx-auto max-w-4xl overflow-hidden px-6 lg:px-12 space-y-8">
           {/* Regex Input */}
           <div>
             <label className="mb-2 block text-sm font-semibold text-slate-900">
@@ -775,7 +775,7 @@ export default function RegexExplainerTool() {
               value={regexInput}
               onChange={(e) => setRegexInput(e.target.value)}
               placeholder="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-              className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 font-mono text-sm text-slate-900 placeholder:text-slate-400 focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/20 transition-colors"
+              className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 font-mono text-sm text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 transition-colors"
               onKeyDown={(e) => {
                 if (e.key === "Enter") handleExplain();
               }}
@@ -803,7 +803,7 @@ export default function RegexExplainerTool() {
                     type="checkbox"
                     checked={flags.includes(flag)}
                     onChange={() => toggleFlag(flag)}
-                    className="h-4 w-4 rounded border-slate-300 text-orange-600 focus:ring-orange-500"
+                    className="h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500"
                   />
                   {label}
                 </label>
@@ -812,17 +812,17 @@ export default function RegexExplainerTool() {
           </div>
 
           {/* Action Buttons */}
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
             <button
               onClick={handleExplain}
-              className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-orange-600 px-6 text-sm font-semibold text-white shadow-lg shadow-orange-600/25 transition-colors hover:bg-orange-700"
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-emerald-600 px-4 sm:px-6 text-sm font-semibold text-white shadow-lg shadow-emerald-600/25 transition-colors hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 w-full sm:w-auto whitespace-nowrap"
             >
               <BookOpen className="h-4 w-4 flex-shrink-0" />
               <span>Explain Regex</span>
             </button>
             <button
               onClick={handleClear}
-              className="inline-flex h-11 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50"
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-4 sm:px-5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-300/50 w-full sm:w-auto whitespace-nowrap"
             >
               <Trash2 className="h-4 w-4 flex-shrink-0" />
               <span>Clear</span>
@@ -846,7 +846,7 @@ export default function RegexExplainerTool() {
                 </h3>
                 <button
                   onClick={handleCopy}
-                  className="inline-flex items-center gap-1.5 rounded-lg bg-white border border-slate-200 px-4 py-2 text-xs font-medium text-slate-600 shadow-sm hover:border-orange-300 hover:text-orange-700 transition-colors"
+                  className="inline-flex items-center gap-1.5 rounded-lg bg-white border border-slate-200 px-4 py-2 text-xs font-medium text-slate-600 shadow-sm hover:border-emerald-300 hover:text-emerald-700 transition-colors"
                 >
                   {copied ? (
                     <>
@@ -941,7 +941,7 @@ export default function RegexExplainerTool() {
                 }}
                 placeholder="Paste sample text here to see which parts match your regex..."
                 rows={4}
-                className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/20 transition-colors"
+                className="w-full rounded-xl border border-slate-300 bg-white px-5 py-3.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 transition-colors"
               />
 
               {testString.trim() && (
@@ -1008,7 +1008,7 @@ export default function RegexExplainerTool() {
                 key={item.step}
                 className="relative flex gap-4 rounded-2xl border border-slate-200 bg-white p-6"
               >
-                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-orange-600 text-lg font-bold text-white">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-emerald-600 text-lg font-bold text-white">
                   {item.step}
                 </div>
                 <div>
@@ -1027,7 +1027,7 @@ export default function RegexExplainerTool() {
 
       {/* ── 4. Features Section ── */}
       <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
-        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">
               Why Use Our Free Regex Explainer?
@@ -1045,10 +1045,10 @@ export default function RegexExplainerTool() {
               return (
                 <div
                   key={feature.title}
-                  className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-orange-200 hover:shadow-lg"
+                  className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-emerald-200 hover:shadow-lg"
                 >
-                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-orange-100">
-                    <Icon className="h-6 w-6 text-orange-600" />
+                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100">
+                    <Icon className="h-6 w-6 text-emerald-600" />
                   </div>
                   <h3 className="mb-2 text-base font-semibold text-slate-900">
                     {feature.title}
@@ -1065,7 +1065,7 @@ export default function RegexExplainerTool() {
 
       {/* ── 5. Use Cases Section ── */}
       <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
-        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-10 text-center">
             <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">
               Common Use Cases
@@ -1076,7 +1076,7 @@ export default function RegexExplainerTool() {
             </p>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-8">
             {useCases.map((useCase) => {
               const Icon = useCase.icon;
               return (
@@ -1085,8 +1085,8 @@ export default function RegexExplainerTool() {
                   className="overflow-hidden rounded-2xl border border-slate-200 bg-white"
                 >
                   <div className="flex items-start gap-4 p-6">
-                    <div className="inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-orange-100">
-                      <Icon className="h-5 w-5 text-orange-600" />
+                    <div className="inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-emerald-100">
+                      <Icon className="h-5 w-5 text-emerald-600" />
                     </div>
                     <div className="min-w-0 flex-1">
                       <h3 className="mb-1 text-base font-semibold text-slate-900">
@@ -1109,7 +1109,7 @@ export default function RegexExplainerTool() {
         className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20"
         id="faq"
       >
-        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">
               Frequently Asked Questions
@@ -1120,7 +1120,7 @@ export default function RegexExplainerTool() {
               for?{" "}
               <Link
                 href="/contact"
-                className="text-orange-600 hover:text-orange-700 underline"
+                className="text-emerald-600 hover:text-emerald-700 underline"
               >
                 Contact us
               </Link>
@@ -1171,7 +1171,7 @@ export default function RegexExplainerTool() {
       <RelatedTools currentSlug="regex-explainer" />
 
       {/* ── 8. CTA ── */}
-      <ToolCta />
+      <ToolCta theme="emerald" />
 
       {/* ── 9. Footer ── */}
       <FooterSection />

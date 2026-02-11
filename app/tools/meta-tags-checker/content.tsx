@@ -161,7 +161,7 @@ export default function MetaTagsCheckerTool() {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-violet-600 to-indigo-700 py-14 lg:py-18">
+      <section className="relative overflow-hidden bg-emerald-600 pt-32 pb-16 lg:pt-36 lg:pb-20">
         <div className="absolute inset-0 opacity-10"><div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)", backgroundSize: "40px 40px" }} /></div>
         <div className="relative mx-auto max-w-4xl px-6 lg:px-12">
           <nav aria-label="Breadcrumb" className="mb-5 flex items-center gap-1.5 text-sm text-white/70">
@@ -180,27 +180,27 @@ export default function MetaTagsCheckerTool() {
       </section>
 
       {/* Tool UI */}
-      <section className="py-10 lg:py-14">
-        <div className="mx-auto max-w-4xl px-6 lg:px-12 space-y-6">
+      <section className="py-16 lg:py-16" id="tool">
+        <div className="mx-auto max-w-4xl overflow-hidden px-6 lg:px-12 space-y-8">
           {/* Inputs */}
           <div className="grid gap-4 sm:grid-cols-2">
             <div className="sm:col-span-2">
               <label className="mb-1 block text-sm font-semibold text-slate-900">Title Tag</label>
-              <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="e.g., Best Web Development Tools — CoderDesign" className="w-full rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500/20 transition-colors" />
+              <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="e.g., Best Web Development Tools — CoderDesign" className="w-full rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 transition-colors" />
               <div className="mt-1 flex items-center gap-2 text-xs"><span className={title.length > TITLE_CHAR_LIMIT ? "text-red-600 font-semibold" : "text-slate-400"}>{title.length}/{TITLE_CHAR_LIMIT} chars</span><span className="text-slate-300">|</span><span className="text-slate-400">~{estimatePixelWidth(title)}px / 580px</span></div>
             </div>
             <div className="sm:col-span-2">
               <label className="mb-1 block text-sm font-semibold text-slate-900">Meta Description</label>
-              <textarea value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Compelling description of your page content..." rows={3} className="w-full rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500/20 transition-colors" />
+              <textarea value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Compelling description of your page content..." rows={3} className="w-full rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 transition-colors" />
               <div className="mt-1 text-xs"><span className={description.length > DESC_CHAR_LIMIT ? "text-red-600 font-semibold" : "text-slate-400"}>{description.length}/{DESC_CHAR_LIMIT} chars</span></div>
             </div>
             <div>
               <label className="mb-1 block text-sm font-semibold text-slate-900">Page URL</label>
-              <input value={url} onChange={(e) => setUrl(e.target.value)} placeholder="https://www.example.com/page" className="w-full rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500/20 transition-colors" />
+              <input value={url} onChange={(e) => setUrl(e.target.value)} placeholder="https://www.example.com/page" className="w-full rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 transition-colors" />
             </div>
             <div>
               <label className="mb-1 block text-sm font-semibold text-slate-900">OG Image URL <span className="font-normal text-slate-400">(optional)</span></label>
-              <input value={ogImage} onChange={(e) => setOgImage(e.target.value)} placeholder="https://www.example.com/og-image.jpg" className="w-full rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500/20 transition-colors" />
+              <input value={ogImage} onChange={(e) => setOgImage(e.target.value)} placeholder="https://www.example.com/og-image.jpg" className="w-full rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 transition-colors" />
             </div>
           </div>
 
@@ -284,13 +284,13 @@ export default function MetaTagsCheckerTool() {
                 <h3 className="mb-4 text-sm font-bold text-slate-900 uppercase tracking-wider">Heading Structure Analysis</h3>
                 <div>
                   <label className="mb-2 block text-xs font-medium text-slate-600">Paste page HTML/Markdown content to analyze heading hierarchy (optional)</label>
-                  <textarea value={pageContent} onChange={(e) => setPageContent(e.target.value)} placeholder={"<h1>Main Title</h1>\n<h2>Section</h2>\n<h3>Subsection</h3>\n\nOr use Markdown:\n# Main Title\n## Section"} rows={5} className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-500/20 transition-colors font-mono" />
+                  <textarea value={pageContent} onChange={(e) => setPageContent(e.target.value)} placeholder={"<h1>Main Title</h1>\n<h2>Section</h2>\n<h3>Subsection</h3>\n\nOr use Markdown:\n# Main Title\n## Section"} rows={5} className="w-full rounded-xl border border-slate-300 bg-white px-5 py-3.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 transition-colors font-mono" />
                 </div>
                 {headings.length > 0 && (
                   <div className="mt-4 space-y-1">
                     {headings.map((h, i) => (
                       <div key={i} className="flex items-center gap-2" style={{ paddingLeft: `${(h.level - 1) * 20}px` }}>
-                        <span className={`inline-flex h-6 min-w-[2.5rem] items-center justify-center rounded text-xs font-bold ${h.level === 1 ? "bg-violet-100 text-violet-700" : h.level === 2 ? "bg-blue-100 text-blue-700" : "bg-slate-100 text-slate-600"}`}>H{h.level}</span>
+                        <span className={`inline-flex h-6 min-w-[2.5rem] items-center justify-center rounded text-xs font-bold ${h.level === 1 ? "bg-emerald-100 text-emerald-700" : h.level === 2 ? "bg-blue-100 text-blue-700" : "bg-slate-100 text-slate-600"}`}>H{h.level}</span>
                         <span className="text-sm text-slate-700 truncate">{h.text}</span>
                       </div>
                     ))}
@@ -324,7 +324,7 @@ export default function MetaTagsCheckerTool() {
               { step: 4, title: "Fix Issues", description: "Implement recommended changes." },
             ].map((item) => (
               <div key={item.step} className="relative flex gap-4 rounded-2xl border border-slate-200 bg-white p-6">
-                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-violet-600 text-lg font-bold text-white">{item.step}</div>
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-emerald-600 text-lg font-bold text-white">{item.step}</div>
                 <div>
                   <h3 className="mb-2 text-base font-semibold text-slate-900">{item.title}</h3>
                   <p className="text-sm leading-relaxed text-slate-600">{item.description}</p>
@@ -337,7 +337,7 @@ export default function MetaTagsCheckerTool() {
 
       {/* ── Features Section ── */}
       <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
-        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">Why Use Our Meta Tags Checker?</h2>
             <p className="mx-auto max-w-2xl text-slate-600">Ensure your pages have optimal meta tags.</p>
@@ -353,9 +353,9 @@ export default function MetaTagsCheckerTool() {
             ].map((feature) => {
               const Icon = feature.icon;
               return (
-                <div key={feature.title} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-violet-200 hover:shadow-lg">
-                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100">
-                    <Icon className="h-6 w-6 text-violet-600" />
+                <div key={feature.title} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-emerald-200 hover:shadow-lg">
+                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100">
+                    <Icon className="h-6 w-6 text-emerald-600" />
                   </div>
                   <h3 className="mb-2 text-base font-semibold text-slate-900">{feature.title}</h3>
                   <p className="text-sm leading-relaxed text-slate-600">{feature.description}</p>
@@ -368,23 +368,23 @@ export default function MetaTagsCheckerTool() {
 
       {/* ── Use Cases Section ── */}
       <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
-        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+        <div className="mx-auto max-w-6xl px-6 lg:px-12">
           <div className="mb-10 text-center">
             <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">Common Use Cases</h2>
             <p className="mx-auto max-w-xl text-sm text-slate-500">See how meta tag checking is used.</p>
           </div>
-          <div className="space-y-4">
+          <div className="space-y-8">
             {[
               { title: "Homepage Check", input: "<title>My Site</title>\n<meta name='description' content='...'>", output: "Title: ✅ Good length\nDescription: ⚠️ Too short" },
               { title: "Social Preview", input: "og:title, og:image tags", output: "OG Title: ✅\nOG Image: ❌ Missing" },
               { title: "Competitor Analysis", input: "Check competitor meta tags", output: "Title: 55 chars\nDescription: 155 chars" },
               { title: "Site Audit", input: "Check all pages' meta", output: "3 issues found across tags" },
             ].map((useCase) => (
-              <div key={useCase.title} className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+              <div key={useCase.title} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                 <div className="border-b border-slate-100 bg-slate-50 px-6 py-3">
-                  <h3 className="text-sm font-semibold text-slate-900">{useCase.title}</h3>
+                  <h3 className="text-base font-semibold text-slate-900">{useCase.title}</h3>
                 </div>
-                <div className="grid gap-4 p-6 sm:grid-cols-2">
+                <div className="grid grid-cols-1 gap-8 p-6 sm:p-7 md:grid-cols-2 md:gap-7">
                   <div>
                     <div className="mb-2 text-xs font-medium uppercase tracking-wider text-slate-400">Input</div>
                     <pre className="rounded-lg bg-slate-50 p-3 text-xs leading-relaxed text-slate-700 overflow-x-auto">{useCase.input}</pre>
@@ -402,7 +402,7 @@ export default function MetaTagsCheckerTool() {
 
       <ToolFaq faqs={faqs} />
       <RelatedTools currentSlug="meta-tags-checker" />
-      <ToolCta />
+      <ToolCta theme="emerald" />
       <FooterSection />
     </div>
   );
