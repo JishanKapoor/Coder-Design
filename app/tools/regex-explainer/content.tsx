@@ -787,7 +787,7 @@ export default function RegexExplainerTool() {
             <h3 className="mb-3 text-sm font-semibold text-slate-900">
               Flags
             </h3>
-            <div className="flex flex-wrap items-center gap-4">
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-x-6 sm:gap-y-3">
               {[
                 { flag: "g", label: "Global (g)" },
                 { flag: "i", label: "Case-insensitive (i)" },
@@ -797,7 +797,7 @@ export default function RegexExplainerTool() {
               ].map(({ flag, label }) => (
                 <label
                   key={flag}
-                  className="inline-flex cursor-pointer items-center gap-2 text-sm text-slate-700"
+                  className="inline-flex cursor-pointer items-center gap-2.5 text-sm text-slate-700"
                 >
                   <input
                     type="checkbox"

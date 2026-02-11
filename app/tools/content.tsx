@@ -5,7 +5,7 @@ import { FooterSection } from "../components/FooterSection";
 import Link from "next/link";
 import {
   ArrowRight, Type, Wrench, List, Eraser, Hash, Sparkles, SmilePlus,
-  Search, Scissors, Link2, RotateCw, ArrowLeftRight, WrapText,
+  Search, Scissors, Link2, RotateCw, ArrowLeftRight,
   Replace, Palette, Bold, Italic,
   Underline, Strikethrough, Circle, Pen, Maximize2, EyeOff,
   ExternalLink, Braces, FileCode2, Regex, Globe, Lock,
@@ -42,7 +42,6 @@ const tools = [
   { title: "Word Remover", description: "Remove specific words from your text instantly.", href: "/tools/word-remover", category: "Text", icon: Eraser },
   { title: "Word Replacer", description: "Find and replace specific words with multiple pairs at once.", href: "/tools/word-replacer", category: "Text", icon: Replace },
   { title: "Censor Text", description: "Replace specific words with asterisks or custom characters.", href: "/tools/censor-text", category: "Text", icon: EyeOff },
-  { title: "Wrap Text", description: "Wrap long lines of text at a specified column width.", href: "/tools/wrap-text", category: "Text", icon: WrapText },
   // ── Style ──
   { title: "Bold Text Generator", description: "Convert text to 𝐛𝐨𝐥𝐝 Unicode for social media and bios.", href: "/tools/bold-text-generator", category: "Style", icon: Bold },
   { title: "Italic Text Generator", description: "Convert text to 𝑖𝑡𝑎𝑙𝑖𝑐 Unicode for social media and bios.", href: "/tools/italic-text-generator", category: "Style", icon: Italic },
@@ -54,7 +53,6 @@ const tools = [
   { title: "Tiny Text Generator", description: "Convert text to ᵗⁱⁿʸ superscript Unicode characters.", href: "/tools/tiny-text-generator", category: "Style", icon: Type },
   { title: "Zalgo Text Generator", description: "Create c̷̛̗r̸̡̈ë̵̩e̸̹̎p̸̧̈y̶̜̕ Zalgo text with combining marks.", href: "/tools/create-zalgo-text", category: "Style", icon: Zap },
   { title: "Undo Zalgo Effect", description: "Remove Zalgo combining marks and clean corrupted text.", href: "/tools/undo-zalgo-text", category: "Style", icon: Sparkles },
-  { title: "Normalize Fake Text", description: "Clean text by removing homoglyphs and invisible characters.", href: "/tools/normalize-fake-text", category: "Style", icon: Sparkles },
   { title: "Text Symbols & Characters", description: "Browse and copy hundreds of special Unicode symbols.", href: "/tools/text-symbols", category: "Style", icon: Palette },
   // ── Developer ──
   { title: "Link Extractor", description: "Extract all URLs and email addresses from any text.", href: "/tools/link-extractor", category: "Developer", icon: ExternalLink },
@@ -111,6 +109,11 @@ export default function ToolsIndex() {
             <h1 className="mb-6 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
               Free Online Utilities
             </h1>
+
+            {/* Sub-heading */}
+            <p className="mx-auto mb-4 max-w-2xl text-base font-medium text-slate-700 sm:text-lg">
+              Coder&nbsp;Design offers free services and tools for everyone.
+            </p>
 
             {/* Description */}
             <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-slate-600">
@@ -234,6 +237,29 @@ export default function ToolsIndex() {
               </button>
             </div>
           )}
+        </div>
+      </section>
+
+      {/* SEO Content Section */}
+      <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <h2 className="mb-6 text-2xl font-bold text-slate-900 lg:text-3xl">
+            Why Use Coder&nbsp;Design&rsquo;s Free Online Tools?
+          </h2>
+          <div className="space-y-4 text-base leading-relaxed text-slate-600">
+            <p>
+              <strong className="text-slate-900">Coder&nbsp;Design</strong> offers a growing collection of <strong className="text-slate-900">free online utilities</strong> built for developers, content creators, marketers, and everyday users. Every tool runs entirely in your browser — your data never leaves your device.
+            </p>
+            <p>
+              Our <strong className="text-slate-900">text tools</strong> let you add prefixes and suffixes to lines, split and join text, remove duplicates, reverse words, censor content, and much more. Need to style text for social media? Use our <strong className="text-slate-900">Unicode generators</strong> for bold, italic, cursive, bubble, strikethrough, underline, tiny text, and Zalgo effects — all copy-paste ready.
+            </p>
+            <p>
+              For developers, we offer a <strong className="text-slate-900">JSON formatter &amp; validator</strong>, <strong className="text-slate-900">regex tester</strong> with live highlighting, <strong className="text-slate-900">regex explainer</strong>, <strong className="text-slate-900">code minifier</strong> for HTML/CSS/JS, <strong className="text-slate-900">URL encoder/decoder</strong>, <strong className="text-slate-900">Base64 encoder/decoder</strong>, and a <strong className="text-slate-900">Markdown table generator</strong>.
+            </p>
+            <p>
+              No sign-up required. No cookies. No analytics tracking. <strong className="text-slate-900">100&nbsp;% free and private</strong> — every tool works offline once loaded and is optimised for mobile, tablet, and desktop.
+            </p>
+          </div>
         </div>
       </section>
 

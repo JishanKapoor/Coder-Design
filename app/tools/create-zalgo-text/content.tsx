@@ -119,13 +119,13 @@ export default function ZalgoTextGeneratorTool() {
           {/* Direction checkboxes */}
           <div>
             <label className="mb-2 block text-xs font-medium text-slate-600">Direction</label>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-x-6 sm:gap-y-3">
               {([
                 { key: "above", label: "Above", checked: above, set: setAbove },
                 { key: "below", label: "Below", checked: below, set: setBelow },
                 { key: "middle", label: "Middle", checked: middle, set: setMiddle },
               ] as const).map((d) => (
-                <label key={d.key} className="inline-flex items-center gap-2 text-sm text-slate-700 cursor-pointer">
+                <label key={d.key} className="inline-flex items-center gap-2.5 text-sm text-slate-700 cursor-pointer">
                   <input type="checkbox" checked={d.checked} onChange={(e) => d.set(e.target.checked)} className="h-4 w-4 rounded border-slate-300 text-purple-600 focus:ring-purple-500" />
                   {d.label}
                 </label>

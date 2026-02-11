@@ -153,7 +153,7 @@ export default function JsonFormatterTool() {
 
           <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
             <h3 className="mb-3 text-sm font-semibold text-slate-900">Options</h3>
-            <div className="flex flex-wrap items-center gap-4">
+            <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-6 sm:gap-y-4">
               <div>
                 <label className="mb-1 block text-xs font-medium text-slate-600">Indentation</label>
                 <select value={indent} onChange={(e) => setIndent(e.target.value as IndentType)} className="h-9 rounded-xl border border-slate-300 bg-white px-3 text-sm text-slate-700 focus:border-emerald-500 focus:outline-none">
@@ -162,7 +162,7 @@ export default function JsonFormatterTool() {
                   <option value="tab">Tab</option>
                 </select>
               </div>
-              <label className="flex items-center gap-2 cursor-pointer pt-4">
+              <label className="flex items-center gap-2.5 cursor-pointer sm:pt-4">
                 <input type="checkbox" checked={sortKeys} onChange={(e) => setSortKeys(e.target.checked)} className="h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500" />
                 <span className="text-sm text-slate-700">Sort Keys</span>
               </label>

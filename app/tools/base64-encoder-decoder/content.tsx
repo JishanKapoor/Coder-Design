@@ -116,12 +116,12 @@ export default function Base64EncoderDecoderTool() {
           {/* Options */}
           <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
             <h3 className="mb-3 text-sm font-semibold text-slate-900">Options</h3>
-            <div className="flex flex-wrap items-center gap-4">
-              <label className="flex items-center gap-2 cursor-pointer">
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-x-6 sm:gap-y-3">
+              <label className="flex items-center gap-2.5 cursor-pointer">
                 <input type="checkbox" checked={urlSafe} onChange={(e) => setUrlSafe(e.target.checked)} className="h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500" />
                 <span className="text-sm text-slate-700">URL-safe Base64</span>
               </label>
-              <label className="flex items-center gap-2 cursor-pointer">
+              <label className="flex items-center gap-2.5 cursor-pointer">
                 <input type="checkbox" checked={lineWrap} onChange={(e) => setLineWrap(e.target.checked)} className="h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500" />
                 <span className="text-sm text-slate-700">MIME Line Wrap (76 chars)</span>
               </label>

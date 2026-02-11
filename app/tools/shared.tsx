@@ -4,7 +4,7 @@ import Link from "next/link";
 import {
   ChevronDown, ArrowRight, Layers, Type, Eraser, Hash, Sparkles,
   SmilePlus, Search, Scissors, Link2, RotateCw, ArrowLeftRight,
-  List, WrapText, Replace, Palette, Bold,
+  List, Replace, Palette, Bold,
   Italic, Underline, Strikethrough, Circle, Pen, Maximize2, EyeOff,
   ExternalLink, Braces, FileCode2, Regex, Globe, Lock,
   Code2, Zap, Table,
@@ -28,13 +28,11 @@ export const allTools: { href: string; label: string; category: string; icon: Re
   { href: "/tools/reverse-text", label: "Reverse Text", category: "Text", icon: ArrowLeftRight, color: "bg-blue-100 text-blue-600" },
   { href: "/tools/truncate-text", label: "Truncate Text", category: "Text", icon: Scissors, color: "bg-blue-100 text-blue-600" },
   { href: "/tools/trim-text", label: "Trim Text", category: "Text", icon: Scissors, color: "bg-blue-100 text-blue-600" },
-  { href: "/tools/wrap-text", label: "Wrap Text", category: "Text", icon: WrapText, color: "bg-blue-100 text-blue-600" },
   { href: "/tools/reverse-words", label: "Reverse Words", category: "Text", icon: ArrowLeftRight, color: "bg-blue-100 text-blue-600" },
   { href: "/tools/word-remover", label: "Word Remover", category: "Text", icon: Eraser, color: "bg-blue-100 text-blue-600" },
   { href: "/tools/word-replacer", label: "Word Replacer", category: "Text", icon: Replace, color: "bg-blue-100 text-blue-600" },
   { href: "/tools/censor-text", label: "Censor Text", category: "Text", icon: EyeOff, color: "bg-blue-100 text-blue-600" },
   /* ── Style Tools ── */
-  { href: "/tools/normalize-fake-text", label: "Unfake Text", category: "Style", icon: Sparkles, color: "bg-purple-100 text-purple-600" },
   { href: "/tools/bold-text-generator", label: "Bold Text Generator", category: "Style", icon: Bold, color: "bg-purple-100 text-purple-600" },
   { href: "/tools/tiny-text-generator", label: "Tiny Text Generator", category: "Style", icon: Type, color: "bg-purple-100 text-purple-600" },
   { href: "/tools/text-symbols", label: "Text Symbols", category: "Style", icon: Palette, color: "bg-purple-100 text-purple-600" },
@@ -140,7 +138,7 @@ export function ToolCta({ theme = "blue" }: { theme?: "blue" | "purple" | "emera
     <section className={`${s.bg} py-16`}>
       <div className="mx-auto max-w-4xl px-6 lg:px-12 text-center">
         <h2 className="mb-4 text-2xl font-bold text-white lg:text-3xl">Ready to Work Together?</h2>
-        <p className="mb-6 text-white/80">Need a custom tool or web application? Let&apos;s discuss your project.</p>
+        <p className="mb-6 text-white/90">Need a custom tool or web application? Let&apos;s discuss your project.</p>
         <div className="flex flex-wrap justify-center gap-3">
           <Link href="/contact" className={`inline-flex h-11 items-center justify-center rounded-md bg-white px-8 text-sm font-semibold ${s.btn}`}>Get in Touch</Link>
           <a href="tel:+14372392448" className="inline-flex h-11 items-center justify-center rounded-md border border-white/30 bg-white/10 px-8 text-sm font-semibold text-white backdrop-blur-sm hover:bg-white/20">Call Us Now</a>

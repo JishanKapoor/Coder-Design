@@ -549,7 +549,7 @@ export default function UrlSlugGeneratorTool() {
             <h3 className="mb-3 text-sm font-semibold text-slate-900">
               Options
             </h3>
-            <div className="flex flex-wrap items-end gap-5">
+            <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-end sm:gap-x-6 sm:gap-y-4">
               <div>
                 <label className="block text-xs font-medium text-slate-600 mb-1">
                   Separator
@@ -564,7 +564,7 @@ export default function UrlSlugGeneratorTool() {
                   <option value=".">Dot (.)</option>
                 </select>
               </div>
-              <label className="inline-flex cursor-pointer items-center gap-2 text-sm text-slate-700">
+              <label className="inline-flex cursor-pointer items-center gap-2.5 text-sm text-slate-700">
                 <input
                   type="checkbox"
                   checked={lowercase}
@@ -573,7 +573,7 @@ export default function UrlSlugGeneratorTool() {
                 />
                 Lowercase
               </label>
-              <label className="inline-flex cursor-pointer items-center gap-2 text-sm text-slate-700">
+              <label className="inline-flex cursor-pointer items-center gap-2.5 text-sm text-slate-700">
                 <input
                   type="checkbox"
                   checked={removeStopWords}
@@ -582,7 +582,7 @@ export default function UrlSlugGeneratorTool() {
                 />
                 Remove stop words
               </label>
-              <label className="inline-flex cursor-pointer items-center gap-2 text-sm text-slate-700">
+              <label className="inline-flex cursor-pointer items-center gap-2.5 text-sm text-slate-700">
                 <input
                   type="checkbox"
                   checked={stripAccents}

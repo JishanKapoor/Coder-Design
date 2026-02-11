@@ -373,11 +373,11 @@ export default function DuplicateEraserTool() {
 
           {/* Options */}
           <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-slate-500">
+            <p className="mb-4 text-xs font-semibold uppercase tracking-wider text-slate-500">
               Options
             </p>
-            <div className="flex flex-wrap items-center gap-5">
-              <label className="inline-flex cursor-pointer items-center gap-2 text-sm text-slate-700">
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-x-6 sm:gap-y-3">
+              <label className="inline-flex cursor-pointer items-center gap-2.5 text-sm text-slate-700">
                 <input
                   type="checkbox"
                   checked={caseSensitive}
@@ -386,7 +386,7 @@ export default function DuplicateEraserTool() {
                 />
                 Case sensitive
               </label>
-              <label className="inline-flex cursor-pointer items-center gap-2 text-sm text-slate-700">
+              <label className="inline-flex cursor-pointer items-center gap-2.5 text-sm text-slate-700">
                 <input
                   type="checkbox"
                   checked={trimWhitespace}
@@ -395,7 +395,7 @@ export default function DuplicateEraserTool() {
                 />
                 Trim whitespace
               </label>
-              <label className="inline-flex cursor-pointer items-center gap-2 text-sm text-slate-700">
+              <label className="inline-flex cursor-pointer items-center gap-2.5 text-sm text-slate-700">
                 <input
                   type="checkbox"
                   checked={removeEmptyLines}

@@ -127,14 +127,14 @@ export default function RegexTesterTool() {
           {/* Flags */}
           <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
             <h3 className="mb-3 text-sm font-semibold text-slate-900">Flags</h3>
-            <div className="flex flex-wrap items-center gap-4">
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-x-6 sm:gap-y-3">
               {[
                 { label: "g (global)", checked: flagG, set: setFlagG },
                 { label: "i (case-insensitive)", checked: flagI, set: setFlagI },
                 { label: "m (multiline)", checked: flagM, set: setFlagM },
                 { label: "s (dotAll)", checked: flagS, set: setFlagS },
               ].map((f) => (
-                <label key={f.label} className="flex items-center gap-1.5 cursor-pointer">
+                <label key={f.label} className="flex items-center gap-2.5 cursor-pointer">
                   <input type="checkbox" checked={f.checked} onChange={(e) => f.set(e.target.checked)} className="h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500" />
                   <span className="text-sm text-slate-700 font-mono">{f.label}</span>
                 </label>
