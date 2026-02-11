@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Custom Web Development Toronto | CoderDesign",
     description: "Expert React, Next.js, Node.js, Python, and Django developers in Toronto building scalable web applications. Call (437) 239-2448.",
-    url: "https://coderdesign.com/full-stack-engineering",
+    url: "https://coderdesign.com/full-stack-engineering/",
     siteName: "CoderDesign",
     locale: "en_CA",
     type: "website",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     images: ["https://coderdesign.com/og-image.png"],
   },
   alternates: {
-    canonical: "https://coderdesign.com/full-stack-engineering",
+    canonical: "https://coderdesign.com/full-stack-engineering/",
   },
 };
 

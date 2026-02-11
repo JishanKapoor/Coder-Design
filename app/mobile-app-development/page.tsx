@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mobile App Development Company Toronto | CoderDesign",
     description: "iOS and Android app development in Toronto using React Native, Flutter, Swift, and Kotlin. Call (437) 239-2448.",
-    url: "https://coderdesign.com/mobile-app-development",
+    url: "https://coderdesign.com/mobile-app-development/",
     siteName: "CoderDesign",
     locale: "en_CA",
     type: "website",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     images: ["https://coderdesign.com/og-image.png"],
   },
   alternates: {
-    canonical: "https://coderdesign.com/mobile-app-development",
+    canonical: "https://coderdesign.com/mobile-app-development/",
   },
 };
 

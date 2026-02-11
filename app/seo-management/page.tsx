@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SEO Company Toronto | AI Powered SEO Services | CoderDesign",
     description: "Toronto SEO company. AI powered SEO, local SEO, technical audits, content strategy, and link building. Call (437) 239-2448.",
-    url: "https://coderdesign.com/seo-management",
+    url: "https://coderdesign.com/seo-management/",
     siteName: "CoderDesign",
     locale: "en_CA",
     type: "website",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     images: ["https://coderdesign.com/og-image.png"],
   },
   alternates: {
-    canonical: "https://coderdesign.com/seo-management",
+    canonical: "https://coderdesign.com/seo-management/",
   },
 };
 

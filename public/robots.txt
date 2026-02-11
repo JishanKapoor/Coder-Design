@@ -64,6 +64,9 @@ Allow: /contact
 Allow: /about
 Allow: /blogs
 Allow: /blog/
+Allow: /tools/
+Allow: /privacy
+Allow: /terms
 
 # Sitemap
 Sitemap: https://coderdesign.com/sitemap.xml

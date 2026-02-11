@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: meta.title,
     description: meta.short_description,
-    url: `https://coderdesign.com/blog/${meta.slug}`,
+    url: `https://coderdesign.com/blog/${meta.slug}/`,
     siteName: "CoderDesign",
     locale: "en_CA",
     type: "article",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     images: [meta.image ? `https://coderdesign.com${meta.image}` : "https://coderdesign.com/og-image.png"],
   },
   alternates: {
-    canonical: `https://coderdesign.com/blog/${meta.slug}`,
+    canonical: `https://coderdesign.com/blog/${meta.slug}/`,
   },
 };
 
@@ -32,13 +32,13 @@ const articleJsonLd = {
   "@type": "BlogPosting",
   "headline": meta.title,
   "description": meta.short_description,
-  "author": { "@type": "Organization", "name": "CoderDesign", "url": "https://coderdesign.com" },
-  "publisher": { "@type": "Organization", "name": "CoderDesign", "url": "https://coderdesign.com", "logo": { "@type": "ImageObject", "url": "https://coderdesign.com/og-image.png" } },
+  "author": [{ "@type": "Person", "name": "CoderDesign Team", "jobTitle": "Software Development Team", "url": "https://coderdesign.com/about/", "worksFor": { "@type": "Organization", "name": "CoderDesign", "@id": "https://coderdesign.com/#organization" } }],
+  "publisher": { "@type": "Organization", "name": "CoderDesign", "@id": "https://coderdesign.com/#organization", "url": "https://coderdesign.com/", "logo": { "@type": "ImageObject", "url": "https://coderdesign.com/og-image.png" } },
   "datePublished": meta.createdAt,
   "dateModified": meta.createdAt,
   "image": meta.image ? `https://coderdesign.com${meta.image}` : "https://coderdesign.com/og-image.png",
-  "url": `https://coderdesign.com/blog/${meta.slug}`,
-  "mainEntityOfPage": `https://coderdesign.com/blog/${meta.slug}`,
+  "url": `https://coderdesign.com/blog/${meta.slug}/`,
+  "mainEntityOfPage": `https://coderdesign.com/blog/${meta.slug}/`,
 };
 
 export default function Page() {

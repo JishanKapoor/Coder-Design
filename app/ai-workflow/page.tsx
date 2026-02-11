@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AI Automation and Chatbot Development Toronto | CoderDesign",
     description: "Custom AI chatbots, n8n workflow automation, and OpenAI integration for Toronto businesses. Call (437) 239-2448.",
-    url: "https://coderdesign.com/ai-workflow",
+    url: "https://coderdesign.com/ai-workflow/",
     siteName: "CoderDesign",
     locale: "en_CA",
     type: "website",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     images: ["https://coderdesign.com/og-image.png"],
   },
   alternates: {
-    canonical: "https://coderdesign.com/ai-workflow",
+    canonical: "https://coderdesign.com/ai-workflow/",
   },
 };
 

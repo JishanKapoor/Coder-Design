@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact CoderDesign Toronto | Free Consultation",
     description: "Get in touch with CoderDesign at 7 Grosvenor Street, Toronto. Web development, mobile apps, AI automation, and SEO. (437) 239-2448.",
-    url: "https://coderdesign.com/contact",
+    url: "https://coderdesign.com/contact/",
     siteName: "CoderDesign",
     locale: "en_CA",
     type: "website",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     images: ["https://coderdesign.com/og-image.png"],
   },
   alternates: {
-    canonical: "https://coderdesign.com/contact",
+    canonical: "https://coderdesign.com/contact/",
   },
 };
 

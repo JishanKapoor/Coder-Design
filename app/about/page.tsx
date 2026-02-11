@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About CoderDesign | Software Developers Toronto",
     description: "Meet the CoderDesign team. Toronto software developers with 100+ projects delivered and 50+ clients across web, mobile, AI, and SEO.",
-    url: "https://coderdesign.com/about",
+    url: "https://coderdesign.com/about/",
     siteName: "CoderDesign",
     locale: "en_CA",
     type: "website",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     images: ["https://coderdesign.com/og-image.png"],
   },
   alternates: {
-    canonical: "https://coderdesign.com/about",
+    canonical: "https://coderdesign.com/about/",
   },
 };
 

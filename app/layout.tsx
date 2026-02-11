@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://coderdesign.com"),
   title: "Software Development Company Toronto | CoderDesign",
   description:
     "Toronto software development company. Custom web apps, mobile apps, AI automation, and SEO. 100+ projects for startups and enterprises. (437) 239-2448.",
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
     title: "Software Development Company Toronto | CoderDesign",
     description:
       "Toronto software development company. Custom web apps, mobile apps, AI automation, and SEO. Trusted by startups and enterprises across the GTA.",
-    url: "https://coderdesign.com",
+    url: "https://coderdesign.com/",
     siteName: "CoderDesign",
     locale: "en_CA",
     type: "website",

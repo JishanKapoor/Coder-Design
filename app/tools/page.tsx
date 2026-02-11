@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import ToolsIndex from "./content";
 
 export const metadata: Metadata = {
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
       "Free Online Utilities — String Processing, Code Formatting & More | Coder Design",
     description:
       "Coder Design offers free online tools: string processing, code formatting, Unicode generators, SEO analysis, and more. No sign-up. No tracking. 100% free and private.",
-    url: "https://coderdesign.com/tools",
+    url: "https://coderdesign.com/tools/",
     siteName: "CoderDesign",
     locale: "en_CA",
     type: "website",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
       "Coder Design offers free tools: string processing, code formatting, Unicode generators, and more. No sign-up, no tracking, 100% private.",
   },
   alternates: {
-    canonical: "https://coderdesign.com/tools",
+    canonical: "https://coderdesign.com/tools/",
   },
   robots: {
     index: true,
@@ -51,7 +51,7 @@ const toolsCollectionJsonLd = {
   name: "Free Online Utilities by Coder Design",
   description:
     "A curated collection of free online tools for developers, marketers, and content creators. String processing, code formatting, Unicode generators, SEO analysis, and more. Built by Coder Design.",
-  url: "https://coderdesign.com/tools",
+  url: "https://coderdesign.com/tools/",
   creator: {
     "@type": "Organization",
     name: "Coder Design",
@@ -64,7 +64,7 @@ const toolsCollectionJsonLd = {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: "https://coderdesign.com" },
-      { "@type": "ListItem", position: 2, name: "Free Tools", item: "https://coderdesign.com/tools" },
+      { "@type": "ListItem", position: 2, name: "Free Tools", item: "https://coderdesign.com/tools/" },
     ],
   },
 };
