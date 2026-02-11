@@ -39,11 +39,6 @@ const articleJsonLd = {
   "image": meta.image ? `https://coderdesign.com${meta.image}` : "https://coderdesign.com/og-image.png",
   "url": `https://coderdesign.com/blog/${meta.slug}/`,
   "mainEntityOfPage": `https://coderdesign.com/blog/${meta.slug}/`,
-};
-
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
   "mainEntity": [
     {
       "@type": "Question",
@@ -58,7 +53,7 @@ const faqJsonLd = {
       "name": "Will an AI chatbot annoy my website visitors?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A poorly implemented chatbot will, yes. But a well-implemented one — one that waits before engaging, offers genuine help, is easy to dismiss, and is honest about being AI — consistently improves the visitor experience. The key is giving visitors at least 15-30 seconds before engaging, making the close button obvious, and having a clear escalation path to a human."
+        "text": "A poorly implemented chatbot will, yes. But a well-implemented one \u2014 one that waits before engaging, offers genuine help, is easy to dismiss, and is honest about being AI \u2014 consistently improves the visitor experience. The key is giving visitors at least 15-30 seconds before engaging, making the close button obvious, and having a clear escalation path to a human."
       }
     },
     {
@@ -66,7 +61,7 @@ const faqJsonLd = {
       "name": "What is the minimum traffic level where AI lead generation makes sense?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "If you get at least 300-500 unique visitors per month, AI lead capture tools can make a noticeable difference. Below that level, focus first on driving more traffic through SEO, content, and local marketing before investing in conversion optimization. For AI phone agents, the threshold is lower — even a handful of missed calls per week translates to lost revenue for appointment-based businesses."
+        "text": "If you get at least 300-500 unique visitors per month, AI lead capture tools can make a noticeable difference. Below that level, focus first on driving more traffic through SEO, content, and local marketing before investing in conversion optimization. For AI phone agents, the threshold is lower \u2014 even a handful of missed calls per week translates to lost revenue for appointment-based businesses."
       }
     },
     {
@@ -74,17 +69,16 @@ const faqJsonLd = {
       "name": "Do I need a developer to set this up?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Most of the tools mentioned (Tidio, Calendly, OptinMonster, HubSpot) can be set up without a developer. Installing a chatbot widget, configuring an email sequence, or setting up a Zapier workflow requires no coding. More advanced implementations — custom chatbot flows in Voiceflow, complex lead scoring models, or integration with custom-built systems — may benefit from developer support or agency help."
+        "text": "Most of the tools mentioned (Tidio, Calendly, OptinMonster, HubSpot) can be set up without a developer. Installing a chatbot widget, configuring an email sequence, or setting up a Zapier workflow requires no coding. More advanced implementations \u2014 custom chatbot flows in Voiceflow, complex lead scoring models, or integration with custom-built systems \u2014 may benefit from developer support or agency help."
       }
     }
-  ]
+  ],
 };
 
 export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <Content />
     </>
   );

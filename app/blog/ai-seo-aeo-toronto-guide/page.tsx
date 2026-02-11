@@ -39,11 +39,6 @@ const articleJsonLd = {
   "image": meta.image ? `https://coderdesign.com${meta.image}` : "https://coderdesign.com/og-image.png",
   "url": `https://coderdesign.com/blog/${meta.slug}/`,
   "mainEntityOfPage": `https://coderdesign.com/blog/${meta.slug}/`,
-};
-
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
   "mainEntity": [
     {
       "@type": "Question",
@@ -58,7 +53,7 @@ const faqJsonLd = {
       "name": "Should I create separate content for AI search vs traditional search?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. The same content can serve both — the key is how you structure it. Write comprehensive, well-structured content that answers questions clearly, is technically optimized, and includes structured data. Creating separate content would be duplicative and counterproductive."
+        "text": "No. The same content can serve both \u2014 the key is how you structure it. Write comprehensive, well-structured content that answers questions clearly, is technically optimized, and includes structured data. Creating separate content would be duplicative and counterproductive."
       }
     },
     {
@@ -66,7 +61,7 @@ const faqJsonLd = {
       "name": "Do I need to worry about AI tools stealing my traffic?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For complex, high-intent queries that drive business — like hiring an agency or choosing a CRM — users still want to explore options and engage directly with businesses. Optimize for being cited as the source, and ensure your content offers enough depth that users want to visit your site for the full picture."
+        "text": "For complex, high-intent queries that drive business \u2014 like hiring an agency or choosing a CRM \u2014 users still want to explore options and engage directly with businesses. Optimize for being cited as the source, and ensure your content offers enough depth that users want to visit your site for the full picture."
       }
     },
     {
@@ -77,14 +72,13 @@ const faqJsonLd = {
         "text": "AI writing tools can accelerate content creation and are excellent for first drafts, outlines, and research. But publishing AI-generated content without significant human editing and original insight is a losing strategy. Google's Helpful Content guidelines explicitly value first-hand experience and expertise."
       }
     }
-  ]
+  ],
 };
 
 export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <Content />
     </>
   );

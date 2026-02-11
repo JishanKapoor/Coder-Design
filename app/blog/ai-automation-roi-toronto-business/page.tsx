@@ -39,11 +39,6 @@ const articleJsonLd = {
   "image": meta.image ? `https://coderdesign.com${meta.image}` : "https://coderdesign.com/og-image.png",
   "url": `https://coderdesign.com/blog/${meta.slug}/`,
   "mainEntityOfPage": `https://coderdesign.com/blog/${meta.slug}/`,
-};
-
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
   "mainEntity": [
     {
       "@type": "Question",
@@ -66,7 +61,7 @@ const faqJsonLd = {
       "name": "Should I start with a pilot or go all-in on AI automation?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Always start with a pilot — one well-defined workflow that you can measure. This gives you real data on time savings and impact, builds internal confidence, and gives you a working relationship with the agency or tools before committing to a larger scope."
+        "text": "Always start with a pilot \u2014 one well-defined workflow that you can measure. This gives you real data on time savings and impact, builds internal confidence, and gives you a working relationship with the agency or tools before committing to a larger scope."
       }
     },
     {
@@ -74,7 +69,7 @@ const faqJsonLd = {
       "name": "What is the difference between ROI from time savings and ROI from revenue growth?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Time savings are the most predictable and measurable — you can track hours before and after with high confidence. Revenue growth from automation is real but harder to attribute precisely because other factors also influence revenue. The best approach is to plan conservatively based on time savings alone, and treat revenue gains as an upside bonus."
+        "text": "Time savings are the most predictable and measurable \u2014 you can track hours before and after with high confidence. Revenue growth from automation is real but harder to attribute precisely because other factors also influence revenue. The best approach is to plan conservatively based on time savings alone, and treat revenue gains as an upside bonus."
       }
     },
     {
@@ -85,14 +80,13 @@ const faqJsonLd = {
         "text": "Set up a simple dashboard that tracks key metrics weekly: lead response time, number of leads processed, conversion rate, hours spent on admin tasks, and invoices sent on time. Compare these against your pre-automation baselines. Most automation platforms also provide execution logs and analytics."
       }
     }
-  ]
+  ],
 };
 
 export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <Content />
     </>
   );

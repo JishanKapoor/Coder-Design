@@ -39,11 +39,6 @@ const articleJsonLd = {
   "image": meta.image ? `https://coderdesign.com${meta.image}` : "https://coderdesign.com/og-image.png",
   "url": `https://coderdesign.com/blog/${meta.slug}/`,
   "mainEntityOfPage": `https://coderdesign.com/blog/${meta.slug}/`,
-};
-
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
   "mainEntity": [
     {
       "@type": "Question",
@@ -85,14 +80,13 @@ const faqJsonLd = {
         "text": "The most common mistakes are: building too many features (feature creep), skipping user research, choosing overly complex technology, not defining success metrics before launch, building in isolation without user feedback, and waiting too long to launch. The goal of an MVP is to learn, not to build a perfect product."
       }
     }
-  ]
+  ],
 };
 
 export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <Content />
     </>
   );

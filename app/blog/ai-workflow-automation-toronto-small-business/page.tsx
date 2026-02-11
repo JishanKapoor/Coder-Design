@@ -39,11 +39,6 @@ const articleJsonLd = {
   "image": meta.image ? `https://coderdesign.com${meta.image}` : "https://coderdesign.com/og-image.png",
   "url": `https://coderdesign.com/blog/${meta.slug}/`,
   "mainEntityOfPage": `https://coderdesign.com/blog/${meta.slug}/`,
-};
-
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
   "mainEntity": [
     {
       "@type": "Question",
@@ -58,7 +53,7 @@ const faqJsonLd = {
       "name": "Do I need to change my existing tools to use AI automation?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Almost never. Platforms like Zapier and Make connect the tools you already use — Google Workspace, QuickBooks, Mailchimp, HubSpot, Salesforce, Calendly, Slack, and thousands more. The automation layer sits between your existing systems rather than replacing them."
+        "text": "Almost never. Platforms like Zapier and Make connect the tools you already use \u2014 Google Workspace, QuickBooks, Mailchimp, HubSpot, Salesforce, Calendly, Slack, and thousands more. The automation layer sits between your existing systems rather than replacing them."
       }
     },
     {
@@ -66,7 +61,7 @@ const faqJsonLd = {
       "name": "Is my business too small for AI workflow automation?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "If you or anyone on your team spends more than a few hours per week on repetitive tasks, automation is worth exploring. Solo operators often benefit the most because they are the bottleneck for everything — automating lead response and scheduling can free up the equivalent of an entire workday per week."
+        "text": "If you or anyone on your team spends more than a few hours per week on repetitive tasks, automation is worth exploring. Solo operators often benefit the most because they are the bottleneck for everything \u2014 automating lead response and scheduling can free up the equivalent of an entire workday per week."
       }
     },
     {
@@ -74,7 +69,7 @@ const faqJsonLd = {
       "name": "Will AI automation feel robotic to my customers?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Only if you set it up lazily. AI-generated emails and chat responses are fully customizable — you control the tone, formality, and personality. A well-configured AI response is indistinguishable from one written by your best team member. It just arrives in seconds instead of hours."
+        "text": "Only if you set it up lazily. AI-generated emails and chat responses are fully customizable \u2014 you control the tone, formality, and personality. A well-configured AI response is indistinguishable from one written by your best team member. It just arrives in seconds instead of hours."
       }
     },
     {
@@ -82,7 +77,7 @@ const faqJsonLd = {
       "name": "What if something goes wrong with the automation?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Every mature automation platform has error handling and notification systems built in. If a step fails, you get alerted immediately, and the workflow retries or queues the task. You also design fallback paths — if the AI is not confident, the lead routes to a human for manual review instead of guessing."
+        "text": "Every mature automation platform has error handling and notification systems built in. If a step fails, you get alerted immediately, and the workflow retries or queues the task. You also design fallback paths \u2014 if the AI is not confident, the lead routes to a human for manual review instead of guessing."
       }
     },
     {
@@ -90,17 +85,16 @@ const faqJsonLd = {
       "name": "How long does it take to see results from workflow automation?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A single workflow like lead capture to CRM to personalized follow-up can be built and tested in a few days. You will notice the impact — faster response times, cleaner data, fewer things slipping through the cracks — within the first couple of weeks."
+        "text": "A single workflow like lead capture to CRM to personalized follow-up can be built and tested in a few days. You will notice the impact \u2014 faster response times, cleaner data, fewer things slipping through the cracks \u2014 within the first couple of weeks."
       }
     }
-  ]
+  ],
 };
 
 export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <Content />
     </>
   );
