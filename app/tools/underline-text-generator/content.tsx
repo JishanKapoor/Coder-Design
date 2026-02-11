@@ -111,6 +111,94 @@ export default function UnderlineTextGeneratorTool() {
         </div>
       </section>
 
+      {/* How To Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">How to Generate Underlined Unicode Text</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">Add underlines to text for social media and messaging.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {[
+              { step: 1, title: "Enter Your Text", description: "Type or paste the text you want to underline." },
+              { step: 2, title: "Click Convert", description: "Press the button to add Unicode underline marks to each character." },
+              { step: 3, title: "Preview the Result", description: "See how your underlined text looks in the output box." },
+              { step: 4, title: "Copy and Paste", description: "Copy the underlined text and use it on any platform." },
+            ].map((item) => (
+              <div key={item.step} className="relative flex gap-4 rounded-2xl border border-slate-200 bg-white p-6">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-violet-600 text-lg font-bold text-white">{item.step}</div>
+                <div>
+                  <h3 className="mb-2 text-base font-semibold text-slate-900">{item.title}</h3>
+                  <p className="text-sm leading-relaxed text-slate-600">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">Why Use Our Underline Text Generator?</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">Create underlined text that works in plain text fields.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { icon: Zap, title: "Instant Processing", description: "Underline text is generated instantly using Unicode combining characters." },
+              { icon: Shield, title: "100% Private", description: "Your text never leaves your browser. No data is stored or transmitted." },
+              { icon: Globe, title: "Cross-Platform", description: "Works on social media, messaging apps, emails, and more." },
+              { icon: Underline, title: "True Underline", description: "Uses Unicode combining underline marks, not HTML or CSS." },
+              { icon: Copy, title: "One-Click Copy", description: "Copy or download your underlined text with a single click." },
+              { icon: Zap, title: "No Sign-Up", description: "Start using the tool immediately — no account needed." },
+            ].map((f) => (
+              <div key={f.title} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-violet-200 hover:shadow-lg">
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100">
+                  <f.icon className="h-6 w-6 text-violet-600" />
+                </div>
+                <h3 className="mb-2 text-base font-semibold text-slate-900">{f.title}</h3>
+                <p className="text-sm leading-relaxed text-slate-600">{f.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Use Cases Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">Common Use Cases</h2>
+            <p className="mx-auto max-w-xl text-sm text-slate-500">See how underlined Unicode text is used across platforms.</p>
+          </div>
+          <div className="space-y-4">
+            {[
+              { title: "Social Media Emphasis", before: "Important update", after: "I̲m̲p̲o̲r̲t̲a̲n̲t̲ u̲p̲d̲a̲t̲e̲" },
+              { title: "Bio Styling", before: "CEO & Founder", after: "C̲E̲O̲ &̲ F̲o̲u̲n̲d̲e̲r̲" },
+              { title: "Highlight Keywords", before: "Free shipping today", after: "F̲r̲e̲e̲ s̲h̲i̲p̲p̲i̲n̲g̲ t̲o̲d̲a̲y̲" },
+              { title: "Title Formatting", before: "Chapter One", after: "C̲h̲a̲p̲t̲e̲r̲ O̲n̲e̲" },
+            ].map((uc) => (
+              <div key={uc.title} className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+                <div className="flex items-center gap-3 border-b border-slate-100 px-5 py-3.5">
+                  <h3 className="text-sm font-semibold text-slate-900">{uc.title}</h3>
+                </div>
+                <div className="grid grid-cols-1 divide-y sm:grid-cols-2 sm:divide-x sm:divide-y-0 divide-slate-100">
+                  <div className="px-5 py-3">
+                    <p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-slate-400">Input</p>
+                    <pre className="overflow-x-auto whitespace-pre text-xs leading-relaxed text-slate-600 font-mono">{uc.before}</pre>
+                  </div>
+                  <div className="px-5 py-3 bg-green-50/50">
+                    <p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-green-600">Output</p>
+                    <pre className="overflow-x-auto whitespace-pre text-xs leading-relaxed text-green-800 font-mono">{uc.after}</pre>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <ToolFaq faqs={faqs} />
       <RelatedTools currentSlug="underline-text-generator" />
       <ToolCta />

@@ -3,7 +3,7 @@ import { useState, useMemo } from "react";
 import { Navigation } from "../../components/Navigation";
 import { FooterSection } from "../../components/FooterSection";
 import Link from "next/link";
-import { ChevronRight, Zap, Shield, Globe, Trash2, FileSearch, CheckCircle2, AlertTriangle, XCircle } from "lucide-react";
+import { ChevronRight, Zap, Shield, Globe, Trash2, FileSearch, CheckCircle2, AlertTriangle, XCircle, Search, BarChart2 } from "lucide-react";
 import { RelatedTools, ToolFaq, ToolCta } from "../shared";
 
 /* ── Helpers ── */
@@ -306,6 +306,97 @@ export default function MetaTagsCheckerTool() {
               </div>
             </div>
           )}
+        </div>
+      </section>
+
+      {/* ── How-To Section ── */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">How to Check Meta Tags</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">Analyze and validate your page&apos;s meta tags.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {[
+              { step: 1, title: "Enter URL or HTML", description: "Paste your page URL or HTML." },
+              { step: 2, title: "Click Check", description: "Analyze all meta tags." },
+              { step: 3, title: "Review Results", description: "See tag status and suggestions." },
+              { step: 4, title: "Fix Issues", description: "Implement recommended changes." },
+            ].map((item) => (
+              <div key={item.step} className="relative flex gap-4 rounded-2xl border border-slate-200 bg-white p-6">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-violet-600 text-lg font-bold text-white">{item.step}</div>
+                <div>
+                  <h3 className="mb-2 text-base font-semibold text-slate-900">{item.title}</h3>
+                  <p className="text-sm leading-relaxed text-slate-600">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Features Section ── */}
+      <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">Why Use Our Meta Tags Checker?</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">Ensure your pages have optimal meta tags.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { icon: Zap, title: "Instant Analysis", description: "Check all meta tags in seconds." },
+              { icon: Shield, title: "100% Private", description: "No data leaves your browser." },
+              { icon: Search, title: "SEO Tags", description: "Title, description, keywords analysis." },
+              { icon: Globe, title: "Social Tags", description: "Open Graph and Twitter card checks." },
+              { icon: BarChart2, title: "Score Report", description: "Get an overall optimization score." },
+              { icon: Zap, title: "No Sign-Up", description: "No account needed." },
+            ].map((feature) => {
+              const Icon = feature.icon;
+              return (
+                <div key={feature.title} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-violet-200 hover:shadow-lg">
+                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100">
+                    <Icon className="h-6 w-6 text-violet-600" />
+                  </div>
+                  <h3 className="mb-2 text-base font-semibold text-slate-900">{feature.title}</h3>
+                  <p className="text-sm leading-relaxed text-slate-600">{feature.description}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Use Cases Section ── */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">Common Use Cases</h2>
+            <p className="mx-auto max-w-xl text-sm text-slate-500">See how meta tag checking is used.</p>
+          </div>
+          <div className="space-y-4">
+            {[
+              { title: "Homepage Check", input: "<title>My Site</title>\n<meta name='description' content='...'>", output: "Title: ✅ Good length\nDescription: ⚠️ Too short" },
+              { title: "Social Preview", input: "og:title, og:image tags", output: "OG Title: ✅\nOG Image: ❌ Missing" },
+              { title: "Competitor Analysis", input: "Check competitor meta tags", output: "Title: 55 chars\nDescription: 155 chars" },
+              { title: "Site Audit", input: "Check all pages' meta", output: "3 issues found across tags" },
+            ].map((useCase) => (
+              <div key={useCase.title} className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+                <div className="border-b border-slate-100 bg-slate-50 px-6 py-3">
+                  <h3 className="text-sm font-semibold text-slate-900">{useCase.title}</h3>
+                </div>
+                <div className="grid gap-4 p-6 sm:grid-cols-2">
+                  <div>
+                    <div className="mb-2 text-xs font-medium uppercase tracking-wider text-slate-400">Input</div>
+                    <pre className="rounded-lg bg-slate-50 p-3 text-xs leading-relaxed text-slate-700 overflow-x-auto">{useCase.input}</pre>
+                  </div>
+                  <div>
+                    <div className="mb-2 text-xs font-medium uppercase tracking-wider text-slate-400">Output</div>
+                    <pre className="rounded-lg bg-slate-50 p-3 text-xs leading-relaxed text-slate-700 overflow-x-auto">{useCase.output}</pre>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

@@ -93,6 +93,81 @@ export default function ReverseSentencesTool() {
         </div>
       </section>
 
+      {/* How To Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">How to Reverse Sentence Order</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">Flip the order of sentences in your text.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {[
+              { step: 1, title: "Enter Your Text", description: "Paste text containing multiple sentences." },
+              { step: 2, title: "Click Reverse", description: "Press the button to reverse the sentence order." },
+              { step: 3, title: "Review the Result", description: "See sentences in reversed order in the output." },
+              { step: 4, title: "Copy or Download", description: "Copy the reversed text or save it as a file." },
+            ].map((item) => (
+              <div key={item.step} className="relative flex gap-4 rounded-2xl border border-slate-200 bg-white p-6">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-violet-600 text-lg font-bold text-white">{item.step}</div>
+                <div><h3 className="mb-2 text-base font-semibold text-slate-900">{item.title}</h3><p className="text-sm leading-relaxed text-slate-600">{item.description}</p></div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">Why Use Our Sentence Reverser?</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">Reorder sentences quickly for editing and analysis.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { icon: Zap, title: "Instant Reversal", description: "Reverse sentence order across your entire text instantly." },
+              { icon: Shield, title: "100% Private", description: "All processing happens locally in your browser." },
+              { icon: ArrowLeftRight, title: "Smart Detection", description: "Detects sentence boundaries using periods, question marks, and exclamation points." },
+              { icon: Globe, title: "Any Device", description: "Works on desktop, tablet, and mobile browsers." },
+              { icon: Copy, title: "Easy Export", description: "Copy or download reversed text with one click." },
+              { icon: Zap, title: "No Sign-Up", description: "Use immediately without creating an account." },
+            ].map((f) => (
+              <div key={f.title} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-violet-200 hover:shadow-lg">
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100"><f.icon className="h-6 w-6 text-violet-600" /></div>
+                <h3 className="mb-2 text-base font-semibold text-slate-900">{f.title}</h3>
+                <p className="text-sm leading-relaxed text-slate-600">{f.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Use Cases Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">Common Use Cases</h2>
+            <p className="mx-auto max-w-xl text-sm text-slate-500">See how sentence reversal is used.</p>
+          </div>
+          <div className="space-y-4">
+            {[
+              { title: "Story Restructuring", before: "He left. She cried. The end.", after: "The end. She cried. He left." },
+              { title: "Paragraph Reordering", before: "First point. Second point. Conclusion.", after: "Conclusion. Second point. First point." },
+              { title: "Creative Writing", before: "The sun set. Stars appeared. Night fell.", after: "Night fell. Stars appeared. The sun set." },
+              { title: "Data Reordering", before: "Step one. Step two. Step three.", after: "Step three. Step two. Step one." },
+            ].map((uc) => (
+              <div key={uc.title} className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+                <div className="flex items-center gap-3 border-b border-slate-100 px-5 py-3.5"><h3 className="text-sm font-semibold text-slate-900">{uc.title}</h3></div>
+                <div className="grid grid-cols-1 divide-y sm:grid-cols-2 sm:divide-x sm:divide-y-0 divide-slate-100">
+                  <div className="px-5 py-3"><p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-slate-400">Input</p><pre className="overflow-x-auto whitespace-pre text-xs leading-relaxed text-slate-600 font-mono">{uc.before}</pre></div>
+                  <div className="px-5 py-3 bg-green-50/50"><p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-green-600">Output</p><pre className="overflow-x-auto whitespace-pre text-xs leading-relaxed text-green-800 font-mono">{uc.after}</pre></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <ToolFaq faqs={faqs} />
       <RelatedTools currentSlug="reverse-sentences" />
       <ToolCta />

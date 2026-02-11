@@ -86,6 +86,29 @@ export default function CursiveTextMakerTool() {
     { question: "Is my data private?", answer: "Yes. All processing happens locally in your browser — no data is sent to any server." },
   ];
 
+  const howToSteps = [
+    { step: 1, title: "Enter Your Text", description: "Type or paste text you want to make cursive." },
+    { step: 2, title: "Click Convert", description: "Press the button to transform text into Unicode script." },
+    { step: 3, title: "Preview the Result", description: "See your cursive text in the output box." },
+    { step: 4, title: "Copy and Use", description: "Copy the cursive text and paste it on any platform." },
+  ];
+
+  const features = [
+    { icon: Zap, title: "Instant Results", description: "Convert text to cursive Unicode instantly in your browser." },
+    { icon: Shield, title: "Completely Private", description: "Your text stays on your device — no data sent anywhere." },
+    { icon: Globe, title: "Universal Support", description: "Cursive Unicode works on Instagram, Twitter, Facebook, and more." },
+    { icon: Pen, title: "Elegant Style", description: "Beautiful 𝒸𝓊𝓇𝓈𝒾𝓋ℯ script characters that look handwritten." },
+    { icon: Copy, title: "One-Click Copy", description: "Copy or download your cursive text with a single click." },
+    { icon: Zap, title: "No Account Required", description: "Start using the tool immediately without signing up." },
+  ];
+
+  const useCases = [
+    { title: "Wedding Invitations", before: "You Are Invited", after: "𝒴ℴ𝓊 𝒜𝓇ℯ ℐ𝓃𝓋𝒾𝓉ℯ𝒹" },
+    { title: "Social Bios", before: "Living my best life", after: "ℒ𝒾𝓋𝒾𝓃ℊ 𝓂𝓎 𝒷ℯ𝓈𝓉 𝓁𝒾𝒻ℯ" },
+    { title: "Instagram Captions", before: "Dream big", after: "𝒟𝓇ℯ𝒶𝓂 𝒷𝒾ℊ" },
+    { title: "Fancy Signatures", before: "With love, Emma", after: "𝒲𝒾𝓉𝒽 𝓁ℴ𝓋ℯ, ℰ𝓂𝓂𝒶" },
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -155,6 +178,45 @@ export default function CursiveTextMakerTool() {
               <p className="text-lg leading-relaxed text-slate-900 break-all">{output}</p>
             </div>
           )}
+        </div>
+      </section>
+
+      {/* How To Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">How to Generate Cursive Text</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">Create elegant script text in seconds.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {howToSteps.map((item) => (<div key={item.step} className="relative flex gap-4 rounded-2xl border border-slate-200 bg-white p-6"><div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-violet-600 text-lg font-bold text-white">{item.step}</div><div><h3 className="mb-2 text-base font-semibold text-slate-900">{item.title}</h3><p className="text-sm leading-relaxed text-slate-600">{item.description}</p></div></div>))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">Why Use Our Cursive Text Maker?</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">Generate beautiful handwritten-style text effortlessly.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {features.map((f) => (<div key={f.title} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-violet-200 hover:shadow-lg"><div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100"><f.icon className="h-6 w-6 text-violet-600" /></div><h3 className="mb-2 text-base font-semibold text-slate-900">{f.title}</h3><p className="text-sm leading-relaxed text-slate-600">{f.description}</p></div>))}
+          </div>
+        </div>
+      </section>
+
+      {/* Use Cases Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">Common Use Cases</h2>
+            <p className="mx-auto max-w-xl text-sm text-slate-500">See how cursive text adds elegance to your content.</p>
+          </div>
+          <div className="space-y-4">
+            {useCases.map((uc) => (<div key={uc.title} className="overflow-hidden rounded-xl border border-slate-200 bg-white"><div className="flex items-center gap-3 border-b border-slate-100 px-5 py-3.5"><h3 className="text-sm font-semibold text-slate-900">{uc.title}</h3></div><div className="grid grid-cols-1 divide-y sm:grid-cols-2 sm:divide-x sm:divide-y-0 divide-slate-100"><div className="px-5 py-3"><p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-slate-400">Input</p><pre className="overflow-x-auto whitespace-pre text-xs leading-relaxed text-slate-600 font-mono">{uc.before}</pre></div><div className="px-5 py-3 bg-green-50/50"><p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-green-600">Output</p><pre className="overflow-x-auto whitespace-pre text-xs leading-relaxed text-green-800 font-mono">{uc.after}</pre></div></div></div>))}
+          </div>
         </div>
       </section>
 

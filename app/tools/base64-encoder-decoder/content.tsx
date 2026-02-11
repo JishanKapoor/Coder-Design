@@ -3,7 +3,7 @@ import { useState, useCallback } from "react";
 import { Navigation } from "../../components/Navigation";
 import { FooterSection } from "../../components/FooterSection";
 import Link from "next/link";
-import { ChevronRight, Zap, Shield, Globe, Copy, Check, Download, Trash2, Lock } from "lucide-react";
+import { ChevronRight, Zap, Shield, Globe, Copy, Check, Download, Trash2, Lock, Code } from "lucide-react";
 import { RelatedTools, ToolFaq, ToolCta } from "../shared";
 
 function utf8Encode(text: string): string {
@@ -160,6 +160,97 @@ export default function Base64EncoderDecoderTool() {
                 </div>
               )}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── How-To Section ── */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">How to Encode &amp; Decode Base64</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">Convert text to and from Base64 encoding.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {[
+              { step: 1, title: "Enter Text", description: "Paste text or Base64 string." },
+              { step: 2, title: "Choose Mode", description: "Select encode or decode." },
+              { step: 3, title: "Click Convert", description: "Convert instantly." },
+              { step: 4, title: "Copy Result", description: "Copy the output." },
+            ].map((item) => (
+              <div key={item.step} className="relative flex gap-4 rounded-2xl border border-slate-200 bg-white p-6">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-violet-600 text-lg font-bold text-white">{item.step}</div>
+                <div>
+                  <h3 className="mb-2 text-base font-semibold text-slate-900">{item.title}</h3>
+                  <p className="text-sm leading-relaxed text-slate-600">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Features Section ── */}
+      <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">Why Use Our Base64 Tool?</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">Encode and decode Base64 for development.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { icon: Zap, title: "Instant Conversion", description: "Encode or decode in one click." },
+              { icon: Shield, title: "100% Private", description: "No data leaves your browser." },
+              { icon: Code, title: "Both Directions", description: "Encode and decode." },
+              { icon: Globe, title: "Any Device", description: "Works everywhere." },
+              { icon: Copy, title: "Easy Export", description: "Copy output." },
+              { icon: Zap, title: "No Sign-Up", description: "No account needed." },
+            ].map((feature) => {
+              const Icon = feature.icon;
+              return (
+                <div key={feature.title} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-violet-200 hover:shadow-lg">
+                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100">
+                    <Icon className="h-6 w-6 text-violet-600" />
+                  </div>
+                  <h3 className="mb-2 text-base font-semibold text-slate-900">{feature.title}</h3>
+                  <p className="text-sm leading-relaxed text-slate-600">{feature.description}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Use Cases Section ── */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">Common Use Cases</h2>
+            <p className="mx-auto max-w-xl text-sm text-slate-500">See how Base64 encoding is used.</p>
+          </div>
+          <div className="space-y-4">
+            {[
+              { title: "Encode Text", input: "Hello World", output: "SGVsbG8gV29ybGQ=" },
+              { title: "Decode String", input: "SGVsbG8gV29ybGQ=", output: "Hello World" },
+              { title: "API Auth", input: "user:password", output: "dXNlcjpwYXNzd29yZA==" },
+              { title: "Data URIs", input: "image/png data", output: "data:image/png;base64,..." },
+            ].map((useCase) => (
+              <div key={useCase.title} className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+                <div className="border-b border-slate-100 bg-slate-50 px-6 py-3">
+                  <h3 className="text-sm font-semibold text-slate-900">{useCase.title}</h3>
+                </div>
+                <div className="grid gap-4 p-6 sm:grid-cols-2">
+                  <div>
+                    <div className="mb-2 text-xs font-medium uppercase tracking-wider text-slate-400">Input</div>
+                    <pre className="rounded-lg bg-slate-50 p-3 text-xs leading-relaxed text-slate-700 overflow-x-auto">{useCase.input}</pre>
+                  </div>
+                  <div>
+                    <div className="mb-2 text-xs font-medium uppercase tracking-wider text-slate-400">Output</div>
+                    <pre className="rounded-lg bg-slate-50 p-3 text-xs leading-relaxed text-slate-700 overflow-x-auto">{useCase.output}</pre>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

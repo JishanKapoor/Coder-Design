@@ -19,6 +19,7 @@ import {
   SmilePlus,
   ArrowRight,
   BarChart3,
+  BarChart2,
   Hash,
 } from "lucide-react";
 import { RelatedTools, ToolCta } from "../shared";
@@ -364,6 +365,81 @@ export default function EmojiCounterTool() {
                 Paste text above to see emoji frequency.
               </div>
             )}
+          </div>
+        </div>
+      </section>
+
+      {/* How To Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">How to Count Emojis in Text</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">Analyze emoji usage in your text in four easy steps.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {[
+              { step: 1, title: "Enter Your Text", description: "Paste or type text containing emojis in the input box." },
+              { step: 2, title: "View Instant Stats", description: "See emoji count, unique emojis, density, and character counts update in real time." },
+              { step: 3, title: "Check the Frequency Table", description: "Review a breakdown showing each emoji and how many times it appears." },
+              { step: 4, title: "Copy or Download Report", description: "Copy the analysis or download it as a text file." },
+            ].map((item) => (
+              <div key={item.step} className="relative flex gap-4 rounded-2xl border border-slate-200 bg-white p-6">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-violet-600 text-lg font-bold text-white">{item.step}</div>
+                <div><h3 className="mb-2 text-base font-semibold text-slate-900">{item.title}</h3><p className="text-sm leading-relaxed text-slate-600">{item.description}</p></div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">Why Use Our Emoji Counter?</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">A fast, detailed emoji analysis tool for content creators.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { icon: Zap, title: "Real-Time Analysis", description: "Emoji stats update as you type \u2014 no button click needed." },
+              { icon: Shield, title: "100% Private", description: "All counting happens in your browser. No data is sent anywhere." },
+              { icon: Globe, title: "Any Device", description: "Works on desktop, tablet, and mobile browsers." },
+              { icon: Hash, title: "Detailed Breakdown", description: "See total emojis, unique emojis, density, and per-emoji frequency." },
+              { icon: BarChart2, title: "Frequency Table", description: "View a ranked table of each emoji with usage count and percentage." },
+              { icon: Zap, title: "No Sign-Up", description: "Start counting emojis immediately \u2014 no registration needed." },
+            ].map((f) => (
+              <div key={f.title} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-violet-200 hover:shadow-lg">
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100"><f.icon className="h-6 w-6 text-violet-600" /></div>
+                <h3 className="mb-2 text-base font-semibold text-slate-900">{f.title}</h3>
+                <p className="text-sm leading-relaxed text-slate-600">{f.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Use Cases Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">Common Use Cases</h2>
+            <p className="mx-auto max-w-xl text-sm text-slate-500">See how emoji counting helps content creators and analysts.</p>
+          </div>
+          <div className="space-y-4">
+            {[
+              { title: "Social Media Analysis", before: "Great job! \ud83c\udf89\ud83c\udf89\ud83d\udd25\ud83d\udcaa", after: "4 emojis, 3 unique\n\ud83c\udf89 \u00d7 2 (50%)\n\ud83d\udd25 \u00d7 1 (25%)\n\ud83d\udcaa \u00d7 1 (25%)" },
+              { title: "Character Limits", before: "Hello \ud83d\udc4b\ud83c\udf0d World", after: "2 emojis\n14 characters total\nEmoji density: 14.3%" },
+              { title: "Content Moderation", before: "Join us! \ud83c\udfb0\ud83d\udcb0\ud83e\udd11\ud83d\udcb5", after: "4 gambling-related emojis detected" },
+              { title: "Marketing Copy Review", before: "Sale! \ud83d\udd25\ud83d\udd25\ud83d\udd25\ud83c\udf81", after: "4 emojis, 2 unique\n\ud83d\udd25 \u00d7 3 (75%)" },
+            ].map((uc) => (
+              <div key={uc.title} className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+                <div className="flex items-center gap-3 border-b border-slate-100 px-5 py-3.5"><h3 className="text-sm font-semibold text-slate-900">{uc.title}</h3></div>
+                <div className="grid grid-cols-1 divide-y sm:grid-cols-2 sm:divide-x sm:divide-y-0 divide-slate-100">
+                  <div className="px-5 py-3"><p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-slate-400">Input</p><pre className="overflow-x-auto whitespace-pre text-xs leading-relaxed text-slate-600 font-mono">{uc.before}</pre></div>
+                  <div className="px-5 py-3 bg-green-50/50"><p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-green-600">Output</p><pre className="overflow-x-auto whitespace-pre text-xs leading-relaxed text-green-800 font-mono">{uc.after}</pre></div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

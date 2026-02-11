@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Navigation } from "../../components/Navigation";
 import { FooterSection } from "../../components/FooterSection";
 import Link from "next/link";
-import { ChevronRight, Zap, Shield, Globe, Trash2, Search, AlertTriangle, CheckCircle2, Info } from "lucide-react";
+import { ChevronRight, Zap, Shield, Globe, Trash2, Search, AlertTriangle, CheckCircle2, Info, Copy } from "lucide-react";
 import { RelatedTools, ToolFaq, ToolCta } from "../shared";
 
 /* ── Known homoglyphs: non-ASCII chars that mimic ASCII ── */
@@ -246,6 +246,90 @@ export default function DetectFakeTextTool() {
               )}
             </div>
           )}
+        </div>
+      </section>
+
+      {/* How-To Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="text-2xl font-bold text-slate-900 lg:text-3xl">How to Detect Fake Unicode Text</h2>
+            <p className="mt-3 text-slate-600">Identify hidden homoglyphs and suspicious characters.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {[
+              { step: "1", title: "Paste Suspect Text", desc: "Paste the text you want to analyze in the input box." },
+              { step: "2", title: "Click Analyze", desc: "Press the button to scan for Unicode homoglyphs and hidden characters." },
+              { step: "3", title: "Review the Report", desc: "See which characters are suspicious with code point details." },
+              { step: "4", title: "Take Action", desc: "Use the findings to clean the text or flag the content." },
+            ].map((s) => (
+              <div key={s.step} className="rounded-2xl border border-slate-200 bg-white p-6">
+                <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-full bg-violet-600 text-sm font-bold text-white">{s.step}</div>
+                <h3 className="mb-1 font-semibold text-slate-900">{s.title}</h3>
+                <p className="text-sm leading-relaxed text-slate-600">{s.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="text-2xl font-bold text-slate-900 lg:text-3xl">Why Use Our Fake Text Detector?</h2>
+            <p className="mt-3 text-slate-600">Identify hidden Unicode characters and homoglyph attacks.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { icon: <Zap className="h-5 w-5" />, title: "Instant Detection", desc: "Scan text for suspicious Unicode characters in milliseconds." },
+              { icon: <Shield className="h-5 w-5" />, title: "Security Tool", desc: "Detect potential phishing attempts and homoglyph spoofing." },
+              { icon: <Search className="h-5 w-5" />, title: "Detailed Analysis", desc: "See exact code points and character names for each suspicious character." },
+              { icon: <Globe className="h-5 w-5" />, title: "Broad Coverage", desc: "Detects Cyrillic, Greek, and other lookalike character substitutions." },
+              { icon: <Copy className="h-5 w-5" />, title: "Export Results", desc: "Copy or download the analysis report for documentation." },
+              { icon: <Zap className="h-5 w-5" />, title: "No Sign-Up", desc: "Use the detector immediately without creating an account." },
+            ].map((f, i) => (
+              <div key={i} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:border-violet-200 hover:shadow-lg">
+                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-violet-100 text-violet-600">{f.icon}</div>
+                <h3 className="mb-1 font-semibold text-slate-900">{f.title}</h3>
+                <p className="text-sm leading-relaxed text-slate-600">{f.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Use Cases Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="text-2xl font-bold text-slate-900 lg:text-3xl">Use Cases</h2>
+            <p className="mt-3 text-slate-600">See how fake text detection protects against deception.</p>
+          </div>
+          <div className="space-y-4">
+            {[
+              { title: "Phishing Detection", before: "аpple.com (Cyrillic а)", after: "⚠ 'а' is Cyrillic, not Latin 'a'" },
+              { title: "Username Verification", before: "аdmіn (mixed scripts)", after: "⚠ 2 homoglyphs detected" },
+              { title: "Content Moderation", before: "frее gіft (hidden chars)", after: "⚠ 3 suspicious characters found" },
+              { title: "Domain Checking", before: "gооgle.cоm", after: "⚠ 3 Cyrillic substitutions" },
+            ].map((uc, i) => (
+              <div key={i} className="rounded-xl border border-slate-200 bg-white">
+                <div className="border-b border-slate-100 px-5 py-3">
+                  <h3 className="font-semibold text-slate-900">{uc.title}</h3>
+                </div>
+                <div className="grid sm:grid-cols-2">
+                  <div className="border-r border-slate-100 px-5 py-3">
+                    <span className="mb-1 block text-xs font-medium uppercase tracking-wider text-slate-400">Input</span>
+                    <p className="text-sm text-slate-700">{uc.before}</p>
+                  </div>
+                  <div className="px-5 py-3">
+                    <span className="mb-1 block text-xs font-medium uppercase tracking-wider text-slate-400">Output</span>
+                    <p className="text-sm text-slate-700">{uc.after}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

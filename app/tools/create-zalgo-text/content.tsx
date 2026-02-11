@@ -161,6 +161,90 @@ export default function ZalgoTextGeneratorTool() {
         </div>
       </section>
 
+      {/* How-To Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="text-2xl font-bold text-slate-900 lg:text-3xl">How to Create Zalgo Text</h2>
+            <p className="mt-3 text-slate-600">Generate creepy glitch text in four easy steps.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {[
+              { step: "1", title: "Enter Your Text", desc: "Type or paste any text you want to make glitchy." },
+              { step: "2", title: "Adjust Intensity", desc: "Set the level of distortion using the intensity slider." },
+              { step: "3", title: "Click Generate", desc: "Press the button to apply Zalgo combining marks to your text." },
+              { step: "4", title: "Copy and Share", desc: "Copy the creepy text and paste it on social media or messages." },
+            ].map((s) => (
+              <div key={s.step} className="rounded-2xl border border-slate-200 bg-white p-6">
+                <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-full bg-violet-600 text-sm font-bold text-white">{s.step}</div>
+                <h3 className="mb-1 font-semibold text-slate-900">{s.title}</h3>
+                <p className="text-sm leading-relaxed text-slate-600">{s.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="text-2xl font-bold text-slate-900 lg:text-3xl">Why Use Our Zalgo Text Generator?</h2>
+            <p className="mt-3 text-slate-600">Create unsettling glitch text for memes, posts, and creative projects.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { icon: <Zap className="h-5 w-5" />, title: "Instant Generation", desc: "Create Zalgo text instantly with adjustable intensity levels." },
+              { icon: <Shield className="h-5 w-5" />, title: "100% Private", desc: "All processing happens in your browser — no data leaves your device." },
+              { icon: <Globe className="h-5 w-5" />, title: "Works Everywhere", desc: "Zalgo text renders on most social media platforms and messaging apps." },
+              { icon: <Zap className="h-5 w-5" />, title: "Adjustable Intensity", desc: "Control how extreme the glitch effect is — from subtle to chaotic." },
+              { icon: <Copy className="h-5 w-5" />, title: "One-Click Copy", desc: "Copy your Zalgo text to clipboard instantly or download as a file." },
+              { icon: <Zap className="h-5 w-5" />, title: "No Sign-Up", desc: "Use the tool right away without creating any account." },
+            ].map((f, i) => (
+              <div key={i} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:border-violet-200 hover:shadow-lg">
+                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-violet-100 text-violet-600">{f.icon}</div>
+                <h3 className="mb-1 font-semibold text-slate-900">{f.title}</h3>
+                <p className="text-sm leading-relaxed text-slate-600">{f.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Use Cases Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="text-2xl font-bold text-slate-900 lg:text-3xl">Use Cases</h2>
+            <p className="mt-3 text-slate-600">See how Zalgo text is used for creative and fun purposes.</p>
+          </div>
+          <div className="space-y-4">
+            {[
+              { title: "Creepy Social Posts", before: "He comes", after: "H̸̡̎ë̵̩ c̷̛̗o̴̢̎m̸̧̈e̶̜̕s̵̹̎" },
+              { title: "Horror Memes", before: "Behind you", after: "B̶̨̈́e̷̻̽h̸̲̄i̴̛̱n̶̡̔d̴̰̈́ y̵̛̗o̸̜̊u̶̗̇" },
+              { title: "Game Usernames", before: "DarkKnight", after: "D̵̰̑a̸̝̋r̶̨̈k̷̞̀K̸̡̈́n̵̜̈i̴̛̮g̸̝̊h̵̹̄t̶̗̆" },
+              { title: "Spooky Messages", before: "Goodbye", after: "G̷̱̈́o̸̜̾o̵̡̔d̶̰̑b̸̨̋y̵̛̗e̸̻̊" },
+            ].map((uc, i) => (
+              <div key={i} className="rounded-xl border border-slate-200 bg-white">
+                <div className="border-b border-slate-100 px-5 py-3">
+                  <h3 className="font-semibold text-slate-900">{uc.title}</h3>
+                </div>
+                <div className="grid sm:grid-cols-2">
+                  <div className="border-r border-slate-100 px-5 py-3">
+                    <span className="mb-1 block text-xs font-medium uppercase tracking-wider text-slate-400">Input</span>
+                    <p className="text-sm text-slate-700">{uc.before}</p>
+                  </div>
+                  <div className="px-5 py-3">
+                    <span className="mb-1 block text-xs font-medium uppercase tracking-wider text-slate-400">Output</span>
+                    <p className="text-sm text-slate-700">{uc.after}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <ToolFaq faqs={faqs} />
       <RelatedTools currentSlug="create-zalgo-text" />
       <ToolCta />

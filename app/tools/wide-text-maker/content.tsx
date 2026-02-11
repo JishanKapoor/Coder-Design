@@ -54,6 +54,29 @@ export default function WideTextMakerTool() {
     { question: "Is my data private?", answer: "Yes. All processing happens locally in your browser — no text is ever sent to any server." },
   ];
 
+  const howToSteps = [
+    { step: 1, title: "Enter Your Text", description: "Type or paste any text in the input field." },
+    { step: 2, title: "Click Convert", description: "Press the button to convert to fullwidth Unicode." },
+    { step: 3, title: "Preview the Output", description: "See your wide text in the output area." },
+    { step: 4, title: "Copy Your Text", description: "Copy the wide text and paste it wherever you need." },
+  ];
+
+  const features = [
+    { icon: Zap, title: "Instant Conversion", description: "Transform text to wide characters instantly in your browser." },
+    { icon: Shield, title: "100% Private", description: "All processing is local — no data ever leaves your device." },
+    { icon: Globe, title: "Platform Compatible", description: "Wide text works on social media, messaging apps, and more." },
+    { icon: Maximize2, title: "Aesthetic Appeal", description: "Ｆｕｌｌｗｉｄｔｈ text creates a unique stretched visual effect." },
+    { icon: Copy, title: "One-Click Copy", description: "Copy or download wide text with a single click." },
+    { icon: Zap, title: "No Login Needed", description: "Use the tool right away without creating an account." },
+  ];
+
+  const useCases = [
+    { title: "Aesthetic Posts", before: "Vaporwave", after: "Ｖａｐｏｒｗａｖｅ" },
+    { title: "Username Styling", before: "CoolUser", after: "Ｃｏｏｌｕｓｅｒ" },
+    { title: "Art Text", before: "Hello World", after: "Ｈｅｌｌｏ Ｗｏｒｌｄ" },
+    { title: "Stand Out Titles", before: "Breaking News", after: "Ｂｒｅａｋｉｎｇ Ｎｅｗｓ" },
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -123,6 +146,45 @@ export default function WideTextMakerTool() {
               <p className="text-lg leading-relaxed text-slate-900 break-all">{output}</p>
             </div>
           )}
+        </div>
+      </section>
+
+      {/* How To Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">How to Generate Wide Text</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">Create fullwidth text in four quick steps.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {howToSteps.map((item) => (<div key={item.step} className="relative flex gap-4 rounded-2xl border border-slate-200 bg-white p-6"><div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-violet-600 text-lg font-bold text-white">{item.step}</div><div><h3 className="mb-2 text-base font-semibold text-slate-900">{item.title}</h3><p className="text-sm leading-relaxed text-slate-600">{item.description}</p></div></div>))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">Why Use Our Wide Text Maker?</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">Generate ｗｉｄｅ fullwidth Unicode text effortlessly.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {features.map((f) => (<div key={f.title} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-violet-200 hover:shadow-lg"><div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100"><f.icon className="h-6 w-6 text-violet-600" /></div><h3 className="mb-2 text-base font-semibold text-slate-900">{f.title}</h3><p className="text-sm leading-relaxed text-slate-600">{f.description}</p></div>))}
+          </div>
+        </div>
+      </section>
+
+      {/* Use Cases Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">Common Use Cases</h2>
+            <p className="mx-auto max-w-xl text-sm text-slate-500">See how wide text creates unique visual effects.</p>
+          </div>
+          <div className="space-y-4">
+            {useCases.map((uc) => (<div key={uc.title} className="overflow-hidden rounded-xl border border-slate-200 bg-white"><div className="flex items-center gap-3 border-b border-slate-100 px-5 py-3.5"><h3 className="text-sm font-semibold text-slate-900">{uc.title}</h3></div><div className="grid grid-cols-1 divide-y sm:grid-cols-2 sm:divide-x sm:divide-y-0 divide-slate-100"><div className="px-5 py-3"><p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-slate-400">Input</p><pre className="overflow-x-auto whitespace-pre text-xs leading-relaxed text-slate-600 font-mono">{uc.before}</pre></div><div className="px-5 py-3 bg-green-50/50"><p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-green-600">Output</p><pre className="overflow-x-auto whitespace-pre text-xs leading-relaxed text-green-800 font-mono">{uc.after}</pre></div></div></div>))}
+          </div>
         </div>
       </section>
 

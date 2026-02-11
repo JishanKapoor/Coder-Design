@@ -87,6 +87,29 @@ export default function BubbleTextGeneratorTool() {
     { question: "Is my data private?", answer: "Yes. All processing happens locally in your browser — no data is sent to any server." },
   ];
 
+  const howToSteps = [
+    { step: 1, title: "Enter Your Text", description: "Type or paste text in the input box." },
+    { step: 2, title: "Click Convert", description: "Press the button to wrap each letter in Unicode circles." },
+    { step: 3, title: "Preview Output", description: "See the bubble text in the output area." },
+    { step: 4, title: "Copy and Share", description: "Copy bubble text to clipboard and use it anywhere." },
+  ];
+
+  const features = [
+    { icon: Zap, title: "Instant Conversion", description: "Generate bubble text from any input instantly in your browser." },
+    { icon: Shield, title: "100% Private", description: "No data leaves your device — all processing is local." },
+    { icon: Globe, title: "Works on All Platforms", description: "Bubble text renders on Instagram, Twitter, WhatsApp, and more." },
+    { icon: Circle, title: "Unique Style", description: "Stand out with Ⓑⓤⓑⓑⓛⓔ circled letters that catch attention." },
+    { icon: Copy, title: "Easy Copy & Download", description: "One-click copy or download your bubble text as a file." },
+    { icon: Zap, title: "No Sign-Up Required", description: "Use the tool instantly without creating an account." },
+  ];
+
+  const useCases = [
+    { title: "Instagram Username", before: "JohnDesign", after: "Ⓙⓞⓗⓝⓓⓔⓢⓘⓖⓝ" },
+    { title: "Social Media Bio", before: "Creative Director", after: "Ⓒⓡⓔⓐⓣⓘⓥⓔ Ⓓⓘⓡⓔⓒⓣⓞⓡ" },
+    { title: "Fun Messages", before: "Happy Birthday", after: "Ⓗⓐⓟⓟⓨ Ⓑⓘⓡⓣⓗⓓⓐⓨ" },
+    { title: "Decorative Headers", before: "Welcome Home", after: "Ⓦⓔⓛⓒⓞⓜⓔ Ⓗⓞⓜⓔ" },
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -156,6 +179,45 @@ export default function BubbleTextGeneratorTool() {
               <p className="text-lg leading-relaxed text-slate-900 break-all">{output}</p>
             </div>
           )}
+        </div>
+      </section>
+
+      {/* How To Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">How to Generate Bubble Text</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">Create circled Unicode text in four simple steps.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {howToSteps.map((item) => (<div key={item.step} className="relative flex gap-4 rounded-2xl border border-slate-200 bg-white p-6"><div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-violet-600 text-lg font-bold text-white">{item.step}</div><div><h3 className="mb-2 text-base font-semibold text-slate-900">{item.title}</h3><p className="text-sm leading-relaxed text-slate-600">{item.description}</p></div></div>))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">Why Use Our Bubble Text Generator?</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">Create eye-catching circled text for any platform.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {features.map((f) => (<div key={f.title} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-violet-200 hover:shadow-lg"><div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100"><f.icon className="h-6 w-6 text-violet-600" /></div><h3 className="mb-2 text-base font-semibold text-slate-900">{f.title}</h3><p className="text-sm leading-relaxed text-slate-600">{f.description}</p></div>))}
+          </div>
+        </div>
+      </section>
+
+      {/* Use Cases Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">Common Use Cases</h2>
+            <p className="mx-auto max-w-xl text-sm text-slate-500">See how bubble text is used on social media and messaging.</p>
+          </div>
+          <div className="space-y-4">
+            {useCases.map((uc) => (<div key={uc.title} className="overflow-hidden rounded-xl border border-slate-200 bg-white"><div className="flex items-center gap-3 border-b border-slate-100 px-5 py-3.5"><h3 className="text-sm font-semibold text-slate-900">{uc.title}</h3></div><div className="grid grid-cols-1 divide-y sm:grid-cols-2 sm:divide-x sm:divide-y-0 divide-slate-100"><div className="px-5 py-3"><p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-slate-400">Input</p><pre className="overflow-x-auto whitespace-pre text-xs leading-relaxed text-slate-600 font-mono">{uc.before}</pre></div><div className="px-5 py-3 bg-green-50/50"><p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-green-600">Output</p><pre className="overflow-x-auto whitespace-pre text-xs leading-relaxed text-green-800 font-mono">{uc.after}</pre></div></div></div>))}
+          </div>
         </div>
       </section>
 

@@ -100,6 +100,81 @@ export default function SentenceDuplicatorTool() {
         </div>
       </section>
 
+      {/* How To Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">How to Duplicate Sentences</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">Repeat each sentence multiple times.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {[
+              { step: 1, title: "Enter Text", description: "Paste text with sentences." },
+              { step: 2, title: "Set Count", description: "Choose repetition count." },
+              { step: 3, title: "Click Duplicate", description: "Process instantly." },
+              { step: 4, title: "Copy Result", description: "Copy or download." },
+            ].map((item) => (
+              <div key={item.step} className="relative flex gap-4 rounded-2xl border border-slate-200 bg-white p-6">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-violet-600 text-lg font-bold text-white">{item.step}</div>
+                <div><h3 className="mb-2 text-base font-semibold text-slate-900">{item.title}</h3><p className="text-sm leading-relaxed text-slate-600">{item.description}</p></div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">Why Use Our Sentence Duplicator?</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">Repeat sentences for testing, practice, or creative writing.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { icon: Zap, title: "Instant Duplication", description: "Duplicate all sentences in one click." },
+              { icon: Shield, title: "100% Private", description: "No data is stored or transmitted." },
+              { icon: CopyPlus, title: "Custom Count", description: "Repeat sentences any number of times." },
+              { icon: Globe, title: "Any Device", description: "Works on all browsers." },
+              { icon: Copy, title: "Easy Export", description: "Copy or download results." },
+              { icon: Zap, title: "No Sign-Up", description: "No account required." },
+            ].map((f) => (
+              <div key={f.title} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-violet-200 hover:shadow-lg">
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100"><f.icon className="h-6 w-6 text-violet-600" /></div>
+                <h3 className="mb-2 text-base font-semibold text-slate-900">{f.title}</h3>
+                <p className="text-sm leading-relaxed text-slate-600">{f.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Use Cases Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">Common Use Cases</h2>
+            <p className="mx-auto max-w-xl text-sm text-slate-500">See how sentence duplication helps.</p>
+          </div>
+          <div className="space-y-4">
+            {[
+              { title: "Practice Typing", before: "The quick fox jumps.", after: "The quick fox jumps. The quick fox jumps." },
+              { title: "Fill Content", before: "Lorem ipsum dolor.", after: "Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor." },
+              { title: "Testing", before: "Error message.", after: "Error message. Error message. Error message." },
+              { title: "Writing Drill", before: "Practice makes perfect.", after: "Practice makes perfect. Practice makes perfect." },
+            ].map((uc) => (
+              <div key={uc.title} className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+                <div className="flex items-center gap-3 border-b border-slate-100 px-5 py-3.5"><h3 className="text-sm font-semibold text-slate-900">{uc.title}</h3></div>
+                <div className="grid grid-cols-1 divide-y sm:grid-cols-2 sm:divide-x sm:divide-y-0 divide-slate-100">
+                  <div className="px-5 py-3"><p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-slate-400">Input</p><pre className="overflow-x-auto whitespace-pre text-xs leading-relaxed text-slate-600 font-mono">{uc.before}</pre></div>
+                  <div className="px-5 py-3 bg-green-50/50"><p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-green-600">Output</p><pre className="overflow-x-auto whitespace-pre text-xs leading-relaxed text-green-800 font-mono">{uc.after}</pre></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <ToolFaq faqs={faqs} />
       <RelatedTools currentSlug="sentence-duplicator" />
       <ToolCta />

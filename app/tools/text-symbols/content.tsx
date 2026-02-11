@@ -3,7 +3,7 @@ import { useState, useMemo, useCallback } from "react";
 import { Navigation } from "../../components/Navigation";
 import { FooterSection } from "../../components/FooterSection";
 import Link from "next/link";
-import { ChevronRight, Zap, Shield, Globe, Search, Check } from "lucide-react";
+import { ChevronRight, Zap, Shield, Globe, Search, Check, Palette } from "lucide-react";
 import { RelatedTools, ToolFaq, ToolCta } from "../shared";
 
 /* ── Symbol categories ── */
@@ -232,6 +232,90 @@ export default function TextSymbolsTool() {
           {filteredCategories.length === 0 && (
             <div className="py-12 text-center text-sm text-slate-500">No symbols found for &ldquo;{search}&rdquo;. Try a different search term.</div>
           )}
+        </div>
+      </section>
+
+      {/* How-To Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="text-2xl font-bold text-slate-900 lg:text-3xl">How to Use the Text Symbols Tool</h2>
+            <p className="mt-3 text-slate-600">Browse and copy special Unicode symbols in four steps.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {[
+              { step: "1", title: "Browse Categories", desc: "Select a symbol category like Arrows, Math, Stars, or Currency." },
+              { step: "2", title: "Find Your Symbol", desc: "Search or scroll through the available symbols in that category." },
+              { step: "3", title: "Click to Copy", desc: "Click on any symbol to copy it to your clipboard instantly." },
+              { step: "4", title: "Paste Anywhere", desc: "Paste the symbol into your document, social media, or code." },
+            ].map((s) => (
+              <div key={s.step} className="rounded-2xl border border-slate-200 bg-white p-6">
+                <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-full bg-violet-600 text-sm font-bold text-white">{s.step}</div>
+                <h3 className="mb-1 font-semibold text-slate-900">{s.title}</h3>
+                <p className="text-sm leading-relaxed text-slate-600">{s.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="text-2xl font-bold text-slate-900 lg:text-3xl">Why Use Our Text Symbols Tool?</h2>
+            <p className="mt-3 text-slate-600">Access hundreds of Unicode symbols organized by category.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { icon: <Zap className="h-5 w-5" />, title: "Instant Copy", desc: "Click any symbol to copy it to your clipboard instantly." },
+              { icon: <Shield className="h-5 w-5" />, title: "100% Private", desc: "No data is collected — symbols are loaded locally." },
+              { icon: <Palette className="h-5 w-5" />, title: "Organized Categories", desc: "Symbols are grouped into intuitive categories for easy browsing." },
+              { icon: <Globe className="h-5 w-5" />, title: "Universal Unicode", desc: "All symbols work on any device, browser, or platform." },
+              { icon: <Search className="h-5 w-5" />, title: "Search Symbols", desc: "Find specific symbols quickly with the search feature." },
+              { icon: <Zap className="h-5 w-5" />, title: "No Sign-Up", desc: "Browse and copy symbols without creating an account." },
+            ].map((f, i) => (
+              <div key={i} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:border-violet-200 hover:shadow-lg">
+                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-violet-100 text-violet-600">{f.icon}</div>
+                <h3 className="mb-1 font-semibold text-slate-900">{f.title}</h3>
+                <p className="text-sm leading-relaxed text-slate-600">{f.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Use Cases Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="text-2xl font-bold text-slate-900 lg:text-3xl">Use Cases</h2>
+            <p className="mt-3 text-slate-600">See how Unicode symbols enhance your content.</p>
+          </div>
+          <div className="space-y-4">
+            {[
+              { title: "Social Media Bios", before: "Coffee lover", after: "☕ Coffee lover ❤" },
+              { title: "Math Notation", before: "pi = 3.14", after: "π = 3.14" },
+              { title: "Decorative Text", before: "Welcome", after: "★ Welcome ★" },
+              { title: "Currency Symbols", before: "Price: 100", after: "Price: €100" },
+            ].map((uc, i) => (
+              <div key={i} className="rounded-xl border border-slate-200 bg-white">
+                <div className="border-b border-slate-100 px-5 py-3">
+                  <h3 className="font-semibold text-slate-900">{uc.title}</h3>
+                </div>
+                <div className="grid sm:grid-cols-2">
+                  <div className="border-r border-slate-100 px-5 py-3">
+                    <span className="mb-1 block text-xs font-medium uppercase tracking-wider text-slate-400">Input</span>
+                    <p className="text-sm text-slate-700">{uc.before}</p>
+                  </div>
+                  <div className="px-5 py-3">
+                    <span className="mb-1 block text-xs font-medium uppercase tracking-wider text-slate-400">Output</span>
+                    <p className="text-sm text-slate-700">{uc.after}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

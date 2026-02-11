@@ -102,6 +102,81 @@ export default function RepeatTextTool() {
         </div>
       </section>
 
+      {/* How To Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">How to Repeat Text Online</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">Duplicate any text multiple times with optional separators.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {[
+              { step: 1, title: "Enter Your Text", description: "Type or paste the text you want to repeat." },
+              { step: 2, title: "Set Repeat Count", description: "Choose how many times the text should be repeated." },
+              { step: 3, title: "Choose a Separator", description: "Optionally add a separator between repetitions (newline, comma, space, etc.)." },
+              { step: 4, title: "Copy the Result", description: "Copy the repeated text or download it as a file." },
+            ].map((item) => (
+              <div key={item.step} className="relative flex gap-4 rounded-2xl border border-slate-200 bg-white p-6">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-violet-600 text-lg font-bold text-white">{item.step}</div>
+                <div><h3 className="mb-2 text-base font-semibold text-slate-900">{item.title}</h3><p className="text-sm leading-relaxed text-slate-600">{item.description}</p></div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">Why Use Our Text Repeater?</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">Repeat any text quickly for testing, content, or creative projects.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { icon: Zap, title: "Instant Repetition", description: "Repeat text hundreds of times in a single click." },
+              { icon: Shield, title: "100% Private", description: "All processing happens in your browser — nothing is uploaded." },
+              { icon: Globe, title: "Any Device", description: "Works on desktop, tablet, and mobile browsers." },
+              { icon: RotateCw, title: "Custom Separators", description: "Choose newlines, commas, spaces, or any custom separator." },
+              { icon: Copy, title: "Copy or Download", description: "One-click copy or download your repeated text." },
+              { icon: Zap, title: "No Sign-Up", description: "Use the tool right away without any registration." },
+            ].map((f) => (
+              <div key={f.title} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-violet-200 hover:shadow-lg">
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100"><f.icon className="h-6 w-6 text-violet-600" /></div>
+                <h3 className="mb-2 text-base font-semibold text-slate-900">{f.title}</h3>
+                <p className="text-sm leading-relaxed text-slate-600">{f.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Use Cases Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">Common Use Cases</h2>
+            <p className="mx-auto max-w-xl text-sm text-slate-500">See how text repetition is used in various scenarios.</p>
+          </div>
+          <div className="space-y-4">
+            {[
+              { title: "Load Testing", before: "test data", after: "test data\ntest data\ntest data\n(×100)" },
+              { title: "CSS Patterns", before: "▓░", after: "▓░▓░▓░▓░▓░▓░▓░" },
+              { title: "Social Media", before: "GO! ", after: "GO! GO! GO! GO! GO!" },
+              { title: "Dummy Content", before: "Lorem ipsum.", after: "Lorem ipsum.\nLorem ipsum.\nLorem ipsum." },
+            ].map((uc) => (
+              <div key={uc.title} className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+                <div className="flex items-center gap-3 border-b border-slate-100 px-5 py-3.5"><h3 className="text-sm font-semibold text-slate-900">{uc.title}</h3></div>
+                <div className="grid grid-cols-1 divide-y sm:grid-cols-2 sm:divide-x sm:divide-y-0 divide-slate-100">
+                  <div className="px-5 py-3"><p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-slate-400">Input</p><pre className="overflow-x-auto whitespace-pre text-xs leading-relaxed text-slate-600 font-mono">{uc.before}</pre></div>
+                  <div className="px-5 py-3 bg-green-50/50"><p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-green-600">Output</p><pre className="overflow-x-auto whitespace-pre text-xs leading-relaxed text-green-800 font-mono">{uc.after}</pre></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="border-t border-slate-200 bg-slate-50 py-14 lg:py-18">
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
           <h2 className="mb-8 text-center text-2xl font-bold text-slate-900">Frequently Asked Questions</h2>

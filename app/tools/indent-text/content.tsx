@@ -105,6 +105,81 @@ export default function IndentTextTool() {
         </div>
       </section>
 
+      {/* How To Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">How to Indent Text</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">Add indentation to every line of your text.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {[
+              { step: 1, title: "Enter Text", description: "Paste text to indent." },
+              { step: 2, title: "Set Indent", description: "Choose indent level and character." },
+              { step: 3, title: "Click Indent", description: "Indent all lines." },
+              { step: 4, title: "Copy Result", description: "Copy or download." },
+            ].map((item) => (
+              <div key={item.step} className="relative flex gap-4 rounded-2xl border border-slate-200 bg-white p-6">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-violet-600 text-lg font-bold text-white">{item.step}</div>
+                <div><h3 className="mb-2 text-base font-semibold text-slate-900">{item.title}</h3><p className="text-sm leading-relaxed text-slate-600">{item.description}</p></div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">Why Use Our Text Indenter?</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">Add consistent indentation for code, data, and documents.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { icon: Zap, title: "Instant Indentation", description: "Indent all lines in one click." },
+              { icon: Shield, title: "100% Private", description: "No data is sent." },
+              { icon: Indent, title: "Custom Levels", description: "Set indent with spaces or tabs." },
+              { icon: Globe, title: "Any Device", description: "Works everywhere." },
+              { icon: Copy, title: "Easy Export", description: "Copy or download." },
+              { icon: Zap, title: "No Sign-Up", description: "No account needed." },
+            ].map((f) => (
+              <div key={f.title} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-violet-200 hover:shadow-lg">
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100"><f.icon className="h-6 w-6 text-violet-600" /></div>
+                <h3 className="mb-2 text-base font-semibold text-slate-900">{f.title}</h3>
+                <p className="text-sm leading-relaxed text-slate-600">{f.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Use Cases Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">Common Use Cases</h2>
+            <p className="mx-auto max-w-xl text-sm text-slate-500">See how text indentation is used.</p>
+          </div>
+          <div className="space-y-4">
+            {[
+              { title: "Code Formatting", before: "if (true) {\nreturn;", after: "  if (true) {\n    return;" },
+              { title: "Markdown Nesting", before: "- Item 1\n- Item 2", after: "  - Item 1\n  - Item 2" },
+              { title: "Email Quoting", before: "Hello\nThanks", after: "> Hello\n> Thanks" },
+              { title: "Data Nesting", before: "key: value\nkey2: val2", after: "  key: value\n  key2: val2" },
+            ].map((uc) => (
+              <div key={uc.title} className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+                <div className="flex items-center gap-3 border-b border-slate-100 px-5 py-3.5"><h3 className="text-sm font-semibold text-slate-900">{uc.title}</h3></div>
+                <div className="grid grid-cols-1 divide-y sm:grid-cols-2 sm:divide-x sm:divide-y-0 divide-slate-100">
+                  <div className="px-5 py-3"><p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-slate-400">Input</p><pre className="overflow-x-auto whitespace-pre text-xs leading-relaxed text-slate-600 font-mono">{uc.before}</pre></div>
+                  <div className="px-5 py-3 bg-green-50/50"><p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-green-600">Output</p><pre className="overflow-x-auto whitespace-pre text-xs leading-relaxed text-green-800 font-mono">{uc.after}</pre></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <ToolFaq faqs={faqs} />
       <RelatedTools currentSlug="indent-text" />
       <ToolCta />

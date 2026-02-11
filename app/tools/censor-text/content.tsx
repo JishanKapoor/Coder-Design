@@ -141,6 +141,81 @@ export default function CensorTextTool() {
         </div>
       </section>
 
+      {/* How To Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">How to Censor Text Online</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">Replace specific words with asterisks or custom characters.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {[
+              { step: 1, title: "Enter Your Text", description: "Paste or type the text you want to censor." },
+              { step: 2, title: "Add Words to Censor", description: "Enter the words you want to replace, separated by commas." },
+              { step: 3, title: "Click Censor", description: "Press the button to replace all matching words with your chosen character." },
+              { step: 4, title: "Copy the Result", description: "Copy the censored text or download it as a file." },
+            ].map((item) => (
+              <div key={item.step} className="relative flex gap-4 rounded-2xl border border-slate-200 bg-white p-6">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-violet-600 text-lg font-bold text-white">{item.step}</div>
+                <div><h3 className="mb-2 text-base font-semibold text-slate-900">{item.title}</h3><p className="text-sm leading-relaxed text-slate-600">{item.description}</p></div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">Why Use Our Text Censor Tool?</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">Quickly redact sensitive words from any text.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { icon: Zap, title: "Instant Censoring", description: "Replace multiple words at once across your entire text." },
+              { icon: Shield, title: "100% Private", description: "All censoring happens locally — no data leaves your browser." },
+              { icon: EyeOff, title: "Custom Character", description: "Choose asterisks, dashes, or any custom replacement character." },
+              { icon: Globe, title: "Any Device", description: "Works on desktop, tablet, and mobile browsers." },
+              { icon: Copy, title: "Copy or Download", description: "Copy censored text or download it as a .txt file." },
+              { icon: Zap, title: "No Sign-Up", description: "Start censoring text immediately — no account needed." },
+            ].map((f) => (
+              <div key={f.title} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-violet-200 hover:shadow-lg">
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100"><f.icon className="h-6 w-6 text-violet-600" /></div>
+                <h3 className="mb-2 text-base font-semibold text-slate-900">{f.title}</h3>
+                <p className="text-sm leading-relaxed text-slate-600">{f.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Use Cases Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">Common Use Cases</h2>
+            <p className="mx-auto max-w-xl text-sm text-slate-500">See how text censoring is used in common scenarios.</p>
+          </div>
+          <div className="space-y-4">
+            {[
+              { title: "Profanity Filter", before: "What the hell is this?", after: "What the **** is this?" },
+              { title: "Name Redaction", before: "John Smith sent the file", after: "**** ***** sent the file" },
+              { title: "Email Masking", before: "Contact john@email.com", after: "Contact ****@*****.***" },
+              { title: "Sensitive Data", before: "SSN: 123-45-6789", after: "SSN: ***-**-****" },
+            ].map((uc) => (
+              <div key={uc.title} className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+                <div className="flex items-center gap-3 border-b border-slate-100 px-5 py-3.5"><h3 className="text-sm font-semibold text-slate-900">{uc.title}</h3></div>
+                <div className="grid grid-cols-1 divide-y sm:grid-cols-2 sm:divide-x sm:divide-y-0 divide-slate-100">
+                  <div className="px-5 py-3"><p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-slate-400">Input</p><pre className="overflow-x-auto whitespace-pre text-xs leading-relaxed text-slate-600 font-mono">{uc.before}</pre></div>
+                  <div className="px-5 py-3 bg-green-50/50"><p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-green-600">Output</p><pre className="overflow-x-auto whitespace-pre text-xs leading-relaxed text-green-800 font-mono">{uc.after}</pre></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <ToolFaq faqs={faqs} />
       <RelatedTools currentSlug="censor-text" />
       <ToolCta />

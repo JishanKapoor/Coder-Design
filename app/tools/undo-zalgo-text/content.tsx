@@ -93,6 +93,90 @@ export default function UndoZalgoTextTool() {
         </div>
       </section>
 
+      {/* How-To Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="text-2xl font-bold text-slate-900 lg:text-3xl">How to Remove Zalgo Text</h2>
+            <p className="mt-3 text-slate-600">Clean corrupted text in four simple steps.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {[
+              { step: "1", title: "Paste Zalgo Text", desc: "Paste the corrupted or glitchy text in the input box." },
+              { step: "2", title: "Click Clean", desc: "Press the button to strip all combining marks from the text." },
+              { step: "3", title: "Review the Output", desc: "See the clean, readable text in the output area." },
+              { step: "4", title: "Copy Clean Text", desc: "Copy the cleaned text and use it wherever you need." },
+            ].map((s) => (
+              <div key={s.step} className="rounded-2xl border border-slate-200 bg-white p-6">
+                <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-full bg-violet-600 text-sm font-bold text-white">{s.step}</div>
+                <h3 className="mb-1 font-semibold text-slate-900">{s.title}</h3>
+                <p className="text-sm leading-relaxed text-slate-600">{s.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="text-2xl font-bold text-slate-900 lg:text-3xl">Why Use Our Zalgo Text Remover?</h2>
+            <p className="mt-3 text-slate-600">Restore corrupted text to its clean, readable form.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { icon: <Zap className="h-5 w-5" />, title: "Instant Cleaning", desc: "Remove all Zalgo combining marks from text in milliseconds." },
+              { icon: <Shield className="h-5 w-5" />, title: "100% Private", desc: "Your text is processed locally — nothing is stored or sent." },
+              { icon: <Globe className="h-5 w-5" />, title: "Works with Any Text", desc: "Handles all levels of Zalgo corruption regardless of intensity." },
+              { icon: <Sparkles className="h-5 w-5" />, title: "Complete Restoration", desc: "Strips all combining characters while preserving the base text." },
+              { icon: <Copy className="h-5 w-5" />, title: "Easy Copy", desc: "Copy your cleaned text with one click or download it." },
+              { icon: <Zap className="h-5 w-5" />, title: "No Sign-Up", desc: "Use immediately without creating an account." },
+            ].map((f, i) => (
+              <div key={i} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:border-violet-200 hover:shadow-lg">
+                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-violet-100 text-violet-600">{f.icon}</div>
+                <h3 className="mb-1 font-semibold text-slate-900">{f.title}</h3>
+                <p className="text-sm leading-relaxed text-slate-600">{f.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Use Cases Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="text-2xl font-bold text-slate-900 lg:text-3xl">Use Cases</h2>
+            <p className="mt-3 text-slate-600">See how the Zalgo remover restores corrupted text.</p>
+          </div>
+          <div className="space-y-4">
+            {[
+              { title: "Clean Pasted Text", before: "H̸̡̎ë̵̩l̷̛̗l̴̢̎ö̸̧", after: "Hello" },
+              { title: "Fix Corrupted Names", before: "J̶̨̈́o̷̻̽h̸̲̄ṉ̴̛", after: "John" },
+              { title: "Restore Messages", before: "G̵̰̑ő̸̝ǫ̶̈d̷̞̀ m̸̡̈́ö̵̜r̴̛̮n̸̝̊ī̵̹n̶̗̆g̸̱̈́", after: "Good morning" },
+              { title: "Clean Forum Posts", before: "Ẅ̷̱́h̸̜̾a̵̡̔t̶̰̑?", after: "What?" },
+            ].map((uc, i) => (
+              <div key={i} className="rounded-xl border border-slate-200 bg-white">
+                <div className="border-b border-slate-100 px-5 py-3">
+                  <h3 className="font-semibold text-slate-900">{uc.title}</h3>
+                </div>
+                <div className="grid sm:grid-cols-2">
+                  <div className="border-r border-slate-100 px-5 py-3">
+                    <span className="mb-1 block text-xs font-medium uppercase tracking-wider text-slate-400">Input</span>
+                    <p className="text-sm text-slate-700">{uc.before}</p>
+                  </div>
+                  <div className="px-5 py-3">
+                    <span className="mb-1 block text-xs font-medium uppercase tracking-wider text-slate-400">Output</span>
+                    <p className="text-sm text-slate-700">{uc.after}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <ToolFaq faqs={faqs} />
       <RelatedTools currentSlug="undo-zalgo-text" />
       <ToolCta />

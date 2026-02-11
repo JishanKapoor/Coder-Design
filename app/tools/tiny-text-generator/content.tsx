@@ -58,6 +58,29 @@ export default function TinyTextGeneratorTool() {
     { question: "Is my data private?", answer: "Yes. All processing happens locally in your browser — no data is sent to any server." },
   ];
 
+  const howToSteps = [
+    { step: 1, title: "Enter Your Text", description: "Type or paste the text you want to make tiny." },
+    { step: 2, title: "Click Convert", description: "Press the button to convert to superscript Unicode." },
+    { step: 3, title: "Preview the Result", description: "See your tiny text in the output area." },
+    { step: 4, title: "Copy and Use", description: "Copy the tiny text and paste it on any platform." },
+  ];
+
+  const features = [
+    { icon: Zap, title: "Instant Results", description: "Convert text to tiny superscript characters instantly." },
+    { icon: Shield, title: "Completely Private", description: "No data is stored or sent — processing happens locally." },
+    { icon: Globe, title: "Works Everywhere", description: "Tiny text renders on social media, bios, and messages." },
+    { icon: Type, title: "Unique Look", description: "ᵗⁱⁿʸ text creates a distinctive miniature appearance." },
+    { icon: Copy, title: "One-Click Copy", description: "Copy or download your tiny text with a single click." },
+    { icon: Zap, title: "No Sign-Up", description: "Start using the tool immediately without any registration." },
+  ];
+
+  const useCases = [
+    { title: "Fun Social Bios", before: "Designer & Developer", after: "ᴰᵉˢⁱᵍⁿᵉʳ ⁿ ᴰᵉᵛᵉˡᵒᵖᵉʳ" },
+    { title: "Subtle Captions", before: "Whisper this", after: "ᵂʰⁱˢᵖᵉʳ ᵗʰⁱˢ" },
+    { title: "Creative Posts", before: "Think small", after: "ᵀʰⁱⁿᵏ ˢᵐᵃˡˡ" },
+    { title: "Footnote Style", before: "See note below", after: "ˢᵉᵉ ⁿᵒᵗᵉ ᵇᵉˡᵒʷ" },
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -134,6 +157,45 @@ export default function TinyTextGeneratorTool() {
               <strong>Note:</strong> Subscript forms only exist for: a, e, h, i, j, k, l, m, n, o, p, r, s, t, u, v, x and digits 0–9. Other characters will remain unchanged.
             </div>
           )}
+        </div>
+      </section>
+
+      {/* How To Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">How to Generate Tiny Text</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">Create superscript Unicode text in four simple steps.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {howToSteps.map((item) => (<div key={item.step} className="relative flex gap-4 rounded-2xl border border-slate-200 bg-white p-6"><div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-violet-600 text-lg font-bold text-white">{item.step}</div><div><h3 className="mb-2 text-base font-semibold text-slate-900">{item.title}</h3><p className="text-sm leading-relaxed text-slate-600">{item.description}</p></div></div>))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900 lg:text-3xl">Why Use Our Tiny Text Generator?</h2>
+            <p className="mx-auto max-w-2xl text-slate-600">Generate small superscript text that works everywhere.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {features.map((f) => (<div key={f.title} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:border-violet-200 hover:shadow-lg"><div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100"><f.icon className="h-6 w-6 text-violet-600" /></div><h3 className="mb-2 text-base font-semibold text-slate-900">{f.title}</h3><p className="text-sm leading-relaxed text-slate-600">{f.description}</p></div>))}
+          </div>
+        </div>
+      </section>
+
+      {/* Use Cases Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="mb-3 text-2xl font-bold text-slate-900 lg:text-3xl">Common Use Cases</h2>
+            <p className="mx-auto max-w-xl text-sm text-slate-500">See how tiny text adds a unique touch to your content.</p>
+          </div>
+          <div className="space-y-4">
+            {useCases.map((uc) => (<div key={uc.title} className="overflow-hidden rounded-xl border border-slate-200 bg-white"><div className="flex items-center gap-3 border-b border-slate-100 px-5 py-3.5"><h3 className="text-sm font-semibold text-slate-900">{uc.title}</h3></div><div className="grid grid-cols-1 divide-y sm:grid-cols-2 sm:divide-x sm:divide-y-0 divide-slate-100"><div className="px-5 py-3"><p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-slate-400">Input</p><pre className="overflow-x-auto whitespace-pre text-xs leading-relaxed text-slate-600 font-mono">{uc.before}</pre></div><div className="px-5 py-3 bg-green-50/50"><p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wider text-green-600">Output</p><pre className="overflow-x-auto whitespace-pre text-xs leading-relaxed text-green-800 font-mono">{uc.after}</pre></div></div></div>))}
+          </div>
         </div>
       </section>
 

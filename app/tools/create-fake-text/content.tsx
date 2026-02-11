@@ -147,6 +147,90 @@ export default function CreateFakeTextTool() {
         </div>
       </section>
 
+      {/* How-To Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="text-2xl font-bold text-slate-900 lg:text-3xl">How to Create Fake Unicode Text</h2>
+            <p className="mt-3 text-slate-600">Generate deceptive text with Unicode homoglyphs.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {[
+              { step: "1", title: "Enter Your Text", desc: "Type or paste the text you want to disguise." },
+              { step: "2", title: "Click Generate", desc: "Press the button to replace characters with visually similar Unicode alternatives." },
+              { step: "3", title: "Preview the Result", desc: "See the fake text that looks identical but uses different code points." },
+              { step: "4", title: "Copy and Use", desc: "Copy the text for testing content filters, security research, or fun." },
+            ].map((s) => (
+              <div key={s.step} className="rounded-2xl border border-slate-200 bg-white p-6">
+                <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-full bg-violet-600 text-sm font-bold text-white">{s.step}</div>
+                <h3 className="mb-1 font-semibold text-slate-900">{s.title}</h3>
+                <p className="text-sm leading-relaxed text-slate-600">{s.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="border-t border-slate-200 bg-white py-16 lg:py-20">
+        <div className="mx-auto max-w-5xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="text-2xl font-bold text-slate-900 lg:text-3xl">Why Use Our Fake Unicode Text Generator?</h2>
+            <p className="mt-3 text-slate-600">Create text with lookalike characters for testing and research.</p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { icon: <Zap className="h-5 w-5" />, title: "Instant Generation", desc: "Create fake Unicode text instantly using homoglyph substitution." },
+              { icon: <Shield className="h-5 w-5" />, title: "100% Private", desc: "All processing happens locally in your browser." },
+              { icon: <Globe className="h-5 w-5" />, title: "Educational Tool", desc: "Learn about Unicode homoglyphs and character spoofing." },
+              { icon: <Palette className="h-5 w-5" />, title: "Visual Deception", desc: "Text looks identical to the eye but uses entirely different code points." },
+              { icon: <Copy className="h-5 w-5" />, title: "One-Click Copy", desc: "Copy or download your fake text with a single click." },
+              { icon: <Zap className="h-5 w-5" />, title: "No Account Needed", desc: "Use the tool instantly without any registration." },
+            ].map((f, i) => (
+              <div key={i} className="rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:border-violet-200 hover:shadow-lg">
+                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-violet-100 text-violet-600">{f.icon}</div>
+                <h3 className="mb-1 font-semibold text-slate-900">{f.title}</h3>
+                <p className="text-sm leading-relaxed text-slate-600">{f.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Use Cases Section */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 lg:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-12">
+          <div className="mb-10 text-center">
+            <h2 className="text-2xl font-bold text-slate-900 lg:text-3xl">Use Cases</h2>
+            <p className="mt-3 text-slate-600">See how fake Unicode text is used for testing and security.</p>
+          </div>
+          <div className="space-y-4">
+            {[
+              { title: "Content Filter Testing", before: "Hello World", after: "Ηеllο Wοrld" },
+              { title: "Security Research", before: "admin", after: "аdmіn" },
+              { title: "Phishing Awareness", before: "google.com", after: "gооgle.cоm" },
+              { title: "Homoglyph Demo", before: "password", after: "pаsswоrd" },
+            ].map((uc, i) => (
+              <div key={i} className="rounded-xl border border-slate-200 bg-white">
+                <div className="border-b border-slate-100 px-5 py-3">
+                  <h3 className="font-semibold text-slate-900">{uc.title}</h3>
+                </div>
+                <div className="grid sm:grid-cols-2">
+                  <div className="border-r border-slate-100 px-5 py-3">
+                    <span className="mb-1 block text-xs font-medium uppercase tracking-wider text-slate-400">Input</span>
+                    <p className="text-sm text-slate-700">{uc.before}</p>
+                  </div>
+                  <div className="px-5 py-3">
+                    <span className="mb-1 block text-xs font-medium uppercase tracking-wider text-slate-400">Output</span>
+                    <p className="text-sm text-slate-700">{uc.after}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <ToolFaq faqs={faqs} />
       <RelatedTools currentSlug="create-fake-text" />
       <ToolCta />
