@@ -10,7 +10,7 @@ import {
   Underline, Strikethrough, Circle, Pen, Maximize2, EyeOff,
   ExternalLink, Braces, FileCode2, Regex, Globe, Lock,
   Zap, X,
-  FileText,
+  FileText, Eye, Link as LinkIcon,
 } from "lucide-react";
 
 const categories = ["All", "Text", "Style", "Developer"] as const;
@@ -63,6 +63,8 @@ const tools = [
   { title: "URL Encoder / Decoder", description: "Encode or decode URLs and query string parameters.", href: "/tools/url-encoder-decoder", category: "Developer", icon: Globe },
   { title: "Base64 Encoder / Decoder", description: "Encode text to Base64 or decode Base64 strings with UTF-8 support.", href: "/tools/base64-encoder-decoder", category: "Developer", icon: Lock },
   { title: "Markdown Table Generator", description: "Build clean Markdown tables from rows and columns in seconds.", href: "/tools/markdown-table-generator", category: "Developer", icon: FileText },
+  { title: "URL Slug Generator", description: "Convert any title into a clean, SEO-friendly URL slug.", href: "/tools/url-slug-generator", category: "Developer", icon: LinkIcon },
+  { title: "OG Preview", description: "Preview how your site looks when shared on social media.", href: "/tools/og-preview", category: "Developer", icon: Eye },
 ];
 
 export default function ToolsIndex() {

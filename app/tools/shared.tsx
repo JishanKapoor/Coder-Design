@@ -7,7 +7,7 @@ import {
   List, Replace, Palette, Bold,
   Italic, Underline, Strikethrough, Circle, Pen, Maximize2, EyeOff,
   ExternalLink, Braces, FileCode2, Regex, Globe, Lock,
-  Code2, Zap, Table,
+  Code2, Zap, Table, Eye, Link as LinkIcon,
 } from "lucide-react";
 
 /* ── Full tools catalog (used for Related Tools randomization) ── */
@@ -53,6 +53,8 @@ export const allTools: { href: string; label: string; category: string; icon: Re
   { href: "/tools/url-encoder-decoder", label: "URL Encoder/Decoder", category: "Developer", icon: Globe, color: "bg-emerald-100 text-emerald-600" },
   { href: "/tools/base64-encoder-decoder", label: "Base64 Encoder/Decoder", category: "Developer", icon: Lock, color: "bg-emerald-100 text-emerald-600" },
   { href: "/tools/markdown-table-generator", label: "Markdown Table Generator", category: "Developer", icon: Table, color: "bg-emerald-100 text-emerald-600" },
+  { href: "/tools/url-slug-generator", label: "URL Slug Generator", category: "Developer", icon: LinkIcon, color: "bg-emerald-100 text-emerald-600" },
+  { href: "/tools/og-preview", label: "OG Preview", category: "Developer", icon: Eye, color: "bg-emerald-100 text-emerald-600" },
 ];
 
 /* ── Randomized Related Tools Component (8 random tools, no services) ── */
