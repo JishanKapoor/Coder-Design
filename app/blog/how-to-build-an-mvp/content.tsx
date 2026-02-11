@@ -86,14 +86,14 @@ export default function BlogPost() {
 <h3>Why Build an MVP Instead of the Full Product?</h3>
 
 <ul>
-<li><strong>Validate before you invest</strong> — Test your core assumption with real users before building features nobody wants</li>
-<li><strong>Launch faster</strong> — Get to market in weeks instead of months, beating competitors who are still building</li>
-<li><strong>Reduce risk</strong> — If the idea does not work, you have lost weeks of effort instead of a year</li>
-<li><strong>Attract investors</strong> — A working MVP with user traction is more convincing than any pitch deck</li>
-<li><strong>Learn from real data</strong> — User behavior reveals what to build next far better than your assumptions</li>
+<li>Validate before you invest — Test your core assumption with real users before building features nobody wants</li>
+<li>Launch faster — Get to market in weeks instead of months, beating competitors who are still building</li>
+<li>Reduce risk — If the idea does not work, you have lost weeks of effort instead of a year</li>
+<li>Attract investors — A working MVP with user traction is more convincing than any pitch deck</li>
+<li>Learn from real data — User behavior reveals what to build next far better than your assumptions</li>
 </ul>
 
-<p>The goal of an MVP is not to build a perfect product. The goal is to <strong>learn as fast as possible</strong> whether your product solves a real problem that people will pay for.</p>
+<p>The goal of an MVP is not to build a perfect product. The goal is to learn as fast as possible whether your product solves a real problem that people will pay for.</p>
 
 <h2>Step 1: Define the Problem You Are Solving</h2>
 
@@ -104,13 +104,13 @@ export default function BlogPost() {
 <p>Answer these four questions in one sentence each:</p>
 
 <ol>
-<li><strong>Who</strong> has this problem? (Be specific — "small business owners in Toronto" not "everyone")</li>
-<li><strong>What</strong> is the problem? (The pain point, in their words)</li>
-<li><strong>When</strong> does this problem occur? (The trigger moment)</li>
-<li><strong>How</strong> are they solving it today? (Current workaround — this is your real competition)</li>
+<li>Who has this problem? (Be specific — "small business owners in Toronto" not "everyone")</li>
+<li>What is the problem? (The pain point, in their words)</li>
+<li>When does this problem occur? (The trigger moment)</li>
+<li>How are they solving it today? (Current workaround — this is your real competition)</li>
 </ol>
 
-<p><strong>Example:</strong> "Restaurant owners in the GTA (who) waste 5+ hours per week manually managing reservations across phone, email, and walk-ins (what) during peak dinner hours (when), using a paper notebook or basic spreadsheet (how)."</p>
+<p>Example: "Restaurant owners in the GTA (who) waste 5+ hours per week manually managing reservations across phone, email, and walk-ins (what) during peak dinner hours (when), using a paper notebook or basic spreadsheet (how)."</p>
 
 <p>If you cannot articulate the problem clearly, you are not ready to build.</p>
 
@@ -133,9 +133,9 @@ export default function BlogPost() {
 
 <h3>The One-Sentence Value Proposition</h3>
 
-<p>Use this template: <strong>"We help [specific audience] [solve specific problem] by [your unique approach], unlike [current alternative] which [key limitation]."</strong></p>
+<p>Use this template: "We help [specific audience] [solve specific problem] by [your unique approach], unlike [current alternative] which [key limitation]."</p>
 
-<p><strong>Example:</strong> "We help GTA restaurant owners fill every table automatically by syncing reservations from Google, Instagram, and walk-ins into one real-time dashboard, unlike paper notebooks which lose bookings and cannot send confirmations."</p>
+<p>Example: "We help GTA restaurant owners fill every table automatically by syncing reservations from Google, Instagram, and walk-ins into one real-time dashboard, unlike paper notebooks which lose bookings and cannot send confirmations."</p>
 
 <h2>Step 3: Prioritize Features with MoSCoW</h2>
 
@@ -146,10 +146,10 @@ export default function BlogPost() {
 <p>Categorize every feature idea into four buckets:</p>
 
 <ul>
-<li><strong>Must-have</strong> — Without these, the product does not work. These are your MVP features.</li>
-<li><strong>Should-have</strong> — Important but the product works without them. Build these in version 1.1.</li>
-<li><strong>Could-have</strong> — Nice to have, adds polish. Build these when you have traction.</li>
-<li><strong>Won&apos;t-have (yet)</strong> — Explicitly deferred. Write them down and move on.</li>
+<li>Must-have — Without these, the product does not work. These are your MVP features.</li>
+<li>Should-have — Important but the product works without them. Build these in version 1.1.</li>
+<li>Could-have — Nice to have, adds polish. Build these when you have traction.</li>
+<li>Won&apos;t-have (yet) — Explicitly deferred. Write them down and move on.</li>
 </ul>
 
 <h3>Example: Restaurant Reservation MVP</h3>
@@ -159,12 +159,12 @@ export default function BlogPost() {
 <tr><th>Priority</th><th>Feature</th><th>Reason</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Must-have</strong></td><td>Real-time reservation dashboard</td><td>Core value — the whole point of the product</td></tr>
-<tr><td><strong>Must-have</strong></td><td>Online booking widget</td><td>Customers need a way to book</td></tr>
-<tr><td><strong>Must-have</strong></td><td>SMS confirmation to customers</td><td>Reduces no-shows, immediate value</td></tr>
-<tr><td><strong>Should-have</strong></td><td>Google Business integration</td><td>Big channel but MVP works without it</td></tr>
-<tr><td><strong>Could-have</strong></td><td>Analytics dashboard</td><td>Useful but not critical for launch</td></tr>
-<tr><td><strong>Won&apos;t-have</strong></td><td>AI waitlist optimization</td><td>Advanced feature, needs data first</td></tr>
+<tr><td>Must-have</td><td>Real-time reservation dashboard</td><td>Core value — the whole point of the product</td></tr>
+<tr><td>Must-have</td><td>Online booking widget</td><td>Customers need a way to book</td></tr>
+<tr><td>Must-have</td><td>SMS confirmation to customers</td><td>Reduces no-shows, immediate value</td></tr>
+<tr><td>Should-have</td><td>Google Business integration</td><td>Big channel but MVP works without it</td></tr>
+<tr><td>Could-have</td><td>Analytics dashboard</td><td>Useful but not critical for launch</td></tr>
+<tr><td>Won&apos;t-have</td><td>AI waitlist optimization</td><td>Advanced feature, needs data first</td></tr>
 </tbody>
 </table>
 
@@ -176,47 +176,47 @@ export default function BlogPost() {
 
 <h3>Recommended MVP Tech Stacks</h3>
 
-<p><strong>For web applications:</strong></p>
+<p>For web applications:</p>
 <ul>
-<li><strong>Frontend:</strong> <a href="/full-stack-engineering">Next.js with React and TypeScript</a> — fast rendering, built-in SEO, easy deployment</li>
-<li><strong>Backend:</strong> Node.js with Express or Python with Django — mature ecosystems, huge talent pool</li>
-<li><strong>Database:</strong> PostgreSQL — reliable, scalable, handles complex queries</li>
-<li><strong>Hosting:</strong> Vercel (frontend) + AWS or Railway (backend) — zero-config deployments</li>
+<li>Frontend: <a href="/full-stack-engineering">Next.js with React and TypeScript</a> — fast rendering, built-in SEO, easy deployment</li>
+<li>Backend: Node.js with Express or Python with Django — mature ecosystems, huge talent pool</li>
+<li>Database: PostgreSQL — reliable, scalable, handles complex queries</li>
+<li>Hosting: Vercel (frontend) + AWS or Railway (backend) — zero-config deployments</li>
 </ul>
 
-<p><strong>For <a href="/mobile-app-development">mobile applications</a>:</strong></p>
+<p>For <a href="/mobile-app-development">mobile applications</a>:</p>
 <ul>
-<li><strong>Cross-platform:</strong> React Native or Flutter — one codebase for iOS and Android</li>
-<li><strong>Backend:</strong> Firebase (rapid prototyping) or custom Node.js API (more control)</li>
-<li><strong>Why not native?</strong> Building separate iOS and Android apps doubles your development time. Cross-platform gets you to 95% of native performance at half the effort.</li>
+<li>Cross-platform: React Native or Flutter — one codebase for iOS and Android</li>
+<li>Backend: Firebase (rapid prototyping) or custom Node.js API (more control)</li>
+<li>Why not native? Building separate iOS and Android apps doubles your development time. Cross-platform gets you to 95% of native performance at half the effort.</li>
 </ul>
 
-<p><strong>For <a href="/ai-workflow">AI-powered products</a>:</strong></p>
+<p>For <a href="/ai-workflow">AI-powered products</a>:</p>
 <ul>
-<li><strong>Use APIs first:</strong> OpenAI, Claude, or Google Gemini APIs before training custom models</li>
-<li><strong>Framework:</strong> LangChain for AI orchestration, Pinecone or Weaviate for vector search</li>
-<li><strong>Why APIs?</strong> Custom model training takes months and massive data. API-based MVPs launch in weeks and let you validate demand before investing in proprietary AI.</li>
+<li>Use APIs first: OpenAI, Claude, or Google Gemini APIs before training custom models</li>
+<li>Framework: LangChain for AI orchestration, Pinecone or Weaviate for vector search</li>
+<li>Why APIs? Custom model training takes months and massive data. API-based MVPs launch in weeks and let you validate demand before investing in proprietary AI.</li>
 </ul>
 
 <h3>Tech Stack Anti-Patterns to Avoid</h3>
 
 <ul>
-<li><strong>Do not use microservices for an MVP.</strong> A monolith is faster to build, easier to debug, and simpler to deploy. You can split into services later when you have scale problems, not before.</li>
-<li><strong>Do not build your own authentication.</strong> Use Auth0, Clerk, or NextAuth. Rolling your own auth wastes weeks and introduces security risks.</li>
-<li><strong>Do not over-engineer the database.</strong> Start with a single PostgreSQL instance. You will not need sharding, read replicas, or distributed databases until you have thousands of concurrent users.</li>
+<li>Do not use microservices for an MVP. A monolith is faster to build, easier to debug, and simpler to deploy. You can split into services later when you have scale problems, not before.</li>
+<li>Do not build your own authentication. Use Auth0, Clerk, or NextAuth. Rolling your own auth wastes weeks and introduces security risks.</li>
+<li>Do not over-engineer the database. Start with a single PostgreSQL instance. You will not need sharding, read replicas, or distributed databases until you have thousands of concurrent users.</li>
 </ul>
 
 <h2>Step 5: Design for Speed, Not Perfection</h2>
 
-<p>Your MVP does not need a world-class design. It needs to be <strong>clear, functional, and trustworthy</strong>.</p>
+<p>Your MVP does not need a world-class design. It needs to be clear, functional, and trustworthy.</p>
 
 <h3>MVP Design Principles</h3>
 
 <ul>
-<li><strong>Use a component library</strong> — Shadcn/UI, Radix, or Material UI gives you professional-looking components in hours instead of weeks</li>
-<li><strong>Mobile-first</strong> — Over 60% of users will access your product on mobile. Design for small screens first, then expand.</li>
-<li><strong>Reduce cognitive load</strong> — Every screen should have one clear action. If a user has to think about what to do next, the design has failed.</li>
-<li><strong>Consistent patterns</strong> — Use the same button styles, spacing, and typography everywhere. Consistency creates trust.</li>
+<li>Use a component library — Shadcn/UI, Radix, or Material UI gives you professional-looking components in hours instead of weeks</li>
+<li>Mobile-first — Over 60% of users will access your product on mobile. Design for small screens first, then expand.</li>
+<li>Reduce cognitive load — Every screen should have one clear action. If a user has to think about what to do next, the design has failed.</li>
+<li>Consistent patterns — Use the same button styles, spacing, and typography everywhere. Consistency creates trust.</li>
 </ul>
 
 <h3>What to Skip in MVP Design</h3>
@@ -267,11 +267,11 @@ export default function BlogPost() {
 <h3>Where to Launch</h3>
 
 <ul>
-<li><strong>Product Hunt</strong> — Still the best platform for B2B and developer tools</li>
-<li><strong>Hacker News (Show HN)</strong> — Great for technical products</li>
-<li><strong>Reddit</strong> — Find subreddits where your target users hang out</li>
-<li><strong>LinkedIn</strong> — Ideal for B2B products, especially with a personal story</li>
-<li><strong>Local startup communities</strong> — Toronto has MaRS, DMZ, Creative Destruction Lab, and dozens of founder meetups</li>
+<li>Product Hunt — Still the best platform for B2B and developer tools</li>
+<li>Hacker News (Show HN) — Great for technical products</li>
+<li>Reddit — Find subreddits where your target users hang out</li>
+<li>LinkedIn — Ideal for B2B products, especially with a personal story</li>
+<li>Local startup communities — Toronto has MaRS, DMZ, Creative Destruction Lab, and dozens of founder meetups</li>
 </ul>
 
 <h2>Step 8: Measure What Matters</h2>
@@ -281,10 +281,10 @@ export default function BlogPost() {
 <h3>The Only Metrics That Matter for an MVP</h3>
 
 <ul>
-<li><strong>Activation rate</strong> — What percentage of signups complete the core action? (Target: 40%+)</li>
-<li><strong>Retention</strong> — Do users come back after day 1, day 7, day 30? (If D7 retention is below 20%, you have a problem)</li>
-<li><strong>NPS or qualitative feedback</strong> — Would users recommend this? What do they wish it did?</li>
-<li><strong>Time to value</strong> — How quickly does a new user experience the "aha moment"?</li>
+<li>Activation rate — What percentage of signups complete the core action? (Target: 40%+)</li>
+<li>Retention — Do users come back after day 1, day 7, day 30? (If D7 retention is below 20%, you have a problem)</li>
+<li>NPS or qualitative feedback — Would users recommend this? What do they wish it did?</li>
+<li>Time to value — How quickly does a new user experience the "aha moment"?</li>
 </ul>
 
 <p>Ignore vanity metrics like total signups, page views, and social media followers. A product with 50 active users who love it is infinitely more valuable than one with 5,000 signups and zero engagement.</p>
@@ -296,9 +296,9 @@ export default function BlogPost() {
 <h3>The Build-Measure-Learn Loop</h3>
 
 <ol>
-<li><strong>Build</strong> — Ship the smallest feature that tests your hypothesis</li>
-<li><strong>Measure</strong> — Track how users interact with it using analytics and feedback</li>
-<li><strong>Learn</strong> — Decide whether to double down, pivot, or cut the feature</li>
+<li>Build — Ship the smallest feature that tests your hypothesis</li>
+<li>Measure — Track how users interact with it using analytics and feedback</li>
+<li>Learn — Decide whether to double down, pivot, or cut the feature</li>
 </ol>
 
 <p>Run this loop every 1-2 weeks. The faster you iterate, the faster you find product-market fit.</p>
@@ -306,9 +306,9 @@ export default function BlogPost() {
 <h3>When to Pivot vs Persevere</h3>
 
 <ul>
-<li><strong>Pivot</strong> if activation is below 20% after 4 weeks of iteration — the core value proposition is not resonating</li>
-<li><strong>Persevere</strong> if retention is above 30% but growth is slow — you have product-market fit, you need distribution</li>
-<li><strong>Pivot the audience</strong> if unexpected users love the product — sometimes the best customers are not who you expected</li>
+<li>Pivot if activation is below 20% after 4 weeks of iteration — the core value proposition is not resonating</li>
+<li>Persevere if retention is above 30% but growth is slow — you have product-market fit, you need distribution</li>
+<li>Pivot the audience if unexpected users love the product — sometimes the best customers are not who you expected</li>
 </ul>
 
 <h2>Common MVP Mistakes to Avoid</h2>

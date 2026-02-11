@@ -84,9 +84,9 @@ export default function BlogPost() {
 <p>The traditional website lead capture model is passive: put up a contact form, maybe add a phone number, and hope visitors fill it out. This model has three fundamental problems:</p>
 
 <ol>
-<li><strong>Friction.</strong> Forms require the visitor to initiate contact, decide what to say, and commit to a conversation they are not sure they want yet. Most visitors are not ready for that — they are still researching, comparing, or just curious.</li>
-<li><strong>Timing.</strong> Static forms and CTAs treat every visitor the same, regardless of whether they just arrived or have been reading your content for 10 minutes. A first-time visitor on your homepage needs a different approach than someone who has read three blog posts and visited your pricing page twice.</li>
-<li><strong>Follow-up delay.</strong> Even when a visitor does submit a form, the typical response time for small businesses is 4-8 hours. By then, the visitor has moved on, found a competitor, or lost the urgency they felt when they submitted.</li>
+<li>Friction. Forms require the visitor to initiate contact, decide what to say, and commit to a conversation they are not sure they want yet. Most visitors are not ready for that — they are still researching, comparing, or just curious.</li>
+<li>Timing. Static forms and CTAs treat every visitor the same, regardless of whether they just arrived or have been reading your content for 10 minutes. A first-time visitor on your homepage needs a different approach than someone who has read three blog posts and visited your pricing page twice.</li>
+<li>Follow-up delay. Even when a visitor does submit a form, the typical response time for small businesses is 4-8 hours. By then, the visitor has moved on, found a competitor, or lost the urgency they felt when they submitted.</li>
 </ol>
 
 <p>AI-powered lead generation tools address all three problems: they engage visitors proactively and conversationally (reducing friction), they trigger based on visitor behaviour (improving timing), and they respond instantly (eliminating delay).</p>
@@ -99,29 +99,29 @@ export default function BlogPost() {
 
 <h3>How to Set Up an Effective AI Chatbot</h3>
 
-<p><strong>Tool recommendation: <a href="https://www.tidio.com" target="_blank" rel="noopener">Tidio</a></strong> for most small and mid-sized Toronto businesses. Here is why and how:</p>
+<p>Tool recommendation: <a href="https://www.tidio.com" target="_blank" rel="noopener">Tidio</a> for most small and mid-sized Toronto businesses. Here is why and how:</p>
 
 <ol>
-<li><strong>Install the widget.</strong> Tidio provides a JavaScript snippet you paste into your site. For WordPress, there is a plugin. For Next.js or custom sites, add the script to your layout component. Takes about 5 minutes.</li>
-<li><strong>Train the AI agent (Lyro).</strong> Upload your FAQ, service descriptions, process documents, and any other content that describes what you do. Lyro reads this content and uses it to answer visitor questions accurately. You can also point it at your website URLs and it will crawl and learn from them.</li>
-<li><strong>Set up conversation flows.</strong> Configure what Lyro says as its opening message based on the page the visitor is on. On your homepage: "Hi! Are you looking for help with a specific project or just exploring?" On a service page: "I can answer any questions about our [service name] — or I can connect you with our team if you are ready to discuss a project."</li>
-<li><strong>Configure lead capture.</strong> Set Lyro to collect name, email, and phone number naturally during the conversation — not upfront as a gate, but at the point where the visitor has expressed interest and the natural next step is to connect with your team.</li>
-<li><strong>Set up handoff rules.</strong> Define when Lyro should route to a human: complex questions outside the training data, explicit requests for a person, complaints, or high-value leads (e.g., the visitor mentioned a large project or enterprise need). Handoff notifications go to Slack, email, or the Tidio dashboard.</li>
-<li><strong>Connect to your CRM.</strong> Use Tidio's built-in integrations or <strong>Zapier</strong>/<strong>Make</strong> to automatically create contacts in <strong>HubSpot</strong>, <strong>Pipedrive</strong>, or your preferred CRM when a lead is captured. Include the full conversation transcript so your sales team has context. (Our guide on <a href="/blog/ai-workflow-automation-toronto-small-business">AI workflow automation for Toronto businesses</a> covers this CRM integration pattern in depth.)</li>
+<li>Install the widget. Tidio provides a JavaScript snippet you paste into your site. For WordPress, there is a plugin. For Next.js or custom sites, add the script to your layout component. Takes about 5 minutes.</li>
+<li>Train the AI agent (Lyro). Upload your FAQ, service descriptions, process documents, and any other content that describes what you do. Lyro reads this content and uses it to answer visitor questions accurately. You can also point it at your website URLs and it will crawl and learn from them.</li>
+<li>Set up conversation flows. Configure what Lyro says as its opening message based on the page the visitor is on. On your homepage: "Hi! Are you looking for help with a specific project or just exploring?" On a service page: "I can answer any questions about our [service name] — or I can connect you with our team if you are ready to discuss a project."</li>
+<li>Configure lead capture. Set Lyro to collect name, email, and phone number naturally during the conversation — not upfront as a gate, but at the point where the visitor has expressed interest and the natural next step is to connect with your team.</li>
+<li>Set up handoff rules. Define when Lyro should route to a human: complex questions outside the training data, explicit requests for a person, complaints, or high-value leads (e.g., the visitor mentioned a large project or enterprise need). Handoff notifications go to Slack, email, or the Tidio dashboard.</li>
+<li>Connect to your CRM. Use Tidio's built-in integrations or Zapier/Make to automatically create contacts in HubSpot, Pipedrive, or your preferred CRM when a lead is captured. Include the full conversation transcript so your sales team has context. (Our guide on <a href="/blog/ai-workflow-automation-toronto-small-business">AI workflow automation for Toronto businesses</a> covers this CRM integration pattern in depth.)</li>
 </ol>
 
-<p><strong>For more complex needs:</strong> <strong>Voiceflow</strong> lets you build multi-step qualification flows with branching logic. For example, a real estate chatbot that asks about budget range, preferred neighbourhood, timeline, and property type — qualifying the lead before it reaches an agent. <strong>Intercom's Fin agent</strong> is excellent for SaaS companies where the chatbot also needs to handle existing customer support.</p>
+<p>For more complex needs: Voiceflow lets you build multi-step qualification flows with branching logic. For example, a real estate chatbot that asks about budget range, preferred neighbourhood, timeline, and property type — qualifying the lead before it reaches an agent. Intercom's Fin agent is excellent for SaaS companies where the chatbot also needs to handle existing customer support.</p>
 
 <h3>What Makes a Chatbot Effective vs. Annoying</h3>
 
 <p>The difference between a chatbot that generates leads and one that frustrates visitors comes down to a few principles:</p>
 
 <ul>
-<li><strong>Do not pop up immediately.</strong> Give visitors at least 15-30 seconds to orient themselves. On blog posts, wait until they have scrolled 30-40% of the page.</li>
-<li><strong>Make it easy to dismiss.</strong> The close button should be obvious. Nothing irritates visitors more than a chatbot they cannot get rid of.</li>
-<li><strong>Keep initial messages short and specific.</strong> "Can I help you find something?" is better than a three-paragraph introduction about your company.</li>
-<li><strong>Be honest that it is AI.</strong> "I'm an AI assistant trained on [Company Name]'s services" builds more trust than pretending to be human. Visitors can tell, and the deception damages credibility.</li>
-<li><strong>Have a clear escalation path.</strong> Every chatbot conversation should offer a clear way to reach a human. "Would you like me to connect you with our team?" should be readily available.</li>
+<li>Do not pop up immediately. Give visitors at least 15-30 seconds to orient themselves. On blog posts, wait until they have scrolled 30-40% of the page.</li>
+<li>Make it easy to dismiss. The close button should be obvious. Nothing irritates visitors more than a chatbot they cannot get rid of.</li>
+<li>Keep initial messages short and specific. "Can I help you find something?" is better than a three-paragraph introduction about your company.</li>
+<li>Be honest that it is AI. "I'm an AI assistant trained on [Company Name]'s services" builds more trust than pretending to be human. Visitors can tell, and the deception damages credibility.</li>
+<li>Have a clear escalation path. Every chatbot conversation should offer a clear way to reach a human. "Would you like me to connect you with our team?" should be readily available.</li>
 </ul>
 
 <hr>
@@ -134,12 +134,12 @@ export default function BlogPost() {
 <p>When a visitor moves their cursor toward the browser's close button or address bar (on desktop) or shows signs of leaving (on mobile), an exit-intent popup can present a compelling reason to stay or leave their information. The key is making the offer genuinely valuable:</p>
 
 <ul>
-<li><strong>For service businesses:</strong> "Before you go — want us to send you a free [audit/assessment/quote]? Drop your email and we will have it in your inbox within 24 hours."</li>
-<li><strong>For e-commerce:</strong> A discount code or free shipping offer.</li>
-<li><strong>For content sites:</strong> A relevant downloadable resource (guide, checklist, template) related to the page they were reading.</li>
+<li>For service businesses: "Before you go — want us to send you a free [audit/assessment/quote]? Drop your email and we will have it in your inbox within 24 hours."</li>
+<li>For e-commerce: A discount code or free shipping offer.</li>
+<li>For content sites: A relevant downloadable resource (guide, checklist, template) related to the page they were reading.</li>
 </ul>
 
-<p><strong>Tools:</strong> <strong>OptinMonster</strong> is the most feature-rich exit-intent tool — it supports desktop exit-intent, mobile scroll triggers, page-specific targeting, and A/B testing. <strong>Sumo</strong> (free tier available) is simpler but effective for basic exit-intent popups.</p>
+<p>Tools: OptinMonster is the most feature-rich exit-intent tool — it supports desktop exit-intent, mobile scroll triggers, page-specific targeting, and A/B testing. Sumo (free tier available) is simpler but effective for basic exit-intent popups.</p>
 
 <h3>Page-Specific Smart CTAs</h3>
 <p>Instead of showing the same "Contact Us" button on every page, smart CTAs adapt based on the page content and the visitor's behaviour:</p>
@@ -150,12 +150,12 @@ export default function BlogPost() {
 <li>A returning visitor who previously browsed your pricing page sees "Ready to talk? Book a 15-minute call"</li>
 </ul>
 
-<p><strong>Tools:</strong> <strong>HubSpot Smart CTAs</strong> (available in the Marketing Hub) change CTA content based on visitor lifecycle stage, device, referral source, or list membership. For more advanced personalization, <strong>Mutiny</strong> dynamically changes headlines, CTAs, and content blocks based on the visitor's company, industry, or behaviour — powerful for B2B.</p>
+<p>Tools: HubSpot Smart CTAs (available in the Marketing Hub) change CTA content based on visitor lifecycle stage, device, referral source, or list membership. For more advanced personalization, Mutiny dynamically changes headlines, CTAs, and content blocks based on the visitor's company, industry, or behaviour — powerful for B2B.</p>
 
 <h3>Scroll-Depth and Time-Based Triggers</h3>
 <p>If a visitor has scrolled 70% of a blog post, they are engaged. If they have spent more than 3 minutes on your services page, they are seriously evaluating. These are the moments to surface a conversion opportunity — not when they first arrive.</p>
 
-<p>Configure triggers in your chatbot tool (Tidio supports this), your popup tool (OptinMonster), or directly in <strong>Google Tag Manager</strong> to fire events based on scroll depth and time on page, which then trigger custom actions.</p>
+<p>Configure triggers in your chatbot tool (Tidio supports this), your popup tool (OptinMonster), or directly in Google Tag Manager to fire events based on scroll depth and time on page, which then trigger custom actions.</p>
 
 <hr>
 
@@ -167,19 +167,19 @@ export default function BlogPost() {
 <p>Lead scoring assigns points based on actions and attributes:</p>
 
 <ul>
-<li><strong>Behavioural signals:</strong> Pages visited (+5 for services page, +10 for pricing page), content downloaded (+15), chatbot conversation completed (+20), return visit (+10), email opened (+3), email link clicked (+7)</li>
-<li><strong>Demographic/firmographic signals:</strong> Company size, industry, job title, location (Toronto/GTA = higher score for a local business)</li>
-<li><strong>Engagement signals:</strong> Time on site, number of pages viewed, scroll depth, video watched</li>
+<li>Behavioural signals: Pages visited (+5 for services page, +10 for pricing page), content downloaded (+15), chatbot conversation completed (+20), return visit (+10), email opened (+3), email link clicked (+7)</li>
+<li>Demographic/firmographic signals: Company size, industry, job title, location (Toronto/GTA = higher score for a local business)</li>
+<li>Engagement signals: Time on site, number of pages viewed, scroll depth, video watched</li>
 </ul>
 
 <p>When a lead crosses a threshold score, it triggers immediate action — a notification to your sales team, a personalized email, or a direct phone call.</p>
 
-<p><strong>Tools:</strong></p>
+<p>Tools:</p>
 <ul>
-<li><strong>HubSpot</strong> — Built-in lead scoring that uses both manual rules and AI-predictive scoring (the AI model learns from your historical data which lead characteristics predict conversion). Available in the Professional tier.</li>
-<li><strong>Salesforce Einstein Lead Scoring</strong> — AI-powered scoring that analyses patterns in your closed deals to predict which new leads are most likely to convert. More powerful but requires Salesforce ecosystem.</li>
-<li><strong>Madkudu</strong> — Standalone AI lead scoring that integrates with any CRM. Particularly good for SaaS companies.</li>
-<li><strong>For simpler needs:</strong> You can build effective lead scoring in <strong>Zapier</strong> or <strong>Make</strong> by assigning points based on form field values, page visits (tracked via UTM parameters), and chatbot conversation outcomes, then storing scores in your CRM or Airtable.</li>
+<li>HubSpot — Built-in lead scoring that uses both manual rules and AI-predictive scoring (the AI model learns from your historical data which lead characteristics predict conversion). Available in the Professional tier.</li>
+<li>Salesforce Einstein Lead Scoring — AI-powered scoring that analyses patterns in your closed deals to predict which new leads are most likely to convert. More powerful but requires Salesforce ecosystem.</li>
+<li>Madkudu — Standalone AI lead scoring that integrates with any CRM. Particularly good for SaaS companies.</li>
+<li>For simpler needs: You can build effective lead scoring in Zapier or Make by assigning points based on form field values, page visits (tracked via UTM parameters), and chatbot conversation outcomes, then storing scores in your CRM or Airtable.</li>
 </ul>
 
 <h3>Intelligent Lead Routing</h3>
@@ -198,31 +198,31 @@ export default function BlogPost() {
 
 <h3>Building an Effective Follow-Up Sequence</h3>
 
-<p><strong>Email sequence example for a Toronto service business:</strong></p>
+<p>Email sequence example for a Toronto service business:</p>
 
 <ol>
-<li><strong>Immediately (automated):</strong> Personalized acknowledgment email referencing their specific inquiry. "Hi [Name], thanks for reaching out about [specific service they asked about]. Here is what our process looks like and what to expect next."</li>
-<li><strong>Day 1:</strong> Relevant case study or example from a similar project. "Here is how we helped [similar business type] achieve [specific outcome]."</li>
-<li><strong>Day 3:</strong> Educational content — a guide, checklist, or article related to their inquiry. Add value, do not sell.</li>
-<li><strong>Day 7:</strong> Social proof — a video testimonial or written review from a client in a similar industry.</li>
-<li><strong>Day 14:</strong> Direct invitation to book a call, with a clear incentive ("We would love to walk you through what a project like this would look like for your business — no commitment, 20 minutes.").</li>
-<li><strong>Day 30:</strong> Final touchpoint — a check-in with something genuinely useful ("We just published a guide on [relevant topic] that might be helpful for your planning").</li>
+<li>Immediately (automated): Personalized acknowledgment email referencing their specific inquiry. "Hi [Name], thanks for reaching out about [specific service they asked about]. Here is what our process looks like and what to expect next."</li>
+<li>Day 1: Relevant case study or example from a similar project. "Here is how we helped [similar business type] achieve [specific outcome]."</li>
+<li>Day 3: Educational content — a guide, checklist, or article related to their inquiry. Add value, do not sell.</li>
+<li>Day 7: Social proof — a video testimonial or written review from a client in a similar industry.</li>
+<li>Day 14: Direct invitation to book a call, with a clear incentive ("We would love to walk you through what a project like this would look like for your business — no commitment, 20 minutes.").</li>
+<li>Day 30: Final touchpoint — a check-in with something genuinely useful ("We just published a guide on [relevant topic] that might be helpful for your planning").</li>
 </ol>
 
-<p><strong>Tools for email sequences:</strong></p>
+<p>Tools for email sequences:</p>
 <ul>
-<li><strong>HubSpot Sequences</strong> — Built into the CRM. Emails can be personalized with contact properties and sent from your personal email address (not a marketing address), which improves open rates.</li>
-<li><strong>ActiveCampaign</strong> — Powerful automation builder with conditional paths (if they opened email 2 but did not click, send a different email 3). Good for businesses that want sophisticated email marketing without enterprise complexity.</li>
-<li><strong>Mailchimp</strong> — The most accessible option for businesses just starting with email automation. The "Customer Journey" builder handles basic sequences well.</li>
-<li><strong>Brevo (formerly Sendinblue)</strong> — Strong free tier, includes email, SMS, and WhatsApp automation in one platform. Good option for Toronto businesses with multilingual customer bases.</li>
+<li>HubSpot Sequences — Built into the CRM. Emails can be personalized with contact properties and sent from your personal email address (not a marketing address), which improves open rates.</li>
+<li>ActiveCampaign — Powerful automation builder with conditional paths (if they opened email 2 but did not click, send a different email 3). Good for businesses that want sophisticated email marketing without enterprise complexity.</li>
+<li>Mailchimp — The most accessible option for businesses just starting with email automation. The "Customer Journey" builder handles basic sequences well.</li>
+<li>Brevo (formerly Sendinblue) — Strong free tier, includes email, SMS, and WhatsApp automation in one platform. Good option for Toronto businesses with multilingual customer bases.</li>
 </ul>
 
 <h3>Adding AI to Follow-Up</h3>
 <p>AI makes follow-up sequences more effective by personalizing content at scale:</p>
 <ul>
-<li>Use <strong>OpenAI API</strong> via <strong>Make</strong> or <strong>Zapier</strong> to generate personalized first lines for each email based on the lead's inquiry, industry, or website</li>
-<li><strong>Seventh Sense</strong> optimizes email send times based on each recipient's historical open patterns — so your emails arrive when each individual lead is most likely to read them</li>
-<li><strong>Lavender</strong> is an AI email coaching tool that analyses your sales emails and suggests improvements for tone, length, and clarity to improve response rates</li>
+<li>Use OpenAI API via Make or Zapier to generate personalized first lines for each email based on the lead's inquiry, industry, or website</li>
+<li>Seventh Sense optimizes email send times based on each recipient's historical open patterns — so your emails arrive when each individual lead is most likely to read them</li>
+<li>Lavender is an AI email coaching tool that analyses your sales emails and suggests improvements for tone, length, and clarity to improve response rates</li>
 </ul>
 
 <hr>
@@ -233,14 +233,14 @@ export default function BlogPost() {
 
 <p>AI phone agents answer calls when your team cannot, qualify the caller by asking relevant questions, and either book an appointment directly or capture the lead's information for follow-up.</p>
 
-<p><strong>Tools:</strong></p>
+<p>Tools:</p>
 <ul>
-<li><strong>Synthflow</strong> — AI voice agent that sounds natural and can be trained on your business information. It can answer FAQs, qualify callers, book appointments (integrates with Calendly, Cal.com, Google Calendar), and send follow-up texts. Particularly good for trades and home services.</li>
-<li><strong>Bland AI</strong> — More developer-oriented, offers highly customizable voice agents. Best if you need complex call flows with multiple decision points and system integrations.</li>
-<li><strong>Vapi</strong> — Voice AI platform for building custom phone agents. Offers more control over the conversation design and can integrate with any backend system. Best for businesses or agencies building custom voice solutions.</li>
+<li>Synthflow — AI voice agent that sounds natural and can be trained on your business information. It can answer FAQs, qualify callers, book appointments (integrates with Calendly, Cal.com, Google Calendar), and send follow-up texts. Particularly good for trades and home services.</li>
+<li>Bland AI — More developer-oriented, offers highly customizable voice agents. Best if you need complex call flows with multiple decision points and system integrations.</li>
+<li>Vapi — Voice AI platform for building custom phone agents. Offers more control over the conversation design and can integrate with any backend system. Best for businesses or agencies building custom voice solutions.</li>
 </ul>
 
-<p><strong>How to implement:</strong></p>
+<p>How to implement:</p>
 <ol>
 <li>Choose your tool and configure the AI agent with your business information, common questions, and service descriptions</li>
 <li>Set up call forwarding from your business line to the AI agent — either for all calls (if you prefer AI as the first line) or only when your team does not answer within a set number of rings</li>
@@ -256,15 +256,15 @@ export default function BlogPost() {
 <p>Each tactic above works independently, but the real power comes when they work together as a system:</p>
 
 <ol>
-<li><strong>Visitor arrives</strong> on your website (from SEO, ads, social, referral)</li>
-<li><strong>Behavioural tracking</strong> monitors their journey — pages visited, time spent, scroll depth</li>
-<li><strong>AI chatbot</strong> engages based on behaviour (not immediately, but when intent signals suggest readiness)</li>
-<li><strong>Smart CTAs</strong> surface relevant offers based on the pages they have visited</li>
-<li><strong>Lead is captured</strong> via chatbot conversation, form submission, or phone call</li>
-<li><strong>Lead scoring</strong> ranks the lead based on their behaviour and information provided</li>
-<li><strong>Intelligent routing</strong> sends high-priority leads to your team immediately, others to nurture sequences</li>
-<li><strong>Automated follow-up</strong> maintains engagement through personalized email and SMS sequences</li>
-<li><strong>CRM tracks everything</strong> — every touchpoint, every interaction, every conversion</li>
+<li>Visitor arrives on your website (from SEO, ads, social, referral)</li>
+<li>Behavioural tracking monitors their journey — pages visited, time spent, scroll depth</li>
+<li>AI chatbot engages based on behaviour (not immediately, but when intent signals suggest readiness)</li>
+<li>Smart CTAs surface relevant offers based on the pages they have visited</li>
+<li>Lead is captured via chatbot conversation, form submission, or phone call</li>
+<li>Lead scoring ranks the lead based on their behaviour and information provided</li>
+<li>Intelligent routing sends high-priority leads to your team immediately, others to nurture sequences</li>
+<li>Automated follow-up maintains engagement through personalized email and SMS sequences</li>
+<li>CRM tracks everything — every touchpoint, every interaction, every conversion</li>
 </ol>
 
 <p>The result is a lead generation system that works around the clock, responds instantly, never forgets to follow up, and gives your team the context they need to close deals efficiently. To measure whether the investment is paying off, use our <a href="/blog/ai-automation-roi-toronto-business">AI automation ROI framework</a>.</p>

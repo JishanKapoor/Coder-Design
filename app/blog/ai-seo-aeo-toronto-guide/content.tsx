@@ -73,7 +73,7 @@ export default function BlogPost() {
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
           <div className="blog-content" dangerouslySetInnerHTML={{ __html: `
 
-<p>Search is splitting into two channels, and most Toronto businesses are only optimizing for one of them. Google still dominates traditional search, but an increasing share of information-seeking queries now start (or end) in AI-powered tools: <strong>Google AI Overviews</strong> (the AI summaries that appear above traditional search results), <strong>ChatGPT</strong> with web browsing, <strong>Perplexity</strong>, and <strong>Microsoft Copilot</strong>. If your content is not structured to be understood and cited by these systems, you are becoming invisible to a growing segment of your potential customers.</p>
+<p>Search is splitting into two channels, and most Toronto businesses are only optimizing for one of them. Google still dominates traditional search, but an increasing share of information-seeking queries now start (or end) in AI-powered tools: Google AI Overviews (the AI summaries that appear above traditional search results), ChatGPT with web browsing, Perplexity, and Microsoft Copilot. If your content is not structured to be understood and cited by these systems, you are becoming invisible to a growing segment of your potential customers.</p>
 
 <p>This guide covers both sides — traditional AI-enhanced SEO and the newer discipline of Answer Engine Optimization (AEO) — with specific, actionable tactics you can implement for your Toronto business. No theory-only content. Every section includes the specific tools, implementations, and steps. (If you would rather have experts handle this for you, explore our <a href="/seo-management">AI SEO & AEO services</a>.)</p>
 
@@ -89,15 +89,15 @@ export default function BlogPost() {
 <p>The critical insight: the pages Google's AI cites are not always the same pages that rank #1 organically. AI Overviews pull from content that directly answers the question in a clear, structured, authoritative way — even if that content is not on page 1 of traditional results. This is a new opportunity for businesses that create genuinely helpful content.</p>
 
 <h3>ChatGPT, Perplexity, and AI Search Tools</h3>
-<p><strong>Perplexity</strong> is essentially an AI-powered research engine. When someone asks it "What is the best AI agency in Toronto for workflow automation?", it searches the web in real time, reads dozens of pages, synthesizes an answer, and cites its sources. If your website has clear, authoritative content about AI workflow automation in Toronto, Perplexity will find and cite it.</p>
+<p>Perplexity is essentially an AI-powered research engine. When someone asks it "What is the best AI agency in Toronto for workflow automation?", it searches the web in real time, reads dozens of pages, synthesizes an answer, and cites its sources. If your website has clear, authoritative content about AI workflow automation in Toronto, Perplexity will find and cite it.</p>
 
-<p><strong>ChatGPT with browsing</strong> does the same thing, though with less consistent citation. <strong>Microsoft Copilot</strong> integrates Bing search with AI synthesis. All of these tools are training your potential customers to expect direct answers — not to click through 10 results and compare them.</p>
+<p>ChatGPT with browsing does the same thing, though with less consistent citation. Microsoft Copilot integrates Bing search with AI synthesis. All of these tools are training your potential customers to expect direct answers — not to click through 10 results and compare them.</p>
 
 <h3>What This Means for Toronto Businesses</h3>
 <p>You now need to optimize for two things simultaneously:</p>
 <ol>
-<li><strong>Traditional search ranking</strong> — still the primary traffic driver and still based on the fundamentals (technical SEO, content quality, backlinks, local signals)</li>
-<li><strong>AI citation</strong> — being the source that AI tools reference when answering questions related to your business, services, or expertise</li>
+<li>Traditional search ranking — still the primary traffic driver and still based on the fundamentals (technical SEO, content quality, backlinks, local signals)</li>
+<li>AI citation — being the source that AI tools reference when answering questions related to your business, services, or expertise</li>
 </ol>
 
 <p>The good news: the tactics overlap significantly. Great content that ranks well in traditional search is also more likely to be cited by AI. But there are specific additional optimizations that make a meaningful difference in AI visibility.</p>
@@ -112,14 +112,14 @@ export default function BlogPost() {
 
 <p>Traditional keyword research identifies what people are searching for. AI-enhanced keyword research also identifies the intent behind those searches and the related questions people ask — which is exactly what you need for both SEO and AEO.</p>
 
-<p><strong>Tools and how to use them:</strong></p>
+<p>Tools and how to use them:</p>
 
 <ul>
-<li><strong>Semrush</strong> — The most comprehensive keyword research platform. Use the "Keyword Magic Tool" to find search volume and difficulty for your target terms. The "Topic Research" feature shows you related questions, subtopics, and content gaps. For local Toronto SEO, use the "Keyword Gap" tool to compare your keyword rankings against local competitors.</li>
-<li><strong>Ahrefs</strong> — Particularly strong for analysing what content already ranks and why. The "Content Gap" analysis shows you keywords your competitors rank for that you do not — these are your highest-opportunity targets. The "Questions" filter in Keywords Explorer shows you the exact questions people search for, which are gold for both FAQ content and AEO.</li>
-<li><strong>Google Search Console</strong> — Free, and often overlooked. The "Performance" report shows you the actual queries people use to find your site, including ones you never thought to target. Look for queries where you appear on page 2 or 3 — these are "striking distance" keywords where a targeted content update could push you to page 1.</li>
-<li><strong>AlsoAsked</strong> — Maps out the "People Also Ask" questions for any search query. This shows you the complete tree of related questions Google associates with a topic — each one is a potential heading, FAQ entry, or blog post.</li>
-<li><strong>Frase</strong> — AI-powered content brief generator. Enter a keyword, and Frase analyses the top-ranking pages, identifies the topics and questions they cover, and generates a content brief showing you exactly what to include. This is not about copying competitors — it is about understanding what Google considers comprehensive coverage of a topic.</li>
+<li>Semrush — The most comprehensive keyword research platform. Use the "Keyword Magic Tool" to find search volume and difficulty for your target terms. The "Topic Research" feature shows you related questions, subtopics, and content gaps. For local Toronto SEO, use the "Keyword Gap" tool to compare your keyword rankings against local competitors.</li>
+<li>Ahrefs — Particularly strong for analysing what content already ranks and why. The "Content Gap" analysis shows you keywords your competitors rank for that you do not — these are your highest-opportunity targets. The "Questions" filter in Keywords Explorer shows you the exact questions people search for, which are gold for both FAQ content and AEO.</li>
+<li>Google Search Console — Free, and often overlooked. The "Performance" report shows you the actual queries people use to find your site, including ones you never thought to target. Look for queries where you appear on page 2 or 3 — these are "striking distance" keywords where a targeted content update could push you to page 1.</li>
+<li>AlsoAsked — Maps out the "People Also Ask" questions for any search query. This shows you the complete tree of related questions Google associates with a topic — each one is a potential heading, FAQ entry, or blog post.</li>
+<li>Frase — AI-powered content brief generator. Enter a keyword, and Frase analyses the top-ranking pages, identifies the topics and questions they cover, and generates a content brief showing you exactly what to include. This is not about copying competitors — it is about understanding what Google considers comprehensive coverage of a topic.</li>
 </ul>
 
 <h3>Content Optimization: What Actually Moves Rankings</h3>
@@ -127,18 +127,18 @@ export default function BlogPost() {
 <p>The days of keyword-stuffing paragraphs are long over. Google's AI (including the Helpful Content system and the core ranking algorithms) evaluates content on these dimensions:</p>
 
 <ul>
-<li><strong>Topical comprehensiveness.</strong> Does your page cover the topic thoroughly, or does it only scratch the surface? Tools like <strong>Surfer SEO</strong> and <strong>Clearscope</strong> analyse the top-ranking pages for any keyword and show you the specific subtopics, terms, and questions they cover — giving you a data-driven checklist for comprehensive coverage.</li>
-<li><strong>Originality and expertise.</strong> Does your content include original insights, specific examples, or first-hand experience that cannot be found elsewhere? Google's E-E-A-T guidelines (Experience, Expertise, Authoritativeness, Trustworthiness) increasingly reward content that demonstrates real knowledge — not just reworded information from other sources.</li>
-<li><strong>Structure and clarity.</strong> Is the content organized with clear headings, logical flow, and scannable sections? This matters for both human readers and AI extraction.</li>
-<li><strong>Freshness.</strong> For topics that evolve (technology, regulations, market conditions), regularly updated content outperforms static pages. Add "last updated" dates and actually update the content when things change.</li>
+<li>Topical comprehensiveness. Does your page cover the topic thoroughly, or does it only scratch the surface? Tools like Surfer SEO and Clearscope analyse the top-ranking pages for any keyword and show you the specific subtopics, terms, and questions they cover — giving you a data-driven checklist for comprehensive coverage.</li>
+<li>Originality and expertise. Does your content include original insights, specific examples, or first-hand experience that cannot be found elsewhere? Google's E-E-A-T guidelines (Experience, Expertise, Authoritativeness, Trustworthiness) increasingly reward content that demonstrates real knowledge — not just reworded information from other sources.</li>
+<li>Structure and clarity. Is the content organized with clear headings, logical flow, and scannable sections? This matters for both human readers and AI extraction.</li>
+<li>Freshness. For topics that evolve (technology, regulations, market conditions), regularly updated content outperforms static pages. Add "last updated" dates and actually update the content when things change.</li>
 </ul>
 
-<p><strong>Practical workflow for content optimization:</strong></p>
+<p>Practical workflow for content optimization:</p>
 <ol>
 <li>Choose a target keyword using Semrush or Ahrefs</li>
 <li>Generate a content brief using Frase or MarketMuse that maps the subtopics and questions to cover</li>
-<li>Write the content with genuine expertise — use AI writing assistants like <strong>Jasper</strong> or <strong>Claude</strong> to help with first drafts or research, but ensure the final content reflects your actual knowledge and experience</li>
-<li>Run the draft through <strong>Surfer SEO</strong> to check topical coverage and identify gaps</li>
+<li>Write the content with genuine expertise — use AI writing assistants like Jasper or Claude to help with first drafts or research, but ensure the final content reflects your actual knowledge and experience</li>
+<li>Run the draft through Surfer SEO to check topical coverage and identify gaps</li>
 <li>Add structured data (see below) and internal links to related content</li>
 <li>Publish, submit to Google Search Console for indexing, and monitor performance over the following weeks</li>
 </ol>
@@ -147,14 +147,14 @@ export default function BlogPost() {
 
 <p>AI search tools can only cite your content if they can access and understand it. Technical SEO ensures your site is crawlable, fast, and properly structured.</p>
 
-<p><strong>Critical technical elements:</strong></p>
+<p>Critical technical elements:</p>
 
 <ul>
-<li><strong>Page speed.</strong> Google has confirmed that Core Web Vitals (Largest Contentful Paint, Cumulative Layout Shift, Interaction to Next Paint) are ranking factors. Use <strong>Google PageSpeed Insights</strong> and <strong>Lighthouse</strong> to audit. For Next.js sites, use <strong>next/image</strong> for automatic image optimization, implement code splitting, and use static generation where possible.</li>
-<li><strong>Mobile-first.</strong> Google crawls and indexes the mobile version of your site. If your mobile experience is poor, your rankings suffer. Test with Chrome DevTools device emulation and real devices.</li>
-<li><strong>Crawlability.</strong> Ensure your robots.txt does not block important content. Use <strong>Screaming Frog</strong> (free for up to 500 URLs) to crawl your site and identify broken links, missing meta descriptions, duplicate titles, orphan pages, and redirect chains.</li>
-<li><strong>Site architecture.</strong> Organize your content in a clear hierarchy with logical URL structures. Use internal linking to connect related content — this helps both search engines and AI tools understand the relationships between your pages.</li>
-<li><strong>HTTPS.</strong> Non-negotiable. If you are not on HTTPS, you are at a ranking disadvantage and browsers will warn visitors about your site.</li>
+<li>Page speed. Google has confirmed that Core Web Vitals (Largest Contentful Paint, Cumulative Layout Shift, Interaction to Next Paint) are ranking factors. Use Google PageSpeed Insights and Lighthouse to audit. For Next.js sites, use next/image for automatic image optimization, implement code splitting, and use static generation where possible.</li>
+<li>Mobile-first. Google crawls and indexes the mobile version of your site. If your mobile experience is poor, your rankings suffer. Test with Chrome DevTools device emulation and real devices.</li>
+<li>Crawlability. Ensure your robots.txt does not block important content. Use Screaming Frog (free for up to 500 URLs) to crawl your site and identify broken links, missing meta descriptions, duplicate titles, orphan pages, and redirect chains.</li>
+<li>Site architecture. Organize your content in a clear hierarchy with logical URL structures. Use internal linking to connect related content — this helps both search engines and AI tools understand the relationships between your pages.</li>
+<li>HTTPS. Non-negotiable. If you are not on HTTPS, you are at a ranking disadvantage and browsers will warn visitors about your site.</li>
 </ul>
 
 <hr>
@@ -167,22 +167,22 @@ export default function BlogPost() {
 
 <p>Structured data is machine-readable code (JSON-LD format) embedded in your pages that explicitly tells search engines and AI tools what your content is about. It is the single most impactful AEO tactic because it removes ambiguity — instead of an AI system having to infer what your page is about, you tell it directly.</p>
 
-<p><strong>Essential schema types for Toronto businesses:</strong></p>
+<p>Essential schema types for Toronto businesses:</p>
 
 <ul>
-<li><strong>LocalBusiness</strong> — Your business name, address, phone, hours, service area. This is foundational for local search and Google Maps. Use the specific subtype that fits: <code>ProfessionalService</code>, <code>LegalService</code>, <code>MedicalBusiness</code>, <code>HomeAndConstructionBusiness</code>, etc.</li>
-<li><strong>FAQPage</strong> — Mark up your FAQ sections so Google can display them as rich results and AI tools can extract Q&A pairs directly. Every service page should have an FAQ section with structured data.</li>
-<li><strong>HowTo</strong> — For instructional content (guides, tutorials, how-to articles). Google displays these as step-by-step rich results.</li>
-<li><strong>Article / BlogPosting</strong> — For blog posts and articles. Includes author, publish date, image, and description.</li>
-<li><strong>Service</strong> — Describe each service you offer with structured data. This helps AI tools understand your service offerings when answering queries like "What services do AI agencies in Toronto offer?"</li>
-<li><strong>Review / AggregateRating</strong> — If you have customer reviews on your site, mark them up. Star ratings in search results increase click-through rates significantly.</li>
+<li>LocalBusiness — Your business name, address, phone, hours, service area. This is foundational for local search and Google Maps. Use the specific subtype that fits: <code>ProfessionalService</code>, <code>LegalService</code>, <code>MedicalBusiness</code>, <code>HomeAndConstructionBusiness</code>, etc.</li>
+<li>FAQPage — Mark up your FAQ sections so Google can display them as rich results and AI tools can extract Q&A pairs directly. Every service page should have an FAQ section with structured data.</li>
+<li>HowTo — For instructional content (guides, tutorials, how-to articles). Google displays these as step-by-step rich results.</li>
+<li>Article / BlogPosting — For blog posts and articles. Includes author, publish date, image, and description.</li>
+<li>Service — Describe each service you offer with structured data. This helps AI tools understand your service offerings when answering queries like "What services do AI agencies in Toronto offer?"</li>
+<li>Review / AggregateRating — If you have customer reviews on your site, mark them up. Star ratings in search results increase click-through rates significantly.</li>
 </ul>
 
-<p><strong>Implementation tools:</strong></p>
+<p>Implementation tools:</p>
 <ul>
-<li>For WordPress: <strong>Rank Math</strong> (free version has excellent schema support) or <strong>Schema Pro</strong></li>
-<li>For Next.js / custom sites: Implement JSON-LD directly in your page components. Use Google's <strong>Structured Data Testing Tool</strong> and <strong>Rich Results Test</strong> to validate.</li>
-<li>For any site: <strong>Schema.org</strong> documentation is the definitive reference for all schema types and properties.</li>
+<li>For WordPress: Rank Math (free version has excellent schema support) or Schema Pro</li>
+<li>For Next.js / custom sites: Implement JSON-LD directly in your page components. Use Google's Structured Data Testing Tool and Rich Results Test to validate.</li>
+<li>For any site: Schema.org documentation is the definitive reference for all schema types and properties.</li>
 </ul>
 
 <h3>Content Architecture for AI Extraction</h3>
@@ -190,23 +190,23 @@ export default function BlogPost() {
 <p>AI tools extract answers from your content by identifying clear question-answer patterns, well-structured sections, and definitive statements. Structure your content to make this extraction easy:</p>
 
 <ul>
-<li><strong>Use question-based headings.</strong> Instead of "Our Services," use "What AI Automation Services Are Available for Toronto Businesses?" The question format matches how people ask AI tools for information.</li>
-<li><strong>Answer directly after the heading.</strong> The first sentence after each heading should directly answer the implied or stated question. Add detail and nuance afterward, but lead with the answer. This "inverted pyramid" style is exactly what AI tools look for.</li>
-<li><strong>Include FAQ sections on every important page.</strong> Not just a dedicated FAQ page — add 3-5 relevant questions and answers to each service page, each blog post, and your homepage. Mark them up with FAQPage schema.</li>
-<li><strong>Use lists and tables for structured information.</strong> AI tools extract structured data more reliably than information buried in paragraphs. If you are comparing options, use a table. If you are listing steps, use an ordered list. If you are listing features or criteria, use an unordered list.</li>
-<li><strong>Define terms explicitly.</strong> If your page discusses a concept (like "workflow automation" or "answer engine optimization"), include a clear one-sentence definition early in the content. AI tools often pull these definitions directly when answering "What is X?" queries.</li>
+<li>Use question-based headings. Instead of "Our Services," use "What AI Automation Services Are Available for Toronto Businesses?" The question format matches how people ask AI tools for information.</li>
+<li>Answer directly after the heading. The first sentence after each heading should directly answer the implied or stated question. Add detail and nuance afterward, but lead with the answer. This "inverted pyramid" style is exactly what AI tools look for.</li>
+<li>Include FAQ sections on every important page. Not just a dedicated FAQ page — add 3-5 relevant questions and answers to each service page, each blog post, and your homepage. Mark them up with FAQPage schema.</li>
+<li>Use lists and tables for structured information. AI tools extract structured data more reliably than information buried in paragraphs. If you are comparing options, use a table. If you are listing steps, use an ordered list. If you are listing features or criteria, use an unordered list.</li>
+<li>Define terms explicitly. If your page discusses a concept (like "workflow automation" or "answer engine optimization"), include a clear one-sentence definition early in the content. AI tools often pull these definitions directly when answering "What is X?" queries.</li>
 </ul>
 
 <h3>Topical Authority: The Long Game</h3>
 
 <p>AI tools are more likely to cite sources they perceive as authoritative on a topic. You build topical authority by publishing comprehensive, interlinked content across all facets of your subject area.</p>
 
-<p><strong>How to build it:</strong></p>
+<p>How to build it:</p>
 <ol>
-<li><strong>Create a content hub.</strong> Choose your core topic (e.g., "AI automation for Toronto businesses") and create a comprehensive pillar page that covers the topic broadly.</li>
-<li><strong>Publish supporting content.</strong> Write detailed articles on each subtopic — workflow automation, AI chatbots, AI SEO, implementation timelines, industry-specific use cases, etc. Each article links back to the pillar page and to related articles.</li>
-<li><strong>Cover related questions.</strong> Use AlsoAsked and Semrush's Topic Research to find every question people ask about your core topic. Each question is a potential article or FAQ entry.</li>
-<li><strong>Update regularly.</strong> A hub that was published once and never updated loses authority over time. Refresh content quarterly with new information, updated tool recommendations, and current statistics.</li>
+<li>Create a content hub. Choose your core topic (e.g., "AI automation for Toronto businesses") and create a comprehensive pillar page that covers the topic broadly.</li>
+<li>Publish supporting content. Write detailed articles on each subtopic — workflow automation, AI chatbots, AI SEO, implementation timelines, industry-specific use cases, etc. Each article links back to the pillar page and to related articles.</li>
+<li>Cover related questions. Use AlsoAsked and Semrush's Topic Research to find every question people ask about your core topic. Each question is a potential article or FAQ entry.</li>
+<li>Update regularly. A hub that was published once and never updated loses authority over time. Refresh content quarterly with new information, updated tool recommendations, and current statistics.</li>
 </ol>
 
 <p>This is exactly the strategy behind this blog series — each post covers a specific facet of AI automation for Toronto businesses, and together they build comprehensive topical authority that benefits every page. For example, our deep dive on <a href="/blog/ai-workflow-automation-toronto-small-business">AI workflow automation for Toronto small businesses</a> complements this SEO guide by giving readers the operational detail behind the services they are searching for.</p>
@@ -240,7 +240,7 @@ export default function BlogPost() {
 <h3>Review Generation Strategy</h3>
 <p>Reviews are both a ranking signal and a trust signal for AI tools. Automate review collection:</p>
 <ol>
-<li>After every completed project or service, trigger an automated email/SMS requesting a Google review (use <strong>Zapier</strong> or <strong>Make</strong> to automate this from your CRM or project management tool). If you are not sure which tools or agency to trust with this, our <a href="/blog/how-to-choose-best-ai-agency-toronto">guide to choosing an AI agency in Toronto</a> covers what to look for.</li>
+<li>After every completed project or service, trigger an automated email/SMS requesting a Google review (use Zapier or Make to automate this from your CRM or project management tool). If you are not sure which tools or agency to trust with this, our <a href="/blog/how-to-choose-best-ai-agency-toronto">guide to choosing an AI agency in Toronto</a> covers what to look for.</li>
 <li>Make it frictionless — include a direct link to your Google review form (you can get this from your Google Business Profile)</li>
 <li>Time it well — request reviews when the customer is most satisfied (immediately after a successful outcome, not weeks later)</li>
 <li>Respond to every review within 24-48 hours</li>
@@ -254,24 +254,24 @@ export default function BlogPost() {
 
 <h3>Essentials (Start Here)</h3>
 <ul>
-<li><strong>Google Search Console</strong> — Free. Monitor your search performance, identify indexing issues, see what queries bring traffic. Non-negotiable.</li>
-<li><strong>Google Analytics 4</strong> — Free. Track traffic, user behaviour, conversions. Set up conversion tracking for your key actions (form submissions, phone calls, bookings). Pair this with a proper <a href="/blog/ai-automation-roi-toronto-business">ROI measurement framework</a> to tie SEO outcomes to real revenue.</li>
-<li><strong>Screaming Frog SEO Spider</strong> — Free for up to 500 URLs. Crawl your site to find technical issues. Run this monthly.</li>
-<li><strong>Rank Math</strong> (WordPress) or manual JSON-LD (custom sites) — Implement structured data. Free.</li>
+<li>Google Search Console — Free. Monitor your search performance, identify indexing issues, see what queries bring traffic. Non-negotiable.</li>
+<li>Google Analytics 4 — Free. Track traffic, user behaviour, conversions. Set up conversion tracking for your key actions (form submissions, phone calls, bookings). Pair this with a proper <a href="/blog/ai-automation-roi-toronto-business">ROI measurement framework</a> to tie SEO outcomes to real revenue.</li>
+<li>Screaming Frog SEO Spider — Free for up to 500 URLs. Crawl your site to find technical issues. Run this monthly.</li>
+<li>Rank Math (WordPress) or manual JSON-LD (custom sites) — Implement structured data. Free.</li>
 </ul>
 
 <h3>Growth (When You Are Ready to Invest in Tools)</h3>
 <ul>
-<li><strong>Semrush</strong> or <strong>Ahrefs</strong> — Keyword research, competitor analysis, backlink monitoring, rank tracking. Choose one — they are broadly comparable with different strengths. Semrush has better keyword data; Ahrefs has better backlink analysis.</li>
-<li><strong>Surfer SEO</strong> or <strong>Clearscope</strong> — Content optimization. Analyse what top-ranking pages cover and ensure your content is at least as comprehensive. Surfer is more affordable; Clearscope is more polished.</li>
-<li><strong>Frase</strong> or <strong>MarketMuse</strong> — AI-powered content briefs and gap analysis. Frase is more accessible; MarketMuse is more enterprise-oriented.</li>
+<li>Semrush or Ahrefs — Keyword research, competitor analysis, backlink monitoring, rank tracking. Choose one — they are broadly comparable with different strengths. Semrush has better keyword data; Ahrefs has better backlink analysis.</li>
+<li>Surfer SEO or Clearscope — Content optimization. Analyse what top-ranking pages cover and ensure your content is at least as comprehensive. Surfer is more affordable; Clearscope is more polished.</li>
+<li>Frase or MarketMuse — AI-powered content briefs and gap analysis. Frase is more accessible; MarketMuse is more enterprise-oriented.</li>
 </ul>
 
 <h3>Monitoring AI Visibility</h3>
 <ul>
-<li><strong>Perplexity</strong> — Search for questions about your industry and service area. Check whether your content appears as a cited source. If it does not, analyse what sources Perplexity does cite and what makes their content more extractable.</li>
-<li><strong>Google Search — AI Overview monitoring.</strong> Search for your target keywords in Chrome (not incognito) and observe whether AI Overviews appear. Note which sources are cited. There is no formal tool for tracking AI Overview citations yet, but monitoring manually for your top 20-30 keywords monthly is manageable and informative.</li>
-<li><strong>ChatGPT browsing mode.</strong> Ask ChatGPT questions about your industry in Toronto. See whether your brand appears in responses. This is less consistent than Perplexity but gives you a signal about your AI visibility.</li>
+<li>Perplexity — Search for questions about your industry and service area. Check whether your content appears as a cited source. If it does not, analyse what sources Perplexity does cite and what makes their content more extractable.</li>
+<li>Google Search — AI Overview monitoring. Search for your target keywords in Chrome (not incognito) and observe whether AI Overviews appear. Note which sources are cited. There is no formal tool for tracking AI Overview citations yet, but monitoring manually for your top 20-30 keywords monthly is manageable and informative.</li>
+<li>ChatGPT browsing mode. Ask ChatGPT questions about your industry in Toronto. See whether your brand appears in responses. This is less consistent than Perplexity but gives you a signal about your AI visibility.</li>
 </ul>
 
 <hr>
@@ -280,7 +280,7 @@ export default function BlogPost() {
 
 <p>Instead of trying to implement everything at once, here is a prioritized 30-day action plan:</p>
 
-<p><strong>Week 1: Audit and Baseline</strong></p>
+<p>Week 1: Audit and Baseline</p>
 <ul>
 <li>Run Screaming Frog on your site and fix critical technical issues (broken links, missing meta descriptions, slow pages)</li>
 <li>Set up Google Search Console if you have not already — verify your site and submit your sitemap</li>
@@ -288,7 +288,7 @@ export default function BlogPost() {
 <li>Search for your key terms in Perplexity and Google AI Overviews — note whether you appear and who does</li>
 </ul>
 
-<p><strong>Week 2: Structured Data</strong></p>
+<p>Week 2: Structured Data</p>
 <ul>
 <li>Add LocalBusiness schema to your homepage</li>
 <li>Add FAQPage schema to your top 3 service pages (add FAQ content if it does not exist)</li>
@@ -296,14 +296,14 @@ export default function BlogPost() {
 <li>Validate all structured data using Google's Rich Results Test</li>
 </ul>
 
-<p><strong>Week 3: Content Optimization</strong></p>
+<p>Week 3: Content Optimization</p>
 <ul>
 <li>Identify your top 5 "striking distance" keywords from Google Search Console (pages ranking positions 8-20)</li>
 <li>Update those 5 pages: expand content, add FAQ sections, improve headings to question format, add internal links</li>
 <li>Ensure each page has a clear, direct answer to the primary query in the first paragraph</li>
 </ul>
 
-<p><strong>Week 4: Local and Ongoing</strong></p>
+<p>Week 4: Local and Ongoing</p>
 <ul>
 <li>Optimize your Google Business Profile completely</li>
 <li>Set up automated review collection</li>

@@ -72,10 +72,10 @@ export default function BlogPost() {
 
 <h3>Key Performance Gains</h3>
 <ul>
-<li><strong>Impeller on iOS:</strong> Eliminates shader compilation stuttering, delivering buttery-smooth animations from the first frame</li>
-<li><strong>Reduced memory footprint:</strong> Apps consume 20-30% less memory on average compared to Flutter 3.7</li>
-<li><strong>Faster startup times:</strong> Cold start times improved by up to 15% through optimized Dart VM initialization</li>
-<li><strong>Web performance:</strong> CanvasKit rendering now loads 30% faster with improved tree-shaking</li>
+<li>Impeller on iOS: Eliminates shader compilation stuttering, delivering buttery-smooth animations from the first frame</li>
+<li>Reduced memory footprint: Apps consume 20-30% less memory on average compared to Flutter 3.7</li>
+<li>Faster startup times: Cold start times improved by up to 15% through optimized Dart VM initialization</li>
+<li>Web performance: CanvasKit rendering now loads 30% faster with improved tree-shaking</li>
 </ul>
 
 <h2>New Features and APIs</h2>
@@ -85,28 +85,28 @@ export default function BlogPost() {
 
 <h3>Enhanced Platform Integration</h3>
 <ul>
-<li><strong>iOS 17 support:</strong> Full compatibility with the latest Apple APIs, including Live Activities and Dynamic Island</li>
-<li><strong>Android 14 features:</strong> Predictive back gestures, per-app language preferences, and photo picker integration</li>
-<li><strong>macOS improvements:</strong> Native menu bar support and improved window management</li>
-<li><strong>Windows enhancements:</strong> Better high-DPI scaling and native accessibility support</li>
+<li>iOS 17 support: Full compatibility with the latest Apple APIs, including Live Activities and Dynamic Island</li>
+<li>Android 14 features: Predictive back gestures, per-app language preferences, and photo picker integration</li>
+<li>macOS improvements: Native menu bar support and improved window management</li>
+<li>Windows enhancements: Better high-DPI scaling and native accessibility support</li>
 </ul>
 
 <h3>DevTools Upgrades</h3>
 <p>The Flutter DevTools suite received major updates that make debugging and profiling significantly easier:</p>
 <ul>
-<li><strong>Performance overlay redesign:</strong> Clearer visualization of UI and raster thread performance</li>
-<li><strong>Memory profiler:</strong> New allocation tracking and leak detection capabilities</li>
-<li><strong>Widget inspector:</strong> Enhanced layout explorer with real-time constraint visualization</li>
-<li><strong>Network profiler:</strong> Built-in HTTP request monitoring with timeline integration</li>
+<li>Performance overlay redesign: Clearer visualization of UI and raster thread performance</li>
+<li>Memory profiler: New allocation tracking and leak detection capabilities</li>
+<li>Widget inspector: Enhanced layout explorer with real-time constraint visualization</li>
+<li>Network profiler: Built-in HTTP request monitoring with timeline integration</li>
 </ul>
 
 <h2>Dart 3.1 Integration</h2>
 <p>Flutter 3.10 ships with Dart 3.1, which introduces several language features that improve code quality and developer productivity:</p>
 <ul>
-<li><strong>Sealed classes:</strong> Enable exhaustive pattern matching for state management</li>
-<li><strong>Class modifiers:</strong> Better control over API surface with interface, base, final, and mixin modifiers</li>
-<li><strong>Records:</strong> Lightweight composite values without defining a class</li>
-<li><strong>Pattern matching:</strong> Destructure objects and collections with concise, readable syntax</li>
+<li>Sealed classes: Enable exhaustive pattern matching for state management</li>
+<li>Class modifiers: Better control over API surface with interface, base, final, and mixin modifiers</li>
+<li>Records: Lightweight composite values without defining a class</li>
+<li>Pattern matching: Destructure objects and collections with concise, readable syntax</li>
 </ul>
 
 <h2>Migration Guide</h2>
@@ -121,10 +121,10 @@ export default function BlogPost() {
 <h2>What This Means for Businesses</h2>
 <p>For companies invested in Flutter, this release delivers tangible business value:</p>
 <ul>
-<li><strong>Faster time-to-market:</strong> Improved hot reload and new DevTools reduce development cycles</li>
-<li><strong>Better user retention:</strong> Smoother animations and faster startup times improve user experience metrics</li>
-<li><strong>Lower costs:</strong> Single codebase across iOS, Android, web, and desktop means less maintenance overhead</li>
-<li><strong>Future-proof:</strong> Strong ecosystem growth and continued investment ensure long-term viability</li>
+<li>Faster time-to-market: Improved hot reload and new DevTools reduce development cycles</li>
+<li>Better user retention: Smoother animations and faster startup times improve user experience metrics</li>
+<li>Lower costs: Single codebase across iOS, Android, web, and desktop means less maintenance overhead</li>
+<li>Future-proof: Strong ecosystem growth and continued investment ensure long-term viability</li>
 </ul>
 
 <blockquote><p>Flutter 3.10 is not just an incremental update. It is a statement that cross-platform development can match and exceed native performance when done right.</p></blockquote>

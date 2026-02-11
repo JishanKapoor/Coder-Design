@@ -19,6 +19,7 @@ export function Navigation() {
     { label: "AI Automation", href: "/ai-workflow" },
     { label: "SEO Services", href: "/seo-management" },
     { label: "Blogs", href: "/blogs" },
+    { label: "Tools", href: "/tools" },
     { label: "About", href: "/about" },
   ];
 

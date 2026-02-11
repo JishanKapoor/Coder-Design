@@ -71,11 +71,11 @@ export default function BlogPost() {
 
 <h3>Key Capabilities</h3>
 <ul>
-<li><strong>True multimodal reasoning:</strong> Processes multiple data types simultaneously, not just sequentially</li>
-<li><strong>Extended context windows:</strong> Handle millions of tokens for analyzing entire codebases or documents</li>
-<li><strong>Improved reasoning:</strong> Better logical reasoning, math, and problem-solving abilities</li>
-<li><strong>Code generation:</strong> More accurate and context-aware code writing across multiple languages</li>
-<li><strong>Creative generation:</strong> Enhanced image and content generation capabilities</li>
+<li>True multimodal reasoning: Processes multiple data types simultaneously, not just sequentially</li>
+<li>Extended context windows: Handle millions of tokens for analyzing entire codebases or documents</li>
+<li>Improved reasoning: Better logical reasoning, math, and problem-solving abilities</li>
+<li>Code generation: More accurate and context-aware code writing across multiple languages</li>
+<li>Creative generation: Enhanced image and content generation capabilities</li>
 </ul>
 
 <h2>Impact on Businesses</h2>
@@ -101,19 +101,19 @@ export default function BlogPost() {
 <h2>Impact on Creators</h2>
 <p>Content creators and artists can leverage Gemini 3 for:</p>
 <ul>
-<li><strong>Content ideation:</strong> Generate ideas across text, image, and video formats</li>
-<li><strong>Editing assistance:</strong> AI-powered editing for various media types</li>
-<li><strong>Translation and localization:</strong> High-quality translations preserving tone and context</li>
-<li><strong>Audience analytics:</strong> Better understanding of audience preferences and trends</li>
+<li>Content ideation: Generate ideas across text, image, and video formats</li>
+<li>Editing assistance: AI-powered editing for various media types</li>
+<li>Translation and localization: High-quality translations preserving tone and context</li>
+<li>Audience analytics: Better understanding of audience preferences and trends</li>
 </ul>
 
 <h2>How to Get Started with Gemini 3</h2>
 <ol>
-<li><strong>Explore the API:</strong> Access Gemini 3 through Google AI Studio or Vertex AI</li>
-<li><strong>Start with simple tasks:</strong> Begin with text generation and analysis</li>
-<li><strong>Experiment with multimodal:</strong> Try combining text, image, and code inputs</li>
-<li><strong>Build prototypes:</strong> Create proof-of-concept applications for your use case</li>
-<li><strong>Scale gradually:</strong> Move from prototypes to production with proper testing</li>
+<li>Explore the API: Access Gemini 3 through Google AI Studio or Vertex AI</li>
+<li>Start with simple tasks: Begin with text generation and analysis</li>
+<li>Experiment with multimodal: Try combining text, image, and code inputs</li>
+<li>Build prototypes: Create proof-of-concept applications for your use case</li>
+<li>Scale gradually: Move from prototypes to production with proper testing</li>
 </ol>
 
 <h2>The Competitive Landscape</h2>

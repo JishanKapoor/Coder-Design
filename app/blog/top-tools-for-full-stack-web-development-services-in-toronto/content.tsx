@@ -70,61 +70,61 @@ export default function BlogPost() {
 
 <h3>Frameworks and Libraries</h3>
 <ul>
-<li><strong>React:</strong> Component-based UI library dominating the frontend landscape</li>
-<li><strong>Next.js:</strong> Full-featured React framework with SSR, SSG, and API routes</li>
-<li><strong>Vue.js:</strong> Progressive framework known for gentle learning curve</li>
-<li><strong>Angular:</strong> Enterprise-grade framework with comprehensive tooling</li>
+<li>React: Component-based UI library dominating the frontend landscape</li>
+<li>Next.js: Full-featured React framework with SSR, SSG, and API routes</li>
+<li>Vue.js: Progressive framework known for gentle learning curve</li>
+<li>Angular: Enterprise-grade framework with comprehensive tooling</li>
 </ul>
 
 <h3>Styling Tools</h3>
 <ul>
-<li><strong>Tailwind CSS:</strong> Utility-first CSS framework for rapid development</li>
-<li><strong>Styled Components:</strong> CSS-in-JS for component-scoped styling</li>
-<li><strong>Sass/SCSS:</strong> CSS preprocessor for organized stylesheets</li>
+<li>Tailwind CSS: Utility-first CSS framework for rapid development</li>
+<li>Styled Components: CSS-in-JS for component-scoped styling</li>
+<li>Sass/SCSS: CSS preprocessor for organized stylesheets</li>
 </ul>
 
 <h2>Backend Development Tools</h2>
 
 <h3>Runtime and Frameworks</h3>
 <ul>
-<li><strong>Node.js:</strong> JavaScript runtime for server-side applications</li>
-<li><strong>Express.js:</strong> Minimalist web framework for Node.js</li>
-<li><strong>Django:</strong> Python framework for rapid backend development</li>
-<li><strong>FastAPI:</strong> Modern Python framework with automatic API documentation</li>
+<li>Node.js: JavaScript runtime for server-side applications</li>
+<li>Express.js: Minimalist web framework for Node.js</li>
+<li>Django: Python framework for rapid backend development</li>
+<li>FastAPI: Modern Python framework with automatic API documentation</li>
 </ul>
 
 <h3>Databases</h3>
 <ul>
-<li><strong>PostgreSQL:</strong> Powerful open-source relational database</li>
-<li><strong>MongoDB:</strong> Flexible NoSQL document database</li>
-<li><strong>Redis:</strong> In-memory data store for caching and real-time features</li>
-<li><strong>Prisma:</strong> Next-generation ORM for type-safe database access</li>
+<li>PostgreSQL: Powerful open-source relational database</li>
+<li>MongoDB: Flexible NoSQL document database</li>
+<li>Redis: In-memory data store for caching and real-time features</li>
+<li>Prisma: Next-generation ORM for type-safe database access</li>
 </ul>
 
 <h2>DevOps and Deployment</h2>
 <ul>
-<li><strong>Docker:</strong> Containerization for consistent development and deployment</li>
-<li><strong>Git/GitHub:</strong> Version control and collaboration platform</li>
-<li><strong>Vercel:</strong> Optimized hosting for frontend frameworks</li>
-<li><strong>AWS:</strong> Comprehensive cloud services for any scale</li>
-<li><strong>GitHub Actions:</strong> CI/CD automation integrated with your repository</li>
+<li>Docker: Containerization for consistent development and deployment</li>
+<li>Git/GitHub: Version control and collaboration platform</li>
+<li>Vercel: Optimized hosting for frontend frameworks</li>
+<li>AWS: Comprehensive cloud services for any scale</li>
+<li>GitHub Actions: CI/CD automation integrated with your repository</li>
 </ul>
 
 <h2>Development Productivity Tools</h2>
 <ul>
-<li><strong>VS Code:</strong> The most popular code editor with extensive extensions</li>
-<li><strong>Postman:</strong> API testing and documentation</li>
-<li><strong>Figma:</strong> Collaborative design tool for UI/UX</li>
-<li><strong>Notion/Linear:</strong> Project management and documentation</li>
-<li><strong>ESLint/Prettier:</strong> Code quality and formatting tools</li>
+<li>VS Code: The most popular code editor with extensive extensions</li>
+<li>Postman: API testing and documentation</li>
+<li>Figma: Collaborative design tool for UI/UX</li>
+<li>Notion/Linear: Project management and documentation</li>
+<li>ESLint/Prettier: Code quality and formatting tools</li>
 </ul>
 
 <h2>Testing Tools</h2>
 <ul>
-<li><strong>Jest:</strong> JavaScript testing framework</li>
-<li><strong>Cypress:</strong> End-to-end testing for web applications</li>
-<li><strong>Playwright:</strong> Cross-browser automation and testing</li>
-<li><strong>React Testing Library:</strong> Component testing for React apps</li>
+<li>Jest: JavaScript testing framework</li>
+<li>Cypress: End-to-end testing for web applications</li>
+<li>Playwright: Cross-browser automation and testing</li>
+<li>React Testing Library: Component testing for React apps</li>
 </ul>
 
 <h2>Picking the Right Tools for Your Stack</h2>

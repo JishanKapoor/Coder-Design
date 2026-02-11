@@ -29,7 +29,7 @@ export default function SEOManagementDetail() {
       icon: Target,
       title: "AI-Powered SEO Strategy",
       description: "Leverage artificial intelligence and machine learning to identify high-value keywords, predict search trends, and automate content optimization. Our AI tools analyze millions of data points to create winning SEO strategies.",
-      features: ["AI Keyword Discovery", "Predictive Analytics", "Auto-optimization", "Smart Content Scoring"]
+      features: ["AI Keyword Discovery", "Predictive Analytics", "Google Business Profile Optimization", "Smart Content Scoring"]
     },
     {
       icon: FileText,
@@ -65,6 +65,7 @@ export default function SEOManagementDetail() {
 
   const tools = [
     "ChatGPT",
+    "Google My Business (Google Business Profile)",
     "Jasper AI",
     "Surfer SEO",
     "Clearscope",
@@ -96,7 +97,9 @@ export default function SEOManagementDetail() {
                 ROI with intelligent automation. We go beyond traditional keyword research. Our team 
                 builds comprehensive content ecosystems, optimizes for Google AI Overviews, and ensures 
                 your brand appears as a trusted answer across search engines, voice assistants, and AI 
-                platforms like ChatGPT, Perplexity, and Gemini.
+                platforms like ChatGPT, Perplexity, and Gemini. For local businesses, we also optimize
+                your Google Business Profile (formerly Google My Business) to improve Maps rankings,
+                increase calls, and win the Toronto “near me” searches.
               </p>
               
               <div className="mb-8 flex flex-wrap gap-3">

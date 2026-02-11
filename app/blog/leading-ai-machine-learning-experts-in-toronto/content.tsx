@@ -69,10 +69,10 @@ export default function BlogPost() {
 <h2>Why Toronto for AI?</h2>
 <p>Toronto offers unique advantages for AI development:</p>
 <ul>
-<li><strong>Industry diversity:</strong> Finance, healthcare, media, retail, and real estate all drive AI demand</li>
-<li><strong>Talent pool:</strong> University of Toronto, Waterloo, and York University produce world-class AI researchers</li>
-<li><strong>Startup ecosystem:</strong> Hundreds of AI-focused startups across all boroughs</li>
-<li><strong>Enterprise demand:</strong> Major corporations headquartered in Toronto are hungry for AI solutions</li>
+<li>Industry diversity: Finance, healthcare, media, retail, and real estate all drive AI demand</li>
+<li>Talent pool: University of Toronto, Waterloo, and York University produce world-class AI researchers</li>
+<li>Startup ecosystem: Hundreds of AI-focused startups across all boroughs</li>
+<li>Enterprise demand: Major corporations headquartered in Toronto are hungry for AI solutions</li>
 </ul>
 
 <h2>Key AI Capabilities in Demand</h2>
@@ -92,11 +92,11 @@ export default function BlogPost() {
 <h2>Choosing the Right AI Partner</h2>
 <p>When evaluating AI and ML service providers, consider:</p>
 <ul>
-<li><strong>Industry expertise:</strong> Do they understand your specific domain?</li>
-<li><strong>Technical depth:</strong> Can they build custom models, not just implement APIs?</li>
-<li><strong>Data security:</strong> How do they handle sensitive data and compliance?</li>
-<li><strong>Scalability:</strong> Can their solutions grow with your business?</li>
-<li><strong>Communication:</strong> Do they explain complex AI concepts clearly?</li>
+<li>Industry expertise: Do they understand your specific domain?</li>
+<li>Technical depth: Can they build custom models, not just implement APIs?</li>
+<li>Data security: How do they handle sensitive data and compliance?</li>
+<li>Scalability: Can their solutions grow with your business?</li>
+<li>Communication: Do they explain complex AI concepts clearly?</li>
 </ul>
 
 <h2>The Future of AI in Toronto</h2>

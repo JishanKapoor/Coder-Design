@@ -85,7 +85,7 @@ export default function BlogPost() {
   <p>Here’s a clear guide to firms that actually work with small teams. I’ll point out what they do and how they help. No fluff. Just useful facts.</p>
 
   <h2>What makes a great AI consultant for small businesses?</h2>
-  <p><strong>The best AI consultant for a small business focuses on budget, clear ROI, practical solutions, and local knowledge of Toronto's market. They deliver simple automation, basic data tools, and ongoing support so owners get usable results without large costs or long timelines.</strong></p>
+  <p>The best AI consultant for a small business focuses on budget, clear ROI, practical solutions, and local knowledge of Toronto's market. They deliver simple automation, basic data tools, and ongoing support so owners get usable results without large costs or long timelines.</p>
   <p>Small firms need fast wins. They need help that pays back. A strong consultant shows examples. They explain costs and timeframes. They plan for upkeep so your system keeps working after launch.</p>
 
   <h2>Top AI consulting firms in Toronto</h2>
@@ -119,23 +119,23 @@ export default function BlogPost() {
   <h2>Frequently Asked Questions</h2>
 
   <h3>1. Is AI consulting expensive for small businesses?</h3>
-  <p><strong>AI consulting can fit many budgets. Some projects are costly, but many consultants offer smaller, step-by-step packages that start affordable. The key is a clear scope and measurable goals so each phase delivers value before you pay more.</strong></p>
+  <p>AI consulting can fit many budgets. Some projects are costly, but many consultants offer smaller, step-by-step packages that start affordable. The key is a clear scope and measurable goals so each phase delivers value before you pay more.</p>
   <p>Always ask for phased plans and fixed-price options to limit surprises.</p>
 
   <h3>2. Do these firms build custom AI or just automations?</h3>
-  <p><strong>They do both. Some firms focus on small automations like chat or scheduling. Others build custom models or apps. Pick a firm whose past work matches your needs. Ask for comparable case studies and timelines before signing.</strong></p>
+  <p>They do both. Some firms focus on small automations like chat or scheduling. Others build custom models or apps. Pick a firm whose past work matches your needs. Ask for comparable case studies and timelines before signing.</p>
   <p>Complex models take longer. Simple automations can launch fast.</p>
 
   <h3>3. How long does a typical AI project take?</h3>
-  <p><strong>Small automation projects can take a few weeks. Custom tools or data platforms can take several months. Time depends on data quality, features, and testing needs. A clear scope and a firm timeline help keep the project on track.</strong></p>
+  <p>Small automation projects can take a few weeks. Custom tools or data platforms can take several months. Time depends on data quality, features, and testing needs. A clear scope and a firm timeline help keep the project on track.</p>
   <p>Plan for testing, feedback, and a short support period after launch.</p>
 
   <h3>4. Do I need data ready to start?</h3>
-  <p><strong>Not always. Some consultants will help you gather and clean data. Having basic sales or customer logs speeds progress, but firms can also begin with a discovery phase to plan how to collect what’s needed.</strong></p>
+  <p>Not always. Some consultants will help you gather and clean data. Having basic sales or customer logs speeds progress, but firms can also begin with a discovery phase to plan how to collect what’s needed.</p>
   <p>Better data makes better results faster. Still, many projects start with simple inputs and scale up.</p>
 
   <h3>5. Will AI save or make money for my business?</h3>
-  <p><strong>Both. AI can cut routine costs by automating tasks and reduce lost revenue from missed calls or slow responses. It can also create new income via better service or product tools. The outcome depends on clear goals and the right implementation.</strong></p>
+  <p>Both. AI can cut routine costs by automating tasks and reduce lost revenue from missed calls or slow responses. It can also create new income via better service or product tools. The outcome depends on clear goals and the right implementation.</p>
   <p>Set milestones and measure impact so you can track ROI.</p>
 
   <h2>Practical steps to get started</h2>

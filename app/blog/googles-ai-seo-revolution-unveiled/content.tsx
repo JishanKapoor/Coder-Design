@@ -71,10 +71,10 @@ export default function BlogPost() {
 
 <h3>Key Changes in Google's AI-Powered Search</h3>
 <ul>
-<li><strong>AI Overviews:</strong> Summarized answers generated directly in search results</li>
-<li><strong>Search Generative Experience:</strong> Conversational AI responses that reshape how users interact with Google</li>
-<li><strong>E-E-A-T Emphasis:</strong> Experience, Expertise, Authoritativeness, and Trustworthiness are more important than ever</li>
-<li><strong>Passage Ranking:</strong> Google can now index and rank specific passages within a page</li>
+<li>AI Overviews: Summarized answers generated directly in search results</li>
+<li>Search Generative Experience: Conversational AI responses that reshape how users interact with Google</li>
+<li>E-E-A-T Emphasis: Experience, Expertise, Authoritativeness, and Trustworthiness are more important than ever</li>
+<li>Passage Ranking: Google can now index and rank specific passages within a page</li>
 </ul>
 
 <h2>How This Impacts Your SEO Strategy</h2>
@@ -91,12 +91,12 @@ export default function BlogPost() {
 
 <h2>Practical Steps for Businesses</h2>
 <ul>
-<li><strong>Audit existing content</strong> for depth, accuracy, and E-E-A-T signals</li>
-<li><strong>Implement structured data</strong> across all key pages</li>
-<li><strong>Focus on topic clusters</strong> rather than individual keywords</li>
-<li><strong>Create authoritative, experience-based content</strong> that demonstrates real expertise</li>
-<li><strong>Optimize for featured snippets</strong> and AI Overview inclusion</li>
-<li><strong>Monitor AI search results</strong> for your target queries</li>
+<li>Audit existing content for depth, accuracy, and E-E-A-T signals</li>
+<li>Implement structured data across all key pages</li>
+<li>Focus on topic clusters rather than individual keywords</li>
+<li>Create authoritative, experience-based content that demonstrates real expertise</li>
+<li>Optimize for featured snippets and AI Overview inclusion</li>
+<li>Monitor AI search results for your target queries</li>
 </ul>
 
 <h2>The Future of Search</h2>

@@ -305,4 +305,142 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://coderdesign.com/tools</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://coderdesign.com/tools/add-prefix-suffix-lines</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://coderdesign.com/tools/alternating-case-converter</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://coderdesign.com/tools/comma-to-column</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://coderdesign.com/tools/duplicate-eraser</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://coderdesign.com/tools/lines-counter</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://coderdesign.com/tools/special-character-remover</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://coderdesign.com/tools/emoji-remover</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://coderdesign.com/tools/repeated-words-finder</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://coderdesign.com/tools/split-text</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://coderdesign.com/tools/join-text</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://coderdesign.com/tools/repeat-text</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://coderdesign.com/tools/reverse-text</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url><loc>https://coderdesign.com/tools/truncate-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/trim-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/slice-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/right-align-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/right-pad-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/left-align-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/left-pad-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/center-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/indent-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/unindent-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/justify-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/wrap-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/reverse-words</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/reverse-sentences</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/reverse-paragraphs</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/word-duplicator</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/word-remover</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/sentence-duplicator</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/sentence-remover</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/word-replacer</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/add-random-words</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/add-random-letters</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/add-random-errors</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/censor-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/link-extractor</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/create-fake-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/detect-fake-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/normalize-fake-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/bold-text-generator</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/tiny-text-generator</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/text-symbols</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/create-zalgo-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/undo-zalgo-text</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/italic-text-generator</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/underline-text-generator</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/strikethrough-text-generator</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/bubble-text-generator</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/cursive-text-maker</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/wide-text-maker</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/json-formatter</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/code-minifier</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/regex-tester</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/url-encoder-decoder</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/base64-encoder-decoder</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/seo-content-analyzer</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://coderdesign.com/tools/meta-tags-checker</loc><lastmod>2026-02-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
 </urlset>

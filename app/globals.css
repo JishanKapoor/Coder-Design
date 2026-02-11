@@ -515,6 +515,20 @@ html, body {
     }
   }
 
+  /* Smooth page transition — triggered by app/template.tsx on every navigation */
+  @keyframes pageIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .animate-page-in {
+    animation: pageIn 0.4s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+  }
+
   .animate-fade-in {
     animation: fadeIn 0.7s cubic-bezier(0.4,0,0.2,1);
     will-change: opacity, transform;

@@ -69,11 +69,11 @@ export default function BlogPost() {
 <h2>What Kubernetes Does Well</h2>
 <p>Kubernetes excels at managing containerized applications at scale. It provides:</p>
 <ul>
-<li><strong>Automatic scaling:</strong> Scale pods up and down based on demand</li>
-<li><strong>Self-healing:</strong> Automatically restart failed containers and reschedule workloads</li>
-<li><strong>Service discovery:</strong> Built-in DNS and load balancing</li>
-<li><strong>Rolling updates:</strong> Deploy new versions with zero downtime</li>
-<li><strong>Resource management:</strong> Efficiently allocate CPU and memory across workloads</li>
+<li>Automatic scaling: Scale pods up and down based on demand</li>
+<li>Self-healing: Automatically restart failed containers and reschedule workloads</li>
+<li>Service discovery: Built-in DNS and load balancing</li>
+<li>Rolling updates: Deploy new versions with zero downtime</li>
+<li>Resource management: Efficiently allocate CPU and memory across workloads</li>
 </ul>
 
 <h2>When Kubernetes IS Overkill</h2>
@@ -90,11 +90,11 @@ export default function BlogPost() {
 
 <h2>Better Alternatives for Startups</h2>
 <ul>
-<li><strong>Vercel / Netlify:</strong> Perfect for Next.js and JAMstack apps with built-in scaling</li>
-<li><strong>Railway / Render:</strong> Simple container deployment without K8s complexity</li>
-<li><strong>AWS ECS / Fargate:</strong> Managed container services without managing clusters</li>
-<li><strong>Google Cloud Run:</strong> Serverless containers that scale to zero</li>
-<li><strong>Fly.io:</strong> Deploy apps globally with simple configuration</li>
+<li>Vercel / Netlify: Perfect for Next.js and JAMstack apps with built-in scaling</li>
+<li>Railway / Render: Simple container deployment without K8s complexity</li>
+<li>AWS ECS / Fargate: Managed container services without managing clusters</li>
+<li>Google Cloud Run: Serverless containers that scale to zero</li>
+<li>Fly.io: Deploy apps globally with simple configuration</li>
 </ul>
 
 <h2>When to Adopt Kubernetes</h2>

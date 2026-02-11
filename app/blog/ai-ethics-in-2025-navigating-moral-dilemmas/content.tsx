@@ -89,17 +89,17 @@ export default function BlogPost() {
 <h3>Key Ethical Principles</h3>
 <p>Several foundational principles guide the responsible creation and use of AI:</p>
 <ul>
-<li><p><strong>Transparency</strong>: AI systems should be designed so their processes and decisions are understandable and explainable to users and stakeholders. Transparency fosters trust and enables accountability.</p>
+<li><p>Transparency: AI systems should be designed so their processes and decisions are understandable and explainable to users and stakeholders. Transparency fosters trust and enables accountability.</p>
 </li>
-<li><p><strong>Fairness</strong>: AI must avoid biases and discrimination by ensuring equitable treatment for all individuals and groups, regardless of race, gender, socioeconomic status, or other factors.</p>
+<li><p>Fairness: AI must avoid biases and discrimination by ensuring equitable treatment for all individuals and groups, regardless of race, gender, socioeconomic status, or other factors.</p>
 </li>
-<li><p><strong>Accountability</strong>: Developers, organizations, and policymakers must clearly define who is responsible for AI’s decisions and impacts, especially when harm occurs.</p>
+<li><p>Accountability: Developers, organizations, and policymakers must clearly define who is responsible for AI’s decisions and impacts, especially when harm occurs.</p>
 </li>
-<li><p><strong>Privacy</strong>: AI systems should safeguard user data, respecting confidentiality and complying with data protection regulations to prevent misuse.</p>
+<li><p>Privacy: AI systems should safeguard user data, respecting confidentiality and complying with data protection regulations to prevent misuse.</p>
 </li>
-<li><p><strong>Safety and Reliability</strong>: AI must operate safely and reliably under diverse conditions, minimizing risks to human life and welfare.</p>
+<li><p>Safety and Reliability: AI must operate safely and reliably under diverse conditions, minimizing risks to human life and welfare.</p>
 </li>
-<li><p><strong>Human-Centric Control</strong>: AI should augment human decision-making without overriding human autonomy or ethical judgment.</p>
+<li><p>Human-Centric Control: AI should augment human decision-making without overriding human autonomy or ethical judgment.</p>
 </li>
 </ul>
 <h2>The Challenges of Autonomous Decision Making</h2>
@@ -107,66 +107,66 @@ export default function BlogPost() {
 <h3>Bias and Discrimination</h3>
 <p>AI learns from data—and data often reflects historical prejudices and societal inequalities.</p>
 <ul>
-<li><p><strong>Data Bias</strong>: Training AI on biased datasets can cause perpetuation or amplification of discrimination in critical domains like hiring, lending, law enforcement, and healthcare.</p>
+<li><p>Data Bias: Training AI on biased datasets can cause perpetuation or amplification of discrimination in critical domains like hiring, lending, law enforcement, and healthcare.</p>
 </li>
-<li><p><strong>Mitigation Strategies</strong>: To counter bias, AI developers must curate diverse, representative datasets, employ fairness-aware algorithms, and conduct ongoing bias audits.</p>
+<li><p>Mitigation Strategies: To counter bias, AI developers must curate diverse, representative datasets, employ fairness-aware algorithms, and conduct ongoing bias audits.</p>
 </li>
 </ul>
 <h3>Accountability and Responsibility</h3>
 <p>When AI acts without direct human oversight, determining who is liable for its decisions becomes complicated.</p>
 <ul>
-<li><p><strong>Shared Responsibility</strong>: Responsibility often spans developers, deployers, regulators, and users.</p>
+<li><p>Shared Responsibility: Responsibility often spans developers, deployers, regulators, and users.</p>
 </li>
-<li><p><strong>Legal Adaptation</strong>: Emerging legal frameworks are starting to define liability in AI-related harm cases, but comprehensive regulation is still evolving.</p>
+<li><p>Legal Adaptation: Emerging legal frameworks are starting to define liability in AI-related harm cases, but comprehensive regulation is still evolving.</p>
 </li>
 </ul>
 <h3>Privacy Concerns</h3>
 <p>AI’s reliance on vast, often sensitive datasets raises critical privacy issues.</p>
 <ul>
-<li><p><strong>User Consent and Awareness</strong>: Transparency about data collection and use is necessary for informed consent.</p>
+<li><p>User Consent and Awareness: Transparency about data collection and use is necessary for informed consent.</p>
 </li>
-<li><p><strong>Data Security</strong>: Strong encryption, anonymization, and compliance with regulations such as GDPR and CCPA are essential.</p>
+<li><p>Data Security: Strong encryption, anonymization, and compliance with regulations such as GDPR and CCPA are essential.</p>
 </li>
-<li><p><strong>Data Minimization</strong>: Collecting only necessary data limits exposure and potential abuse.</p>
+<li><p>Data Minimization: Collecting only necessary data limits exposure and potential abuse.</p>
 </li>
 </ul>
 <h3>Safety and Unpredictability</h3>
 <p>Autonomous AI systems, especially those in safety-critical applications, must be resilient against errors and adversarial attacks.</p>
 <ul>
-<li><p><strong>Robust Testing</strong>: Rigorous simulation and real-world testing help anticipate failures.</p>
+<li><p>Robust Testing: Rigorous simulation and real-world testing help anticipate failures.</p>
 </li>
-<li><p><strong>Fail-Safes</strong>: Implementing emergency stop mechanisms or human override options is vital.</p>
+<li><p>Fail-Safes: Implementing emergency stop mechanisms or human override options is vital.</p>
 </li>
 </ul>
 <h2>Navigating Ethical Dilemmas</h2>
 <p>Addressing the ethical challenges of AI requires collaboration, continuous learning, and adaptable governance.</p>
 <h3>Developing Ethical Frameworks</h3>
 <ul>
-<li><p><strong>Cross-Sector Collaboration</strong>: Governments, industry leaders, academic experts, and civil society should co-create ethical frameworks reflecting shared values.</p>
+<li><p>Cross-Sector Collaboration: Governments, industry leaders, academic experts, and civil society should co-create ethical frameworks reflecting shared values.</p>
 </li>
-<li><p><strong>Global Standards</strong>: International cooperation through organizations such as IEEE, OECD, and the Partnership on AI can harmonize guidelines to prevent ethical fragmentation.</p>
+<li><p>Global Standards: International cooperation through organizations such as IEEE, OECD, and the Partnership on AI can harmonize guidelines to prevent ethical fragmentation.</p>
 </li>
-<li><p><strong>Industry-Specific Guidelines</strong>: Tailoring frameworks to sectors like healthcare, finance, and transportation ensures relevance and efficacy.</p>
+<li><p>Industry-Specific Guidelines: Tailoring frameworks to sectors like healthcare, finance, and transportation ensures relevance and efficacy.</p>
 </li>
 </ul>
 <h3>Implementing Ethical AI Practices</h3>
 <ul>
-<li><p><strong>Ethics by Design</strong>: Embed ethical considerations from the earliest stages of AI development, integrating fairness, transparency, and privacy into system architecture.</p>
+<li><p>Ethics by Design: Embed ethical considerations from the earliest stages of AI development, integrating fairness, transparency, and privacy into system architecture.</p>
 </li>
-<li><p><strong>Regular Audits and Impact Assessments</strong>: Continuously monitor AI systems for ethical risks, unintended consequences, and bias.</p>
+<li><p>Regular Audits and Impact Assessments: Continuously monitor AI systems for ethical risks, unintended consequences, and bias.</p>
 </li>
-<li><p><strong>Inclusive Development Teams</strong>: Diverse teams bring multiple perspectives that help identify potential blind spots and improve system fairness.</p>
+<li><p>Inclusive Development Teams: Diverse teams bring multiple perspectives that help identify potential blind spots and improve system fairness.</p>
 </li>
-<li><p><strong>Stakeholder Engagement</strong>: Incorporate feedback from users, affected communities, and advocacy groups to align AI with societal needs.</p>
+<li><p>Stakeholder Engagement: Incorporate feedback from users, affected communities, and advocacy groups to align AI with societal needs.</p>
 </li>
 </ul>
 <h3>Educating Stakeholders</h3>
 <ul>
-<li><p><strong>Developer Training</strong>: Ethical literacy should be part of AI education curricula and professional development programs.</p>
+<li><p>Developer Training: Ethical literacy should be part of AI education curricula and professional development programs.</p>
 </li>
-<li><p><strong>Public Awareness</strong>: Campaigns can empower users to understand AI&#39;s capabilities, risks, and their rights regarding data and automated decisions.</p>
+<li><p>Public Awareness: Campaigns can empower users to understand AI&#39;s capabilities, risks, and their rights regarding data and automated decisions.</p>
 </li>
-<li><p><strong>Policy Maker Education</strong>: Regulators must stay informed about AI advances to create effective, balanced policies.</p>
+<li><p>Policy Maker Education: Regulators must stay informed about AI advances to create effective, balanced policies.</p>
 </li>
 </ul>
 <h2>Case Studies: Ethical AI in Action</h2>
@@ -174,33 +174,33 @@ export default function BlogPost() {
 <h3>Healthcare</h3>
 <p>AI is revolutionizing diagnosis, treatment personalization, and resource allocation.</p>
 <ul>
-<li><p><strong>Ethical Considerations</strong>: Maintaining patient privacy and securing informed consent are non-negotiable.</p>
+<li><p>Ethical Considerations: Maintaining patient privacy and securing informed consent are non-negotiable.</p>
 </li>
-<li><p><strong>Transparency</strong>: Explaining AI-driven recommendations to patients and practitioners fosters trust.</p>
+<li><p>Transparency: Explaining AI-driven recommendations to patients and practitioners fosters trust.</p>
 </li>
-<li><p><strong>Equity</strong>: Ensuring AI tools serve diverse populations avoids exacerbating healthcare disparities.</p>
+<li><p>Equity: Ensuring AI tools serve diverse populations avoids exacerbating healthcare disparities.</p>
 </li>
 </ul>
 <p>For more on healthcare AI ethics, see <a href="https://www.who.int/publications/i/item/9789240029200">World Health Organization’s AI guidance</a>.</p>
 <h3>Autonomous Vehicles</h3>
 <p>Self-driving cars promise safer roads and increased mobility but raise thorny ethical questions.</p>
 <ul>
-<li><p><strong>Safety Priority</strong>: AI must prioritize minimizing harm to passengers, pedestrians, and other road users.</p>
+<li><p>Safety Priority: AI must prioritize minimizing harm to passengers, pedestrians, and other road users.</p>
 </li>
-<li><p><strong>Moral Decision-Making</strong>: How should vehicles act in unavoidable accident scenarios? Ethical frameworks must guide programming choices.</p>
+<li><p>Moral Decision-Making: How should vehicles act in unavoidable accident scenarios? Ethical frameworks must guide programming choices.</p>
 </li>
-<li><p><strong>Regulation and Liability</strong>: Clear policies on manufacturer and operator responsibilities are essential.</p>
+<li><p>Regulation and Liability: Clear policies on manufacturer and operator responsibilities are essential.</p>
 </li>
 </ul>
 <p>The <a href="https://www.sae.org/standards/content/j3016_202104/">Society of Automotive Engineers</a> provides widely accepted definitions and safety guidelines.</p>
 <h3>Financial Services</h3>
 <p>AI optimizes credit risk assessment, fraud detection, and customer service.</p>
 <ul>
-<li><p><strong>Fairness</strong>: Preventing discriminatory credit decisions requires ongoing bias mitigation.</p>
+<li><p>Fairness: Preventing discriminatory credit decisions requires ongoing bias mitigation.</p>
 </li>
-<li><p><strong>Transparency</strong>: Customers must understand how AI influences loan approvals and pricing.</p>
+<li><p>Transparency: Customers must understand how AI influences loan approvals and pricing.</p>
 </li>
-<li><p><strong>Privacy</strong>: Financial data must be rigorously protected.</p>
+<li><p>Privacy: Financial data must be rigorously protected.</p>
 </li>
 </ul>
 <p>Refer to the <a href="https://www.finra.org/rules-guidance/key-topics/ai-machine-learning">Financial Industry Regulatory Authority’s AI guidelines</a> for sector-specific standards.</p>

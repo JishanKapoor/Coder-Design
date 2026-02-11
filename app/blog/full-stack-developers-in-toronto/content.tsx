@@ -72,11 +72,11 @@ export default function BlogPost() {
 
 <h3>The Full-Stack Advantage</h3>
 <ul>
-<li><strong>Unified architecture:</strong> Frontend and backend designed together, eliminating integration friction</li>
-<li><strong>Faster iteration:</strong> Single team handles features end-to-end without handoff delays</li>
-<li><strong>Cost efficiency:</strong> Fewer specialized teams means lower coordination overhead</li>
-<li><strong>Better debugging:</strong> Developers who understand both sides resolve issues faster</li>
-<li><strong>Consistent quality:</strong> Shared standards across the entire codebase</li>
+<li>Unified architecture: Frontend and backend designed together, eliminating integration friction</li>
+<li>Faster iteration: Single team handles features end-to-end without handoff delays</li>
+<li>Cost efficiency: Fewer specialized teams means lower coordination overhead</li>
+<li>Better debugging: Developers who understand both sides resolve issues faster</li>
+<li>Consistent quality: Shared standards across the entire codebase</li>
 </ul>
 
 <h2>The Modern Full-Stack Technology Landscape</h2>
@@ -84,27 +84,27 @@ export default function BlogPost() {
 <h3>Frontend Technologies</h3>
 <p>Modern frontend development in Toronto is dominated by component-based frameworks that enable rapid, maintainable UI development:</p>
 <ul>
-<li><strong>React and Next.js:</strong> The industry standard for production-grade web applications with server-side rendering</li>
-<li><strong>TypeScript:</strong> Type safety that catches bugs before they reach production</li>
-<li><strong>Tailwind CSS:</strong> Utility-first styling for consistent, responsive design systems</li>
-<li><strong>Framer Motion:</strong> Production-ready animations that enhance user engagement</li>
+<li>React and Next.js: The industry standard for production-grade web applications with server-side rendering</li>
+<li>TypeScript: Type safety that catches bugs before they reach production</li>
+<li>Tailwind CSS: Utility-first styling for consistent, responsive design systems</li>
+<li>Framer Motion: Production-ready animations that enhance user engagement</li>
 </ul>
 
 <h3>Backend Technologies</h3>
 <p>Backend choices depend on scale, performance requirements, and team expertise:</p>
 <ul>
-<li><strong>Node.js:</strong> JavaScript everywhere, ideal for real-time applications and API-first architectures</li>
-<li><strong>Python and Django:</strong> Rapid development with built-in admin, ORM, and security best practices</li>
-<li><strong>PostgreSQL:</strong> Battle-tested relational database for complex data models</li>
-<li><strong>Redis:</strong> In-memory caching for sub-millisecond response times</li>
+<li>Node.js: JavaScript everywhere, ideal for real-time applications and API-first architectures</li>
+<li>Python and Django: Rapid development with built-in admin, ORM, and security best practices</li>
+<li>PostgreSQL: Battle-tested relational database for complex data models</li>
+<li>Redis: In-memory caching for sub-millisecond response times</li>
 </ul>
 
 <h3>Cloud and DevOps</h3>
 <ul>
-<li><strong>AWS and Google Cloud:</strong> Scalable infrastructure that grows with your business</li>
-<li><strong>Docker and Kubernetes:</strong> Containerized deployments for consistency across environments</li>
-<li><strong>CI/CD Pipelines:</strong> Automated testing and deployment for continuous delivery</li>
-<li><strong>Vercel and Netlify:</strong> Edge-deployed frontends for maximum performance</li>
+<li>AWS and Google Cloud: Scalable infrastructure that grows with your business</li>
+<li>Docker and Kubernetes: Containerized deployments for consistency across environments</li>
+<li>CI/CD Pipelines: Automated testing and deployment for continuous delivery</li>
+<li>Vercel and Netlify: Edge-deployed frontends for maximum performance</li>
 </ul>
 
 <h2>How CoderDesign Delivers End-to-End Solutions</h2>
@@ -124,11 +124,11 @@ export default function BlogPost() {
 
 <h2>Industries We Serve in Toronto</h2>
 <ul>
-<li><strong>FinTech:</strong> Secure, compliant platforms for payments, lending, and investment management</li>
-<li><strong>Healthcare:</strong> HIPAA-compliant applications for patient management and telehealth</li>
-<li><strong>E-commerce:</strong> High-performance storefronts with real-time inventory and personalized recommendations</li>
-<li><strong>SaaS:</strong> Multi-tenant platforms with subscription billing, analytics, and API access</li>
-<li><strong>Media and Publishing:</strong> Content management systems with SEO optimization and audience analytics</li>
+<li>FinTech: Secure, compliant platforms for payments, lending, and investment management</li>
+<li>Healthcare: HIPAA-compliant applications for patient management and telehealth</li>
+<li>E-commerce: High-performance storefronts with real-time inventory and personalized recommendations</li>
+<li>SaaS: Multi-tenant platforms with subscription billing, analytics, and API access</li>
+<li>Media and Publishing: Content management systems with SEO optimization and audience analytics</li>
 </ul>
 
 <blockquote><p>The best full-stack teams do not just build features. They build systems that scale, adapt, and deliver value for years to come.</p></blockquote>

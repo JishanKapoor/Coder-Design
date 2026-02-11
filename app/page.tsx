@@ -2,7 +2,7 @@ import HomeContent from "./homepage-content";
 
 const homepageStructuredData = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
+  "@type": ["SoftwareHouse", "ProfessionalService", "LocalBusiness"],
   "@id": "https://coderdesign.com/#business",
   "name": "CoderDesign",
   "alternateName": ["Coder Design", "CoderDesign Toronto"],
@@ -44,7 +44,22 @@ const homepageStructuredData = {
   },
   "telephone": "+14372392448",
   "email": "hello@coderdesign.com",
+  "priceRange": "$$$",
   "openingHours": "Mo-Fr 09:00-18:00",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  ],
   "knowsAbout": [
     "Software Development", "Custom Web Application Development", "Mobile App Development",
     "React", "Next.js", "Node.js", "Python", "Django", "TypeScript",

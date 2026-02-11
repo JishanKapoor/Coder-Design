@@ -69,10 +69,10 @@ export default function BlogPost() {
 <h2>Why Toronto Leads in AI</h2>
 <p>Several factors make Toronto a top destination for AI companies:</p>
 <ul>
-<li><strong>Industry concentration:</strong> More Fortune 500 headquarters than any other city</li>
-<li><strong>Research institutions:</strong> World-class universities driving AI research</li>
-<li><strong>Funding ecosystem:</strong> Billions in VC funding flowing to AI startups</li>
-<li><strong>Diverse talent:</strong> Engineers, data scientists, and domain experts from every industry</li>
+<li>Industry concentration: More Fortune 500 headquarters than any other city</li>
+<li>Research institutions: World-class universities driving AI research</li>
+<li>Funding ecosystem: Billions in VC funding flowing to AI startups</li>
+<li>Diverse talent: Engineers, data scientists, and domain experts from every industry</li>
 </ul>
 
 <h2>Key AI Sectors in Toronto</h2>
@@ -91,11 +91,11 @@ export default function BlogPost() {
 
 <h2>What to Look for in an AI Partner</h2>
 <ul>
-<li><strong>Proven track record:</strong> Real case studies and measurable results</li>
-<li><strong>Domain expertise:</strong> Understanding of your specific industry challenges</li>
-<li><strong>Ethical AI practices:</strong> Commitment to responsible AI development</li>
-<li><strong>Scalable solutions:</strong> Architecture that grows with your needs</li>
-<li><strong>Transparent communication:</strong> Clear explanations of AI capabilities and limitations</li>
+<li>Proven track record: Real case studies and measurable results</li>
+<li>Domain expertise: Understanding of your specific industry challenges</li>
+<li>Ethical AI practices: Commitment to responsible AI development</li>
+<li>Scalable solutions: Architecture that grows with your needs</li>
+<li>Transparent communication: Clear explanations of AI capabilities and limitations</li>
 </ul>
 
 <h2>The Future of AI in Toronto</h2>

@@ -71,10 +71,10 @@ export default function BlogPost() {
 
 <h3>How SGE Changes Local Results</h3>
 <ul>
-<li><strong>AI-generated local recommendations:</strong> Google now summarizes and recommends businesses based on AI analysis</li>
-<li><strong>Review sentiment analysis:</strong> AI evaluates the quality and sentiment of your reviews, not just quantity</li>
-<li><strong>Content matching:</strong> Your business description and posts are analyzed for relevance to search queries</li>
-<li><strong>Visual content weight:</strong> Photos and videos carry more importance in AI-driven results</li>
+<li>AI-generated local recommendations: Google now summarizes and recommends businesses based on AI analysis</li>
+<li>Review sentiment analysis: AI evaluates the quality and sentiment of your reviews, not just quantity</li>
+<li>Content matching: Your business description and posts are analyzed for relevance to search queries</li>
+<li>Visual content weight: Photos and videos carry more importance in AI-driven results</li>
 </ul>
 
 <h2>Optimizing Your Google Business Profile for SGE</h2>
@@ -93,10 +93,10 @@ export default function BlogPost() {
 
 <h2>Measuring SGE Impact</h2>
 <ul>
-<li><strong>Track impressions</strong> in Google Business Profile insights</li>
-<li><strong>Monitor click-through rates</strong> from search results</li>
-<li><strong>Analyze review trends</strong> and sentiment over time</li>
-<li><strong>Compare visibility</strong> before and after optimization efforts</li>
+<li>Track impressions in Google Business Profile insights</li>
+<li>Monitor click-through rates from search results</li>
+<li>Analyze review trends and sentiment over time</li>
+<li>Compare visibility before and after optimization efforts</li>
 </ul>
 
 <h2>Adapting Your Business Profile for AI Search</h2>

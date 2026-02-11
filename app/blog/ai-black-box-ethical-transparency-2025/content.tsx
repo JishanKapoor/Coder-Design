@@ -111,18 +111,18 @@ export default function BlogPost() {
 <p>Imagine a healthcare app. A Black Box model says, &quot;Patient is high risk.&quot; The doctor hesitates. A Glass Box model says, &quot;Patient is high risk because of rising blood pressure trends and family history.&quot; The doctor acts.</p>
 <p>This is the difference between a toy and a tool. In sectors like finance, healthcare, and recruiting, explainability is the difference between adoption and rejection.</p>
 <h2>Frequently Asked Questions (FAQ)</h2>
-<p><strong>What is the difference between Black Box and Glass Box AI?</strong></p>
+<p>What is the difference between Black Box and Glass Box AI?</p>
 <p>Black Box AI gives an answer without an explanation. Glass Box AI (or White Box AI) is designed to be interpretable, allowing humans to trace the logic steps behind a decision.</p>
-<p><strong>Does making AI transparent reduce its accuracy?</strong></p>
+<p>Does making AI transparent reduce its accuracy?</p>
 <p>Historically, there was a trade-off. However, modern techniques like XAI allow us to use complex models while still extracting interpretable explanations. You no longer have to choose between smart AI and safe AI.</p>
-<p><strong>Why is Toronto significant for AI regulation?</strong></p>
+<p>Why is Toronto significant for AI regulation?</p>
 <p>Toronto is at the forefront of responsible AI adoption in Canada. With the federal Artificial Intelligence and Data Act (AIDA) and Ontario&#39;s focus on algorithmic accountability, compliance here sets a gold standard for the rest of the country.</p>
-<p><strong>How does Coder Design ensure AI ethics?</strong></p>
+<p>How does Coder Design ensure AI ethics?</p>
 <p>We integrate ethics into the code, not as an afterthought. From data sanitization to XAI integration and post-deployment monitoring, we build systems that protect your brand reputation.</p>
 <h2>The Future is Clear</h2>
 <p>The &quot;magic&quot; of AI is fading; the utility of AI is just beginning. In 2025, the most successful companies will not be the ones with the most secretive algorithms, but the ones with the most trustworthy ones.</p>
-<p>Don&#39;t let your business rely on a system you can&#39;t explain. Visit us at <strong>100 King Street West, Toronto</strong>, or contact us to build AI that is transparent, accountable, and profitable.</p>
-<p><strong><a href="https://www.coderdesign.com/contact">Contact Coder Design Today</a></strong></p>` }} />
+<p>Don&#39;t let your business rely on a system you can&#39;t explain. Visit us at 100 King Street West, Toronto, or contact us to build AI that is transparent, accountable, and profitable.</p>
+<p><a href="https://www.coderdesign.com/contact">Contact Coder Design Today</a></p>` }} />
         </div>
       </article>
       <section className="bg-violet-600 py-16 text-center text-white">

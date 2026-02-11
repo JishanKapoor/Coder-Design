@@ -84,24 +84,24 @@ export default function BlogPost() {
 <p>The term "AI agency" covers a wide spectrum. Before you start evaluating, you need to understand what kind of work you need done, because the right agency depends entirely on your specific situation.</p>
 
 <h3>Type 1: Workflow Automation Specialists</h3>
-<p>These agencies focus on connecting your existing business tools and adding AI layers to eliminate manual tasks. They work primarily with platforms like <strong>Zapier</strong>, <strong>Make</strong>, <strong>n8n</strong>, and <strong>Power Automate</strong>, combined with AI APIs from <strong>OpenAI</strong>, <strong>Anthropic</strong>, or <strong>Google</strong>. Their strength is understanding business processes, mapping out inefficiencies, and building reliable automations that save you time. (For a detailed look at what this kind of work involves, see our guide on <a href="/blog/ai-workflow-automation-toronto-small-business">AI workflow automation for Toronto small businesses</a>.)</p>
+<p>These agencies focus on connecting your existing business tools and adding AI layers to eliminate manual tasks. They work primarily with platforms like Zapier, Make, n8n, and Power Automate, combined with AI APIs from OpenAI, Anthropic, or Google. Their strength is understanding business processes, mapping out inefficiencies, and building reliable automations that save you time. (For a detailed look at what this kind of work involves, see our guide on <a href="/blog/ai-workflow-automation-toronto-small-business">AI workflow automation for Toronto small businesses</a>.)</p>
 
-<p><strong>Best for:</strong> Service businesses, professional firms, trades, clinics, and SMBs that want to automate lead management, customer support, invoicing, scheduling, and internal operations.</p>
+<p>Best for: Service businesses, professional firms, trades, clinics, and SMBs that want to automate lead management, customer support, invoicing, scheduling, and internal operations.</p>
 
 <h3>Type 2: Custom AI / Machine Learning Development</h3>
-<p>These are engineering-heavy firms that build custom AI models, fine-tune large language models, develop recommendation engines, or create industry-specific AI applications. They employ data scientists, ML engineers, and typically work with tools like <strong>Python</strong>, <strong>TensorFlow</strong>, <strong>PyTorch</strong>, <strong>Hugging Face</strong>, and cloud ML platforms like <strong>AWS SageMaker</strong>, <strong>Google Vertex AI</strong>, or <strong>Azure ML</strong>.</p>
+<p>These are engineering-heavy firms that build custom AI models, fine-tune large language models, develop recommendation engines, or create industry-specific AI applications. They employ data scientists, ML engineers, and typically work with tools like Python, TensorFlow, PyTorch, Hugging Face, and cloud ML platforms like AWS SageMaker, Google Vertex AI, or Azure ML.</p>
 
-<p><strong>Best for:</strong> Companies with large datasets that need predictive analytics, custom natural language processing, computer vision, or AI products that go beyond what off-the-shelf APIs provide. Typically mid-size to enterprise businesses.</p>
+<p>Best for: Companies with large datasets that need predictive analytics, custom natural language processing, computer vision, or AI products that go beyond what off-the-shelf APIs provide. Typically mid-size to enterprise businesses.</p>
 
 <h3>Type 3: Full-Stack Digital + AI Agencies</h3>
 <p>These agencies combine traditional web and mobile development with AI capabilities. They can build your website, develop your app, implement your CRM, and integrate AI automation — all within one team. The advantage is a single point of accountability and tighter integration between your digital presence and your AI-powered operations.</p>
 
-<p><strong>Best for:</strong> Businesses that need both a modern digital presence (website, web app, mobile app) and operational AI automation, and prefer to work with one agency rather than coordinating between multiple vendors.</p>
+<p>Best for: Businesses that need both a modern digital presence (website, web app, mobile app) and operational AI automation, and prefer to work with one agency rather than coordinating between multiple vendors.</p>
 
 <h3>Type 4: Chatbot / Conversational AI Specialists</h3>
-<p>Agencies that focus specifically on building AI chatbots, virtual assistants, and voice agents. They work with platforms like <strong>Voiceflow</strong>, <strong>Botpress</strong>, <strong>Rasa</strong>, <strong>Intercom Fin</strong>, <strong>Tidio</strong>, or build custom conversational agents using LLM APIs. Some specialize further in AI voice agents using <strong>Vapi</strong>, <strong>Synthflow</strong>, or <strong>Bland AI</strong>.</p>
+<p>Agencies that focus specifically on building AI chatbots, virtual assistants, and voice agents. They work with platforms like Voiceflow, Botpress, Rasa, Intercom Fin, Tidio, or build custom conversational agents using LLM APIs. Some specialize further in AI voice agents using Vapi, Synthflow, or Bland AI.</p>
 
-<p><strong>Best for:</strong> Businesses where customer interaction is the primary use case — e-commerce, SaaS support, healthcare appointment booking, real estate lead qualification, or any business that handles high volumes of repetitive customer questions.</p>
+<p>Best for: Businesses where customer interaction is the primary use case — e-commerce, SaaS support, healthcare appointment booking, real estate lead qualification, or any business that handles high volumes of repetitive customer questions.</p>
 
 <hr>
 
@@ -120,7 +120,7 @@ export default function BlogPost() {
 <li>Case studies that are suspiciously vague about the client, the industry, or the actual numbers. Good agencies have clients willing to be referenced.</li>
 </ul>
 
-<p><strong>What to ask:</strong> "Can I speak with two or three of your past clients in a similar industry or with a similar use case to mine?"</p>
+<p>What to ask: "Can I speak with two or three of your past clients in a similar industry or with a similar use case to mine?"</p>
 
 <h3>2. Do They Start with Discovery, Not a Sales Pitch?</h3>
 
@@ -128,7 +128,7 @@ export default function BlogPost() {
 
 <p>A bad sign is an agency that comes into the first meeting with a pre-built proposal or a packaged solution before they understand your specific situation. If their "discovery" is just a 15-minute call before sending a templated quote, they are selling packages, not solving your problem.</p>
 
-<p><strong>What good discovery looks like:</strong></p>
+<p>What good discovery looks like:</p>
 <ul>
 <li>They ask about your current tools and tech stack (CRM, email, accounting, project management)</li>
 <li>They want to understand your customer journey from first touch to completed sale</li>
@@ -152,9 +152,9 @@ export default function BlogPost() {
 
 <p>The best agencies structure engagements in phases:</p>
 <ol>
-<li><strong>Phase 1: Pilot.</strong> One well-defined workflow, measurable goals, short timeline. This proves the value and builds trust on both sides.</li>
-<li><strong>Phase 2: Expand.</strong> Based on pilot results, add more workflows, deeper integrations, more AI capabilities.</li>
-<li><strong>Phase 3: Optimize.</strong> Refine, add analytics, improve AI accuracy based on real-world data from Phases 1 and 2.</li>
+<li>Phase 1: Pilot. One well-defined workflow, measurable goals, short timeline. This proves the value and builds trust on both sides.</li>
+<li>Phase 2: Expand. Based on pilot results, add more workflows, deeper integrations, more AI capabilities.</li>
+<li>Phase 3: Optimize. Refine, add analytics, improve AI accuracy based on real-world data from Phases 1 and 2.</li>
 </ol>
 
 <p>This approach protects you because you can evaluate at each stage and decide whether to continue. It also shows confidence — an agency that is good at what they do is happy to prove it with a pilot because they know the results will sell the next phase.</p>
@@ -163,7 +163,7 @@ export default function BlogPost() {
 
 <p>This matters more than most people realize. In agency world, it is common for the senior team to handle the sales pitch, and then hand the project off to junior developers or offshore subcontractors. There is nothing inherently wrong with distributed teams, but you need to know who is building your system.</p>
 
-<p><strong>Ask specifically:</strong></p>
+<p>Ask specifically:</p>
 <ul>
 <li>"Who on your team will be working on my project, and what is their background?"</li>
 <li>"Will the people I am meeting today be involved in the actual implementation?"</li>
@@ -176,7 +176,7 @@ export default function BlogPost() {
 
 <p>AI automations are not "set and forget" — at least not in the first few months. AI models need monitoring: prompts need refinement as edge cases surface, workflows need adjustment as your business evolves, and integrations can break when third-party tools update their APIs.</p>
 
-<p><strong>Ask about post-launch support:</strong></p>
+<p>Ask about post-launch support:</p>
 <ul>
 <li>"What is included in post-launch support, and for how long?"</li>
 <li>"How do you handle issues — is there a response time SLA?"</li>
@@ -213,12 +213,12 @@ export default function BlogPost() {
 <p>In evaluating dozens of agency engagements, these are the patterns that consistently predict a bad outcome:</p>
 
 <ul>
-<li><strong>"We guarantee X% ROI."</strong> No honest agency can guarantee specific returns before understanding your business, your data, and your market. They can show you what they have achieved for similar businesses and help you model expected returns, but guarantees are a sales tactic, not a promise they can keep.</li>
-<li><strong>"Our proprietary AI platform."</strong> Unless the agency is actually a product company with a genuinely unique technology (and you can verify this), "proprietary platform" usually means "we wrapped standard APIs in a custom interface to create lock-in." Ask what the underlying technology is. If it is OpenAI + Zapier underneath, that is fine — but call it what it is.</li>
-<li><strong>Impressive demo, no production references.</strong> Building a demo that looks amazing takes a few hours. Building a system that works reliably in production with real data and real customers is a completely different skill. Always ask to see — or talk to someone who uses — a live production system they built.</li>
-<li><strong>One-size-fits-all packages.</strong> "Our Standard AI Package includes chatbot + email automation + CRM integration for one flat fee." Your business is not standard. Your workflows are not the same as every other business. If they are selling packages instead of solutions, they are not solving your problem — they are selling their product.</li>
-<li><strong>No technical depth in conversations.</strong> If every answer to a technical question is "Our team handles that" without explaining what "that" involves, the person you are speaking with does not understand the technology. That might be okay if they connect you with the technical team, but if you never get to speak with someone who can answer detailed technical questions, that is a problem.</li>
-<li><strong>Pressure to sign quickly.</strong> "This offer is only available this week" or "We only have one spot left this quarter." Legitimate agencies do not pressure you. They know a good fit leads to a good project, and a rushed engagement leads to a bad one.</li>
+<li>"We guarantee X% ROI." No honest agency can guarantee specific returns before understanding your business, your data, and your market. They can show you what they have achieved for similar businesses and help you model expected returns, but guarantees are a sales tactic, not a promise they can keep.</li>
+<li>"Our proprietary AI platform." Unless the agency is actually a product company with a genuinely unique technology (and you can verify this), "proprietary platform" usually means "we wrapped standard APIs in a custom interface to create lock-in." Ask what the underlying technology is. If it is OpenAI + Zapier underneath, that is fine — but call it what it is.</li>
+<li>Impressive demo, no production references. Building a demo that looks amazing takes a few hours. Building a system that works reliably in production with real data and real customers is a completely different skill. Always ask to see — or talk to someone who uses — a live production system they built.</li>
+<li>One-size-fits-all packages. "Our Standard AI Package includes chatbot + email automation + CRM integration for one flat fee." Your business is not standard. Your workflows are not the same as every other business. If they are selling packages instead of solutions, they are not solving your problem — they are selling their product.</li>
+<li>No technical depth in conversations. If every answer to a technical question is "Our team handles that" without explaining what "that" involves, the person you are speaking with does not understand the technology. That might be okay if they connect you with the technical team, but if you never get to speak with someone who can answer detailed technical questions, that is a problem.</li>
+<li>Pressure to sign quickly. "This offer is only available this week" or "We only have one spot left this quarter." Legitimate agencies do not pressure you. They know a good fit leads to a good project, and a rushed engagement leads to a bad one.</li>
 </ul>
 
 <hr>
@@ -243,16 +243,16 @@ export default function BlogPost() {
 
 <h2>The Toronto AI Agency Landscape: What to Know</h2>
 
-<p>Toronto has a genuinely strong AI ecosystem — the city has been a global hub for AI research since Geoffrey Hinton's work at the University of Toronto, and that academic strength has produced a deep talent pool. The <strong>Vector Institute</strong>, <strong>MaRS Discovery District</strong>, and the <strong>Creative Destruction Lab</strong> at Rotman have all contributed to a startup and agency landscape that is more technically grounded than many other cities.</p>
+<p>Toronto has a genuinely strong AI ecosystem — the city has been a global hub for AI research since Geoffrey Hinton's work at the University of Toronto, and that academic strength has produced a deep talent pool. The Vector Institute, MaRS Discovery District, and the Creative Destruction Lab at Rotman have all contributed to a startup and agency landscape that is more technically grounded than many other cities.</p>
 
 <p>That said, the rapid growth of AI interest has also attracted a flood of agencies that rebranded from "digital marketing" or "web development" to "AI automation" without genuinely building new capabilities. The evaluation framework above will help you distinguish between the two.</p>
 
 <p>A few characteristics specific to evaluating Toronto agencies:</p>
 
 <ul>
-<li><strong>Canadian data residency.</strong> If your business handles sensitive customer data (health, financial, legal), ask whether the agency can deploy automations with data staying in Canada. Major cloud providers (AWS, Azure, Google Cloud) all have Canadian regions, and tools like n8n can be self-hosted on Canadian servers. This matters for PIPEDA compliance and may matter for provincial regulations like Ontario's PHIPA (health data). Agencies that also handle your <a href="/blog/ai-seo-aeo-toronto-guide">SEO and AEO strategy</a> should understand how data residency affects your search visibility too.</li>
-<li><strong>Bilingual capability.</strong> Toronto's population is remarkably multilingual. If your customers communicate in multiple languages, the agency should be able to implement AI that handles this — most modern LLMs (GPT-4o, Claude, Gemini) handle French, Mandarin, Cantonese, Hindi, Urdu, Tamil, Tagalog, Portuguese, and many other languages well. But the prompts, training data, and testing need to account for this.</li>
-<li><strong>Local vs. remote.</strong> Toronto agencies are not inherently better than remote agencies. The advantage of local is easier face-to-face meetings and shared context about the Toronto market. But if a remote agency has deeper expertise in your specific use case, location should not be the deciding factor.</li>
+<li>Canadian data residency. If your business handles sensitive customer data (health, financial, legal), ask whether the agency can deploy automations with data staying in Canada. Major cloud providers (AWS, Azure, Google Cloud) all have Canadian regions, and tools like n8n can be self-hosted on Canadian servers. This matters for PIPEDA compliance and may matter for provincial regulations like Ontario's PHIPA (health data). Agencies that also handle your <a href="/blog/ai-seo-aeo-toronto-guide">SEO and AEO strategy</a> should understand how data residency affects your search visibility too.</li>
+<li>Bilingual capability. Toronto's population is remarkably multilingual. If your customers communicate in multiple languages, the agency should be able to implement AI that handles this — most modern LLMs (GPT-4o, Claude, Gemini) handle French, Mandarin, Cantonese, Hindi, Urdu, Tamil, Tagalog, Portuguese, and many other languages well. But the prompts, training data, and testing need to account for this.</li>
+<li>Local vs. remote. Toronto agencies are not inherently better than remote agencies. The advantage of local is easier face-to-face meetings and shared context about the Toronto market. But if a remote agency has deeper expertise in your specific use case, location should not be the deciding factor.</li>
 </ul>
 
 <hr>

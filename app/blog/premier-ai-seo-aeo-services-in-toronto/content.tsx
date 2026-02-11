@@ -71,12 +71,12 @@ export default function BlogPost() {
 
 <h3>Core Services</h3>
 <ul>
-<li><strong>AI Search Audit:</strong> Comprehensive analysis of how your brand appears in AI-generated results</li>
-<li><strong>Technical SEO:</strong> Site architecture, Core Web Vitals, structured data, and crawlability</li>
-<li><strong>Content Strategy:</strong> AI-optimized content that ranks in traditional and AI search</li>
-<li><strong>Local SEO:</strong> Google Business Profile optimization for AI-powered local discovery</li>
-<li><strong>AEO Implementation:</strong> Structured content that AI systems cite and recommend</li>
-<li><strong>Performance Tracking:</strong> Advanced analytics across traditional and AI search channels</li>
+<li>AI Search Audit: Comprehensive analysis of how your brand appears in AI-generated results</li>
+<li>Technical SEO: Site architecture, Core Web Vitals, structured data, and crawlability</li>
+<li>Content Strategy: AI-optimized content that ranks in traditional and AI search</li>
+<li>Local SEO: Google Business Profile optimization for AI-powered local discovery</li>
+<li>AEO Implementation: Structured content that AI systems cite and recommend</li>
+<li>Performance Tracking: Advanced analytics across traditional and AI search channels</li>
 </ul>
 
 <h2>Why Toronto Businesses Need AI SEO</h2>
@@ -90,12 +90,12 @@ export default function BlogPost() {
 
 <h2>The AI SEO Process</h2>
 <ol>
-<li><strong>Discovery:</strong> Understand your business, goals, and competitive landscape</li>
-<li><strong>Audit:</strong> Comprehensive technical and content analysis</li>
-<li><strong>Strategy:</strong> Custom AI-optimized SEO plan with clear milestones</li>
-<li><strong>Implementation:</strong> Execute technical fixes, content creation, and optimization</li>
-<li><strong>Monitoring:</strong> Track performance across all search channels</li>
-<li><strong>Optimization:</strong> Continuous improvement based on data and AI search trends</li>
+<li>Discovery: Understand your business, goals, and competitive landscape</li>
+<li>Audit: Comprehensive technical and content analysis</li>
+<li>Strategy: Custom AI-optimized SEO plan with clear milestones</li>
+<li>Implementation: Execute technical fixes, content creation, and optimization</li>
+<li>Monitoring: Track performance across all search channels</li>
+<li>Optimization: Continuous improvement based on data and AI search trends</li>
 </ol>
 
 <h2>Measuring ROI</h2>

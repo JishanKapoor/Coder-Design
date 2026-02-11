@@ -71,11 +71,11 @@ export default function BlogPost() {
 
 <h3>Common AI Applications for Startups</h3>
 <ul>
-<li><strong>Customer service automation:</strong> AI chatbots and support systems that scale without adding headcount</li>
-<li><strong>Predictive analytics:</strong> Forecasting demand, churn, and market trends</li>
-<li><strong>Personalization engines:</strong> Tailoring user experiences based on behavior and preferences</li>
-<li><strong>Process automation:</strong> Streamlining repetitive tasks in operations, finance, and HR</li>
-<li><strong>Natural language processing:</strong> Content generation, sentiment analysis, and document processing</li>
+<li>Customer service automation: AI chatbots and support systems that scale without adding headcount</li>
+<li>Predictive analytics: Forecasting demand, churn, and market trends</li>
+<li>Personalization engines: Tailoring user experiences based on behavior and preferences</li>
+<li>Process automation: Streamlining repetitive tasks in operations, finance, and HR</li>
+<li>Natural language processing: Content generation, sentiment analysis, and document processing</li>
 </ul>
 
 <h2>Step-by-Step Implementation Guide</h2>
@@ -95,10 +95,10 @@ export default function BlogPost() {
 <h3>3. Choose Build vs. Buy</h3>
 <p>Most startups should start with existing AI tools and APIs rather than building custom models:</p>
 <ul>
-<li><strong>OpenAI API:</strong> For text generation, analysis, and conversational AI</li>
-<li><strong>Google Cloud AI:</strong> For vision, speech, and translation</li>
-<li><strong>AWS SageMaker:</strong> For custom ML model training and deployment</li>
-<li><strong>Pre-built solutions:</strong> Tools like Jasper, Intercom AI, or Salesforce Einstein</li>
+<li>OpenAI API: For text generation, analysis, and conversational AI</li>
+<li>Google Cloud AI: For vision, speech, and translation</li>
+<li>AWS SageMaker: For custom ML model training and deployment</li>
+<li>Pre-built solutions: Tools like Jasper, Intercom AI, or Salesforce Einstein</li>
 </ul>
 
 <h3>4. Start Small and Iterate</h3>
@@ -110,9 +110,9 @@ export default function BlogPost() {
 <h2>Budget Considerations</h2>
 <p>Toronto startups can implement AI solutions at various budget levels:</p>
 <ul>
-<li><strong>$0-1K/month:</strong> API-based solutions (ChatGPT, Claude, basic automation tools)</li>
-<li><strong>$1-5K/month:</strong> Integrated AI tools with custom workflows</li>
-<li><strong>$5-20K/month:</strong> Custom AI development and dedicated ML infrastructure</li>
+<li>$0-1K/month: API-based solutions (ChatGPT, Claude, basic automation tools)</li>
+<li>$1-5K/month: Integrated AI tools with custom workflows</li>
+<li>$5-20K/month: Custom AI development and dedicated ML infrastructure</li>
 </ul>
 
 <h2>Your Toronto AI Implementation Checklist</h2>

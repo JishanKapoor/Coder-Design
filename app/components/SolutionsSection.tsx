@@ -119,17 +119,14 @@ export function SolutionsSection() {
                   ))}
                 </div>
 
-                <div className="mt-auto">
-                  <Button
-                    variant="ghost"
-                    className="group/btn gap-2 p-0 text-violet-600 hover:bg-transparent hover:text-violet-700 transition-colors duration-200"
-                    asChild
+                <div className="mt-auto min-w-0">
+                  <Link
+                    href={solution.href}
+                    className="group/btn inline-flex w-full items-center gap-1.5 text-sm font-medium text-violet-600 hover:text-violet-700 transition-colors duration-200"
                   >
-                    <Link href={solution.href}>
-                      {solution.linkText}
-                      <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover/btn:translate-x-1" />
-                    </Link>
-                  </Button>
+                    <span className="min-w-0 break-words leading-snug">{solution.linkText}</span>
+                    <ArrowRight className="h-4 w-4 flex-shrink-0 transition-transform duration-200 group-hover/btn:translate-x-1" />
+                  </Link>
                 </div>
               </div>
             );

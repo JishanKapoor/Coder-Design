@@ -71,9 +71,9 @@ export default function BlogPost() {
 
 <h3>Key Differences</h3>
 <ul>
-<li><strong>SEO:</strong> Optimize for blue link rankings → drive clicks to your site</li>
-<li><strong>AEO:</strong> Optimize for AI citation → become the source AI recommends</li>
-<li><strong>Combined approach:</strong> Optimize for both to maximize visibility across all search interfaces</li>
+<li>SEO: Optimize for blue link rankings → drive clicks to your site</li>
+<li>AEO: Optimize for AI citation → become the source AI recommends</li>
+<li>Combined approach: Optimize for both to maximize visibility across all search interfaces</li>
 </ul>
 
 <h2>AI-Driven SEO Strategies for 2025</h2>
@@ -90,11 +90,11 @@ export default function BlogPost() {
 <h3>Structured Data Implementation</h3>
 <p>Schema markup is the bridge between your content and AI understanding:</p>
 <ul>
-<li><strong>Article/BlogPosting:</strong> For all blog and news content</li>
-<li><strong>FAQ:</strong> For question-and-answer content</li>
-<li><strong>HowTo:</strong> For instructional content</li>
-<li><strong>Organization/LocalBusiness:</strong> For business information</li>
-<li><strong>Product/Service:</strong> For offerings</li>
+<li>Article/BlogPosting: For all blog and news content</li>
+<li>FAQ: For question-and-answer content</li>
+<li>HowTo: For instructional content</li>
+<li>Organization/LocalBusiness: For business information</li>
+<li>Product/Service: For offerings</li>
 </ul>
 
 <h3>E-E-A-T Optimization</h3>
@@ -108,10 +108,10 @@ export default function BlogPost() {
 
 <h2>AEO-Specific Tactics</h2>
 <ul>
-<li><strong>Direct answer format:</strong> Structure content to directly answer common questions</li>
-<li><strong>Authoritative sourcing:</strong> Cite credible sources and provide original data</li>
-<li><strong>Conversational content:</strong> Write in a way that AI can easily extract and paraphrase</li>
-<li><strong>Multi-format content:</strong> Combine text, images, videos, and data for comprehensive coverage</li>
+<li>Direct answer format: Structure content to directly answer common questions</li>
+<li>Authoritative sourcing: Cite credible sources and provide original data</li>
+<li>Conversational content: Write in a way that AI can easily extract and paraphrase</li>
+<li>Multi-format content: Combine text, images, videos, and data for comprehensive coverage</li>
 </ul>
 
 <h2>Measuring Success</h2>
