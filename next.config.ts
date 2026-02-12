@@ -6,9 +6,12 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
 
-  // Image optimization (Vercel supports this natively)
+  // Image optimization (Vercel handles this natively)
   images: {
-    unoptimized: true,
+    formats: ['image/avif', 'image/webp'],
+    deviceSizes: [640, 828, 1080, 1200, 1920],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256],
+    minimumCacheTTL: 31536000,
   },
 
   // Trailing slash for consistent URLs

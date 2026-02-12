@@ -20,19 +20,19 @@ export default function HomePage() {
         >
           <h1 style={{ fontSize: "1.5rem", margin: 0, color: "#0f172a" }}>CoderDesign</h1>
           <nav>
-            <Link href="/full-stack-engineering" style={{ margin: "0 0.5rem", color: "#64748b" }}>
+            <Link href="/full-stack-engineering" style={{ margin: "0 0.5rem", color: "#64748b" }} title="Full-Stack Development Services">
               Full-Stack Development
             </Link>
-            <Link href="/mobile-app-development" style={{ margin: "0 0.5rem", color: "#64748b" }}>
+            <Link href="/mobile-app-development" style={{ margin: "0 0.5rem", color: "#64748b" }} title="Mobile App Development Services">
               Mobile Apps
             </Link>
-            <Link href="/ai-workflow" style={{ margin: "0 0.5rem", color: "#64748b" }}>
+            <Link href="/ai-workflow" style={{ margin: "0 0.5rem", color: "#64748b" }} title="AI and Machine Learning Services">
               AI & ML
             </Link>
-            <Link href="/seo-management" style={{ margin: "0 0.5rem", color: "#64748b" }}>
+            <Link href="/seo-management" style={{ margin: "0 0.5rem", color: "#64748b" }} title="SEO Management Services">
               SEO
             </Link>
-            <Link href="/contact" style={{ margin: "0 0.5rem", color: "#7c3aed" }}>
+            <Link href="/contact" style={{ margin: "0 0.5rem", color: "#7c3aed" }} title="Contact CoderDesign">
               Contact
             </Link>
           </nav>
@@ -76,6 +76,7 @@ export default function HomePage() {
               borderRadius: "0.5rem",
               fontWeight: 500,
             }}
+            title="Get started with CoderDesign"
           >
             Get Started
           </Link>
@@ -137,11 +138,11 @@ export default function HomePage() {
             7 Grosvenor Street, Toronto, ON M4Y 0E2
           </p>
           <p style={{ fontSize: "1.125rem", color: "#64748b", marginBottom: "1rem" }}>
-            <a href="tel:+14372392448" style={{ color: "#7c3aed", textDecoration: "none" }}>
+            <a href="tel:+14372392448" style={{ color: "#7c3aed", textDecoration: "none" }} title="Call CoderDesign at (437) 239-2448">
               (437) 239-2448
             </a>{" "}
             |{" "}
-            <a href="mailto:hello@coderdesign.com" style={{ color: "#7c3aed", textDecoration: "none" }}>
+            <a href="mailto:hello@coderdesign.com" style={{ color: "#7c3aed", textDecoration: "none" }} title="Email CoderDesign">
               hello@coderdesign.com
             </a>
           </p>

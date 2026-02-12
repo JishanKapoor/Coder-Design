@@ -98,6 +98,7 @@ export default function Contact() {
                     <a 
                       href="tel:+14372392448"
                       className="text-slate-600 transition-colors hover:text-violet-600"
+                      title="Call CoderDesign at (437) 239-2448"
                     >
                       (437) 239-2448
                     </a>
@@ -113,6 +114,7 @@ export default function Contact() {
                     <a 
                       href="mailto:hello@coderdesign.com"
                       className="text-slate-600 transition-colors hover:text-violet-600"
+                      title="Email CoderDesign"
                     >
                       hello@coderdesign.com
                     </a>
@@ -130,6 +132,7 @@ export default function Contact() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-slate-600 transition-colors hover:text-violet-600"
+                      title="View CoderDesign office on Google Maps"
                     >
                       7 Grosvenor Street<br />
                       Toronto, ON M4Y 0E2

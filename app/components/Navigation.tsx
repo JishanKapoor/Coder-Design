@@ -55,7 +55,7 @@ export function Navigation() {
       <div className="mx-auto max-w-[1400px] px-4 lg:px-12">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2" title="CoderDesign Home">
             <Logo className="text-2xl" />
             <span className="text-xl font-semibold tracking-tight text-slate-900">
               CoderDesign
@@ -69,6 +69,7 @@ export function Navigation() {
                 key={item.href}
                 href={item.href}
                 className="text-sm text-slate-600 transition-colors hover:text-slate-900"
+                title={item.label}
               >
                 {item.label}
               </Link>
@@ -82,7 +83,7 @@ export function Navigation() {
               size="sm"
               asChild
             >
-              <Link href="/contact">Contact Us</Link>
+              <Link href="/contact" title="Contact CoderDesign">Contact Us</Link>
             </Button>
 
             <button
@@ -113,13 +114,14 @@ export function Navigation() {
                   href={item.href}
                   onClick={() => setIsOpen(false)}
                   className="block rounded-lg px-4 py-3 text-base text-slate-700 transition-colors hover:bg-slate-50 hover:text-slate-900"
+                  title={item.label}
                 >
                   {item.label}
                 </Link>
               ))}
               <div className="mt-4 pt-2">
                 <Button className="w-full bg-violet-600 hover:bg-violet-700" asChild>
-                  <Link href="/contact" onClick={() => setIsOpen(false)}>Contact Us</Link>
+                  <Link href="/contact" onClick={() => setIsOpen(false)} title="Contact CoderDesign">Contact Us</Link>
                 </Button>
               </div>
             </div>

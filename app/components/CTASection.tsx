@@ -41,13 +41,13 @@ export function CTASection() {
             className="flex flex-col items-center justify-center gap-4 sm:flex-row"
           >
             <Button size="lg" className="gap-2 bg-violet-600 px-8 hover:bg-violet-700 transition-all duration-200" asChild>
-              <Link href="/contact">
+              <Link href="/contact" title="Get your free quote from CoderDesign">
                 Get Your Free Quote
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
             <Button size="lg" variant="outline" className="px-8 transition-all duration-200" asChild>
-              <Link href="/about">About Our Team</Link>
+              <Link href="/about" title="Learn about the CoderDesign team">About Our Team</Link>
             </Button>
           </motion.div>
 

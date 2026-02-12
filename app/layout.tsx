@@ -167,7 +167,18 @@ export default function RootLayout({
       <head>
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
-        <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-LZ3LECFNNK" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(globalOrganization) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(globalWebSite) }}
+        />
+      </head>
+      <body suppressHydrationWarning={true}>
+        {children}
+        {/* GTM loaded after page content — deferred to not block LCP/FCP */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -178,17 +189,7 @@ export default function RootLayout({
             `,
           }}
         />
-      </head>
-      <body suppressHydrationWarning={true}>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(globalOrganization) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(globalWebSite) }}
-        />
-        {children}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZ3LECFNNK" />
       </body>
     </html>
   );

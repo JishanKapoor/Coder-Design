@@ -67,7 +67,7 @@ export function HeroSection() {
             className="flex flex-col items-center justify-center gap-4 sm:flex-row"
           >
             <Button size="lg" className="gap-2 bg-violet-600 px-8 hover:bg-violet-700 transition-all duration-200" asChild>
-              <Link href="/contact">
+              <Link href="/contact" title="Get started with CoderDesign">
                 Get Started
                 <ArrowRight className="h-4 w-4" />
               </Link>
