@@ -77,7 +77,7 @@ export default function BlogPost() {
 
 <p>Our team partnered with Sunnybrook's Digital Health Innovation department over 14 months to design and build a comprehensive patient engagement platform that integrated with their existing Epic EMR, reduced appointment no-shows by 62%, cut average wait times by 28 minutes, and gave clinicians real-time visibility into patient flow across the entire outpatient network. This case study covers exactly what we built, the compliance and integration challenges we solved, and how our <a href="/full-stack-engineering">full-stack development</a>, <a href="/mobile-app-development">mobile engineering</a>, <a href="/ai-workflow">AI automation</a>, and <a href="/seo-management">digital health marketing</a> capabilities helped Sunnybrook deliver measurably better patient outcomes.</p>
 
-<img src="/images/projects/healthcare-medical2.jpg" alt="Sunnybrook Health Sciences Centre patient engagement platform development" style="width:100%;border-radius:12px;margin:2rem 0;" />
+<img src="/images/projects/healthcare-medical.jpg" alt="Sunnybrook Health Sciences Centre patient engagement platform development" style="width:100%;border-radius:12px;margin:2rem 0;" />
 
 <h2>The Challenge: A Hospital System Built for the 1990s</h2>
 

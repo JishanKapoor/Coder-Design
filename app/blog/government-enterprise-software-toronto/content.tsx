@@ -77,7 +77,7 @@ export default function BlogPost() {
 
 <p>Our team was engaged to architect and build a next-generation compliance dashboard and automation platform that could handle enterprise-scale workloads, meet SOC 2 Type II requirements, and reduce audit preparation time for TrustShield's clients from weeks to hours. Over 9 months, we designed and deployed a microservices-based platform with encrypted data pipelines, real-time compliance monitoring, automated evidence collection, and a zero-trust security architecture that achieved SOC 2 certification on the first audit. The platform now processes 2.8 million compliance checks per day, automated 94% of previously manual audit workflows, and reduced dashboard load times from 40-90 seconds to under 1.2 seconds. This case study details exactly what we built, the security and auditability challenges unique to RegTech, and how our <a href="/full-stack-engineering">full-stack development</a>, <a href="/ai-workflow">AI automation</a>, and secure infrastructure capabilities helped TrustShield scale to enterprise financial institutions.</p>
 
-<img src="/images/projects/government-compliance.jpg\" alt=\"TrustShield compliance dashboard and secure automation pipelines\" style=\"width:100%;border-radius:12px;margin:2rem 0;\" />
+<img src="/images/projects/government-building.jpg" alt="TrustShield compliance dashboard and secure automation pipelines" style="width:100%;border-radius:12px;margin:2rem 0;" />
 
 <h2>The Challenge: A Compliance Platform That Couldn't Scale</h2>
 

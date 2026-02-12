@@ -27,7 +27,7 @@ const industries = [
     title: "Enterprise",
     blogTitle: "How We Partnered with TCS to Deliver a Cloud Migration Platform for Canadian Banks",
     description: "Enterprise outsourcing, cloud architecture, and AI integration for Tata Consultancy Services client projects.",
-    image: "/images/projects/tcs-office.jpg",
+    image: "/images/projects/tcs-real.jpg",
     href: "/blog/professional-services-software-toronto",
   },
   {
@@ -35,7 +35,7 @@ const industries = [
     title: "Healthcare & Wellness",
     blogTitle: "How We Helped Sunnybrook Build a Patient Engagement Platform That Reduced No-Shows by 62%",
     description: "AI scheduling, Epic EMR integration, and telehealth apps for Canada's largest research hospital.",
-    image: "/images/projects/sunnybrook-hospital.jpg",
+    image: "/images/projects/healthcare-medical.jpg",
     href: "/blog/healthcare-wellness-software-toronto",
   },
   {
@@ -43,7 +43,7 @@ const industries = [
     title: "Government & Compliance",
     blogTitle: "How We Built TrustShield's Secure Compliance Dashboard That Automated 94% of Audit Workflows",
     description: "SOC 2 automation pipelines, real-time compliance monitoring, and encrypted audit trails for financial institutions.",
-    image: "/images/projects/government-compliance.jpg",
+    image: "/images/projects/government-building.jpg",
     href: "/blog/government-enterprise-software-toronto",
   },
   {
@@ -110,11 +110,11 @@ export function WhoWeWorkWith() {
                   />
                 </div>
                 <div className="flex flex-1 flex-col p-6">
-                  <div className="mb-3 flex items-start gap-3">
+                  <div className="mb-3 flex items-center gap-3">
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-violet-50 text-violet-600">
                       <Icon className="h-5 w-5" />
                     </div>
-                    <h3 className="text-[17px] font-bold leading-tight text-slate-900 pt-1.5">{industry.title}</h3>
+                    <h3 className="text-[17px] font-bold leading-tight text-slate-900">{industry.title}</h3>
                   </div>
                   <p className="mb-2 text-sm font-medium leading-snug text-slate-700">{industry.blogTitle}</p>
                   <p className="mb-4 text-[15px] leading-relaxed text-slate-500">{industry.description}</p>
