@@ -41,14 +41,14 @@ const industries = [
   {
     icon: Landmark,
     title: "Government & Compliance",
-    blogTitle: "How We Helped ServiceOntario Increase Digital Adoption from 23% to 67% and Save $42M Annually",
-    description: "WCAG 2.1 AA accessible portals, AI service assistant, and bilingual mobile app for 60M+ annual transactions.",
-    image: "/images/projects/ontario-gov-digital.jpg",
+    blogTitle: "How We Built TrustShield's Secure Compliance Dashboard That Automated 94% of Audit Workflows",
+    description: "SOC 2 automation pipelines, real-time compliance monitoring, and encrypted audit trails for financial institutions.",
+    image: "/images/projects/government-compliance.jpg",
     href: "/blog/government-enterprise-software-toronto",
   },
   {
     icon: Code2,
-    title: "Manufacturing & Logistics",
+    title: "Professional Services",
     blogTitle: "How We Built Tailor Brands' AI Voice Calling System That Handles 73% of Calls Autonomously",
     description: "AI voice agents, proactive outbound calls, and merchandise fulfillment automation for 45M+ users.",
     image: "/images/projects/tailor-brands-ai.jpg",

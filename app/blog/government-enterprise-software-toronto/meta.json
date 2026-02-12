@@ -1,11 +1,11 @@
 {
   "id": 1739923200000,
   "slug": "government-enterprise-software-toronto",
-  "title": "How We Helped ServiceOntario Increase Digital Adoption from 23% to 67% and Save $42M Annually",
+  "title": "How We Built TrustShield's Secure Compliance Dashboard That Automated 94% of Audit Workflows",
   "author": "CoderDesign Team",
   "category": "Full-Stack Development",
-  "image": "/images/projects/ontario-gov-digital.jpg",
+  "image": "/images/projects/government-compliance.jpg",
   "createdAt": "2026-02-11T00:00:00.000Z",
-  "short_description": "How CoderDesign partnered with the Ontario Digital Service to rebuild ServiceOntario's driver licence, health card, and address change portals — eliminating 2.8M in-person visits annually.",
-  "readTime": 19
+  "short_description": "How CoderDesign rebuilt TrustShield Compliance's RegTech platform with secure automation pipelines, SOC 2 architecture, and sub-second dashboard performance.",
+  "readTime": 18
 }
