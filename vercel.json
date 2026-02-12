@@ -31,12 +31,5 @@
       ]
     }
   ],
-  "redirects": [
-    {
-      "source": "/:path((?!api).*)",
-      "has": [{ "type": "host", "value": "www.coderdesign.com" }],
-      "destination": "https://coderdesign.com/:path*",
-      "permanent": true
-    }
-  ]
+  "redirects": []
 }
