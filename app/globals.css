@@ -1330,6 +1330,10 @@ html, body {
     background-color: var(--color-indigo-100);
   }
 
+  .bg-indigo-600 {
+    background-color: var(--color-indigo-600);
+  }
+
   .bg-input-background {
     background-color: var(--input-background);
   }
@@ -2046,6 +2050,10 @@ html, body {
     color: var(--muted-foreground);
   }
 
+  .text-pink-600 {
+    color: var(--color-pink-600);
+  }
+
   .text-pink-900 {
     color: var(--color-pink-900);
   }
@@ -2169,6 +2177,16 @@ html, body {
   @supports (color: color-mix(in lab, red, red)) {
     .text-white\/70 {
       color: color-mix(in oklab, var(--color-white) 70%, transparent);
+    }
+  }
+
+  .text-white\/80 {
+    color: #ffffffcc;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .text-white\/80 {
+      color: color-mix(in oklab, var(--color-white) 80%, transparent);
     }
   }
 

@@ -55,13 +55,9 @@ export function HeroSection() {
             variants={shouldAnimate ? itemVariants : undefined}
             className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-slate-600"
           >
-            CoderDesign is a top AI agency and software development company in Toronto. 
-            We build custom full stack websites, website development solutions, mobile apps for the App Store 
-            and Google Play Store, AI chatbots, AI call bots, and intelligent automation systems. 
-            As an AI automation agency and AI SEO agency in Toronto, we also deliver generative engine optimization 
-            and data-driven SEO strategies for startups and enterprises across the GTA. 
-            Our senior backend developers, full stack engineers, and AI consulting specialists deliver 
-            production-ready solutions that scale from your first MVP to millions of users.
+            CoderDesign is a Toronto-based AI agency that builds full stack websites, mobile apps, 
+            AI chatbots, call bots, and automation systems. We also offer AI-powered SEO and 
+            generative engine optimization for startups and enterprises across the GTA.
           </motion.p>
 
           {/* CTA Buttons */}

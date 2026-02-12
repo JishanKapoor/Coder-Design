@@ -38,7 +38,25 @@ export async function generateSitemap() {
       priority: "0.6",
     }));
 
-    const entries = [...staticRoutes, ...blogEntries]
+    // Collect tool slugs
+    const toolsDir = path.join(process.cwd(), "app", "tools");
+    let toolSlugs: string[] = [];
+    if (fs.existsSync(toolsDir)) {
+      toolSlugs = fs
+        .readdirSync(toolsDir, { withFileTypes: true })
+        .filter((d) => d.isDirectory())
+        .map((d) => d.name);
+    }
+    const toolEntries = [
+      { loc: `${baseUrl}/tools`, changefreq: "monthly", priority: "0.7" },
+      ...toolSlugs.map((slug) => ({
+        loc: `${baseUrl}/tools/${slug}`,
+        changefreq: "monthly",
+        priority: "0.5",
+      })),
+    ];
+
+    const entries = [...staticRoutes, ...blogEntries, ...toolEntries]
       .map(
         (e) =>
           `  <url>\n    <loc>${e.loc}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>${e.changefreq}</changefreq>\n    <priority>${e.priority}</priority>\n  </url>`
@@ -102,7 +120,25 @@ export default async function GET() {
       priority: "0.6",
     }));
 
-    const entries = [...staticRoutes, ...blogEntries]
+    // Collect tool slugs
+    const toolsDir2 = path.join(process.cwd(), "app", "tools");
+    let toolSlugs2: string[] = [];
+    if (fs.existsSync(toolsDir2)) {
+      toolSlugs2 = fs
+        .readdirSync(toolsDir2, { withFileTypes: true })
+        .filter((d) => d.isDirectory())
+        .map((d) => d.name);
+    }
+    const toolEntries2 = [
+      { loc: `${baseUrl}/tools`, changefreq: "monthly", priority: "0.7" },
+      ...toolSlugs2.map((slug) => ({
+        loc: `${baseUrl}/tools/${slug}`,
+        changefreq: "monthly",
+        priority: "0.5",
+      })),
+    ];
+
+    const entries = [...staticRoutes, ...blogEntries, ...toolEntries2]
       .map(
         (e) =>
           `  <url>\n    <loc>${e.loc}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>${e.changefreq}</changefreq>\n    <priority>${e.priority}</priority>\n  </url>`

@@ -9,7 +9,7 @@ const LogoCloud = dynamic(() => import("./components/LogoCloud").then(m => ({ de
 const PlatformSection = dynamic(() => import("./components/PlatformSection").then(m => ({ default: m.PlatformSection })), { ssr: true });
 const SolutionsSection = dynamic(() => import("./components/SolutionsSection").then(m => ({ default: m.SolutionsSection })), { ssr: true });
 const EnterpriseSection = dynamic(() => import("./components/EnterpriseSection").then(m => ({ default: m.EnterpriseSection })), { ssr: true });
-const TestimonialsSection = dynamic(() => import("./components/TestimonialsSection").then(m => ({ default: m.TestimonialsSection })), { ssr: true });
+const WhoWeWorkWith = dynamic(() => import("./components/WhoWeWorkWith").then(m => ({ default: m.WhoWeWorkWith })), { ssr: true });
 const CTASection = dynamic(() => import("./components/CTASection").then(m => ({ default: m.CTASection })), { ssr: true });
 
 export default function HomeContent() {
@@ -23,7 +23,7 @@ export default function HomeContent() {
         <PlatformSection />
         <SolutionsSection />
         <EnterpriseSection />
-        <TestimonialsSection />
+        <WhoWeWorkWith />
         <CTASection />
       </main>
       

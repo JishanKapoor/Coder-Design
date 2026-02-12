@@ -33,7 +33,25 @@ function generate() {
     priority: '0.6',
   }));
 
-  const entries = [...staticRoutes, ...blogEntries]
+  // Collect tool slugs
+  const toolsDir = path.join(process.cwd(), 'app', 'tools');
+  let toolSlugs = [];
+  if (fs.existsSync(toolsDir)) {
+    toolSlugs = fs
+      .readdirSync(toolsDir, { withFileTypes: true })
+      .filter((d) => d.isDirectory())
+      .map((d) => d.name);
+  }
+  const toolEntries = [
+    { loc: `${baseUrl}/tools`, changefreq: 'monthly', priority: '0.7' },
+    ...toolSlugs.map((slug) => ({
+      loc: `${baseUrl}/tools/${slug}`,
+      changefreq: 'monthly',
+      priority: '0.5',
+    })),
+  ];
+
+  const entries = [...staticRoutes, ...blogEntries, ...toolEntries]
     .map(
       (e) =>
         `  <url>\n    <loc>${e.loc}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>${e.changefreq}</changefreq>\n    <priority>${e.priority}</priority>\n  </url>`
@@ -53,7 +71,7 @@ function generate() {
     } catch {}
   }
 
-  console.log(`✅ Sitemap generated with ${blogSlugs.length} blog(s)`);
+  console.log(`✅ Sitemap generated with ${blogSlugs.length} blog(s) and ${toolSlugs.length} tool(s)`);
 }
 
 if (require.main === module) {

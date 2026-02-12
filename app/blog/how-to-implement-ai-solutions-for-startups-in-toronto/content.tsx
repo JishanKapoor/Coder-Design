@@ -108,12 +108,7 @@ export default function BlogPost() {
 <p>Invest in training your team to understand AI capabilities and limitations. This ensures better adoption and more creative applications.</p>
 
 <h2>Budget Considerations</h2>
-<p>Toronto startups can implement AI solutions at various budget levels:</p>
-<ul>
-<li>$0-1K/month: API-based solutions (ChatGPT, Claude, basic automation tools)</li>
-<li>$1-5K/month: Integrated AI tools with custom workflows</li>
-<li>$5-20K/month: Custom AI development and dedicated AI infrastructure</li>
-</ul>
+<p>AI implementation costs vary widely depending on your use case, data complexity, and scale. Toronto startups can start with low-cost API-based solutions and scale into custom AI development as ROI is proven. Whether you need basic automation or enterprise-grade AI infrastructure, we help you find the right approach for your budget. <a href="/contact">Contact us for a free consultation</a> to get a tailored estimate based on your specific requirements.</p>
 
 <h2>Your Toronto AI Implementation Checklist</h2>
 <p>AI implementation doesn't have to be overwhelming or expensive. Toronto startups that take a pragmatic, step-by-step approach to AI adoption will find it transforms their operations, customer experience, and competitive positioning.</p>
