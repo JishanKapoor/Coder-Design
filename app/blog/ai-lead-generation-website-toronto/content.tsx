@@ -27,7 +27,7 @@ export default function BlogPost() {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-purple-600 py-20 lg:py-28">
+      <section className="relative overflow-hidden bg-pink-600 py-20 lg:py-28">
         <div className="relative mx-auto max-w-4xl px-6 lg:px-12">
           <div>
             <div className="mb-8">
@@ -59,7 +59,7 @@ export default function BlogPost() {
               </div>
             </div>
             <div className="flex flex-wrap gap-3">
-              <Button className="gap-2 bg-white text-purple-600 hover:bg-white/90" asChild>
+              <Button className="gap-2 bg-white text-pink-600 hover:bg-white/90" asChild>
                 <Link href="/contact">Get a Free Lead Audit</Link>
               </Button>
               <Button variant="overlay" onClick={() => setShowCalendar(true)}>Book a Discovery Call</Button>
@@ -290,13 +290,13 @@ export default function BlogPost() {
       </article>
 
       {/* Bottom CTA */}
-      <section className="bg-purple-600 py-20">
+      <section className="bg-pink-600 py-20">
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
           <div className="text-center">
             <h2 className="mb-6 text-white text-3xl font-bold">Want to Turn More of Your Website Visitors into Leads?</h2>
             <p className="mb-8 text-lg text-white/90">We will audit your current website, identify the biggest lead capture gaps, and show you exactly which AI tools and tactics would have the biggest impact — specific to your traffic, your industry, and your goals.</p>
             <div className="flex flex-wrap items-center justify-center gap-4">
-              <Button size="lg" className="bg-white text-purple-600 hover:bg-white/90" asChild>
+              <Button size="lg" className="bg-white text-pink-600 hover:bg-white/90" asChild>
                 <Link href="/contact">Get a Free Lead Audit</Link>
               </Button>
               <Button size="lg" variant="overlay" onClick={() => setShowCalendar(true)}>Schedule a Discovery Call</Button>

@@ -88,11 +88,11 @@ export default function BlogPost() {
 <p>You need custom enterprise software when:</p>
 
 <ul>
-<li><strong>Your workflows are genuinely unique.</strong> Every construction company manages projects differently. Every logistics firm has proprietary routing logic. Every financial services firm has compliance workflows shaped by their specific regulatory environment. If your competitive advantage lives in <em>how</em> you operate, your software should reflect that.</li>
-<li><strong>You are outgrowing SaaS tools.</strong> You hit the limits of Airtable, Monday.com, or HubSpot — hitting row limits, needing custom integrations that do not exist, or paying enterprise SaaS pricing that exceeds what custom software would cost.</li>
-<li><strong>Data security and compliance are non-negotiable.</strong> Healthcare companies handling patient data under <strong>PHIPA</strong>, financial firms under <strong>OSFI</strong> regulations, or any business handling sensitive information under <strong>PIPEDA</strong> — sometimes the only way to meet compliance requirements is to control the entire stack.</li>
-<li><strong>You need multiple user roles with different access levels.</strong> When your sales team, operations team, management, and clients all need to see different views of the same data, role-based access control becomes essential — not a nice-to-have.</li>
-<li><strong>Integration complexity is high.</strong> Your business runs on QuickBooks + Salesforce + a proprietary database + three vendor APIs + an Excel model someone built in 2019. A custom system can unify these into a single source of truth.</li>
+<li>Your workflows are genuinely unique. Every construction company manages projects differently. Every logistics firm has proprietary routing logic. Every financial services firm has compliance workflows shaped by their specific regulatory environment. If your competitive advantage lives in how you operate, your software should reflect that.</li>
+<li>You are outgrowing SaaS tools. You hit the limits of Airtable, Monday.com, or HubSpot, hitting row limits, needing custom integrations that do not exist, or paying enterprise SaaS pricing that exceeds what custom software would cost.</li>
+<li>Data security and compliance are non-negotiable. Healthcare companies handling patient data under PHIPA, financial firms under OSFI regulations, or any business handling sensitive information under PIPEDA. Sometimes the only way to meet compliance requirements is to control the entire stack.</li>
+<li>You need multiple user roles with different access levels. When your sales team, operations team, management, and clients all need to see different views of the same data, role-based access control becomes essential, not a nice-to-have.</li>
+<li>Integration complexity is high. Your business runs on QuickBooks + Salesforce + a proprietary database + three vendor APIs + an Excel model someone built in 2019. A custom system can unify these into a single source of truth.</li>
 </ul>
 
 <hr>
@@ -127,12 +127,12 @@ export default function BlogPost() {
 
 <p>For most Toronto businesses in the 10–200 employee range, <strong>permission-based RBAC</strong> hits the sweet spot. You define roles (e.g., "Sales Manager — Toronto Region"), assign granular permissions to each role (can view leads, can edit opportunities, cannot delete accounts, can export reports), and assign users to roles. When someone changes positions, you change their role — not 47 individual settings.</p>
 
-<p><strong>Tools and frameworks for RBAC:</strong></p>
+<p>Tools and frameworks for RBAC:</p>
 <ul>
-<li><strong>Auth0 / Clerk</strong> — Managed authentication and authorization. Handles user management, SSO, MFA, and role assignment out of the box. Ideal when you want to move fast and not build auth from scratch.</li>
-<li><strong>NextAuth.js</strong> — Open-source authentication for Next.js applications. More flexible, less managed overhead, but requires more development effort for advanced RBAC.</li>
-<li><strong>Casbin / CASL</strong> — Open-source authorization libraries. Casbin supports RBAC, ABAC, and more. CASL integrates particularly well with JavaScript/TypeScript frontends.</li>
-<li><strong>Custom middleware</strong> — For the most control, build authorization middleware directly into your API layer. Every request is checked against the user's permissions before processing. This is more work but gives you complete control.</li>
+<li>Auth0 or Clerk for managed authentication and authorization. Handles user management, SSO, MFA, and role assignment out of the box. Ideal when you want to move fast and not build auth from scratch.</li>
+<li>NextAuth.js for open-source authentication in Next.js applications. More flexible, less managed overhead, but requires more development effort for advanced RBAC.</li>
+<li>Casbin or CASL for open-source authorization libraries. Casbin supports RBAC, ABAC, and more. CASL integrates particularly well with JavaScript/TypeScript frontends.</li>
+<li>Custom middleware for the most control. Build authorization middleware directly into your API layer. Every request is checked against the user's permissions before processing. This is more work but gives you complete control.</li>
 </ul>
 
 <h3>2. Secure Data Handling and Compliance</h3>
@@ -154,26 +154,26 @@ export default function BlogPost() {
 </tbody>
 </table>
 
-<p><strong>Security architecture checklist:</strong></p>
+<p>Security architecture checklist:</p>
 <ul>
-<li><strong>Encryption at rest</strong> — All sensitive data encrypted in the database using AES-256. PostgreSQL supports Transparent Data Encryption (TDE). AWS RDS and Google Cloud SQL offer encryption at rest by default.</li>
-<li><strong>Encryption in transit</strong> — TLS 1.3 for all connections. No exceptions. This includes internal service-to-service communication, not just user-facing HTTPS.</li>
-<li><strong>Authentication</strong> — Multi-factor authentication (MFA) mandatory for admin and sensitive roles. Support SSO via SAML 2.0 or OIDC for enterprise clients. Password policies enforced at the application level.</li>
-<li><strong>Audit logging</strong> — Every significant action (login, data access, data modification, role change, export) logged with timestamp, user ID, IP address, and action details. Logs stored immutably (write-once storage) and retained per your compliance requirements.</li>
-<li><strong>Data residency</strong> — For Canadian compliance, ensure data is stored in Canadian data centres. AWS has the <strong>ca-central-1</strong> region in Montreal. Google Cloud has <strong>northamerica-northeast1</strong> in Montreal and <strong>northamerica-northeast2</strong> in Toronto. Azure has <strong>Canada Central</strong> in Toronto and <strong>Canada East</strong> in Quebec City.</li>
-<li><strong>Backup and recovery</strong> — Automated daily backups with point-in-time recovery. Backups tested quarterly (an untested backup is not a backup). Recovery time objective (RTO) and recovery point objective (RPO) defined and documented.</li>
+<li>Encryption at rest. All sensitive data encrypted in the database using AES-256. PostgreSQL supports Transparent Data Encryption (TDE). AWS RDS and Google Cloud SQL offer encryption at rest by default.</li>
+<li>Encryption in transit. TLS 1.3 for all connections. No exceptions. This includes internal service-to-service communication, not just user-facing HTTPS.</li>
+<li>Authentication. Multi-factor authentication (MFA) mandatory for admin and sensitive roles. Support SSO via SAML 2.0 or OIDC for enterprise clients. Password policies enforced at the application level.</li>
+<li>Audit logging. Every significant action (login, data access, data modification, role change, export) logged with timestamp, user ID, IP address, and action details. Logs stored immutably (write-once storage) and retained per your compliance requirements.</li>
+<li>Data residency. For Canadian compliance, ensure data is stored in Canadian data centres. AWS has the ca-central-1 region in Montreal. Google Cloud has northamerica-northeast1 in Montreal and northamerica-northeast2 in Toronto. Azure has Canada Central in Toronto and Canada East in Quebec City.</li>
+<li>Backup and recovery. Automated daily backups with point-in-time recovery. Backups tested quarterly (an untested backup is not a backup). Recovery time objective (RTO) and recovery point objective (RPO) defined and documented.</li>
 </ul>
 
 <h3>3. Scalable Architecture for Growing Teams</h3>
 
 <p>The architecture you choose on day one determines how painful (or painless) growth will be. A system designed for 10 users that breaks at 100 is not just a technical failure — it is a business failure that erodes trust in the tool and sends people back to their spreadsheets.</p>
 
-<p><strong>Scaling dimensions to plan for:</strong></p>
+<p>Scaling dimensions to plan for:</p>
 <ul>
-<li><strong>User scaling</strong> — From 10 users to 100 to 1,000. This affects authentication infrastructure, session management, and concurrent connection handling.</li>
-<li><strong>Data scaling</strong> — From thousands of records to millions. This affects database design, query optimization, indexing strategy, and storage costs.</li>
-<li><strong>Feature scaling</strong> — From core features to a comprehensive platform. This affects code architecture, deployment pipeline, and team structure.</li>
-<li><strong>Geographic scaling</strong> — From a single Toronto office to multiple locations or remote teams across time zones. This affects latency, data synchronization, and deployment topology.</li>
+<li>User scaling, from 10 users to 100 to 1,000. This affects authentication infrastructure, session management, and concurrent connection handling.</li>
+<li>Data scaling, from thousands of records to millions. This affects database design, query optimization, indexing strategy, and storage costs.</li>
+<li>Feature scaling, from core features to a comprehensive platform. This affects code architecture, deployment pipeline, and team structure.</li>
+<li>Geographic scaling, from a single Toronto office to multiple locations or remote teams across time zones. This affects latency, data synchronization, and deployment topology.</li>
 </ul>
 
 <p><strong>Architecture patterns for scalability:</strong></p>
@@ -215,11 +215,11 @@ export default function BlogPost() {
 
 <p><strong>Performance optimization essentials:</strong></p>
 <ul>
-<li><strong>Database optimization</strong> — Proper indexing, query optimization, connection pooling (PgBouncer for PostgreSQL). The database is almost always the bottleneck. Invest in a developer who understands query plans and index design.</li>
-<li><strong>Caching</strong> — Redis or Memcached for frequently accessed data. Cache user sessions, configuration data, and expensive query results. A well-implemented caching layer can reduce database load by 80% or more.</li>
-<li><strong>CDN</strong> — CloudFront, Cloudflare, or Fastly for static assets and API caching at the edge. For Toronto-focused applications, Canadian edge nodes ensure low latency for local users.</li>
-<li><strong>Monitoring and alerting</strong> — Datadog, New Relic, or open-source alternatives like Grafana + Prometheus. Monitor response times, error rates, CPU/memory usage, and database query performance. Set up alerts <em>before</em> users notice problems.</li>
-<li><strong>Load testing</strong> — Use tools like k6, Artillery, or Locust to simulate expected load before launch. Test with 2–3x your expected concurrent users. Discovering performance limits in production is dramatically more expensive than discovering them in testing.</li>
+<li>Database optimization. Proper indexing, query optimization, connection pooling (PgBouncer for PostgreSQL). The database is almost always the bottleneck. Invest in a developer who understands query plans and index design.</li>
+<li>Caching. Redis or Memcached for frequently accessed data. Cache user sessions, configuration data, and expensive query results. A well-implemented caching layer can reduce database load by 80% or more.</li>
+<li>CDN. CloudFront, Cloudflare, or Fastly for static assets and API caching at the edge. For Toronto-focused applications, Canadian edge nodes ensure low latency for local users.</li>
+<li>Monitoring and alerting. Datadog, New Relic, or open-source alternatives like Grafana + Prometheus. Monitor response times, error rates, CPU/memory usage, and database query performance. Set up alerts before users notice problems.</li>
+<li>Load testing. Use tools like k6, Artillery, or Locust to simulate expected load before launch. Test with 2-3x your expected concurrent users. Discovering performance limits in production is dramatically more expensive than discovering them in testing.</li>
 </ul>
 
 <h3>5. Integration and Data Unification</h3>
@@ -228,11 +228,11 @@ export default function BlogPost() {
 
 <p><strong>Common integration patterns for Toronto businesses:</strong></p>
 <ul>
-<li><strong>Accounting</strong> — QuickBooks Online, Xero, or Sage. API integrations for automatic invoice generation, expense tracking, and financial reporting.</li>
-<li><strong>CRM</strong> — Salesforce, HubSpot, or Zoho. Bi-directional sync for customer data, lead management, and sales pipeline visibility.</li>
-<li><strong>Communication</strong> — Slack or Microsoft Teams for notifications, alerts, and workflow triggers. Email via SendGrid or Postmark for transactional messages.</li>
-<li><strong>Document management</strong> — Google Drive, SharePoint, or Dropbox for file storage and collaboration. S3 or Google Cloud Storage for application-managed files.</li>
-<li><strong>Payment processing</strong> — Stripe or Moneris for Canadian payment processing. PCI DSS compliance is mandatory if you handle card data directly.</li>
+<li>Accounting. QuickBooks Online, Xero, or Sage. API integrations for automatic invoice generation, expense tracking, and financial reporting.</li>
+<li>CRM. Salesforce, HubSpot, or Zoho. Bi-directional sync for customer data, lead management, and sales pipeline visibility.</li>
+<li>Communication. Slack or Microsoft Teams for notifications, alerts, and workflow triggers. Email via SendGrid or Postmark for transactional messages.</li>
+<li>Document management. Google Drive, SharePoint, or Dropbox for file storage and collaboration. S3 or Google Cloud Storage for application-managed files.</li>
+<li>Payment processing. Stripe or Moneris for Canadian payment processing. PCI DSS compliance is mandatory if you handle card data directly.</li>
 </ul>
 
 <p><strong>Integration architecture:</strong> Use an <strong>API gateway</strong> (Kong, AWS API Gateway, or a custom Express/Fastify layer) as the single entry point for all integrations. This gives you centralized authentication, rate limiting, logging, and error handling. For event-driven integrations (e.g., "when an invoice is marked as paid in QuickBooks, update the project status in our system"), use a message queue (RabbitMQ, AWS SQS, or Redis Streams) to decouple systems and handle failures gracefully.</p>
@@ -273,40 +273,40 @@ export default function BlogPost() {
 
 <h3>Phase 1: Discovery and Requirements (2–4 Weeks)</h3>
 <ul>
-<li><strong>Stakeholder interviews</strong> — Talk to every user group: executives who fund it, managers who depend on it, frontline staff who use it daily. Their needs are different, and all are valid.</li>
-<li><strong>Workflow mapping</strong> — Document current workflows (how things work today) and target workflows (how things should work). The gap between them is your feature set.</li>
-<li><strong>User stories and acceptance criteria</strong> — "As a [role], I need to [action] so that [outcome]." Each story gets specific, testable acceptance criteria.</li>
-<li><strong>Technical discovery</strong> — Assess existing systems, data sources, integration points, security requirements, and infrastructure constraints.</li>
+<li>Stakeholder interviews. Talk to every user group: executives who fund it, managers who depend on it, frontline staff who use it daily. Their needs are different, and all are valid.</li>
+<li>Workflow mapping. Document current workflows (how things work today) and target workflows (how things should work). The gap between them is your feature set.</li>
+<li>User stories and acceptance criteria. As a role, I need to take an action so that a specific outcome is achieved. Each story gets specific, testable acceptance criteria.</li>
+<li>Technical discovery. Assess existing systems, data sources, integration points, security requirements, and infrastructure constraints.</li>
 </ul>
 
 <h3>Phase 2: Architecture and Design (2–3 Weeks)</h3>
 <ul>
-<li><strong>System architecture</strong> — Database schema, API design, service boundaries, authentication flow, deployment topology.</li>
-<li><strong>UI/UX design</strong> — Wireframes and interactive prototypes for key workflows. Test these with actual users before writing code. Figma is the industry standard.</li>
-<li><strong>Technical specification</strong> — Detailed document covering every module, integration, data flow, and edge case. This is your contract with the development team.</li>
+<li>System architecture. Database schema, API design, service boundaries, authentication flow, deployment topology.</li>
+<li>UI/UX design. Wireframes and interactive prototypes for key workflows. Test these with actual users before writing code. Figma is the industry standard.</li>
+<li>Technical specification. Detailed document covering every module, integration, data flow, and edge case. This is your contract with the development team.</li>
 </ul>
 
 <h3>Phase 3: Iterative Development (8–16 Weeks for MVP)</h3>
 <ul>
-<li><strong>Two-week sprints</strong> — Each sprint delivers working, tested, deployable features. Stakeholders review progress every two weeks — not at the end of four months.</li>
-<li><strong>Continuous integration</strong> — Every code change is automatically tested. Broken tests block deployment. This catches bugs when they are cheap to fix.</li>
-<li><strong>Staging environment</strong> — A production-like environment where stakeholders can test features before they go live.</li>
+<li>Two-week sprints. Each sprint delivers working, tested, deployable features. Stakeholders review progress every two weeks, not at the end of four months.</li>
+<li>Continuous integration. Every code change is automatically tested. Broken tests block deployment. This catches bugs when they are cheap to fix.</li>
+<li>Staging environment. A production-like environment where stakeholders can test features before they go live.</li>
 </ul>
 
 <h3>Phase 4: Testing and Launch (2–4 Weeks)</h3>
 <ul>
-<li><strong>User acceptance testing (UAT)</strong> — Real users testing real workflows in the staging environment. Every user role, every workflow, every edge case.</li>
-<li><strong>Performance testing</strong> — Load testing with realistic data volumes and concurrent users.</li>
-<li><strong>Security audit</strong> — Vulnerability scanning, penetration testing, compliance review.</li>
-<li><strong>Phased rollout</strong> — Start with a pilot group (one department, one office, one team), gather feedback, fix issues, then expand to the full organization.</li>
+<li>User acceptance testing (UAT). Real users testing real workflows in the staging environment. Every user role, every workflow, every edge case.</li>
+<li>Performance testing. Load testing with realistic data volumes and concurrent users.</li>
+<li>Security audit. Vulnerability scanning, penetration testing, compliance review.</li>
+<li>Phased rollout. Start with a pilot group (one department, one office, one team), gather feedback, fix issues, then expand to the full organization.</li>
 </ul>
 
 <h3>Phase 5: Post-Launch Support and Iteration (Ongoing)</h3>
 <ul>
-<li><strong>Monitoring and incident response</strong> — 24/7 monitoring with defined response times for critical issues.</li>
-<li><strong>Regular updates</strong> — Security patches, dependency updates, performance improvements.</li>
-<li><strong>Feature iteration</strong> — Continuous development based on user feedback and evolving business needs.</li>
-<li><strong>Documentation and training</strong> — Kept up to date as features change. Onboarding documentation for new users.</li>
+<li>Monitoring and incident response. 24/7 monitoring with defined response times for critical issues.</li>
+<li>Regular updates. Security patches, dependency updates, performance improvements.</li>
+<li>Feature iteration. Continuous development based on user feedback and evolving business needs.</li>
+<li>Documentation and training. Kept up to date as features change. Onboarding documentation for new users.</li>
 </ul>
 
 <hr>
