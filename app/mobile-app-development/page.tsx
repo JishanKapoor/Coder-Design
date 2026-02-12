@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import MobileAppDevelopment from "./content";
 
 export const metadata: Metadata = {
-  title: "Mobile App Development Toronto | CoderDesign",
+  title: "Custom Mobile App Development Toronto | iOS & Android | CoderDesign",
   description:
-    "Mobile app developers in Toronto. iOS, Android, React Native, and Flutter apps for startups and enterprises. Free project estimate: (437) 239-2448.",
+    "Custom mobile app development company in Toronto. iOS and Android apps for App Store and Google Play Store. React Native, Flutter, Swift, and Kotlin experts. Free project estimate: (437) 239-2448.",
   keywords:
-    "mobile app development Toronto, app development company Toronto, iOS developer Toronto, Android app development Toronto, React Native Toronto, Flutter developers Toronto, app developers Toronto, mobile app agency GTA, startup app development Toronto",
+    "custom mobile app development Toronto, mobile app development Toronto, app development company Toronto, iOS developer Toronto, Android app development Toronto, React Native Toronto, Flutter developers Toronto, app developers Toronto, App Store developers Toronto, Google Play Store app development, mobile app agency GTA, startup app development Toronto, AI chatbot for mobile apps",
   openGraph: {
     title: "Mobile App Development Company Toronto | CoderDesign",
     description: "iOS and Android app development in Toronto using React Native, Flutter, Swift, and Kotlin. Call (437) 239-2448.",

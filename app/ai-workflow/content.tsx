@@ -52,8 +52,8 @@ export default function AIWorkflowDetail() {
     {
       icon: Brain,
       title: "AI-Powered Automation",
-      description: "Integrate machine learning models into your workflows using n8n and Make. Add intelligent decision-making, natural language processing, and predictive analytics to automation workflows.",
-      features: ["ML Model Integration", "AI Decision Making", "NLP Processing", "Predictive Triggers"]
+      description: "Integrate artificial intelligence models into your workflows using n8n and Make. Add intelligent decision-making, natural language processing, and predictive analytics to automation workflows.",
+      features: ["AI Model Integration", "AI Decision Making", "NLP Processing", "Predictive Triggers"]
     },
     {
       icon: BarChart3,
@@ -84,19 +84,21 @@ export default function AIWorkflowDetail() {
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
               <div className="mb-4 inline-block rounded-full bg-purple-100 px-4 py-1.5 text-sm text-purple-700">
-                AI & Workflow Automation
+                AI Automation Agency Toronto
               </div>
               <h1 className="mb-6 text-slate-900">
-                AI Automation and Chatbot Development in Toronto
+                AI Chatbots, Call Bots & Intelligent Automation in Toronto
               </h1>
               <p className="mb-8 text-lg leading-relaxed text-slate-600">
-                Build powerful, self hosted automation workflows with n8n, Make, and deep AI integration. 
-                We design custom workflow solutions that connect your CRMs, databases, email systems, and 
-                400+ apps, then supercharge them with AI models from OpenAI, Anthropic (Claude), and 
+                As a leading AI automation agency in Toronto, we build powerful AI chatbots for websites, 
+                AI call bots, and self-hosted automation workflows with n8n, Make, and deep AI integration. 
+                Automate customer support, reduce support tickets, and use AI to automate lead qualification 
+                with custom workflow solutions that connect your CRMs, databases, email systems, and 
+                400+ apps. We supercharge them with AI models from OpenAI, Anthropic (Claude), and 
                 custom LLMs for intelligent decision making, content generation, and predictive triggers. 
-                Whether you need an AI powered customer support pipeline, an automated lead qualification 
-                system, or a complex data synchronization workflow, our Toronto team delivers production 
-                ready automation that saves hours of manual work every week.
+                Whether you need to automate repetitive tasks, build an AI-powered lead follow-up system, 
+                or deploy AI chatbots for service businesses, our Toronto AI consulting team delivers 
+                production-ready automation that saves hours of manual work every week.
               </p>
               
               <div className="mb-8 flex flex-wrap gap-3">
@@ -184,7 +186,7 @@ export default function AIWorkflowDetail() {
             <h2
               className="mb-4 text-slate-900"
             >
-              AI & Machine Learning Services
+              AI &amp; Intelligent Automation Services
             </h2>
             <p
               className="mx-auto max-w-3xl text-lg text-slate-600"
@@ -319,7 +321,7 @@ export default function AIWorkflowDetail() {
               { 
                 step: "03", 
                 title: "AI Integration & Enhancement", 
-                description: "We integrate AI capabilities using ChatGPT, Claude, and custom ML models for intelligent automation.",
+                description: "We integrate AI capabilities using ChatGPT, Claude, and custom AI models for intelligent automation.",
                 details: [
                   "LLM API integration (OpenAI, Anthropic)",
                   "AI-powered decision nodes",

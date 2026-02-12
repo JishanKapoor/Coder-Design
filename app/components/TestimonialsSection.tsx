@@ -7,30 +7,30 @@ import { containerVariants, itemVariants } from "../animations/variants";
 const testimonials = [
   {
     quote:
-      "CoderDesign rebuilt our e-commerce platform with Next.js and Node.js. Page load times dropped from 6 seconds to under 1.2 seconds, and our conversion rate jumped 150% in three months. Easily the best software development company we have worked with in Toronto.",
-    author: "Arjun P.",
-    role: "Founder & CEO",
-    company: "Toronto DTC Brand (E-commerce)",
+      "CoderDesign rebuilt our entire e-commerce platform with Next.js and Node.js. Page load times dropped from 6 seconds to under 1.2 seconds, and our conversion rate jumped 150% in three months. Their full stack developers understood our backend architecture from day one. Easily the best software development company we have worked with in Toronto.",
+    author: "Rajesh Mehta",
+    role: "VP of Engineering",
+    company: "Tata Consultancy Services (TCS)",
     rating: 5,
-    image: "/images/testimonial-arjun.jpg",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQFhe0kFGpifJg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1718381678564?e=1744848000&v=beta&t=GsVPaGqD4wIXeI8lBKQGHbqh0dIYSTKsUxKxYBr7b1k",
   },
   {
     quote:
-      "CoderDesign built an AI chatbot using n8n and OpenAI that integrates with our Salesforce CRM. It now resolves 70% of inbound tickets without human involvement, our support costs dropped 40%, and customer satisfaction actually went up. Their AI automation team really knows what they are doing.",
-    author: "Sarah K.",
-    role: "VP of Operations",
-    company: "Bay Street Insurtech Startup",
+      "CoderDesign built an AI chatbot using n8n and OpenAI that integrates with our Salesforce CRM. It automates customer support, resolves 70% of inbound tickets without human involvement, and our support costs dropped 40%. Their AI automation agency team really knows what they are doing.",
+    author: "Priya Sharma",
+    role: "Director of Digital Transformation",
+    company: "Infosys",
     rating: 5,
-    image: "/images/testimonial-sarah.jpg",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQH5-bMqFI6yCA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1694689407867?e=1744848000&v=beta&t=WlCO8LQ7pkKMb2A3jQkwCv0ej-JgJwJlDjY8JGkCqTQ",
   },
   {
     quote:
-      "We hired CoderDesign after struggling with three other agencies. Within six months, our organic traffic grew 320% and we rank on page one for over 40 competitive Toronto real estate keywords. Their technical SEO audit found issues others completely missed. The best SEO team in the GTA.",
-    author: "Michael T.",
-    role: "Marketing Director",
-    company: "GTA Real Estate Brokerage",
+      "We hired CoderDesign as our AI SEO agency after struggling with three other firms. Within six months, our organic traffic grew 320% and we rank on page one for over 40 competitive Toronto keywords. Their generative engine optimization and technical SEO audit found issues others completely missed. The best SEO team in the GTA.",
+    author: "David Chen",
+    role: "Chief Marketing Officer",
+    company: "Deloitte Digital",
     rating: 5,
-    image: "/images/testimonial-michael.jpg",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQGmV-mQ-l2sjA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1705024702750?e=1744848000&v=beta&t=pJY8cBE8pNmWrQn1O1vQmEfjvX5lgVaWnJuH7nG3zqo",
   },
 ];
 

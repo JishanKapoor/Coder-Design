@@ -111,7 +111,7 @@ Development costs vary significantly based on complexity:
 
 *   **Simple App** (Basic features, minimal backend): $15,000 - $50,000
 *   **Moderate App** (Custom UI, API integration, user accounts): $50,000 - $150,000
-*   **Complex App** (Advanced features, real-time sync, AI/ML): $150,000 - $500,000+
+*   **Complex App** (Advanced features, real-time sync, AI/AI): $150,000 - $500,000+
 
 **Cost factors include:**
 

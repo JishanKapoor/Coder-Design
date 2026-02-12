@@ -6,7 +6,7 @@ const features = [
   {
     icon: Brain,
     title: "Advanced AI Models",
-    description: "Leverage state-of-the-art machine learning models trained on your data for precise predictions.",
+    description: "Leverage state-of-the-art artificial intelligence models trained on your data for precise predictions.",
   },
   {
     icon: Zap,

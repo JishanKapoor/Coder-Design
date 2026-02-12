@@ -13,7 +13,7 @@ const categoryLinks: { [key: string]: string } = {
   "AI SEO & AEO Services": "/seo-management",
   "Full-Stack Development": "/full-stack-engineering",
   "Mobile App Development": "/mobile-app-development",
-  "AI & Machine Learning": "/ai-workflow",
+  "AI & Automation": "/ai-workflow",
 };
 export default function BlogPost() {
   const [showCalendar, setShowCalendar] = useState(false);

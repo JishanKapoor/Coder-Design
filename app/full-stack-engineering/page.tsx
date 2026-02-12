@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import FullStackEngineering from "./content";
 
 export const metadata: Metadata = {
-  title: "Custom Web Development Toronto | CoderDesign",
+  title: "Full Stack Website Development Toronto | Backend Developers | CoderDesign",
   description:
-    "Custom web development company in Toronto. React, Next.js, Node.js, and Python experts building scalable apps for startups and enterprises. (437) 239-2448.",
+    "Full stack website development company in Toronto. Expert React, Next.js, Node.js, Python, and Django backend developers building scalable web applications for startups and enterprises. (437) 239-2448.",
   keywords:
-    "web development company Toronto, custom software development Toronto, React developers Toronto, Node.js development Toronto, Python Django Toronto, Next.js agency Toronto, web application development Toronto, full stack developers Toronto, SaaS development Toronto, enterprise software Toronto",
+    "website development Toronto, web development Toronto, full stack development Toronto, full stack developers Toronto, backend developers Toronto, custom software development Toronto, React developers Toronto, Node.js development Toronto, Python Django Toronto, Next.js agency Toronto, web application development Toronto, SaaS development Toronto, enterprise software Toronto, website development company Toronto",
   openGraph: {
     title: "Custom Web Development Toronto | CoderDesign",
     description: "Expert React, Next.js, Node.js, Python, and Django developers in Toronto building scalable web applications. Call (437) 239-2448.",

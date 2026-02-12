@@ -93,20 +93,22 @@ export default  function MobileAppDevelopment() {
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
               <div className="mb-4 inline-block rounded-full bg-blue-100 px-4 py-1.5 text-sm text-blue-700">
-                Mobile App Development
+                Mobile App Development Toronto
               </div>
               <h1 className="mb-6 text-slate-900">
-                Mobile App Development Company in Toronto
+                Custom Mobile App Development for iOS, Android, Play Store &amp; App Store
               </h1>
 
               <p className="mb-8 text-lg leading-relaxed text-slate-600">
                 We design and develop high performance mobile applications for iOS and Android that users 
                 love and businesses depend on. From native apps built with Swift and Kotlin to cross 
                 platform solutions powered by React Native and Flutter, we handle every stage including 
-                user research, UI/UX design, agile development, automated testing, App Store submission, 
-                and post launch analytics. Our Toronto based app developers build for speed, accessibility, 
-                and engagement with features like push notifications, biometric authentication, offline 
-                capabilities, and real time synchronization built in from the start.
+                user research, UI/UX design, agile development, automated testing, App Store and Google 
+                Play Store submission, and post launch analytics. Whether you need a consumer app for 
+                the App Store, a business tool for the Play Store, or an enterprise mobile solution, our 
+                Toronto based app developers build for speed, accessibility, and engagement with features 
+                like push notifications, biometric authentication, offline capabilities, and real time 
+                synchronization built in from the start.
               </p>
                <div className="mb-8 flex flex-wrap gap-2">
                 {technologies.map((tech) => (

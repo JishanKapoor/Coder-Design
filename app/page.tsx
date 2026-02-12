@@ -6,7 +6,7 @@ const homepageStructuredData = {
   "@id": "https://coderdesign.com/#business",
   "name": "CoderDesign",
   "alternateName": ["Coder Design", "CoderDesign Toronto"],
-  "description": "CoderDesign is a Toronto-based software development company specializing in custom web applications, mobile app development, AI automation, and SEO services. Founded in Toronto, Ontario, Canada, CoderDesign has delivered over 100 projects for startups and enterprises across the Greater Toronto Area.",
+  "description": "CoderDesign is a Toronto-based software development and artificial intelligence company specializing in custom full stack web applications, mobile app development, AI-powered automation, and SEO services. Founded in Toronto, Ontario, Canada, CoderDesign has delivered over 100 projects for startups and enterprises across the Greater Toronto Area.",
   "url": "https://coderdesign.com",
   "logo": {
     "@type": "ImageObject",
@@ -26,9 +26,9 @@ const homepageStructuredData = {
     "name": "CoderDesign",
     "url": "https://coderdesign.com",
     "logo": "https://coderdesign.com/og-image.png",
-    "slogan": "Toronto Software Development Company"
+    "slogan": "Software Development & AI Services in Toronto"
   },
-  "slogan": "Toronto Software Development Company",
+  "slogan": "Software Development & AI Services in Toronto",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "7 Grosvenor Street",
@@ -64,7 +64,7 @@ const homepageStructuredData = {
     "Software Development", "Custom Web Application Development", "Mobile App Development",
     "React", "Next.js", "Node.js", "Python", "Django", "TypeScript",
     "React Native", "Flutter", "Swift", "Kotlin",
-    "AI Automation", "Machine Learning", "Chatbot Development", "OpenAI",
+    "AI Automation", "Artificial Intelligence", "Intelligent Automation", "Chatbot Development", "OpenAI",
     "AI Voice Bot", "Voice Bot Development", "OpenAI Integration",
     "Search Engine Optimization", "Technical SEO", "Answer Engine Optimization",
     "SaaS Development", "E-commerce Development"

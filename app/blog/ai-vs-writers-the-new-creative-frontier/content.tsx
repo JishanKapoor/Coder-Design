@@ -13,11 +13,11 @@ const categoryLinks: { [key: string]: string } = {
   "AI SEO & AEO Services": "/seo-management",
   "Full-Stack Development": "/full-stack-engineering",
   "Mobile App Development": "/mobile-app-development",
-  "AI & Machine Learning": "/ai-workflow",
+  "AI & Automation": "/ai-workflow",
 };
 export default function BlogPost() {
   const [showCalendar, setShowCalendar] = useState(false);
-  const category = "AI & Machine Learning";
+  const category = "AI & Automation";
   const categoryLink = categoryLinks[category as keyof typeof categoryLinks] || "/blogs";
   return (
     <div className="min-h-screen bg-white">
@@ -88,7 +88,7 @@ export default function BlogPost() {
 <p>Let&#39;s not kid ourselves—AI is already a powerhouse in many industries. From optimizing supply chains to predicting consumer behavior, its capabilities are impressive. In Hollywood, the promise of AI is seen in its ability to analyze past box office hits and predict what could work in the future. Studios like Warner Bros. and Netflix are already leveraging AI to make decisions about which projects to greenlight. According to <a href="https://variety.com/2023/biz/news/ai-hollywood-writers-strike-1235698765/">Variety</a>, AI-driven analytics are used to gauge script popularity even before a single scene is shot.</p>
 <p>However, here&#39;s where it gets tricky. While AI can handle data with the precision of a master craftsman, can it really replace the soul of storytelling? Writing isn&#39;t just about stringing words together; it&#39;s about weaving narratives that resonate with audiences on an emotional level. Sure, an AI can suggest a plot twist, but can it understand the irony of a character&#39;s journey or the bittersweet nature of a love story gone awry?</p>
 <h3>Coding Creativity: The Developer&#39;s Role</h3>
-<p>If you&#39;re a tech professional or developer, this conversation hits close to home. You&#39;re probably familiar with AI&#39;s capacity to learn and adapt. After all, isn&#39;t that what machine learning is all about? But there&#39;s a difference between recognizing patterns and understanding them. Developers behind AI models must grapple with this distinction daily.</p>
+<p>If you&#39;re a tech professional or developer, this conversation hits close to home. You&#39;re probably familiar with AI&#39;s capacity to learn and adapt. After all, isn&#39;t that what artificial intelligence is all about? But there&#39;s a difference between recognizing patterns and understanding them. Developers behind AI models must grapple with this distinction daily.</p>
 <p>Let&#39;s break it down. Imagine you&#39;re working on an AI model that&#39;s supposed to create content similar to a popular TV show. You&#39;ll feed it scripts, analyze character arcs, and study dialogue. But here&#39;s the catch: how do you teach an AI to understand cultural references or comedic timing? This is where the human touch becomes irreplaceable. Developers must ensure that AI tools complement, rather than replace, human creativity.</p>
 <p>The real challenge—and opportunity—lies in merging these two worlds. Just like we discuss <a href="https://www.coderdesign.com/full-stack-engineering">full-stack engineering</a>, where developers juggle both front-end and back-end technologies, there&#39;s a need for a hybrid approach in storytelling. AI can handle the heavy lifting of data analysis, while writers focus on the artistry.</p>
 <h3>Hollywood&#39;s AI Dilemma: A Case Study</h3>

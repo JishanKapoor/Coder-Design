@@ -13,11 +13,11 @@ const categoryLinks: { [key: string]: string } = {
   "AI SEO & AEO Services": "/seo-management",
   "Full-Stack Development": "/full-stack-engineering",
   "Mobile App Development": "/mobile-app-development",
-  "AI & Machine Learning": "/ai-workflow",
+  "AI & Automation": "/ai-workflow",
 };
 export default function BlogPost() {
   const [showCalendar, setShowCalendar] = useState(false);
-  const category = "AI & Machine Learning";
+  const category = "AI & Automation";
   const categoryLink = categoryLinks[category as keyof typeof categoryLinks] || "/blogs";
   return (
     <div className="min-h-screen bg-white">
@@ -31,9 +31,9 @@ export default function BlogPost() {
               </Link>
             </div>
             <Link href={categoryLink} className="mb-6 inline-block rounded-full bg-white/20 px-4 py-2 backdrop-blur-sm transition-colors hover:bg-white/30">
-              <span className="text-sm text-white">AI & Machine Learning</span>
+              <span className="text-sm text-white">AI & Automation</span>
             </Link>
-            <h1 className="mb-6 text-white">Toronto's Best AI & Machine Learning Companies Driving Innovation</h1>
+            <h1 className="mb-6 text-white">Toronto's Best AI & Automation Companies Driving Innovation</h1>
             <div className="mb-8 flex flex-wrap items-center gap-6 text-white/90">
               <div className="flex items-center gap-2">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20">
@@ -64,7 +64,7 @@ export default function BlogPost() {
       </section>
       <article className="bg-white py-16 lg:py-20">
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
-          <div className="blog-content" dangerouslySetInnerHTML={{ __html: `<p>Toronto has become a powerhouse for AI and machine learning innovation. The city's unique combination of finance, media, healthcare, and technology creates an unparalleled environment for AI companies to thrive.</p>
+          <div className="blog-content" dangerouslySetInnerHTML={{ __html: `<p>Toronto has become a powerhouse for AI and artificial intelligence innovation. The city's unique combination of finance, media, healthcare, and technology creates an unparalleled environment for AI companies to thrive.</p>
 
 <h2>Why Toronto Leads in AI</h2>
 <p>Several factors make Toronto a top destination for AI companies:</p>
@@ -78,10 +78,10 @@ export default function BlogPost() {
 <h2>Key AI Sectors in Toronto</h2>
 
 <h3>Financial AI</h3>
-<p>Bay Street drives massive demand for AI in trading, risk management, fraud detection, and compliance. Toronto's financial AI companies process trillions of dollars in transactions using ML models.</p>
+<p>Bay Street drives massive demand for AI in trading, risk management, fraud detection, and compliance. Toronto's financial AI companies process trillions of dollars in transactions using AI models.</p>
 
 <h3>Healthcare AI</h3>
-<p>From diagnostic imaging to drug discovery, Toronto's healthcare AI sector is advancing medical care through machine learning and data analysis.</p>
+<p>From diagnostic imaging to drug discovery, Toronto's healthcare AI sector is advancing medical care through artificial intelligence and data analysis.</p>
 
 <h3>Media and Creative AI</h3>
 <p>Toronto's media industry is leveraging generative AI for content creation, personalization, and audience analytics.</p>
@@ -102,7 +102,7 @@ export default function BlogPost() {
 <p>Toronto's AI ecosystem is poised for continued growth, driven by increasing enterprise adoption, favorable policy environments, and a deepening talent pool. The city's diversity of industries ensures AI innovation will continue across multiple sectors simultaneously.</p>
 
 <h2>Selecting the Right AI Partner in Toronto</h2>
-<p>Toronto's AI and machine learning landscape is rich, diverse, and growing. Whether you need AI consulting, custom ML models, or enterprise AI integration, the city offers world-class expertise across every domain.</p>
+<p>Toronto's AI and artificial intelligence landscape is rich, diverse, and growing. Whether you need AI consulting, custom AI models, or enterprise AI integration, the city offers world-class expertise across every domain.</p>
 <hr>` }} />
         </div>
       </article>

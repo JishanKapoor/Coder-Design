@@ -11,40 +11,40 @@ const solutions = [
   {
     icon: Layers,
     category: "Engineering",
-    title: "Full Stack Web Development",
+    title: "Full Stack Website Development",
     description:
-      "We build robust, production ready applications from interactive frontends to scalable backend APIs and cloud infrastructure. Our senior engineers deliver complete solutions using Python, Django, Node.js, React, Next.js, PostgreSQL, AWS, and Google Cloud with automated testing, CI/CD, and security built in from day one.",
+      "We build robust, production ready websites and web applications from interactive frontends to scalable backend APIs and cloud infrastructure. Our senior backend developers in Toronto deliver complete website development solutions using Python, Django, Node.js, React, Next.js, PostgreSQL, AWS, and Google Cloud with automated testing, CI/CD, and security built in from day one.",
     metrics: ["Frontend and Backend Development", "Cloud Infrastructure and DevOps", "API Development and Integration", "Database Architecture and Optimization"],
     href: "/full-stack-engineering",
-    linkText: "Explore Web Development Services",
+    linkText: "Explore Full Stack Development Services",
   },
   {
     icon: Smartphone,
     category: "Mobile",
-    title: "Mobile App Development",
+    title: "Custom Mobile App Development",
     description:
-      "As a trusted mobile apps agency in Toronto, we design and develop high performance mobile applications for iOS and Android that users love. Using React Native, Flutter, Swift, and Kotlin, we handle everything from UX research and prototyping to App Store submission, push notifications, and post launch analytics.",
-    metrics: ["iOS and Android Apps", "React Native and Flutter", "Swift and Kotlin Native", "App Store Optimization"],
+      "As a trusted mobile app development agency in Toronto, we design and develop high performance mobile applications for iOS and Android that users love. Using React Native, Flutter, Swift, and Kotlin, we handle everything from UX research and prototyping to App Store and Google Play Store submission, push notifications, and post launch analytics.",
+    metrics: ["iOS and Android Apps", "React Native and Flutter", "App Store and Play Store Launch", "App Store Optimization"],
     href: "/mobile-app-development",
     linkText: "Discover Mobile App Solutions",
   },
   {
     icon: Brain,
     category: "AI",
-    title: "AI Workflow Automation",
+    title: "AI Chatbots, Call Bots & Automation",
     description:
-      "Transform your business operations with intelligent automation. We build AI chatbots, AI voice bots, n8n and Make workflow pipelines, and predictive analytics systems. Our team specializes in OpenAI integration, Claude, LangChain, and TensorFlow to eliminate repetitive work and unlock data driven insights.",
-    metrics: ["n8n and Make Workflows", "AI Chatbots and Voice Bots", "Predictive Analytics", "OpenAI Integration"],
+      "Transform your business operations with our AI automation agency services. We build AI chatbots for websites, AI call bots to automate customer support, n8n and Make workflow pipelines, and use AI to automate lead qualification. Our AI consulting team specializes in OpenAI integration, Claude, LangChain, and TensorFlow to eliminate repetitive tasks and automate repetitive work.",
+    metrics: ["AI Chatbots and Call Bots", "Automate Customer Support", "AI Lead Qualification", "OpenAI and LLM Integration"],
     href: "/ai-workflow",
     linkText: "See AI Automation in Action",
   },
   {
     icon: Search,
     category: "SEO",
-    title: "SEO Services Toronto",
+    title: "AI SEO Agency Toronto",
     description:
-      "Dominate search rankings with AI powered SEO, local GEO targeting, and Answer Engine Optimization (AEO). We use machine learning for keyword discovery, optimize your content for Google AI Overviews, ChatGPT, and Perplexity, and implement local SEO strategies to maximize qualified organic traffic.",
-    metrics: ["AI Powered SEO Strategy", "Local SEO and GEO Targeting", "Answer Engine Optimization", "Voice Search and AI Overviews"],
+      "Dominate search rankings with our AI SEO agency services, local GEO targeting, generative engine optimization (GEO), and LLM optimization (LLMO). We use artificial intelligence to improve Google rankings, optimize your content for Google AI Overviews, ChatGPT, and Perplexity, and implement local SEO strategies to maximize qualified organic traffic for small businesses and enterprises.",
+    metrics: ["AI Powered SEO Strategy", "Generative Engine Optimization (GEO)", "LLM Optimization (LLMO)", "Voice Search and AI Overviews"],
     href: "/seo-management",
     linkText: "View SEO & Ranking Services",
   },
@@ -81,8 +81,8 @@ export function SolutionsSection() {
             variants={shouldAnimate ? itemVariants : undefined}
             className="mb-16 text-lg text-slate-600"
           >
-            From custom web applications and mobile apps to AI automation and SEO, we deliver 
-            complete solutions tailored to your business goals.
+            From custom website development and mobile apps to AI chatbots, call bots, and AI-powered 
+            SEO, we deliver complete solutions tailored to your business goals as a leading AI agency in Toronto.
           </motion.p>
         </motion.div>
 

@@ -13,7 +13,7 @@ const categoryLinks: { [key: string]: string } = {
   "AI SEO & AEO Services": "/seo-management",
   "Full-Stack Development": "/full-stack-engineering",
   "Mobile App Development": "/mobile-app-development",
-  "AI & Machine Learning": "/ai-workflow",
+  "AI & Automation": "/ai-workflow",
 };
 export default function BlogPost() {
   const [showCalendar, setShowCalendar] = useState(false);
@@ -101,7 +101,7 @@ export default function BlogPost() {
 
   <h2>Understanding AI SEO in 2025</h2>
 
-  <p>AI SEO is the evolution of technical and content optimization, powered by machine learning and data-driven analysis. It goes beyond ranking pages and focuses on how search engines evaluate relevance, intent, and authority at scale.</p>
+  <p>AI SEO is the evolution of technical and content optimization, powered by artificial intelligence and data-driven analysis. It goes beyond ranking pages and focuses on how search engines evaluate relevance, intent, and authority at scale.</p>
 
   <p>Modern AI SEO includes:</p>
 

@@ -4,7 +4,7 @@ import { Logo } from "./Logo";
 import Link from "next/link";
 const footerLinks = {
   Services: [
-    { label: "Web Application Development", href: "/full-stack-engineering" },
+    { label: "Full Stack Web Development", href: "/full-stack-engineering" },
     { label: "Mobile App Development", href: "/mobile-app-development" },
     { label: "AI Automation and Chatbots", href: "/ai-workflow" },
     { label: "SEO Services", href: "/seo-management" },
@@ -39,7 +39,7 @@ export function FooterSection() {
               <span className="text-2xl tracking-tight text-slate-900">CoderDesign</span>
             </Link>
             <p className="mb-8 max-w-md text-slate-600">
-              Toronto based software development company specializing in custom web applications, mobile apps, AI automation, and SEO services.
+              Toronto based AI agency and software development company specializing in full stack website development, custom mobile apps, AI chatbots, call bots, intelligent automation, and AI-powered SEO services.
             </p>
             
             {/* Contact Info */}
@@ -65,7 +65,7 @@ export function FooterSection() {
                 <span>(437) 239-2448</span>
               </a>
               <a 
-                href="https://www.google.com/maps/search/?api=1&query=7+Grosvenor+Street+Toronto+ON+M4Y+0E2"
+                href="https://share.google/1oM1DvA3dFk3An9Pr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-start gap-3 text-slate-600 transition-colors hover:text-violet-600"

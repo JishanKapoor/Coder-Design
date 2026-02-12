@@ -14,7 +14,7 @@ export function Navigation() {
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const navItems = [
-    { label: "Web Development", href: "/full-stack-engineering" },
+    { label: "Full Stack Development", href: "/full-stack-engineering" },
     { label: "Mobile Apps", href: "/mobile-app-development" },
     { label: "AI Automation", href: "/ai-workflow" },
     { label: "SEO Services", href: "/seo-management" },

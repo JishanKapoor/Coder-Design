@@ -13,11 +13,11 @@ const categoryLinks: { [key: string]: string } = {
   "AI SEO & AEO Services": "/seo-management",
   "Full-Stack Development": "/full-stack-engineering",
   "Mobile App Development": "/mobile-app-development",
-  "AI & Machine Learning": "/ai-workflow",
+  "AI & Automation": "/ai-workflow",
 };
 export default function BlogPost() {
   const [showCalendar, setShowCalendar] = useState(false);
-  const category = "AI & Machine Learning";
+  const category = "AI & Automation";
   const categoryLink = categoryLinks[category as keyof typeof categoryLinks] || "/blogs";
   return (
     <div className="min-h-screen bg-white">

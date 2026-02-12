@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     "Expert insights from Toronto developers. Full stack web development, mobile apps, AI automation, and SEO best practices from the CoderDesign team.",
   keywords:
-    "development blog Toronto, web development blog, AI machine learning blog, SEO blog Toronto, mobile app development blog, tech insights Toronto, software development articles, Ontario tech blog",
+    "development blog Toronto, web development blog, AI artificial intelligence blog, SEO blog Toronto, mobile app development blog, tech insights Toronto, software development articles, Ontario tech blog",
   openGraph: {
     title: "Development Blog | CoderDesign Toronto",
     description: "Expert insights from Toronto developers. Web development, mobile apps, AI automation, and SEO best practices.",

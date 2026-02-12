@@ -13,11 +13,11 @@ const categoryLinks: { [key: string]: string } = {
   "AI SEO & AEO Services": "/seo-management",
   "Full-Stack Development": "/full-stack-engineering",
   "Mobile App Development": "/mobile-app-development",
-  "AI & Machine Learning": "/ai-workflow",
+  "AI & Automation": "/ai-workflow",
 };
 export default function BlogPost() {
   const [showCalendar, setShowCalendar] = useState(false);
-  const category = "AI & Machine Learning";
+  const category = "AI & Automation";
   const categoryLink = categoryLinks[category as keyof typeof categoryLinks] || "/blogs";
   return (
     <div className="min-h-screen bg-white">
@@ -95,7 +95,7 @@ export default function BlogPost() {
 <h3>3. Debugging and Optimization</h3>
 <p>A transparent model is easier to fix. When we build transparent workflows at Coder Design, we can isolate exactly which data point caused an error, reducing maintenance costs and downtime.</p>
 <h2>The Solution: Explainable AI (XAI)</h2>
-<p>We are entering the era of XAI. This is a set of processes and methods that allows human users to comprehend and trust the results and output created by machine learning algorithms.</p>
+<p>We are entering the era of XAI. This is a set of processes and methods that allows human users to comprehend and trust the results and output created by artificial intelligence algorithms.</p>
 <h3>Feature Importance Mapping</h3>
 <p>We use tools like SHAP (SHapley Additive exPlanations) and LIME to generate &quot;maps&quot; for every decision. This shows you exactly which variables—income, location, browsing history—tipped the scales.</p>
 <h3>Model Cards and Documentation</h3>

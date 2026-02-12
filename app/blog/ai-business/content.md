@@ -39,7 +39,7 @@ Backend development powers your app’s logic, authentication, APIs, and data op
 In 2025, every full-stack developer needs at least basic cloud and deployment skills.
 
 * **AWS** – Industry-leading cloud platform with endless services  
-* **Google Cloud** – Strong ML/AI integration and developer-friendly tools  
+* **Google Cloud** – Strong AI/AI integration and developer-friendly tools  
 * **Docker** – Containerization for consistent environments and easy deployment  
 * **CI/CD Pipelines** – Automated testing and deployment for continuous delivery  
 

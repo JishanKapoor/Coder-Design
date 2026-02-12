@@ -3,15 +3,15 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://coderdesign.com"),
-  title: "Software Development Company Toronto | CoderDesign",
+  title: "Software Development & AI Services Toronto | CoderDesign",
   description:
-    "Toronto software development company. Custom web apps, mobile apps, AI automation, and SEO. 100+ projects for startups and enterprises. (437) 239-2448.",
+    "Top AI agency and software development company in Toronto. Custom full stack website development, mobile apps, AI chatbots, call bots, intelligent automation, and AI-powered SEO services. 100+ projects delivered for startups and enterprises. (437) 239-2448.",
   keywords:
-    "software development company Toronto, top software company in Toronto, best IT company in Toronto, AI company in Toronto, web development agency Toronto, custom software development Toronto, mobile app development Toronto, mobile apps Toronto agency, app developers Toronto, AI automation Toronto, voice bot Toronto, AI voice bot Toronto, OpenAI integration Toronto, SEO company Toronto, best software agency Toronto, React Next.js developers Toronto, full stack developers Toronto, Toronto web design, SaaS development Toronto, startup software development, ecommerce development Toronto, GTA app development, AI chatbot development Toronto, workflow automation Toronto",
+    "software development Toronto, software development company Toronto, AI services Toronto, top AI agency Toronto, AI agency in Toronto, artificial intelligence company Toronto, web development Toronto, website development Toronto, full stack development Toronto, backend developers Toronto, custom software development Toronto, mobile app development Toronto, app developers Toronto, AI automation agency, AI chatbot Toronto, AI chatbot for websites, AI call bot Toronto, automate customer support with AI, reduce support tickets with AI chatbot, AI to automate lead qualification, generative AI agency, AI development agency, AI consulting services Toronto, AI SEO agency, AI SEO agency for small business, generative engine optimization services, GEO services, LLM optimization services, LLMO Toronto, SEO Toronto, SEO company Toronto, AI automation for law firms, AI automation for real estate, AI automation for e-commerce, how to rank in AI search results, React Next.js developers Toronto, full stack developers Toronto, custom mobile app development Toronto, App Store developers Toronto, Google Play Store app development",
   openGraph: {
-    title: "Software Development Company Toronto | CoderDesign",
+    title: "Software Development & AI Services Toronto | CoderDesign",
     description:
-      "Toronto software development company. Custom web apps, mobile apps, AI automation, and SEO. Trusted by startups and enterprises across the GTA.",
+      "Top software development and artificial intelligence agency in Toronto. Custom full stack web apps, mobile apps, AI automation, and SEO. Trusted by startups and enterprises across the GTA.",
     url: "https://coderdesign.com/",
     siteName: "CoderDesign",
     locale: "en_CA",
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Software Development Company Toronto | CoderDesign",
+    title: "Software Development & AI Services Toronto | CoderDesign",
     description:
-      "Toronto software development company. Custom web apps, mobile apps, AI automation, and SEO. 7 Grosvenor Street, Toronto.",
+      "Top software development and artificial intelligence agency in Toronto. Custom full stack web apps, mobile apps, AI automation, and SEO. 7 Grosvenor Street, Toronto.",
     images: ["https://coderdesign.com/og-image.png"],
   },
   alternates: {
@@ -54,7 +54,7 @@ const globalOrganization = {
     "caption": "CoderDesign Logo"
   },
   "image": "https://coderdesign.com/og-image.png",
-  "description": "CoderDesign is a Toronto-based software development company specializing in custom web applications, mobile app development, AI automation, and SEO services. Founded in Toronto, Ontario, Canada, CoderDesign serves startups and enterprises across the Greater Toronto Area and Canada.",
+  "description": "CoderDesign is a Toronto-based software development and artificial intelligence company specializing in custom full stack web applications, mobile app development, AI automation, and SEO services. Founded in Toronto, Ontario, Canada, CoderDesign serves startups and enterprises across the Greater Toronto Area and Canada.",
   "foundingDate": "2020",
   "foundingLocation": {
     "@type": "Place",
@@ -105,7 +105,8 @@ const globalOrganization = {
     "iOS App Development",
     "Android App Development",
     "AI Automation",
-    "Machine Learning",
+    "Artificial Intelligence",
+    "Intelligent Automation",
     "Chatbot Development",
     "AI Voice Bot Development",
     "Voice Bot Toronto",
@@ -124,7 +125,7 @@ const globalOrganization = {
     "@type": "QuantitativeValue",
     "minValue": 10
   },
-  "slogan": "Toronto Software Development Company",
+  "slogan": "Software Development & AI Services in Toronto",
   "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "Sales",

@@ -13,11 +13,11 @@ const categoryLinks: { [key: string]: string } = {
   "AI SEO & AEO Services": "/seo-management",
   "Full-Stack Development": "/full-stack-engineering",
   "Mobile App Development": "/mobile-app-development",
-  "AI & Machine Learning": "/ai-workflow",
+  "AI & Automation": "/ai-workflow",
 };
 export default function BlogPost() {
   const [showCalendar, setShowCalendar] = useState(false);
-  const category = "AI & Machine Learning";
+  const category = "AI & Automation";
   const categoryLink = categoryLinks[category as keyof typeof categoryLinks] || "/blogs";
   return (
     <div className="min-h-screen bg-white">
@@ -103,7 +103,7 @@ export default function BlogPost() {
 <h3>Real-World Applications: AI in Action Across Healthcare Sectors</h3>
 <p>The versatility of AI-powered language models shines in diverse applications, proving their value beyond theory. Here are expanded examples grounded in 2025 developments:</p>
 <ul>
-<li><p>Radiology and Imaging: AI analyzes scans for abnormalities, such as tumors or fractures. Multimodal models like those in generative AI ecosystems detect issues with high fidelity, reducing radiologist review time by 40%. Case in point: AI systems now preemptively identify diseases before symptoms manifest, as seen in new machine learning models.</p>
+<li><p>Radiology and Imaging: AI analyzes scans for abnormalities, such as tumors or fractures. Multimodal models like those in generative AI ecosystems detect issues with high fidelity, reducing radiologist review time by 40%. Case in point: AI systems now preemptively identify diseases before symptoms manifest, as seen in new artificial intelligence models.</p>
 </li>
 <li><p>Pathology and Disease Detection: Tools like PathChat integrate vision and language to examine biopsies, spotting early-stage cancers. This has revolutionized oncology, where early detection boosts survival rates dramatically.</p>
 </li>

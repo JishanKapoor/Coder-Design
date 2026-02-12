@@ -82,7 +82,7 @@ const aboutJsonLd = {
     "Software Development", "Custom Web Application Development", "Mobile App Development",
     "React", "Next.js", "Node.js", "Python", "Django", "TypeScript",
     "React Native", "Flutter", "Swift", "Kotlin",
-    "AI Automation", "Machine Learning", "Chatbot Development", "OpenAI Integration",
+    "AI Automation", "Artificial Intelligence", "Intelligent Automation", "Chatbot Development", "OpenAI Integration",
     "Search Engine Optimization", "Technical SEO", "Answer Engine Optimization",
     "SaaS Development", "E-commerce Development", "Enterprise Software"
   ],

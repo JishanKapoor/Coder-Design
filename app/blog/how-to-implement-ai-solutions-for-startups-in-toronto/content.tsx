@@ -13,11 +13,11 @@ const categoryLinks: { [key: string]: string } = {
   "AI SEO & AEO Services": "/seo-management",
   "Full-Stack Development": "/full-stack-engineering",
   "Mobile App Development": "/mobile-app-development",
-  "AI & Machine Learning": "/ai-workflow",
+  "AI & Automation": "/ai-workflow",
 };
 export default function BlogPost() {
   const [showCalendar, setShowCalendar] = useState(false);
-  const category = "AI & Machine Learning";
+  const category = "AI & Automation";
   const categoryLink = categoryLinks[category as keyof typeof categoryLinks] || "/blogs";
   return (
     <div className="min-h-screen bg-white">
@@ -31,7 +31,7 @@ export default function BlogPost() {
               </Link>
             </div>
             <Link href={categoryLink} className="mb-6 inline-block rounded-full bg-white/20 px-4 py-2 backdrop-blur-sm transition-colors hover:bg-white/30">
-              <span className="text-sm text-white">AI & Machine Learning</span>
+              <span className="text-sm text-white">AI & Automation</span>
             </Link>
             <h1 className="mb-6 text-white">How to Implement AI Solutions for Startups in Toronto: A 2025 Guide</h1>
             <div className="mb-8 flex flex-wrap items-center gap-6 text-white/90">
@@ -97,7 +97,7 @@ export default function BlogPost() {
 <ul>
 <li>OpenAI API: For text generation, analysis, and conversational AI</li>
 <li>Google Cloud AI: For vision, speech, and translation</li>
-<li>AWS SageMaker: For custom ML model training and deployment</li>
+<li>AWS SageMaker: For custom AI model training and deployment</li>
 <li>Pre-built solutions: Tools like Jasper, Intercom AI, or Salesforce Einstein</li>
 </ul>
 
@@ -112,7 +112,7 @@ export default function BlogPost() {
 <ul>
 <li>$0-1K/month: API-based solutions (ChatGPT, Claude, basic automation tools)</li>
 <li>$1-5K/month: Integrated AI tools with custom workflows</li>
-<li>$5-20K/month: Custom AI development and dedicated ML infrastructure</li>
+<li>$5-20K/month: Custom AI development and dedicated AI infrastructure</li>
 </ul>
 
 <h2>Your Toronto AI Implementation Checklist</h2>

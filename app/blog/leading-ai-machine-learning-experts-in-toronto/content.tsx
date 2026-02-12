@@ -13,11 +13,11 @@ const categoryLinks: { [key: string]: string } = {
   "AI SEO & AEO Services": "/seo-management",
   "Full-Stack Development": "/full-stack-engineering",
   "Mobile App Development": "/mobile-app-development",
-  "AI & Machine Learning": "/ai-workflow",
+  "AI & Automation": "/ai-workflow",
 };
 export default function BlogPost() {
   const [showCalendar, setShowCalendar] = useState(false);
-  const category = "AI & Machine Learning";
+  const category = "AI & Automation";
   const categoryLink = categoryLinks[category as keyof typeof categoryLinks] || "/blogs";
   return (
     <div className="min-h-screen bg-white">
@@ -31,9 +31,9 @@ export default function BlogPost() {
               </Link>
             </div>
             <Link href={categoryLink} className="mb-6 inline-block rounded-full bg-white/20 px-4 py-2 backdrop-blur-sm transition-colors hover:bg-white/30">
-              <span className="text-sm text-white">AI & Machine Learning</span>
+              <span className="text-sm text-white">AI & Automation</span>
             </Link>
-            <h1 className="mb-6 text-white">Leading AI & Machine Learning Experts in Toronto</h1>
+            <h1 className="mb-6 text-white">Leading AI & Automation Experts in Toronto</h1>
             <div className="mb-8 flex flex-wrap items-center gap-6 text-white/90">
               <div className="flex items-center gap-2">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20">
@@ -64,7 +64,7 @@ export default function BlogPost() {
       </section>
       <article className="bg-white py-16 lg:py-20">
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
-          <div className="blog-content" dangerouslySetInnerHTML={{ __html: `<p>Toronto has emerged as a global hub for AI and machine learning innovation. From Bay Street's algorithmic trading to healthcare AI and creative applications, the city's AI ecosystem is thriving.</p>
+          <div className="blog-content" dangerouslySetInnerHTML={{ __html: `<p>Toronto has emerged as a global hub for AI and artificial intelligence innovation. From Bay Street's algorithmic trading to healthcare AI and creative applications, the city's AI ecosystem is thriving.</p>
 
 <h2>Why Toronto for AI?</h2>
 <p>Toronto offers unique advantages for AI development:</p>
@@ -84,13 +84,13 @@ export default function BlogPost() {
 <p>From retail analytics to medical imaging, computer vision applications are growing rapidly across Toronto industries.</p>
 
 <h3>Predictive Analytics</h3>
-<p>Bay Street pioneered predictive modeling, but now every industry from real estate to healthcare uses ML-powered predictions for decision-making.</p>
+<p>Bay Street pioneered predictive modeling, but now every industry from real estate to healthcare uses AI-powered predictions for decision-making.</p>
 
 <h3>Generative AI</h3>
 <p>The latest wave of AI — generative models for text, images, code, and video — is transforming how businesses create and communicate.</p>
 
 <h2>Choosing the Right AI Partner</h2>
-<p>When evaluating AI and ML service providers, consider:</p>
+<p>When evaluating AI and AI service providers, consider:</p>
 <ul>
 <li>Industry expertise: Do they understand your specific domain?</li>
 <li>Technical depth: Can they build custom models, not just implement APIs?</li>
@@ -111,7 +111,7 @@ export default function BlogPost() {
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
           <div className="text-center">
             <h2 className="mb-6 text-white text-3xl font-bold">
-              Connect with Top AI & ML Talent in Toronto
+              Connect with Top AI & AI Talent in Toronto
             </h2>
             <p className="mb-8 text-lg text-white/90">Custom AI solutions that transform your business operations.</p>
             <div className="flex flex-wrap items-center justify-center gap-4">

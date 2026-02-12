@@ -14,12 +14,12 @@ const categoryLinks: { [key: string]: string } = {
   "AI SEO & AEO Services": "/seo-management",
   "Full-Stack Development": "/full-stack-engineering",
   "Mobile App Development": "/mobile-app-development",
-  "AI & Machine Learning": "/ai-workflow",
+  "AI & Automation": "/ai-workflow",
 };
 
 export default function BlogPost() {
   const [showCalendar, setShowCalendar] = useState(false);
-  const category = "AI & Machine Learning";
+  const category = "AI & Automation";
   const categoryLink = categoryLinks[category] || "/blogs";
 
   return (
@@ -88,8 +88,8 @@ export default function BlogPost() {
 
 <p>Best for: Service businesses, professional firms, trades, clinics, and SMBs that want to automate lead management, customer support, invoicing, scheduling, and internal operations.</p>
 
-<h3>Type 2: Custom AI / Machine Learning Development</h3>
-<p>These are engineering-heavy firms that build custom AI models, fine-tune large language models, develop recommendation engines, or create industry-specific AI applications. They employ data scientists, ML engineers, and typically work with tools like Python, TensorFlow, PyTorch, Hugging Face, and cloud ML platforms like AWS SageMaker, Google Vertex AI, or Azure ML.</p>
+<h3>Type 2: Custom AI / Artificial Intelligence Development</h3>
+<p>These are engineering-heavy firms that build custom AI models, fine-tune large language models, develop recommendation engines, or create industry-specific AI applications. They employ data scientists, AI engineers, and typically work with tools like Python, TensorFlow, PyTorch, Hugging Face, and cloud AI platforms like AWS SageMaker, Google Vertex AI, or Azure AI.</p>
 
 <p>Best for: Companies with large datasets that need predictive analytics, custom natural language processing, computer vision, or AI products that go beyond what off-the-shelf APIs provide. Typically mid-size to enterprise businesses.</p>
 

@@ -13,11 +13,11 @@ const categoryLinks: { [key: string]: string } = {
   "AI SEO & AEO Services": "/seo-management",
   "Full-Stack Development": "/full-stack-engineering",
   "Mobile App Development": "/mobile-app-development",
-  "AI & Machine Learning": "/ai-workflow",
+  "AI & Automation": "/ai-workflow",
 };
 export default function BlogPost() {
   const [showCalendar, setShowCalendar] = useState(false);
-  const category = "AI & Machine Learning";
+  const category = "AI & Automation";
   const categoryLink = categoryLinks[category as keyof typeof categoryLinks] || "/blogs";
   return (
     <div className="min-h-screen bg-white">
@@ -31,7 +31,7 @@ export default function BlogPost() {
               </Link>
             </div>
             <Link href={categoryLink} className="mb-6 inline-block rounded-full bg-white/20 px-4 py-2 backdrop-blur-sm transition-colors hover:bg-white/30">
-              <span className="text-sm text-white">AI & Machine Learning</span>
+              <span className="text-sm text-white">AI & Automation</span>
             </Link>
             <h1 className="mb-6 text-white">Why Gemini 3 Is the Next Big Leap in AI Technology</h1>
             <div className="mb-8 flex flex-wrap items-center gap-6 text-white/90">

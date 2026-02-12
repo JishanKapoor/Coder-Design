@@ -127,19 +127,21 @@ export default function FullStackEngineering() {
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
               <div className="mb-4 inline-block rounded-full bg-violet-100 px-4 py-1.5 text-sm text-violet-700">
-                Full-Stack Engineering
+                Full Stack Website Development Toronto
               </div>
               <h1 className="mb-6 text-slate-900">
-                Custom Web Application Development in Toronto
+                Full Stack Website Development &amp; Backend Developers in Toronto
               </h1>
               <p className="mb-8 text-lg leading-relaxed text-slate-600">
-                We build complete, production ready software systems from pixel perfect frontend 
+                Looking for expert full stack developers or backend developers in Toronto? We build 
+                complete, production ready website development solutions from pixel perfect frontend 
                 interfaces to high throughput backend APIs and auto scaling cloud infrastructure. 
-                Our senior Toronto developers architect solutions using Python, Django, Node.js, 
+                Our senior full stack engineers architect solutions using Python, Django, Node.js, 
                 React, Next.js, PostgreSQL, AWS, and Google Cloud, following industry best practices 
                 for test driven development, continuous integration, and zero downtime deployments. 
-                Whether you are launching an MVP, migrating a legacy system, or scaling to millions 
-                of users, we deliver clean, maintainable code that your business can depend on.
+                Whether you need a custom web application, an e-commerce platform, a SaaS product, 
+                or are migrating a legacy system, our Toronto based backend developers and full stack 
+                engineers deliver clean, maintainable code that your business can depend on.
               </p>
               
               <div className="mb-8 flex flex-wrap gap-3">

@@ -13,7 +13,7 @@ const categoryLinks: { [key: string]: string } = {
   "AI SEO & AEO Services": "/seo-management",
   "Full-Stack Development": "/full-stack-engineering",
   "Mobile App Development": "/mobile-app-development",
-  "AI & Machine Learning": "/ai-workflow",
+  "AI & Automation": "/ai-workflow",
 };
 export default function BlogPost() {
   const [showCalendar, setShowCalendar] = useState(false);
@@ -71,7 +71,7 @@ export default function BlogPost() {
 
 <h3>Key Trends Shaping Mobile Development</h3>
 <ul>
-<li>AI-powered features: On-device ML, smart assistants, and personalization</li>
+<li>AI-powered features: On-device AI, smart assistants, and personalization</li>
 <li>Cross-platform development: Flutter and React Native dominate multi-platform builds</li>
 <li>5G optimization: Faster networks enable richer app experiences</li>
 <li>Privacy-first design: Users and regulators demand better data protection</li>

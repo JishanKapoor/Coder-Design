@@ -47,9 +47,9 @@ export default function About() {
       image: "/images/team-engineering.jpg"
     },
     {
-      name: "AI/ML Team",
-      role: "Artificial Intelligence & Machine Learning",
-      description: "Data scientists and ML engineers building intelligent automation solutions, chatbots, voice assistants, and predictive analytics using TensorFlow, PyTorch, and the latest AI technologies.",
+      name: "AI & Automation Team",
+      role: "Artificial Intelligence & Intelligent Automation",
+      description: "AI engineers and data scientists building intelligent automation solutions, chatbots, voice assistants, and predictive analytics using TensorFlow, PyTorch, and the latest AI technologies.",
       image: "/images/team-ai.jpg"
     },
     {
@@ -132,7 +132,7 @@ export default function About() {
               </p>
               <p className="text-lg text-slate-600">
                 Our team combines deep technical excellence across Python, Node.js, React, cloud 
-                platforms, and machine learning with a genuine understanding of business strategy. 
+                platforms, and artificial intelligence with a genuine understanding of business strategy. 
                 We do not just write code. We architect solutions that solve real problems, improve 
                 operational efficiency, reduce costs, and create lasting competitive advantages for 
                 our clients across Toronto and the GTA.

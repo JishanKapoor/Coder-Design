@@ -21,7 +21,7 @@ type BlogMeta = {
 const categoryStyles: Record<string, { bg: string; badge: string; hover: string }> = {
   "Full-Stack Development": { bg: "from-violet-50 to-white", badge: "bg-violet-600", hover: "hover:border-violet-300" },
   "Mobile App Development": { bg: "from-blue-50 to-white", badge: "bg-blue-600", hover: "hover:border-blue-300" },
-  "AI & Machine Learning": { bg: "from-purple-50 to-white", badge: "bg-purple-600", hover: "hover:border-purple-300" },
+  "AI & Automation": { bg: "from-purple-50 to-white", badge: "bg-purple-600", hover: "hover:border-purple-300" },
   "AI SEO & AEO Services": { bg: "from-emerald-50 to-white", badge: "bg-emerald-600", hover: "hover:border-emerald-300" },
 };
 
@@ -43,7 +43,7 @@ export default function Blogs({ posts }: { posts: BlogMeta[] }) {
           <div>
             <div className="mb-6 inline-block rounded-full bg-violet-100 px-4 py-1.5 text-sm text-violet-700">Our Blog</div>
             <h1 className="mb-6 text-slate-900 text-4xl font-bold">Insights & Articles</h1>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto mb-12">Expert insights on web development, mobile apps, AI/ML, and more.</p>
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto mb-12">Expert insights on web development, mobile apps, AI automation, and more.</p>
             
             <div className="max-w-2xl mx-auto">
               <h2 className="text-left text-sm font-semibold text-slate-700 mb-3 ml-2">Search Articles</h2>

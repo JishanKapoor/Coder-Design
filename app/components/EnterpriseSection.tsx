@@ -12,7 +12,7 @@ const features = [
   "Custom software development with third party API integration",
   "Dedicated project managers with transparent Agile workflows",
   "24/7 priority support, monitoring, and incident response",
-  "Sprint based Agile development with weekly demos and reporting",
+  "AI automation for law firms, real estate, and e-commerce",
   "Advanced analytics dashboards and real time business intelligence",
   "Flexible engagement models including fixed price, retainer, or dedicated teams",
 ];
@@ -51,8 +51,9 @@ export function EnterpriseSection() {
               className="mb-8 text-lg leading-relaxed text-slate-400"
             >
               We partner with high growth startups and established enterprises across Toronto 
-              and the GTA to deliver mission critical software, AI powered automation, and SEO 
-              strategies that drive measurable revenue. Recognized as one of the best IT companies in Toronto, 
+              and the GTA as a trusted AI development agency to deliver mission critical software, 
+              AI-powered automation, and SEO strategies that drive measurable revenue. As an artificial 
+              intelligence marketing agency and top AI consulting services provider in Toronto, 
               our team follows battle tested methodologies including Agile sprints, rigorous code reviews, 
               automated CI/CD, and security first architecture to ship reliable solutions on time and within budget.
             </motion.p>

@@ -34,7 +34,7 @@ export function HeroSection() {
           >
             <div className="inline-flex items-center gap-2 rounded-full border border-violet-200 bg-violet-50 px-4 py-2 text-sm text-violet-700 transition-transform duration-200 hover:scale-105">
               <Sparkles className="h-4 w-4" />
-              <span>Toronto's Top Rated Software Development Company</span>
+              <span>Toronto&apos;s Leading AI &amp; Software Development Company</span>
             </div>
           </motion.div>
 
@@ -43,10 +43,10 @@ export function HeroSection() {
             variants={shouldAnimate ? itemVariants : undefined}
             className="mb-6 text-slate-900"
           >
-            Custom Software Development{" "}
+            Software Development &amp; AI Services{" "}
             <br />
             <span className="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
-              Company in Toronto
+              in Toronto
             </span>
           </motion.h1>
 
@@ -55,10 +55,13 @@ export function HeroSection() {
             variants={shouldAnimate ? itemVariants : undefined}
             className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-slate-600"
           >
-            CoderDesign is a top software and AI company in Toronto that builds custom web applications, 
-            mobile apps, AI automation systems, voice bots, and SEO strategies for startups and enterprises across the GTA. 
-            Our senior engineers and data scientists deliver production ready solutions that scale from 
-            your first MVP to millions of users.
+            CoderDesign is a top AI agency and software development company in Toronto. 
+            We build custom full stack websites, website development solutions, mobile apps for the App Store 
+            and Google Play Store, AI chatbots, AI call bots, and intelligent automation systems. 
+            As an AI automation agency and AI SEO agency in Toronto, we also deliver generative engine optimization 
+            and data-driven SEO strategies for startups and enterprises across the GTA. 
+            Our senior backend developers, full stack engineers, and AI consulting specialists deliver 
+            production-ready solutions that scale from your first MVP to millions of users.
           </motion.p>
 
           {/* CTA Buttons */}

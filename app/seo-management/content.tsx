@@ -28,7 +28,7 @@ export default function SEOManagementDetail() {
     {
       icon: Target,
       title: "AI-Powered SEO Strategy",
-      description: "Leverage artificial intelligence and machine learning to identify high-value keywords, predict search trends, and automate content optimization. Our AI tools analyze millions of data points to create winning SEO strategies.",
+      description: "Leverage artificial intelligence and advanced AI algorithms to identify high-value keywords, predict search trends, and automate content optimization. Our AI tools analyze millions of data points to create winning SEO strategies.",
       features: ["AI Keyword Discovery", "Predictive Analytics", "Google Business Profile Optimization", "Smart Content Scoring"]
     },
     {
@@ -46,7 +46,7 @@ export default function SEOManagementDetail() {
     {
       icon: Link2,
       title: "AI Link Building & Outreach",
-      description: "Use machine learning to identify high-quality link opportunities and automate outreach campaigns. Our AI analyzes domain authority, relevance, and engagement patterns for optimal results.",
+      description: "Use artificial intelligence to identify high-quality link opportunities and automate outreach campaigns. Our AI analyzes domain authority, relevance, and engagement patterns for optimal results.",
       features: ["AI Prospect Discovery", "Automated Outreach", "Link Quality Scoring", "Competitor Backlink Analysis"]
     },
     {
@@ -85,17 +85,17 @@ export default function SEOManagementDetail() {
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
               <div className="mb-4 inline-block rounded-full bg-emerald-100 px-4 py-1.5 text-sm text-emerald-700">
-                AI SEO, GEO & AEO
+                AI SEO Agency | GEO | LLMO
               </div>
               <h1 className="mb-6 text-slate-900">
-                SEO Services Toronto: AI Powered Search Optimization
+                AI SEO Agency Toronto: Generative Engine &amp; LLM Optimization
               </h1>
               <p className="mb-8 text-lg leading-relaxed text-slate-600">
-                Harness the power of artificial intelligence to grow your organic search traffic. 
-                Our Toronto SEO team combines machine learning, natural language processing, and 
+                Harness the power of artificial intelligence to improve Google rankings and grow your organic search traffic. As the best AI SEO agency for small business in Toronto, our 
+                team combines artificial intelligence, natural language processing, and 
                 predictive analytics to boost your visibility, drive qualified traffic, and maximize 
-                ROI with intelligent automation. We go beyond traditional keyword research. Our team 
-                builds comprehensive content ecosystems, optimizes for Google AI Overviews, and ensures 
+                ROI with intelligent automation. We go beyond traditional keyword research with generative engine optimization (GEO) and LLM optimization (LLMO) services to help you rank in AI search results. Our team 
+                builds comprehensive content ecosystems, uses AI to write blog posts, optimizes for Google AI Overviews, and ensures 
                 your brand appears as a trusted answer across search engines, voice assistants, and AI 
                 platforms like ChatGPT, Perplexity, and Gemini. For local businesses, we also optimize
                 your Google Business Profile (formerly Google My Business) to improve Maps rankings,

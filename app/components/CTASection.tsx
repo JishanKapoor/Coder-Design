@@ -30,10 +30,11 @@ export function CTASection() {
             variants={shouldAnimate ? itemVariants : undefined}
             className="mb-10 text-lg leading-relaxed text-slate-600"
           >
-            Whether you need a custom web application, a mobile app for iOS and Android, AI powered 
-            automation with voice bots and OpenAI integration, or an SEO strategy that drives organic revenue, 
-            our Toronto based team of senior engineers, data scientists, and growth strategists is ready to help. 
-            Book a free consultation and get a custom project quote today.
+            Whether you need custom website development, a mobile app for iOS and Android on the App Store 
+            and Play Store, an AI chatbot for your website, AI call bots to automate customer support, 
+            generative engine optimization to rank in AI search results, or a complete AI SEO strategy 
+            that drives organic revenue, our Toronto based team of senior engineers, AI consultants, and 
+            growth strategists is ready to help. Book a free consultation and get a custom project quote today.
           </motion.p>
 
           <motion.div

@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import AIWorkflowDetail from "./content";
 
 export const metadata: Metadata = {
-  title: "SEO Company Toronto | AI Powered SEO | CoderDesign",
+  title: "AI SEO Agency Toronto | Generative Engine Optimization | CoderDesign",
   description:
-    "Toronto SEO company. AI powered search optimization, local SEO, technical audits, content strategy, and link building. Get a free SEO audit: (437) 239-2448.",
+    "Best AI SEO agency in Toronto. AI-powered search optimization, generative engine optimization (GEO), LLM optimization (LLMO), local SEO, and technical audits. Improve Google rankings with AI. Free SEO audit: (437) 239-2448.",
   keywords:
-    "SEO company Toronto, SEO services Toronto, local SEO Toronto, AI SEO Toronto, technical SEO audit Toronto, content strategy Toronto, link building Toronto, answer engine optimization, Toronto SEO agency, best SEO company Toronto, Google rankings Toronto",
+    "AI SEO agency Toronto, AI SEO agency for small business, SEO Toronto, SEO company Toronto, generative engine optimization services, GEO services Toronto, LLM optimization services, LLMO Toronto, how to rank in AI search results, improve Google rankings with AI, AI powered SEO Toronto, local SEO Toronto, technical SEO audit Toronto, content strategy Toronto, link building Toronto, answer engine optimization, use AI to write blog posts, AI to improve Google rankings, AI tools for small business marketing, artificial intelligence marketing agency Toronto",
   openGraph: {
     title: "SEO Company Toronto | AI Powered SEO Services | CoderDesign",
     description: "Toronto SEO company. AI powered SEO, local SEO, technical audits, content strategy, and link building. Call (437) 239-2448.",

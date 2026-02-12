@@ -7,27 +7,27 @@ import { containerVariants, itemVariants } from "../animations/variants";
 const features = [
   {
     icon: Code2,
-    title: "Web Application Development",
+    title: "Full Stack Website Development",
     description:
-      "We build custom web applications from responsive frontends to scalable backend APIs. Our Toronto developers work with React, Next.js, Node.js, Python, and Django to deliver fast, reliable web apps with automated testing, CI/CD pipelines, and production grade code that ships quickly.",
+      "We build custom websites and full stack web applications from responsive frontends to scalable backend APIs. Our backend developers in Toronto work with React, Next.js, Node.js, Python, and Django to deliver fast, reliable website development solutions with automated testing, CI/CD pipelines, and production grade code that ships quickly.",
   },
   {
     icon: Smartphone,
     title: "Native & Cross-Platform Mobile Apps",
     description:
-      "Native iOS and Android apps built with Swift and Kotlin, plus cross platform solutions using React Native and Flutter. We handle UI/UX design, prototyping, App Store submission, push notifications, in-app purchases, and post launch analytics.",
+      "Native iOS and Android apps built with Swift and Kotlin, plus cross platform solutions using React Native and Flutter. We handle UI/UX design, prototyping, App Store and Google Play Store submission, push notifications, in-app purchases, and post launch analytics for custom mobile app development in Toronto.",
   },
   {
     icon: Brain,
-    title: "AI Automation and Chatbots",
+    title: "AI Chatbots, Call Bots & Automation",
     description:
-      "Custom AI chatbots, AI voice bots, workflow automation, computer vision, and predictive analytics pipelines. We handle OpenAI integration, Claude, LangChain, and TensorFlow into production systems to automate repetitive tasks, extract insights from data, and build intelligent agents that learn over time.",
+      "Custom AI chatbots for websites, AI call bots, voice bots, and intelligent workflow automation to automate customer support and reduce support tickets. As a generative AI agency in Toronto, we integrate OpenAI, Claude, LangChain, and TensorFlow into production systems to automate repetitive tasks, qualify leads with AI, and build intelligent agents that learn over time.",
   },
   {
     icon: Search,
-    title: "AI-Powered SEO & Search Optimization",
+    title: "AI SEO, GEO & LLM Optimization",
     description:
-      "As a leading SEO company in Toronto, we deliver AI powered search engine optimization with local GEO targeting and Answer Engine Optimization (AEO). We use machine learning for keyword discovery, automate on-page optimization, build high authority backlinks, and optimize for Google AI Overviews and voice search.",
+      "As a leading AI SEO agency in Toronto, we deliver AI-powered search engine optimization with local GEO targeting, generative engine optimization (GEO), and LLM optimization (LLMO) services. We use artificial intelligence to improve Google rankings, automate on-page optimization, build high authority backlinks, and optimize for Google AI Overviews and voice search.",
   },
   {
     icon: Cloud,
@@ -67,15 +67,15 @@ export function PlatformSection() {
             variants={shouldAnimate ? itemVariants : undefined}
             className="mb-6 text-slate-900"
           >
-            Software Development Services in Toronto
+            Software Development & AI Services in Toronto
           </motion.h2>
           
           <motion.p
             variants={shouldAnimate ? itemVariants : undefined}
             className="mb-16"
           >
-            Full stack web development, mobile apps, AI automation, and SEO services to help 
-            your business grow in Toronto and across Canada.
+            Full stack website development, custom mobile app development, AI automation agency services, 
+            and AI-powered SEO to help your business grow in Toronto and across Canada.
           </motion.p>
         </motion.div>
 

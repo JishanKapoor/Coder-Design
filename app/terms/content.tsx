@@ -56,7 +56,7 @@ export default function Terms() {
                   <ul className="ml-6 list-disc space-y-1">
                     <li>Full-stack, AI, and cloud engineering</li>
                     <li>Backend development and API integration</li>
-                    <li>AI and machine learning development</li>
+                    <li>AI and intelligent automation development</li>
                     <li>Mobile application development</li>
                     <li>AI-powered SEO, GEO targeting, and AEO services</li>
                     <li>Custom software development</li>

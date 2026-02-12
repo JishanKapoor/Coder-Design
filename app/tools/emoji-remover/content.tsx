@@ -203,7 +203,7 @@ export default function EmojiRemoverTool() {
       before: "This product is amazing \u{1F60D}\u{1F60D}\u{1F60D} best purchase ever \u{1F44D}",
       after: "This product is amazing best purchase ever",
       description:
-        "Prepare text corpora for natural language processing, sentiment analysis, and machine learning models. Remove emoji noise to improve tokenization and model accuracy.",
+        "Prepare text corpora for natural language processing, sentiment analysis, and AI models. Remove emoji noise to improve tokenization and model accuracy.",
     },
     {
       icon: BarChart3,

@@ -26,8 +26,8 @@ export default function HomePage() {
             <Link href="/mobile-app-development" style={{ margin: "0 0.5rem", color: "#64748b" }} title="Mobile App Development Services">
               Mobile Apps
             </Link>
-            <Link href="/ai-workflow" style={{ margin: "0 0.5rem", color: "#64748b" }} title="AI and Machine Learning Services">
-              AI & ML
+            <Link href="/ai-workflow" style={{ margin: "0 0.5rem", color: "#64748b" }} title="AI and Intelligent Automation Services">
+              AI & Automation
             </Link>
             <Link href="/seo-management" style={{ margin: "0 0.5rem", color: "#64748b" }} title="SEO Management Services">
               SEO
@@ -115,9 +115,9 @@ export default function HomePage() {
               </p>
             </article>
             <article style={cardStyle}>
-              <h3 style={cardHeading}>AI & Machine Learning</h3>
+              <h3 style={cardHeading}>AI & Intelligent Automation</h3>
               <p style={cardText}>
-                Custom AI models, chatbots, computer vision, predictive analytics & automation.
+                Custom AI models, chatbots, computer vision, predictive analytics & intelligent automation.
               </p>
             </article>
             <article style={cardStyle}>

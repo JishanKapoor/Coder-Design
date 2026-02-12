@@ -14,7 +14,7 @@ const stats = [
     icon: Brain,
     metric: "100+",
     label: "AI Models Deployed",
-    description: "Machine learning in production"
+    description: "Artificial intelligence in production"
   },
   {
     icon: Search,

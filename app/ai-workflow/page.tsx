@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import AIWorkflowDetail from "./content";
 
 export const metadata: Metadata = {
-  title: "AI Automation and Chatbots Toronto | CoderDesign",
+  title: "AI Automation Agency Toronto | AI Chatbots & Call Bots | CoderDesign",
   description:
-    "AI automation company in Toronto. Custom chatbots, n8n workflows, OpenAI integration, and predictive analytics for businesses across the GTA. (437) 239-2448.",
+    "Top AI automation agency in Toronto. Custom AI chatbots for websites, AI call bots, n8n workflows, OpenAI integration, and intelligent automation to automate customer support and reduce support tickets. AI consulting services for businesses across the GTA. (437) 239-2448.",
   keywords:
-    "AI automation Toronto, chatbot development Toronto, n8n workflow automation, AI chatbot Toronto, workflow automation Toronto, OpenAI integration Toronto, business automation Toronto, AI development company Toronto, machine learning Toronto",
+    "AI automation agency Toronto, AI agency in Toronto, AI chatbot for websites, AI chatbot Toronto, AI call bot Toronto, automate customer support with AI, reduce support tickets with AI chatbot, AI to automate lead qualification, generative AI agency, AI development agency, AI consulting services Toronto, workflow automation Toronto, n8n workflow automation, OpenAI integration Toronto, AI automation for small businesses, AI automation for law firms, AI automation for real estate, AI automation for e-commerce, use AI to automate repetitive tasks, AI voice bot Toronto",
   openGraph: {
     title: "AI Automation and Chatbot Development Toronto | CoderDesign",
     description: "Custom AI chatbots, n8n workflow automation, and OpenAI integration for Toronto businesses. Call (437) 239-2448.",
@@ -48,7 +48,7 @@ const serviceJsonLd = {
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom AI Chatbot Development" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "n8n and Make Workflow Automation" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "OpenAI and LLM Integration" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Predictive Analytics and Machine Learning" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Predictive Analytics and Intelligent Automation" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Business Process Automation" } }
     ]
   }

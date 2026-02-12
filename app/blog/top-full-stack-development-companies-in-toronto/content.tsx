@@ -13,7 +13,7 @@ const categoryLinks: { [key: string]: string } = {
   "AI SEO & AEO Services": "/seo-management",
   "Full-Stack Development": "/full-stack-engineering",
   "Mobile App Development": "/mobile-app-development",
-  "AI & Machine Learning": "/ai-workflow",
+  "AI & Automation": "/ai-workflow",
 };
 export default function BlogPost() {
   const [showCalendar, setShowCalendar] = useState(false);
@@ -88,7 +88,7 @@ export default function BlogPost() {
 <h3>Backend</h3>
 <ul>
 <li>Node.js: JavaScript runtime for scalable server applications</li>
-<li>Python: Versatile language for APIs, ML, and data processing</li>
+<li>Python: Versatile language for APIs, AI, and data processing</li>
 <li>PostgreSQL: Enterprise-grade relational database</li>
 </ul>
 
