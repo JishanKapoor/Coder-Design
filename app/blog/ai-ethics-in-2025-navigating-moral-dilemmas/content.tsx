@@ -22,7 +22,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-      <section className={"relative overflow-hidden bg-gradient-to-br from-violet-600 to-indigo-700 py-20 lg:py-28"}>
+      <section className={"relative overflow-hidden bg-purple-600 py-20 lg:py-28"}>
         <div className="relative mx-auto max-w-4xl px-6 lg:px-12">
           <div>
             <div className="mb-8">
@@ -57,7 +57,7 @@ export default function BlogPost() {
             <div className="flex flex-wrap gap-3">
               <Button
                 onClick={() => setShowCalendar(true)}
-                className="bg-white text-violet-700 hover:bg-white/90"
+                className="bg-white text-purple-600 hover:bg-white/90"
               >
                 Build an AI Feature
               </Button>
@@ -225,14 +225,14 @@ export default function BlogPost() {
 <p>Interested in building this? Check out our <a href='https://www.coderdesign.com/ai-workflow'>AI Services</a>.</p>` }} />
         </div>
       </article>
-      <section className="bg-violet-600 py-16 text-center text-white">
+      <section className="bg-purple-600 py-16 text-center text-white">
         <div className="mx-auto max-w-2xl px-6">
           <h2 className="mb-4 text-2xl font-bold">
               Implement Ethical AI in Your Organization
             </h2>
           <p className="mb-8 text-white/80">Let&apos;s discuss how we can help bring your ideas to life with expert development and strategy.</p>
           <div className="flex flex-wrap justify-center gap-3">
-            <Button onClick={() => setShowCalendar(true)} className="bg-white text-violet-700 hover:bg-white/90">
+            <Button onClick={() => setShowCalendar(true)} className="bg-white text-purple-600 hover:bg-white/90">
               Schedule an Ethics Assessment
             </Button>
             <Link href="/contact">
@@ -262,7 +262,7 @@ export default function BlogPost() {
             <p className="mb-4 text-sm text-slate-600">Book a free 30-minute consultation to discuss your project.</p>
             <div className="flex gap-3">
               <a href="https://calendly.com/coderdesign/30min" target="_blank" rel="noopener noreferrer" className="flex-1">
-                <Button className="w-full bg-violet-600 text-white hover:bg-violet-700">Book on Calendly</Button>
+                <Button className="w-full bg-purple-600 text-white hover:bg-purple-700">Book on Calendly</Button>
               </a>
               <Link href="/contact" className="flex-1">
                 <Button variant="outline" className="w-full">Contact Form</Button>

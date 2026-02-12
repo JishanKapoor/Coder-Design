@@ -22,7 +22,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-      <section className={"relative overflow-hidden bg-gradient-to-br from-purple-600 to-fuchsia-700 py-20 lg:py-28"}>
+      <section className={"relative overflow-hidden bg-purple-600 py-20 lg:py-28"}>
         <div className="relative mx-auto max-w-4xl px-6 lg:px-12">
           <div>
             <div className="mb-8">
@@ -106,7 +106,7 @@ export default function BlogPost() {
 <hr>` }} />
         </div>
       </article>
-      <section className={"bg-gradient-to-br from-purple-600 to-fuchsia-700 py-20"}>
+      <section className={"bg-purple-600 py-20"}>
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
           <div className="text-center">
             <h2 className="mb-6 text-white text-3xl font-bold">

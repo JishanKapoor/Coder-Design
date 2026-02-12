@@ -27,7 +27,7 @@ export default function BlogPost() {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-rose-600 to-pink-700 py-20 lg:py-28">
+      <section className="relative overflow-hidden bg-purple-600 py-20 lg:py-28">
         <div className="relative mx-auto max-w-4xl px-6 lg:px-12">
           <div>
             <div className="mb-8">
@@ -59,7 +59,7 @@ export default function BlogPost() {
               </div>
             </div>
             <div className="flex flex-wrap gap-3">
-              <Button className="gap-2 bg-white text-rose-600 hover:bg-white/90" asChild>
+              <Button className="gap-2 bg-white text-purple-600 hover:bg-white/90" asChild>
                 <Link href="/contact">Explore AI Solutions</Link>
               </Button>
               <Button variant="overlay" onClick={() => setShowCalendar(true)}>Book an AI Consultation</Button>
@@ -73,338 +73,326 @@ export default function BlogPost() {
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
           <div className="blog-content" dangerouslySetInnerHTML={{ __html: `
 
-<p>If you run a business in Toronto and you have not yet integrated AI into your operations, you are leaving money on the table. Not theoretical, future-state money — real, measurable savings in time, labour, and operational overhead that your competitors are already capturing. And among the AI models available in 2026, <strong>Claude</strong> — built by Anthropic — has emerged as the most capable and reliable choice for business applications.</p>
+<p>Anthropic just released <strong>Claude 4.6</strong>, and it is not a minor update. This is the biggest leap since Claude 3.5 Sonnet changed the game in 2024. Extended thinking, native tool use, computer use, lower hallucination rates, and faster responses. If you run a business in Toronto and you have been waiting for AI to get good enough to actually trust with real work, this is the version that changes things.</p>
 
-<p>This is not a hype piece. This guide covers what Claude actually is, what it can and cannot do, the specific use cases where Toronto businesses are seeing real ROI, and how to implement it without the risk, waste, and confusion that plagues most AI adoption efforts. (If you want expert help implementing Claude-powered automation, explore our <a href="/ai-workflow">AI workflow automation services</a>.)</p>
+<p>We have been building with Claude since the early API days. We have deployed Claude-powered automation for law firms, e-commerce companies, SaaS platforms, and professional services firms across the GTA. Claude 4.6 is a genuine step change. This article breaks down exactly what is new, why it matters for your business, and how to start using it. (If you want help implementing Claude 4.6 in your operations, explore our <a href="/ai-workflow">AI workflow automation services</a>.)</p>
 
 <hr>
 
-<h2>What Is Claude AI? A Business-Focused Overview</h2>
+<h2>What Is Claude 4.6? The Key Upgrades</h2>
 
-<p><strong>Claude</strong> is a large language model (LLM) built by <strong>Anthropic</strong>, an AI safety company founded in 2021 by former OpenAI researchers. Unlike most AI companies chasing raw benchmarks, Anthropic built Claude with a specific philosophy: make AI that is <strong>helpful, harmless, and honest</strong>. For businesses, this translates to outputs that are more reliable, more nuanced, and less prone to the confident-sounding fabrications (hallucinations) that plague other models.</p>
+<p>Claude 4.6 is Anthropic's newest flagship model. It sits at the top of the Claude lineup, above Sonnet 4 and Haiku. But the version number undersells what actually changed. Claude 4.6 introduces three capabilities that fundamentally expand what AI can do for businesses.</p>
 
-<h3>Claude's Model Lineup in 2026</h3>
+<h3>Extended Thinking</h3>
+
+<p>Previous Claude models gave you an answer immediately. Claude 4.6 can <strong>think before it responds</strong>. When you enable extended thinking, the model works through a problem step by step internally before generating its final output. The result is dramatically better performance on complex tasks.</p>
+
+<p>What this means in practice:</p>
+<ul>
+<li>Financial analysis that actually cross-references multiple data points instead of summarizing surface-level numbers</li>
+<li>Contract review that catches subtle conflicts between clauses that earlier models missed</li>
+<li>Code generation that considers edge cases, error handling, and architecture before writing the first line</li>
+<li>Strategic recommendations that weigh trade-offs instead of listing generic options</li>
+</ul>
+
+<p>Extended thinking is not just "more accurate." It changes the <em>type</em> of work you can hand off to AI. Tasks that previously required a senior analyst or experienced developer can now be handled by Claude 4.6 with human review, rather than requiring a human to do the heavy lifting from scratch.</p>
+
+<h3>Native Tool Use</h3>
+
+<p>Claude 4.6 can <strong>call external tools, APIs, and databases</strong> during a conversation. You define the tools available to it (a database query function, a web search API, a Slack integration, a calendar API) and Claude decides when and how to use them.</p>
+
+<p>This turns Claude from a text generator into an <strong>autonomous agent</strong>. Example workflow for a Toronto real estate firm:</p>
+<ol>
+<li>Client emails asking about comparable sales in a specific neighbourhood</li>
+<li>Claude reads the email (text understanding)</li>
+<li>Claude queries the MLS database via API (tool use)</li>
+<li>Claude pulls recent assessment data from MPAC (tool use)</li>
+<li>Claude generates a professional comparable sales report (text generation)</li>
+<li>Claude drafts a reply email with the report attached (text generation)</li>
+</ol>
+
+<p>That entire workflow, which takes a real estate agent 45 minutes to an hour, happens in under 60 seconds. The agent reviews and sends. That is the difference between tool use and plain text generation.</p>
+
+<h3>Computer Use</h3>
+
+<p>This is the capability that gets the most attention, and for good reason. Claude 4.6 can <strong>see your screen and interact with desktop applications</strong> like a human would: clicking buttons, filling forms, navigating menus, reading results.</p>
+
+<p>Practical applications for Toronto businesses:</p>
+<ul>
+<li>Data entry across legacy systems that have no API (government portals, old CRMs, insurance platforms)</li>
+<li>Automated testing of web applications by navigating the UI and verifying expected behaviour</li>
+<li>Filling out compliance forms that require navigating multi-step web portals</li>
+<li>Extracting data from systems where the only way to get it is through the user interface</li>
+</ul>
+
+<p>Computer use is still in its early days and requires careful setup, but for businesses stuck with legacy systems that have no API, it is a breakthrough. No more paying someone $25 an hour to copy data from one system to another.</p>
+
+<hr>
+
+<h2>Claude 4.6 by the Numbers</h2>
+
+<table>
+<thead>
+<tr><th>Specification</th><th>Claude 4.6</th><th>Claude Opus 4</th><th>GPT-4o (OpenAI)</th><th>Gemini 2.5 (Google)</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Context Window</strong></td><td>200K tokens</td><td>200K tokens</td><td>128K tokens</td><td>1M+ tokens</td></tr>
+<tr><td><strong>Extended Thinking</strong></td><td>Yes (native)</td><td>No</td><td>Limited (o1-style)</td><td>Yes (Gemini 2.5 Pro)</td></tr>
+<tr><td><strong>Tool Use</strong></td><td>Native, multi-step</td><td>Basic</td><td>Function calling</td><td>Function calling</td></tr>
+<tr><td><strong>Computer Use</strong></td><td>Yes</td><td>Beta</td><td>No</td><td>No</td></tr>
+<tr><td><strong>Hallucination Rate</strong></td><td>Lowest</td><td>Low</td><td>Low-moderate</td><td>Moderate</td></tr>
+<tr><td><strong>Code Generation</strong></td><td>Excellent</td><td>Excellent</td><td>Excellent</td><td>Good</td></tr>
+<tr><td><strong>Long-Form Writing</strong></td><td>Best in class</td><td>Excellent</td><td>Good</td><td>Good</td></tr>
+<tr><td><strong>Speed</strong></td><td>Fast</td><td>Moderate</td><td>Fast</td><td>Fast</td></tr>
+<tr><td><strong>API Cost (input/output)</strong></td><td>$3/$15 per 1M tokens</td><td>$3/$15 per 1M tokens</td><td>$2.50/$10 per 1M tokens</td><td>Varies</td></tr>
+<tr><td><strong>Data Privacy</strong></td><td>Not used for training</td><td>Not used for training</td><td>Not used for training</td><td>Not used for training</td></tr>
+</tbody>
+</table>
+
+<p>The context window alone makes Claude 4.6 suitable for processing entire contracts, codebases, or financial reports in a single prompt. 200K tokens is approximately 150,000 words, the equivalent of a 500-page book. No chunking, no summarization workarounds, no lost context.</p>
+
+<hr>
+
+<h2>The Claude 4.6 Model Lineup: Which One to Use</h2>
+
+<p>Anthropic maintains three tiers. Choosing the right one for each task saves money without sacrificing quality.</p>
 
 <table>
 <thead>
 <tr><th>Model</th><th>Strengths</th><th>Best For</th><th>API Cost (approx.)</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Claude Opus 4</strong></td><td>Most capable reasoning, complex analysis, long-form content, coding</td><td>High-stakes business tasks, complex document analysis, strategic writing</td><td>$3/$15 per 1M tokens (input/output)</td></tr>
-<tr><td><strong>Claude Sonnet 4</strong></td><td>Strong balance of capability and speed</td><td>Day-to-day business automation, chatbots, content generation</td><td>$1/$5 per 1M tokens</td></tr>
-<tr><td><strong>Claude Haiku</strong></td><td>Fastest response, lowest cost</td><td>High-volume tasks, simple classification, quick Q&A</td><td>$0.25/$1.25 per 1M tokens</td></tr>
+<tr><td><strong>Claude 4.6</strong></td><td>Extended thinking, tool use, computer use, best reasoning</td><td>Complex analysis, autonomous workflows, high-stakes decisions</td><td>$3/$15 per 1M tokens</td></tr>
+<tr><td><strong>Claude Sonnet 4</strong></td><td>Strong balance of capability and speed</td><td>Day-to-day automation, chatbots, content generation, code review</td><td>$1/$5 per 1M tokens</td></tr>
+<tr><td><strong>Claude Haiku</strong></td><td>Fastest response, lowest cost</td><td>High-volume simple tasks, classification, routing, quick Q&A</td><td>$0.25/$1.25 per 1M tokens</td></tr>
 </tbody>
 </table>
 
-<p><strong>The 200K token context window</strong> is a game-changer for business use. For context: 200,000 tokens is approximately <strong>150,000 words</strong> — the equivalent of a 500-page book. This means Claude can process an entire contract, an entire codebase, a full year of customer feedback, or a complete financial report <em>in a single prompt</em>. No chunking, no summarization workarounds, no loss of context. For Toronto businesses dealing with large documents (legal, real estate, financial services), this capability alone justifies the switch from shorter-context competitors.</p>
+<p><strong>The smart approach:</strong> Use Claude 4.6 for the tasks that need deep reasoning (contract analysis, strategic planning, complex code architecture). Use Sonnet 4 for everyday work (email drafting, content creation, standard code generation). Use Haiku for high-volume, low-complexity tasks (email classification, sentiment analysis, routing). A Toronto business running this tiered approach typically spends 60 to 70% less on API costs than one using the top model for everything.</p>
 
 <hr>
 
-<h2>Claude vs. the Competition: An Honest Comparison</h2>
+<h2>Real Use Cases: How Toronto Businesses Are Using Claude 4.6</h2>
 
-<p>Businesses considering AI often ask: "Why Claude instead of ChatGPT or Gemini?" Here is an honest, no-spin comparison based on our experience implementing all three for Toronto clients:</p>
+<p>We have been deploying Claude 4.6 for Toronto clients since it launched. Here is what is actually working.</p>
 
-<table>
-<thead>
-<tr><th>Capability</th><th>Claude (Anthropic)</th><th>GPT-4o (OpenAI)</th><th>Gemini 2.5 (Google)</th></tr>
-</thead>
-<tbody>
-<tr><td><strong>Reasoning & Analysis</strong></td><td>Strongest. Excels at multi-step logic, nuanced analysis</td><td>Very strong. Slightly less careful on edge cases</td><td>Strong. Best when integrated with Google data</td></tr>
-<tr><td><strong>Context Window</strong></td><td>200K tokens (~150K words)</td><td>128K tokens (~96K words)</td><td>1M+ tokens (largest)</td></tr>
-<tr><td><strong>Hallucination Rate</strong></td><td>Lowest among major models</td><td>Low, but more prone to confident fabrication</td><td>Moderate</td></tr>
-<tr><td><strong>Instruction Following</strong></td><td>Excellent. Follows complex, multi-step instructions precisely</td><td>Good. Occasionally drifts from detailed instructions</td><td>Good. Best with simple, clear prompts</td></tr>
-<tr><td><strong>Code Generation</strong></td><td>Excellent. Particularly strong in TypeScript, Python, Rust</td><td>Excellent. Broadest language support</td><td>Good. Strong in Python</td></tr>
-<tr><td><strong>Long-Form Writing</strong></td><td>Best. Most natural, least repetitive, best structure</td><td>Good. Can be formulaic in longer pieces</td><td>Good. Tends toward shorter outputs</td></tr>
-<tr><td><strong>Safety & Reliability</strong></td><td>Constitutional AI approach. Most predictable</td><td>RLHF-based. Occasionally inconsistent</td><td>Safety-focused but less transparent</td></tr>
-<tr><td><strong>Multimodal (Vision)</strong></td><td>Yes. Image analysis, chart reading, document OCR</td><td>Yes. Strong image understanding</td><td>Yes. Best video understanding</td></tr>
-<tr><td><strong>API Availability</strong></td><td>Direct + AWS Bedrock + Google Vertex</td><td>Direct + Azure OpenAI</td><td>Direct + Google Cloud</td></tr>
-<tr><td><strong>Data Privacy</strong></td><td>API data not used for training</td><td>API data not used for training</td><td>API data not used for training</td></tr>
-</tbody>
-</table>
+<h3>1. Legal Document Analysis (Law Firms)</h3>
 
-<p><strong>Our recommendation for Toronto businesses:</strong> Claude Sonnet 4 is the best default choice for most business automation — it balances capability, speed, and cost. Use Claude Opus 4 for high-stakes tasks (contract analysis, strategic planning, complex code). Use Claude Haiku for high-volume, simple tasks (email classification, sentiment analysis, basic Q&A).</p>
+<p>A mid-size Toronto law firm processes 50 to 100 page commercial agreements daily. Previously, a junior associate spent 3 to 4 hours on each contract extracting key terms, identifying risk clauses, and summarizing obligations.</p>
 
-<hr>
+<p>With Claude 4.6's extended thinking enabled, the model reads the entire contract in its 200K context window, reasons through clause interactions, and produces a structured analysis: key dates, financial obligations, termination clauses, liability caps, and flagged risk provisions. The associate reviews Claude's output in 30 minutes instead of doing the analysis from scratch in 4 hours. That is a <strong>7x productivity gain</strong> on one of the firm's most common tasks.</p>
 
-<h2>Real Business Use Cases: How Toronto Companies Use Claude</h2>
+<h3>2. Autonomous Customer Service (E-Commerce)</h3>
 
-<p>Theory is useful, but implementation is what matters. Here are the specific ways Toronto businesses are using Claude to drive measurable results:</p>
+<p>A Toronto e-commerce company receives 200+ customer inquiries daily across email, chat, and social media. Response time was averaging 4 to 6 hours.</p>
 
-<h3>1. Document Analysis and Summarization</h3>
+<p>Using Claude 4.6 with native tool use, they built a system where Claude reads incoming messages, queries the order database (tool use), checks shipping status via Canada Post API (tool use), and generates personalized responses. Complex or sensitive issues are escalated to human agents with a full conversation summary.</p>
 
-<p><strong>The problem:</strong> A Toronto law firm spends 3–4 hours per contract reviewing 50–100 page agreements, extracting key terms, identifying risk clauses, and summarizing obligations.</p>
+<p>Result: 65% of inquiries are fully resolved without human intervention. Average response time dropped from 4 to 6 hours to under 30 seconds. Customer satisfaction increased 23%. The human agents now handle only the cases that genuinely need a person.</p>
 
-<p><strong>The Claude solution:</strong> Upload the entire contract to Claude (it fits in the context window easily). Prompt: "Analyse this contract. Extract all key dates, financial obligations, termination clauses, liability limitations, and indemnification terms. Flag any unusual or potentially risky provisions. Format as a structured summary table."</p>
+<h3>3. Financial Reporting Automation (Professional Services)</h3>
 
-<p><strong>The result:</strong> What took 3–4 hours takes 5 minutes. The lawyer still reviews Claude's analysis — they are the expert, Claude is the first-pass analyst. But the review takes 30 minutes instead of 4 hours. That is a <strong>7x productivity gain</strong> on one of the firm's most common and billable tasks.</p>
+<p>A Toronto consulting firm generates monthly financial reports for 15 clients. Each report requires pulling data from QuickBooks, analyzing trends, comparing against forecasts, and writing a narrative summary. Previously took 2 to 3 hours per client per month.</p>
 
-<p><strong>Other document analysis use cases in Toronto:</strong></p>
-<ul>
-<li><strong>Real estate</strong> — Analysing lease agreements, property condition reports, and zoning documents</li>
-<li><strong>Financial services</strong> — Processing annual reports, auditor letters, and regulatory filings</li>
-<li><strong>Healthcare</strong> — Summarizing clinical research papers and treatment guidelines</li>
-<li><strong>Construction</strong> — Reviewing RFPs, bid documents, and safety compliance reports</li>
-</ul>
+<p>With Claude 4.6's tool use, the workflow is: Claude queries the QuickBooks API for financial data, runs the analysis with extended thinking enabled, generates the narrative report, and formats it as a PDF. A senior accountant reviews each report in 15 minutes. Monthly reporting for all 15 clients went from 40+ hours to about 4 hours of review time.</p>
 
-<h3>2. Customer Service Automation</h3>
+<h3>4. Code Generation and Development (SaaS Companies)</h3>
 
-<p><strong>The problem:</strong> A Toronto e-commerce company receives 200+ customer inquiries per day across email, chat, and social media. Response time averages 4–6 hours. Customer satisfaction is declining.</p>
+<p>A Toronto SaaS company with a 6-person dev team builds features for their project management platform. Routine coding (CRUD endpoints, form validation, unit tests, documentation) consumed 30 to 40% of developer time.</p>
 
-<p><strong>The Claude solution:</strong> Build a Claude-powered chatbot using the API that handles first-line customer inquiries. The chatbot accesses the company's knowledge base (product information, shipping policies, return procedures, FAQs) and responds to customer questions in natural, conversational language. Complex or sensitive inquiries are escalated to human agents with a full conversation summary.</p>
+<p>Claude 4.6 with extended thinking generates better code than previous versions because it plans the architecture before writing. Developers describe what they need, Claude generates TypeScript/React code following the team's existing patterns. Claude also reviews pull requests and generates comprehensive unit tests.</p>
 
-<p><strong>The result:</strong> 65% of inquiries are fully resolved by the AI chatbot without human intervention. Average response time drops from 4–6 hours to <strong>under 30 seconds</strong>. Human agents focus on complex issues where they add the most value. Customer satisfaction scores increase by 23%. (For more on this approach, see our <a href="/blog/ai-lead-generation-website-toronto">guide to AI-powered lead generation</a>.)</p>
+<p>Developer productivity increased 35%. Test coverage went from 45% to 82%. The team ships features faster with fewer bugs.</p>
 
-<h3>3. Content Creation and Marketing</h3>
+<h3>5. Legacy System Data Migration (Any Industry)</h3>
 
-<p><strong>The problem:</strong> A Toronto marketing agency needs to produce 40+ blog posts, social media campaigns, and email sequences per month across 12 clients. Their team of 4 writers is at capacity.</p>
+<p>A Toronto healthcare clinic runs patient scheduling on a 15-year-old system with no API. Moving to a modern system meant manually re-entering thousands of patient records.</p>
 
-<p><strong>The Claude solution:</strong> Use Claude as a collaborative writing partner, not a replacement writer. Writers use Claude for research, outlines, first drafts, and variation generation. Each piece is then edited, fact-checked, and refined by the human writer to add brand voice, original insights, and expertise.</p>
-
-<p><strong>The result:</strong> Content production capacity increases by <strong>2.5x</strong> without hiring additional writers. Quality remains high because every piece goes through human review and editing. Cost per piece decreases by 40%. The agency can take on more clients without proportional headcount growth.</p>
-
-<p><strong>Effective prompting for business content:</strong></p>
-<ul>
-<li><strong>Bad prompt:</strong> "Write a blog post about AI for Toronto businesses."</li>
-<li><strong>Good prompt:</strong> "Write a 1,500-word blog post targeting Toronto small business owners (10–50 employees) who are considering AI automation for the first time. Focus on practical, low-risk starting points — not theoretical capabilities. Include specific tools, estimated costs, and realistic timelines. Tone: knowledgeable but approachable, avoid jargon. Include 3 specific examples relevant to Toronto businesses in professional services, retail, and construction."</li>
-</ul>
-
-<p>The difference between mediocre AI output and excellent AI output is almost entirely in the prompt. Claude responds to detailed, specific instructions dramatically better than vague ones.</p>
-
-<h3>4. Code Generation and Development Acceleration</h3>
-
-<p><strong>The problem:</strong> A Toronto SaaS company has a 6-person development team building features for their project management platform. Routine coding tasks (CRUD endpoints, form validation, unit tests, documentation) consume 30–40% of developer time.</p>
-
-<p><strong>The Claude solution:</strong> Integrate Claude into the development workflow for code generation, code review, and documentation. Developers describe what they need in natural language, and Claude generates TypeScript/React code that follows the team's existing patterns and conventions. Claude also reviews pull requests, suggests improvements, and generates unit tests.</p>
-
-<p><strong>The result:</strong> Developer productivity increases by <strong>30–40%</strong>. Routine coding tasks are completed in minutes instead of hours. Code review coverage increases because Claude reviews every PR before human review. Test coverage improves because generating tests is no longer a manual, time-consuming task.</p>
-
-<p><strong>Claude's coding strengths:</strong></p>
-<ul>
-<li><strong>TypeScript/JavaScript</strong> — Excellent. Generates idiomatic, type-safe code with proper error handling</li>
-<li><strong>Python</strong> — Excellent. Particularly strong with Django, FastAPI, data analysis (pandas, numpy)</li>
-<li><strong>React/Next.js</strong> — Excellent. Understands component patterns, hooks, server components</li>
-<li><strong>SQL</strong> — Strong. Generates complex queries, migrations, and schema designs</li>
-<li><strong>Infrastructure</strong> — Good. Terraform, Docker, GitHub Actions, AWS CDK</li>
-</ul>
-
-<h3>5. Internal Knowledge Base and Q&A</h3>
-
-<p><strong>The problem:</strong> A Toronto professional services firm has 15 years of project documentation, client deliverables, process guides, and institutional knowledge spread across Google Drive, Confluence, SharePoint, and email. New hires take months to become productive because finding relevant information is a scavenger hunt.</p>
-
-<p><strong>The Claude solution:</strong> Build a Retrieval-Augmented Generation (RAG) system that indexes all internal documentation and uses Claude to answer questions. When an employee asks "What was our approach to the Rogers supply chain project in 2023?", the system retrieves the relevant documents and Claude synthesizes a coherent answer with source citations.</p>
-
-<p><strong>The result:</strong> New hire onboarding time decreases by <strong>40%</strong>. Senior staff spend less time answering repetitive questions. Institutional knowledge becomes accessible to everyone, not just the people who happened to work on a specific project. Knowledge does not walk out the door when people leave.</p>
+<p>Claude 4.6's computer use capability navigates the legacy system's interface, reads patient data from each screen, and enters it into the new system. What would have taken a temp worker 3 weeks of full-time data entry was completed in 2 days with human spot-checking.</p>
 
 <hr>
 
-<h2>How to Implement Claude AI in Your Toronto Business</h2>
+<h2>How to Start Using Claude 4.6 in Your Business</h2>
 
-<p>Implementation is where most AI projects succeed or fail. The technology works. The question is whether you deploy it in a way that delivers real, sustained value — or whether it becomes another shiny tool that nobody uses after the first month.</p>
+<p>Implementation does not need to be a 6-month project. Here is a practical plan.</p>
 
-<h3>Step 1: Identify High-Impact, Low-Risk Use Cases (Week 1)</h3>
-
-<p>Start with tasks that have these characteristics:</p>
+<h3>Week 1: Identify and Test</h3>
 <ul>
-<li><strong>High volume</strong> — Happens frequently enough that automation saves meaningful time</li>
-<li><strong>Structured input/output</strong> — Clear inputs and predictable output formats</li>
-<li><strong>Low consequence of error</strong> — Mistakes are inconvenient, not catastrophic</li>
-<li><strong>Human review is easy</strong> — A person can quickly verify the AI's output</li>
+<li>List your team's 10 most repetitive, time-consuming tasks</li>
+<li>Score each by volume, time per task, and tolerance for errors</li>
+<li>Pick the top 2 to 3 candidates</li>
+<li>Sign up for Claude Pro ($20/month) and test the use cases manually at claude.ai</li>
+<li>Try extended thinking mode on your most complex task and compare the output to previous Claude versions</li>
 </ul>
 
-<p><strong>Best first use cases for most Toronto businesses:</strong></p>
-<ol>
-<li>Email drafting and response templates</li>
-<li>Meeting notes summarization</li>
-<li>Document review and extraction (first-pass analysis, not final decisions)</li>
-<li>FAQ and knowledge base answers for internal staff</li>
-<li>Content outlines and first drafts</li>
-</ol>
-
-<h3>Step 2: Build or Connect (Weeks 2–4)</h3>
-
-<p>You have three implementation paths:</p>
-
-<table>
-<thead>
-<tr><th>Path</th><th>Investment</th><th>Best For</th><th>Time to Value</th></tr>
-</thead>
-<tbody>
-<tr><td><strong>Use Claude directly</strong> (claude.ai or Claude Pro)</td><td>$0–$20/month per user</td><td>Individual productivity, testing use cases</td><td>Same day</td></tr>
-<tr><td><strong>Integrate via API</strong> (build Claude into existing tools)</td><td>$2,000–$20,000 development + API costs</td><td>Custom workflows, chatbots, document processing</td><td>2–6 weeks</td></tr>
-<tr><td><strong>Build a custom AI platform</strong> (RAG, fine-tuning, multi-model)</td><td>$20,000–$100,000+</td><td>Enterprise-scale automation, proprietary AI capabilities</td><td>2–4 months</td></tr>
-</tbody>
-</table>
-
-<p>For most Toronto small and mid-size businesses, the <strong>API integration path</strong> delivers the best ROI. You get Claude's full capabilities embedded directly into your workflows, without the cost and complexity of building a full AI platform.</p>
-
-<h3>Step 3: Measure and Iterate (Ongoing)</h3>
-
-<p>Track these metrics from day one:</p>
+<h3>Week 2: Prototype with the API</h3>
 <ul>
-<li><strong>Time saved per task</strong> — Compare before and after. Be specific: "Contract review went from 3.5 hours to 45 minutes."</li>
-<li><strong>Quality metrics</strong> — Error rates, customer satisfaction scores, content engagement</li>
-<li><strong>Adoption rate</strong> — What percentage of the team is actually using it? Low adoption means the tool is not solving a real problem or the UX is poor.</li>
-<li><strong>Cost per task</strong> — API costs + human review time vs. the pre-automation cost</li>
-<li><strong>Edge cases and failures</strong> — Document every case where Claude produces incorrect or inadequate output. These are your improvement opportunities.</li>
+<li>Set up API access at console.anthropic.com</li>
+<li>Build a simple script that automates your top use case</li>
+<li>Test with 5 to 10 real examples from your business</li>
+<li>If tool use is relevant, define the external tools Claude needs access to</li>
+<li>Measure time savings versus the manual process</li>
 </ul>
 
-<p>For a structured approach to measuring these outcomes, refer to our <a href="/blog/ai-automation-roi-toronto-business">AI automation ROI framework for Toronto businesses</a>.</p>
+<h3>Week 3: Build and Integrate</h3>
+<ul>
+<li>Connect Claude to your existing tools via API (CRM, database, email, Slack)</li>
+<li>Implement error handling and human-in-the-loop review for edge cases</li>
+<li>Set up logging and cost tracking</li>
+<li>Deploy to a test group of 3 to 5 users</li>
+</ul>
+
+<h3>Week 4: Launch and Measure</h3>
+<ul>
+<li>Roll out to the full team for the selected use case</li>
+<li>Track time saved, quality metrics, and user adoption</li>
+<li>Gather feedback and refine prompts</li>
+<li>Document results and plan the next use case</li>
+</ul>
 
 <hr>
 
-<h2>Security, Privacy, and Compliance with Claude AI</h2>
+<h2>Security and Compliance for Canadian Businesses</h2>
 
-<p>For Toronto businesses handling sensitive data, AI security is not optional — it is a prerequisite.</p>
+<p>Toronto businesses handling sensitive data need to know how Claude 4.6 handles privacy and compliance.</p>
 
 <h3>Anthropic's Data Policies</h3>
 <ul>
-<li><strong>API data is not used for training.</strong> When you use Claude through the API, your prompts and outputs are not used to train Anthropic's models. This is critical for businesses handling proprietary or confidential information.</li>
-<li><strong>Data retention</strong> — API interactions are retained for up to 30 days for abuse monitoring and safety purposes, then deleted. You can request shorter retention for sensitive use cases.</li>
-<li><strong>SOC 2 Type II compliance</strong> — Anthropic has achieved SOC 2 Type II certification, verifying their security controls meet industry standards.</li>
+<li><strong>API data is not used for training.</strong> Your prompts and outputs stay private.</li>
+<li><strong>SOC 2 Type II certified.</strong> Anthropic's security controls meet enterprise standards.</li>
+<li><strong>Data retention:</strong> API interactions retained up to 30 days for safety monitoring, then deleted. Shorter retention available for sensitive use cases.</li>
 </ul>
 
-<h3>Best Practices for Secure Claude Deployment</h3>
+<h3>Canadian Compliance Considerations</h3>
 
 <table>
 <thead>
-<tr><th>Practice</th><th>Implementation</th><th>Why It Matters</th></tr>
+<tr><th>Requirement</th><th>How to Address It</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Data classification</strong></td><td>Categorize data as Public, Internal, Confidential, Restricted. Only send Public and Internal data to Claude.</td><td>Prevents accidental exposure of sensitive information</td></tr>
-<tr><td><strong>PII scrubbing</strong></td><td>Strip personally identifiable information before sending documents to Claude. Replace with placeholders.</td><td>PIPEDA compliance. Minimizes privacy risk.</td></tr>
-<tr><td><strong>AWS Bedrock deployment</strong></td><td>Access Claude through AWS Bedrock in the ca-central-1 (Montreal) region.</td><td>Data stays within Canadian infrastructure. Additional AWS security controls.</td></tr>
-<tr><td><strong>Audit logging</strong></td><td>Log every API call with timestamp, user, prompt summary (not full content), and response metadata.</td><td>Compliance audit trail. Usage monitoring. Cost tracking.</td></tr>
-<tr><td><strong>Access controls</strong></td><td>API keys scoped per application. Rate limiting per user. Role-based access to AI features.</td><td>Prevents misuse. Controls costs. Ensures accountability.</td></tr>
+<tr><td><strong>PIPEDA compliance</strong></td><td>Scrub PII before sending data to Claude. Obtain consent for AI processing. Document your AI data handling practices.</td></tr>
+<tr><td><strong>Data residency</strong></td><td>Deploy Claude via AWS Bedrock in ca-central-1 (Montreal) to keep data in Canada.</td></tr>
+<tr><td><strong>PHIPA (healthcare)</strong></td><td>Strip patient identifiers before processing. Use placeholders. Maintain audit trails of all AI interactions.</td></tr>
+<tr><td><strong>PCI DSS (payments)</strong></td><td>Never send card numbers or CVVs to Claude. Tokenize payment data before processing.</td></tr>
+<tr><td><strong>Audit logging</strong></td><td>Log every API call with timestamp, user, and prompt summary (not full content). Retain per compliance requirements.</td></tr>
 </tbody>
 </table>
 
-<h3>PIPEDA Considerations</h3>
-<p>If your Claude implementation processes personal information of Canadian individuals, you must:</p>
+<p>For maximum security, access Claude through <strong>AWS Bedrock</strong> in the ca-central-1 region. Your data stays within Canadian infrastructure, you get AWS's additional security controls, and you can use IAM for fine-grained access management.</p>
+
+<hr>
+
+<h2>Prompt Engineering for Claude 4.6</h2>
+
+<p>Claude 4.6 responds to detailed instructions better than any previous model. The gap between a lazy prompt and a well-crafted prompt is enormous.</p>
+
+<h3>The CRAFT Framework</h3>
 <ul>
-<li>Obtain appropriate consent for AI processing of personal data</li>
-<li>Be transparent about how AI is used in your service delivery</li>
-<li>Ensure data minimization — only send the personal information necessary for the task</li>
-<li>Maintain the ability to delete or correct personal data processed by AI</li>
-<li>Have a breach response plan that covers AI-related incidents</li>
+<li><strong>Context:</strong> Give Claude the background. "You are analysing a contract for a Toronto construction company with $15M annual revenue."</li>
+<li><strong>Role:</strong> Define the expertise. "Act as a senior contracts analyst with expertise in Canadian construction law."</li>
+<li><strong>Action:</strong> Be specific. "Extract all payment terms, deadlines, penalty clauses, and insurance requirements."</li>
+<li><strong>Format:</strong> Specify the output. "Format as a table with columns: Clause Number, Type, Summary, Risk Level, Recommended Action."</li>
+<li><strong>Tone:</strong> Set the style. "Professional but accessible for a project manager who is not a lawyer."</li>
+</ul>
+
+<h3>Extended Thinking Tips</h3>
+<ul>
+<li>Enable extended thinking for any task involving multi-step analysis, comparison, or decision-making</li>
+<li>Give Claude permission to reason at length: "Think through this carefully before responding"</li>
+<li>For complex tasks, break the problem into stages and let Claude work through each one</li>
+<li>Extended thinking works best with specific, measurable questions rather than open-ended ones</li>
+</ul>
+
+<h3>Tool Use Best Practices</h3>
+<ul>
+<li>Define each tool with a clear, descriptive name and parameter schema</li>
+<li>Provide examples of when each tool should and should not be used</li>
+<li>Start with a small set of tools and expand as you validate the workflow</li>
+<li>Always implement error handling for tool failures. Claude will retry or ask for help if a tool returns an error</li>
 </ul>
 
 <hr>
 
-<h2>Prompt Engineering: Getting Better Results from Claude</h2>
+<h2>Claude 4.6 vs. the Competition: Honest Assessment</h2>
 
-<p>The difference between mediocre and excellent AI output is almost entirely in how you prompt the model. Here are the prompt engineering techniques that produce the best results for business applications:</p>
+<p>Every model has strengths. Here is where Claude 4.6 wins, where it ties, and where competitors have an edge:</p>
 
-<h3>The CRAFT Framework for Business Prompts</h3>
-
+<p><strong>Claude 4.6 wins:</strong></p>
 <ul>
-<li><strong>C — Context.</strong> Give Claude the background it needs. "You are helping a Toronto-based construction company with 50 employees and $15M annual revenue."</li>
-<li><strong>R — Role.</strong> Tell Claude what role to adopt. "Act as a senior contracts analyst with expertise in Canadian construction law."</li>
-<li><strong>A — Action.</strong> Be specific about what you want. "Analyse this contract and extract all payment terms, deadlines, penalty clauses, and insurance requirements."</li>
-<li><strong>F — Format.</strong> Specify the output format. "Present findings in a table with columns: Clause Number, Type, Summary, Risk Level (Low/Medium/High), and Recommended Action."</li>
-<li><strong>T — Tone.</strong> Set the communication style. "Write in a professional but accessible tone suitable for a project manager who is not a lawyer."</li>
+<li>Extended thinking produces the best results on complex reasoning tasks</li>
+<li>Lowest hallucination rate among major models. When accuracy matters, Claude 4.6 is the safest choice</li>
+<li>Best long-form writing. Most natural, least repetitive, best structural organization</li>
+<li>Computer use. No other major model offers reliable desktop application interaction</li>
+<li>Instruction following. Handles multi-step, detailed instructions more precisely than GPT-4o or Gemini</li>
 </ul>
 
-<h3>Advanced Techniques</h3>
-
+<p><strong>It is a tie:</strong></p>
 <ul>
-<li><strong>Chain of thought.</strong> Ask Claude to "think step by step" for complex analysis. This produces more thorough, accurate outputs for multi-factor decisions.</li>
-<li><strong>Few-shot examples.</strong> Provide 2–3 examples of the input/output format you want. Claude generalizes from examples exceptionally well.</li>
-<li><strong>System prompts.</strong> Use the system prompt (API feature) to set persistent context that applies to every interaction — your company's style guide, industry terminology, output requirements.</li>
-<li><strong>Temperature control.</strong> Lower temperature (0.0–0.3) for factual, deterministic tasks (data extraction, classification). Higher temperature (0.7–1.0) for creative tasks (marketing copy, brainstorming).</li>
+<li>Code generation. Claude 4.6 and GPT-4o are both excellent. Claude is slightly better at TypeScript and Python; GPT-4o has broader language support</li>
+<li>Multimodal. All three models handle image analysis well. Gemini has the edge on video</li>
+<li>API data privacy. All three major providers now commit to not using API data for training</li>
 </ul>
 
-<hr>
-
-<h2>The Toronto AI Landscape: Why It Matters</h2>
-
-<p>Toronto is one of the world's most important AI hubs, and that is not just civic pride — it directly benefits businesses implementing AI here:</p>
-
+<p><strong>Competitors win:</strong></p>
 <ul>
-<li><strong>Talent density.</strong> The Vector Institute, University of Toronto's Department of Computer Science (where Geoffrey Hinton pioneered modern deep learning), and a thriving startup ecosystem mean Toronto has one of the highest concentrations of AI talent globally. Finding developers, ML engineers, and AI consultants is easier here than almost anywhere.</li>
-<li><strong>AI-native companies.</strong> Toronto-based AI companies — Cohere, Ada, Wealthsimple (AI-driven finance) — create a culture of AI adoption that spills over into traditional industries. When your competitors start automating, the pressure to follow is immediate.</li>
-<li><strong>Regulatory environment.</strong> Canada's approach to AI regulation (the Artificial Intelligence and Data Act) is generally business-friendly while establishing guardrails. Understanding and complying with Canadian AI regulations now positions your business ahead of future requirements.</li>
-<li><strong>AWS and cloud infrastructure.</strong> AWS's ca-central-1 region in Montreal and Google Cloud's northamerica-northeast2 in Toronto provide low-latency, Canadian-resident infrastructure for AI workloads — critical for businesses with data sovereignty requirements.</li>
+<li>Context window. Gemini 2.5 offers 1M+ tokens versus Claude's 200K. If you need to process extremely long documents in a single pass, Gemini has the advantage</li>
+<li>Ecosystem integration. If your business runs entirely on Google Workspace, Gemini's native integration is smoother. If you are deep in Microsoft, GPT-4o via Azure is the path of least resistance</li>
+<li>Price. GPT-4o is slightly cheaper per token. For high-volume, simple tasks, the cost difference adds up</li>
 </ul>
 
 <hr>
 
-<h2>Common Mistakes When Adopting Claude AI</h2>
+<h2>Common Mistakes to Avoid</h2>
 
 <ol>
-<li><strong>Trying to automate everything at once.</strong> Start with one high-impact use case. Master it. Measure results. Then expand. The businesses that try to deploy AI across 10 workflows simultaneously usually end up with 10 half-baked implementations.</li>
-<li><strong>Using AI without human oversight.</strong> Claude is remarkably capable, but it is not infallible. Every business-critical AI output should have human review — at least for the first 3–6 months until you understand the model's strengths and weaknesses for your specific tasks.</li>
-<li><strong>Ignoring prompt engineering.</strong> The same model with a bad prompt and a good prompt produces dramatically different results. Invest time in crafting, testing, and iterating your prompts. Document what works.</li>
-<li><strong>Not tracking ROI.</strong> If you cannot measure the impact, you cannot justify continued investment (or expansion). Set up measurement from day one. Read our <a href="/blog/ai-automation-roi-toronto-business">ROI measurement guide</a> for a practical framework.</li>
-<li><strong>Choosing the wrong model tier.</strong> Using Claude Opus 4 for simple email classification wastes money. Using Claude Haiku for complex contract analysis produces poor results. Match the model to the task.</li>
+<li><strong>Using Claude 4.6 for everything.</strong> It is the most capable model, but also the most expensive. Use Sonnet 4 or Haiku for simple tasks. Reserve Claude 4.6 for work that actually needs deep reasoning or tool use.</li>
+<li><strong>Skipping human review.</strong> Claude 4.6 is remarkably good, but it is not perfect. Every business-critical output should have human oversight, especially in the first few months.</li>
+<li><strong>Lazy prompts.</strong> "Write me a marketing email" produces generic output. A detailed CRAFT prompt produces output that sounds like your brand wrote it.</li>
+<li><strong>Not measuring ROI.</strong> Track time saved, cost per task, and error rates from day one. If you cannot quantify the value, you cannot justify expanding.</li>
+<li><strong>Trying to automate everything at once.</strong> Pick one high-impact use case. Nail it. Measure results. Then expand. Ten half-built automations deliver zero value.</li>
 </ol>
 
 <hr>
 
-<h2>Getting Started: Your 30-Day Claude AI Implementation Plan</h2>
+<h2>The Toronto AI Advantage</h2>
 
-<p><strong>Week 1: Assess and Plan</strong></p>
-<ul>
-<li>List your team's top 10 most time-consuming, repetitive tasks</li>
-<li>Score each on: volume, time per task, error frequency, automation feasibility</li>
-<li>Select the top 2–3 candidates for Claude automation</li>
-<li>Sign up for Claude Pro ($20/month) and test the use cases manually</li>
-</ul>
+<p>Toronto is one of the best cities in the world to adopt AI. The Vector Institute, the University of Toronto's computer science department (where Geoffrey Hinton pioneered modern deep learning), and a dense startup ecosystem mean you have access to AI talent that most cities cannot match. Companies like Cohere, Ada, and Wealthsimple are pushing AI adoption across industries, creating a culture where AI is a business tool, not a novelty.</p>
 
-<p><strong>Week 2: Prototype</strong></p>
-<ul>
-<li>For your top use case, develop 5–10 prompt variations and test them</li>
-<li>Document the best-performing prompts with examples</li>
-<li>Estimate time savings based on your testing</li>
-<li>If the results are promising, set up API access for integration</li>
-</ul>
+<p>Canadian cloud infrastructure is mature. AWS's ca-central-1 in Montreal and Google Cloud's northamerica-northeast2 in Toronto give you low-latency, Canadian-resident infrastructure for AI workloads. Data sovereignty is handled. Compliance is manageable. The technical barriers are lower than they have ever been.</p>
 
-<p><strong>Week 3: Build and Integrate</strong></p>
-<ul>
-<li>For API integration: build a simple workflow connecting Claude to your existing tools (e.g., process incoming emails, analyse uploaded documents, generate report summaries)</li>
-<li>Implement error handling and fallback to human processing</li>
-<li>Set up logging and cost tracking</li>
-<li>Deploy to a test group of 3–5 users</li>
-</ul>
-
-<p><strong>Week 4: Launch and Measure</strong></p>
-<ul>
-<li>Roll out to the full team for the selected use case</li>
-<li>Track time saved, quality metrics, and user satisfaction</li>
-<li>Gather feedback and iterate on prompts and workflows</li>
-<li>Document results and plan the next use case for automation</li>
-</ul>
+<p>The question is not whether your Toronto business should use Claude 4.6. The question is whether you will be the one adopting it, or whether you will be competing against businesses that already have.</p>
 
 <hr>
 
 <h2>Frequently Asked Questions</h2>
 
-<h3>What is Claude AI and how is it different from ChatGPT?</h3>
-<p>Claude is an AI assistant built by Anthropic, a safety-focused AI company. Claude's key differentiators are its <strong>200K token context window</strong> (able to process entire codebases or long documents in one prompt), stronger reasoning and instruction-following, more nuanced and less hallucination-prone outputs, and a Constitutional AI safety approach that makes it more reliable for business-critical applications. While ChatGPT (OpenAI) is more widely known, Claude consistently outperforms on tasks requiring careful analysis, long-form writing, and complex multi-step reasoning.</p>
+<h3>What is Claude 4.6 and what is new?</h3>
+<p>Claude 4.6 is Anthropic's latest flagship AI model. The major upgrades are extended thinking (the model reasons through complex problems step by step before responding), native tool use (Claude can call APIs, query databases, and interact with external services autonomously), and computer use (Claude can navigate desktop applications by reading screens and clicking interfaces). It also has lower hallucination rates and faster response times compared to Claude Opus 4.</p>
 
-<h3>How much does it cost to use Claude AI for a business?</h3>
-<p>Claude offers multiple tiers. The free tier provides limited daily usage. Claude Pro costs <strong>$20 USD per month</strong> per user for higher limits. For API access (building Claude into your own applications), pricing is per token — approximately $3 per million input tokens and $15 per million output tokens for Claude Opus 4. Most Toronto small businesses spend <strong>$100–$500 per month</strong> on Claude API usage for moderate automation workloads.</p>
+<h3>How much does Claude 4.6 cost for business use?</h3>
+<p>Claude Pro costs <strong>$20 USD per month</strong> per user for direct access at claude.ai. API pricing is approximately <strong>$3 per million input tokens and $15 per million output tokens</strong> for Claude 4.6. Sonnet 4 costs $1/$5 per million tokens, and Haiku costs $0.25/$1.25. Most Toronto small businesses spend $100 to $500 per month on API usage with a tiered model approach.</p>
 
-<h3>Can Claude AI handle confidential business data securely?</h3>
-<p>Yes, with the right setup. Anthropic's API does not use your data for training. For businesses handling sensitive data, deploy Claude through the API with enterprise-grade security, implement data classification to control what information is sent to the model, use Anthropic's enterprise plan for SOC 2 compliance, and consider running Claude through <strong>AWS Bedrock</strong> for additional data residency controls within Canadian infrastructure.</p>
+<h3>Can Claude 4.6 handle confidential business data securely?</h3>
+<p>Yes. Anthropic's API does not use your data for model training. The company holds SOC 2 Type II certification. For Canadian businesses with data residency requirements, deploy Claude through <strong>AWS Bedrock in ca-central-1 (Montreal)</strong> to ensure data stays within Canadian infrastructure. Enterprise plans include additional admin controls, SSO, and audit logging.</p>
 
-<h3>What are the best business use cases for Claude AI in Toronto?</h3>
-<p>The highest-ROI use cases are: <strong>document analysis and summarization</strong> (legal, financial, real estate), <strong>customer service automation</strong> with AI chatbots, <strong>content creation and marketing copy</strong>, <strong>code generation and review</strong>, internal knowledge base Q&A, proposal and report writing, data extraction from unstructured documents, and email drafting. Businesses that handle large volumes of text-based work see the fastest payback.</p>
+<h3>What can Claude 4.6 do that previous versions could not?</h3>
+<p>Three major capabilities: extended thinking for better reasoning on complex problems, native tool use for calling external APIs and databases autonomously, and computer use for navigating desktop applications. These make Claude 4.6 capable of autonomous multi-step workflows, not just text generation.</p>
 
-<h3>Should I use Claude AI or build my own AI model?</h3>
-<p>For almost every Toronto business, <strong>using Claude via API is dramatically more cost-effective</strong> than training a custom model. Training a competitive large language model costs millions of dollars. Claude's API gives you access to a world-class model for pennies per query. The only scenarios where custom models make sense are highly specialized narrow domains (medical imaging, industrial quality control) or when data cannot leave your infrastructure under any circumstances.</p>
+<h3>Should I upgrade from Claude Opus 4 to Claude 4.6?</h3>
+<p>Yes, for most use cases. Claude 4.6 offers better reasoning, lower hallucination rates, and faster responses at the same price point. The extended thinking and tool use capabilities enable automation workflows that were not possible before. If you use the API, switching is as simple as updating the model parameter in your API calls.</p>
 
           ` }} />
         </div>
       </article>
 
       {/* Bottom CTA */}
-      <section className="bg-gradient-to-br from-rose-600 to-pink-700 py-20">
+      <section className="bg-purple-600 py-20">
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
           <div className="text-center">
-            <h2 className="mb-6 text-white text-3xl font-bold">Ready to Implement Claude AI in Your Toronto Business?</h2>
-            <p className="mb-8 text-lg text-white/90">We build Claude-powered automation workflows, chatbots, and internal tools for Toronto businesses — from initial strategy to production deployment.</p>
+            <h2 className="mb-6 text-white text-3xl font-bold">Ready to Deploy Claude 4.6 in Your Toronto Business?</h2>
+            <p className="mb-8 text-lg text-white/90">We build Claude-powered automation workflows, chatbots, and internal tools for Toronto businesses. From initial strategy to production deployment, we handle the technical work so you get results.</p>
             <div className="flex flex-wrap items-center justify-center gap-4">
-              <Button size="lg" className="bg-white text-rose-600 hover:bg-white/90" asChild>
+              <Button size="lg" className="bg-white text-purple-600 hover:bg-white/90" asChild>
                 <Link href="/contact">Explore AI Solutions</Link>
               </Button>
               <Button size="lg" variant="overlay" onClick={() => setShowCalendar(true)}>Book an AI Consultation</Button>

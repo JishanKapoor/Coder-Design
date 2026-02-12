@@ -22,7 +22,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-      <section className={"relative overflow-hidden bg-gradient-to-br from-violet-600 to-indigo-700 py-20 lg:py-28"}>
+      <section className={"relative overflow-hidden bg-purple-600 py-20 lg:py-28"}>
         <div className="relative mx-auto max-w-4xl px-6 lg:px-12">
           <div>
             <div className="mb-8">
@@ -54,7 +54,7 @@ export default function BlogPost() {
               </div>
             </div>
             <div className="flex flex-wrap gap-3">
-              <Button className={"gap-2 bg-white text-violet-600 hover:bg-white/90"} asChild>
+              <Button className={"gap-2 bg-white text-purple-600 hover:bg-white/90"} asChild>
                 <Link href="/contact">Hire Full-Stack Experts</Link>
               </Button>
               <Button variant="overlay" onClick={() => setShowCalendar(true)}>Discuss Architecture</Button>
@@ -138,7 +138,7 @@ export default function BlogPost() {
 <hr>` }} />
         </div>
       </article>
-      <section className={"bg-gradient-to-br from-violet-600 to-indigo-700 py-20"}>
+      <section className={"bg-purple-600 py-20"}>
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
           <div className="text-center">
             <h2 className="mb-6 text-white text-3xl font-bold">
@@ -146,7 +146,7 @@ export default function BlogPost() {
             </h2>
             <p className="mb-8 text-lg text-white/90">Full-stack engineering for robust, secure, performant products.</p>
             <div className="flex flex-wrap items-center justify-center gap-4">
-              <Button size="lg" className={"bg-white text-violet-600 hover:bg-white/90"} asChild>
+              <Button size="lg" className={"bg-white text-purple-600 hover:bg-white/90"} asChild>
                 <Link href="/contact">Hire Your Dev Team</Link>
               </Button>
               <Button size="lg" variant="overlay" onClick={() => setShowCalendar(true)}>Discuss Your Architecture</Button>

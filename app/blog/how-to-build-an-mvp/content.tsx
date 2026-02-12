@@ -27,7 +27,7 @@ export default function BlogPost() {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-violet-600 to-indigo-700 py-20 lg:py-28">
+      <section className="relative overflow-hidden bg-purple-600 py-20 lg:py-28">
         <div className="relative mx-auto max-w-4xl px-6 lg:px-12">
           <div>
             <div className="mb-8">
@@ -59,7 +59,7 @@ export default function BlogPost() {
               </div>
             </div>
             <div className="flex flex-wrap gap-3">
-              <Button className="gap-2 bg-white text-violet-600 hover:bg-white/90" asChild>
+              <Button className="gap-2 bg-white text-purple-600 hover:bg-white/90" asChild>
                 <Link href="/contact">Discuss Your MVP Idea</Link>
               </Button>
               <Button variant="overlay" onClick={() => setShowCalendar(true)}>Book a Free Strategy Call</Button>
@@ -357,7 +357,7 @@ export default function BlogPost() {
       </article>
 
       {/* Bottom CTA */}
-      <section className="bg-gradient-to-br from-violet-600 to-indigo-700 py-20">
+      <section className="bg-purple-600 py-20">
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
           <div className="text-center">
             <h2 className="mb-6 text-white text-3xl font-bold">
@@ -365,7 +365,7 @@ export default function BlogPost() {
             </h2>
             <p className="mb-8 text-lg text-white/90">Our Toronto-based team has launched dozens of MVPs. Let us help you go from idea to product in weeks, not months.</p>
             <div className="flex flex-wrap items-center justify-center gap-4">
-              <Button size="lg" className="bg-white text-violet-600 hover:bg-white/90" asChild>
+              <Button size="lg" className="bg-white text-purple-600 hover:bg-white/90" asChild>
                 <Link href="/contact">Share Your MVP Idea</Link>
               </Button>
               <Button size="lg" variant="overlay" onClick={() => setShowCalendar(true)}>Book a Free Strategy Call</Button>

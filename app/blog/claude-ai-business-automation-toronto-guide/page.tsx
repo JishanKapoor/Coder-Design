@@ -42,42 +42,42 @@ const articleJsonLd = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Claude AI and how is it different from ChatGPT?",
+      "name": "What is Claude 4.6 and what is new?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Claude is an AI assistant built by Anthropic, a safety-focused AI company. Claude\u2019s key differentiators are its 200K token context window (able to process entire codebases or long documents in one prompt), stronger reasoning and instruction-following, more nuanced and less hallucination-prone outputs, and a Constitutional AI safety approach that makes it more reliable for business-critical applications. While ChatGPT (OpenAI) is more widely known, Claude consistently outperforms on tasks requiring careful analysis, long-form writing, and complex multi-step reasoning."
+        "text": "Claude 4.6 is Anthropic's latest flagship AI model released in early 2026. Key upgrades include a dramatically improved extended thinking mode for multi-step reasoning, native tool use that lets Claude call external APIs and databases on its own, computer use for navigating desktop applications autonomously, a 200K token context window, significantly reduced hallucination rates, and faster response times compared to Claude Opus 4. It is available through the Anthropic API, AWS Bedrock, and Google Vertex AI."
       }
     },
     {
       "@type": "Question",
-      "name": "How much does it cost to use Claude AI for a business?",
+      "name": "How much does Claude 4.6 cost for business use?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Claude offers multiple tiers. The free tier provides limited daily usage. Claude Pro costs $20 USD per month per user for higher limits. For API access (building Claude into your own applications), pricing is per token \u2014 approximately $3 per million input tokens and $15 per million output tokens for Claude Opus 4. Most Toronto small businesses spend $100\u2013$500 per month on Claude API usage for moderate automation workloads. Enterprise plans with enhanced security and admin controls are also available."
+        "text": "Claude 4.6 is available through multiple pricing tiers. Claude Pro costs $20 USD per month per user for direct access. API pricing is approximately $3 per million input tokens and $15 per million output tokens for the full Claude 4.6 model. Claude Sonnet 4 offers a lower-cost alternative at $1/$5 per million tokens. Most Toronto small businesses spend $100 to $500 per month on Claude API usage for moderate automation workloads."
       }
     },
     {
       "@type": "Question",
-      "name": "Can Claude AI handle confidential business data securely?",
+      "name": "Can Claude 4.6 handle confidential business data securely?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, with the right setup. Anthropic\u2019s API does not use your data for training. For businesses handling sensitive data, deploy Claude through the API with enterprise-grade security, implement data classification to control what information is sent to the model, use Anthropic\u2019s enterprise plan for SOC 2 compliance, and consider running Claude through AWS Bedrock for additional data residency controls within Canadian infrastructure."
+        "text": "Yes. Anthropic's API does not use your data for model training. Claude 4.6 maintains SOC 2 Type II compliance. For Canadian businesses with data residency requirements, deploy Claude through AWS Bedrock in the ca-central-1 Montreal region to keep all data within Canadian infrastructure. Enterprise plans include additional admin controls, audit logging, and SSO integration."
       }
     },
     {
       "@type": "Question",
-      "name": "What are the best business use cases for Claude AI in Toronto?",
+      "name": "What can Claude 4.6 do that previous versions could not?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The highest-ROI use cases for Toronto businesses are: document analysis and summarization (legal, financial, real estate), customer service automation with AI chatbots, content creation and marketing copy, code generation and review for development teams, internal knowledge base Q&A, proposal and report writing, data extraction from unstructured documents, and email drafting and response management. Businesses that handle large volumes of text-based work see the fastest payback."
+        "text": "Claude 4.6 introduces three major capabilities: extended thinking mode that lets the model reason through complex problems step by step before responding, native tool use that enables Claude to call APIs, query databases, and interact with external services autonomously, and computer use that allows Claude to navigate desktop applications by reading screens and clicking interfaces. These features make Claude 4.6 suitable for fully autonomous business workflows rather than just text generation."
       }
     },
     {
       "@type": "Question",
-      "name": "Should I use Claude AI or build my own AI model?",
+      "name": "Should Toronto businesses upgrade to Claude 4.6 from Claude Opus 4?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For almost every Toronto business, using Claude via API is dramatically more cost-effective than training a custom model. Training a competitive large language model costs millions of dollars and requires specialized ML engineering talent. Claude\u2019s API gives you access to a world-class model for pennies per query. The only scenarios where custom models make sense are when you need a highly specialized model for a narrow domain (medical imaging, industrial quality control) or when data cannot leave your infrastructure under any circumstances."
+        "text": "Yes, for most use cases. Claude 4.6 offers better reasoning, lower hallucination rates, and faster response times at the same price point as Claude Opus 4. The extended thinking and tool use capabilities unlock automation workflows that were not possible with previous versions. Businesses already using Claude Opus 4 via the API can switch by updating the model parameter in their API calls."
       }
     }
   ],
