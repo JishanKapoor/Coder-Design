@@ -9,8 +9,8 @@ const industries = [
   {
     icon: Building2,
     title: "SaaS & Technology Startups",
-    blogTitle: "How We Helped Deel Build Scalable Payroll Microservices for 120+ Countries",
-    description: "Backend architecture, microservices, and API development for high-growth platforms scaling globally.",
+    blogTitle: "How to Build a SaaS Product in Toronto: Architecture, Tech Stack & Go-to-Market",
+    description: "Multi-tenant architecture, auth systems, integrations, and go-to-market strategy for SaaS startups.",
     image: "/images/projects/saas-platform.jpg",
     href: "/blog/saas-technology-startups-toronto-development",
   },
@@ -33,8 +33,8 @@ const industries = [
   {
     icon: HeartPulse,
     title: "Healthcare & Wellness",
-    blogTitle: "How We Helped Sunnybrook Build a Patient Engagement Platform That Dramatically Reduced No-Shows",
-    description: "AI scheduling, Epic EMR integration, and telehealth apps for one of Canada's largest research hospitals.",
+    blogTitle: "Healthcare & Wellness Software Development in Toronto: Booking, Telehealth & PHIPA Compliance",
+    description: "Online booking, telehealth, patient portals, and PHIPA-compliant platforms for clinics and wellness businesses.",
     image: "/images/projects/healthcare-medical.jpg",
     href: "/blog/healthcare-wellness-software-toronto",
   },
@@ -49,8 +49,8 @@ const industries = [
   {
     icon: Code2,
     title: "Professional Services",
-    blogTitle: "How We Built Tailor Brands' AI Voice Calling System That Handles the Majority of Calls Autonomously",
-    description: "AI voice agents, proactive outbound calls, and merchandise fulfillment automation at scale.",
+    blogTitle: "AI Voice Agents & Automation for Toronto Businesses: Architecture, Integration & ROI",
+    description: "AI voice agents, chatbots, and workflow automation that answer every call and book appointments 24/7.",
     image: "/images/projects/tailor-brands-ai.jpg",
     href: "/blog/manufacturing-logistics-software-toronto",
   },

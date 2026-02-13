@@ -71,109 +71,103 @@ export default function BlogPost() {
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
           <div className="blog-content" dangerouslySetInnerHTML={{ __html: `
 
-<p>Deel is one of the fastest-growing global payroll and HR platforms in the world, processing compliant payments for distributed teams across more than 120 countries. As their engineering team scaled to support rapid international expansion, they brought in specialized partners — including our team — to help architect and deliver critical infrastructure components under tight timelines. We were engaged through a contract-based delivery model from Q2 2024 to Q1 2025, working as an embedded engineering unit within Deel's platform team on payroll calculation microservices, compliance automation, and internal tooling.</p>
+<p>Toronto has quietly become one of the best cities in the world to build a SaaS company. Companies like <a href="https://www.shopify.com" target="_blank" rel="noopener">Shopify</a>, <a href="https://www.coconutsoftware.com" target="_blank" rel="noopener">Coconut Software</a>, <a href="https://jane.app" target="_blank" rel="noopener">Jane App</a>, and <a href="https://www.booxi.com" target="_blank" rel="noopener">Booxi</a> all started as small teams solving specific problems and scaled into products used by thousands of businesses. Every one of them faced the same early-stage engineering challenges: choosing the right architecture, building a product that can handle growth without a full rewrite, getting the first version to market fast enough to validate the idea, and building a technical foundation that does not become crippling debt six months later.</p>
 
-<blockquote>"CoderDesign's engineers ramped up fast, operated independently, and shipped production-quality services that are still running in production today. They understood payroll domain complexity at a level that most contract engineering teams do not." — Rami Tamir, Staff Engineer, Deel Platform Infrastructure</blockquote>
+<p>We have helped early-stage and growth-stage SaaS founders in Toronto build exactly this kind of infrastructure. This article breaks down the technical decisions, architecture patterns, and engineering approaches we use when building SaaS products — drawing on real projects we have delivered for Canadian startups across HR tech, scheduling, fintech, and B2B software.</p>
 
-<p>Under the terms of our engagement, we cannot disclose specific internal metrics, proprietary system architecture details, or client-confidential operational data. What we can share in this case study is the nature of the technical challenges we solved, the engineering approaches we took, the tools and frameworks we used, and the general outcomes of our work. This is how our <a href="/full-stack-engineering">full-stack development</a>, <a href="/ai-workflow">AI automation</a>, and <a href="/mobile-app-development">mobile engineering</a> capabilities contributed to Deel's payroll infrastructure during a critical growth phase.</p>
+<img src="/images/projects/saas-platform.jpg" alt="SaaS platform development and architecture planning for Toronto startups" style="width:100%;border-radius:12px;margin:2rem 0;" />
 
-<img src="/images/projects/saas-platform.jpg" alt="Engineering team collaborating on Deel's payroll microservices architecture" style="width:100%;border-radius:12px;margin:2rem 0;" />
+<h2>The Real Challenge for Toronto SaaS Founders</h2>
 
-<h2>The Challenge: Payroll Is Not Just Moving Money</h2>
+<p>The hardest part of building a SaaS product is not the code. It is making the right technical decisions early enough that you do not have to throw everything away when you get your first 50 paying customers. We see the same mistakes repeatedly: founders pick a tech stack because it is trendy rather than appropriate, they skip multi-tenancy design and have to retrofit it later, they build a monolith that becomes unmaintainable or overengineer microservices when a well-structured monolith would serve them for years.</p>
 
-<p>Payroll sounds straightforward until you realize that every country has different tax brackets, social security contributions, pension schemes, statutory benefits, and filing deadlines. In France, employers pay roughly 45% on top of an employee's gross salary in social contributions. In Brazil, the 13th salary payment is legally mandated. In Singapore, CPF contributions change based on the employee's age bracket. Deel needed a system that could encode all of these rules, keep them updated as legislation changed, and calculate payroll for thousands of employees across dozens of countries simultaneously without errors.</p>
+<p>The Canadian SaaS companies that succeed — companies like <a href="https://jane.app" target="_blank" rel="noopener">Jane App</a> (clinic management from Vancouver, serving thousands of healthcare practices) and <a href="https://www.coconutsoftware.com" target="_blank" rel="noopener">Coconut Software</a> (appointment scheduling for banks including RBC and Capital One) — all started with disciplined, pragmatic engineering foundations. They did not try to build for 10,000 customers on day one. They built for 10, then 100, then made deliberate architecture decisions at each growth inflection point.</p>
 
-<p>Their existing system used a monolithic Node.js application with country logic embedded in conditional statements throughout the codebase. Adding a new country meant touching dozens of files, and a bug in one country's tax calculation could potentially affect others. As Deel scaled internationally, this architecture was becoming a bottleneck. Engineering velocity was slowing down because developers were afraid to make changes.</p>
+<h2>How We Build SaaS Products: Our Technical Approach</h2>
 
-<h2>What We Built: Country Specific Payroll Microservices</h2>
+<h3>Start With a Well-Structured Monolith</h3>
 
-<p>We worked with Deel's platform team to decompose the monolithic payroll engine into isolated, country specific microservices. Each microservice owned the complete payroll logic for a single country or region, including gross to net calculations, statutory deductions, employer contributions, and reporting outputs.</p>
+<p>Contrary to what most SaaS architecture blog posts will tell you, we almost never recommend microservices for an early-stage startup. A well-structured monolith — built in Next.js or Node.js with clear domain boundaries, a clean database schema, and a solid API layer — will serve a SaaS product from zero to several thousand customers without breaking. <a href="https://www.shopify.com" target="_blank" rel="noopener">Shopify</a> ran as a Ruby on Rails monolith for years before decomposing into services, and it powered billions in GMV during that time.</p>
 
-<h3>Country Payroll Engines</h3>
+<p>What matters is not whether you use microservices. What matters is that your monolith has clear domain separation so that when you eventually need to extract a service, the boundaries are already defined. We use a modular architecture pattern where each business domain (billing, user management, core product logic, integrations) lives in its own module with explicit interfaces. Code in the billing module cannot reach directly into the user management database tables. This discipline makes future decomposition straightforward instead of agonizing.</p>
 
-<p>Each country got its own service written in TypeScript running on Node.js, with a standardized input/output contract. The service accepted employee compensation data, contract terms, and pay period details, and returned a complete payroll breakdown including net pay, tax withholdings, employer costs, and any statutory filings required. This isolation meant that a change to Brazil's tax logic could never accidentally break calculations for employees in Germany or Japan.</p>
+<h3>Multi-Tenancy From Day One</h3>
 
-<h3>Rules Engine Framework</h3>
+<p>The most expensive architectural mistake a SaaS startup can make is building a single-tenant system and trying to bolt on multi-tenancy later. We design every SaaS product with multi-tenancy from the first database migration. For most early-stage products, we use shared-database, shared-schema multi-tenancy with row-level security in PostgreSQL. Every table that holds customer data includes a <code>tenant_id</code> column, and PostgreSQL row-level security policies ensure that queries can never accidentally return data belonging to another tenant.</p>
 
-<p>Instead of hardcoding tax brackets and contribution rates, we built a declarative rules engine that allowed compliance teams to update rates through configuration files rather than code changes. When Germany updated its solidarity surcharge or Canada adjusted CPP contribution limits, the compliance team could push updates without waiting for a developer sprint. This separation of concerns was critical because tax legislation changes constantly and Deel could not afford delays.</p>
+<p>This approach gives you the cost efficiency of a single database (important when you have 20 customers, not 20,000) while maintaining data isolation at the database level. As you scale, you can move high-value enterprise tenants to dedicated schemas or dedicated databases without changing your application code — the abstraction layer handles routing.</p>
 
-<h3>Event Driven Orchestration</h3>
+<h3>Authentication and Authorization That Scales</h3>
 
-<p>Payroll runs across 120+ countries need to happen on different schedules. We built an event driven orchestration layer using AWS EventBridge and SQS that triggered country specific payroll runs based on local pay calendars, handled retries for transient failures, and ensured exactly once processing for payment disbursements. The orchestrator managed dependencies between steps, so withholding calculations always completed before payment files were generated.</p>
+<p>We implement authentication using battle-tested libraries and services rather than rolling custom auth. For most projects, we use NextAuth.js or Clerk for authentication, combined with a role-based access control (RBAC) system that supports organization-level permissions. A typical SaaS product needs at minimum: account owners, administrators, regular users, and read-only viewers — with the ability to add custom roles as the product matures.</p>
 
-<h3>Compliance Audit Trail</h3>
+<p>The authorization layer is where most SaaS products get into trouble. Checking <code>if (user.role === 'admin')</code> throughout your codebase creates a maintenance nightmare. We implement policy-based authorization where permissions are defined declaratively and enforced consistently through middleware, so adding a new role or permission does not require touching dozens of files.</p>
 
-<p>Every calculation, every rate applied, and every output generated was logged immutably. Regulators in countries like Germany and Japan require detailed audit trails, and Deel's enterprise clients needed the ability to verify that payroll was calculated correctly for each employee in each period. We used append only database tables with cryptographic hashing to guarantee that historical records could not be tampered with.</p>
-
-<img src="/images/projects/microservices-architecture.jpg" alt="Microservices backend architecture powering Deel's global payroll platform" style="width:100%;border-radius:12px;margin:2rem 0;" />
+<img src="/images/projects/microservices-architecture.jpg" alt="Backend architecture and database design for multi-tenant SaaS platforms" style="width:100%;border-radius:12px;margin:2rem 0;" />
 
 <h2>Backend Architecture and Database Design</h2>
 
-<p>The <a href="/full-stack-engineering">backend infrastructure</a> we designed used PostgreSQL as the primary data store with a schema designed for multi tenant, multi country operations. Employee records, compensation structures, and payroll results each lived in their own schemas with row level security policies ensuring that client data was completely isolated.</p>
+<p>Our <a href="/full-stack-engineering">backend infrastructure</a> for SaaS products is built on PostgreSQL, Node.js (or Python depending on the domain), and Redis for caching and background job processing. PostgreSQL is our default database because of its reliability, JSONB support for flexible schema requirements, excellent full-text search, and strong ecosystem of tools and extensions.</p>
 
-<p>A key technical decision we made during the database design phase was using PostgreSQL's JSONB columns for storing country specific metadata that varied wildly between jurisdictions. A Canadian employee record needs fields for federal and provincial tax, CPP, EI, and RRSP contributions. A UK employee record needs National Insurance categories, student loan repayment plans, and pension auto enrollment details. Rather than creating hundreds of nullable columns, we used structured JSONB with validation schemas that enforced correctness at the application layer.</p>
+<p>A key technical pattern we use extensively is PostgreSQL's JSONB columns for domain-specific metadata that varies between customers or configurations. A scheduling SaaS like <a href="https://www.booxi.com" target="_blank" rel="noopener">Booxi</a> needs different booking fields for a hair salon versus a car dealership versus a luxury retail store. Rather than creating hundreds of nullable columns or a full EAV (entity-attribute-value) anti-pattern, JSONB lets you store structured, queryable, indexable metadata alongside your relational data.</p>
 
-<p>For the API layer, we built RESTful services with comprehensive OpenAPI documentation. Deel's frontend teams and integration partners needed clear, versioned APIs they could build against without ambiguity. We implemented rate limiting, request validation, and detailed error responses that told consumers exactly what went wrong and how to fix it.</p>
+<p>For the API layer, we build RESTful services with comprehensive OpenAPI documentation, or GraphQL when the frontend needs flexible data fetching. Versioned APIs with clear deprecation policies are non-negotiable for B2B SaaS because your customers build integrations against your API and breaking changes destroy trust.</p>
 
-<p>Background job processing was critical for performance. A single payroll run for a large enterprise client might involve calculating pay for 500 employees across 30 countries. We used Bull queues running on Redis to distribute these calculations across worker processes, with each country's calculations running in parallel. A payroll run that previously took 45 minutes in the monolithic system completed in under 3 minutes with the distributed architecture.</p>
+<p>Background job processing handles everything that should not block a user request: sending emails, generating reports, processing webhooks from third-party integrations, syncing data with external systems. We use BullMQ (Bull queues) running on Redis, with dead-letter queues for failed jobs, retry policies with exponential backoff, and monitoring dashboards so your operations team can see exactly what is processing and what is stuck.</p>
 
-<h2>AI Powered Compliance and Anomaly Detection</h2>
+<h2>Building SaaS Integrations That Work</h2>
 
-<p>One of the most impactful features we built was an <a href="/ai-workflow">AI powered compliance layer</a> that automatically flagged potential issues before payroll was finalized. The system analyzed each payroll run and identified anomalies such as unusually large salary changes, tax calculations that deviated from historical patterns, or benefit deductions that fell outside expected ranges.</p>
+<p>Every B2B SaaS product eventually needs to integrate with other tools. Scheduling platforms integrate with Google Calendar and Outlook. HR tools integrate with payroll providers. CRMs integrate with email marketing platforms. The quality of your integrations directly impacts churn — if your product does not play nicely with the tools your customers already use, they will switch to a competitor that does.</p>
 
-<p>We trained the model on historical payroll data across Deel's client base, anonymized and aggregated to respect privacy. The system learned what normal looked like for each country and employment type, and flagged deviations for human review. This caught errors that would have otherwise resulted in incorrect payments, including a situation where a currency conversion rate was applied incorrectly for a batch of contractors in Argentina during a period of rapid peso devaluation.</p>
+<p>We build integrations using an adapter pattern where each external service (Stripe, Google Calendar, Slack, QuickBooks, etc.) is wrapped in a standardized interface. This means your core application logic never depends directly on a third-party API. If Stripe changes their webhook format or Google deprecates a Calendar API endpoint, you update one adapter file rather than hunting through your entire codebase.</p>
 
-<p>The compliance AI also automated regulatory research. When a country announced changes to tax legislation, the system ingested the relevant government publications and generated draft rule updates for the compliance team to review and approve. This reduced the time to implement legislative changes from weeks to days, giving Deel a significant competitive advantage in a market where compliance speed directly impacts customer trust.</p>
+<p>For webhook processing, we implement a reliable ingestion pipeline: webhooks are received, validated (signature verification), stored in a queue, and processed asynchronously. This ensures you never lose a webhook event due to a temporary application error, and it protects your system from being overwhelmed by a burst of webhook traffic.</p>
 
-<h2>Mobile Engineering for Global Workforce Management</h2>
+<h2>AI Features for SaaS Products</h2>
 
-<p>Deel's <a href="/mobile-app-development">mobile application</a> needed to serve two very different user types: HR administrators managing payroll for distributed teams, and individual employees checking their pay stubs, tax documents, and benefits. We contributed to the mobile engineering effort by building the payroll details module that displayed country specific breakdowns in a format that made sense to employees regardless of their location.</p>
+<p>Almost every SaaS product we build now includes some form of <a href="/ai-workflow">AI-powered functionality</a>. The key is building AI features that solve real user problems rather than adding "AI" as a marketing checkbox. Here are the patterns that actually work:</p>
 
-<p>The mobile payroll view adapted automatically based on the employee's country. A French employee saw their fiche de paie with the standard French payslip layout including all mandatory line items. A US employee saw their pay stub with federal and state tax breakdowns, 401k contributions, and health insurance deductions. We built a templating system that rendered these country specific views from the same underlying data structure, using React Native components that adjusted layout, labeling, and formatting based on locale.</p>
+<p><strong>Smart defaults and auto-complete:</strong> Instead of making users fill out 15 form fields, use AI to pre-populate fields based on context. A clinic management platform can auto-suggest appointment durations based on the appointment type and provider history. A project management tool can suggest task descriptions based on the project context.</p>
 
-<p>Push notifications for payroll events were another area where we contributed. Employees received notifications when their payslip was available, when tax documents were ready for download, or when their employer made changes to their compensation. The notification system integrated with Deel's backend through webhooks and supported localization in 15 languages.</p>
+<p><strong>Anomaly detection:</strong> SaaS products that handle financial data, scheduling, or operations can use simple anomaly detection to flag unusual patterns. An unusually large invoice, a scheduling conflict, a metric that deviates significantly from the norm — these are high-value, low-risk AI features that customers immediately understand.</p>
 
-<h2>Performance at Scale</h2>
+<p><strong>Natural language search:</strong> Replacing keyword search with semantic search using embeddings (OpenAI or open-source models) dramatically improves the user experience for products with large knowledge bases, help centers, or document libraries. Users can search by describing what they need in plain language rather than guessing the right keywords.</p>
 
-<p>By the time we completed our 10-month engagement, the payroll infrastructure we helped build was processing payroll at significant scale across Deel's growing client base. The system handled peak loads during end-of-month payroll runs when thousands of companies processed payroll simultaneously.</p>
+<h2>Mobile Applications for SaaS</h2>
 
-<p>While we cannot share Deel's internal performance metrics publicly, we can share the engineering targets our team was measured against — all of which we met or exceeded:</p>
+<p>Most B2B SaaS products need a <a href="/mobile-app-development">mobile companion app</a> — not a full mobile replacement for the web application, but a focused mobile experience for the use cases that happen away from a desk. A clinic management platform needs a mobile app for practitioners to check their schedule between patients. A field service SaaS needs mobile for technicians on job sites. A scheduling platform needs mobile for customers to book and manage appointments.</p>
+
+<p>We build SaaS mobile apps using React Native for cross-platform deployment (iOS and Android from a single codebase). The mobile app shares the same API layer as the web application, which means authentication, authorization, data validation, and business logic are consistent across platforms. Push notifications for time-sensitive events (new booking, payment received, approval required) are implemented through Firebase Cloud Messaging with graceful fallback to email for users who disable push notifications.</p>
+
+<h2>SEO and Growth for SaaS Companies</h2>
+
+<p><a href="/seo-management">SEO is the highest-ROI growth channel</a> for most B2B SaaS companies, but it requires a specific approach. Unlike e-commerce SEO (which focuses on product pages) or local SEO (which focuses on geographic terms), SaaS SEO is about capturing demand at every stage of the buyer journey.</p>
+
+<p>The strategy that works for Canadian SaaS companies is building content that demonstrates genuine expertise in your domain. <a href="https://jane.app/guide" target="_blank" rel="noopener">Jane App's clinic guides</a> rank because they provide genuinely useful information for healthcare practitioners — not because they stuffed keywords into thin content. <a href="https://www.coconutsoftware.com/blog" target="_blank" rel="noopener">Coconut Software's blog</a> attracts banking executives because it addresses real operational challenges in branch banking.</p>
+
+<p>We help SaaS founders build this kind of content strategy: identifying the search queries your ideal customers are using, creating content that genuinely answers those queries, building the technical SEO foundation (site speed, schema markup, internal linking) that lets Google find and rank that content, and setting up analytics to measure which content actually drives signups and revenue — not just traffic.</p>
+
+<h2>What a Typical SaaS Build Looks Like With Us</h2>
+
+<p>A typical engagement for building a SaaS MVP runs 3-5 months and follows this structure:</p>
 
 <ul>
-<li>API response times under 200ms for individual payroll calculations (p99)</li>
-<li>99.9%+ uptime SLA for the payroll processing pipeline</li>
-<li>Zero incorrect payment calculations attributable to our services during the engagement</li>
-<li>Payroll run times reduced by over 90% compared to the legacy monolithic system</li>
-<li>Concurrent multi-country payroll processing with no performance degradation</li>
+<li><strong>Week 1-2:</strong> Architecture planning, database schema design, infrastructure setup (AWS or GCP), CI/CD pipeline, development environment</li>
+<li><strong>Week 3-6:</strong> Core product features — the 2-3 workflows that define the product's value proposition</li>
+<li><strong>Week 7-10:</strong> Authentication, billing (Stripe integration), admin dashboard, user onboarding</li>
+<li><strong>Week 11-14:</strong> Integrations, email notifications, analytics, performance optimization</li>
+<li><strong>Week 15-20:</strong> Mobile app (if needed), AI features, beta testing, launch preparation</li>
 </ul>
 
-<p>These numbers mattered because payroll errors directly impact people's livelihoods and Deel's reputation with enterprise clients who have zero tolerance for mistakes.</p>
+<p>We work in 2-week sprints with demo sessions at the end of each sprint so founders can see progress, test features, and adjust priorities. The goal is to get to a working product with real users as fast as possible — not to build a perfect product in isolation for months.</p>
 
-<p>We implemented comprehensive monitoring using Datadog for infrastructure metrics, Sentry for error tracking, and custom dashboards that gave Deel's operations team real time visibility into payroll processing status across all countries. Alerts triggered automatically when processing times exceeded thresholds or when error rates spiked, ensuring that issues were caught and resolved before they affected end users.</p>
+<h2>How We Can Help Your SaaS Startup</h2>
 
-<h2>SEO and Content Strategy for Developer Platforms</h2>
+<p>Whether you are building a SaaS product from scratch, scaling an existing platform beyond its first 100 customers, or need specialized engineering help for a specific technical challenge like multi-tenancy, integrations, or AI features, our team brings the engineering depth and startup pragmatism required to ship fast without accumulating crippling technical debt.</p>
 
-<p><a href="/seo-management">SEO and content strategy</a> played a meaningful role even in this engagement. Deel's growth marketing team used technical content about international payroll compliance to attract HR leaders searching for solutions. We helped create technical documentation and knowledge base articles that served both as user facing resources and as SEO assets targeting queries like "how to run payroll in Germany" and "Brazil employer tax obligations."</p>
+<p>Our core capabilities include <a href="/full-stack-engineering">full-stack web development</a> using Next.js, React, Node.js, and Python. We build <a href="/mobile-app-development">native mobile applications</a> for iOS and Android using React Native and Flutter. Our <a href="/ai-workflow">AI and automation team</a> builds intelligent features using OpenAI, custom models, and workflow automation. And our <a href="/seo-management">SEO and growth team</a> helps SaaS startups build organic acquisition channels that compound over time.</p>
 
-<p>This content strategy generated thousands of monthly organic visitors to Deel's knowledge base, many of whom converted into product trials. The approach worked because the content demonstrated genuine expertise in international payroll, which is exactly the E-E-A-T signal that Google rewards in its rankings. When a company publishes detailed, accurate, and regularly updated content about a complex topic, search engines recognize it as an authoritative source.</p>
-
-<h2>What We Learned Working With a High-Growth Platform Team</h2>
-
-<p>Working with Deel reinforced several principles that we apply to every startup engagement.</p>
-
-<p>Domain complexity matters more than technical complexity. The hardest part of building payroll microservices was not the distributed architecture or the AI models. It was understanding the payroll regulations for dozens of countries and encoding them correctly. Technical skill without domain understanding produces systems that are architecturally elegant but functionally wrong.</p>
-
-<p>High-growth startups need partners who can operate independently. We were not waiting for detailed specifications or pixel-perfect designs. Deel's engineering leadership gave us problem statements and constraints, and we delivered solutions that fit within their existing architecture and coding standards. This required senior engineers who understood distributed systems, could make sound architectural decisions, and communicated proactively.</p></p>
-
-<p>Speed without sacrifice is possible when you have the right team. We shipped production code within the first two weeks of the engagement and maintained that velocity throughout. The key was having engineers who had built similar systems before and could make confident decisions without extensive deliberation.</p>
-
-<h2>How We Can Help Your Startup</h2>
-
-<p>Whether you are building a SaaS product from scratch, scaling an existing platform, or need specialized engineering help for a specific technical challenge, our team brings the same level of depth and ownership that we brought to Deel. We work with startups from pre-seed through Series C across industries including fintech, HR tech, healthcare, and enterprise software.</p>
-
-<p>Our core capabilities include <a href="/full-stack-engineering">full-stack web development</a> using Next.js, React, Node.js, and Python. We build <a href="/mobile-app-development">native mobile applications</a> for iOS and Android using React Native and Flutter. Our <a href="/ai-workflow">AI and automation team</a> builds intelligent features using OpenAI, custom models, and workflow automation. And our <a href="/seo-management">SEO and growth team</a> helps startups build organic acquisition channels that compound over time.</p>
-
-<p>If your startup is facing a technical challenge that requires experienced engineers who can move fast without sacrificing quality, <a href="/contact">book a free consultation</a>. We will review your architecture, understand your goals, and give you an honest assessment of how we can help.</p>
+<p>If you are a Toronto-area founder building a SaaS product and you need a technical team that understands both the engineering and the business side of scaling software, <a href="/contact">book a free consultation</a>. We will review your product concept, your current architecture (if you have one), and give you an honest assessment of what it takes to build and launch.</p>
 
 ` }} />
 
@@ -182,9 +176,9 @@ export default function BlogPost() {
 
       <section className="bg-indigo-600 py-20">
         <div className="mx-auto max-w-4xl px-6 text-center lg:px-12">
-          <h2 className="mb-6 text-white">Ready to Scale Your Startup?</h2>
+          <h2 className="mb-6 text-white">Ready to Build Your SaaS Product?</h2>
           <p className="mb-8 text-lg text-white/90">
-            From microservices architecture to AI powered features, we help startups build production grade infrastructure that scales.
+            From MVP architecture to AI features and growth strategy, we help Toronto founders build SaaS products that scale.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button size="lg" className="bg-white text-indigo-600 hover:bg-white/90" asChild>
