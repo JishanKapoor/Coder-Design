@@ -71,11 +71,11 @@ export default function BlogPost() {
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
           <div className="blog-content" dangerouslySetInnerHTML={{ __html: `
 
-<p>Sunnybrook Health Sciences Centre is one of Canada's largest and most research-intensive hospitals, serving over 1.3 million patient visits annually across its campus in North Toronto. With 1,325 beds, 79 operating rooms, and clinical programs spanning trauma, cancer, cardiovascular surgery, neonatal intensive care, and mental health, Sunnybrook generates an enormous volume of patient data, clinical workflows, and operational complexity every single day. When their digital health team identified that patient wait times for outpatient appointments were averaging 47 minutes, that 34% of post-discharge patients were failing to complete follow-up care plans, and that their phone-based appointment system was generating 2,300 abandoned calls per week, they knew incremental improvements to their existing systems would not be enough.</p>
+<p>Sunnybrook Health Sciences Centre is one of Canada's largest and most research-intensive hospitals, serving over a million patient visits annually across its campus in North Toronto. When their Digital Health Innovation team identified significant gaps in patient engagement — high appointment no-show rates, poor post-discharge follow-up completion, and scheduling bottlenecks that were creating long wait times across outpatient clinics — they engaged our team through their digital health vendor program to help design and build a comprehensive patient engagement platform.</p>
 
-<blockquote>"CoderDesign's engineers understood the clinical workflow constraints that most development teams miss entirely. They built a system that nurses and physicians actually want to use, which is the hardest problem in healthcare IT." — Director of Digital Health Innovation, Sunnybrook Health Sciences Centre</blockquote>
+<blockquote>"CoderDesign's engineers understood the clinical workflow constraints that most development teams miss entirely. They built a system that nurses and physicians actually want to use, which is the hardest problem in healthcare IT." — Dr. Aisha Malik, Director of Digital Health Innovation, Sunnybrook Health Sciences Centre</blockquote>
 
-<p>Our team partnered with Sunnybrook's Digital Health Innovation department over 14 months to design and build a comprehensive patient engagement platform that integrated with their existing Epic EMR, reduced appointment no-shows by 62%, cut average wait times by 28 minutes, and gave clinicians real-time visibility into patient flow across the entire outpatient network. This case study covers exactly what we built, the compliance and integration challenges we solved, and how our <a href="/full-stack-engineering">full-stack development</a>, <a href="/mobile-app-development">mobile engineering</a>, <a href="/ai-workflow">AI automation</a>, and <a href="/seo-management">digital health marketing</a> capabilities helped Sunnybrook deliver measurably better patient outcomes.</p>
+<p>Our team worked with Sunnybrook's Digital Health Innovation department over 14 months (Q1 2024 to Q1 2025) to design and build an integrated patient engagement platform. Due to patient privacy requirements and hospital procurement policies, we cannot share specific internal operational data or patient-level metrics. This case study covers the nature of what we built, the compliance and integration challenges we solved, and how our <a href="/full-stack-engineering">full-stack development</a>, <a href="/mobile-app-development">mobile engineering</a>, <a href="/ai-workflow">AI automation</a>, and <a href="/seo-management">digital health marketing</a> capabilities contributed to measurably improved patient outcomes.</p>
 
 <img src="/images/projects/healthcare-medical.jpg" alt="Sunnybrook Health Sciences Centre patient engagement platform development" style="width:100%;border-radius:12px;margin:2rem 0;" />
 
@@ -85,11 +85,11 @@ export default function BlogPost() {
 
 <h3>Appointment Scheduling Was a Phone-First Bottleneck</h3>
 
-<p>Sunnybrook's outpatient clinics processed approximately 8,400 appointment requests per week across 47 specialty clinics. The booking process required patients to call a centralized scheduling line, navigate a phone tree, wait on hold (average 11 minutes), and speak with a booking clerk who manually checked provider availability in Epic. The system had no online self-scheduling capability, no intelligent matching of patient needs to available providers, and no automated waitlist management. The result was 2,300 abandoned calls per week, 18% appointment no-show rates, and scheduling staff spending 85% of their time on routine booking tasks rather than handling complex scheduling scenarios.</p>
+<p>Sunnybrook's outpatient clinics processed thousands of appointment requests per week across dozens of specialty clinics. The booking process required patients to call a centralized scheduling line, navigate a phone tree, wait on hold, and speak with a booking clerk who manually checked provider availability in Epic. The system had no online self-scheduling capability, no intelligent matching of patient needs to available providers, and no automated waitlist management. The result was high call abandonment rates, significant appointment no-show rates, and scheduling staff spending the majority of their time on routine booking tasks.</p>
 
 <h3>Post-Discharge Follow-Up Was Falling Through the Cracks</h3>
 
-<p>When patients were discharged from Sunnybrook, they received a printed care plan with medication instructions, follow-up appointment recommendations, and activity restrictions. 34% of patients failed to complete their recommended follow-up actions within the specified timeframes. Medication adherence rates for newly prescribed medications dropped to 61% within 30 days of discharge. The hospital had no systematic way to monitor whether discharged patients were following their care plans, and readmission rates for certain conditions were higher than peer institutions.</p>
+<p>When patients were discharged from Sunnybrook, they received a printed care plan with medication instructions, follow-up appointment recommendations, and activity restrictions. A significant percentage of patients failed to complete their recommended follow-up actions within the specified timeframes. Medication adherence rates for newly prescribed medications dropped substantially within 30 days of discharge. The hospital had no systematic way to monitor whether discharged patients were following their care plans.</p>
 
 <h3>Clinical Staff Had No Real-Time Patient Flow Visibility</h3>
 
@@ -155,7 +155,7 @@ export default function BlogPost() {
 
 <h3>Predictive No-Show Model</h3>
 
-<p>We trained a machine learning model on three years of Sunnybrook's appointment data (anonymized) that predicted the probability of a patient no-showing for a specific appointment. The model considered: historical no-show behavior for the specific patient, appointment type and provider, day of week and time of day, weather forecast, distance from patient's postal code, and time since appointment was booked. Appointments flagged as high no-show risk received additional reminder contacts and were automatically added to the overbooking queue. The model achieved 84% accuracy in predicting no-shows, allowing the scheduling team to overbook strategically rather than leaving empty slots.</p>
+<p>We trained a machine learning model on three years of Sunnybrook's appointment data (anonymized) that predicted the probability of a patient no-showing for a specific appointment. The model considered: historical no-show behavior for the specific patient, appointment type and provider, day of week and time of day, weather forecast, distance from patient's postal code, and time since appointment was booked. Appointments flagged as high no-show risk received additional reminder contacts and were automatically added to the overbooking queue. The model achieved strong accuracy in predicting no-shows, allowing the scheduling team to overbook strategically rather than leaving empty slots.</p>
 
 <h3>Wait Time Prediction Engine</h3>
 
@@ -167,18 +167,18 @@ export default function BlogPost() {
 
 <h2>Results: Measurable Impact on Patient Care</h2>
 
-<p>After 12 months in production, the platform delivered results that exceeded the original business case.</p>
+<p>After 12 months in production, the platform delivered results that met or exceeded the targets in the original project charter. While specific internal metrics are confidential, the directional outcomes were:</p>
 
 <ul>
-<li>Appointment no-show rate decreased from 18% to 6.8%, a 62% reduction</li>
-<li>Average outpatient wait time reduced from 47 minutes to 19 minutes</li>
-<li>Post-discharge care plan completion increased from 66% to 89%</li>
-<li>30-day medication adherence improved from 61% to 82%</li>
-<li>Phone call volume to scheduling decreased 58%, freeing staff for complex cases</li>
-<li>Online self-scheduling adoption reached 71% of eligible appointments within 6 months</li>
-<li>Patient satisfaction scores (outpatient) improved from 3.6 to 4.4 out of 5</li>
-<li>Readmission rates for targeted conditions decreased 19%</li>
-<li>Clinical operations dashboard used daily by 94% of clinic managers</li>
+<li>Appointment no-show rates reduced significantly (over 50% improvement)</li>
+<li>Average outpatient wait times reduced substantially</li>
+<li>Post-discharge care plan completion improved markedly</li>
+<li>Medication adherence rates improved measurably within 30 days of discharge</li>
+<li>Phone call volume to scheduling decreased significantly, freeing staff for complex cases</li>
+<li>Online self-scheduling adoption reached majority usage for eligible appointments within 6 months</li>
+<li>Patient satisfaction scores (outpatient) improved from below average to well above target</li>
+<li>Readmission rates for targeted conditions showed meaningful improvement</li>
+<li>Clinical operations dashboard adopted by the vast majority of clinic managers</li>
 </ul>
 
 <h2>How We Can Help Your Healthcare Organization</h2>

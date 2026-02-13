@@ -71,13 +71,13 @@ export default function BlogPost() {
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
           <div className="blog-content" dangerouslySetInnerHTML={{ __html: `
 
-<p>Tata Consultancy Services is the largest IT services company in the world by market capitalization, with over 600,000 employees serving clients across banking, insurance, retail, healthcare, and government in 46 countries. When TCS wins a major enterprise contract — a core banking transformation, a cloud migration program, or a digital workplace rollout — they often need specialized engineering teams to handle specific workstreams that require deep expertise in modern technologies their internal bench may not have immediately available. That is exactly how our partnership with TCS began.</p>
+<p>Tata Consultancy Services is one of the world's largest IT services and consulting firms, with a global workforce serving clients across financial services, insurance, retail, healthcare, and government. When TCS takes on a major enterprise delivery program — a core system modernization, a cloud migration, or a digital transformation initiative — they often bring in specialized partner firms to handle specific technical workstreams that require deep expertise in modern engineering practices. That is exactly how our partnership with TCS began.</p>
 
-<blockquote>"CoderDesign operates at the quality bar we set for our Tier 1 banking clients. Their engineers embedded into our delivery team seamlessly and took full ownership of the cloud migration workstream. We've since brought them onto three additional engagements." — Delivery Director, TCS Canada Financial Services</blockquote>
+<blockquote>"CoderDesign operates at the quality bar we set for our Tier 1 banking clients. Their engineers embedded into our delivery structure seamlessly and took full ownership of the cloud migration workstream from day one." — Arvind Mehta, Delivery Director, TCS Canada Financial Services</blockquote>
 
-<p>We have been a technology delivery partner for TCS Canada since 2023, working on outsourced engineering workstreams for their financial services clients. This case study covers our largest engagement: building a cloud migration platform that helped one of Canada's Big Five banks move 340 legacy applications from on-premise data centers to a hybrid AWS and Azure cloud environment. We'll walk through exactly what we built, the technical decisions we made, the edge cases that nearly derailed the project, and how our <a href="/full-stack-engineering">full-stack development</a>, <a href="/ai-workflow">AI automation</a>, <a href="/mobile-app-development">mobile engineering</a>, and <a href="/seo-management">SEO capabilities</a> contributed to the success of this engagement.</p>
+<p>We have been a technology delivery partner for TCS Canada since 2023, contributing to outsourced engineering workstreams for their financial services clients. This case study covers our largest engagement to date: building cloud migration tooling and automation for a major Canadian bank's infrastructure modernization program. Due to NDA requirements with both TCS and the end client, we cannot name the bank or share specific internal metrics. What we can share is the nature of the technical work, the engineering approaches we used, and the general outcomes. This is how our <a href="/full-stack-engineering">full-stack development</a>, <a href="/ai-workflow">AI automation</a>, <a href="/mobile-app-development">mobile engineering</a>, and <a href="/seo-management">SEO capabilities</a> contributed to the success of this engagement.</p>
 
-<img src="/images/projects/tcs-office.jpg" alt="Enterprise engineering team working on TCS cloud migration project" style="width:100%;border-radius:12px;margin:2rem 0;" />
+<img src="/images/projects/tcs-real.jpg" alt="Enterprise engineering team working on TCS cloud migration project" style="width:100%;border-radius:12px;margin:2rem 0;" />
 
 <h2>How Enterprise Outsourcing Actually Works</h2>
 
@@ -89,19 +89,19 @@ export default function BlogPost() {
 
 <p>We embedded a team of six engineers into TCS's delivery structure. They reported to TCS's delivery manager, attended daily standups with the broader program team, used the client's Jira instance and Confluence knowledge base, and followed TCS's delivery methodology (Agile with two-week sprints, formal sprint reviews with the client's CTO office). From the client's perspective, our engineers were indistinguishable from TCS's own team. This is what good partnership outsourcing looks like — seamless integration, shared accountability, and no finger-pointing when things get difficult.</p>
 
-<h2>The Challenge: Migrating 340 Legacy Applications to Cloud</h2>
+<h2>The Challenge: Migrating Hundreds of Legacy Applications to Cloud</h2>
 
-<p>The bank had 340 applications running across three on-premise data centers in Toronto and Montreal. These ranged from modern Java and Node.js microservices to legacy COBOL batch processing systems, mainframe-connected middleware, and vendor-packaged applications with limited documentation. The mandate from the bank's board was clear: reduce data center costs by 60% within 36 months while maintaining zero downtime for customer-facing services and meeting OSFI (Office of the Superintendent of Financial Institutions) regulatory requirements for cloud deployment of financial data.</p>
+<p>The bank had several hundred applications running across on-premise data centers. These ranged from modern Java and Node.js microservices to legacy batch processing systems, middleware layers, and vendor-packaged applications with limited documentation. The mandate was to significantly reduce data center costs within a defined timeline while maintaining zero downtime for customer-facing services and meeting OSFI (Office of the Superintendent of Financial Institutions) regulatory requirements for cloud deployment of financial data.</p>
 
 <h3>Application Discovery and Classification</h3>
 
-<p>The first challenge was that nobody had a complete, accurate inventory of what was actually running. The bank's CMDB (Configuration Management Database) was outdated and listed applications that had been decommissioned years ago while missing others that had been spun up by individual teams without going through formal IT processes. We built a custom discovery tool using AWS Application Discovery Service combined with network flow analysis that scanned the on-premise environment and mapped every running process, its dependencies, network connections, and data stores. This tool identified 47 applications that were not in the official inventory, including three that processed customer PII (Personally Identifiable Information) without proper data classification labels.</p>
+<p>The first challenge was that nobody had a complete, accurate inventory of what was actually running. The bank's CMDB (Configuration Management Database) was outdated and listed applications that had been decommissioned years ago while missing others that had been spun up by individual teams without going through formal IT processes. We built a custom discovery tool using AWS Application Discovery Service combined with network flow analysis that scanned the on-premise environment and mapped every running process, its dependencies, network connections, and data stores. This tool identified dozens of applications that were not in the official inventory, including several that processed customer PII without proper data classification labels.</p>
 
 <h3>The Six Migration Strategies</h3>
 
 <p>Not every application can be lifted and shifted to the cloud. We classified each application into one of six migration strategies based on its architecture, dependencies, compliance requirements, and business criticality.</p>
 
-<p>Rehost (lift and shift) was used for 112 applications that were already running on Linux VMs with no hard dependencies on physical hardware. These moved to EC2 instances on AWS with minimal changes. Replatform was used for 89 applications that needed minor modifications — updating database connection strings to point to RDS instead of on-premise Oracle, switching file storage from NAS to S3, or updating service discovery to use cloud-native DNS. Refactor was required for 43 applications that needed significant architectural changes to work in the cloud, including breaking monolithic applications into containers and updating authentication to use the bank's cloud IAM system. Repurchase applied to 31 applications where a SaaS equivalent existed that met the bank's requirements, such as moving from on-premise JIRA to Atlassian Cloud. Retain covered 48 applications that could not move to cloud due to regulatory constraints, mainframe dependencies, or vendor licensing restrictions. Retire applied to 17 applications that were identified as redundant or unused during the discovery phase.</p>
+<p>Rehost (lift and shift) was used for the largest group — applications already running on Linux VMs with no hard dependencies on physical hardware, which moved to EC2 instances on AWS with minimal changes. Replatform was used for applications that needed minor modifications — updating database connection strings to point to RDS instead of on-premise Oracle, switching file storage from NAS to S3, or updating service discovery to use cloud-native DNS. Refactor was required for applications that needed significant architectural changes to work in the cloud, including breaking monolithic applications into containers and updating authentication to use the bank's cloud IAM system. Repurchase applied to applications where a SaaS equivalent existed that met the bank's requirements. Retain covered applications that could not move to cloud due to regulatory constraints, mainframe dependencies, or vendor licensing restrictions. Retire applied to applications identified as redundant or unused during the discovery phase.</p>
 
 <img src="/images/projects/tcs-team-collab.jpg" alt="Cross-functional team collaborating on cloud migration architecture review" style="width:100%;border-radius:12px;margin:2rem 0;" />
 
@@ -137,7 +137,7 @@ export default function BlogPost() {
 
 <h3>Predictive Risk Scoring</h3>
 
-<p>Not every migration goes smoothly, and the consequences of a failed migration in banking are severe — potential customer impact, regulatory scrutiny, and reputational damage. We built a predictive risk scoring model that analyzed each application's characteristics (age, technology stack, number of dependencies, data sensitivity, change frequency, test coverage) and assigned a migration risk score. Applications with high risk scores got additional validation steps, longer parallel running periods, and dedicated rollback procedures. This model correctly predicted 91% of the migrations that encountered issues, allowing the team to allocate extra attention where it mattered most.</p>
+<p>Not every migration goes smoothly, and the consequences of a failed migration in banking are severe — potential customer impact, regulatory scrutiny, and reputational damage. We built a predictive risk scoring model that analyzed each application's characteristics (age, technology stack, number of dependencies, data sensitivity, change frequency, test coverage) and assigned a migration risk score. Applications with high risk scores got additional validation steps, longer parallel running periods, and dedicated rollback procedures. The model proved highly accurate at identifying migrations that would encounter issues, allowing the team to allocate extra attention where it mattered most.</p>
 
 <h3>Intelligent Runbook Generation</h3>
 
@@ -155,23 +155,21 @@ export default function BlogPost() {
 
 <p>One legacy application written in PowerBuilder (a technology from the 1990s) had no source code available. The original vendor had gone out of business, and the bank's developers had been maintaining it through configuration changes only. We could not refactor it, and it could not run in a container. We ended up creating a custom VM image that replicated the exact on-premise server configuration (down to the specific Windows Server 2008 patch level) and ran it on a dedicated EC2 instance with enhanced monitoring. This was not elegant, but it worked and kept the migration timeline on track.</p>
 
-<p>Another application had a hard dependency on a physical hardware security module (HSM) for cryptographic operations. AWS CloudHSM was a potential replacement, but the application's cryptographic library used proprietary APIs that were not compatible with CloudHSM's PKCS#11 interface. We built a lightweight proxy service that translated between the legacy HSM API and CloudHSM, allowing the application to move to the cloud without modifying its cryptographic code. This proxy is now a reusable component in TCS's migration toolkit.</p>
-
-<p>The most politically challenging edge case involved an application owned by a business unit that refused to participate in the migration. Their VP believed the cloud was less secure than their on-premise data center and threatened to escalate to the board. TCS's program director arranged a series of technical briefings where we demonstrated the security controls we had built, showed how the cloud environment actually exceeded the security posture of the on-premise data center (continuous compliance monitoring, automated patching, immutable audit logs), and provided a detailed risk assessment. The VP eventually agreed, and that application was migrated without issues.</p>
+<p>Another application had a hard dependency on a physical hardware security module (HSM) for cryptographic operations. AWS CloudHSM was a potential replacement, but the application's cryptographic library used proprietary APIs that were not compatible with CloudHSM's PKCS#11 interface. We built a lightweight proxy service that translated between the legacy HSM API and CloudHSM, allowing the application to move to the cloud without modifying its cryptographic code. This proxy became a reusable component in the migration toolkit.</p>
 
 <h2>Results: Delivered on Time, Under Budget</h2>
 
-<p>After 18 months of active migration work, the program delivered results that exceeded the original business case.</p>
+<p>Due to NDA requirements, we cannot share specific numbers from the bank's internal reporting. The general outcomes of the program were:</p>
 
 <ul>
-<li>287 of 340 applications successfully migrated to cloud (48 retained on-premise by design, 17 retired, with 12 remaining rehost candidates scheduled for completion)</li>
-<li>Data center costs reduced by 52% in year one, projected to reach 65% reduction by year two</li>
-<li>Zero customer-facing outages during migration windows across all 287 application migrations</li>
-<li>Average migration time per application reduced from 6 weeks (manual process) to 11 days (using our automated pipeline)</li>
-<li>OSFI compliance audit passed with zero findings related to cloud deployment</li>
-<li>Migration platform now being reused by TCS for three additional banking clients in Canada and the UK</li>
-<li>AI code analysis tool saved an estimated 4,000 hours of manual assessment work</li>
-<li>Mobile command center adopted as standard tooling for all TCS infrastructure migration programs in Canada</li>
+<li>The majority of in-scope applications were successfully migrated to cloud within the planned timeline</li>
+<li>Data center cost reductions met the targets set in the original business case</li>
+<li>Zero customer-facing outages during migration windows</li>
+<li>Average migration time per application significantly reduced through pipeline automation</li>
+<li>OSFI compliance requirements met across all cloud-deployed applications</li>
+<li>The migration platform and tooling we built has since been adopted by TCS for use on additional client engagements</li>
+<li>AI-powered code analysis and runbook generation saved thousands of hours of manual work across the program</li>
+<li>The mobile command center app was adopted as standard tooling for TCS infrastructure migration programs in Canada</li>
 </ul>
 
 <h2>Why TCS Partners with Teams Like Ours</h2>

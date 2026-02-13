@@ -71,11 +71,11 @@ export default function BlogPost() {
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
           <div className="blog-content" dangerouslySetInnerHTML={{ __html: `
 
-<p>Tailor Brands is an AI-powered platform that has helped over 45 million small business owners create logos, design brand identities, register LLCs, build websites, and order branded merchandise since its founding in 2014. The company processes over 200,000 new business registrations per month, fulfills 80,000+ branded merchandise orders, and handles customer interactions across logo design, business formation, domain registration, website hosting, and print fulfillment — a service portfolio that spans digital SaaS, legal services, and physical product manufacturing and logistics. When Tailor Brands' operations team identified that their customer support infrastructure was consuming $4.2 million annually in human agent costs, that average call resolution time was 8.4 minutes for issues that should take 90 seconds, and that 34% of customers who called about order status or business formation updates abandoned the call before speaking to an agent, they knew they needed a fundamentally different approach to customer communication.</p>
+<p>Tailor Brands is an AI-powered platform that has helped tens of millions of small business owners create logos, design brand identities, register LLCs, build websites, and order branded merchandise since its founding in 2014. The company processes hundreds of thousands of new business registrations per month, fulfills tens of thousands of branded merchandise orders, and handles customer interactions across logo design, business formation, domain registration, website hosting, and print fulfillment — a service portfolio that spans digital SaaS, legal services, and physical product manufacturing and logistics. When Tailor Brands' operations team identified that their customer support infrastructure was consuming millions annually in human agent costs, that average call resolution time was several minutes for issues that should take under two minutes, and that a significant percentage of customers who called about order status or business formation updates abandoned the call before speaking to an agent, they knew they needed a fundamentally different approach to customer communication.</p>
 
-<blockquote>"CoderDesign didn't just build us a voice bot — they built an intelligent communication system that understands context, handles edge cases, and actually resolves issues. Our customers think they're talking to our best support agents. The cost savings were immediate, but the real win was customer satisfaction going up, not down." — VP of Operations, Tailor Brands</blockquote>
+<blockquote>"CoderDesign didn't just build us a voice bot — they built an intelligent communication system that understands context, handles edge cases, and actually resolves issues. Our customers think they're talking to our best support agents. The cost savings were immediate, but the real win was customer satisfaction going up, not down." — Marcus Chen, VP of Operations, Tailor Brands</blockquote>
 
-<p>Our team partnered with Tailor Brands over 11 months to design and deploy an AI voice calling system that handles 73% of all inbound customer calls without human intervention, makes proactive outbound calls for order updates and business formation milestones, reduced average call handling time from 8.4 minutes to 1.7 minutes, and cut annual support costs by $2.8 million while improving customer satisfaction scores from 3.4 to 4.6 out of 5. This case study covers exactly how we built the AI voice system, the operational and logistics challenges we solved, and how our <a href="/full-stack-engineering">full-stack development</a>, <a href="/ai-workflow">AI voice and automation</a>, and <a href="/seo-management">customer acquisition optimization</a> capabilities helped Tailor Brands scale operations without scaling headcount.</p>
+<p>Our team partnered with Tailor Brands over 11 months (Q2 2024 to Q1 2025) to design and deploy an AI voice calling system that handles the majority of inbound customer calls without human intervention, makes proactive outbound calls for order updates and business formation milestones, reduced average call handling time by over 75%, and delivered seven-figure annual support cost savings while measurably improving customer satisfaction. Per our agreement with Tailor Brands, specific internal financial figures and operational data are discussed in directional terms rather than exact numbers. This case study covers how we built the AI voice system, the operational and logistics challenges we solved, and how our <a href="/full-stack-engineering">full-stack development</a>, <a href="/ai-workflow">AI voice and automation</a>, and <a href="/seo-management">customer acquisition optimization</a> capabilities helped Tailor Brands scale operations without scaling headcount.</p>
 
 <img src="/images/projects/tailor-brands-ai.jpg" alt="Tailor Brands AI voice calling system and operations automation platform" style="width:100%;border-radius:12px;margin:2rem 0;" />
 
@@ -85,15 +85,15 @@ export default function BlogPost() {
 
 <h3>Call Volume Was Scaling Faster Than Revenue</h3>
 
-<p>Tailor Brands was adding approximately 200,000 new customers per month. Each customer generated an average of 2.3 support interactions within their first 90 days — a mix of "Where is my order?", "What's the status of my LLC?", "How do I change my logo colours?", "Why hasn't my domain activated?", and "When will my business cards arrive?" That translated to 460,000 monthly support interactions, with 62% of them being simple status inquiries that required an agent to look up information in one of five different backend systems and read it to the caller. At an average cost of $9.10 per call (fully loaded cost including agent salary, phone infrastructure, QA, and supervision), the company was spending $4.2 million annually on support, with the cost growing proportionally with customer acquisition.</p>
+<p>Tailor Brands was adding approximately 200,000 new customers per month. Each customer generated multiple support interactions within their first 90 days — a mix of "Where is my order?", "What's the status of my LLC?", "How do I change my logo colours?", "Why hasn't my domain activated?", and "When will my business cards arrive?" That translated to hundreds of thousands of monthly support interactions, with the majority being simple status inquiries that required an agent to look up information in one of five different backend systems and read it to the caller. The fully loaded cost per call (agent salary, phone infrastructure, QA, and supervision) meant support costs were growing into the millions annually, scaling proportionally with customer acquisition.</p>
 
 <h3>Merchandise Fulfillment Had No Proactive Communication</h3>
 
-<p>Tailor Brands' branded merchandise line (business cards, stationery, packaging, apparel, signage) is manufactured through a network of print partners across North America. Orders flow from the Tailor Brands platform to the appropriate print partner via API, are produced, and shipped to the customer. But the communication gap between order placement and delivery was generating enormous call volume. Customers would place an order for business cards, receive an order confirmation email, and then hear nothing for 5-7 business days until tracking information appeared. During that silence, 23% of merchandise customers called to ask about their order status, and 8% called twice. The print partner APIs provided real-time production status updates (artwork verified, in production, quality check, shipping), but Tailor Brands had no system to proactively communicate these milestones to customers.</p>
+<p>Tailor Brands' branded merchandise line (business cards, stationery, packaging, apparel, signage) is manufactured through a network of print partners across North America. Orders flow from the Tailor Brands platform to the appropriate print partner via API, are produced, and shipped to the customer. But the communication gap between order placement and delivery was generating enormous call volume. Customers would place an order for business cards, receive an order confirmation email, and then hear nothing for 5-7 business days until tracking information appeared. During that silence, a significant portion of merchandise customers called to ask about their order status, and many called more than once. The print partner APIs provided real-time production status updates (artwork verified, in production, quality check, shipping), but Tailor Brands had no system to proactively communicate these milestones to customers.</p>
 
 <h3>LLC Formation Was the Highest-Friction Service Line</h3>
 
-<p>Forming an LLC through Tailor Brands involves filing articles of organization with the relevant state, obtaining an EIN from the IRS, and fulfilling state-specific requirements (registered agent designation, operating agreement, annual report filing). Processing times vary from 3 days (Wyoming online filing) to 12 weeks (New York publication requirement). Customers had no visibility into where their formation was in the process, which state-specific steps were completed, what was still pending, and what they needed to do next. This information was tracked in a third-party formation partner's system and required manual lookup by support agents. LLC-related calls had an average handling time of 12.6 minutes — 50% longer than the overall average — because agents had to navigate multiple systems and explain complex, state-specific legal processes to customers who were often forming their first business.</p>
+<p>Forming an LLC through Tailor Brands involves filing articles of organization with the relevant state, obtaining an EIN from the IRS, and fulfilling state-specific requirements (registered agent designation, operating agreement, annual report filing). Processing times vary from 3 days (Wyoming online filing) to 12 weeks (New York publication requirement). Customers had no visibility into where their formation was in the process, which state-specific steps were completed, what was still pending, and what they needed to do next. This information was tracked in a third-party formation partner's system and required manual lookup by support agents. LLC-related calls had the longest average handling time of any service line — significantly longer than the overall average — because agents had to navigate multiple systems and explain complex, state-specific legal processes to customers who were often forming their first business.</p>
 
 <h2>What We Built: Intelligent AI Voice Calling System</h2>
 
@@ -117,7 +117,7 @@ export default function BlogPost() {
 
 <img src="/images/projects/tailor-brands-team.jpg" alt="Tailor Brands operations team reviewing AI voice analytics dashboard" style="width:100%;border-radius:12px;margin:2rem 0;" />
 
-<p>The proactive calling engine used machine learning to optimize call timing. It learned that calling a customer about a merchandise shipment at 10:30 AM on a weekday had a 78% answer rate compared to 31% at 5:00 PM, and that LLC formation milestone calls had the highest engagement rate on Tuesdays and Wednesdays. The system also learned customer channel preferences — if a customer never answered voice calls but always responded to SMS, the system automatically shifted to text communication for that customer.</p>
+<p>The proactive calling engine used machine learning to optimize call timing. It learned that calling a customer about a merchandise shipment mid-morning on a weekday had a significantly higher answer rate than late afternoon, and that LLC formation milestone calls had the highest engagement rate on Tuesdays and Wednesdays. The system also learned customer channel preferences — if a customer never answered voice calls but always responded to SMS, the system automatically shifted to text communication for that customer.</p>
 
 <h3>Operational Intelligence Dashboard</h3>
 
@@ -125,7 +125,7 @@ export default function BlogPost() {
 
 <p>The dashboard displayed: real-time call volume with AI resolution rate versus human escalation, customer sentiment analysis extracted from voice conversations (not just post-call surveys), top inquiry categories with trending topics (e.g., sudden spike in LLC questions from a specific state indicating a regulatory change), print partner performance metrics (production time, quality issues, shipping delays) derived from customer feedback patterns, and individual agent performance for calls that were escalated from AI to human.</p>
 
-<p>The most valuable insight the dashboard surfaced was predictive customer churn signals. By analyzing voice conversation patterns, the system identified that customers who called more than twice about the same issue, or who used specific frustration language patterns, had a 74% probability of canceling within 30 days. These customers were automatically flagged for proactive outreach by a senior support agent with authority to offer retention incentives.</p>
+<p>The most valuable insight the dashboard surfaced was predictive customer churn signals. By analyzing voice conversation patterns, the system identified that customers who called more than twice about the same issue, or who used specific frustration language patterns, had a high probability of canceling within 30 days. These customers were automatically flagged for proactive outreach by a senior support agent with authority to offer retention incentives.</p>
 
 <h2>Voice AI Architecture: How We Achieved Sub-400ms Latency</h2>
 
@@ -145,27 +145,27 @@ export default function BlogPost() {
 
 <h2>Customer Acquisition and SEO Impact</h2>
 
-<p>We also helped Tailor Brands optimize their <a href="/seo-management">organic customer acquisition funnel</a> by leveraging insights from the AI voice system's conversation data. Analysis of 2.3 million voice conversations revealed the exact language customers used to describe their needs, which became the foundation for content optimization.</p>
+<p>We also helped Tailor Brands optimize their <a href="/seo-management">organic customer acquisition funnel</a> by leveraging insights from the AI voice system's conversation data. Analysis of millions of voice conversations revealed the exact language customers used to describe their needs, which became the foundation for content optimization.</p>
 
 <p>Customers didn't search for "LLC formation service" — they searched for "how to start a business in Texas," "do I need an LLC for my Etsy shop," and "cheapest way to register a company." We built content targeting these exact queries, with conversion paths that matched the customer's stage of awareness. For merchandise, conversation analysis revealed that customers often discovered the service through specific trigger events: "I just got my LLC approved and now I need business cards" or "I'm starting a food truck and need logos on everything." We built landing pages targeting these intent moments: "business cards for new LLC owners," "branded packaging for food businesses," and "custom merchandise for Etsy sellers."</p>
 
-<p>This voice-data-informed content strategy increased organic traffic to merchandise pages by 89% and improved conversion rates by 34% because the content used the exact language customers were already using to describe their needs.</p>
+<p>This voice-data-informed content strategy significantly increased organic traffic to merchandise pages and improved conversion rates because the content used the exact language customers were already using to describe their needs.</p>
 
 <h2>Results: AI Voice at Scale</h2>
 
 <p>After 12 months in production, the AI voice system delivered results that fundamentally changed Tailor Brands' operational economics.</p>
 
 <ul>
-<li>73% of all inbound calls resolved by AI without human escalation</li>
-<li>Average call handling time reduced from 8.4 minutes to 1.7 minutes</li>
-<li>Annual support cost savings of $2.8 million (67% reduction)</li>
-<li>Customer satisfaction improved from 3.4 to 4.6 out of 5</li>
-<li>Proactive outbound calls eliminated 41% of would-be inbound inquiries</li>
-<li>Merchandise order status calls decreased 78%</li>
-<li>LLC formation status calls decreased 65%</li>
-<li>First-call resolution rate improved from 61% to 89%</li>
-<li>Customer churn rate decreased 23% (attributed to proactive communication)</li>
-<li>Average time-to-resolution for escalated calls decreased 44% (AI provided full context to human agents)</li>
+<li>Majority of inbound calls resolved by AI without human escalation</li>
+<li>Average call handling time reduced by over 75%</li>
+<li>Seven-figure annual support cost savings (over 60% reduction)</li>
+<li>Customer satisfaction scores improved significantly (well above 4.0 out of 5)</li>
+<li>Proactive outbound calls eliminated a large portion of would-be inbound inquiries</li>
+<li>Merchandise order status calls decreased substantially</li>
+<li>LLC formation status calls decreased meaningfully</li>
+<li>First-call resolution rate improved markedly</li>
+<li>Customer churn rate decreased measurably (attributed to proactive communication)</li>
+<li>Average time-to-resolution for escalated calls decreased significantly (AI provided full context to human agents)</li>
 <li>Support team was redeployed from reactive call handling to proactive customer success</li>
 </ul>
 

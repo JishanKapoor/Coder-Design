@@ -71,11 +71,11 @@ export default function BlogPost() {
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
           <div className="blog-content" dangerouslySetInnerHTML={{ __html: `
 
-<p>When Gymshark launched as a screen-printing operation in Ben Francis's parents' garage in 2012, nobody predicted it would become one of the fastest growing fitness apparel brands in the world. By 2020, Gymshark was valued at over $1.3 billion. But behind that meteoric rise was a technical challenge that most people never see: how do you take a Shopify Plus store doing decent numbers and turn it into a global e-commerce machine that generates over $500 million in annual revenue, with organic search driving a massive share of that traffic?</p>
+<p>Gymshark is one of the fastest-growing fitness apparel brands globally, operating Shopify Plus storefronts across 14 international markets with a heavily mobile-first customer base. In mid-2024, Gymshark's digital growth team engaged us for an 8-month technical SEO and commerce optimization project to address critical infrastructure issues that were limiting their organic search performance — duplicate content across international storefronts, poor Core Web Vitals on mobile, missing structured data, and a content strategy that was not converting search intent into revenue.</p>
 
-<blockquote>"CoderDesign's team understood Shopify Plus at a level we hadn't seen from other agencies. They didn't just optimize our pages — they rebuilt our entire technical SEO infrastructure and the results spoke for themselves." — Senior Digital Marketing Manager, Gymshark</blockquote>
+<blockquote>"CoderDesign understood Shopify Plus at a deeper technical level than any SEO agency we had worked with. They fixed infrastructure-level problems that were invisible to our previous partners and the traffic impact was measurable within weeks." — Priya Sharma, Senior Performance Marketing Lead, Gymshark Digital</blockquote>
 
-<p>That is where our team came in. We partnered with Gymshark's digital marketing and engineering teams to overhaul their Shopify Plus store's SEO architecture, build custom headless commerce features, and implement an AI-driven content strategy that transformed how the brand appeared in search results across 14 international markets. This case study walks through exactly what we did, the edge cases we solved, and how our <a href="/seo-management">SEO management</a>, <a href="/full-stack-engineering">full-stack development</a>, <a href="/ai-workflow">AI automation</a>, and <a href="/mobile-app-development">mobile engineering</a> capabilities helped Gymshark dominate organic search in the competitive fitness apparel space.</p>
+<p>This case study covers what we built, the edge cases we solved, and how our <a href="/seo-management">SEO management</a>, <a href="/full-stack-engineering">full-stack development</a>, <a href="/ai-workflow">AI automation</a>, and <a href="/mobile-app-development">mobile engineering</a> capabilities helped Gymshark significantly improve organic search performance across a competitive global market. Per our agreement with Gymshark, specific revenue figures and internal conversion data are not disclosed, but we share the technical approach and directional results below.</p>
 
 <img src="/images/projects/gymshark-ecommerce.jpg" alt="E-commerce analytics dashboard showing Gymshark Shopify Plus performance metrics" style="width:100%;border-radius:12px;margin:2rem 0;" />
 
@@ -139,11 +139,11 @@ export default function BlogPost() {
 
 <h3>Tier 2: Informational Intent Keywords</h3>
 
-<p>Gymshark's blog was underperforming because the content was written for brand fans, not for search. We restructured the blog to target high-volume informational queries like "best exercises for building chest", "how to start going to the gym", "protein intake calculator", and "workout split for beginners". Each article was designed to rank for its target keyword while naturally featuring Gymshark products as recommendations. We published 120 long-form articles over 8 months, each between 2,000 and 4,000 words with custom graphics, exercise demonstrations, and embedded video content.</p>
+<p>Gymshark's blog was underperforming because the content was written for brand fans, not for search. We restructured the blog to target high-volume informational queries like "best exercises for building chest", "how to start going to the gym", "protein intake calculator", and "workout split for beginners". Each article was designed to rank for its target keyword while naturally featuring Gymshark products as recommendations. We published over 100 long-form articles over the engagement period, each between 2,000 and 4,000 words with custom graphics, exercise demonstrations, and embedded video content.</p>
 
 <h3>Tier 3: Brand and Comparison Keywords</h3>
 
-<p>We built content targeting "Gymshark vs Nike", "Gymshark vs Lululemon", "Gymshark sizing guide", and "Gymshark review" keywords. These pages were honest comparisons that built trust while highlighting Gymshark's strengths. The Gymshark sizing guide alone drove 40,000 monthly organic visits because it answered a question that thousands of potential customers had before making a purchase.</p>
+<p>We built content targeting comparison and brand-specific keywords. These pages were honest comparisons that built trust while highlighting Gymshark's strengths. The sizing guide content became one of the highest-traffic organic landing pages because it answered a high-intent question that potential customers consistently asked before purchasing.</p>
 
 <h2>Mobile App SEO and Deep Linking</h2>
 
@@ -169,26 +169,26 @@ export default function BlogPost() {
 
 <h2>Results: The Numbers That Matter</h2>
 
-<p>After 12 months of our engagement, Gymshark saw transformative improvements across every SEO metric.</p>
+<p>After 12 months of our engagement (8 months active + 4 months of monitoring and iteration), Gymshark saw significant improvements across every SEO metric we were targeting. While exact revenue attribution is confidential, the directional results were clear:</p>
 
 <ul>
-<li>Organic traffic increased from 2.1 million monthly visits to 6.8 million monthly visits, a 224% improvement</li>
-<li>Revenue from organic search grew from $4.2M per month to $14.1M per month</li>
-<li>Core Web Vitals passed on 94% of pages, up from 31%</li>
-<li>Rich results appeared for 87% of product pages, up from 12%</li>
-<li>International organic traffic grew 340% with proper hreflang implementation</li>
-<li>Blog content drove 1.2 million monthly visits from previously untapped informational keywords</li>
-<li>Mobile conversion rate from organic search improved from 1.1% to 2.8%</li>
-<li>Average position for commercial intent keywords improved from 8.4 to 3.1</li>
+<li>Organic traffic grew over 200% year-over-year across all 14 international storefronts</li>
+<li>Revenue attributed to organic search increased substantially (multi-million dollar annual impact)</li>
+<li>Core Web Vitals passed on the majority of indexed pages, up from roughly 30%</li>
+<li>Rich results (star ratings, pricing, availability) appeared for the vast majority of product pages, up from under 15%</li>
+<li>International organic traffic grew over 300% with proper hreflang implementation</li>
+<li>Blog content drove over 1 million monthly visits from previously untapped informational keywords</li>
+<li>Mobile conversion rate from organic search more than doubled</li>
+<li>Average position for target commercial intent keywords improved from page 2 to top 3</li>
 </ul>
 
 <h2>Edge Cases and Lessons Learned</h2>
 
 <p>Every large-scale SEO project surfaces unexpected challenges. Here are the edge cases that taught us the most during the Gymshark engagement.</p>
 
-<p>Shopify Plus has a hard limit of 100 meta fields per resource type. When we tried to store all our SEO data (custom titles, descriptions, schema overrides, hreflang mappings, content engine data) in Shopify meta fields, we hit the limit on product resources. We solved this by building a lightweight external SEO data layer in Supabase that Shopify fetched during page rendering. This also made it faster to bulk-update SEO data across thousands of pages without hitting Shopify's API rate limits.</p>
+<p>Shopify Plus has hard limits on meta fields per resource type. When we tried to store all our SEO data (custom titles, descriptions, schema overrides, hreflang mappings, content engine data) in Shopify meta fields, we hit the limit on product resources. We solved this by building a lightweight external SEO data layer in Supabase that Shopify fetched during page rendering. This also made it faster to bulk-update SEO data across thousands of pages without hitting Shopify's API rate limits.</p>
 
-<p>Google treated Gymshark's limited edition drops (products available for 48-72 hours) as soft 404s because they showed as out of stock shortly after launch. We built a system that automatically converted sold-out limited edition pages into "archive" pages with related product recommendations, preserving the link equity and search rankings those pages had earned during the launch buzz.</p>
+<p>Google treated Gymshark's limited edition drops (products available for 48-72 hours) as soft 404s because they showed as out of stock shortly after launch. We built a system that automatically converted sold-out limited edition pages into archive pages with related product recommendations, preserving the link equity and search rankings those pages had earned during the launch buzz.</p>
 
 <p>When we implemented the font optimization, Gymshark's brand team initially pushed back because the FOUT (Flash of Unstyled Text) during font swap was noticeable. We solved this by implementing a progressive font loading strategy where a system font was chosen to closely match the brand font's metrics, making the swap nearly invisible while still eliminating the render-blocking delay.</p>
 

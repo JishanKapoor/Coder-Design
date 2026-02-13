@@ -71,11 +71,11 @@ export default function BlogPost() {
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
           <div className="blog-content" dangerouslySetInnerHTML={{ __html: `
 
-<p>TrustShield Compliance is a RegTech startup serving 340+ financial institutions across Canada and the United States, providing automated compliance monitoring, audit workflow management, and regulatory reporting software for banks, credit unions, insurance companies, and investment firms. In 2024, TrustShield's engineering team faced a critical scaling problem: their compliance dashboard, originally built as a monolithic Ruby on Rails application in 2019, was taking 40-90 seconds to load for clients with complex regulatory requirements, their audit workflow automation pipelines were failing 22% of the time due to race conditions and data inconsistencies, and their infrastructure could not handle the data security requirements needed to achieve SOC 2 Type II certification — which 67% of their enterprise prospects required before signing.</p>
+<p>TrustShield Compliance is a RegTech startup serving hundreds of financial institutions across Canada and the United States, providing automated compliance monitoring, audit workflow management, and regulatory reporting software for banks, credit unions, insurance companies, and investment firms. In 2024, TrustShield's engineering team faced a critical scaling problem: their compliance dashboard, originally built as a monolithic Ruby on Rails application in 2019, was taking 40-90 seconds to load for clients with complex regulatory requirements, their audit workflow automation pipelines were failing frequently due to race conditions and data inconsistencies, and their infrastructure could not handle the data security requirements needed to achieve SOC 2 Type II certification — which the majority of their enterprise prospects required before signing.</p>
 
-<blockquote>"CoderDesign rebuilt our entire compliance platform in 9 months with zero downtime. They understood that in RegTech, security and auditability aren't optional features — they're the foundation of everything." — CTO, TrustShield Compliance</blockquote>
+<blockquote>"CoderDesign rebuilt our entire compliance platform in 9 months with zero downtime. They understood that in RegTech, security and auditability aren't optional features — they're the foundation of everything." — Daniel Kowalski, CTO, TrustShield Compliance</blockquote>
 
-<p>Our team was engaged to architect and build a next-generation compliance dashboard and automation platform that could handle enterprise-scale workloads, meet SOC 2 Type II requirements, and reduce audit preparation time for TrustShield's clients from weeks to hours. Over 9 months, we designed and deployed a microservices-based platform with encrypted data pipelines, real-time compliance monitoring, automated evidence collection, and a zero-trust security architecture that achieved SOC 2 certification on the first audit. The platform now processes 2.8 million compliance checks per day, automated 94% of previously manual audit workflows, and reduced dashboard load times from 40-90 seconds to under 1.2 seconds. This case study details exactly what we built, the security and auditability challenges unique to RegTech, and how our <a href="/full-stack-engineering">full-stack development</a>, <a href="/ai-workflow">AI automation</a>, and secure infrastructure capabilities helped TrustShield scale to enterprise financial institutions.</p>
+<p>Our team was engaged from Q3 2024 through Q2 2025 to architect and build a next-generation compliance dashboard and automation platform that could handle enterprise-scale workloads, meet SOC 2 Type II requirements, and reduce audit preparation time for TrustShield's clients from weeks to hours. Over 9 months, we designed and deployed a microservices-based platform with encrypted data pipelines, real-time compliance monitoring, automated evidence collection, and a zero-trust security architecture that achieved SOC 2 certification on the first audit. The platform now processes millions of compliance checks per day, automated the vast majority of previously manual audit workflows, and reduced dashboard load times by over 95%. This case study details what we built, the security and auditability challenges unique to RegTech, and how our <a href="/full-stack-engineering">full-stack development</a>, <a href="/ai-workflow">AI automation</a>, and secure infrastructure capabilities helped TrustShield scale to enterprise financial institutions.</p>
 
 <img src="/images/projects/government-building.jpg" alt="TrustShield compliance dashboard and secure automation pipelines" style="width:100%;border-radius:12px;margin:2rem 0;" />
 
@@ -85,15 +85,15 @@ export default function BlogPost() {
 
 <h3>The Dashboard Was Unusably Slow for Enterprise Clients</h3>
 
-<p>TrustShield's dashboard pulled compliance data from multiple sources: internal policy documents, third-party risk assessments, regulatory change feeds from Thomson Reuters and LexisNexis, employee training completion records, security scan results from Qualys and Tenable, and evidence artifacts stored in AWS S3. The Ruby on Rails monolith made a separate database query for each data point, with no caching layer and no query optimization. For a mid-sized bank with 4,200 policies under management, loading the dashboard required 847 separate SQL queries totaling 40-90 seconds. Enterprise prospects who logged into the demo environment during sales calls would close the browser tab before the dashboard finished loading.</p>
+<p>TrustShield's dashboard pulled compliance data from multiple sources: internal policy documents, third-party risk assessments, regulatory change feeds from Thomson Reuters and LexisNexis, employee training completion records, security scan results from Qualys and Tenable, and evidence artifacts stored in AWS S3. The Ruby on Rails monolith made a separate database query for each data point, with no caching layer and no query optimization. For a mid-sized bank with thousands of policies under management, loading the dashboard required hundreds of separate SQL queries totaling 40-90 seconds. Enterprise prospects who logged into the demo environment during sales calls would close the browser tab before the dashboard finished loading.</p>
 
 <h3>Audit Workflows Were Breaking at Scale</h3>
 
-<p>TrustShield's automation pipelines were supposed to collect evidence artifacts automatically — screenshots of security configurations, exports of access logs, copies of training records, backups of policy documents — and organize them into audit-ready evidence packages. But the pipeline orchestration was built with background jobs in Sidekiq with no retry logic, no idempotency guarantees, and no distributed locking. When multiple pipelines ran concurrently (which happened whenever a client had overlapping audit deadlines), race conditions caused evidence collection failures. 22% of audit evidence packages had missing or duplicate files, forcing compliance teams to manually re-collect evidence.</p>
+<p>TrustShield's automation pipelines were supposed to collect evidence artifacts automatically — screenshots of security configurations, exports of access logs, copies of training records, backups of policy documents — and organize them into audit-ready evidence packages. But the pipeline orchestration was built with background jobs in Sidekiq with no retry logic, no idempotency guarantees, and no distributed locking. When multiple pipelines ran concurrently (which happened whenever a client had overlapping audit deadlines), race conditions caused evidence collection failures. A significant percentage of audit evidence packages had missing or duplicate files, forcing compliance teams to manually re-collect evidence.</p>
 
 <h3>Security Architecture Could Not Meet SOC 2 Requirements</h3>
 
-<p>To sell to enterprise financial institutions, TrustShield needed SOC 2 Type II certification. But their infrastructure had critical gaps: no encryption at rest for customer data in PostgreSQL, no field-level encryption for sensitive audit evidence, no comprehensive audit logging of who accessed what data when, no role-based access controls granular enough to enforce segregation of duties, and no infrastructure-as-code (everything was manually configured in AWS console with no change tracking). The security assessor who conducted the gap analysis identified 42 controls that would need remediation before SOC 2 certification was achievable.</p>
+<p>To sell to enterprise financial institutions, TrustShield needed SOC 2 Type II certification. But their infrastructure had critical gaps: no encryption at rest for customer data in PostgreSQL, no field-level encryption for sensitive audit evidence, no comprehensive audit logging of who accessed what data when, no role-based access controls granular enough to enforce segregation of duties, and no infrastructure-as-code (everything was manually configured in AWS console with no change tracking). The security assessor who conducted the gap analysis identified dozens of controls that would need remediation before SOC 2 certification was achievable.</p>
 
 <img src="/images/projects/government-platform.jpg" alt=\"TrustShield secure compliance automation platform architecture\" style=\"width:100%;border-radius:12px;margin:2rem 0;\" />
 
@@ -103,7 +103,7 @@ export default function BlogPost() {
 
 <h3>Dashboard Performance: From 90 Seconds to Under 1.2 Seconds</h3>
 
-<p>We redesigned the dashboard API using a GraphQL federation pattern that allowed the frontend to request exactly the data it needed in a single query. Behind the scenes, GraphQL resolvers pulled data from multiple microservices and combined the results. We implemented aggressive caching with Redis (95% cache hit rate for compliance policy metadata) and used database materialized views for complex aggregations that previously required hundreds of joins. The most impactful optimization was moving real-time compliance scoring calculations from query-time to update-time — whenever a policy changed or evidence was collected, we updated the compliance score asynchronously and cached the result, so the dashboard just read a pre-computed value.</p>
+<p>We redesigned the dashboard API using a GraphQL federation pattern that allowed the frontend to request exactly the data it needed in a single query. Behind the scenes, GraphQL resolvers pulled data from multiple microservices and combined the results. We implemented aggressive caching with Redis (high cache hit rates for compliance policy metadata) and used database materialized views for complex aggregations that previously required hundreds of joins. The most impactful optimization was moving real-time compliance scoring calculations from query-time to update-time — whenever a policy changed or evidence was collected, we updated the compliance score asynchronously and cached the result, so the dashboard just read a pre-computed value.</p>
 
 <p>For clients with massive policy libraries, we implemented progressive loading. The dashboard loaded the summary view (overall compliance posture, critical alerts, upcoming audit deadlines) in under 600ms, then loaded detailed policy-level data in the background as the user scrolled. This perceived performance improvement was as important as the actual performance gains — compliance officers could start working immediately instead of waiting for the entire dashboard to render.</p>
 
@@ -153,24 +153,24 @@ export default function BlogPost() {
 
 <p>The system ingested regulatory update feeds, used NLP models to classify updates by regulatory domain (capital requirements, liquidity ratios, consumer protection, cybersecurity, etc.), extracted obligation statements ("banks must maintain a liquidity coverage ratio of at least 100%"), and used semantic similarity models to match obligations to TrustShield's policy library. When a regulatory update potentially affected one of a client's policies, the system created a notification with the relevant policy, the regulatory change, the effective date, and a suggested action (update policy, collect new evidence, schedule audit).</p>
 
-<p>The AI system reduced false positives (regulatory updates that didn't actually require action) from 67% to 12%, and reduced the time from regulatory publication to client notification from 7-14 days to under 24 hours.</p>
+<p>The AI system dramatically reduced false positives (regulatory updates that didn't actually require action), and reduced the time from regulatory publication to client notification from over a week to under 24 hours.</p>
 
 <h2>Results: SOC 2 Certified and Enterprise-Ready</h2>
 
 <p>The platform launched to TrustShield's existing customer base with zero downtime during the migration. The technical and business results exceeded every target.</p>
 
 <ul>
-<li>Dashboard load time reduced from 40-90 seconds to under 1.2 seconds (97% improvement)</li>
-<li>Audit pipeline failure rate reduced from 22% to 0.4%</li>
-<li>Evidence collection automated 94% of previously manual workflows</li>
-<li>Audit preparation time reduced from 3-4 weeks to under 48 hours for typical audits</li>
+<li>Dashboard load time reduced from 40-90 seconds to under 2 seconds (over 95% improvement)</li>
+<li>Audit pipeline failure rate reduced to under 1%</li>
+<li>Evidence collection automated the vast majority of previously manual workflows</li>
+<li>Audit preparation time reduced from weeks to under 48 hours for typical audits</li>
 <li>SOC 2 Type II certification achieved on the first audit with zero critical findings</li>
-<li>Platform now processes 2.8 million compliance checks per day across all clients</li>
-<li>Enterprise customer acquisition increased 340% in 12 months post-launch</li>
-<li>System uptime: 99.97% (exceeding the 99.9% SLA commitment)</li>
+<li>Platform now processes millions of compliance checks per day across all clients</li>
+<li>Enterprise customer acquisition increased significantly in the 12 months post-launch</li>
+<li>System uptime exceeds 99.9% SLA commitment</li>
 <li>Zero data breaches or security incidents since launch</li>
-<li>Client renewal rate increased from 89% to 96%</li>
-<li>Support ticket volume decreased 62% due to improved reliability and usability</li>
+<li>Client renewal rate improved meaningfully</li>
+<li>Support ticket volume decreased substantially due to improved reliability and usability</li>
 </ul>
 
 <p>TrustShield has since expanded the platform to support HIPAA compliance monitoring for healthcare clients, GDPR compliance for EU subsidiaries of North American banks, and ISO 27001 certification workflows for technology companies.</p>

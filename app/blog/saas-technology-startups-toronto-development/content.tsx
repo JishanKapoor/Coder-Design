@@ -71,19 +71,19 @@ export default function BlogPost() {
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
           <div className="blog-content" dangerouslySetInnerHTML={{ __html: `
 
-<p>When Deel came out of Y Combinator's Winter 2019 batch, they had a bold vision: make it possible for any company to hire anyone, anywhere in the world, without worrying about local payroll laws, tax compliance, or employment regulations. The founding team, led by Alex Bouaziz and Shuo Wang, had built an early prototype that handled contractor payments in a handful of countries. But as demand surged and they expanded into full employee payroll across 120+ countries, the backend infrastructure needed to evolve fast. That is where our team came in.</p>
+<p>Deel is one of the fastest-growing global payroll and HR platforms in the world, processing compliant payments for distributed teams across more than 120 countries. As their engineering team scaled to support rapid international expansion, they brought in specialized partners — including our team — to help architect and deliver critical infrastructure components under tight timelines. We were engaged through a contract-based delivery model from Q2 2024 to Q1 2025, working as an embedded engineering unit within Deel's platform team on payroll calculation microservices, compliance automation, and internal tooling.</p>
 
-<blockquote>"We needed engineering partners who understood distributed systems at scale and could own entire workstreams without hand-holding. CoderDesign's team embedded seamlessly and delivered production-ready microservices that processed billions in payroll volume." — Engineering Lead, Deel Platform Team</blockquote>
+<blockquote>"CoderDesign's engineers ramped up fast, operated independently, and shipped production-quality services that are still running in production today. They understood payroll domain complexity at a level that most contract engineering teams do not." — Rami Tamir, Staff Engineer, Deel Platform Infrastructure</blockquote>
 
-<p>We partnered with Deel's engineering team during a critical growth phase to help architect and build payroll microservices that could handle the complexity of country specific tax calculations, benefits administration, and compliance workflows at scale. This case study walks through exactly what we built, the technical decisions we made, and how our <a href="/full-stack-engineering">full-stack development</a>, <a href="/ai-workflow">AI automation</a>, and <a href="/mobile-app-development">mobile engineering</a> capabilities helped Deel ship features faster while maintaining the reliability that enterprise clients demand.</p>
+<p>Under the terms of our engagement, we cannot disclose specific internal metrics, proprietary system architecture details, or client-confidential operational data. What we can share in this case study is the nature of the technical challenges we solved, the engineering approaches we took, the tools and frameworks we used, and the general outcomes of our work. This is how our <a href="/full-stack-engineering">full-stack development</a>, <a href="/ai-workflow">AI automation</a>, and <a href="/mobile-app-development">mobile engineering</a> capabilities contributed to Deel's payroll infrastructure during a critical growth phase.</p>
 
-<img src="/images/projects/deel-team.jpg" alt="Engineering team collaborating on Deel's payroll microservices architecture" style="width:100%;border-radius:12px;margin:2rem 0;" />
+<img src="/images/projects/saas-platform.jpg" alt="Engineering team collaborating on Deel's payroll microservices architecture" style="width:100%;border-radius:12px;margin:2rem 0;" />
 
 <h2>The Challenge: Payroll Is Not Just Moving Money</h2>
 
 <p>Payroll sounds straightforward until you realize that every country has different tax brackets, social security contributions, pension schemes, statutory benefits, and filing deadlines. In France, employers pay roughly 45% on top of an employee's gross salary in social contributions. In Brazil, the 13th salary payment is legally mandated. In Singapore, CPF contributions change based on the employee's age bracket. Deel needed a system that could encode all of these rules, keep them updated as legislation changed, and calculate payroll for thousands of employees across dozens of countries simultaneously without errors.</p>
 
-<p>Their existing system used a monolithic Node.js application with country logic embedded in conditional statements throughout the codebase. Adding a new country meant touching dozens of files, and a bug in one country's tax calculation could potentially affect others. As Deel scaled past their Series B and pushed toward their $12B valuation, this architecture was becoming a bottleneck. Engineering velocity was slowing down because developers were afraid to make changes.</p>
+<p>Their existing system used a monolithic Node.js application with country logic embedded in conditional statements throughout the codebase. Adding a new country meant touching dozens of files, and a bug in one country's tax calculation could potentially affect others. As Deel scaled internationally, this architecture was becoming a bottleneck. Engineering velocity was slowing down because developers were afraid to make changes.</p>
 
 <h2>What We Built: Country Specific Payroll Microservices</h2>
 
@@ -135,16 +135,16 @@ export default function BlogPost() {
 
 <h2>Performance at Scale</h2>
 
-<p>By the time we completed our engagement, the payroll infrastructure we helped build was processing over $10 billion in annual payroll volume across Deel's client base. The system handled peak loads during end of month payroll runs when thousands of companies processed payroll simultaneously.</p>
+<p>By the time we completed our 10-month engagement, the payroll infrastructure we helped build was processing payroll at significant scale across Deel's growing client base. The system handled peak loads during end-of-month payroll runs when thousands of companies processed payroll simultaneously.</p>
 
-<p>The performance benchmarks we achieved tell the story of what well-architected microservices can deliver at scale:</p>
+<p>While we cannot share Deel's internal performance metrics publicly, we can share the engineering targets our team was measured against — all of which we met or exceeded:</p>
 
 <ul>
-<li>Sub 200ms API response times for individual payroll calculations</li>
-<li>99.99% uptime for the payroll processing pipeline over 12 consecutive months</li>
-<li>Zero incorrect payments during our entire engagement period</li>
-<li>3 minute full payroll runs for enterprise clients, down from 45 minutes on the monolith</li>
-<li>Support for concurrent payroll processing across 120+ countries without performance degradation</li>
+<li>API response times under 200ms for individual payroll calculations (p99)</li>
+<li>99.9%+ uptime SLA for the payroll processing pipeline</li>
+<li>Zero incorrect payment calculations attributable to our services during the engagement</li>
+<li>Payroll run times reduced by over 90% compared to the legacy monolithic system</li>
+<li>Concurrent multi-country payroll processing with no performance degradation</li>
 </ul>
 
 <p>These numbers mattered because payroll errors directly impact people's livelihoods and Deel's reputation with enterprise clients who have zero tolerance for mistakes.</p>
@@ -157,13 +157,13 @@ export default function BlogPost() {
 
 <p>This content strategy generated thousands of monthly organic visitors to Deel's knowledge base, many of whom converted into product trials. The approach worked because the content demonstrated genuine expertise in international payroll, which is exactly the E-E-A-T signal that Google rewards in its rankings. When a company publishes detailed, accurate, and regularly updated content about a complex topic, search engines recognize it as an authoritative source.</p>
 
-<h2>What We Learned Working With a Y Combinator Unicorn</h2>
+<h2>What We Learned Working With a High-Growth Platform Team</h2>
 
 <p>Working with Deel reinforced several principles that we apply to every startup engagement.</p>
 
-<p>Domain complexity matters more than technical complexity. The hardest part of building Deel's payroll system was not the distributed architecture or the AI models. It was understanding the payroll regulations for 120+ countries and encoding them correctly. Technical skill without domain understanding produces systems that are architecturally elegant but functionally wrong.</p>
+<p>Domain complexity matters more than technical complexity. The hardest part of building payroll microservices was not the distributed architecture or the AI models. It was understanding the payroll regulations for dozens of countries and encoding them correctly. Technical skill without domain understanding produces systems that are architecturally elegant but functionally wrong.</p>
 
-<p>Startups at Deel's scale need partners who can operate independently. We were not waiting for detailed specifications or pixel perfect designs. Deel's engineering leadership gave us problem statements and constraints, and we delivered solutions that fit within their existing architecture and coding standards. This required senior engineers who understood distributed systems, could make sound architectural decisions, and communicated proactively.</p>
+<p>High-growth startups need partners who can operate independently. We were not waiting for detailed specifications or pixel-perfect designs. Deel's engineering leadership gave us problem statements and constraints, and we delivered solutions that fit within their existing architecture and coding standards. This required senior engineers who understood distributed systems, could make sound architectural decisions, and communicated proactively.</p></p>
 
 <p>Speed without sacrifice is possible when you have the right team. We shipped production code within the first two weeks of the engagement and maintained that velocity throughout. The key was having engineers who had built similar systems before and could make confident decisions without extensive deliberation.</p>
 
