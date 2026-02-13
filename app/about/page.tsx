@@ -4,12 +4,12 @@ import About from "./content";
 export const metadata: Metadata = {
   title: "About CoderDesign | Software Developers Toronto",
   description:
-    "Meet the CoderDesign team. Toronto software developers with 100+ projects delivered and 50+ clients across web, mobile, AI, and SEO. (437) 239-2448.",
+    "Meet the CoderDesign team. Toronto software development studio founded in 2023. Custom web apps, mobile apps, AI automation, and SEO for startups and SMBs. (437) 239-2448.",
   keywords:
     "about CoderDesign, software development company Toronto, Toronto software developers, CoderDesign team, web development agency Toronto, AI automation company Toronto, custom software Toronto, app developers GTA",
   openGraph: {
     title: "About CoderDesign | Software Developers Toronto",
-    description: "Meet the CoderDesign team. Toronto software developers with 100+ projects delivered and 50+ clients across web, mobile, AI, and SEO.",
+    description: "Meet the CoderDesign team. Toronto software development studio founded in 2023. Custom web apps, mobile apps, AI automation, and SEO.",
     url: "https://coderdesign.com/about/",
     siteName: "CoderDesign",
     locale: "en_CA",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "About CoderDesign | Software Developers Toronto",
-    description: "Meet the CoderDesign team. 100+ projects delivered for startups and enterprises across the GTA.",
+    description: "Meet the CoderDesign team. Toronto software development studio. 30+ projects delivered for startups and SMBs.",
     images: ["https://coderdesign.com/og-image.png"],
   },
   alternates: {
@@ -42,8 +42,8 @@ const aboutJsonLd = {
     "height": 630
   },
   "image": "https://coderdesign.com/og-image.png",
-  "description": "CoderDesign is a Toronto-based software development company founded in 2020, specializing in custom web applications, mobile app development, AI automation, and SEO services. With over 100 projects delivered and 50+ clients, CoderDesign serves startups and enterprises across the Greater Toronto Area and Canada.",
-  "foundingDate": "2020",
+  "description": "CoderDesign is a Toronto-based software development studio founded in 2023, specializing in custom web applications, mobile app development, AI automation, and SEO services. 30+ projects delivered for startups and small-to-medium businesses across the Greater Toronto Area.",
+  "foundingDate": "2023",
   "foundingLocation": {
     "@type": "Place",
     "name": "Toronto, Ontario, Canada",
@@ -77,7 +77,7 @@ const aboutJsonLd = {
   "telephone": "+14372392448",
   "email": "hello@coderdesign.com",
   "openingHours": "Mo-Fr 09:00-18:00",
-  "numberOfEmployees": { "@type": "QuantitativeValue", "minValue": 10 },
+  "numberOfEmployees": { "@type": "QuantitativeValue", "minValue": 2, "maxValue": 4 },
   "knowsAbout": [
     "Software Development", "Custom Web Application Development", "Mobile App Development",
     "React", "Next.js", "Node.js", "Python", "Django", "TypeScript",
@@ -115,13 +115,6 @@ const aboutJsonLd = {
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Automation and Chatbot Development", "url": "https://coderdesign.com/ai-workflow" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO Services Toronto", "url": "https://coderdesign.com/seo-management" } }
     ]
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "bestRating": "5",
-    "worstRating": "1",
-    "ratingCount": "47"
   }
 };
 

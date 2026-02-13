@@ -57,12 +57,6 @@ const toolJsonLd = {
     name: "CoderDesign",
     url: "https://coderdesign.com",
   },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    ratingCount: "47",
-    bestRating: "5",
-  },
 };
 
 /* ─── Structured Data: FAQPage ─── */

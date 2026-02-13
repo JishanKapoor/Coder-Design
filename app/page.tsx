@@ -1,12 +1,41 @@
+import fs from 'fs';
+import path from 'path';
 import HomeContent from "./homepage-content";
+
+interface BlogMeta {
+  slug: string;
+  title: string;
+  category: string;
+  image?: string | null;
+  short_description: string;
+  createdAt: string;
+}
+
+function loadLatestPosts(): BlogMeta[] {
+  const blogDir = path.join(process.cwd(), 'app', 'blog');
+  if (!fs.existsSync(blogDir)) return [];
+  const entries = fs.readdirSync(blogDir, { withFileTypes: true });
+  const posts: BlogMeta[] = [];
+  for (const e of entries) {
+    if (!e.isDirectory()) continue;
+    const metaPath = path.join(blogDir, e.name, 'meta.json');
+    if (fs.existsSync(metaPath)) {
+      try {
+        const meta: BlogMeta = JSON.parse(fs.readFileSync(metaPath, 'utf-8'));
+        posts.push(meta);
+      } catch { /* skip invalid */ }
+    }
+  }
+  return posts.sort((a, b) => +new Date(b.createdAt) - +new Date(a.createdAt)).slice(0, 6);
+}
 
 const homepageStructuredData = {
   "@context": "https://schema.org",
-  "@type": ["SoftwareHouse", "ProfessionalService", "LocalBusiness"],
+  "@type": ["ProfessionalService", "LocalBusiness"],
   "@id": "https://coderdesign.com/#business",
   "name": "CoderDesign",
   "alternateName": ["Coder Design", "CoderDesign Toronto"],
-  "description": "CoderDesign is a Toronto-based software development and artificial intelligence company specializing in custom full stack web applications, mobile app development, AI-powered automation, and SEO services. Founded in Toronto, Ontario, Canada, CoderDesign has delivered over 100 projects for startups and enterprises across the Greater Toronto Area.",
+  "description": "CoderDesign is a Toronto-based software development studio specializing in custom full stack web applications, mobile app development, AI-powered automation, and SEO services for startups and small-to-medium businesses.",
   "url": "https://coderdesign.com",
   "logo": {
     "@type": "ImageObject",
@@ -16,7 +45,7 @@ const homepageStructuredData = {
     "height": 630
   },
   "image": "https://coderdesign.com/og-image.png",
-  "foundingDate": "2020",
+  "foundingDate": "2023",
   "foundingLocation": {
     "@type": "Place",
     "name": "Toronto, Ontario, Canada"
@@ -70,7 +99,7 @@ const homepageStructuredData = {
     "SaaS Development", "E-commerce Development"
   ],
   "knowsLanguage": ["English"],
-  "numberOfEmployees": { "@type": "QuantitativeValue", "minValue": 10 },
+  "numberOfEmployees": { "@type": "QuantitativeValue", "minValue": 2, "maxValue": 4 },
   "parentOrganization": { "@id": "https://coderdesign.com/#organization" },
   "areaServed": [
     { "@type": "City", "name": "Toronto" },
@@ -136,23 +165,17 @@ const homepageStructuredData = {
       }
     ]
   },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "bestRating": "5",
-    "worstRating": "1",
-    "ratingCount": "47"
-  }
 };
 
 export default function Page() {
+  const latestPosts = loadLatestPosts();
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageStructuredData) }}
       />
-      <HomeContent />
+      <HomeContent latestPosts={latestPosts} />
     </>
   );
 }

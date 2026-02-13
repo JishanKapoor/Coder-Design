@@ -12,7 +12,16 @@ const EnterpriseSection = dynamic(() => import("./components/EnterpriseSection")
 const WhoWeWorkWith = dynamic(() => import("./components/WhoWeWorkWith").then(m => ({ default: m.WhoWeWorkWith })), { ssr: true });
 const CTASection = dynamic(() => import("./components/CTASection").then(m => ({ default: m.CTASection })), { ssr: true });
 
-export default function HomeContent() {
+interface BlogPost {
+  slug: string;
+  title: string;
+  category: string;
+  image?: string | null;
+  short_description: string;
+  createdAt: string;
+}
+
+export default function HomeContent({ latestPosts }: { latestPosts?: BlogPost[] }) {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -23,7 +32,7 @@ export default function HomeContent() {
         <PlatformSection />
         <SolutionsSection />
         <EnterpriseSection />
-        <WhoWeWorkWith />
+        <WhoWeWorkWith posts={latestPosts} />
         <CTASection />
       </main>
       

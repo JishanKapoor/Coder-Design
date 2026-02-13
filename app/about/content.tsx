@@ -33,35 +33,35 @@ export default function About() {
   ];
 
   const stats = [
-    { value: "100+", label: "Projects Delivered" },
-    { value: "50+", label: "Happy Clients" },
-    { value: "10+", label: "Team Members" },
-    { value: "5+", label: "Years Experience" }
+    { value: "30+", label: "Projects Delivered" },
+    { value: "7+", label: "Years Experience" },
+    { value: "2023", label: "Founded" },
+    { value: "Toronto", label: "Based In" }
   ];
 
   const team = [
     {
-      name: "Engineering Team",
-      role: "Full Stack and Backend Development",
-      description: "Our engineering team consists of full stack developers, backend specialists, and cloud architects with deep expertise in Python, Node.js, React, and modern frameworks.",
+      name: "Founder & Lead Developer",
+      role: "Full-Stack Development & AI",
+      description: "7+ years of hands-on development experience across Python, Node.js, React, and modern AI frameworks. Leads all architecture decisions and client engagements.",
       image: "/images/team-engineering.jpg"
     },
     {
-      name: "AI & Automation Team",
-      role: "Artificial Intelligence & Intelligent Automation",
-      description: "AI engineers and data scientists building intelligent automation solutions, chatbots, voice assistants, and predictive analytics using TensorFlow, PyTorch, and the latest AI technologies.",
+      name: "Contract Engineers",
+      role: "Specialized Development Support",
+      description: "Trusted contract developers brought in for specialized work — mobile app development, complex backend systems, and projects requiring additional bandwidth.",
       image: "/images/team-ai.jpg"
     },
     {
-      name: "SEO & Growth Team",
-      role: "SEO and AEO Specialists",
-      description: "SEO experts specializing in AI powered optimization, GEO targeting, and Answer Engine Optimization (AEO) to drive organic growth and maximize search visibility.",
+      name: "SEO & Content",
+      role: "Search & Growth Strategy",
+      description: "SEO specialists focused on AI-powered optimization, local search, Answer Engine Optimization (AEO), and content strategy for organic growth.",
       image: "/images/team-seo.jpg"
     },
     {
-      name: "Leadership Team",
-      role: "Strategic Direction & Management",
-      description: "Experienced leaders guiding our vision, ensuring quality delivery, and maintaining strong client relationships across all projects and services.",
+      name: "Design & UX",
+      role: "UI/UX & Brand Design",
+      description: "Contract designers handling user interface design, brand identity, and user experience work for client projects that require dedicated design expertise.",
       image: "/images/team-leadership.jpg"
     }
   ];
@@ -85,11 +85,11 @@ export default function About() {
               About CoderDesign: Software Development Company in Toronto
             </h1>
             <p className="mx-auto max-w-3xl text-lg leading-relaxed text-slate-600">
-              CoderDesign is a Toronto based software development company specializing in custom web 
-              applications, mobile app development, AI automation, and SEO services. Our team of senior 
-              engineers, data scientists, and growth strategists partners with startups, scale ups, and 
-              enterprises across Canada to transform ambitious ideas into scalable, high performance 
-              digital products that drive real business outcomes.
+              CoderDesign is a Toronto-based software development studio founded in 2023. Our founder brings 7+ years 
+              of hands-on development and AI experience from previous roles and freelance work. We are a small, 
+              senior-only team — currently a solo founder with trusted contractors — specializing in custom web 
+              applications, mobile app development, AI automation, and SEO services for startups and small-to-medium 
+              businesses across Toronto and the GTA.
             </p>
           </div>
         </div>
@@ -124,18 +124,17 @@ export default function About() {
             >
               <h2 className="mb-6 text-slate-900">Our Mission</h2>
               <p className="mb-4 text-lg text-slate-600">
-                We exist to empower businesses with technology that drives measurable results. Whether 
-                you are a seed stage startup building your first MVP, a growing company automating 
-                operations with AI, or an enterprise modernizing legacy infrastructure, we provide the 
-                technical expertise, strategic thinking, and dedicated execution to make it happen. Our 
-                mission is to be the engineering partner you can trust with your most important projects.
+                We exist to give startups and small-to-medium businesses access to the same quality of 
+                software engineering that larger companies take for granted. Whether you need your first 
+                MVP built, an AI workflow automated, a mobile app launched, or your search rankings 
+                improved, we bring senior-level expertise without the overhead of a large agency.
               </p>
               <p className="text-lg text-slate-600">
-                Our team combines deep technical excellence across Python, Node.js, React, cloud 
-                platforms, and artificial intelligence with a genuine understanding of business strategy. 
-                We do not just write code. We architect solutions that solve real problems, improve 
-                operational efficiency, reduce costs, and create lasting competitive advantages for 
-                our clients across Toronto and the GTA.
+                Founded in 2023 in Toronto, CoderDesign started from 7+ years of the founder's 
+                hands-on development and AI experience across previous roles and freelance work. We 
+                keep our team small and senior-only — no junior developers learning on your project. 
+                Every engagement is led directly by the founder, with trusted contract specialists 
+                brought in when a project needs specific expertise.
               </p>
             </div>
 
@@ -148,19 +147,19 @@ export default function About() {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <span className="mt-1 text-violet-200">✓</span>
-                  <span>Proven track record of delivering complex projects on time and within budget</span>
+                  <span>Founder-led — you work directly with the person building your product</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-1 text-violet-200">✓</span>
-                  <span>Deep expertise across modern tech stacks and industry best practices</span>
+                  <span>Senior-only team — no junior developers learning on your project</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-1 text-violet-200">✓</span>
-                  <span>Transparent pricing and clear communication throughout the project</span>
+                  <span>Transparent pricing and honest timelines — no bait-and-switch</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-1 text-violet-200">✓</span>
-                  <span>Ongoing support and maintenance to ensure long-term success</span>
+                  <span>30+ projects delivered for startups and SMBs since 2023</span>
                 </li>
               </ul>
             </div>
@@ -215,13 +214,13 @@ export default function About() {
               ref={useScrollFadeIn<HTMLHeadingElement>()}
               className="mb-4 text-slate-900"
             >
-              Meet Our Teams
+              Meet Our Team
             </h2>
             <p
               ref={useScrollFadeIn<HTMLParagraphElement>()}
               className="mx-auto max-w-3xl text-lg text-slate-600"
             >
-              Talented professionals dedicated to your success
+              Small, senior-only — founder-led with trusted specialists
             </p>
           </div>
 
