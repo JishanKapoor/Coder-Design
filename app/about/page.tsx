@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "About CoderDesign | Software Developers Toronto",
-    description: "Meet the CoderDesign team. Toronto software development studio. 30+ projects delivered for startups and SMBs.",
+    description: "Meet the CoderDesign team. Toronto software development studio. 100+ projects delivered for startups and SMBs.",
     images: ["https://coderdesign.com/og-image.png"],
   },
   alternates: {
@@ -42,7 +42,7 @@ const aboutJsonLd = {
     "height": 630
   },
   "image": "https://coderdesign.com/og-image.png",
-  "description": "CoderDesign is a Toronto-based software development studio founded in 2023, specializing in custom web applications, mobile app development, AI automation, and SEO services. 30+ projects delivered for startups and small-to-medium businesses across the Greater Toronto Area.",
+  "description": "CoderDesign is a Toronto-based software development studio founded in 2023, specializing in custom web applications, mobile app development, AI automation, and SEO services. 100+ projects delivered for startups and small-to-medium businesses across the Greater Toronto Area.",
   "foundingDate": "2023",
   "foundingLocation": {
     "@type": "Place",

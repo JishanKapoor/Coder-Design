@@ -87,7 +87,7 @@ export default function About() {
             <p className="mx-auto max-w-3xl text-lg leading-relaxed text-slate-600">
               CoderDesign is a Toronto-based software development studio founded in 2023. Our founder brings 7+ years 
               of hands-on development and AI experience from previous roles and freelance work. We are a small, 
-              senior-only team — currently a solo founder with trusted contractors — specializing in custom web 
+              senior-only team specializing in custom web 
               applications, mobile app development, AI automation, and SEO services for startups and small-to-medium 
               businesses across Toronto and the GTA.
             </p>
@@ -159,7 +159,7 @@ export default function About() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-1 text-violet-200">✓</span>
-                  <span>30+ projects delivered for startups and SMBs since 2023</span>
+                  <span>100+ projects delivered for startups and SMBs since 2023</span>
                 </li>
               </ul>
             </div>
